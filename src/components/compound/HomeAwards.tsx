@@ -9,7 +9,7 @@ const HomeAwards = () => {
       <div className="bg-[#100E10] w-full">
         <Marquee className="flex items-center justify-center" speed={100} >
           {home_awards_images.map((award, index) => (
-            <Image key={index} src={award} alt="" className="ml-16" />
+            <Image key={index} src={award} alt="" className="ml-[180px]" />
           ))}
         </Marquee>
       </div>

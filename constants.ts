@@ -1,3 +1,5 @@
+import { HomePopularServicesType, HomeOurServicesType } from "./types";
+
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
 import dentures_link_icon from "./assets/images/dentures-link-icon.svg";
@@ -22,6 +24,19 @@ import award_img3 from "./assets/images/award_img3.svg";
 import award_img4 from "./assets/images/award_img4.svg";
 import award_img5 from "./assets/images/award_img5.svg";
 import award_img6 from "./assets/images/award_img6.svg";
+import award_img7 from "./assets/images/award_img7.svg";
+import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
+import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
+import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
+import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
+import dentures_services_image from "./assets/images/dentures-services-image.svg";
+import extraction_services_image from "./assets/images/extraction-services-image.svg";
+import crown_veneers_services_image from "./assets/images/crowns-veeners-services-image.svg";
+import hygienist_services_image from "./assets/images/hygienist-services-image.svg";
+import root_canal_services_image from "./assets/images/root-canal-services-image.svg";
+import bridges_services_image from "./assets/images/birdges-services-image.svg";
+import white_fillings_services_image from "./assets/images/white-fillings-services-image.svg";
+import examination_services_image from "./assets/images/examination-services-image.svg";
 
 export const navlinks = [
   {
@@ -143,4 +158,85 @@ export const home_awards_images = [
   award_img4,
   award_img5,
   award_img6,
+  award_img7,
+  award_img3,
+  award_img4,
+];
+
+export const popular_services: HomePopularServicesType[] = [
+  {
+    image: teeth_whitening_service_image,
+    title: "Teeth Whitening",
+    description:
+      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+  },
+  {
+    image: invisalign_service_image,
+    title: "Invisalign",
+    description:
+      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+  },
+  {
+    image: composite_bonding_service_image,
+    title: "Composite Bonding",
+    description:
+      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+  },
+  {
+    image: general_dentistry_service_image,
+    title: "General Dentistry",
+    description:
+      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+  },
+];
+
+export const our_services: HomeOurServicesType[] = [
+  {
+    title: "Dentures",
+    description:
+      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
+    image: dentures_services_image,
+  },
+  {
+    title: "Extractions",
+    description:
+      "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
+    image: extraction_services_image,
+  },
+  {
+    title: "Crowns / Veneers",
+    description:
+      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+    image: crown_veneers_services_image,
+  },
+  {
+    title: "Hygienist",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+    image: hygienist_services_image,
+  },
+  {
+    title: "Root Canal Treatments",
+    description:
+      "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
+    image: root_canal_services_image,
+  },
+  {
+    title: "Bridges",
+    description:
+      "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
+    image: bridges_services_image,
+  },
+  {
+    title: "White Fillings",
+    description:
+      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+    image: white_fillings_services_image,
+  },
+  {
+    title: "Examination",
+    description:
+      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+    image: examination_services_image,
+  },
 ];
