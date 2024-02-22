@@ -1,3 +1,6 @@
+import { HomeOurServices } from "@/components/compound";
+import Home from "@/pages";
+
 export enum REDUCERS {
     SET_LOADING = "SET_LOADING",
   }
@@ -23,4 +26,9 @@ export enum REDUCERS {
   }
   
   
+export type TestimonialType = {
+  name: string;
+  testimony: string;
+  profilePicture: any
+}
   

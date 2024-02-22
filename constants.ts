@@ -1,4 +1,8 @@
-import { HomePopularServicesType, HomeOurServicesType } from "./types";
+import {
+  HomePopularServicesType,
+  HomeOurServicesType,
+  TestimonialType,
+} from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
@@ -37,6 +41,31 @@ import root_canal_services_image from "./assets/images/root-canal-services-image
 import bridges_services_image from "./assets/images/birdges-services-image.svg";
 import white_fillings_services_image from "./assets/images/white-fillings-services-image.svg";
 import examination_services_image from "./assets/images/examination-services-image.svg";
+
+import increase_confidence_icon from "./assets/images/increase-confidence-icon.svg";
+import unleash_charisma_icon from "./assets/images/unleash-charisma-icon.svg";
+import empower_presence_icon from "./assets/images/empower-prescense-icon.svg";
+
+import result_image1 from "./assets/images/result-image1.svg";
+import result_image2 from "./assets/images/result-image2.svg";
+import result_image3 from "./assets/images/result-image3.svg";
+import result_image4 from "./assets/images/result-image4.svg";
+import result_image5 from "./assets/images/result-image5.svg";
+import result_image6 from "./assets/images/result-image6.svg";
+import result_image7 from "./assets/images/result-image7.svg";
+import result_image8 from "./assets/images/result-image8.svg";
+
+import manuel_lanzini from "./assets/images/manuel-lanzini.svg";
+import luis_image from "./assets/images/luis-image.svg";
+
+import process_initial_inquiry_image from "./assets/images/process-question-image.svg"
+import process_initial_examination_image from "./assets/images/process-initial-examination-image.svg"
+import process_treatment_plan_image from "./assets/images/process-treatment-planning.svg"
+import process_conduct_treatment_image from "./assets/images/process-contact-treatment.svg"
+import process_care_maintenance_image from "./assets/images/process-care-maintenance.svg"
+import { initializeTraceState } from "next/dist/trace";
+
+
 
 export const navlinks = [
   {
@@ -240,3 +269,84 @@ export const our_services: HomeOurServicesType[] = [
     image: examination_services_image,
   },
 ];
+
+export const change_life: HomeOurServicesType[] = [
+  {
+    title: "Increase Your Confidence",
+    description:
+      "Enhance self-esteem with improved oral health and a brighter smile.",
+    image: increase_confidence_icon,
+  },
+  {
+    title: "Unleash Your Charisma",
+    description:
+      "Enhance your natural appeal with a radiant, confident smile..",
+    image: unleash_charisma_icon,
+  },
+  {
+    title: "Empower Your Presence",
+    description:
+      "Strengthen your overall impact with a vibrant, assured smile.",
+    image: empower_presence_icon,
+  },
+];
+
+export const home_result_images = [
+  result_image1,
+  result_image2,
+  result_image3,
+  result_image4,
+  result_image5,
+  result_image6,
+  result_image7,
+  result_image8,
+];
+
+export const testimonial: TestimonialType[] = [
+  {
+    name: "Manuel Lanzini (Professional Footballer)",
+    testimony:
+      "My experience at Dental Opulence was nothing short of remarkable. This clinic isn't just a place for dental treatment; it's where art meets science. I went in for a smile makeover, a decision that I had been pondering over for months. From the moment I stepped in, the ambiance set a calming tone, with its modern decor and soothing colors.",
+    profilePicture: manuel_lanzini,
+  },
+  {
+    name: "Luis Hasanaj (Entrepreneur)",
+    testimony:
+      "I wasn’t very confident with my teeth until I met Dr Ali and the team at Dental Opulence. My smile was transformed giving me a new-found spring in my step. I cannot stop smiling, quite literally. The service and execution was second to none.",
+    profilePicture: luis_image,
+  },
+  {
+    name: "Manuel Lanzini (Professional Footballer)",
+    testimony:
+      "My experience at Dental Opulence was nothing short of remarkable. This clinic isn't just a place for dental treatment; it's where art meets science. I went in for a smile makeover, a decision that I had been pondering over for months. From the moment I stepped in, the ambiance set a calming tone, with its modern decor and soothing colors.",
+    profilePicture: manuel_lanzini,
+  },
+];
+
+export const home_process: HomeOurServicesType[] = [
+  {
+    title: 'Initial Enquiry',
+    description: 'At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritize your oral health journey with precision and care.',
+    image: process_initial_inquiry_image
+  },
+  {
+    title: 'Initial Examination',
+    description: 'At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritize your oral health journey with precision and care.',
+    image: process_initial_inquiry_image
+  },
+  {
+    title: 'Treatment Planning',
+    description: 'At Dental Opulence, our meticulous treatment planning is tailored to your unique needs. We design personalized plans to ensure optimal oral health and stunning smiles.',
+    image: process_initial_inquiry_image
+  },
+  {
+    title: 'Conduct Treatment ',
+    description: 'At Dental Opulence, our expert team uses cutting-edge technology to deliver exceptional results with skill & precision, ensuring a comfortable experience for every patient.',
+    image: process_initial_inquiry_image
+  },
+  {
+    title: 'Care & Maintenance ',
+    description: ' At Dental Opulence, our commitment to your smile doesn\'t end after treatment. We offer tailored care and maintenance services to preserve your beautiful smile for years to come.',
+    image: process_initial_inquiry_image
+  },
+]
