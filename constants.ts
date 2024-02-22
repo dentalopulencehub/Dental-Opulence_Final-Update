@@ -2,6 +2,7 @@ import {
   HomePopularServicesType,
   HomeOurServicesType,
   TestimonialType,
+  FaqType
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -28,7 +29,6 @@ import award_img3 from "./assets/images/award_img3.svg";
 import award_img4 from "./assets/images/award_img4.svg";
 import award_img5 from "./assets/images/award_img5.svg";
 import award_img6 from "./assets/images/award_img6.svg";
-import award_img7 from "./assets/images/award_img7.svg";
 import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
 import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
@@ -63,7 +63,14 @@ import process_initial_examination_image from "./assets/images/process-initial-e
 import process_treatment_plan_image from "./assets/images/process-treatment-planning.svg"
 import process_conduct_treatment_image from "./assets/images/process-contact-treatment.svg"
 import process_care_maintenance_image from "./assets/images/process-care-maintenance.svg"
-import { initializeTraceState } from "next/dist/trace";
+
+
+import people_img1 from './assets/images/people-img1.svg'
+import people_img2 from './assets/images/people-img2.svg'
+import people_img3 from './assets/images/people-img3.svg'
+import people_img4 from './assets/images/people-img4.svg'
+import people_img5 from './assets/images/people-img5.svg'
+import people_img6 from './assets/images/people-img6.svg'
 
 
 
@@ -187,7 +194,6 @@ export const home_awards_images = [
   award_img4,
   award_img5,
   award_img6,
-  award_img7,
   award_img3,
   award_img4,
 ];
@@ -349,4 +355,60 @@ export const home_process: HomeOurServicesType[] = [
     description: ' At Dental Opulence, our commitment to your smile doesn\'t end after treatment. We offer tailored care and maintenance services to preserve your beautiful smile for years to come.',
     image: process_initial_inquiry_image
   },
+]
+
+
+export const faq: FaqType[] = [
+  {
+    question: 'What should I expect during my first visit?',
+    answer: 'During your initial appointment, we\'ll conduct a comprehensive dental examination. We\'ll evaluate your oral health, discuss any concerns you have, and create a personalised treatment plan. Our goal is to ensure your comfort and understanding throughout the process.'
+  },
+  {
+    question: 'How often should I visit the dentist?',
+    answer: 'We generally recommend scheduling a check-up and cleaning every six months. However, depending on your specific dental needs, we might suggest more frequent visits. Regular appointments are crucial for maintaining oral health and catching potential issues early.'
+  },
+  {
+    question: 'How do I maintain good oral hygiene between visits?',
+    answer: 'Good oral hygiene involves regular brushing and flossing, using fluoride toothpaste, and avoiding excessive sugar intake. We also recommend using an antiseptic mouthwash. During your visit, we can provide personalized advice and tips based on your individual oral health needs.'
+  },
+  {
+    question: 'How do I maintain good oral hygiene between visits?',
+    answer: 'To maintain good oral hygiene between visits, it is important to follow a regular oral care routine. This includes brushing your teeth twice a day with fluoride toothpaste, flossing daily, and using mouthwash. Additionally, it is important to eat a balanced diet and avoid sugary snacks and drinks. Regular dental check-ups and cleanings are also essential for maintaining good oral health.'
+  },
+  {
+    question: 'How can I book an appointment at Dental Opulence?',
+    answer: 'To book an appointment at Dental Opulence, you can call our office at +0121 272 9229 or visit our website and fill out the online appointment request form. Our team will then contact you to confirm your appointment and answer any questions you may have.'
+  },
+  {
+    question: 'What cosmetic dentistry services does Dental Opulence offer?',
+    answer: 'Dental Opulence offers a wide range of cosmetic dentistry services to enhance the appearance of your smile. These include teeth whitening, porcelain veneers, dental bonding, and dental implants. We also offer orthodontic treatments such as Invisalign and traditional braces to straighten crooked or misaligned teeth. Our team of experienced cosmetic dentists will work with you to create a personalized treatment plan to achieve the smile of your dreams.'
+  },
+  {
+    question: 'What should I do if I experience dental pain or discomfort?',
+    answer: 'If you experience dental pain or discomfort, it is important to schedule an appointment with Dental Opulence as soon as possible. In the meantime, you can try rinsing your mouth with warm salt water, taking over-the-counter pain medication, and applying a cold compress to the affected area to help reduce swelling and alleviate pain. Avoid eating hard or sticky foods, and try to keep the affected area clean by brushing and flossing gently. If the pain is severe or persists for more than a few days, contact Dental Opulence for further evaluation and treatment.'
+  },
+  {
+    question: 'What dental services does Dental Opulence offer?',
+    answer: 'Dental Opulence offers a comprehensive range of dental services, categorized into two main areas: General Treatment and Cosmetic Dentistry. Under General Treatment, we provide routine check-ups, cleanings, and preventive care to maintain your oral health. We also offer restorative treatments such as fillings, crowns, and bridges to repair damaged or missing teeth. Under Cosmetic Dentistry, we provide a variety of services to enhance the appearance of your smile. These include teeth whitening, porcelain veneers, and dental bonding. Additionally, we offer orthodontic treatments such as Invisalign and traditional braces to straighten crooked or misaligned teeth. Our team of experienced dentists and hygienists is dedicated to providing exceptional care to help you achieve and maintain a healthy, beautiful smile.'
+  },
+]
+
+
+export const people_slider = [
+  people_img1,
+  people_img2,
+  people_img3,
+  people_img4,
+  people_img5,
+  people_img3,
+  people_img6,
+  people_img1,
+  people_img2,
+  people_img3,
+  people_img4,
+  people_img5,
+  people_img1,
+  people_img2,
+  people_img3,
+  people_img4,
 ]

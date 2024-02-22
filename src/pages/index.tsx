@@ -10,7 +10,10 @@ import {
   HomeOurServices,
   HomeChangeLife,
   OurResult,
-  OurProcess
+  OurProcess,
+  Faq,
+  HomePeopleSlider,
+  Footer
 } from "../components/import";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +30,9 @@ export default function Home() {
       <HomeChangeLife />
       <OurResult />
       <OurProcess />
+      <Faq />
+      <HomePeopleSlider />
+      <Footer />
     </Layout>
   );
 }

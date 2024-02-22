@@ -31,4 +31,9 @@ export type TestimonialType = {
   testimony: string;
   profilePicture: any
 }
+
+export type FaqType = {
+  question: string;
+  answer: string;
+}
   
