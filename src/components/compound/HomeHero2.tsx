@@ -49,7 +49,7 @@ const HomeHero2 = () => {
             {words.map((word, index) => {
               const start = index / words.length;
               const end = start + 1 / words.length;
-              console.log(start, end);
+              //console.log(start, end);
               return (
                 <Word
                   key={index}
@@ -78,10 +78,33 @@ const Word = ({
   range: any;
   progress: any;
 }) => {
-  const opacity = useTransform(progress, range, [0.2, 1]);
+  const characters = children.split("");
+  const amount = range[1] - range[0];
+  const step = amount / children.length;
   return (
-    <motion.span style={{ opacity }} className="mr-2 mt-1.5">
-      {children}
-    </motion.span>
+    <span className="mr-2 mt-1.5">
+      {characters.map((char: any, index: number) => {
+        const start = range[0] + index * step;
+        const end = range[0] + step * (index + 1);
+        return (
+          <Character key={index} range={[start, end]} progress={progress}>
+            {char}
+          </Character>
+        );
+      })}
+    </span>
   );
+};
+
+const Character = ({
+  children,
+  range,
+  progress,
+}: {
+  children: any;
+  range: any;
+  progress: any;
+}) => {
+  const opacity = useTransform(progress, range, [0.2, 1]);
+  return <motion.span style={{ opacity }}>{children}</motion.span>;
 };
