@@ -1,8 +1,8 @@
-import { FormData } from "@/types";
+import { FormData } from "../types";
 import axios from "axios";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "@/libs/state/store";
+import { RootState } from "../lib/state/store";
 
 const useAxios = (): [
   FormData,

@@ -4,10 +4,10 @@
   setActiveStep,
   setSelectedOptions,
   setQuestionsAndAnswers,
-} from "@/libs/state/features/FormSlice";
+} from "../lib/state/features/FormSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { helpSelect } from "@/constants";
-import { RootState } from "@/libs/state/store";
+import { helpSelect } from "../constants";
+import { RootState } from "../lib/state/store";
 import { useState } from "react";
 
 
