@@ -11,6 +11,19 @@ interface FormOneProps {
 }
 
 
+const getNextForm = (index: number) => {
+  switch (index) {
+    case 0:
+      return "formTwo";
+    case 1:
+      return "lastForm";
+
+    default:
+      return "";
+  }
+};
+
+
 
 const FormOne = ({ 
   helpSelect,
@@ -18,7 +31,7 @@ const FormOne = ({
    }: FormOneProps) => {
   return (
     <div className="flex flex-col gap-10 text-center">
-      <h1 className="bold text-4xl xl:text-7xl" data-aos="fade-up-right">
+      <h1 className="bold text-4xl xl:text-7xl text-white" data-aos="fade-up-right">
         HOW CAN WE HELP?{" "}
       </h1>
       <div className="flex flex-wrap flex-col sm:flex-row gap-5 sm:gap-10 justify-center items-center">
@@ -26,16 +39,17 @@ const FormOne = ({
        
             <div
             key={index}
-              className="contact-bg  btn hover:bg-gray-800 light text-center  cursor-pointer flex items-center gap-2 text-lg xl:text-3xl px-12 py-3 xl:py-6 text-white rounded-full relative"
+              className="contact-bg  btn hover:bg-gray-800 light text-center  cursor-pointer flex items-center gap-2 text-base px-12 xl:py-6 text-white rounded-full relative"
               onClick={() => {
-                handleStepChange("formTwo");
+                let gottenForm = getNextForm(index)
+                handleStepChange(gottenForm);
               }}
             >
-              {index === 0 && (
+              {/* {index === 0 && (
                 <span>
                   <YellowButton />  
                 </span>
-              )}
+              )} */}
               {item.label}
             </div>
         ))}

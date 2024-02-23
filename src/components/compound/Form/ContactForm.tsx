@@ -16,11 +16,11 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <section className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5">
+      <section className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5">
         <div className="content w-full flex flex-col xl:flex-row gap-5 xl:gap-24">
           <div>
-            <h1 className="bold text-5xl  text-center md:text-left xl:text-7xl">
-              READY TO CREATE MAGIC?
+            <h1 className="bold text-[32px] text-white text-center md:text-left xl:text-[56px]">
+              INPUT YOUR PERSONAL INFO
             </h1>
           </div>
 
@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="firstName"
                   placeholder="First Name *"
-                  className="contact-bg w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.firstName}
                   onChange={handleInputChange}
@@ -41,7 +41,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="lastName"
                   placeholder="Last Name *"
-                  className="contact-bg w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.lastName}
                   onChange={handleInputChange}
@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="phone"
                   placeholder="Phone [optional] "
-                  className="contact-bg w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   value={formData.phone}
                   onChange={handleInputChange}
                 />
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="email"
                   placeholder="Email*"
-                  className="contact-bg w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.email}
                   onChange={handleInputChange}
@@ -70,10 +70,10 @@ const ContactForm: React.FC = () => {
 
               <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
                 <input
-                  type="text"
+                  type="date"
                   name="company"
                   placeholder="Company*"
-                  className="contact-bg w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm placeholder:text-[#494849]"
                   required
                   value={formData.company}
                   onChange={handleInputChange}
@@ -81,26 +81,26 @@ const ContactForm: React.FC = () => {
                 <input
                   type="text"
                   name="deadline"
-                  placeholder="Dealine in weeks*"
-                  className="contact-bg w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none"
+                  placeholder="Booking Time"
+                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.deadline}
                   onChange={handleInputChange}
                 />
               </div>
 
-              <div className="flex flex-col md:flex-row gap-2 sm:gap-5 items-center justify-center">
+              <div className="flex flex-col gap-2 sm:gap-5 items-start justify-center">
                 <textarea
                   name="message"
                   placeholder="Your message here...."
-                  className="contact-bg w-full md:min-h-[200px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none"
+                  className="bg-[#494849] w-full md:min-h-[100px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none placeholder:text-sm"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="regular bg-yellow-600 tracking-widest rounded-full w-[100px] h-[100px] md:w-[270px] md:h-[200px] flex items-center justify-center"
+                  className="regular bg-transparent tracking-widest rounded-full text-white text-base border border-[#fff] w-[200px] h-[51px] flex items-center justify-center"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}
                 </button>

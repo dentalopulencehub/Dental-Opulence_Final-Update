@@ -1,60 +1,51 @@
 import { residentialForm } from "../../../../../constants";
 
 import { FormProps } from "../../../../../types";
- 
- 
 
-const FormFour = ({
-  handleStepChange,
-  handleOptionSelect,
-}: FormProps) => {
-
-
+const FormFour = ({ handleStepChange, handleOptionSelect }: FormProps) => {
   const getNextForm = (index: number) => {
     switch (index) {
       case 0:
         return "formFive";
       case 1:
         return "formFive";
-        case 2:
-          return "checkPointFormOne";
-          case 3:
-            return "checkPointFormOne";
+      case 2:
+        return "checkPointFormOne";
+      case 3:
+        return "checkPointFormOne";
       default:
         return "";
     }
   };
 
   return (
-    <div
-    className="flex flex-col gap-10 text-center"
-    data-aos="fade-left"
-  >
-    <h1 className="bold text-3xl xl:text-7xl">
-     {residentialForm[0].title}
-    </h1>
-    <div className="flex sm:flex-wrap flex-col sm:flex-row   sm:gap-10 justify-center items-center">
-      {residentialForm.map((item, index) => (
-        <div key={index} className="btn mb-4 relative">
-          <div
-            className="contact-bg hover:bg-gray-800 thin flex  items-center gap-2 text-lg xl:text-3xl   px-12 py-3 xl:py-6 text-white rounded-full relative"
-            onClick={() => {
-              const nextForm = getNextForm(index);
+    <div className="flex flex-col gap-10 text-center" data-aos="fade-left">
+      <h1 className="bold text-3xl xl:text-7xl text-white">
+        {residentialForm[0].title}
+      </h1>
+      <div className="flex sm:flex-wrap flex-col sm:flex-row  justify-center items-center">
+        {residentialForm.map((item, index) => (
+          <div key={index} className="btn mb-4 relative">
+            <div
+              className="contact-bg sm:w-[250px] justify-center hover:bg-gray-800 thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
+              onClick={() => {
+                /*  const nextForm = getNextForm(index);
                 handleStepChange(nextForm);
-               handleOptionSelect(item.label, item.title || "");  
-
-            }}
-          >
-            <span>
+                */
+                handleOptionSelect(item.label, item.title || "");
+                handleStepChange("lastForm");
+              }}
+            >
+              {/*  <span>
               <YellowButton />
-            </span>
+            </span> */}
 
-            {item.label}
+              {item.label}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
   );
 };
 

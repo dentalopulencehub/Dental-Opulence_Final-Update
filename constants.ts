@@ -11,7 +11,7 @@ import crown_link_icon_light from "./assets/images/crown-link-icon-light.svg";
 import dentures_link_icon from "./assets/images/dentures-link-icon.svg";
 import dentures_link_icon_light from "./assets/images/dentures-link-icon-light.svg";
 import examination_link_icon from "./assets/images/examination-link-icon.svg";
-import examination_link_icon_light from './assets/images/examination-link-icon-light.svg'
+import examination_link_icon_light from "./assets/images/examination-link-icon-light.svg";
 import extractions_link_icon from "./assets/images/extraction-link-icon.svg";
 import extractions_link_icon_light from "./assets/images/extraction-link-icon-light.svg";
 import hygienist_link_icon from "./assets/images/hygenist-link-icon.svg";
@@ -122,37 +122,37 @@ export const navlinks = [
         title: "Dentures",
         href: "#",
         icon: dentures_link_icon,
-        icon_hovered: dentures_link_icon_light
+        icon_hovered: dentures_link_icon_light,
       },
       {
         title: "Examination",
         href: "#",
         icon: examination_link_icon,
-        icon_hovered: examination_link_icon_light
+        icon_hovered: examination_link_icon_light,
       },
       {
         title: "Extractions",
         href: "#",
         icon: extractions_link_icon,
-        icon_hovered: extractions_link_icon_light
+        icon_hovered: extractions_link_icon_light,
       },
       {
         title: "Hygienist",
         href: "#",
         icon: hygienist_link_icon,
-        icon_hovered: hygienist_link_icon_light
+        icon_hovered: hygienist_link_icon_light,
       },
       {
         title: "White Fillings",
         href: "#",
         icon: white_fillings_link_icon,
-        icon_hovered: white_fillings_link_icon_light
+        icon_hovered: white_fillings_link_icon_light,
       },
       {
         title: "Root Canal Treatments",
         href: "#",
         icon: root_canal_link_icon,
-        icon_hovered: root_canal_link_icon_light
+        icon_hovered: root_canal_link_icon_light,
       },
     ],
   },
@@ -164,61 +164,61 @@ export const navlinks = [
         title: "Invisalign",
         href: "#",
         icon: invis_align_link_icon,
-        icon_hovered: invis_align_link_icon_light
+        icon_hovered: invis_align_link_icon_light,
       },
       {
         title: "Fixed Retainers",
         href: "#",
         icon: fixed_retainers_link_icon,
-        icon_hovered: fixed_retainers_link_icon_light
+        icon_hovered: fixed_retainers_link_icon_light,
       },
       {
         title: "Teeth Whitening",
         href: "#",
         icon: teeth_whitening_link_icon,
-        icon_hovered: teet_whitening_link_icon_light
+        icon_hovered: teet_whitening_link_icon_light,
       },
       {
         title: "Vivera Retainers",
         href: "#",
         icon: vivera_retainers_link_icon,
-        icon_hovered: vivera_retainers_link_icon_light
+        icon_hovered: vivera_retainers_link_icon_light,
       },
       {
         title: "Crowns/Veneers",
         href: "#",
         icon: crown_veneers_link_icon,
-        icon_hovered: crown_veneers_link_icon_light
+        icon_hovered: crown_veneers_link_icon_light,
       },
       {
         title: "Composite Veneers",
         href: "#",
         icon: composite_veneers_link_icon,
-        icon_hovered: composite_veneers_link_icon_light
+        icon_hovered: composite_veneers_link_icon_light,
       },
       {
         title: "Composite  Bonding",
         href: "#",
         icon: composite_bonding_link_icon,
-        icon_hovered: composite_bonding_link_icon_light
+        icon_hovered: composite_bonding_link_icon_light,
       },
       {
         title: "Routine Examination",
         href: "#",
         icon: routine_examination_link_icon,
-        icon_hovered: routine_examination_link_icon_light
+        icon_hovered: routine_examination_link_icon_light,
       },
       {
         title: "Internal Tooth Whitening",
         href: "#",
         icon: internal_tooth_whitening_link_icon,
-        icon_hovered: internal_tooth_whitening_link_icon_light
+        icon_hovered: internal_tooth_whitening_link_icon_light,
       },
       {
         title: "Composite Edge Bonding",
         href: "#",
         icon: composite_edge_bonding_link_icon,
-        icon_hovered: composite_edge_bonding_link_icon_light
+        icon_hovered: composite_edge_bonding_link_icon_light,
       },
     ],
   },
@@ -377,25 +377,25 @@ export const home_process: HomeOurServicesType[] = [
     title: "Initial Examination",
     description:
       "At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritize your oral health journey with precision and care.",
-    image: process_initial_inquiry_image,
+    image: process_initial_examination_image,
   },
   {
     title: "Treatment Planning",
     description:
       "At Dental Opulence, our meticulous treatment planning is tailored to your unique needs. We design personalized plans to ensure optimal oral health and stunning smiles.",
-    image: process_initial_inquiry_image,
+    image: process_treatment_plan_image,
   },
   {
     title: "Conduct Treatment ",
     description:
       "At Dental Opulence, our expert team uses cutting-edge technology to deliver exceptional results with skill & precision, ensuring a comfortable experience for every patient.",
-    image: process_initial_inquiry_image,
+    image: process_conduct_treatment_image,
   },
   {
     title: "Care & Maintenance ",
     description:
       " At Dental Opulence, our commitment to your smile doesn't end after treatment. We offer tailored care and maintenance services to preserve your beautiful smile for years to come.",
-    image: process_initial_inquiry_image,
+    image: process_care_maintenance_image,
   },
 ];
 
@@ -461,90 +461,132 @@ export const people_slider = [
   people_img4,
 ];
 
-
-
-
 // Glory Form Constants
 // form 1 - how can we help
 export const helpSelect = [
   // DEFAULT
   {
     id: 1,
-    label: "START A PROJECT",
+    label: "Book an Appointment",
   },
   {
     id: 1,
-    label: "JOIN THE TEAM",
-  },
-  {
-    id: 1,
-    label: "LEAVE A NOTE",
+    label: "Make An Inquiry",
   },
 ];
 
 // form 2 - what type of project
 export const stepOne = [
   {
-    title: "WHAT TYPE OF PROJECT?",
+    title: "WHAT TYPE OF SERVICE?",
     id: 1,
-    label: "COMMERCIAL",
+    label: "General Treatments",
   },
 
   {
     title: "WHAT TYPE OF PROJECT?",
     id: 2,
-    label: "RESIDENTIAL",
+    label: "Cosmetics  Treatments",
   },
 ];
 
 //form3 main=> commercial form 1
 export const commercialForm = [
   {
-    title: "WHAT TYPE OF COMMERCIAL ?",
+    title: "SELECT SERVICE TYPE",
     id: 1,
-    label: "Hotel",
+    label: "Dentures",
   },
   {
-    title: "WHAT TYPE OF COMMERCIAL ?",
+    title: "SELECT SERVICE TYPE",
     id: 2,
-    label: "Office block",
+    label: "Extractions",
   },
   {
-    title: "WHAT TYPE OF COMMERCIAL ?",
+    title: "SELECT SERVICE TYPE",
     id: 3,
-    label: "Apartment block",
+    label: "Crowns / Veneers",
   },
   {
-    title: "WHAT TYPE OF COMMERCIAL ?",
+    title: "SELECT SERVICE TYPE",
     id: 4,
-    label: "Restaurant/Franchise/Others",
+    label: "Hygienist",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 5,
+    label: "Root Canal Treatments ",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 6,
+    label: "White Fillings",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 7,
+    label: "Bridges",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 8,
+    label: "Examination",
   },
 ];
-
 
 //form4 main=> residential form 1
 export const residentialForm = [
   {
-    title: "WHAT TYPE OF REFURBISHMENT DO YOU NEED?",
+    title: "SELECT SERVICE TYPE",
     id: 1,
-    label: "Full refurbishment ",
+    label: "Composite Bonding",
   },
 
   {
-    title: "WHAT TYPE OF REFURBISHMENT DO YOU NEED?",
+    title: "SELECT SERVICE TYPE",
     id: 2,
-    label: "Partial refurbishment",
+    label: "Vivera Retainers",
   },
 
   {
-    title: "WHAT TYPE OF REFURBISHMENT DO YOU NEED?",
+    title: "SELECT SERVICE TYPE",
     id: 3,
-    label: "Loft conversion",
+    label: "Crowns / Veneers",
   },
   {
-    title: "WHAT TYPE OF REFURBISHMENT DO YOU NEED?",
+    title: "SELECT SERVICE TYPE",
     id: 4,
-    label: "Loft Extension",
+    label: "Teeth Whitening",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 5,
+    label: "Composite Edge Bonding",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 6,
+    label: "Fixed Retainers",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 7,
+    label: "Invisalign",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 8,
+    label: "Internal Tooth Whitening",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 9,
+    label: "Composite Veneers",
+  },
+  {
+    title: "SELECT SERVICE TYPE",
+    id: 10,
+    label: "Routine Examination",
   },
 ];
 
@@ -592,27 +634,27 @@ export const residentialFormTwo = [
 //form 7
 export const residentialFormThree = [
   {
-    title:"HOW MANY EN-SUITS ?",
+    title: "HOW MANY EN-SUITS ?",
     label: "1",
     id: 1,
   },
   {
-    title:"HOW MANY EN-SUITS ?",
+    title: "HOW MANY EN-SUITS ?",
     label: "2",
     id: 2,
   },
   {
-    title:"HOW MANY EN-SUITS ?",
+    title: "HOW MANY EN-SUITS ?",
     label: "3",
     id: 3,
   },
   {
-    title:"HOW MANY EN-SUITS ?",
+    title: "HOW MANY EN-SUITS ?",
     label: "4",
     id: 4,
   },
   {
-    title:"HOW MANY EN-SUITS ?",
+    title: "HOW MANY EN-SUITS ?",
     label: "5",
     id: 5,
   },
@@ -856,4 +898,3 @@ export const checkPointSeven = [
     label: "Other",
   },
 ];
-

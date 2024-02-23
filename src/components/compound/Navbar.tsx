@@ -31,7 +31,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full h-[70px] flex items-center justify-between top-[30px] pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10]">
-      <Image src={nav_logo} alt="" />
+      <Link href="/" >
+        <Image src={nav_logo} alt="" />
+      </Link>
 
       <div className=" px-[43.5px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
         <ul className="flex items-center text-white gap-10">
