@@ -1,14 +1,20 @@
 import React, { useRef } from "react";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
 import underline_vector_dark from "../../../assets/images/underline-vector-dark.svg";
 import tooth_image_light from "../../../assets/images/tooth-image-light.svg";
 import tooth_image_dark from "../../../assets/images/tooth-image-dark.svg";
 import { our_services } from "../../../constants";
 import { OurServiceCard } from "../molecule";
+import { gsap } from '../../../lib/gsap'
+
 
 
 const HomeOurServices = () => {
 
+  useGSAP(()=>{
+
+  },[])
 
   return (
     <div className="bg-[#100E10] sm:px-5 px-2 w-full">

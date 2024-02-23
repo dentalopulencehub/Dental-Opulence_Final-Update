@@ -166,3 +166,35 @@ h1, h2, h3 {
     display: none;
   }
 }
+
+
+
+/* arrow animation */
+.arrow-main {
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-wrapper {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.arrow-wrapper .arrow-span {
+  display: flex;
+  width: 200%;
+  transition: 0.25s ease-in-out;
+}
+
+.arrow-wrapper .arr-1,
+.arrow-wrapper .arr-2 {
+  flex: 1 0 50%;
+}
+
+.arrow-main:hover {
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.arrow-main:hover .arrow-span {
+  transform: translateX(-50%);
+}

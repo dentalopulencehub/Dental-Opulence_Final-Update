@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import nav_logo from "../../../assets/images/nav-logo.svg";
@@ -11,6 +11,8 @@ import { gsap } from "../../../lib/gsap";
 import { navlinks } from "../../../constants";
 
 const Navbar = () => {
+  const [hoverId, setHoverId] = useState<number | null>(null);
+
   useGSAP(() => {
     let link_list = document.querySelectorAll(".link-list");
 
@@ -35,7 +37,7 @@ const Navbar = () => {
         <ul className="flex items-center text-white gap-10">
           {navlinks.map((link, index) => (
             <li key={index} className="font-Pangram-Regular link-list dropdown">
-              <Link href={link.href} >
+              <Link href={link.href}>
                 <p className="flex items-center py-6">
                   <span className="dropbtn">{link.label}</span>
                   {link.subLinks && (
@@ -51,11 +53,29 @@ const Navbar = () => {
                 <div
                   className={`dropdown-content grid grid-cols-2 max-w-[558px] h-[280px] w-full p-6 bg-[#2E2E2E] text-white font-Pangram-Regular rounded-lg`}
                 >
-                  {link.subLinks.map((subLink, index) => (
-                    <Link href={subLink.href} key={index} className="relative h-fit flex items-center" >
+                  {link.subLinks.map((subLink, index: number) => (
+                    <Link
+                      onMouseOver={() => setHoverId(index)}
+                      onMouseOut={() => setHoverId(null)}
+                      href={subLink.href}
+                      key={index}
+                      className="relative h-fit flex items-center"
+                    >
                       <p className="flex items-center relative">
-                        <Image src={subLink.icon} alt="" width={14} height={14} />
-                        <span className="text-white text-base ml-2">{subLink.title}</span>
+                        <Image
+                          src={
+                            hoverId === index
+                              ? subLink?.icon_hovered
+                              : subLink.icon
+                          }
+                          className=""
+                          alt=""
+                          width={15}
+                          height={15}
+                        />
+                        <span className="text-white text-base ml-2">
+                          {subLink.title}
+                        </span>
                       </p>
                     </Link>
                   ))}
