@@ -99,6 +99,10 @@ export const navlinks = [
     label: "About us",
   },
   {
+    href: "/contact",
+    label: "Contact",
+  },
+  {
     href: "#",
     label: "Services",
     subLinks: [
