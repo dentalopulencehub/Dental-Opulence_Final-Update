@@ -90,7 +90,7 @@ const Page = () => {
   return (
     // <section className="bg-black relative  overflow-hidden rounded-3xl w-full h-full  md:px-4">
     <>
-      <section className="relative bg-black w-[99%] min-h-[98vh] top-2 h-full overflow-hidden  rounded-3xl  sm:pt-10 xl:px-[120px] flex flex-col items-center justify-between  mx-auto my-auto">
+      <section className="relative bg-[#100E10] w-[99%] min-h-[98vh] top-2 h-full overflow-hidden  rounded-3xl  sm:pt-10 xl:px-[120px] flex flex-col items-center justify-between  mx-auto my-auto">
         {/* selected options */}{" "}
         {/* <div className="hidden  sm:flex flex-wrap items-center gap-5 sm:mt-16 md:mt-0 border-2 border-red-500"> */}
         <div className="scroll mt-24 md:mt-[70px] w-[350px] md:w-4/5  flex md:flex-wrap items-center justify-center gap-5 z-0  overflow-x-auto cursor-grab md:cursor-pointer">
