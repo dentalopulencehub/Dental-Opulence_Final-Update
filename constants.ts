@@ -7,6 +7,7 @@ import {
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
+import bridge_link_icon_light from "./assets/images/bridge-link-icon-light.svg"
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
 import crown_link_icon_light from "./assets/images/crown-link-icon-light.svg";
 import dentures_link_icon from "./assets/images/dentures-link-icon.svg";
@@ -99,6 +100,22 @@ import people_img3 from "./assets/images/people-img3.svg";
 import people_img4 from "./assets/images/people-img4.svg";
 import people_img5 from "./assets/images/people-img5.svg";
 import people_img6 from "./assets/images/people-img6.svg";
+import people_img7 from "./assets/images/people-img7.svg"
+import people_img8 from "./assets/images/people-img8.svg"
+import people_img9 from "./assets/images/people-img9.svg"
+import people_img10 from "./assets/images/people-img10.svg"
+import people_img11 from "./assets/images/people-img11.svg"
+import people_img12 from "./assets/images/people-img12.svg"
+import people_img13 from "./assets/images/people-img13.svg"
+import people_img14 from "./assets/images/people-img14.svg"
+import people_img15 from "./assets/images/people-img15.svg"
+import people_img16 from "./assets/images/people-img16.svg"
+import people_img17 from "./assets/images/people-img17.svg"
+import people_img18 from "./assets/images/people-img18.svg"
+import people_img19 from "./assets/images/people-img19.svg"
+import people_img20 from "./assets/images/people-img20.svg"
+import people_img21 from "./assets/images/people-img21.svg"
+
 
 
 import about_dentist_image from "./assets/images/about-dentist-img.svg"
@@ -123,7 +140,7 @@ export const navlinks = [
         title: "Bridges",
         href: "#",
         icon: bridge_link_icon,
-        icon_hovered: bridge_link_icon,
+        icon_hovered: bridge_link_icon_light,
       },
       {
         title: "Crowns / Veneers",
@@ -471,15 +488,21 @@ export const people_slider = [
   people_img5,
   people_img3,
   people_img6,
-  people_img1,
-  people_img2,
-  people_img3,
-  people_img4,
-  people_img5,
-  people_img1,
-  people_img2,
-  people_img3,
-  people_img4,
+  people_img7,
+  people_img8,
+  people_img9,
+  people_img10,
+  people_img11,
+  people_img12,
+  people_img13,
+  people_img14,
+  people_img15,
+  people_img16,
+  people_img17,
+  people_img18,
+  people_img19,
+  people_img20,
+  people_img21
 ];
 
 

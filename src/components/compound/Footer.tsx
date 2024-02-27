@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import footer_logo from "../../../assets/images/footer-logo.svg";
 import ig_logo from "../../../assets/images/instagram-icon.svg";
+import ig_logo_dark from "../../../assets/images/instagram-icon-dark.svg";
 import fb_logo from "../../../assets/images/facebook-icon.svg";
+import fb_logo_dark from "../../../assets/images/facebook-icon-dark.svg";
 import whatsapp_logo from "../../../assets/images/whatsapp-icon.svg";
+import whatsapp_logo_dark from "../../../assets/images/whatsapp-icon-dark-footer.svg";
 import tiktok_icon from "../../../assets/images/tiktok-icon.svg";
+import titktok_icon_dark from "../../../assets/images/tiktok-icon-dark.svg";
 import phone_icon from "../../../assets/images/phone-icon.svg";
 import whatsapp_icon_mini from "../../../assets/images/whatsapp-icon-mini.svg";
 
+const hoverLinks = [
+  {
+    image: ig_logo,
+    image_inverted: ig_logo_dark,
+    link: "#",
+  },
+  {
+    image: fb_logo,
+    image_inverted: fb_logo_dark,
+    link: "#",
+  },
+  {
+    image: whatsapp_logo,
+    image_inverted: whatsapp_logo_dark,
+    link: "#",
+  },
+  {
+    image: tiktok_icon,
+    image_inverted: titktok_icon_dark,
+    link: "#",
+  },
+];
+
 const Footer = () => {
+  const [hoverIndex, setHoverIndex] = useState<null | number>(null);
+
   return (
     <div className="bg-white sm:px-5 px-2 w-full sm:pb-5 pb-2">
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
@@ -33,10 +62,23 @@ const Footer = () => {
                   Find us on social media
                 </h3>
                 <div className="flex items-center gap-4 mt-4">
-                  <Image src={whatsapp_logo} alt="" />
-                  <Image src={tiktok_icon} alt="" />
-                  <Image src={ig_logo} alt="" />
-                  <Image src={fb_logo} alt="" />
+                  {hoverLinks.map((item, index) => (
+                    <div
+                      key={index}
+                      onMouseOver={() => setHoverIndex(index)}
+                      onMouseOut={() => setHoverIndex(null)}
+                      className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
+                    >
+                      <Image
+                        src={
+                          hoverIndex === index
+                            ? item.image_inverted
+                            : item.image
+                        }
+                        alt=""
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -182,7 +224,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-base font-Pangram-Regular max-w-[788px] mx-auto text-white mt-[80px]" >
+        <p className="text-center text-base font-Pangram-Regular max-w-[788px] mx-auto text-white mt-[80px]">
           Copyright © {new Date().getFullYear()} John Clive Industries Ltd.
           Registered in England and Wales, UK. All rights reserved. Website
           Developed by Lintech Group
