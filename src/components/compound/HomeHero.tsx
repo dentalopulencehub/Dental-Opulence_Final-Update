@@ -21,12 +21,12 @@ const HomeHero = () => {
             <PrimaryLink
               href="#"
               title="Book Now"
-              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base"
+              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent hover:border hover:border-white transition duration-500 ease-in-out transform"
             />
             <PrimaryLink
               href="#"
               title="About us"
-              style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base"
+              style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white"
             />
           </div>
         </div>

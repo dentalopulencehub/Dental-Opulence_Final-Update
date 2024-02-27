@@ -87,7 +87,7 @@ const Navbar = () => {
           ))}
         </ul>
         <PrimaryLink
-          href="#"
+          href="/contact"
           title="Book Now"
           style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs ml-10"
         />

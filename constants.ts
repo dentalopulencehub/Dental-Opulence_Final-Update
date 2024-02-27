@@ -3,6 +3,7 @@ import {
   HomeOurServicesType,
   TestimonialType,
   FaqType,
+  AboutAwardType
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -51,14 +52,24 @@ import teeth_whitening_service_image from "./assets/images/teeth-whitening-servi
 import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
 import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
+
+
 import dentures_services_image from "./assets/images/dentures-services-image.svg";
+import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg"
 import extraction_services_image from "./assets/images/extraction-services-image.svg";
+import extraction_sevices_image_dark from "./assets/images/extraction-services-image-dark.svg"
 import crown_veneers_services_image from "./assets/images/crowns-veeners-services-image.svg";
+import crown_veneers_services_image_dark from "./assets/images/crowns-veeners-services-image-dark.svg"
 import hygienist_services_image from "./assets/images/hygienist-services-image.svg";
+import hygienist_services_image_dark from "./assets/images/hygienist-services-image-dark.svg"
 import root_canal_services_image from "./assets/images/root-canal-services-image.svg";
+import root_canal_services_image_dark from "./assets/images/root-canal-services-image-dark.svg"
 import bridges_services_image from "./assets/images/birdges-services-image.svg";
+import bridges_services_image_dark from "./assets/images/birdges-services-image-dark.svg"
 import white_fillings_services_image from "./assets/images/white-fillings-services-image.svg";
+import white_fillings_services_image_dark from "./assets/images/white-fillings-services-image-dark.svg"
 import examination_services_image from "./assets/images/examination-services-image.svg";
+import examination_services_image_dark from "./assets/images/examination-services-image-dark.svg"
 
 import increase_confidence_icon from "./assets/images/increase-confidence-icon.svg";
 import unleash_charisma_icon from "./assets/images/unleash-charisma-icon.svg";
@@ -89,6 +100,12 @@ import people_img4 from "./assets/images/people-img4.svg";
 import people_img5 from "./assets/images/people-img5.svg";
 import people_img6 from "./assets/images/people-img6.svg";
 
+
+import about_dentist_image from "./assets/images/about-dentist-img.svg"
+import about_award_image from "./assets/images/about-award-image.svg"
+import about_review_image from "./assets/images/about-reviews-img.svg"
+
+
 export const navlinks = [
   {
     href: "/",
@@ -97,10 +114,6 @@ export const navlinks = [
   {
     href: "/about",
     label: "About us",
-  },
-  {
-    href: "/contact",
-    label: "Contact",
   },
   {
     href: "#",
@@ -268,48 +281,56 @@ export const our_services: HomeOurServicesType[] = [
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
     image: dentures_services_image,
+    image_inverted: dentures_service_image_dark
   },
   {
     title: "Extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
     image: extraction_services_image,
+    image_inverted: extraction_sevices_image_dark
   },
   {
     title: "Crowns / Veneers",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_services_image,
+    image_inverted: crown_veneers_services_image_dark
   },
   {
     title: "Hygienist",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: hygienist_services_image,
+    image_inverted: hygienist_services_image_dark
   },
   {
     title: "Root Canal Treatments",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
     image: root_canal_services_image,
+    image_inverted: root_canal_services_image_dark
   },
   {
     title: "Bridges",
     description:
       "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
     image: bridges_services_image,
+    image_inverted: bridges_services_image_dark
   },
   {
     title: "White Fillings",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: white_fillings_services_image,
+    image_inverted: white_fillings_services_image_dark
   },
   {
     title: "Examination",
     description:
       "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
     image: examination_services_image,
+    image_inverted: examination_services_image_dark
   },
 ];
 
@@ -460,6 +481,59 @@ export const people_slider = [
   people_img3,
   people_img4,
 ];
+
+
+export const about_award_winning: AboutAwardType[] = [
+  {
+    title: '8+',
+    detail: 'EXPERT DENTISTS',
+    image: about_dentist_image
+  },
+  {
+    title: '8+',
+    detail: 'AWARDS',
+    image: about_award_image
+  },
+  {
+    title: '8+',
+    detail: 'REVIEWS',
+    image: about_review_image
+  },
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Glory Form Constants
 // form 1 - how can we help

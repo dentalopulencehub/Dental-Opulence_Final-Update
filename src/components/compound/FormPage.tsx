@@ -32,7 +32,7 @@ import {
   ContactForm,
 } from "./Form";
 import { useState } from "react";
-import arrow_hex_1 from '../../../assets/images/arrow-hex-1.svg'
+import arrow_hex_1 from '../../../assets/images/arrow-left-light-large.svg'
 
 const Page = () => {
   const [visitedSteps, setVisitedSteps] = useState<string[]>([]);
@@ -247,7 +247,7 @@ const Page = () => {
         </section>
         {/* back button */}
         <div
-          className="arrow-main absolute bottom-20 sm:bottom-10 left-5 sm:left-10 border py-6 sm:px-6 sm:py-8 rounded-full"
+          className="arrow-main absolute bottom-10 left-5 sm:left-[80px] border p-[22px] w-[84px] h-[84px] rounded-full"
           data-state="1"
           onClick={handleBackButtonClick}
         >
@@ -256,17 +256,17 @@ const Page = () => {
               <Image
                 src={arrow_hex_1}
                 alt="Arrow icon with hexagon tip"
-                className="arr-1 w-10 h-6 sm:w-[20px] sm:h-[20px] a-btn-1"
-                width={30}
-                height={30}
+                className="arr-1 w-10  a-btn-1"
+                width={40}
+                height={40}
               />
 
               <Image
                 src={arrow_hex_1}
                 alt="Arrow icon with hexagon tip"
-                className="arr-2 w-10 h-6 sm:w-[20px] sm:h-[20px] a-btn-2"
-                width={30}
-                height={30}
+                className="arr-2 w-10  a-btn-2"
+                width={40}
+                height={40}
               />
             </span>
           </div>

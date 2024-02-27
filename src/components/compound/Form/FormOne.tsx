@@ -39,7 +39,7 @@ const FormOne = ({
        
             <div
             key={index}
-              className="contact-bg  btn hover:bg-gray-800 light text-center  cursor-pointer flex items-center gap-2 text-base px-12 xl:py-6 text-white rounded-full relative"
+              className="contact-bg  btn bg-[#4B4B4B] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-base px-12 xl:py-6 text-white rounded-full relative"
               onClick={() => {
                 let gottenForm = getNextForm(index)
                 handleStepChange(gottenForm);

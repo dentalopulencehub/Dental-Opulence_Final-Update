@@ -1,19 +1,12 @@
-import React, { useState, useCallback, useEffect } from "react";
-import Image from "next/image";
-import underline_vector_dark from "../../../assets/images/underline-vector-dark.svg";
-import SecondaryLink from "../atom/SecondaryLink";
-import { home_result_images, testimonial } from "../../../constants";
-import { ResultCard } from "../molecule";
-import useEmblaCarousel from "embla-carousel-react";
-import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
+import { EmblaCarouselType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { TestimonyCard } from "../molecule";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback, useEffect, useState } from "react";
+import { testimonial } from "../../../constants";
 import { DotButton } from "../atom/DotButton";
+import { TestimonyCard } from "../molecule";
 
-
-
-
-const OurResult = () => {
+const TestimonyComp = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -29,7 +22,7 @@ const OurResult = () => {
   const scrollTo = useCallback(
     (index: number) => emblaApi && emblaApi.scrollTo(index),
     [emblaApi]
-  )
+  );
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -43,36 +36,8 @@ const OurResult = () => {
 
   return (
     <div className="bg-[#100E10] sm:px-5 px-2 w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-white">
-        <div className="flex justify-between items-start">
-          <div>
-            <p className="flex flex-col">
-              <span className="text-[#4e4e4e] text-base font-Pangram-Regular">
-                Our Result
-              </span>
-              <Image src={underline_vector_dark} alt="" />
-            </p>
-            <h2 className="mt-4 text-[#100E10] text-[32px] leading-[38px] font-Pangram-Bold xs:w-[412px] w-full">
-              Demand meets excellence at Dental Opulence.
-            </h2>
-          </div>
-
-          <div className="md:block hidden">
-            <SecondaryLink
-              href="#"
-              title="See All"
-              style="border border-[#100E10] flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px]"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-wrap xl:justify-between justify-evenly mt-10">
-          {home_result_images.map((data, index) => (
-            <ResultCard key={index} image={data} />
-          ))}
-        </div>
-
-       {/*  <div className="relative" >
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pb-[80px] bg-white">
+        <div className="relative">
           <div className="embla">
             <div
               className="embla__viewport bg-[#F8F8F8] rounded-xl md:px-10 sm:px-5 px-4 md:py-[56px] py-[30px] mt-20 "
@@ -96,11 +61,10 @@ const OurResult = () => {
               />
             ))}
           </div>
-        </div> */}
-
+        </div>
       </div>
     </div>
   );
 };
 
-export default OurResult;
+export default TestimonyComp;

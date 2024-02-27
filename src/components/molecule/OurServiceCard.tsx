@@ -6,7 +6,12 @@ import bordered_arrow_right from "../../../assets/images/bordered-arrow-right.sv
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
 
-const OurServiceCard = ({ description, image, title }: HomeOurServicesType) => {
+const OurServiceCard = ({
+  description,
+  image,
+  title,
+  image_inverted,
+}: HomeOurServicesType) => {
   const tl: any = useRef(null);
   const [hover, setHover] = useState(false);
 
@@ -28,21 +33,21 @@ const OurServiceCard = ({ description, image, title }: HomeOurServicesType) => {
         gsap.to(card, {
           background: "#100E10",
           ease: "back.in",
-          duration: 0.5,
+          duration: 0.2,
         });
-        gsap.to(title, { color: "white", duration: 0.5, ease: "power3.inOut" });
-        gsap.to(text, { color: "white", duration: 0.5, ease: "power3.inOut" });
+        gsap.to(title, { color: "white", duration: 0.2, ease: "power3.inOut" });
+        gsap.to(text, { color: "white", duration: 0.2, ease: "power3.inOut" });
         gsap.to(arrow_right, {
           left: 0,
           opacity: 1,
-          duration: 0.5,
-          delay: 0.3,
+          duration: 0.2,
+          delay: 0.1,
           ease: "power3.inOut",
         });
         gsap.to(bordered_arrow_right, {
           left: 20,
           opacity: 0,
-          duration: 0.5,
+          duration: 0.2,
           ease: "power3.inOut",
         });
       });
@@ -52,7 +57,7 @@ const OurServiceCard = ({ description, image, title }: HomeOurServicesType) => {
         gsap.to(title, { color: "#100E10" });
         gsap.to(text, { color: "#4e4e4e" });
         gsap.to(arrow_right, { left: -16, opacity: 0 });
-        gsap.to(bordered_arrow_right, { left: 0, opacity: 1, delay: 0.3 });
+        gsap.to(bordered_arrow_right, { left: 0, opacity: 1, delay: 0.1 });
       });
     });
   }, []);
@@ -63,7 +68,7 @@ const OurServiceCard = ({ description, image, title }: HomeOurServicesType) => {
       onMouseLeave={() => setHover(false)}
       className="px-4 py-[26px] flex gap-4 items-center border border-[#f4f4f4] rounded-xl max-w-[566px] service-card"
     >
-      <Image src={image} alt="" />
+      <Image src={hover ? image_inverted : image} alt="" />
       <div>
         <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>
         <p className="text-xs text-[#4e4e4e] font-Pangram-Regular mt-1">

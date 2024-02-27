@@ -23,6 +23,7 @@ export enum REDUCERS {
     title: string;
     description: string;
     image: any;
+    image_inverted?: any;
   }
   
   
@@ -36,6 +37,14 @@ export type FaqType = {
   question: string;
   answer: string;
 }
+
+
+export type AboutAwardType = {
+  title: string;
+  detail: string;
+  image: any
+}
+
 
 export  interface FormProps {
   // stepThree: HelpSelectItem[];
