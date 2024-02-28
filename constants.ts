@@ -3,11 +3,11 @@ import {
   HomeOurServicesType,
   TestimonialType,
   FaqType,
-  AboutAwardType
+  AboutAwardType,
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
-import bridge_link_icon_light from "./assets/images/bridge-link-icon-light.svg"
+import bridge_link_icon_light from "./assets/images/bridge-link-icon-light.svg";
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
 import crown_link_icon_light from "./assets/images/crown-link-icon-light.svg";
 import dentures_link_icon from "./assets/images/dentures-link-icon.svg";
@@ -54,23 +54,33 @@ import invisalign_service_image from "./assets/images/invisalign-service-image.s
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
 import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
 
-
 import dentures_services_image from "./assets/images/dentures-services-image.svg";
-import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg"
+import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg";
 import extraction_services_image from "./assets/images/extraction-services-image.svg";
-import extraction_sevices_image_dark from "./assets/images/extraction-services-image-dark.svg"
+import extraction_sevices_image_dark from "./assets/images/extraction-services-image-dark.svg";
 import crown_veneers_services_image from "./assets/images/crowns-veeners-services-image.svg";
-import crown_veneers_services_image_dark from "./assets/images/crowns-veeners-services-image-dark.svg"
+import crown_veneers_services_image_dark from "./assets/images/crowns-veeners-services-image-dark.svg";
 import hygienist_services_image from "./assets/images/hygienist-services-image.svg";
-import hygienist_services_image_dark from "./assets/images/hygienist-services-image-dark.svg"
+import hygienist_services_image_dark from "./assets/images/hygienist-services-image-dark.svg";
 import root_canal_services_image from "./assets/images/root-canal-services-image.svg";
-import root_canal_services_image_dark from "./assets/images/root-canal-services-image-dark.svg"
+import root_canal_services_image_dark from "./assets/images/root-canal-services-image-dark.svg";
 import bridges_services_image from "./assets/images/birdges-services-image.svg";
-import bridges_services_image_dark from "./assets/images/birdges-services-image-dark.svg"
+import bridges_services_image_dark from "./assets/images/birdges-services-image-dark.svg";
 import white_fillings_services_image from "./assets/images/white-fillings-services-image.svg";
-import white_fillings_services_image_dark from "./assets/images/white-fillings-services-image-dark.svg"
+import white_fillings_services_image_dark from "./assets/images/white-fillings-services-image-dark.svg";
 import examination_services_image from "./assets/images/examination-services-image.svg";
-import examination_services_image_dark from "./assets/images/examination-services-image-dark.svg"
+import examination_services_image_dark from "./assets/images/examination-services-image-dark.svg";
+
+import invisalign_service_icon from "./assets/images/invisalign-services-image.svg"
+import fixed_retainer_service_icon from "./assets/images/fixed-retainers-service-icon.svg"
+import teeth_whitening_service_icon from "./assets/images/teeth-whitening-service-icon.svg"
+import vivera_retainers_service_icon from "./assets/images/vivera-retainers-service-icon.svg"
+import crown_veneers_service_icon from "./assets/images/crown-veneers-service-icon.svg"
+import composite_veneers_service_icon from "./assets/images/composite-veneer-service-icon.svg"
+import composite_bonding_service_icon from "./assets/images/composite-bonding-service-icon.svg"
+import routine_examination_service_icon from "./assets/images/routine-examination-service-icon.svg"
+import internal_tooth_whitening_service_icon from "./assets/images/internal-tooth-whitening-service-icon.svg"
+import composite_edge_bonding_service_icon from "./assets/images/composite-edge-bonding-service-icon.svg"
 
 import increase_confidence_icon from "./assets/images/increase-confidence-icon.svg";
 import unleash_charisma_icon from "./assets/images/unleash-charisma-icon.svg";
@@ -100,28 +110,34 @@ import people_img3 from "./assets/images/people-img3.svg";
 import people_img4 from "./assets/images/people-img4.svg";
 import people_img5 from "./assets/images/people-img5.svg";
 import people_img6 from "./assets/images/people-img6.svg";
-import people_img7 from "./assets/images/people-img7.svg"
-import people_img8 from "./assets/images/people-img8.svg"
-import people_img9 from "./assets/images/people-img9.svg"
-import people_img10 from "./assets/images/people-img10.svg"
-import people_img11 from "./assets/images/people-img11.svg"
-import people_img12 from "./assets/images/people-img12.svg"
-import people_img13 from "./assets/images/people-img13.svg"
-import people_img14 from "./assets/images/people-img14.svg"
-import people_img15 from "./assets/images/people-img15.svg"
-import people_img16 from "./assets/images/people-img16.svg"
-import people_img17 from "./assets/images/people-img17.svg"
-import people_img18 from "./assets/images/people-img18.svg"
-import people_img19 from "./assets/images/people-img19.svg"
-import people_img20 from "./assets/images/people-img20.svg"
-import people_img21 from "./assets/images/people-img21.svg"
+import people_img7 from "./assets/images/people-img7.svg";
+import people_img8 from "./assets/images/people-img8.svg";
+import people_img9 from "./assets/images/people-img9.svg";
+import people_img10 from "./assets/images/people-img10.svg";
+import people_img11 from "./assets/images/people-img11.svg";
+import people_img12 from "./assets/images/people-img12.svg";
+import people_img13 from "./assets/images/people-img13.svg";
+import people_img14 from "./assets/images/people-img14.svg";
+import people_img15 from "./assets/images/people-img15.svg";
+import people_img16 from "./assets/images/people-img16.svg";
+import people_img17 from "./assets/images/people-img17.svg";
+import people_img18 from "./assets/images/people-img18.svg";
+import people_img19 from "./assets/images/people-img19.svg";
+import people_img20 from "./assets/images/people-img20.svg";
+import people_img21 from "./assets/images/people-img21.svg";
+import people_img22 from "./assets/images/people-img22.svg";
+import people_img23 from "./assets/images/people-img23.svg";
+import people_img24 from "./assets/images/people-img24.svg";
+import people_img25 from "./assets/images/people-img25.svg";
+import people_img26 from "./assets/images/people-img26.svg";
+import people_img27 from "./assets/images/people-img27.svg";
+import people_img28 from "./assets/images/people-img28.svg";
+import people_img29 from "./assets/images/people-img29.svg";
+import people_img30 from "./assets/images/people-img30.svg";
 
-
-
-import about_dentist_image from "./assets/images/about-dentist-img.svg"
-import about_award_image from "./assets/images/about-award-image.svg"
-import about_review_image from "./assets/images/about-reviews-img.svg"
-
+import about_dentist_image from "./assets/images/about-dentist-img.svg";
+import about_award_image from "./assets/images/about-award-image.svg";
+import about_review_image from "./assets/images/about-reviews-img.svg";
 
 export const navlinks = [
   {
@@ -298,58 +314,111 @@ export const our_services: HomeOurServicesType[] = [
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
     image: dentures_services_image,
-    image_inverted: dentures_service_image_dark
+    image_inverted: dentures_service_image_dark,
   },
   {
     title: "Extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
     image: extraction_services_image,
-    image_inverted: extraction_sevices_image_dark
+    image_inverted: extraction_sevices_image_dark,
   },
   {
     title: "Crowns / Veneers",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_services_image,
-    image_inverted: crown_veneers_services_image_dark
+    image_inverted: crown_veneers_services_image_dark,
   },
   {
     title: "Hygienist",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: hygienist_services_image,
-    image_inverted: hygienist_services_image_dark
+    image_inverted: hygienist_services_image_dark,
   },
   {
     title: "Root Canal Treatments",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
     image: root_canal_services_image,
-    image_inverted: root_canal_services_image_dark
+    image_inverted: root_canal_services_image_dark,
   },
   {
     title: "Bridges",
     description:
       "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
     image: bridges_services_image,
-    image_inverted: bridges_services_image_dark
+    image_inverted: bridges_services_image_dark,
   },
   {
     title: "White Fillings",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: white_fillings_services_image,
-    image_inverted: white_fillings_services_image_dark
+    image_inverted: white_fillings_services_image_dark,
   },
   {
     title: "Examination",
     description:
       "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
     image: examination_services_image,
-    image_inverted: examination_services_image_dark
+    image_inverted: examination_services_image_dark,
   },
 ];
+
+ export const our_services2: HomeOurServicesType[] = [
+  {
+    title: 'Invisalign',
+    description: 'Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile',
+    image: invisalign_service_icon
+  },
+  {
+    title: 'Composite Veneers',
+    description: 'Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.',
+    image: composite_veneers_service_icon
+  },
+  {
+    title: 'Fixed Retainers',
+    description: 'Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth\'s Journey.',
+    image: fixed_retainer_service_icon
+  },
+  {
+    title: 'Composite  Bonding',
+    description: 'Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.',
+    image: composite_bonding_service_icon
+  },
+  {
+    title: 'Teeth Whitening',
+    description: 'Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.',
+    image: teeth_whitening_service_icon
+  },
+  {
+    title: 'Routine Examination',
+    description: 'Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!',
+    image: routine_examination_service_icon
+  },
+  {
+    title: 'Vivera Retainers',
+    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
+    image: vivera_retainers_service_icon
+  },
+  {
+    title: 'Internal Tooth Whitening',
+    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
+    image: internal_tooth_whitening_service_icon
+  },
+  {
+    title: 'Crowns/Veneers',
+    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
+    image: crown_veneers_service_icon
+  },
+  {
+    title: 'Composite Edge Bonding',
+    description: 'Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.',
+    image: composite_edge_bonding_service_icon
+  },
+] 
 
 export const change_life: HomeOurServicesType[] = [
   {
@@ -498,65 +567,43 @@ export const people_slider = [
   people_img14,
   people_img15,
   people_img16,
+
   people_img17,
+  people_img3,
   people_img18,
   people_img19,
-  people_img20,
-  people_img21
-];
+  people_img3,
 
+  people_img20,
+  people_img21,
+  people_img22,
+  people_img23,
+  people_img24,
+  people_img25,
+  people_img26,
+  people_img27,
+  people_img28,
+  people_img29,
+  people_img30,
+];
 
 export const about_award_winning: AboutAwardType[] = [
   {
-    title: '8+',
-    detail: 'EXPERT DENTISTS',
-    image: about_dentist_image
+    title: "8+",
+    detail: "EXPERT DENTISTS",
+    image: about_dentist_image,
   },
   {
-    title: '8+',
-    detail: 'AWARDS',
-    image: about_award_image
+    title: "8+",
+    detail: "AWARDS",
+    image: about_award_image,
   },
   {
-    title: '8+',
-    detail: 'REVIEWS',
-    image: about_review_image
+    title: "8+",
+    detail: "REVIEWS",
+    image: about_review_image,
   },
-]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+];
 
 // Glory Form Constants
 // form 1 - how can we help

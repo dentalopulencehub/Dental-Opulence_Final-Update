@@ -21,7 +21,7 @@ const HomeHero = () => {
             <PrimaryLink
               href="#"
               title="Book Now"
-              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent hover:border hover:border-white transition duration-500 ease-in-out transform"
+              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white"
             />
             <PrimaryLink
               href="#"

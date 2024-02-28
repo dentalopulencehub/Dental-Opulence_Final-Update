@@ -53,7 +53,7 @@ const OurServiceCard = ({
       });
 
       card.addEventListener("mouseleave", () => {
-        gsap.to(card, { background: "transparent" });
+        gsap.to(card, { background: "white" });
         gsap.to(title, { color: "#100E10" });
         gsap.to(text, { color: "#4e4e4e" });
         gsap.to(arrow_right, { left: -16, opacity: 0 });
@@ -66,7 +66,7 @@ const OurServiceCard = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="px-4 py-[26px] flex gap-4 items-center border border-[#f4f4f4] rounded-xl max-w-[566px] service-card"
+      className="px-4 py-[26px] flex gap-4 items-center bg-white border border-[#f4f4f4] rounded-xl max-w-[566px] service-card"
     >
       <Image src={hover ? image_inverted : image} alt="" />
       <div>

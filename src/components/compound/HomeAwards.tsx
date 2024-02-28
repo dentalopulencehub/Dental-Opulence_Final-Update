@@ -7,7 +7,7 @@ const HomeAwards = () => {
   return (
     <div className="bg-white sm:px-5 px-2 w-full">
       <div className="bg-[#100E10] w-full">
-        <Marquee className="flex items-center justify-center" speed={100} >
+        <Marquee className="" speed={100} >
           {home_awards_images.map((award, index) => (
             <Image key={index} src={award} alt="" className="ml-[180px] w-[120px]" />
           ))}

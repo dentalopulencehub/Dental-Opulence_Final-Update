@@ -14,6 +14,7 @@ import { DotButton } from "../atom/DotButton";
 
 
 const OurResult = () => {
+  const [linkHover, setLinkHover] = useState(false);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -59,9 +60,12 @@ const OurResult = () => {
 
           <div className="md:block hidden">
             <SecondaryLink
+
               href="#"
               title="See All"
-              style="border border-[#100E10] flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px]"
+              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px]"
+              hovered={linkHover}
+              setHovered={setLinkHover}
             />
           </div>
         </div>
