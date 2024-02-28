@@ -43,7 +43,7 @@ const Footer = () => {
     <div className="bg-white sm:px-5 px-2 w-full sm:pb-5 pb-2">
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
         <div className="flex xl:flex-row flex-col gap-[115px] items-start">
-          <Image src={footer_logo} alt="" />
+          <Image src={footer_logo} alt=""  />
           <div className="w-full">
             <div className="flex md:flex-row flex-col md:gap-0 gap-[40px] justify-between">
               <div>

@@ -79,7 +79,7 @@ const HomeOurServices = () => {
               transition={{
                 duration: 0.1,
               }} */
-              className="py-[26px] px-6 bg-[#100E10] rounded-full flex items-center justify-center w-fit"
+              className="py-[26px] border px-6 bg-[#100E10] rounded-full flex items-center justify-center w-fit"
             >
               <Image
                 src={isHovered ? tooth_image_dark2 : tooth_image_light}

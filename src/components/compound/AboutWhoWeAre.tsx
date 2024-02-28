@@ -1,4 +1,6 @@
-import React, { useRef } from "react";
+"use client";
+
+import React, { useRef, useLayoutEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import home_hero2_ill from "../../../assets/images/home-hero2-ill.svg";
@@ -6,24 +8,11 @@ import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
 import PrimaryLink from "../atom/PrimaryLink";
-import { gsap, ScrollTrigger } from "../../../lib/gsap";
-gsap.registerPlugin(ScrollTrigger);
+//import { gsap, ScrollTrigger } from "../../../lib/gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const AboutWhoWeAre = () => {
-  const pinnedElementRef = useRef(null);
-  const endTriggerRef = useRef(null);
-
-  useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: pinnedElementRef.current,
-      start: "top top+=15%",
-      /*  endTrigger: endTriggerRef.current,  */
-      end: "bottom top+=58%",
-      pin: true,
-      pinSpacing: false,
-    });
-  }, []);
-
   let value = `Our vision at Dental Opulence is to revolutionize the dental industry by providing unparalleled service and creating an environment of opulence and comfort for our patients. We strive to exceed expectations, delivering exceptional results and ensuring the utmost satisfaction of every individual who walks through our doors.`;
 
   let value2 = `Our mission is to elevate the dental experience by combining state-of-the-art technology with personalized care, tailored to the unique needs of each patient. We are dedicated to promoting oral health and enhancing smiles, empowering our patients to achieve optimal dental wellness and confidence. At Dental Opulence, we are committed to creating a luxurious and transformative journey towards a brighter, healthier smile.`;
@@ -51,11 +40,8 @@ const AboutWhoWeAre = () => {
   return (
     <div className="bg-white sm:px-5 px-2 w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        <div
-          className="xl:max-w-[400px] md:w-[70%] w-[90%] xl:mx-0 mx-auto sticky top-1"
-          ref={pinnedElementRef}
-        >
-          <p className="text-white text-[32px] w-fit xl:mx-0 mx-auto flex items-center justify-center bg-[#2E2E2E] rounded-[40px] py-4 px-10 h-fit ">
+        <div className="elem-pin-about xl:max-w-[400px] md:w-[70%] h-fit w-[90%] xl:mx-0 mx-auto ">
+          <p className=" text-white text-[32px] w-fit xl:mx-0 mx-auto flex items-center justify-center bg-[#2E2E2E] rounded-[40px] py-4 px-10 h-fit ">
             Who we are
           </p>
         </div>
@@ -85,7 +71,7 @@ const AboutWhoWeAre = () => {
             })}
           </h4>
 
-          <p className="flex flex-col items-center mt-10" ref={endTriggerRef}>
+          <p className="flex flex-col items-center mt-10">
             <span className="text-white font-Pangram-Regular">Our Mission</span>
             <Image src={underline_vector} alt="" />
           </p>

@@ -10,13 +10,13 @@ const AboutHero = () => {
   const [linkHover, setLinkHover] = useState(false);
   return (
     <div className="bg-white sm:pt-5 sm:px-5 px-2 pt-2">
-      <div className="bg-[#100E10] rounded-t-[24px] xl:pt-[120px] pt-[220px] xl:gap-0 gap-[40px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px] xl:pr-[10px]">
+      <div className="bg-[#100E10] rounded-t-[24px] xl:pt-[120px] pt-[220px] h-full min-h-screen xl:gap-0 gap-[40px] w-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px] xl:pr-[10px]">
         <div className="flex flex-col xl:items-start items-center">
           <p className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
           </p>
-          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center sm:leading-[76px] leading-[56px] text-white">
+          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center text-white">
             Discover Your Brightest Smile with Dental Opulence
           </h1>
           <CustomLink
