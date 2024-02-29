@@ -4,6 +4,8 @@ import {
   TestimonialType,
   FaqType,
   AboutAwardType,
+  CaseStudyTypeProp,
+  casesType,
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -71,16 +73,16 @@ import white_fillings_services_image_dark from "./assets/images/white-fillings-s
 import examination_services_image from "./assets/images/examination-services-image.svg";
 import examination_services_image_dark from "./assets/images/examination-services-image-dark.svg";
 
-import invisalign_service_icon from "./assets/images/invisalign-services-image.svg"
-import fixed_retainer_service_icon from "./assets/images/fixed-retainers-service-icon.svg"
-import teeth_whitening_service_icon from "./assets/images/teeth-whitening-service-icon.svg"
-import vivera_retainers_service_icon from "./assets/images/vivera-retainers-service-icon.svg"
-import crown_veneers_service_icon from "./assets/images/crown-veneers-service-icon.svg"
-import composite_veneers_service_icon from "./assets/images/composite-veneer-service-icon.svg"
-import composite_bonding_service_icon from "./assets/images/composite-bonding-service-icon.svg"
-import routine_examination_service_icon from "./assets/images/routine-examination-service-icon.svg"
-import internal_tooth_whitening_service_icon from "./assets/images/internal-tooth-whitening-service-icon.svg"
-import composite_edge_bonding_service_icon from "./assets/images/composite-edge-bonding-service-icon.svg"
+import invisalign_service_icon from "./assets/images/invisalign-services-image.svg";
+import fixed_retainer_service_icon from "./assets/images/fixed-retainers-service-icon.svg";
+import teeth_whitening_service_icon from "./assets/images/teeth-whitening-service-icon.svg";
+import vivera_retainers_service_icon from "./assets/images/vivera-retainers-service-icon.svg";
+import crown_veneers_service_icon from "./assets/images/crown-veneers-service-icon.svg";
+import composite_veneers_service_icon from "./assets/images/composite-veneer-service-icon.svg";
+import composite_bonding_service_icon from "./assets/images/composite-bonding-service-icon.svg";
+import routine_examination_service_icon from "./assets/images/routine-examination-service-icon.svg";
+import internal_tooth_whitening_service_icon from "./assets/images/internal-tooth-whitening-service-icon.svg";
+import composite_edge_bonding_service_icon from "./assets/images/composite-edge-bonding-service-icon.svg";
 
 import increase_confidence_icon from "./assets/images/increase-confidence-icon.svg";
 import unleash_charisma_icon from "./assets/images/unleash-charisma-icon.svg";
@@ -138,6 +140,178 @@ import people_img30 from "./assets/images/people-img30.svg";
 import about_dentist_image from "./assets/images/about-dentist-img.svg";
 import about_award_image from "./assets/images/about-award-image.svg";
 import about_review_image from "./assets/images/about-reviews-img.svg";
+
+import cases_all_img1 from "./assets/images/cases-all-img1.svg";
+import cases_all_img2 from "./assets/images/cases-all-img2.svg";
+import cases_all_img3 from "./assets/images/cases-all-img3.svg";
+import cases_all_img4 from "./assets/images/cases-all-img4.svg";
+import cases_all_img5 from "./assets/images/cases-all-img5.svg";
+import cases_all_img6 from "./assets/images/cases-all-img6.svg";
+import cases_all_img7 from "./assets/images/cases-all-img7.svg";
+import cases_all_img8 from "./assets/images/cases-all-img8.svg";
+import cases_all_img9 from "./assets/images/cases-all-img9.svg";
+import cases_all_img10 from "./assets/images/cases-all-img10.svg";
+import cases_all_img11 from "./assets/images/cases-all-img11.svg";
+import cases_all_img12 from "./assets/images/cases-all-img12.svg";
+import cases_all_img13 from "./assets/images/cases-all-img13.svg";
+import cases_all_img14 from "./assets/images/cases-all-img14.svg";
+import cases_all_img15 from "./assets/images/cases-all-img15.svg";
+import cases_all_img16 from "./assets/images/cases-all-img16.svg";
+import cases_composite_edge_bonding_img1 from "./assets/images/case-composite-edge-bonding-img1.svg";
+import cases_composite_edge_bonding_img2 from "./assets/images/case-composite-edge-bonding-img2.svg";
+import cases_composite_edge_bonding_img3 from "./assets/images/case-composite-edge-bonding-img3.svg";
+import cases_composite_edge_bonding_img4 from "./assets/images/case-composite-edge-bonding-img4.svg";
+import cases_composite_edge_bonding_img5 from "./assets/images/case-composite-edge-bonding-img5.svg";
+import cases_composite_edge_bonding_img6 from "./assets/images/case-composite-edge-bonding-img6.svg";
+import cases_composite_edge_bonding_img7 from "./assets/images/case-composite-edge-bonding-img7.svg";
+import cases_composite_edge_bonding_img8 from "./assets/images/case-composite-edge-bonding-img8.svg";
+import cases_composite_edge_bonding_img9 from "./assets/images/case-composite-edge-bonding-img9.svg";
+import cases_combination_treatment_img1 from "./assets/images/case-combination-treatment-img1.svg";
+import cases_combination_treatment_img2 from "./assets/images/case-combination-treatment-img2.svg";
+import cases_combination_treatment_img3 from "./assets/images/case-combination-treatment-img3.svg";
+import cases_combination_treatment_img4 from "./assets/images/case-combination-treatment-img4.svg";
+import cases_combination_treatment_img5 from "./assets/images/case-combination-treatment-img5.svg";
+import cases_combination_treatment_img6 from "./assets/images/case-combination-treatment-img6.svg";
+import cases_combination_treatment_img7 from "./assets/images/case-combination-treatment-img7.svg";
+import cases_combination_treatment_img8 from "./assets/images/case-combination-treatment-img8.svg";
+import cases_combination_treatment_img9 from "./assets/images/case-combination-treatment-img9.svg";
+import cases_combination_treatment_img10 from "./assets/images/case-combination-treatment-img10.svg";
+import cases_combination_treatment_img11 from "./assets/images/case-combination-treatment-img11.svg";
+import cases_invisalign_teeth_straightening_img1 from "./assets/images/cases-invisalign-teeth-straightening-img1.svg";
+import cases_invisalign_teeth_straightening_img2 from "./assets/images/cases-invisalign-teeth-straightening-img2.svg";
+import cases_invisalign_teeth_straightening_img3 from "./assets/images/cases-invisalign-teeth-straightening-img3.svg";
+import cases_invisalign_teeth_straightening_img4 from "./assets/images/cases-invisalign-teeth-straightening-img4.svg";
+import cases_invisalign_teeth_straightening_img5 from "./assets/images/cases-invisalign-teeth-straightening-img5.svg";
+import cases_invisalign_teeth_straightening_img6 from "./assets/images/cases-invisalign-teeth-straightening-img6.svg";
+import cases_composite_veneers_img1 from "./assets/images/cases-composite-veneers-img1.svg";
+import cases_composite_veneers_img2 from "./assets/images/cases-composite-veneers-img2.svg";
+import cases_composite_veneers_img3 from "./assets/images/cases-composite-veneers-img3.svg";
+import cases_composite_veneers_img4 from "./assets/images/cases-composite-veneers-img4.svg";
+import cases_composite_veneers_img5 from "./assets/images/cases-composite-veneers-img5.svg";
+import cases_composite_veneers_img6 from "./assets/images/cases-composite-veneers-img6.svg";
+import cases_composite_veneers_img7 from "./assets/images/cases-composite-veneers-img7.svg";
+import cases_composite_veneers_img8 from "./assets/images/cases-composite-veneers-img8.svg";
+import cases_composite_veneers_img9 from "./assets/images/cases-composite-veneers-img9.svg";
+import cases_composite_veneers_img10 from "./assets/images/cases-composite-veneers-img10.svg";
+import cases_composite_veneers_img11 from "./assets/images/cases-composite-veneers-img11.svg";
+import cases_composite_veneers_img12 from "./assets/images/cases-composite-veneers-img12.svg";
+import cases_composite_veneers_img13 from "./assets/images/cases-composite-veneers-img13.svg";
+import cases_composite_veneers_img14 from "./assets/images/cases-composite-veneers-img14.svg";
+import cases_porcelain_veneers_img1 from "./assets/images/cases-porcelain-veneers-img1.svg";
+import cases_white_fillings_img1 from "./assets/images/cases-white-filings-img1.svg";
+import cases_white_fillings_img2 from "./assets/images/cases-white-filings-img2.svg";
+import cases_white_fillings_img3 from "./assets/images/cases-white-filings-img3.svg";
+import cases_others_img1 from "./assets/images/cases-others-img1.svg";
+import cases_others_img2 from "./assets/images/cases-others-img2.svg";
+import cases_others_img3 from "./assets/images/cases-others-img3.svg";
+
+export const case_studies: CaseStudyTypeProp[] = [
+  {
+    type: "all",
+    name: 'All',
+    images: [
+      cases_all_img1,
+      cases_all_img2,
+      cases_all_img3,
+      cases_all_img4,
+      cases_all_img5,
+      cases_all_img6,
+      cases_all_img7,
+      cases_all_img8,
+      cases_all_img9,
+      cases_all_img10,
+      cases_all_img11,
+      cases_all_img12,
+      cases_all_img13,
+      cases_all_img14,
+      cases_all_img15,
+      cases_all_img16,
+    ],
+  },
+  {
+    type: "composite_edge_bonding",
+    name: 'Composite Edge Bonding',
+    images: [
+      cases_composite_edge_bonding_img1,
+      cases_composite_edge_bonding_img2,
+      cases_composite_edge_bonding_img3,
+      cases_composite_edge_bonding_img4,
+      cases_composite_edge_bonding_img5,
+      cases_composite_edge_bonding_img6,
+      cases_composite_edge_bonding_img7,
+      cases_composite_edge_bonding_img8,
+      cases_composite_edge_bonding_img9,
+    ],
+  },
+  {
+    type: "combination_treatments",
+    name: 'Combination treatments',
+    images: [
+      cases_combination_treatment_img1,
+      cases_combination_treatment_img2,
+      cases_combination_treatment_img3,
+      cases_combination_treatment_img4,
+      cases_combination_treatment_img5,
+      cases_combination_treatment_img6,
+      cases_combination_treatment_img7,
+      cases_combination_treatment_img8,
+      cases_combination_treatment_img9,
+      cases_combination_treatment_img10,
+      cases_combination_treatment_img11,
+    ],
+  },
+  {
+    type: "invisalign_teeth_straightening",
+    name: 'Invisalign teeth straightening',
+    images: [
+      cases_invisalign_teeth_straightening_img1,
+      cases_invisalign_teeth_straightening_img2,
+      cases_invisalign_teeth_straightening_img3,
+      cases_invisalign_teeth_straightening_img4,
+      cases_invisalign_teeth_straightening_img5,
+      cases_invisalign_teeth_straightening_img6,
+    ],
+  },
+  {
+    type: "composite_veneers",
+    name: 'Composite Veneers',
+    images: [
+      cases_composite_veneers_img1,
+      cases_composite_veneers_img2,
+      cases_composite_veneers_img3,
+      cases_composite_veneers_img4,
+      cases_composite_veneers_img5,
+      cases_composite_veneers_img6,
+      cases_composite_veneers_img7,
+      cases_composite_veneers_img8,
+      cases_composite_veneers_img9,
+      cases_composite_veneers_img10,
+      cases_composite_veneers_img11,
+      cases_composite_veneers_img12,
+      cases_composite_veneers_img13,
+      cases_composite_veneers_img14,
+    ],
+  },
+  {
+    type: "porcelain_veneers",
+    name: 'Porcelain Veneers',
+    images: [cases_porcelain_veneers_img1],
+  },
+  {
+    type: "white_fillings",
+    name: 'White fillings',
+    images: [
+      cases_white_fillings_img1,
+      cases_white_fillings_img2,
+      cases_white_fillings_img3,
+    ],
+  },
+  {
+    type: "others",
+    name: 'Others',
+    images: [cases_others_img1, cases_others_img2, cases_others_img3],
+  },
+];
 
 export const navlinks = [
   {
@@ -367,58 +541,68 @@ export const our_services: HomeOurServicesType[] = [
   },
 ];
 
- export const our_services2: HomeOurServicesType[] = [
+export const our_services2: HomeOurServicesType[] = [
   {
-    title: 'Invisalign',
-    description: 'Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile',
-    image: invisalign_service_icon
+    title: "Invisalign",
+    description:
+      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
+    image: invisalign_service_icon,
   },
   {
-    title: 'Composite Veneers',
-    description: 'Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.',
-    image: composite_veneers_service_icon
+    title: "Composite Veneers",
+    description:
+      "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
+    image: composite_veneers_service_icon,
   },
   {
-    title: 'Fixed Retainers',
-    description: 'Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth\'s Journey.',
-    image: fixed_retainer_service_icon
+    title: "Fixed Retainers",
+    description:
+      "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
+    image: fixed_retainer_service_icon,
   },
   {
-    title: 'Composite  Bonding',
-    description: 'Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.',
-    image: composite_bonding_service_icon
+    title: "Composite  Bonding",
+    description:
+      "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
+    image: composite_bonding_service_icon,
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.',
-    image: teeth_whitening_service_icon
+    title: "Teeth Whitening",
+    description:
+      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+    image: teeth_whitening_service_icon,
   },
   {
-    title: 'Routine Examination',
-    description: 'Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!',
-    image: routine_examination_service_icon
+    title: "Routine Examination",
+    description:
+      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+    image: routine_examination_service_icon,
   },
   {
-    title: 'Vivera Retainers',
-    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
-    image: vivera_retainers_service_icon
+    title: "Vivera Retainers",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+    image: vivera_retainers_service_icon,
   },
   {
-    title: 'Internal Tooth Whitening',
-    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
-    image: internal_tooth_whitening_service_icon
+    title: "Internal Tooth Whitening",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+    image: internal_tooth_whitening_service_icon,
   },
   {
-    title: 'Crowns/Veneers',
-    description: 'Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.',
-    image: crown_veneers_service_icon
+    title: "Crowns/Veneers",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+    image: crown_veneers_service_icon,
   },
   {
-    title: 'Composite Edge Bonding',
-    description: 'Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.',
-    image: composite_edge_bonding_service_icon
+    title: "Composite Edge Bonding",
+    description:
+      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+    image: composite_edge_bonding_service_icon,
   },
-] 
+];
 
 export const change_life: HomeOurServicesType[] = [
   {

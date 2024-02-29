@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import pen_icon from "../../../../assets/images/pen-icon.svg";
 import { gsap } from "../../../../lib/gsap";
+import { NavigationLoader } from '../../molecule'
 
 interface Props {
   children: React.ReactNode;
@@ -49,6 +50,7 @@ const Index = ({ children }: Props) => {
   return (
     <main>
       {children}
+      
       <div className="fixed w-fit bottom-10 md:right-[100px] right-[50px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">
         <Link href="/contact">
           <Image src={pen_icon} alt="" />

@@ -10,6 +10,13 @@ export default (state: any, action: ActionType) => {
         ...state,
         loading: payload,
       };
+
+    case REDUCERS.SET_SELECTED_CASE:
+      return {
+        ...state,
+        selectedCase: payload,
+      };
+
     default:
       return state;
   }
