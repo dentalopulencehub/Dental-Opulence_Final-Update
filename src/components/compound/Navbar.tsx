@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import nav_logo from "../../../assets/images/nav-logo.svg";
@@ -8,9 +8,14 @@ import Hambuger from "../atom/Hamburger";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
 
+import { GlobalContext } from "../../../context/GlobalContext";
+import { handleSetPathToNavigate } from "../../../context/action";
+
 import { navlinks } from "../../../constants";
 
 const Navbar = () => {
+  const { dispatch } = useContext(GlobalContext);
+
   const [hoverId, setHoverId] = useState<number | null>(null);
 
   useGSAP(() => {
@@ -30,9 +35,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative" >
+    <div className="relative">
       <nav className="fixed w-full mix-blend-difference h-[70px] bg-transparent flex items-center justify-between top-[30px] pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10]">
-        <Link href="/">
+        <div onClick={() => handleSetPathToNavigate(dispatch, "/")}>
           <div className="nav-logo-wrapper">
             <svg
               width="77"
@@ -69,7 +74,7 @@ const Navbar = () => {
               </defs>
             </svg>
           </div>
-        </Link>
+        </div>
       </nav>
       <div className="fixed h-[70px] w-full flex items-center justify-between top-[30px] pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10] xl:left-[20%] lg:left-[15%] md:left-[80%] sm:left-[75%] left-[70%]">
         <div className=" px-[43.5px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
@@ -79,7 +84,10 @@ const Navbar = () => {
                 key={index}
                 className="font-Pangram-Regular link-list dropdown"
               >
-                <Link href={link.href}>
+                <div
+                  onClick={() => handleSetPathToNavigate(dispatch, link.href)}
+                  className="cursor-pointer"
+                >
                   <p className="flex items-center py-6">
                     <span className="dropbtn">{link.label}</span>
                     {link.subLinks && (
@@ -90,16 +98,18 @@ const Navbar = () => {
                       />
                     )}
                   </p>
-                </Link>
+                </div>
                 {link?.subLinks && (
                   <div
                     className={`dropdown-content grid grid-cols-2 max-w-[558px] h-[280px] w-full p-6 bg-[#2E2E2E] text-white font-Pangram-Regular rounded-lg`}
                   >
                     {link.subLinks.map((subLink, index: number) => (
-                      <Link
+                      <div
+                        onClick={() =>
+                          handleSetPathToNavigate(dispatch, subLink.href)
+                        }
                         onMouseOver={() => setHoverId(index)}
                         onMouseOut={() => setHoverId(null)}
-                        href={subLink.href}
                         key={index}
                         className="relative h-fit flex items-center"
                       >
@@ -119,7 +129,7 @@ const Navbar = () => {
                             {subLink.title}
                           </span>
                         </p>
-                      </Link>
+                      </div>
                     ))}
                   </div>
                 )}

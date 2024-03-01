@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import footer_logo from "../../../assets/images/footer-logo.svg";
@@ -12,6 +12,8 @@ import tiktok_icon from "../../../assets/images/tiktok-icon.svg";
 import titktok_icon_dark from "../../../assets/images/tiktok-icon-dark.svg";
 import phone_icon from "../../../assets/images/phone-icon.svg";
 import whatsapp_icon_mini from "../../../assets/images/whatsapp-icon-mini.svg";
+import { handleSetPathToNavigate } from "../../../context/action";
+import { GlobalContext } from "../../../context/GlobalContext";
 
 const hoverLinks = [
   {
@@ -37,13 +39,15 @@ const hoverLinks = [
 ];
 
 const Footer = () => {
+  const { dispatch } = useContext(GlobalContext);
+
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
 
   return (
     <div className="bg-white sm:px-5 px-2 w-full sm:pb-5 pb-2">
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
         <div className="flex xl:flex-row flex-col gap-[115px] items-start">
-          <Image src={footer_logo} alt=""  />
+          <Image src={footer_logo} alt="" />
           <div className="w-full">
             <div className="flex md:flex-row flex-col md:gap-0 gap-[40px] justify-between">
               <div>
@@ -90,38 +94,38 @@ const Footer = () => {
                   <h3 className="text-white font-Pangram-Bold text-2xl">
                     Quick Links
                   </h3>
-                  <Link href="#">
+                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                       Home
                     </p>
-                  </Link>
-                  <Link href="#">
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                       About us
                     </p>
-                  </Link>
-                  <Link href="#">
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                       Contact us
                     </p>
-                  </Link>
+                  </div>
                 </div>
                 <div>
                   <h3 className="text-white font-Pangram-Bold text-2xl">
                     Our Info
                   </h3>
-                  <Link href="#">
+                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={phone_icon} alt="" />
                       <span>0121 272 9229  (Fri-Sat)</span>
                     </p>
-                  </Link>
-                  <Link href="#">
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={whatsapp_icon_mini} alt="" />
                       <span>+447301253447</span>
                     </p>
-                  </Link>
+                  </div>
                 </div>
               </div>
 
@@ -129,97 +133,97 @@ const Footer = () => {
                 <h3 className="text-white font-Pangram-Bold text-2xl">
                   General Treatments
                 </h3>
-                <Link href="#">
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Bridges
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Dentures
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Crowns / Veneers
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Examination
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Extractions
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Hygienist
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     White Fillings
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Root Canal Treatments
                   </p>
-                </Link>
+                </div>
               </div>
 
               <div>
                 <h3 className="text-white font-Pangram-Bold text-2xl">
                   Cosmetic Treatment
                 </h3>
-                <Link href="#">
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Invisalign
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Fixed Retainers
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Teeth Whitening
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Vivera Retainers
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Crowns/Veneers
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Composite Veneers
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Routine Examination
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Internal Tooth Whitening
                   </p>
-                </Link>
-                <Link href="#">
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                   <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
                     Composite Edge Bonding
                   </p>
-                </Link>
+                </div>
               </div>
             </div>
           </div>

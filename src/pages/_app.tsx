@@ -9,8 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ReduxProvider>
       <AOSInit />
-      <NavigationLoader />
+
       <GlobalContextProvider>
+        <NavigationLoader />
         <Component {...pageProps} />
       </GlobalContextProvider>
     </ReduxProvider>

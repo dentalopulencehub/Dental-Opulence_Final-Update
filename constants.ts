@@ -208,7 +208,7 @@ import cases_others_img3 from "./assets/images/cases-others-img3.jpg";
 export const case_studies: CaseStudyTypeProp[] = [
   {
     type: "all",
-    name: 'All',
+    name: "All",
     images: [
       cases_all_img1,
       cases_all_img2,
@@ -230,7 +230,7 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "composite_edge_bonding",
-    name: 'Composite Edge Bonding',
+    name: "Composite Edge Bonding",
     images: [
       cases_composite_edge_bonding_img1,
       cases_composite_edge_bonding_img2,
@@ -245,7 +245,7 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "combination_treatments",
-    name: 'Combination treatments',
+    name: "Combination treatments",
     images: [
       cases_combination_treatment_img1,
       cases_combination_treatment_img2,
@@ -262,7 +262,7 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "invisalign_teeth_straightening",
-    name: 'Invisalign teeth straightening',
+    name: "Invisalign teeth straightening",
     images: [
       cases_invisalign_teeth_straightening_img1,
       cases_invisalign_teeth_straightening_img2,
@@ -274,7 +274,7 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "composite_veneers",
-    name: 'Composite Veneers',
+    name: "Composite Veneers",
     images: [
       cases_composite_veneers_img1,
       cases_composite_veneers_img2,
@@ -294,12 +294,12 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "porcelain_veneers",
-    name: 'Porcelain Veneers',
+    name: "Porcelain Veneers",
     images: [cases_porcelain_veneers_img1],
   },
   {
     type: "white_fillings",
-    name: 'White fillings',
+    name: "White fillings",
     images: [
       cases_white_fillings_img1,
       cases_white_fillings_img2,
@@ -308,7 +308,7 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
   {
     type: "others",
-    name: 'Others',
+    name: "Others",
     images: [cases_others_img1, cases_others_img2, cases_others_img3],
   },
 ];

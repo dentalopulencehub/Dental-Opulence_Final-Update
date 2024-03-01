@@ -19,12 +19,12 @@ const HomeHero = () => {
           </p>
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] xl:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink
-              href="#"
+              href="/contact"
               title="Book Now"
               style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white"
             />
             <PrimaryLink
-              href="#"
+              href="/about"
               title="About us"
               style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white"
             />

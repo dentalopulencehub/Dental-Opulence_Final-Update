@@ -16,16 +16,19 @@ import { gsap, ScrollTrigger } from "../../lib/gsap";
 
 export default function Home() {
   useLayoutEffect(() => {
+    let mm = gsap.matchMedia();
+
     let ctx: any = gsap.context(() => {
-      gsap.to(".elem-pin-about", {
-        scrollTrigger: {
-          trigger: ".elem-pin-about",
-          start: () => `top 14%`,
-          end: () => `+=300`,
-          pin: true,
-          pinSpacing: false,
-         
-        },
+      mm.add("(min-width: 1280px)", () => {
+        gsap.to(".elem-pin-about", {
+          scrollTrigger: {
+            trigger: ".elem-pin-about",
+            start: () => `top 14%`,
+            end: () => `+=300`,
+            pin: true,
+            pinSpacing: false,
+          },
+        });
       });
     });
 

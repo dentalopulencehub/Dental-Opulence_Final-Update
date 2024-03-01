@@ -4,6 +4,7 @@ import Home from "@/pages";
 export enum REDUCERS {
   SET_LOADING = "SET_LOADING",
   SET_SELECTED_CASE = "SET_SELECTED_CASE",
+  SET_PATH_TO_NAVIGATE = "SET_PATH_TO_NAVIGATE",
 }
 
 export type ActionType = {
