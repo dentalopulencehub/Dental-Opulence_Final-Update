@@ -48,7 +48,7 @@ const NavigationLoader = () => {
         .to(
           ".top-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             top: "-50.5%",
             ease: "power4.inOut",
           },
@@ -57,7 +57,7 @@ const NavigationLoader = () => {
         .to(
           ".bottom-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             bottom: "-50.5%",
             ease: "power4.inOut",
           },
@@ -66,7 +66,7 @@ const NavigationLoader = () => {
         .to(
           ".left-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             left: "-90%",
             ease: "power4.inOut",
           },
@@ -75,7 +75,7 @@ const NavigationLoader = () => {
         .to(
           ".right-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             right: "-90%",
             ease: "power4.inOut",
           },
@@ -84,30 +84,30 @@ const NavigationLoader = () => {
         .to(
           ".left-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             left: "-50.5%",
             ease: "power4.inOut",
           },
-          0.7
+          0.3
         )
         .to(
           ".right-d",
           {
-            duration: 1.2,
+            duration: 0.7,
             right: "-50.5%",
             ease: "power4.inOut",
           },
-          0.7
+          0.3
         );
 
       tl.current.play().then(() => {
         tl.current.reverse();
         setTimeout(() => {
           router.push(pathToNavigate);
-        }, 800);
+        }, 150);
         setTimeout(() => {
           handleSetPathToNavigate(dispatch, null);
-        }, 1200);
+        }, 700);
       });
     });
 
