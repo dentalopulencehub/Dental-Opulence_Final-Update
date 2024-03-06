@@ -10,8 +10,8 @@ import Autoplay from "embla-carousel-autoplay";
 import { TestimonyCard } from "../molecule";
 import { DotButton } from "../atom/DotButton";
 
-
-
+import result_sample_image1 from "../../../assets/images/result-image-sample1.svg";
+import result_sample_video1 from "../../../assets/images/result-video-sample1.svg";
 
 const OurResult = () => {
   const [linkHover, setLinkHover] = useState(false);
@@ -30,7 +30,7 @@ const OurResult = () => {
   const scrollTo = useCallback(
     (index: number) => emblaApi && emblaApi.scrollTo(index),
     [emblaApi]
-  )
+  );
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -60,7 +60,6 @@ const OurResult = () => {
 
           <div className="md:block hidden">
             <SecondaryLink
-
               href="#"
               title="See All"
               style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px]"
@@ -70,13 +69,28 @@ const OurResult = () => {
           </div>
         </div>
 
+        <div className="mt-12 flex flex-col items-center">
+          <h2 className="font-Pangram font-bold text-[48px] leading-[53px] text-[#100E10] text-center sm:max-w-[593px]">
+            How Long Does Composite Bonding Take
+          </h2>
+          <p className="text-[#4C4C4C] text-[18px] font-Pangram-Regular text-center sm:max-w-[453px] mt-4">
+            Composite bonding on average takes 3-4 hours.Take a look at some of
+            our results below
+          </p>
+          <div className="flex flex-wrap gap-6 justify-center mt-16">
+            <Image src={result_sample_image1} alt="" />
+            <Image src={result_sample_video1} alt="" />
+            <Image src={result_sample_video1} alt="" />
+          </div>
+        </div>
+
         <div className="flex flex-wrap xl:justify-between justify-evenly mt-10">
           {home_result_images.map((data, index) => (
             <ResultCard key={index} image={data} />
           ))}
         </div>
 
-       {/*  <div className="relative" >
+        {/*  <div className="relative" >
           <div className="embla">
             <div
               className="embla__viewport bg-[#F8F8F8] rounded-xl md:px-10 sm:px-5 px-4 md:py-[56px] py-[30px] mt-20 "
@@ -101,7 +115,6 @@ const OurResult = () => {
             ))}
           </div>
         </div> */}
-
       </div>
     </div>
   );

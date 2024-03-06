@@ -14,7 +14,7 @@ const HomePopularServices = () => {
           </span>
           <Image src={underline_vector_dark} alt="" />
         </p>
-        <h2 className="mt-4 text-[#100E10] text-[32px] leading-[38px] font-Pangram-Bold sx:w-[333px]">
+        <h2 className="mt-4 text-[#100E10] text-[32px] leading-[38px] font-Pangram-Bold sm:w-[333px]">
           Client Favorites for Proven Results.
         </h2>
 

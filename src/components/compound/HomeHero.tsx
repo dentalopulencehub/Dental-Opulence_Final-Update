@@ -12,10 +12,10 @@ const HomeHero = () => {
             Elevate Your Smile with Dental Opulence
           </h1>
           <p className="mt-6 sm:text-[18px] sm:leading-8 text-base leading-7 text-white xl:text-left text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fuse
-            convallis pentesque urna vel eleifend. Curabitur ut lacus eget orci
-            sollicitudin facilisis. Fusce quis porta lorem, non efficitur leo.
-            Proin quam a volutpat, fermeum at ante.
+            Welcome to Dental Opulence, where we blend everyday dentistry with
+            cosmetic artistry to create your perfect smile. Our modern clinic
+            offers cutting-edge technology and amenities for your comfort.
+            Achieve your perfect smile with us.
           </p>
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] xl:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

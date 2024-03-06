@@ -11,7 +11,8 @@ const OurServiceCard = ({
   image,
   title,
   image_inverted,
-}: HomeOurServicesType) => {
+  selectedTheme,
+}: HomeOurServicesType & { selectedTheme: any }) => {
   const tl: any = useRef(null);
   const [hover, setHover] = useState(false);
 
@@ -31,7 +32,7 @@ const OurServiceCard = ({
 
       card.addEventListener("mouseenter", () => {
         gsap.to(card, {
-          background: "#100E10",
+          background: selectedTheme === "light" ? "#100E10" : "#ffffff",
           ease: "back.in",
           duration: 0.2,
         });
@@ -53,29 +54,40 @@ const OurServiceCard = ({
       });
 
       card.addEventListener("mouseleave", () => {
-        gsap.to(card, { background: "white" });
+        gsap.to(card, {
+          background: selectedTheme === "light" ? "#F8F8F8" : "#282828",
+        });
         gsap.to(title, { color: "#100E10" });
         gsap.to(text, { color: "#4e4e4e" });
         gsap.to(arrow_right, { left: -16, opacity: 0 });
         gsap.to(bordered_arrow_right, { left: 0, opacity: 1, delay: 0.1 });
       });
+
+      return () => {
+        card.removeEventListener("mouseenter", () => {});
+        card.removeEventListener("mouseleave", () => {});
+      };
     });
-  }, []);
+  }, [selectedTheme]);
 
   return (
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="px-4 py-[26px] flex gap-4 items-center bg-white border border-[#f4f4f4] rounded-xl max-w-[566px] service-card"
+      className={`px-4 py-[26px] flex flex-col gap-4 items-start ${
+        selectedTheme === "light" ? "bg-[#F8F8F8]" : "bg-[#282828]"
+      } border border-[#f4f4f4] rounded-xl max-w-[282px]  service-card`}
     >
-      <Image src={hover ? image_inverted : image} alt="" />
+      <div className="w-fit h-fit py-[15px] px-[15px] rounded-full flex items-center justify-center bg-white">
+        <Image src={hover ? image : image} alt="" width={34} />
+      </div>
       <div>
         <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>
         <p className="text-xs text-[#4e4e4e] font-Pangram-Regular mt-1">
           {description}
         </p>
       </div>
-      <div className="relative">
+      <div className="relative self-end">
         <Image
           src={arrow_right}
           alt=""

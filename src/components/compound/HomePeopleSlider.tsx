@@ -12,7 +12,7 @@ const HomePeopleSlider = () => {
             <Image
               key={index}
               src={award}
-              alt=""
+              alt={index.toString()}
               className="ml-[40px]"
             />
           ))}

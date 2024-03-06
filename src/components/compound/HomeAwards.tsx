@@ -1,15 +1,31 @@
 import React from "react";
 import Image from "next/image";
-import { home_awards_images } from "../../../constants";
+import { home_awards_images, homer_awards_images2 } from "../../../constants";
 import Marquee from "react-fast-marquee";
 
 const HomeAwards = () => {
   return (
     <div className="bg-white sm:px-5 px-2 w-full">
       <div className="bg-[#100E10] w-full">
-        <Marquee className="" speed={100} >
+        <Marquee className="" speed={100}>
           {home_awards_images.map((award, index) => (
-            <Image key={index} src={award} alt="" className="ml-[180px] w-[120px]" />
+            <Image
+              key={index}
+              src={award}
+              alt=""
+              className="ml-[180px] w-[120px]"
+            />
+          ))}
+        </Marquee>
+
+        <Marquee className="mt-[46px]" speed={100} direction="right" >
+          {homer_awards_images2.map((award, index) => (
+            <Image
+              key={index}
+              src={award}
+              alt=""
+              className="ml-[180px] w-[120px]"
+            />
           ))}
         </Marquee>
       </div>

@@ -51,6 +51,16 @@ import award_img3 from "./assets/images/award_img3.svg";
 import award_img4 from "./assets/images/award_img4.svg";
 import award_img5 from "./assets/images/award_img5.svg";
 import award_img6 from "./assets/images/award_img6.svg";
+
+import award_img7 from "./assets/images/award_img7.svg"
+import award_img8 from "./assets/images/award_img8.svg"
+import award_img9 from "./assets/images/award_img9.svg"
+import award_img10 from "./assets/images/award_img10.svg"
+import award_img11 from "./assets/images/award_img11.svg"
+import award_img12 from "./assets/images/award_img12.svg"
+
+
+
 import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
 import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
@@ -455,6 +465,15 @@ export const home_awards_images = [
   award_img4,
 ];
 
+export const homer_awards_images2 = [
+  award_img7,
+  award_img8,
+  award_img9,
+  award_img10,
+  award_img11,
+  award_img12,
+]
+
 export const popular_services: HomePopularServicesType[] = [
   {
     image: teeth_whitening_service_image,
@@ -751,17 +770,15 @@ export const people_slider = [
   people_img14,
   people_img15,
   people_img16,
-
   people_img17,
   people_img3,
   people_img18,
   people_img19,
   people_img3,
-
   people_img20,
   people_img21,
   people_img22,
-  people_img23,
+  
   people_img24,
   people_img25,
   people_img26,

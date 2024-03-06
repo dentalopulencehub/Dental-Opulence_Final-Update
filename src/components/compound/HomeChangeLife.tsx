@@ -8,9 +8,9 @@ import { ChangeLifeCard } from "../molecule";
 const HomeChangeLife = () => {
   return (
     <div className="bg-[#100E10] sm:px-5 px-2 w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-white">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#F8F8F8]">
         <div className="flex flex-row flex-wrap sm:justify-between justify-center ">
-          <div className="w-[261px] h-[276px] bg-[#100E10] p-8 rounded-lg flex flex-col justify-between">
+          <div className="w-[261px] h-[240px] bg-[#100E10] p-8 rounded-lg flex flex-col justify-between">
             <h3 className="text-white font-Pangram-Bold text-[32px] leading-[44px]">
               Change Your Life With us
             </h3>

@@ -1,5 +1,6 @@
 export { default as PopularServiceCard } from './PopularServiceCard'
 export { default as OurServiceCard } from './OurServiceCard'
+export { default as OurServiceCardDark } from './OurServiceCardDark'
 export { default as ChangeLifeCard } from './ChangeLifeCard'
 export { default as ResultCard } from './ResultCard'
 export { default as TestimonyCard } from './TestimonyCard'

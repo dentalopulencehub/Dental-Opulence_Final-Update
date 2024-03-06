@@ -83,7 +83,7 @@ const Faq = () => {
           Frequently Asked Question
         </h2>
 
-        <div className="flex flex-col gap-6 mt-10">
+        <div className="flex flex-col gap-2 mt-10">
           {faq.map((item, index) => (
             <FaqAccordion key={index} {...item} />
           ))}

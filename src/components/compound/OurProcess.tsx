@@ -9,8 +9,8 @@ const OurProcess = () => {
   return (
     <div className="bg-white sm:px-5 px-2">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
-        <div className="flex flex-wrap xl:justify-between justify-evenly">
-          <div className="xs:w-[388px] w-full sm:h-[228px] h-full bg-[#383638] rounded-lg py-8 px-6 flex flex-col justify-between items-start">
+        <div className="flex flex-wrap gap-8">
+          <div className="xs:w-[370px] w-full sm:h-[228px] h-full bg-[#191919] rounded-lg py-8 px-6 flex flex-col justify-between items-start">
             <p className="text-base font-Pangram-Bold text-[#AFAFAF] ">
               Our Process
             </p>

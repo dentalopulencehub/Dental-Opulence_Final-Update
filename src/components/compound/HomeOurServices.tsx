@@ -2,13 +2,12 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import underline_vector_dark from "../../../assets/images/underline-vector-dark.svg";
-import tooth_image_light from "../../../assets/images/tooth-image-light.svg";
-import tooth_image_dark from "../../../assets/images/tooth-image-dark.svg";
 
-import tooth_image_light2 from "../../../assets/images/tooth-image-light2.svg";
-import tooth_image_dark2 from "../../../assets/images/tooth-image-dark2.svg";
+import general_treatment_tooth_icon from "../../../assets/images/general-treatment-tooth-icon.svg";
+import cosmetic_treatment_tooth_icon from "../../../assets/images/cosmetic-treatment-tooth-icon.svg";
+
 import { our_services, our_services2 } from "../../../constants";
-import { OurServiceCard } from "../molecule";
+import { OurServiceCard, OurServiceCardDark } from "../molecule";
 import { gsap } from "../../../lib/gsap";
 import { motion } from "framer-motion";
 
@@ -63,67 +62,39 @@ const HomeOurServices = () => {
           Demand meets excellence at Dental Opulence.
         </h2>
 
-        <div className="flex items-center mt-10">
+        <div
+          className={`flex sm:flex-row flex-col sm:items-end items-start mt-10 gap-4 justify-center border-b ${
+            selectedTheme === "dark" ? "border-[#fff]" : "border-[#000000]"
+          }`}
+        >
           <div
             onClick={() => handleSetSelectedTheme("light")}
-            className="flex flex-col items-center justify-center service-tooth-div"
+            className={` ${
+              selectedTheme === "dark" ? "border border-[#fff]" : ""
+            } flex flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3 py-1 cursor-pointer`}
           >
-            <motion.div
-              /* whileHover={{
-                backgroundColor: "transparent",
-                border: "1px solid #100E10",
-                borderRadius: "999px",
-              }}
-              onHoverStart={handleHover1}
-              onHoverEnd={handleHover1}
-              transition={{
-                duration: 0.1,
-              }} */
-              className="py-[26px] border px-6 bg-[#100E10] rounded-full flex items-center justify-center w-fit"
-            >
-              <Image
-                src={isHovered ? tooth_image_dark2 : tooth_image_light}
-                alt="Tooth image light"
-                className="tooth-image"
-              />
-            </motion.div>
-            <p
-              className={`font-Pangram-Bold text-xs mt-2 ${
-                selectedTheme === "light" ? "text-[#100E10]" : "text-white"
-              } `}
-            >
+            <Image
+              src={general_treatment_tooth_icon}
+              alt="Tooth image light"
+              className="tooth-image"
+            />
+            <p className={`font-Pangram-Bold text-[18px] text-white`}>
               General Treatments
             </p>
           </div>
           <div
             onClick={() => handleSetSelectedTheme("dark")}
-            className="ml-6 flex flex-col items-center justify-center service-tooth-div"
+            className={` flex flex-row items-center justify-center service-tooth-div  ${
+              selectedTheme === "dark" ? "bg-[#fff]" : "border border-[#000000]"
+            } rounded-tl-2xl rounded-tr-[4px] px-3 py-1 cursor-pointer`}
           >
-            <motion.div
-              whileHover={{
-                backgroundColor: "#100E10",
-                border: "1px solid #100E10",
-                borderRadius: "999px",
-              }}
-              onHoverStart={handleHover2}
-              onHoverEnd={handleHover2}
-              transition={{
-                duration: 0.1,
-              }}
-              className={`py-6 px-6 bg-transparent border rounded-full flex items-center justify-center w-fit`}
-            >
-              <Image
-                src={isHovered2 || selectedTheme === 'dark' ? tooth_image_light2 : tooth_image_dark}
-                alt="Tooth image light"
-                className="tooth-image"
-                width={40}
-                height={40}
-              />
-            </motion.div>
+            <Image
+              src={cosmetic_treatment_tooth_icon}
+              alt="Tooth image light"
+              className="tooth-image"
+            />
             <p
-              className={`font-Pangram-Bold text-xs mt-2 ${
-                selectedTheme === "light" ? "text-[#100E10]" : "text-white"
-              } `}
+              className={`font-Pangram-Bold text-[18px] mt-2 text-[#100E10] `}
             >
               Cosmetic Treatments
             </p>
@@ -131,15 +102,15 @@ const HomeOurServices = () => {
         </div>
 
         {selectedTheme === "light" ? (
-          <div className="grid big:grid-cols-2 grid-cols-1 mt-10 gap-8">
+          <div className="flex flex-wrap mt-8 gap-6 justify-center items-center">
             {our_services.map((service, index) => (
-              <OurServiceCard key={index} {...service} />
+              <OurServiceCard key={index} {...service} selectedTheme={selectedTheme} />
             ))}
           </div>
         ) : (
-          <div className="grid big:grid-cols-2 grid-cols-1 mt-10 gap-8">
+          <div className="flex flex-wrap mt-8 gap-6 justify-center items-center">
             {our_services2.map((service, index) => (
-              <OurServiceCard key={index} {...service} />
+              <OurServiceCardDark key={index} {...service} selectedTheme={selectedTheme} />
             ))}
           </div>
         )}
