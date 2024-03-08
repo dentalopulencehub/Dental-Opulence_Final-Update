@@ -6,6 +6,9 @@ import {
   AboutAwardType,
   CaseStudyTypeProp,
   casesType,
+  TeamType,
+  serviceType,
+  ServicePageDataType,
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -52,14 +55,12 @@ import award_img4 from "./assets/images/award_img4.svg";
 import award_img5 from "./assets/images/award_img5.svg";
 import award_img6 from "./assets/images/award_img6.svg";
 
-import award_img7 from "./assets/images/award_img7.svg"
-import award_img8 from "./assets/images/award_img8.svg"
-import award_img9 from "./assets/images/award_img9.svg"
-import award_img10 from "./assets/images/award_img10.svg"
-import award_img11 from "./assets/images/award_img11.svg"
-import award_img12 from "./assets/images/award_img12.svg"
-
-
+import award_img7 from "./assets/images/award_img7.svg";
+import award_img8 from "./assets/images/award_img8.svg";
+import award_img9 from "./assets/images/award_img9.svg";
+import award_img10 from "./assets/images/award_img10.svg";
+import award_img11 from "./assets/images/award_img11.svg";
+import award_img12 from "./assets/images/award_img12.svg";
 
 import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
 import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
@@ -215,6 +216,51 @@ import cases_others_img1 from "./assets/images/cases-others-img1.jpg";
 import cases_others_img2 from "./assets/images/cases-others-img2.jpg";
 import cases_others_img3 from "./assets/images/cases-others-img3.jpg";
 
+import team_sample_image from "./assets/images/team-sample-image.svg";
+
+export const team: TeamType[] = [
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+  {
+    name: "Dima Laurankova",
+    title: "Chief Executive Officer",
+    image: team_sample_image,
+  },
+];
+
 export const case_studies: CaseStudyTypeProp[] = [
   {
     type: "all",
@@ -323,6 +369,65 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
 ];
 
+export const services_page_data: ServicePageDataType[] = [
+  {
+    title: "Bridges",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "bridges",
+  },
+  {
+    title: "Crowns",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "crowns-veneers",
+  },
+  {
+    title: "Dentures",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "dentures",
+  },
+  {
+    title: "Examination",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "examination",
+  },
+  {
+    title: "Extractions",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "extractions",
+  },
+  {
+    title: "Hygienist",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "hygienist",
+  },
+  {
+    title: "White Fillings",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "white-fillings",
+  },
+  {
+    title: "Root Canal Treatments",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "root-canal-treatments",
+  },
+];
+
 export const navlinks = [
   {
     href: "/",
@@ -338,49 +443,49 @@ export const navlinks = [
     subLinks: [
       {
         title: "Bridges",
-        href: "#",
+        href: "/services?service=bridges",
         icon: bridge_link_icon,
         icon_hovered: bridge_link_icon_light,
       },
       {
         title: "Crowns / Veneers",
-        href: "#",
+        href: "/services?service=crowns-veneers",
         icon: crown_link_icon,
         icon_hovered: crown_link_icon_light,
       },
       {
         title: "Dentures",
-        href: "#",
+        href: "/services?service=dentures",
         icon: dentures_link_icon,
         icon_hovered: dentures_link_icon_light,
       },
       {
         title: "Examination",
-        href: "#",
+        href: "/services?service=examination",
         icon: examination_link_icon,
         icon_hovered: examination_link_icon_light,
       },
       {
         title: "Extractions",
-        href: "#",
+        href: "/services?service=extractions",
         icon: extractions_link_icon,
         icon_hovered: extractions_link_icon_light,
       },
       {
         title: "Hygienist",
-        href: "#",
+        href: "/services?service=hygienist",
         icon: hygienist_link_icon,
         icon_hovered: hygienist_link_icon_light,
       },
       {
         title: "White Fillings",
-        href: "#",
+        href: "/services?service=white-fillings",
         icon: white_fillings_link_icon,
         icon_hovered: white_fillings_link_icon_light,
       },
       {
         title: "Root Canal Treatments",
-        href: "#",
+        href: "/services?service=root-canal-treatments",
         icon: root_canal_link_icon,
         icon_hovered: root_canal_link_icon_light,
       },
@@ -472,7 +577,7 @@ export const homer_awards_images2 = [
   award_img10,
   award_img11,
   award_img12,
-]
+];
 
 export const popular_services: HomePopularServicesType[] = [
   {
@@ -778,7 +883,7 @@ export const people_slider = [
   people_img20,
   people_img21,
   people_img22,
-  
+
   people_img24,
   people_img25,
   people_img26,

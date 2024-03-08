@@ -44,25 +44,25 @@ const Footer = () => {
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
 
   return (
-    <div className="bg-white sm:px-5 px-2 w-full sm:pb-5 pb-2">
+    <div className="w-full">
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
-        <div className="flex xl:flex-row flex-col gap-[115px] items-start">
-          <Image src={footer_logo} alt="" />
-          <div className="w-full">
-            <div className="flex md:flex-row flex-col md:gap-0 gap-[40px] justify-between">
+        <div className="flex xl:flex-row flex-col gap-[162px] items-start">
+          <div>
+            <Image src={footer_logo} alt="" />
+            <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
               <div>
-                <h3 className="text-white font-Pangram-Bold mb-8 text-2xl">
+                <h3 className="text-white font-Pangram-Bold text-base mb-4">
                   Want to work with us
                 </h3>
                 <Link
                   href="mailto:info@dentalopulence.co.uk"
-                  className="text-[#C2C2C2] text-xl"
+                  className="text-[#A2A2A2] cursor-pointer text-xl font-Pangram-Light font-normal"
                 >
                   info@dentalopulence.co.uk
                 </Link>
               </div>
-              <div>
-                <h3 className="text-white font-Pangram-Bold text-2xl">
+              <div className="mt-10">
+                <h3 className="text-white font-Pangram-Bold text-base">
                   Find us on social media
                 </h3>
                 <div className="flex items-center gap-4 mt-4">
@@ -86,26 +86,26 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[1px] w-full bg-[#CFCFCF] my-10" />
-
-            <div className="flex flex-wrap gap-[90px] justify-between">
-              <div className="flex flex-col gap-10">
+          </div>
+          <div className="w-full">
+            <div className="flex flex-wrap gap-[49px] justify-between">
+              <div className="flex flex-col gap-10 w-[176px]">
                 <div>
-                  <h3 className="text-white font-Pangram-Bold text-2xl">
+                  <h3 className="text-white font-Pangram-Regular text-2xl">
                     Quick Links
                   </h3>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Home
                     </p>
                   </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       About us
                     </p>
                   </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Contact us
                     </p>
                   </div>
@@ -115,13 +115,13 @@ const Footer = () => {
                     Our Info
                   </h3>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6 flex items-center gap-2">
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={phone_icon} alt="" />
                       <span>0121 272 9229  (Fri-Sat)</span>
                     </p>
                   </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6 flex items-center gap-2">
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={whatsapp_icon_mini} alt="" />
                       <span>+447301253447</span>
                     </p>
@@ -129,98 +129,98 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-white font-Pangram-Bold text-2xl">
+              <div className="w-[227px]">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
                   General Treatments
                 </h3>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Bridges
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Dentures
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Crowns / Veneers
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Examination
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Extractions
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Hygienist
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     White Fillings
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Root Canal Treatments
                   </p>
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-white font-Pangram-Bold text-2xl">
+              <div className="w-[227px]">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
                   Cosmetic Treatment
                 </h3>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Invisalign
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Fixed Retainers
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Teeth Whitening
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Vivera Retainers
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Crowns/Veneers
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Composite Veneers
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Routine Examination
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Internal Tooth Whitening
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#C2C2C2] font-Pangram-Regular mt-6">
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                     Composite Edge Bonding
                   </p>
                 </div>
@@ -228,6 +228,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="bg-[#454545] w-full h-[1px] mt-[60px]" />
         <p className="text-center text-base font-Pangram-Regular max-w-[788px] mx-auto text-white mt-[80px]">
           Copyright © {new Date().getFullYear()} John Clive Industries Ltd.
           Registered in England and Wales, UK. All rights reserved. Website

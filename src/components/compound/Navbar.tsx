@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import nav_logo from "../../../assets/images/nav-logo.svg";
 import pointer_down from "../../../assets/images/pointer-down.svg";
+import logo_background_overlay from "../../../assets/images/logo-bg-overlay.svg";
 import PrimaryLink from "../atom/PrimaryLink";
 import Hambuger from "../atom/Hamburger";
 import { useGSAP } from "@gsap/react";
@@ -76,8 +77,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="fixed h-[70px] w-full flex items-center justify-between top-[30px] pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10] xl:left-[20%] lg:left-[15%] md:left-[80%] sm:left-[75%] left-[70%]">
-        <div className=" px-[43.5px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
+      <div className="fixed h-[70px] w-full flex items-center justify-between top-[30px] pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10] xl:left-[33%] lg:left-[16%] big:left-[80%] md:left-[80%] sm:left-[75%] left-[70%]">
+        <div className="px-[43.5px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
           <ul className="flex items-center text-white gap-10">
             {navlinks.map((link, index) => (
               <li
@@ -101,36 +102,56 @@ const Navbar = () => {
                 </div>
                 {link?.subLinks && (
                   <div
-                    className={`dropdown-content grid grid-cols-2 max-w-[558px] h-[280px] w-full p-6 bg-[#2E2E2E] text-white font-Pangram-Regular rounded-lg`}
+                    className={`dropdown-content h-[280px] w-full text-white font-Pangram-Regular rounded-lg`}
                   >
-                    {link.subLinks.map((subLink, index: number) => (
-                      <div
-                        onClick={() =>
-                          handleSetPathToNavigate(dispatch, subLink.href)
-                        }
-                        onMouseOver={() => setHoverId(index)}
-                        onMouseOut={() => setHoverId(null)}
-                        key={index}
-                        className="relative h-fit flex items-center"
-                      >
-                        <p className="flex items-center relative">
-                          <Image
-                            src={
-                              hoverId === index
-                                ? subLink?.icon_hovered
-                                : subLink.icon
-                            }
-                            className=""
-                            alt=""
-                            width={15}
-                            height={15}
-                          />
-                          <span className="text-white text-base ml-2">
-                            {subLink.title}
-                          </span>
-                        </p>
-                      </div>
-                    ))}
+                    <div className="grid grid-cols-2 p-6">
+                      {link.subLinks.map((subLink, index: number) => (
+                        <div
+                          onClick={() =>
+                            handleSetPathToNavigate(dispatch, subLink.href)
+                          }
+                          onMouseOver={() => setHoverId(index)}
+                          onMouseOut={() => setHoverId(null)}
+                          key={index}
+                          className="relative h-fit flex items-center w-full"
+                        >
+                          <p className="flex items-center relative">
+                            <Image
+                              src={
+                                hoverId === index
+                                  ? subLink?.icon_hovered
+                                  : subLink.icon
+                              }
+                              className=""
+                              alt=""
+                              width={15}
+                              height={15}
+                            />
+                            <span className="text-white text-base ml-2">
+                              {subLink.title}
+                            </span>
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="relative w-[351px] bg-[#222222] pt-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">
+                      <h3 className="text-[#8A8A8A] w-[210px] text-2xl leading-[36px]">
+                        <span className="text-white">Transform</span> Your Smile
+                        Today with Dental Opulence!
+                      </h3>
+
+                      <PrimaryLink
+                        href="/contact"
+                        title="Book Now"
+                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[29px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative"
+                      />
+
+                      <Image
+                        src={logo_background_overlay}
+                        className="absolute top-[120px] z-[7]"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 )}
               </li>

@@ -5,7 +5,7 @@ import stroke_hero_text from "../../../assets/images/stroke-case-text.svg";
 
 const CaseHero = () => {
   return (
-    <div className="bg-white sm:pt-5 sm:px-5 px-2 pt-2">
+    <div className="bg-white ">
       <div className="bg-[#100E10] rounded-t-[24px] pt-[220px] pb-[100px] w-full h-full xl:items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px] gap-[42px]">
         <div className="flex flex-col xl:items-end" >
           <h1 className="xs:text-[104px] text-[64px] font-Pangram-Bold flex-wrap flex">

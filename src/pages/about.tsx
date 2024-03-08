@@ -3,13 +3,17 @@ import {
   Layout,
   Navbar,
   AboutHero,
+  HomeAwards,
   AboutAwardSection,
   AboutVideoSection,
+  AboutTeam,
   AboutPageAboutSection,
   AboutWhoWeAre,
   TestimonyComp,
   Faq,
   HomePeopleSlider,
+  AboutMissionVision,
+  CompositeBondingHowLong,
   Footer,
 } from "../components/import";
 import { gsap, ScrollTrigger } from "../../lib/gsap";
@@ -43,10 +47,14 @@ export default function Home() {
     <Layout>
       <Navbar />
       <AboutHero />
-      <AboutAwardSection />
-      <AboutVideoSection />
+      <HomeAwards />
+     {/*  <AboutAwardSection />
+      <AboutVideoSection /> */}
       <AboutPageAboutSection />
-      <AboutWhoWeAre />
+      <AboutMissionVision />
+      <AboutTeam />
+      <CompositeBondingHowLong />
+     {/*  <AboutWhoWeAre /> */}
       <TestimonyComp />
       <Faq />
       <HomePeopleSlider />

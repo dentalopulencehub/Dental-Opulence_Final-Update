@@ -7,7 +7,7 @@ import { useIsomorphicLayoutEffect } from "../../../hooks";
 import PrimaryLink from "../atom/PrimaryLink";
 
 const AboutPageAboutSection = () => {
-  let value = `Dental Opulence is a new dental clinic offering both everyday dentistry and specialized cosmetic services. Equipped with cutting-edge facilities, their mission is to provide exceptional care for oral health while also crafting dazzling smiles.`;
+  let value = `Dental Opulence is a new dental clinic that offers a combination of general dentistry and cosmetic dentistry services. The clinic is equipped with modern facilities and technology to provide exceptional dental care. The team at Dental Opulence is dedicated to ensuring a comprehensive and comfortable dental experience for patients. The clinic's focus is on maintaining oral health and enhancing smiles through cosmetic procedures.`;
 
   let value2 = `From routine check-ups to advanced cosmetic procedures, their skilled team ensures comprehensive and comfortable dental experiences. Combining a focus on general dentistry with the artistry of cosmetic dentistry, Dental Opulence prioritizes both oral health and aesthetic aspirations in an opulent environment.`;
 
@@ -32,16 +32,16 @@ const AboutPageAboutSection = () => {
   const words2 = value2.split(" ");
 
   return (
-    <div className="bg-white sm:px-5 px-2 w-full">
+    <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
-          <h2 className="sm:text-[40px] text-[30px] text-white font-Pangram-Bold">
-            Elevating Smiles, Enhancing Lives Meet Dental Opulence
+          <h2 className="sm:text-[34px] sm:leading-[42px] text-[28px] text-white font-Pangram-Bold">
+            Experience Dental Opulence: Radiant Smiles, Optimal Oral Health
           </h2>
           <Image src={home_hero2_ill} alt="" className="mt-10" />
         </div>
 
-        <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
+        <div className="xl:max-w-[584px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
           <p className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
@@ -66,7 +66,7 @@ const AboutPageAboutSection = () => {
             })}
           </h4>
 
-          <h4
+        {/*   <h4
             className="text-white font-Pangram-Regular mt-6 sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-left text-center flex flex-wrap"
             ref={element2}
           >
@@ -84,12 +84,12 @@ const AboutPageAboutSection = () => {
                 </Word>
               );
             })}
-          </h4>
-          <PrimaryLink
+          </h4> */}
+         {/*  <PrimaryLink
             href="#"
             title="Contact us"
             style="py-4 px-[49px] mt-12 rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white"
-          />
+          /> */}
         </div>
       </div>
     </div>

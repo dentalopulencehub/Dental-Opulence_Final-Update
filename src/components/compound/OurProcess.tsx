@@ -7,7 +7,7 @@ import arrow_right_light from "../../../assets/images/arrow-right.svg";
 
 const OurProcess = () => {
   return (
-    <div className="bg-white sm:px-5 px-2">
+    <div className="">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
         <div className="flex flex-wrap gap-8">
           <div className="xs:w-[370px] w-full sm:h-[228px] h-full bg-[#191919] rounded-lg py-8 px-6 flex flex-col justify-between items-start">

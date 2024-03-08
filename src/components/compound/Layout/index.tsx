@@ -52,7 +52,7 @@ const Index = ({ children }: Props) => {
   }, []);
 
   return (
-    <main>
+    <main className="fixed h-[98vh] w-[98.5%] left-[0.7%] top-[8px]  overflow-y-scroll  rounded-[24px]" >
       {children}
 
       <div className="fixed w-fit bottom-10 md:right-[100px] right-[50px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">

@@ -5,6 +5,7 @@ export enum REDUCERS {
   SET_LOADING = "SET_LOADING",
   SET_SELECTED_CASE = "SET_SELECTED_CASE",
   SET_PATH_TO_NAVIGATE = "SET_PATH_TO_NAVIGATE",
+  SET_SERVICE_PAGE_DATA = "SET_SERVICE_PAGE_DATA"
 }
 
 export type ActionType = {
@@ -60,6 +61,12 @@ export type AboutAwardType = {
   image: any;
 };
 
+export type TeamType = {
+  name: string;
+  title: string;
+  image: any;
+}
+
 export interface FormProps {
   // stepThree: HelpSelectItem[];
   handleStepChange: (step: string) => void;
@@ -75,3 +82,15 @@ export interface FormData {
   deadline: string;
   message: string;
 }
+
+
+export type ServicePageDataType = {
+  title: string;
+  description: string;
+  price: string;
+  type: serviceType;
+
+} 
+
+
+export type serviceType = 'bridges' | 'crowns-veneers' | 'dentures' | 'examination' | 'extractions' | 'hygienist' | 'white-fillings' | 'root-canal-treatments' | ''

@@ -5,8 +5,8 @@ import PrimaryLink from "../atom/PrimaryLink";
 
 const HomeHero = () => {
   return (
-    <div className="bg-white sm:pt-5 sm:px-5 px-2 pt-2">
-      <div className="bg-[#100E10] rounded-t-[24px] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
+    <div className="">
+      <div className="bg-[#100E10]  pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
           <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center sm:leading-[76px] leading-[56px] text-white">
             Elevate Your Smile with Dental Opulence

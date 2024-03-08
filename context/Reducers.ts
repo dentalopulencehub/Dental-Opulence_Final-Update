@@ -23,6 +23,13 @@ export default (state: any, action: ActionType) => {
         pathToNavigate: payload,
       };
 
+
+    case REDUCERS.SET_SERVICE_PAGE_DATA:
+      return {
+        ...state,
+        servicePageData: payload,
+      };
+
     default:
       return state;
   }

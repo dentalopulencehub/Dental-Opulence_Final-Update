@@ -6,7 +6,7 @@ import { PopularServiceCard } from "../molecule";
 
 const HomePopularServices = () => {
   return (
-    <div className="bg-[#100E10] sm:px-5 px-2 w-full">
+    <div className=" w-full">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-white">
         <p className="flex flex-col">
           <span className="text-[#4e4e4e] text-base font-Pangram-Regular">

@@ -37,7 +37,7 @@ const HomeOurServices = () => {
     <div
       className={` ${
         selectedTheme === "light" ? "bg-[#100E10]" : "bg-white"
-      } sm:px-5 px-2 w-full`}
+      } w-full`}
     >
       <div
         className={`w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] ${

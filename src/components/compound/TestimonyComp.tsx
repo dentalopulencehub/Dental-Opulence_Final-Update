@@ -5,8 +5,11 @@ import { useCallback, useEffect, useState } from "react";
 import { testimonial } from "../../../constants";
 import { DotButton } from "../atom/DotButton";
 import { TestimonyCard } from "../molecule";
+import { useRouter } from "next/router";
 
 const TestimonyComp = () => {
+  const { pathname } = useRouter();
+
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -35,7 +38,9 @@ const TestimonyComp = () => {
   }, [emblaApi, onInit, onSelect]);
 
   return (
-    <div className="bg-[#100E10] sm:px-5 px-2 w-full">
+    <div
+      className={` w-full`}
+    >
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pb-[80px] bg-white">
         <div className="relative">
           <div className="embla">

@@ -43,8 +43,9 @@ const OurResult = () => {
   }, [emblaApi, onInit, onSelect]);
 
   return (
-    <div className="bg-[#100E10] sm:px-5 px-2 w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-white">
+    <div className="w-full">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] bg-white">
+        
         <div className="flex justify-between items-start">
           <div>
             <p className="flex flex-col">
@@ -66,21 +67,6 @@ const OurResult = () => {
               hovered={linkHover}
               setHovered={setLinkHover}
             />
-          </div>
-        </div>
-
-        <div className="mt-12 flex flex-col items-center">
-          <h2 className="font-Pangram font-bold text-[48px] leading-[53px] text-[#100E10] text-center sm:max-w-[593px]">
-            How Long Does Composite Bonding Take
-          </h2>
-          <p className="text-[#4C4C4C] text-[18px] font-Pangram-Regular text-center sm:max-w-[453px] mt-4">
-            Composite bonding on average takes 3-4 hours.Take a look at some of
-            our results below
-          </p>
-          <div className="flex flex-wrap gap-6 justify-center mt-16">
-            <Image src={result_sample_image1} alt="" />
-            <Image src={result_sample_video1} alt="" />
-            <Image src={result_sample_video1} alt="" />
           </div>
         </div>
 

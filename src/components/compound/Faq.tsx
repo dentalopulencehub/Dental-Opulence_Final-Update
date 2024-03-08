@@ -3,8 +3,12 @@ import { faq } from "../../../constants";
 import { FaqAccordion } from "../molecule";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
+import { useRouter } from "next/router";
 
 const Faq = () => {
+
+  const { pathname } = useRouter()
+
   useGSAP(() => {
     let groups = gsap.utils.toArray(".accordion-group");
     let menus = gsap.utils.toArray(".accordion-menu");
@@ -77,9 +81,9 @@ const Faq = () => {
   }, []);
 
   return (
-    <div className="bg-white sm:px-5 px-2">
+    <div className="">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
-        <h2 className="text-[32px] font-Pangram-Bold text-white text-center">
+        <h2 className="text-[32px] text-white text-left font-medium font-Pangram-Medium sm:w-[295px]">
           Frequently Asked Question
         </h2>
 
