@@ -45,7 +45,7 @@ const useAxios = (): [
       question: questionsAndAnswers,
     };
 
-    console.log("outside", data);
+   
 
     try {
       const response = await axios.post(

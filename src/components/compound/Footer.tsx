@@ -104,6 +104,13 @@ const Footer = () => {
                       About us
                     </p>
                   </div>
+                  <div
+                    onClick={() => handleSetPathToNavigate(dispatch, "/cases")}
+                  >
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Cases
+                    </p>
+                  </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Contact us

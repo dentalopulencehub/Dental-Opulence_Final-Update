@@ -1,4 +1,4 @@
-import React, { useRef, useContext, use } from "react";
+import React, { useRef, useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
@@ -52,14 +52,25 @@ const Index = ({ children }: Props) => {
   }, []);
 
   return (
-    <main className="fixed h-[98vh] w-[98.5%] left-[0.7%] top-[8px]  overflow-y-scroll  rounded-[24px]" >
-      {children}
+    <main className="bg-white sticky">
+      <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
+        <div className="fixed bg-white w-screen h-[5px] top-0" />
 
-      <div className="fixed w-fit bottom-10 md:right-[100px] right-[50px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">
-        <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
-          <Image src={pen_icon} alt="" />
+        <div className="fixed bg-white w-[5px] h-screen left-0 " />
+
+        <div className="fixed bg-white w-[5px] h-screen right-0 " />
+        <div className="fixed bg-white w-screen h-[5px] bottom-0 " />
+      </main>
+
+      <main className="relative w-[calc(100%-10px)] mx-auto rounded-[24px] z-[690]">
+        {children}
+
+        <div className="fixed w-fit sm:bottom-10 bottom-3 md:right-[100px] sm:right-[50px] xs:right-[20px] right-[10px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">
+          <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+            <Image src={pen_icon} alt="" />
+          </div>
         </div>
-      </div>
+      </main>
     </main>
   );
 };

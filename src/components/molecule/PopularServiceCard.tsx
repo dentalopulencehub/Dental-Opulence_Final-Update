@@ -9,6 +9,7 @@ const PopularServiceCard = ({
   description,
   image,
   title,
+  image_inverted,
 }: HomePopularServicesType) => {
   const [hover, setHover] = useState(false);
 
@@ -16,9 +17,9 @@ const PopularServiceCard = ({
     <div
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      className="w-[278px] h-[367px] p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition duration-300 lg:border-0 border-[1px] border-[#E5E5E5] rounded-[24px] "
+      className="w-[278px] h-[367px] p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition lg:border-0 border-[1px] border-[#E5E5E5] rounded-[24px] duration-0"
     >
-      <Image src={image} alt={title} />
+      <Image src={hover ? image_inverted : image} alt={title} />
       <h3
         className={`mt-4 ${
           hover ? "text-white" : "text-[#100E10]"

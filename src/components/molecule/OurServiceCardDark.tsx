@@ -34,22 +34,22 @@ const OurServiceCardDark = ({
         gsap.to(card, {
           background: "#fff",
           ease: "back.in",
-          duration: 0.2,
+          duration: 0.1,
         });
         gsap.to(title, {
           color: "#000000",
-          duration: 0.2,
+          duration: 0.1,
           ease: "power3.inOut",
         });
         gsap.to(text, {
           color: "#4E4E4E",
-          duration: 0.2,
+          duration: 0.1,
           ease: "power3.inOut",
         });
         gsap.to(arrow_right, {
           left: 0,
           opacity: 1,
-          duration: 0.2,
+          duration: 0.1,
           delay: 0.1,
           ease: "power3.inOut",
         });
@@ -75,10 +75,10 @@ const OurServiceCardDark = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-4 py-[26px] flex flex-col gap-4 items-start bg-[#141414] border border-[#f4f4f4] rounded-xl max-w-[282px]  service-card`}
+      className={`px-4 py-[26px] flex flex-col gap-4 items-start h-[267px]  bg-[#141414] border border-[#f4f4f4] rounded-xl max-w-[282px]  service-card`}
     >
-      <div className="w-fit h-fit py-[15px] px-[15px] rounded-full flex items-center justify-center bg-white">
-        <Image src={hover ? image : image} alt="" width={34} />
+      <div className="">
+        <Image src={hover ? image_inverted : image} alt="" />
       </div>
       <div>
         <h3 className="text-base text-[#fff] font-Pangram-Bold">{title}</h3>

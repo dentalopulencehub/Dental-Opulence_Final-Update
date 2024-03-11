@@ -25,7 +25,7 @@ const HomeAwards = () => {
                 key={index}
                 src={award}
                 alt=""
-                className="ml-[180px] w-[120px]"
+                className="ml-[48px] w-[120px]"
               />
             ))}
           </Marquee>

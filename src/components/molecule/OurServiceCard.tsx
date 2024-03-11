@@ -76,10 +76,10 @@ const OurServiceCard = ({
       onMouseLeave={() => setHover(false)}
       className={`px-4 py-[26px] flex flex-col gap-4 items-start ${
         selectedTheme === "light" ? "bg-[#F8F8F8]" : "bg-[#282828]"
-      } border border-[#f4f4f4] rounded-xl max-w-[282px]  service-card`}
+      } border border-[#f4f4f4] rounded-xl max-w-[282px] h-[267px]  service-card duration-0`}
     >
-      <div className="w-fit h-fit py-[15px] px-[15px] rounded-full flex items-center justify-center bg-white">
-        <Image src={hover ? image : image} alt="" width={34} />
+      <div className="">
+        <Image src={hover ? image : image} alt=""  />
       </div>
       <div>
         <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>

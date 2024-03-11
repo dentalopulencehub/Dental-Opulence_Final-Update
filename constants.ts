@@ -63,9 +63,13 @@ import award_img11 from "./assets/images/award_img11.svg";
 import award_img12 from "./assets/images/award_img12.svg";
 
 import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
-import invisalign_service_image from "./assets/images/invisalign-service-image.svg";
+import teeth_whitening_service_image_dark from "./assets/images/teeth-whitening-service-img2.svg";
+import invisalign_service_image_dark from "./assets/images/invisalign-service-image.svg";
+import invisalign_service_image from "./assets/images/invisalign-service-image2.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
+import composite_bonding_service_image_dark from "./assets/images/composite-bonding-service-image2.svg";
 import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
+import general_dentistry_service_image_dark from "./assets/images/general-dentistry-service-image2.svg";
 
 import dentures_services_image from "./assets/images/dentures-services-image.svg";
 import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg";
@@ -85,15 +89,25 @@ import examination_services_image from "./assets/images/examination-services-ima
 import examination_services_image_dark from "./assets/images/examination-services-image-dark.svg";
 
 import invisalign_service_icon from "./assets/images/invisalign-services-image.svg";
+import invisalign_service_icon_light from "./assets/images/invisalign-services-image-light.svg";
 import fixed_retainer_service_icon from "./assets/images/fixed-retainers-service-icon.svg";
+import fixed_retainer_service_icon_light from "./assets/images/fixed-retainers-service-icon-light.svg";
 import teeth_whitening_service_icon from "./assets/images/teeth-whitening-service-icon.svg";
+import teeth_whitening_service_icon_light from "./assets/images/teeth-whitening-service-icon-light.svg";
 import vivera_retainers_service_icon from "./assets/images/vivera-retainers-service-icon.svg";
+import vivera_retainers_service_icon_light from "./assets/images/vivera-retainers-service-icon-light.svg";
 import crown_veneers_service_icon from "./assets/images/crown-veneers-service-icon.svg";
+import crown_veneers_service_icon_light from "./assets/images/crown-veneers-service-icon-light.svg";
 import composite_veneers_service_icon from "./assets/images/composite-veneer-service-icon.svg";
+import composite_veneers_service_icon_light from "./assets/images/composite-veneer-service-icon-light.svg";
 import composite_bonding_service_icon from "./assets/images/composite-bonding-service-icon.svg";
+import composite_bonding_service_icon_light from "./assets/images/composite-bonding-service-icon-light.svg";
 import routine_examination_service_icon from "./assets/images/routine-examination-service-icon.svg";
+import routine_examination_service_icon_light from "./assets/images/routine-examination-service-icon-light.svg";
 import internal_tooth_whitening_service_icon from "./assets/images/internal-tooth-whitening-service-icon.svg";
+import internal_tooth_whitening_service_icon_light from "./assets/images/internal-tooth-whitening-service-icon-light.svg";
 import composite_edge_bonding_service_icon from "./assets/images/composite-edge-bonding-service-icon.svg";
+import composite_edge_bonding_service_icon_light from "./assets/images/composite-edge-bonding-service-icon-light.svg";
 
 import increase_confidence_icon from "./assets/images/increase-confidence-icon.svg";
 import unleash_charisma_icon from "./assets/images/unleash-charisma-icon.svg";
@@ -217,6 +231,13 @@ import cases_others_img2 from "./assets/images/cases-others-img2.jpg";
 import cases_others_img3 from "./assets/images/cases-others-img3.jpg";
 
 import team_sample_image from "./assets/images/team-sample-image.svg";
+
+import service_award_img1 from "./assets/images/service-award-img1.svg";
+import service_award_img2 from "./assets/images/service-award-img2.svg";
+import service_award_img3 from "./assets/images/service-award-img3.svg";
+import service_award_img4 from "./assets/images/service-award-img4.svg";
+import service_award_img5 from "./assets/images/service-award-img5.svg";
+import service_award_img6 from "./assets/images/service-award-img6.svg";
 
 export const team: TeamType[] = [
   {
@@ -568,6 +589,14 @@ export const home_awards_images = [
   award_img6,
   award_img3,
   award_img4,
+  award_img1,
+  award_img2,
+  award_img3,
+  award_img4,
+  award_img5,
+  award_img6,
+  award_img3,
+  award_img4,
 ];
 
 export const homer_awards_images2 = [
@@ -577,29 +606,56 @@ export const homer_awards_images2 = [
   award_img10,
   award_img11,
   award_img12,
+  award_img7,
+  award_img8,
+  award_img9,
+  award_img10,
+  award_img11,
+  award_img12,
 ];
+
+export const service_award_images = [
+  service_award_img1,
+  service_award_img2,
+  service_award_img3,
+  service_award_img4,
+  service_award_img5,
+  service_award_img6,
+  service_award_img1,
+  service_award_img2,
+  service_award_img3,
+  service_award_img4,
+  service_award_img5,
+  service_award_img6,
+];
+
+export const service_awards_images = [];
 
 export const popular_services: HomePopularServicesType[] = [
   {
     image: teeth_whitening_service_image,
+    image_inverted: teeth_whitening_service_image_dark,
     title: "Teeth Whitening",
     description:
       "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
   },
   {
     image: invisalign_service_image,
+    image_inverted: invisalign_service_image_dark,
     title: "Invisalign",
     description:
       "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
   },
   {
     image: composite_bonding_service_image,
+    image_inverted: composite_bonding_service_image_dark,
     title: "Composite Bonding",
     description:
       "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
   },
   {
     image: general_dentistry_service_image,
+    image_inverted: general_dentistry_service_image_dark,
     title: "General Dentistry",
     description:
       "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
@@ -669,62 +725,72 @@ export const our_services2: HomeOurServicesType[] = [
   {
     title: "Invisalign",
     description:
-      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
+      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
     image: invisalign_service_icon,
+    image_inverted: invisalign_service_icon_light,
   },
   {
     title: "Composite Veneers",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
     image: composite_veneers_service_icon,
+    image_inverted: composite_veneers_service_icon_light,
   },
   {
     title: "Fixed Retainers",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
     image: fixed_retainer_service_icon,
+    image_inverted: fixed_retainer_service_icon_light,
   },
   {
     title: "Composite  Bonding",
     description:
       "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
     image: composite_bonding_service_icon,
+    image_inverted: composite_bonding_service_icon_light,
   },
   {
     title: "Teeth Whitening",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: teeth_whitening_service_icon,
+    image_inverted: teeth_whitening_service_icon_light,
   },
   {
     title: "Routine Examination",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: routine_examination_service_icon,
+    image_inverted: routine_examination_service_icon_light,
   },
   {
     title: "Vivera Retainers",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: vivera_retainers_service_icon,
+    image_inverted: vivera_retainers_service_icon_light,
   },
   {
     title: "Internal Tooth Whitening",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
     image: internal_tooth_whitening_service_icon,
+    image_inverted: internal_tooth_whitening_service_icon_light,
   },
   {
     title: "Crowns/Veneers",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_service_icon,
+    image_inverted: crown_veneers_service_icon_light,
   },
   {
-    title: "Composite Edge Bonding",
+    title: "White Fillings",
     description:
-      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: composite_edge_bonding_service_icon,
+    image_inverted: composite_edge_bonding_service_icon_light,
   },
 ];
 
@@ -785,19 +851,19 @@ export const home_process: HomeOurServicesType[] = [
   {
     title: "Initial Enquiry",
     description:
-      "At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritize your oral health journey with precision and care.",
+      "During the initial enquiry process, you can contact Dental Opulence by phone or email to schedule an appointment or ask any questions you may have.",
     image: process_initial_inquiry_image,
   },
   {
     title: "Initial Examination",
     description:
-      "At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritize your oral health journey with precision and care.",
+      "At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritise your oral health journey with precision and care.",
     image: process_initial_examination_image,
   },
   {
     title: "Treatment Planning",
     description:
-      "At Dental Opulence, our meticulous treatment planning is tailored to your unique needs. We design personalized plans to ensure optimal oral health and stunning smiles.",
+      "At Dental Opulence, our meticulous treatment planning is tailored to your unique needs. We design personalised plans to ensure optimal oral health and stunning smiles.",
     image: process_treatment_plan_image,
   },
   {

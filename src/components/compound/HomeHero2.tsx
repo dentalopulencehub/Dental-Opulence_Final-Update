@@ -15,20 +15,22 @@ const HomeHero2 = () => {
   enhancing smiles through cosmetic procedures.`;
 
   const element = useRef(null);
+  const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
+    container: container,
     target: element,
     offset: ["start 0.9", "start 0.15"],
   });
 
-  useIsomorphicLayoutEffect(() => {
-    //scrollYProgress.on("change", (e) => console.log(e));
-  }, []);
+/*   useIsomorphicLayoutEffect(() => {
+    scrollYProgress.on("change", (e) => console.log(e));
+  }, []); */
 
   const words = value.split(" ");
 
   return (
-    <div className="w-full">
+    <div className="w-full"  >
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
           <h2 className="sm:text-[40px] text-[30px] text-white font-Pangram-Bold">

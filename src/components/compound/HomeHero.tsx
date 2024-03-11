@@ -6,7 +6,7 @@ import PrimaryLink from "../atom/PrimaryLink";
 const HomeHero = () => {
   return (
     <div className="">
-      <div className="bg-[#100E10]  pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
+      <div className="bg-[#100E10] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
           <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center sm:leading-[76px] leading-[56px] text-white">
             Elevate Your Smile with Dental Opulence
@@ -21,12 +21,12 @@ const HomeHero = () => {
             <PrimaryLink
               href="/contact"
               title="Book Now"
-              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white"
+              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
             />
             <PrimaryLink
               href="/about"
               title="About us"
-              style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white"
+              style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white duration-0"
             />
           </div>
         </div>

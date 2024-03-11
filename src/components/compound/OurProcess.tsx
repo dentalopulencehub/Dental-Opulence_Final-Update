@@ -10,7 +10,7 @@ const OurProcess = () => {
     <div className="">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
         <div className="flex flex-wrap gap-8">
-          <div className="xs:w-[370px] w-full sm:h-[228px] h-full bg-[#191919] rounded-lg py-8 px-6 flex flex-col justify-between items-start">
+          <div className="xs:w-[370px] w-full sm:h-[228px] h-full bg-[#161616] rounded-lg py-8 px-6 flex flex-col justify-between items-start border border-[#737373]">
             <p className="text-base font-Pangram-Bold text-[#AFAFAF] ">
               Our Process
             </p>

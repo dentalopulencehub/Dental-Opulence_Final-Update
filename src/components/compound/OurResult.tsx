@@ -63,7 +63,7 @@ const OurResult = () => {
             <SecondaryLink
               href="#"
               title="See All"
-              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px]"
+              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[173px] h-[56px] duration-0"
               hovered={linkHover}
               setHovered={setLinkHover}
             />

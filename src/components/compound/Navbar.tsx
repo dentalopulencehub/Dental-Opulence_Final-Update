@@ -124,10 +124,9 @@ const Navbar = () => {
                               }
                               className=""
                               alt=""
-                              width={15}
-                              height={15}
+                            
                             />
-                            <span className="text-white text-base ml-2">
+                            <span className="text-white text-base ml-3">
                               {subLink.title}
                             </span>
                           </p>
@@ -143,7 +142,7 @@ const Navbar = () => {
                       <PrimaryLink
                         href="/contact"
                         title="Book Now"
-                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[29px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative"
+                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[29px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
                       />
 
                       <Image
@@ -160,7 +159,7 @@ const Navbar = () => {
           <PrimaryLink
             href="/contact"
             title="Book Now"
-            style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white"
+            style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
           />
         </div>
         <div className="relative right-0">

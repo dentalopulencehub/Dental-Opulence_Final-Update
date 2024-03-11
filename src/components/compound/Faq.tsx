@@ -32,13 +32,13 @@ const Faq = () => {
 
       gsap.set(box, { height: "auto", marginTop: 24 });
 
-      const tl = gsap.timeline({ paused: true });
+      const tl = gsap.timeline({ paused: true, duration: 0.2 });
 
       let animation = tl
         .from(box, {
           height: 0,
           marginTop: 0,
-          duration: 0.5,
+          duration: 0.2,
           ease: "power1.inOut",
         })
         .to(

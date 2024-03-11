@@ -4,6 +4,7 @@ import React, {
   Dispatch,
   ReactNode,
   useEffect,
+  useRef
 } from "react";
 import Reducers from "./Reducers";
 import { case_studies, services_page_data } from "../constants";
@@ -19,6 +20,7 @@ const initialState: any = {
   selectedCase: case_studies[0] as CaseStudyTypeProp,
   pathToNavigate: null as string | null,
   servicePageData: null as ServicePageDataType | null,
+  layoutRef: null as any,
 };
 
 export const GlobalContext = createContext(initialState);

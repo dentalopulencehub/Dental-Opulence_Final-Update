@@ -35,6 +35,7 @@ export type HomePopularServicesType = {
   title: string;
   description: string;
   image: any;
+  image_inverted?: any;
 };
 
 export type HomeOurServicesType = {
@@ -65,6 +66,12 @@ export type TeamType = {
   name: string;
   title: string;
   image: any;
+}
+
+export type ServiceElevateType = {
+  title: string;
+  description: string;
+  number_img: any;
 }
 
 export interface FormProps {
