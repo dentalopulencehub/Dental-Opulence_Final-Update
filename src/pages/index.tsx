@@ -12,6 +12,7 @@ import {
   OurResult,
   OurProcess,
   Faq,
+  HomeOurServicesHeader,
   HomePeopleSlider,
   Footer,
   TestimonyComp,
@@ -28,6 +29,7 @@ export default function Home() {
       <HomeAwards />
       <HomeHero2 />
       <HomePopularServices />
+      <HomeOurServicesHeader />
       <HomeOurServices />
       <HomeChangeLife />
       <CompositeBondingHowLong />

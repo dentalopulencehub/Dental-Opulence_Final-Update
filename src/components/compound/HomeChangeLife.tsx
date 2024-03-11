@@ -8,8 +8,8 @@ import { ChangeLifeCard } from "../molecule";
 const HomeChangeLife = () => {
   return (
     <div className="w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#F8F8F8]">
-        <div className="flex flex-row flex-wrap sm:justify-between justify-center ">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pb-[80px] bg-white">
+        <div className="flex flex-row flex-wrap justify-center gap-8 ">
           <div className="w-[261px] h-[240px] bg-[#100E10] p-8 rounded-lg flex flex-col justify-between">
             <h3 className="text-white font-Pangram-Bold text-[32px] leading-[44px]">
               Change Your Life With us
@@ -20,9 +20,11 @@ const HomeChangeLife = () => {
             </div>
           </div>
 
-          {change_life.map((data, index) => (
-            <ChangeLifeCard key={index} {...data} />
-          ))}
+          
+            {change_life.map((data, index) => (
+              <ChangeLifeCard key={index} {...data} />
+            ))}
+         
         </div>
       </div>
     </div>
