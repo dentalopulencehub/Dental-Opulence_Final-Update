@@ -102,7 +102,7 @@ const Navbar = () => {
                 </div>
                 {link?.subLinks && (
                   <div
-                    className={`dropdown-content h-[280px] w-full text-white font-Pangram-Regular rounded-lg`}
+                    className={`dropdown-content min-h-[280px] w-full text-white font-Pangram-Regular rounded-lg`}
                   >
                     <div className="grid grid-cols-2 p-6">
                       {link.subLinks.map((subLink, index: number) => (
