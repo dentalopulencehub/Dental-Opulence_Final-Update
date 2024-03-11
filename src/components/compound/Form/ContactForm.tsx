@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="firstName"
                   placeholder="First Name *"
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.firstName}
                   onChange={handleInputChange}
@@ -41,7 +41,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="lastName"
                   placeholder="Last Name *"
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.lastName}
                   onChange={handleInputChange}
@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="phone"
                   placeholder="Phone [optional] "
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   value={formData.phone}
                   onChange={handleInputChange}
                 />
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="email"
                   placeholder="Email*"
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.email}
                   onChange={handleInputChange}
@@ -73,7 +73,7 @@ const ContactForm: React.FC = () => {
                   type="date"
                   name="company"
                   placeholder="Company*"
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm placeholder:text-[#494849]"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm placeholder:text-[#494849]"
                   required
                   value={formData.company}
                   onChange={handleInputChange}
@@ -82,18 +82,18 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="deadline"
                   placeholder="Booking Time"
-                  className="bg-[#494849] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.deadline}
                   onChange={handleInputChange}
                 />
               </div>
 
-              <div className="flex flex-col gap-2 sm:gap-5 items-start justify-center">
+              <div className="flex flex-col gap-2 sm:gap-5 items-end justify-center">
                 <textarea
                   name="message"
                   placeholder="Your message here...."
-                  className="bg-[#494849] w-full md:min-h-[100px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] border border-[#454545] w-full md:min-h-[100px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none placeholder:text-sm"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>

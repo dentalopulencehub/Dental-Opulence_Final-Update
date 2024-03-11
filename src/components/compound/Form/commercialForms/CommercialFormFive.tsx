@@ -15,11 +15,11 @@ const CommercialFormFive = ({
       <h1 className="bold text-4xl xl:text-7xl">
         {commercialFormFive[0].title}
       </h1>
-      <div className="flex flex-wrap flex-row gap-5 sm:gap-10 justify-center items-center">
+      <div className="flex flex-wrap flex-row gap-4 sm:gap-10 justify-center items-center">
         {commercialFormFive.map((item, index) => (
           <div key={index} className="btn mb-4 relative">
             <div
-              className="contact-bg hover:bg-gray-800 thin flex  items-center gap-2 text-lg xl:text-3xl   px-12 py-3 xl:py-6 text-white rounded-full relative"
+              className="bg-[#2D2D2D] hover:bg-gray-800 thin flex  items-center gap-2 text-lg xl:text-3xl   px-12 py-3 xl:py-6 text-white rounded-full relative"
               onClick={() => {
                 handleStepChange("formSeven");
                 handleOptionSelect(item.label, item.title || "");

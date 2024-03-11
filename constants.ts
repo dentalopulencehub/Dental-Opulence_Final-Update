@@ -983,7 +983,7 @@ export const helpSelect = [
   // DEFAULT
   {
     id: 1,
-    label: "Book an Appointment",
+    label: "Book An Appointment",
   },
   {
     id: 1,

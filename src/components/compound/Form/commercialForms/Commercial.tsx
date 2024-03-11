@@ -24,11 +24,11 @@ const FormThree = ({ handleStepChange, handleOptionSelect }: FormProps) => {
       <h1 className="bold text-4xl xl:text-7xl text-white">
         {commercialForm[0].title}{" "}
       </h1>
-      <div className="flex sm:flex-wrap flex-col sm:flex-row  justify-center items-center">
+      <div className="flex sm:flex-wrap flex-col sm:flex-row  gap-4 justify-center items-center">
         {commercialForm.map((item, index) => (
           <div key={index} className="btn mb-4 relative">
             <div
-              className="contact-bg sm:w-[250px] justify-center hover:bg-gray-800 thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
+              className="bg-[#2D2D2D] sm:w-[250px] justify-center hover:bg-gray-800 thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
               onClick={() => {
                 //const nextForm = getNextForm(index);
                 //handleStepChange(nextForm);

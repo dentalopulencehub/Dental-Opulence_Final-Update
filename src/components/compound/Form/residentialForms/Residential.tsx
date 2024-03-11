@@ -27,7 +27,7 @@ const FormFour = ({ handleStepChange, handleOptionSelect }: FormProps) => {
         {residentialForm.map((item, index) => (
           <div key={index} className="btn mb-4 relative">
             <div
-              className="contact-bg sm:w-[250px] justify-center bg-[#4B4B4B] hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
+              className="contact-bg sm:w-[250px] justify-center bg-[#2D2D2D] hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
               onClick={() => {
                 /*  const nextForm = getNextForm(index);
                 handleStepChange(nextForm);

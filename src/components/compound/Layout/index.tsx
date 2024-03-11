@@ -65,11 +65,11 @@ const Index = ({ children }: Props) => {
       <main className="relative w-[calc(100%-10px)] mx-auto rounded-[24px] z-[690]">
         {children}
 
-        <div className="fixed w-fit sm:bottom-10 bottom-3 md:right-[100px] sm:right-[50px] xs:right-[20px] right-[10px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">
+        {/* <div className="fixed w-fit sm:bottom-10 bottom-3 md:right-[100px] sm:right-[50px] xs:right-[20px] right-[10px] p-[22px] rounded-full bg-[#404040]/40 z-[10] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 contact-icon">
           <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
             <Image src={pen_icon} alt="" />
           </div>
-        </div>
+        </div> */}
       </main>
     </main>
   );

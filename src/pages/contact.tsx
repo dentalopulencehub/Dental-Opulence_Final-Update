@@ -5,7 +5,7 @@ import { Layout, Navbar, FormPage } from "../components/import";
 export default function Contact() {
   return (
     <Layout>
-      <Navbar />
+      {/* <Navbar /> */}
       <FormPage />
     </Layout>
   );

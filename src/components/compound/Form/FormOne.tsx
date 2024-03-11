@@ -8,6 +8,7 @@ export interface HelpSelectItem {
 interface FormOneProps {
   helpSelect: HelpSelectItem[];
   handleStepChange: (step: string) => void;
+  handleOptionSelect: (option: string, title: string) => void;
 }
 
 
@@ -27,7 +28,8 @@ const getNextForm = (index: number) => {
 
 const FormOne = ({ 
   helpSelect,
-   handleStepChange
+   handleStepChange,
+   handleOptionSelect,
    }: FormOneProps) => {
   return (
     <div className="flex flex-col gap-10 text-center">
@@ -39,10 +41,11 @@ const FormOne = ({
        
             <div
             key={index}
-              className="contact-bg  btn bg-[#4B4B4B] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-base px-12 xl:py-6 text-white rounded-full relative"
+              className="contact-bg  btn bg-[#2D2D2D] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-base px-12 xl:py-6 text-white rounded-full relative"
               onClick={() => {
                 let gottenForm = getNextForm(index)
                 handleStepChange(gottenForm);
+                handleOptionSelect(item.label, item.title || "");  
               }}
             >
               {/* {index === 0 && (
