@@ -92,12 +92,12 @@ const HomeOurServices = () => {
         </div>
       </div>
       <div
-        className={`w-full py-[120px] lg:px-[100px] sm:px-[40px] px-[20px] ${
+        className={`w-full md:py-[120px] py-[80px] lg:px-[100px] sm:px-[40px] px-[20px] ${
           selectedTheme === "light" ? "bg-white" : "bg-[#161616]"
         }`}
       >
         {selectedTheme === "light" ? (
-          <div className="flex flex-wrap mt-8 gap-6 justify-center items-center">
+          <div className="flex flex-wrap gap-6 justify-center items-center">
             {our_services.map((service, index) => (
               <OurServiceCard
                 key={index}
@@ -107,7 +107,7 @@ const HomeOurServices = () => {
             ))}
           </div>
         ) : (
-          <div className="flex flex-wrap mt-8 gap-6 justify-center items-center">
+          <div className="flex flex-wrap gap-6 justify-center items-center">
             {our_services2.map((service, index) => (
               <OurServiceCardDark
                 key={index}
