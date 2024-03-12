@@ -37,7 +37,7 @@ const FormOne = ({
         HOW CAN WE HELP?{" "}
       </h1>
       <div className="flex flex-wrap flex-col sm:flex-row gap-5 sm:gap-10 justify-center items-center">
-        {helpSelect.map((item, index) => (
+        {helpSelect.map((item:any, index) => (
        
             <div
             key={index}
@@ -45,7 +45,7 @@ const FormOne = ({
               onClick={() => {
                 let gottenForm = getNextForm(index)
                 handleStepChange(gottenForm);
-                handleOptionSelect(item.label, item.title || "");  
+                handleOptionSelect(item.label, item?.title || "");  
               }}
             >
               {/* {index === 0 && (
