@@ -4,7 +4,7 @@ import React, {
   Dispatch,
   ReactNode,
   useEffect,
-  useRef
+  useRef,
 } from "react";
 import Reducers from "./Reducers";
 import { case_studies, services_page_data } from "../constants";
@@ -21,6 +21,7 @@ const initialState: any = {
   pathToNavigate: null as string | null,
   servicePageData: null as ServicePageDataType | null,
   layoutRef: null as any,
+  menuOpen: false as boolean,
 };
 
 export const GlobalContext = createContext(initialState);
@@ -39,6 +40,10 @@ export const GlobalContextProvider = ({ children }: Props) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, query]);
+
+  useEffect(() => {
+    dispatch({ type: "SET_MENU_STATE", menuOpen: false });
+  }, [pathname]);
 
   const [state, dispatch]: [any, Dispatch<any>] = useReducer(
     Reducers,

@@ -21,3 +21,10 @@ export const handleSetPathToNavigate = (
     payload,
   });
 };
+
+export const handleSetMenuState = (
+  dispatch: Dispatch<DispatchType>,
+  payload: boolean
+) => {
+  dispatch({ type: REDUCERS.SET_MENU_STATE, payload });
+};

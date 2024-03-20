@@ -30,6 +30,12 @@ export default (state: any, action: ActionType) => {
         servicePageData: payload,
       };
 
+    case REDUCERS.SET_MENU_STATE: 
+      return {
+        ...state,
+        menuOpen: payload
+      }
+
     default:
       return state;
   }

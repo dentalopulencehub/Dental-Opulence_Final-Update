@@ -17,26 +17,26 @@ const PopularServiceCard = ({
     <div
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      className="w-[278px] h-[367px] p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition lg:border-0 border-[1px] border-[#E5E5E5] rounded-[24px] duration-0"
+      className="w-[278px] h-[366px] p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
     >
       <Image src={hover ? image_inverted : image} alt={title} />
       <h3
-        className={`mt-4 ${
+        className={`mt-7 ${
           hover ? "text-white" : "text-[#100E10]"
         } text-[24px] font-Pangram-Bold`}
       >
         {title}
       </h3>
       <p
-        className={`mt-4 text-[#4E4E4E] text-[12px] font-Pangram-Regular ${
-          hover ? "text-[#D6D6D6]" : "text-[#100E10]"
+        className={`mt-4 text-[#4E4E4E] text-[14px] font-Pangram-Regular ${
+          hover ? "text-[#D6D6D6]" : "text-[#100E10] leading-[22px]"
         } `}
       >
         {description}
       </p>
       <Link href="" className="">
         <button
-          className={`py-2 px-4 border border-[#100E10] rounded-[32px] mt-6 ${
+          className={`py-2 px-4 border border-[#100E10] rounded-[32px] mt-7 ${
             hover ? "bg-white" : "bg-transparent"
           }`}
         >

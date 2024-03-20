@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 const HomeAwards = () => {
   return (
     <div className="w-full">
-      <div className="bg-[#100E10] w-full">
+      <div className="bg-[#100E10] w-full py-[120px]">
         {/* <Marquee className="" speed={100}>
           {home_awards_images.map((award, index) => (
             <Image

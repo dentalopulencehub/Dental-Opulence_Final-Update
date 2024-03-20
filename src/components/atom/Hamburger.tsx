@@ -2,8 +2,12 @@ import React, { useContext } from "react";
 import { gsap, TimelineLite } from "../../../lib/gsap";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
 import { useGSAP } from "@gsap/react";
+import { handleSetMenuState } from "../../../context/action";
+import { GlobalContext } from "../../../context/GlobalContext";
 
 const Hambuger = () => {
+  const { dispatch, menuOpen } = useContext(GlobalContext);
+
   useGSAP(() => {
     var upper = document.getElementsByClassName("upper");
     var middle = document.getElementsByClassName("middle");
@@ -34,7 +38,7 @@ const Hambuger = () => {
 
   return (
     <div
-      //onClick={() => handleSetMenuState(dispatch, !menuOpen)}
+      onClick={() => handleSetMenuState(dispatch, !menuOpen)}
       className="bg-[#000] hamburger w-[50px] h-[50px] lg:hidden flex items-center justify-center cursor-pointer rounded-[999px]"
     >
       <svg viewBox="0 0 12 10" className=" flex" height="20px" width="29px">

@@ -460,7 +460,7 @@ export const navlinks = [
   },
   {
     href: "#",
-    label: "Services",
+    label: "General Treatment",
     subLinks: [
       {
         title: "Bridges",
@@ -578,6 +578,10 @@ export const navlinks = [
       },
     ],
   },
+  {
+    href: "/cases",
+    label: "Cases",
+  }
 ];
 
 export const home_awards_images = [
@@ -637,28 +641,28 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: teeth_whitening_service_image_dark,
     title: "Teeth Whitening",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. T...",
   },
   {
     image: invisalign_service_image,
     image_inverted: invisalign_service_image_dark,
     title: "Invisalign",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+      "At our dental practice, we understand that a straight and aligned smile can boost self-confidence and improve overall...      ",
   },
   {
     image: composite_bonding_service_image,
     image_inverted: composite_bonding_service_image_dark,
     title: "Composite Bonding",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of,...",
   },
   {
     image: general_dentistry_service_image,
     image_inverted: general_dentistry_service_image_dark,
     title: "General Dentistry",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. That’s why we offer home teeth whitening as a convenient and effective solution for achieving a brighter, more youthful-looking smile.",
+      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
   },
 ];
 

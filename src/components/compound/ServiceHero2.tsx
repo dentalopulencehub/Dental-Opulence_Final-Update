@@ -25,7 +25,7 @@ const ServiceHero2 = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#F3F3F3] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
+      <div className="bg-[#fff] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
           <h2 className="text-[34px] text-[#100E10] font-Pangram-Medium sm:w-[309px] w-full">
             Restore Your Smile&apos;s Integrity

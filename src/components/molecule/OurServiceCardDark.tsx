@@ -32,7 +32,7 @@ const OurServiceCardDark = ({
 
       card.addEventListener("mouseenter", () => {
         gsap.to(card, {
-          background: "#fff",
+          background: "#F3F3F3",
           ease: "back.in",
           duration: 0.1,
         });
@@ -75,14 +75,14 @@ const OurServiceCardDark = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-4 py-[26px] flex flex-col gap-4 items-start h-[267px]  bg-[#222222] border border-[#f4f4f4] rounded-xl max-w-[282px]  service-card`}
+      className={`px-4 py-[26px] flex flex-col gap-4 items-start h-[267px]  bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[282px]  service-card`}
     >
       <div className="">
-        <Image src={hover ? image_inverted : image} alt="" />
+        <Image src={hover ? image_inverted : image} alt="" className="" />
       </div>
       <div>
         <h3 className="text-base text-[#fff] font-Pangram-Bold">{title}</h3>
-        <p className="text-xs text-[#B2B2B2] font-Pangram-Regular mt-1">
+        <p className="text-sm text-[#B2B2B2] font-Pangram-Regular mt-1">
           {description}
         </p>
       </div>

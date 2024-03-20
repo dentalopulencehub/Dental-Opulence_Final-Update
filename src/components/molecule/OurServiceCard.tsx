@@ -79,11 +79,11 @@ const OurServiceCard = ({
       } border border-[#f4f4f4] rounded-xl max-w-[282px] h-[267px]  service-card duration-0`}
     >
       <div className="">
-        <Image src={hover ? image : image} alt=""  />
+        <Image src={hover ? image_inverted : image} alt=""  />
       </div>
       <div>
         <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>
-        <p className="text-xs text-[#4e4e4e] font-Pangram-Regular mt-1">
+        <p className="text-[13px] text-[#4e4e4e] font-Pangram-Regular mt-1">
           {description}
         </p>
       </div>

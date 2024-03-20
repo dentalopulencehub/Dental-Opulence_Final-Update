@@ -31,7 +31,7 @@ const AboutMissionVision = () => {
     <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="flex xl:flex-row flex-col gap-6 w-full">
-          <div className="flex flex-col flex-wrap gap-6 xl:max-w-[425px] w-full">
+          <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
             <div className="max-w-[425px] w-full xl:h-[225px] bg-[#222222] rounded-2xl xs:p-10 p-7">
               <Image src={about_mission_logo} alt="" />
               <h3 className="text-white text-[48px] mt-[58px]">Who we are</h3>

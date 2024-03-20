@@ -32,13 +32,13 @@ const Faq = () => {
 
       gsap.set(box, { height: "auto", marginTop: 24 });
 
-      const tl = gsap.timeline({ paused: true, duration: 0.2 });
+      const tl = gsap.timeline({ paused: true, duration: 0.3 });
 
       let animation = tl
         .from(box, {
           height: 0,
           marginTop: 0,
-          duration: 0.2,
+          duration: 0.3,
           ease: "power1.inOut",
         })
         .to(
@@ -71,10 +71,10 @@ const Faq = () => {
 
       return function (clickedMenu: any) {
         if (clickedMenu === menu) {
-          animation.reversed(!animation.reversed());
+          animation.reversed(!animation.reversed()).duration(0.3);
           //plus.setAttribute("src", '/videos/minus.svg')
         } else {
-          animation.reverse();
+          animation.reverse().duration(0.3);
         }
       };
     }

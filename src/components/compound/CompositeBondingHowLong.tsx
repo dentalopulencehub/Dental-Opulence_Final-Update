@@ -20,10 +20,10 @@ const CompositeBondingHowLong = () => {
             Composite bonding on average takes 3-4 hours.Take a look at some of
             our results below
           </p>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 justify-between gap-6 mt-16">
-            <Image src={result_sample_image1} alt="" className="w-fit" />
-            <Image src={result_sample_video1} alt="" className="w-fit" />
-            <Image src={result_sample_video1} alt="" className="w-fit" />
+          <div className="flex flex-wrap justify-center w-full gap-6 mt-16">
+            <Image src={result_sample_image1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
+            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
+            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
           </div>
         </div>
       </div>

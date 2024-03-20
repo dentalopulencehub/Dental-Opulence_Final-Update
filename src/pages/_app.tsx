@@ -4,6 +4,7 @@ import { GlobalContextProvider } from "../../context/GlobalContext";
 import ReduxProvider from "../../lib/state/reduxProvider";
 import { AOSInit } from "../../lib/Aos";
 import NavigationLoader from "../components/molecule/NavigationLoader";
+import { MenuComponent } from '../components/import'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <GlobalContextProvider>
         <NavigationLoader />
+        <MenuComponent />
         <Component {...pageProps} />
       </GlobalContextProvider>
     </ReduxProvider>
