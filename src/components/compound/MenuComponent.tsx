@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
 import { GlobalContext } from "../../../context/GlobalContext";
+import PrimaryLink from "../atom/PrimaryLink";
 import {
   handleSetMenuState,
   handleSetPathToNavigate,
@@ -74,6 +75,7 @@ const MenuComponent = () => {
       gsap.to(`.${classSelector}`, {
         height: "auto",
         opacity: 1,
+        zIndex: 1,
         duration: 0.5,
       });
     }
@@ -120,7 +122,7 @@ const MenuComponent = () => {
             <ul
               className={`${
                 link.subLinks ? "flex" : "hidden"
-              } gap-[21px] flex-col relative mt-2.5 h-0 opacity-0 innerlink-${index}`}
+              } gap-[21px] flex-col relative top-5 h-0 -z-[1] opacity-0 innerlink-${index}`}
             >
               {link.subLinks?.map((innerlink, innerindex) => (
                 <div
@@ -138,6 +140,11 @@ const MenuComponent = () => {
           </div>
         ))}
       </ul>
+      <PrimaryLink
+        href="/contact"
+        title="Book Now"
+        style="py-2 px-4 rounded-[34px] w-full max-w-[335px] h-[56px] flex items-center justify-center mt-6 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-xs hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+      />
     </div>
   );
 };

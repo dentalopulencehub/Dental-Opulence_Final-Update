@@ -38,12 +38,9 @@ export const GlobalContextProvider = ({ children }: Props) => {
       );
       dispatch({ type: "SET_SERVICE_PAGE_DATA", payload: service });
     }
+    dispatch({ type: "SET_MENU_STATE", menuOpen: false });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, query]);
-
-  useEffect(() => {
-    dispatch({ type: "SET_MENU_STATE", menuOpen: false });
-  }, [pathname]);
 
   const [state, dispatch]: [any, Dispatch<any>] = useReducer(
     Reducers,
