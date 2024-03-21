@@ -7,7 +7,10 @@ import { gsap } from "../../../../lib/gsap";
 import { NavigationLoader } from "../../molecule";
 import { GlobalContext } from "../../../../context/GlobalContext";
 import { handleSetPathToNavigate } from "../../../../context/action";
-import tl_radius from "../../../../assets/images/Dental Opulence Radius/top left.svg";
+import tr_radius from "../../../../assets/images/Dental Opulence (1)/Vector-1.svg";
+import bl_radius from "../../../../assets/images/Dental Opulence (1)/Vector-2.svg"
+import br_radius from "../../../../assets/images/Dental Opulence (1)/Vector-3.svg"
+import tl_radius from "../../../../assets/images/Dental Opulence (1)/Vector.svg"
 import contact_page_button from "../../../../assets/images/contact-page-button.svg";
 
 interface Props {
@@ -59,7 +62,10 @@ const Index = ({ children }: Props) => {
     >
       <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
         <div className="fixed bg-white w-screen h-[5px] top-0" />
-        {/* <Image src={tl_radius} className="fixed top-[5px] left-[5px]" alt="" /> */}
+        <Image src={tr_radius} className="fixed top-[5px] right-[5px]" alt="" />
+        <Image src={bl_radius} className="fixed bottom-[5px] left-[5px]" alt="" />
+        <Image src={br_radius} className="fixed bottom-[5px] right-[5px]" alt="" />
+        <Image src={tl_radius} className="fixed top-[5px] left-[5px]" alt="" />
 
         <div className="fixed bg-white w-[5px] h-screen left-0 " />
 

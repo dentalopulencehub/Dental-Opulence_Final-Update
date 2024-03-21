@@ -29,7 +29,7 @@ const ServiceTransform = () => {
             />
           </div>
 
-          <div className="w-[80%] h-[50%] mx-auto flex shrink mt-[77px]">
+          <div className="w-full h-[50%] mx-auto  mt-[77px]">
             <Image src={service_transform_image1} alt="" className="mx-auto" />
           </div>
         </div>
