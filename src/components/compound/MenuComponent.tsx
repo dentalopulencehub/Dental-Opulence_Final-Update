@@ -90,7 +90,7 @@ const MenuComponent = () => {
   };
 
   return (
-    <div className="fixed h-[88%] overflow-y-scroll -bottom-[1%] px-5 hidden opacity-0 -translate-x-[50%] w-[calc(100%-10px)] left-[50%] menuOverlay z-[14]  bg-[#222222]">
+    <div className="fixed xs:h-[88%] h-[85%] overflow-y-scroll -bottom-[1%] px-5 hidden opacity-0 -translate-x-[50%] w-[calc(100%-10px)] left-[50%] menuOverlay z-[14]  bg-[#222222]">
       <ul>
         {navlinks.map((link, index) => (
           <div
