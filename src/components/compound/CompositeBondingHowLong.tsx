@@ -21,9 +21,9 @@ const CompositeBondingHowLong = () => {
             our results below
           </p>
           <div className="flex flex-wrap justify-center w-full gap-6 mt-16">
-            <Image src={result_sample_image1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
-            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
-            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[384px] object-cover rounded-2xl" />
+            <Image src={result_sample_image1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
+            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
+            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
           </div>
         </div>
       </div>

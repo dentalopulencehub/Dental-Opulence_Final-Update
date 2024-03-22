@@ -36,8 +36,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <nav className="fixed w-full mix-blend-difference h-[70px] bg-transparent flex items-center justify-between top-[30px] lg:pt-5 lg:px-[100px] sm:px-[60px] px-10 z-[10]">
+    <div className="relative lg:px-[100px] sm:px-[40px] px-[20px] w-full h-full">
+      <nav className="fixed w-fit mix-blend-difference h-[70px] bg-transparent flex items-center justify-between top-[30px] z-[10]">
         <div
           className="nav-logo-wrapper"
           onClick={() => handleSetPathToNavigate(dispatch, "/")}
@@ -78,7 +78,7 @@ const Navbar = () => {
           </svg>
         </div>
       </nav>
-      <div className="fixed h-[70px] w-full flex items-center justify-between top-[30px] lg:pt-5 lg:px-[120px] sm:px-[60px] px-10 z-[10] xl:left-[23%] lg:left-[10%] big:left-[80%] md:left-[80%] sm:left-[75%] left-[70%]">
+      <div className="fixed w-fit top-[30px] z-[10] lg:right-[100px] sm:right-[40px] right-[20px]">
         <div className="pl-[43.5px] pr-[14px] justify-between min-w-[872px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
           <ul className="flex items-center text-white gap-10">
             {navlinks.map((link, index) => (

@@ -70,7 +70,7 @@ const OurResult = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap xl:justify-between justify-evenly mt-10">
+        <div className="flex flex-wrap gap-6 justify-center mt-10">
           {home_result_images.map((data, index) => (
             <ResultCard key={index} image={data} />
           ))}

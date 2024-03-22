@@ -23,14 +23,14 @@ const HomeHero2 = () => {
     offset: ["start 0.9", "start 0.15"],
   });
 
-/*   useIsomorphicLayoutEffect(() => {
+  /*   useIsomorphicLayoutEffect(() => {
     scrollYProgress.on("change", (e) => console.log(e));
   }, []); */
 
   const words = value.split(" ");
 
   return (
-    <div className="w-full"  >
+    <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
           <h2 className="sm:text-[40px] text-[30px] text-white font-Pangram-Bold">
@@ -40,7 +40,7 @@ const HomeHero2 = () => {
         </div>
 
         <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
-          <p className="flex flex-col items-center">
+          <p className="flex flex-col items-centehttp://localhost:3002/_next/static/media/home-hero2-ill.fd70e812.svgr">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
           </p>
