@@ -4,6 +4,7 @@ import Image from "next/image";
 import nav_logo from "../../../assets/images/nav-logo.svg";
 import pointer_down from "../../../assets/images/pointer-down.svg";
 import logo_background_overlay from "../../../assets/images/logo-bg-overlay.svg";
+import nav_drop_down_img from "../../../assets/images/nav-drop-down-img.svg";
 import PrimaryLink from "../atom/PrimaryLink";
 import Hambuger from "../atom/Hamburger";
 import { useGSAP } from "@gsap/react";
@@ -137,8 +138,9 @@ const Navbar = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="relative w-[351px] bg-[#222222] pt-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">
-                      <h3 className="text-[#8A8A8A] w-[210px] text-2xl leading-[36px]">
+                    <div className="relative w-[351px] bg-[#222222] py-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">
+                      <Image src={nav_drop_down_img} className="w-fit" alt="" />
+                      <h3 className="text-[#8A8A8A] w-full text-[20px] mt-5 leading-[24px]">
                         <span className="text-white">Transform</span> Your Smile
                         Today with Dental Opulence!
                       </h3>
@@ -146,14 +148,14 @@ const Navbar = () => {
                       <PrimaryLink
                         href="/contact"
                         title="Book Now"
-                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[29px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
+                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[14px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
                       />
 
-                      <Image
+                      {/*  <Image
                         src={logo_background_overlay}
                         className="absolute  z-[7] w-[109px] bottom-[15px] right-4 h-[56px]"
                         alt=""
-                      />
+                      /> */}
                     </div>
                   </div>
                 )}
