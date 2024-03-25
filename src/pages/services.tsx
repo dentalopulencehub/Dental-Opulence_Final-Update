@@ -15,6 +15,7 @@ import {
   Faq,
   HomePeopleSlider,
   Navbar,
+  ServiceOurService
 } from "../components/import";
 
 export default function Services() {
@@ -29,7 +30,8 @@ export default function Services() {
       <ServiceElevate />
       <ServiceTransform />
       <CompositeBondingHowLong />
-      <HomeOurServices />
+      <ServiceOurService />
+      {/* <HomeOurServices /> */}
       <TestimonyComp />
       <OurProcess />
       <Faq />

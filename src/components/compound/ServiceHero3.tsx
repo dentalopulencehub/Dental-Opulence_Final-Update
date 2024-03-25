@@ -10,7 +10,7 @@ const ServiceHero3 = () => {
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
           Same Day Composite Bonding Smile Makeovers - 500 Every Year
         </h2>
-        <Image src={service_hero3_vid} alt="" />
+        <Image src={service_hero3_vid} alt="" className="w-full" />
         <PrimaryLink
           href="/contact"
           title="Book Free Consultation Now"

@@ -50,7 +50,7 @@ const ServiceCompositeBonding = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-6 justify-between xl:max-w-[751px] w-full">
+          <div className="flex flex-col gap-6 justify-between w-full">
             <div className=" w-full xl:min-h-[310px] bg-[#222222] rounded-2xl xs:pt-10 xs:px-10 pt-7 px-7 ">
               <h4 className="text-[#8A8A8A] text-[34px] sm:max-w-[571px] mx-auto text-center">
                 What is <span className="text-white">Composite bonding</span>{" "}

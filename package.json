@@ -21,6 +21,7 @@
     "embla-carousel-react": "^8.0.0-rc23",
     "gsap": "^3.12.5",
     "next": "14.1.0",
+    "next-pwa": "^5.6.0",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",

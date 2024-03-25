@@ -45,7 +45,7 @@ const ServiceElevate = () => {
           Discover the Benefits of Dental Bridges
         </h3>
 
-        <div className="flex flex-row flex-wrap gap-6 mt-16 justify-center" >
+        <div className="grid md:grid-cols-3 auto-cols-fr gap-6 mt-16 justify-center w-full" >
           {service_elevate.map((service: ServiceElevateType, index: number) => (
             <ServiceElevateCard key={index} {...service} />
           ))}

@@ -9,7 +9,7 @@ const ServiceElevateCard = ({
   title,
 }: ServiceElevateType) => {
   return (
-    <div className="max-w-[384px] w-full rounded-2xl bg-[#222222] p-8 relative z-[5]">
+    <div className="w-full rounded-2xl bg-[#222222] p-8 relative z-[5]">
       <Image
         src={number_img}
         className="absolute z-[3] right-8 top-8"
