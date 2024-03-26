@@ -16,7 +16,7 @@ import {
   HomePeopleSlider,
   Footer,
   TestimonyComp,
-  CompositeBondingHowLong
+  CompositeBondingHowLong,
 } from "../components/import";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,6 +28,7 @@ export default function Home() {
       <HomeHero />
       <HomeAwards />
       <HomeHero2 />
+      <HomePeopleSlider />
       <HomePopularServices />
       <HomeOurServicesHeader />
       <HomeOurServices />
@@ -37,7 +38,7 @@ export default function Home() {
       <TestimonyComp />
       <OurProcess />
       <Faq />
-      <HomePeopleSlider />
+
       <Footer />
     </Layout>
   );

@@ -5,8 +5,8 @@ import { people_slider } from "../../../constants";
 
 const HomePeopleSlider = () => {
   return (
-    <div className=" w-full">
-      <div className="bg-[#100E10] w-full py-[80px] border-t border-t-[#3D3D3D] border-b border-b-[#3D3D3D]">
+    <div className=" w-full relative ">
+      <div className="bg-[#100E10] w-full py-[80px] border-b border-b-[#3D3D3D]">
         <Marquee className="" speed={100} autoFill >
           {people_slider.map((award, index) => (
             <Image

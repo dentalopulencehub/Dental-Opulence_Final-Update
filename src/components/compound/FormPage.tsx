@@ -116,7 +116,7 @@ const Page = () => {
   return (
     // <section className="bg-black relative  overflow-hidden rounded-3xl w-full h-full  md:px-4">
     <>
-      <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden  rounded-3xl  sm:pt-10 xl:px-[120px] flex flex-col items-center justify-between  mx-auto my-auto">
+      <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden  rounded-3xl  sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] flex flex-col items-center justify-between mx-auto my-auto">
         <div className="w-full h-[100vh] absolute flex items-center justify-center">
           <svg
             width="1053"
@@ -188,7 +188,7 @@ const Page = () => {
             </nav>
           ) : (
             <div
-              className="arrow-main absolute left-0 border p-[22px] w-[84px] h-[84px] rounded-full"
+              className="arrow-main absolute left-0 border p-[22px] w-[84px] h-[84px] rounded-full sm:scale-[1] scale-[0.5]"
               data-state="1"
               onClick={handleBackButtonClick}
             >
@@ -213,12 +213,12 @@ const Page = () => {
               </div>
             </div>
           )}
-          <div className="scroll w-[350px] md:w-4/5  flex md:flex-wrap items-center justify-center gap-5 z-0  overflow-x-auto cursor-grab md:cursor-pointer">
+          <div className="scroll w-full md:w-4/5  flex md:flex-wrap items-center justify-center gap-5 z-0 relative md:top-0 top-[70px] overflow-x-auto cursor-grab md:cursor-pointer">
             {selectedOptions.map((option, index) => (
               <button
                 type="button"
                 key={index}
-                className="contact-bg bg-[#2D2D2D] border border-[#454545] thin flex items-center gap-2 text-sm px-3 py-1 text-white rounded-full"
+                className="contact-bg bg-[#2D2D2D] border border-[#454545] thin flex items-center gap-2 md:text-sm text-[9px] px-3 py-2 text-white rounded-full"
                 data-aos="fade-up-right"
               >
                 {option}
@@ -226,7 +226,7 @@ const Page = () => {
             ))}
           </div>
           <div
-            className="arrow-main absolute  right-0 border p-[22px] w-[84px] h-[84px] rounded-full"
+            className="arrow-main absolute  right-0 border p-[22px] w-[84px] h-[84px] sm:scale-[1] scale-[0.5] rounded-full"
             data-state="1"
             onClick={() => router.back()}
           >
@@ -393,7 +393,7 @@ const Page = () => {
           {/* progress bar component */}
         </section>
         {/* back button */}
-        <div className="relative justify-between items-center flex  w-full mb-12">
+        <div className="relative justify-between items-center flex  w-full sm:mb-12 mb-3">
           {visitedSteps.length != 0 ? (
             <nav className="left-0  mix-blend-difference h-[70px] bg-transparent cursor-pointer flex items-center justify-between  ">
               <div

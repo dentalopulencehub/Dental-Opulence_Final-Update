@@ -28,7 +28,7 @@ const FormThree = ({ handleStepChange, handleOptionSelect }: FormProps) => {
         {commercialForm.map((item, index) => (
           <div key={index} className="btn mb-4 relative">
             <div
-              className="bg-[#2D2D2D] sm:w-[250px] justify-center hover:bg-gray-800 thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
+              className="bg-[#2D2D2D] sm:w-[250px] justify-center hover:bg-gray-800 thin flex text-center items-center gap-2 text-base px-12 lg:py-6 py-3 text-white rounded-full relative"
               onClick={() => {
                 //const nextForm = getNextForm(index);
                 //handleStepChange(nextForm);

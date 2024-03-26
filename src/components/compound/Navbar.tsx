@@ -104,13 +104,13 @@ const Navbar = () => {
                 </div>
                 {link?.subLinks && (
                   <div
-                    className={`dropdown-content min-h-[280px] w-full text-white font-Pangram-Regular rounded-lg ${
+                    className={`dropdown-content h-fit w-full text-white font-Pangram-Regular rounded-lg ${
                       link?.label === "General Treatment"
                         ? "-right-[277%]"
                         : "-right-[140%]"
                     }`}
                   >
-                    <div className="grid grid-cols-2 p-6">
+                    <div className="inline-grid grid-cols-2 p-6 grid-flow-row place-content-start place-items-start">
                       {link.subLinks.map((subLink, index: number) => (
                         <div
                           onClick={() =>
