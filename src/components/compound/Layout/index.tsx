@@ -77,7 +77,7 @@ const Index = ({ children }: Props) => {
         {children}
 
         <Image
-          className="fixed w-[86px] h-[86px] sm:bottom-10 bottom-3 md:right-[50px] sm:right-[20px] xs:right-[12px] right-[8px] contact-icon cursor-pointer"
+          className="fixed w-[86px] h-[86px] sm:bottom-10 bottom-3 right-[10px] contact-icon cursor-pointer"
           onClick={() => handleSetPathToNavigate(dispatch, "/contact")}
           src={contact_page_button}
           alt="floating contact page button"

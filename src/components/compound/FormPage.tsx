@@ -213,7 +213,7 @@ const Page = () => {
               </div>
             </div>
           )}
-          <div className="scroll w-full md:w-4/5  flex md:flex-wrap items-center justify-center gap-5 z-0 relative md:top-0 top-[70px] overflow-x-auto cursor-grab md:cursor-pointer">
+          <div className="scroll w-full md:w-4/5 mx-auto flex md:flex-wrap items-center justify-center gap-5 z-0 relative md:top-0 top-[70px] overflow-x-auto cursor-grab md:cursor-pointer">
             {selectedOptions.map((option, index) => (
               <button
                 type="button"
