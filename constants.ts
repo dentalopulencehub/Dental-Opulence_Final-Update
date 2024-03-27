@@ -790,7 +790,7 @@ export const our_services2: HomeOurServicesType[] = [
     image_inverted: crown_veneers_service_icon_light,
   },
   {
-    title: "White Fillings",
+    title: "Composite Edge Bonding",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: composite_edge_bonding_service_icon,
