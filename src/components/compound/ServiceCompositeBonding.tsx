@@ -12,21 +12,21 @@ const ServiceCompositeBonding = () => {
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="flex xl:flex-row flex-col gap-6 w-full">
           <div className="flex flex-col flex-wrap gap-6 xl:max-w-[425px] w-full">
-            <div className="w-full xl:h-[243px] bg-[#222222] rounded-2xl xs:p-10 p-7">
+            <div className="w-full xl:h-[203px] bg-[#222222] rounded-2xl xs:p-10 p-7">
               <Image src={about_mission_logo} alt="" />
-              <h3 className="text-white text-[34px] mt-[48px]">
+              <h3 className="text-white text-[34px] mt-[18px]">
                 100 Happy smile{" "}
-                <span className="text-[#8A8A8A]">around the world</span>
+                <span className="text-[#8A8A8A] font-Pangram-Medium">around the world</span>
               </h3>
             </div>
-            <div className="w-full xl:min-h-[538px] bg-[#222222] rounded-2xl xs:p-10 p-7">
-              <h4 className="text-[#8A8A8A] text-[34px]">
+            <div className="w-full h-[482px] bg-[#222222] rounded-2xl xs:p-10 p-7">
+              <h3 className="text-[#8A8A8A] text-[34px] leading-[39px]">
                 Situation where{" "}
-                <span className="text-white">Composite bonding</span> is
-                suitable.
-              </h4>
+                <span className="text-white font-Pangram-Medium">Composite bonding</span> <br />
+                is suitable.
+              </h3>
 
-              <div className="flex flex-col mt-[64px]">
+              <div className="flex flex-col mt-[24px]">
                 <div className="flex items-center gap-4 border-b border-b-[#737373] pb-4">
                   <Image src={checked_icon} alt="Checked Icon" />
                   <p className="text-white">CHIPPED TOOTH</p>
@@ -50,13 +50,13 @@ const ServiceCompositeBonding = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-6 justify-between w-full">
-            <div className=" w-full xl:min-h-[310px] bg-[#222222] rounded-2xl xs:pt-10 xs:px-10 pt-7 px-7 ">
-              <h4 className="text-[#8A8A8A] text-[34px] sm:max-w-[571px] mx-auto text-center">
+          <div className="flex flex-col gap-6 w-full">
+            <div className=" w-full h-fit bg-[#222222] rounded-2xl xs:pt-10 xs:px-10 pt-7 px-7 ">
+              <h4 className="text-[#8A8A8A] text-[34px] leading-[39px] sm:max-w-[571px] mx-auto text-center">
                 What is <span className="text-white">Composite bonding</span>{" "}
                 explained made simple.
               </h4>
-              <p className="text-white text-center sm:max-w-[571px] mx-auto mt-[51px] text-[18px] font-Pangram-Regular">
+              <p className="text-white text-center sm:max-w-[571px] mx-auto mt-[21px] text-[18px] font-Pangram-Regular">
                 Some text Some text Some text Some text Some textSome text Some
                 text Some text Some text Some textome text Some text Some
                 textome text Some text Some textome text Some text Some textome
@@ -65,7 +65,7 @@ const ServiceCompositeBonding = () => {
               <Image
                 src={service_composite_images}
                 alt=""
-                className="mt-[74px]"
+                className="mt-[10px]"
               />
             </div>
             <div className="w-full xl:h-[310px] bg-[#222222] rounded-2xl xs:p-10 p-7 relative">
