@@ -38,7 +38,7 @@ export default function Home() {
       <TestimonyComp />
       <OurProcess />
       <Faq />
-
+      <HomePeopleSlider />
       <Footer />
     </Layout>
   );
