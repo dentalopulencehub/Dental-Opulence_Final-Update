@@ -273,12 +273,13 @@ const Page = () => {
               />
             )}
 
-            {/*     {activeStep === "formFour" && (
+            {activeStep === "formFour" && (
               <Residential
                 handleStepChange={handleStepChange}
                 handleOptionSelect={handleOptionSelect}
               />
             )}
+            {/*
             {activeStep === "formFive" && (
               <ResidentialFormOne
                 handleStepChange={handleStepChange}

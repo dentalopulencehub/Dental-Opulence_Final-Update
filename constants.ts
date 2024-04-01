@@ -441,11 +441,75 @@ export const services_page_data: ServicePageDataType[] = [
     type: "white-fillings",
   },
   {
-    title: "Root Canal Treatments",
+    title: "Invisalign",
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
-    type: "root-canal-treatments",
+    type: "invisalign",
+  },
+
+  {
+    title: "Fixed Retainers",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "fixed-retainers",
+  },
+  {
+    title: "Teeth Whitening",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "teeth-whitening",
+  },
+  {
+    title: "Vivera Retainers",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "vivera-retainers",
+  },
+  {
+    title: "Crowns",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "crowns",
+  },
+  {
+    title: "Composite Veneers",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "composite-veneers",
+  },
+  {
+    title: "Composite Bonding",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "composite-bonding",
+  },
+  {
+    title: "Routine Examination",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "routine-examination",
+  },
+  {
+    title: "Internal Tooth Whitening",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "internal-tooth-whitening",
+  },
+  {
+    title: "Composite Edge Bonding",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    type: "composite-edge-bonding",
   },
 ];
 
@@ -518,61 +582,61 @@ export const navlinks = [
     subLinks: [
       {
         title: "Invisalign",
-        href: "#",
+        href: "/services?service=invisalign",
         icon: invis_align_link_icon,
         icon_hovered: invis_align_link_icon_light,
       },
       {
         title: "Fixed Retainers",
-        href: "#",
+        href: "/services?service=fixed-retainers",
         icon: fixed_retainers_link_icon,
         icon_hovered: fixed_retainers_link_icon_light,
       },
       {
         title: "Teeth Whitening",
-        href: "#",
+        href: "/services?service=teeth-whitening",
         icon: teeth_whitening_link_icon,
         icon_hovered: teet_whitening_link_icon_light,
       },
       {
         title: "Vivera Retainers",
-        href: "#",
+        href: "/services?service=vivera-retainers",
         icon: vivera_retainers_link_icon,
         icon_hovered: vivera_retainers_link_icon_light,
       },
       {
         title: "Crowns/Veneers",
-        href: "#",
+        href: "/services?service=crowns",
         icon: crown_veneers_link_icon,
         icon_hovered: crown_veneers_link_icon_light,
       },
       {
         title: "Composite Veneers",
-        href: "#",
+        href: "/services?service=composite-veneers",
         icon: composite_veneers_link_icon,
         icon_hovered: composite_veneers_link_icon_light,
       },
       {
         title: "Composite  Bonding",
-        href: "#",
+        href: "/services?service=composite-bonding",
         icon: composite_bonding_link_icon,
         icon_hovered: composite_bonding_link_icon_light,
       },
       {
         title: "Routine Examination",
-        href: "#",
+        href: "/services?service=routine-examination",
         icon: routine_examination_link_icon,
         icon_hovered: routine_examination_link_icon_light,
       },
       {
         title: "Internal Tooth Whitening",
-        href: "#",
+        href: "/services?service=internal-tooth-whitening",
         icon: internal_tooth_whitening_link_icon,
         icon_hovered: internal_tooth_whitening_link_icon_light,
       },
       {
         title: "Composite Edge Bonding",
-        href: "#",
+        href: "/services?service=composite-edge-bonding",
         icon: composite_edge_bonding_link_icon,
         icon_hovered: composite_edge_bonding_link_icon_light,
       },
@@ -581,7 +645,7 @@ export const navlinks = [
   {
     href: "/cases",
     label: "Cases",
-  }
+  },
 ];
 
 export const home_awards_images = [

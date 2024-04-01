@@ -6,7 +6,7 @@ export enum REDUCERS {
   SET_SELECTED_CASE = "SET_SELECTED_CASE",
   SET_PATH_TO_NAVIGATE = "SET_PATH_TO_NAVIGATE",
   SET_SERVICE_PAGE_DATA = "SET_SERVICE_PAGE_DATA",
-  SET_MENU_STATE = "SET_MENU_STATE"
+  SET_MENU_STATE = "SET_MENU_STATE",
 }
 
 export type ActionType = {
@@ -67,13 +67,13 @@ export type TeamType = {
   name: string;
   title: string;
   image: any;
-}
+};
 
 export type ServiceElevateType = {
   title: string;
   description: string;
   number_img: any;
-}
+};
 
 export interface FormProps {
   // stepThree: HelpSelectItem[];
@@ -91,14 +91,29 @@ export interface FormData {
   message: string;
 }
 
-
 export type ServicePageDataType = {
   title: string;
   description: string;
   price: string;
   type: serviceType;
+};
 
-} 
-
-
-export type serviceType = 'bridges' | 'crowns-veneers' | 'dentures' | 'examination' | 'extractions' | 'hygienist' | 'white-fillings' | 'root-canal-treatments' | ''
+export type serviceType =
+  | "bridges"
+  | "crowns-veneers"
+  | "dentures"
+  | "examination"
+  | "extractions"
+  | "hygienist"
+  | "white-fillings"
+  | "root-canal-treatments"
+  | "invisalign"
+  | "fixed-retainers"
+  | "teeth-whitening"
+  | "vivera-retainers"
+  | "crowns"
+  | "composite-veneers"
+  | "composite-bonding"
+  | "routine-examination"
+  | "internal-tooth-whitening"
+  | "composite-edge-bonding";

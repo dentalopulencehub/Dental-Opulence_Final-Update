@@ -29,9 +29,7 @@ const FormTwo = ({ handleStepChange, handleOptionSelect }: FormProps) => {
                 
               }}
             >
-             {/*  <span>
-                <YellowButton />
-              </span> */}
+           
               {item.label}
             </div>
           </div>
