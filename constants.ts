@@ -12,7 +12,7 @@ import {
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
-import bridge_link_icon_light from "./assets/images/bridge-link-icon-light.svg";
+import bridge_link_icon_light from "./assets/images/bridge-link-icon.svg";
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
 import crown_link_icon_light from "./assets/images/crown-link-icon-light.svg";
 import dentures_link_icon from "./assets/images/dentures-link-icon.svg";
@@ -239,6 +239,33 @@ import service_award_img4 from "./assets/images/service-award-img4.svg";
 import service_award_img5 from "./assets/images/service-award-img5.svg";
 import service_award_img6 from "./assets/images/service-award-img6.svg";
 
+
+import bridges_service_hero_image from "./assets/images/bridge-service-hero-image.svg"
+import crown_veneers_service_hero_image from "./assets/images/crown-veneer-service-hero-image.svg"
+import dentures_service_hero_image from "./assets/images/denture-service-hero-image.svg"
+import examination_service_hero_image from "./assets/images/examination-service-hero-image.svg"
+import extraction_service_hero_image from "./assets/images/extractions-service-hero-image.svg"
+import hygienist_service_hero_image from "./assets/images/hygienist-service-hero-image.svg"
+import white_fillings_service_hero_image from "./assets/images/white-fillings-service-hero-image.svg"
+import root_canal_treatments_service_hero_image from "./assets/images/root-canal-services-image.svg"
+import invisalign_service_hero_image from "./assets/images/invisalign-service-hero-image.svg"
+import fixed_retainers_service_hero_image from "./assets/images/fixed-retainers-service-hero-image.svg"
+import teeth_whitening_service_hero_image from "./assets/images/teeth-whitening-service-hero-image.svg"
+import vivera_service_hero_image from "./assets/images/vivera-service-hero-image.svg"
+import crowns_service_hero_image from "./assets/images/crowns-service-hero-image.svg"
+import composite_veneers_service_hero_image from "./assets/images/composite-veneers-service-image.svg"
+import composite_bonding_service_hero_image from "./assets/images/compositeB-service-hero-image.svg"
+import routine_examination_service_hero_image from "./assets/images/routine-examination-service-image.svg"
+import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg"
+import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
+
+
+
+
+
+//Service types images
+
+
 export const team: TeamType[] = [
   {
     name: "Dima Laurankova",
@@ -396,6 +423,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: bridges_service_hero_image,
     type: "bridges",
   },
   {
@@ -403,6 +431,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: crown_veneers_service_hero_image,
     type: "crowns-veneers",
   },
   {
@@ -410,6 +439,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: dentures_service_hero_image,
     type: "dentures",
   },
   {
@@ -417,6 +447,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: examination_service_hero_image,
     type: "examination",
   },
   {
@@ -424,6 +455,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: extraction_service_hero_image,
     type: "extractions",
   },
   {
@@ -431,6 +463,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: hygienist_service_hero_image,
     type: "hygienist",
   },
   {
@@ -438,13 +471,23 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: white_fillings_service_hero_image,
     type: "white-fillings",
+  },
+  {
+    title: "Root Canal Treatments",
+    price: "£650",
+    description:
+      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: root_canal_treatments_service_hero_image,
+    type: "root-canal-treatments",
   },
   {
     title: "Invisalign",
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: invisalign_service_hero_image,
     type: "invisalign",
   },
 
@@ -453,6 +496,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: fixed_retainers_service_hero_image,
     type: "fixed-retainers",
   },
   {
@@ -460,6 +504,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: teeth_whitening_service_hero_image,
     type: "teeth-whitening",
   },
   {
@@ -467,6 +512,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: vivera_service_hero_image,
     type: "vivera-retainers",
   },
   {
@@ -474,6 +520,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: crowns_service_hero_image,
     type: "crowns",
   },
   {
@@ -481,6 +528,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      heroImage: composite_veneers_service_hero_image,
     type: "composite-veneers",
   },
   {
@@ -488,6 +536,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    heroImage: composite_bonding_service_hero_image,
     type: "composite-bonding",
   },
   {
@@ -495,6 +544,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    heroImage: routine_examination_service_hero_image,
     type: "routine-examination",
   },
   {
@@ -502,6 +552,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    heroImage: internal_tooth_whiteneing_service_hero_image,
     type: "internal-tooth-whitening",
   },
   {
@@ -509,6 +560,7 @@ export const services_page_data: ServicePageDataType[] = [
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+    heroImage: composite_edge_bonding_service_hero_image,
     type: "composite-edge-bonding",
   },
 ];
@@ -530,49 +582,49 @@ export const navlinks = [
         title: "Bridges",
         href: "/services?service=bridges",
         icon: bridge_link_icon,
-        icon_hovered: bridge_link_icon_light,
+        icon_hovered: bridge_link_icon,
       },
       {
         title: "Crowns / Veneers",
         href: "/services?service=crowns-veneers",
         icon: crown_link_icon,
-        icon_hovered: crown_link_icon_light,
+        icon_hovered: crown_link_icon,
       },
       {
         title: "Dentures",
         href: "/services?service=dentures",
         icon: dentures_link_icon,
-        icon_hovered: dentures_link_icon_light,
+        icon_hovered: dentures_link_icon,
       },
       {
         title: "Examination",
         href: "/services?service=examination",
         icon: examination_link_icon,
-        icon_hovered: examination_link_icon_light,
+        icon_hovered: examination_link_icon,
       },
       {
         title: "Extractions",
         href: "/services?service=extractions",
         icon: extractions_link_icon,
-        icon_hovered: extractions_link_icon_light,
+        icon_hovered: extractions_link_icon,
       },
       {
         title: "Hygienist",
         href: "/services?service=hygienist",
         icon: hygienist_link_icon,
-        icon_hovered: hygienist_link_icon_light,
+        icon_hovered: hygienist_link_icon,
       },
       {
         title: "White Fillings",
         href: "/services?service=white-fillings",
         icon: white_fillings_link_icon,
-        icon_hovered: white_fillings_link_icon_light,
+        icon_hovered: white_fillings_link_icon,
       },
       {
         title: "Root Canal Treatments",
         href: "/services?service=root-canal-treatments",
         icon: root_canal_link_icon,
-        icon_hovered: root_canal_link_icon_light,
+        icon_hovered: root_canal_link_icon,
       },
     ],
   },
@@ -584,61 +636,61 @@ export const navlinks = [
         title: "Invisalign",
         href: "/services?service=invisalign",
         icon: invis_align_link_icon,
-        icon_hovered: invis_align_link_icon_light,
+        icon_hovered: invis_align_link_icon,
       },
       {
         title: "Fixed Retainers",
         href: "/services?service=fixed-retainers",
         icon: fixed_retainers_link_icon,
-        icon_hovered: fixed_retainers_link_icon_light,
+        icon_hovered: fixed_retainers_link_icon,
       },
       {
         title: "Teeth Whitening",
         href: "/services?service=teeth-whitening",
         icon: teeth_whitening_link_icon,
-        icon_hovered: teet_whitening_link_icon_light,
+        icon_hovered: teeth_whitening_link_icon,
       },
       {
         title: "Vivera Retainers",
         href: "/services?service=vivera-retainers",
         icon: vivera_retainers_link_icon,
-        icon_hovered: vivera_retainers_link_icon_light,
+        icon_hovered: vivera_retainers_link_icon,
       },
       {
         title: "Crowns/Veneers",
         href: "/services?service=crowns",
         icon: crown_veneers_link_icon,
-        icon_hovered: crown_veneers_link_icon_light,
+        icon_hovered: crown_veneers_link_icon,
       },
       {
         title: "Composite Veneers",
         href: "/services?service=composite-veneers",
         icon: composite_veneers_link_icon,
-        icon_hovered: composite_veneers_link_icon_light,
+        icon_hovered: composite_veneers_link_icon,
       },
       {
         title: "Composite  Bonding",
         href: "/services?service=composite-bonding",
         icon: composite_bonding_link_icon,
-        icon_hovered: composite_bonding_link_icon_light,
+        icon_hovered: composite_bonding_link_icon,
       },
       {
         title: "Routine Examination",
         href: "/services?service=routine-examination",
         icon: routine_examination_link_icon,
-        icon_hovered: routine_examination_link_icon_light,
+        icon_hovered: routine_examination_link_icon,
       },
       {
         title: "Internal Tooth Whitening",
         href: "/services?service=internal-tooth-whitening",
         icon: internal_tooth_whitening_link_icon,
-        icon_hovered: internal_tooth_whitening_link_icon_light,
+        icon_hovered: internal_tooth_whitening_link_icon,
       },
       {
         title: "Composite Edge Bonding",
         href: "/services?service=composite-edge-bonding",
         icon: composite_edge_bonding_link_icon,
-        icon_hovered: composite_edge_bonding_link_icon_light,
+        icon_hovered: composite_edge_bonding_link_icon,
       },
     ],
   },

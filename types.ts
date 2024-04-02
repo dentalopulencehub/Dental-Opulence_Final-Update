@@ -95,6 +95,7 @@ export type ServicePageDataType = {
   title: string;
   description: string;
   price: string;
+  heroImage?: any;
   type: serviceType;
 };
 
