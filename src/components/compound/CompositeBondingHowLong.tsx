@@ -8,9 +8,7 @@ const CompositeBondingHowLong = () => {
   const { pathname } = useRouter();
 
   return (
-    <div
-      className={`w-full`}
-    >
+    <div className={`w-full`}>
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-white">
         <div className="mt-12 flex flex-col items-center">
           <h2 className="font-Pangram font-bold text-[48px] leading-[53px] text-[#100E10] text-center sm:max-w-[593px]">
@@ -21,9 +19,30 @@ const CompositeBondingHowLong = () => {
             our results below
           </p>
           <div className="flex flex-wrap justify-center w-full gap-6 mt-16">
-            <Image src={result_sample_image1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
-            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
-            <Image src={result_sample_video1} alt="" className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl" />
+            <Image
+              src={result_sample_image1}
+              alt=""
+              className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl"
+            />
+            <video
+              autoPlay={true}
+              loop
+              height="416"
+              className="object-cover rounded-2xl h-[416px] w-[394px]"
+              id="video1"
+              playsInline
+              muted
+            >
+              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+              <source src="example.webm" type="video/webm" />
+              <track kind="captions" />
+              Your browser does not support the video tag.
+            </video>
+            <Image
+              src={result_sample_video1}
+              alt=""
+              className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl"
+            />
           </div>
         </div>
       </div>
