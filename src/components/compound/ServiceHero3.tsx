@@ -10,7 +10,27 @@ const ServiceHero3 = () => {
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
           Same Day Composite Bonding Smile Makeovers - 500 Every Year
         </h2>
-        <Image src={service_hero3_vid} alt="" className="w-full" />
+        <video
+          autoPlay={true}
+          loop
+          height="470"
+          className="object-cover rounded-2xl w-full h-[470px]"
+          id="video1"
+          playsInline
+          muted
+          onClick={(e) => {
+            if (e.currentTarget.paused) {
+              e.currentTarget.play();
+            } else {
+              e.currentTarget.pause();
+            }
+          }}
+        >
+          <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+          <source src="example.webm" type="video/webm" />
+          <track kind="captions" />
+          Your browser does not support the video tag.
+        </video>
         <PrimaryLink
           href="/contact"
           title="Book Free Consultation Now"

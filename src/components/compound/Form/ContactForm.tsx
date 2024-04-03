@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
                 />
               </div>
 
-              <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
+            {/*   <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
                 <input
                   type="date"
                   name="company"
@@ -87,7 +87,7 @@ const ContactForm: React.FC = () => {
                   value={formData.deadline}
                   onChange={handleInputChange}
                 />
-              </div>
+              </div> */}
 
               <div className="flex flex-col gap-2 sm:gap-5 items-end justify-center">
                 <textarea
