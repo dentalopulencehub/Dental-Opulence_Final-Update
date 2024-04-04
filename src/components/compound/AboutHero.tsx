@@ -34,8 +34,27 @@ const AboutHero = () => {
             setHovered={setLinkHover}
           /> */}
         </div>
-
-        <Image src={about_hero_image} alt="About hero image" className="" />
+        <video
+          autoPlay={true}
+          loop
+          height="470"
+          className="object-cover rounded-2xl w-full h-[470px]"
+          id="video1"
+          playsInline
+          muted
+          onClick={(e) => {
+            if (e.currentTarget.paused) {
+              e.currentTarget.play();
+            } else {
+              e.currentTarget.pause();
+            }
+          }}
+        >
+          <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+          <source src="example.webm" type="video/webm" />
+          <track kind="captions" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
