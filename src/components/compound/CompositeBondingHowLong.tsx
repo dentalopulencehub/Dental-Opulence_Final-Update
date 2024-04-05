@@ -24,48 +24,17 @@ const CompositeBondingHowLong = () => {
               alt=""
               className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl"
             />
-            <video
-              autoPlay={true}
-              loop
-              height="416"
-              className="object-cover rounded-2xl h-[416px] w-[394px]"
-              id="video1"
-              playsInline
-              muted
-              onClick={(e) => {
-                if (e.currentTarget.paused) {
-                  e.currentTarget.play();
-                } else {
-                  e.currentTarget.pause();
-                }
-              }}
-            >
-              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
-              <source src="example.webm" type="video/webm" />
-              <track kind="captions" />
-              Your browser does not support the video tag.
-            </video>
-            <video
-              autoPlay={true}
-              loop
-              height="416"
-              className="object-cover rounded-2xl h-[416px] w-[394px]"
-              id="video1"
-              playsInline
-              muted
-              onClick={(e) => {
-                if (e.currentTarget.paused) {
-                  e.currentTarget.play();
-                } else {
-                  e.currentTarget.pause();
-                }
-              }}
-            >
-              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
-              <source src="example.webm" type="video/webm" />
-              <track kind="captions" />
-              Your browser does not support the video tag.
-            </video>
+            <Image
+              src={result_sample_video1}
+              alt=""
+              className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl"
+            />
+            <Image
+              src={result_sample_video1}
+              alt=""
+              className=" h-[416px] max-w-[394px] w-full object-cover rounded-2xl"
+            />
+
             {/*  <Image
               src={result_sample_video1}
               alt=""
@@ -79,3 +48,50 @@ const CompositeBondingHowLong = () => {
 };
 
 export default CompositeBondingHowLong;
+
+{
+  /*
+<video
+              autoPlay={true}
+              loop
+              height="416"
+              className="object-cover rounded-2xl h-[416px] w-[394px]"
+              id="video1"
+              playsInline
+              muted
+              onClick={(e) => {
+                if (e.currentTarget.paused) {
+                  e.currentTarget.play();
+                } else {
+                  e.currentTarget.pause();
+                }
+              }}
+            >
+              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+              <source src="example.webm" type="video/webm" />
+              <track kind="captions" />
+              Your browser does not support the video tag.
+            </video>
+            <video
+              autoPlay={true}
+              loop
+              height="416"
+              className="object-cover rounded-2xl h-[416px] w-[394px]"
+              id="video1"
+              playsInline
+              muted
+              onClick={(e) => {
+                if (e.currentTarget.paused) {
+                  e.currentTarget.play();
+                } else {
+                  e.currentTarget.pause();
+                }
+              }}
+            >
+              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+              <source src="example.webm" type="video/webm" />
+              <track kind="captions" />
+              Your browser does not support the video tag.
+            </video>
+*/
+}
