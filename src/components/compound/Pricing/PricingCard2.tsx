@@ -111,7 +111,6 @@ const PricingCard2 = ({
      </div>
 
 
-
       {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" className="" />
       </div>
@@ -134,6 +133,7 @@ const PricingCard2 = ({
         />
       </div> */}
     </div>
+
     </Link>
    
   );

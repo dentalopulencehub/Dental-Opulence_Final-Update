@@ -15,7 +15,7 @@ import cosmetic_treatment_tooth_icon_dark from "../../../../assets/images/cosmet
 import { motion } from "framer-motion";
 import PricingCard1 from "./PricingCard1";
 import PricingCard2 from "./PricingCard2";
-import { our_services, our_services2 } from "../../../../constants";
+import { our_pricing_services, our_pricing_services2 } from "../../../../constants";
 
 type theme = "light" | "dark";
 
@@ -104,7 +104,7 @@ const PricingMain = () => {
       >
         {selectedTheme === "light" ? (
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
-            {our_services.map((service, index) => (
+            {our_pricing_services.map((service, index) => (
               <PricingCard1
                 key={index}
                 {...service}
@@ -116,13 +116,15 @@ const PricingMain = () => {
           
         ) : (
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
-            {our_services2.map((service, index) => (
+            {our_pricing_services2.map((service, index) => (
               <PricingCard2
                 key={index}
                 {...service}
                 selectedTheme={selectedTheme}
               />
             ))}
+
+    
           </div>
         )}
       </div>
