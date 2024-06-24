@@ -7,6 +7,7 @@ import pointer_right_light from "../../../assets/images/pointer-right-light.svg"
 
 const PopularServiceCard = ({
   description,
+  href,
   image,
   title,
   image_inverted,
@@ -14,6 +15,7 @@ const PopularServiceCard = ({
   const [hover, setHover] = useState(false);
 
   return (
+    <Link href={href}>
     <div
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
@@ -34,7 +36,7 @@ const PopularServiceCard = ({
       >
         {description}
       </p>
-      <Link href="" className="">
+      <Link href={href} className="">
         <button
           className={`py-2 px-4 border border-[#100E10] rounded-[32px] mt-7 ${
             hover ? "bg-white" : "bg-transparent"
@@ -56,6 +58,8 @@ const PopularServiceCard = ({
         </button>
       </Link>
     </div>
+    </Link>
+   
   );
 };
 

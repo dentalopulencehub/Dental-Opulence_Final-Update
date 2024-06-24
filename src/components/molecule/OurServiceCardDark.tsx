@@ -5,10 +5,12 @@ import arrow_right from "../../../assets/images/arrow-right.svg";
 import bordered_arrow_right from "../../../assets/images/bordered-arrow-right.svg";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
+import Link from "next/link";
 
 const OurServiceCardDark = ({
   description,
   image,
+  href,
   title,
   image_inverted,
   selectedTheme,
@@ -72,11 +74,12 @@ const OurServiceCardDark = ({
   }, []);
 
   return (
-    <div
+    <Link href={href}>
+     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-4 py-[26px] flex flex-col gap-4 items-start h-[267px]  bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[289px]  service-card`}
-    >
+      className={`px-4 py-[26px] flex flex-col gap-4 items-start md:h-[267px] h-[340px]  bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[289px]  service-card`}
+     >
       <div className="">
         <Image src={hover ? image_inverted : image} alt="" className="" />
       </div>
@@ -86,7 +89,7 @@ const OurServiceCardDark = ({
           {description}
         </p>
       </div>
-      <div className="relative self-end">
+      <div className="relative self-end mt-auto">
         <Image
           src={bordered_arrow_right}
           alt=""
@@ -99,6 +102,8 @@ const OurServiceCardDark = ({
         />
       </div>
     </div>
+    </Link>
+   
   );
 };
 

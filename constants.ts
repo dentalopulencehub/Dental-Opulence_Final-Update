@@ -259,6 +259,30 @@ import routine_examination_service_hero_image from "./assets/images/routine-exam
 import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg"
 import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
 
+// General treatment
+
+// import BridgesVideo from './public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Bridges.mp4'
+
+// const BridgesVideo: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Bridges.mp4";
+const CrownsAndVeneers: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/CrownsAndVeneers.mp4";
+const Dentures: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Dentures.mp4";
+const Examination: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Examination.mp4";
+const Extraction: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Extraction.mp4";
+const Hygeinist: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Hygeinist.mp4";
+const RootCanalTreatment: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/RootCanalTreatment.mp4";
+const WhiteFillings: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/WhiteFillings.mp4";
+
+// Cosmetic treatment
+const Invisalign: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/Invisalign.mp4";
+const FixedRetainers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/FixedRetainers.mp4";
+const TeethWhitening: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/TeethWhitening.mp4";
+const ViveraRetainers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/ViveraRetainers.mp4";
+const Crownandveneers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/Crownandveneers.mp4";
+const CompositeVeneers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeVeneers.mp4";
+const CompositeBonding: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeEdgeBonding.mp4";
+const RoutineExamiination: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/RoutineExamiination.mp4";
+const InternalToothWhitening: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/InternalToothWhitening.mp4";
+const CompositeEdgeBonding: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeEdgeBonding.mp4";
 
 
 
@@ -417,6 +441,8 @@ export const case_studies: CaseStudyTypeProp[] = [
   },
 ];
 
+
+
 export const services_page_data: ServicePageDataType[] = [
   {
     title: "Bridges",
@@ -425,6 +451,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: bridges_service_hero_image,
     type: "bridges",
+    
   },
   {
     title: "Crowns",
@@ -433,6 +460,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: crown_veneers_service_hero_image,
     type: "crowns-veneers",
+    
   },
   {
     title: "Dentures",
@@ -441,6 +469,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: dentures_service_hero_image,
     type: "dentures",
+    
   },
   {
     title: "Examination",
@@ -449,6 +478,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: examination_service_hero_image,
     type: "examination",
+    
   },
   {
     title: "Extractions",
@@ -457,6 +487,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: extraction_service_hero_image,
     type: "extractions",
+    
   },
   {
     title: "Hygienist",
@@ -465,6 +496,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: hygienist_service_hero_image,
     type: "hygienist",
+    
   },
   {
     title: "White Fillings",
@@ -473,6 +505,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: white_fillings_service_hero_image,
     type: "white-fillings",
+    
   },
   {
     title: "Root Canal Treatments",
@@ -481,7 +514,11 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: root_canal_treatments_service_hero_image,
     type: "root-canal-treatments",
+    
   },
+
+
+
   {
     title: "Invisalign",
     price: "£650",
@@ -489,6 +526,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: invisalign_service_hero_image,
     type: "invisalign",
+    
   },
 
   {
@@ -498,6 +536,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: fixed_retainers_service_hero_image,
     type: "fixed-retainers",
+    
   },
   {
     title: "Teeth Whitening",
@@ -506,6 +545,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: teeth_whitening_service_hero_image,
     type: "teeth-whitening",
+    
   },
   {
     title: "Vivera Retainers",
@@ -514,14 +554,16 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: vivera_service_hero_image,
     type: "vivera-retainers",
+    
   },
   {
-    title: "Crowns",
+    title: "CrownsVeneers",
     price: "£650",
     description:
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: crowns_service_hero_image,
     type: "crowns",
+    
   },
   {
     title: "Composite Veneers",
@@ -530,6 +572,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
       heroImage: composite_veneers_service_hero_image,
     type: "composite-veneers",
+    
   },
   {
     title: "Composite Bonding",
@@ -538,6 +581,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
     heroImage: composite_bonding_service_hero_image,
     type: "composite-bonding",
+    
   },
   {
     title: "Routine Examination",
@@ -546,6 +590,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
     heroImage: routine_examination_service_hero_image,
     type: "routine-examination",
+    
   },
   {
     title: "Internal Tooth Whitening",
@@ -554,6 +599,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
     heroImage: internal_tooth_whiteneing_service_hero_image,
     type: "internal-tooth-whitening",
+    
   },
   {
     title: "Composite Edge Bonding",
@@ -562,6 +608,7 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
     heroImage: composite_edge_bonding_service_hero_image,
     type: "composite-edge-bonding",
+    
   },
 ];
 
@@ -580,49 +627,49 @@ export const navlinks = [
     subLinks: [
       {
         title: "Bridges",
-        href: "/services?service=bridges",
+        href: "/services/generalTreatment/bridges",
         icon: bridge_link_icon,
         icon_hovered: bridge_link_icon,
       },
       {
         title: "Crowns / Veneers",
-        href: "/services?service=crowns-veneers",
+        href: "/services/generalTreatment/crowns-veneers",
         icon: crown_link_icon,
         icon_hovered: crown_link_icon,
       },
       {
         title: "Dentures",
-        href: "/services?service=dentures",
+        href: "/services/generalTreatment/dentures",
         icon: dentures_link_icon,
         icon_hovered: dentures_link_icon,
       },
       {
         title: "Examination",
-        href: "/services?service=examination",
+        href: "/services/generalTreatment/examination",
         icon: examination_link_icon,
         icon_hovered: examination_link_icon,
       },
       {
         title: "Extractions",
-        href: "/services?service=extractions",
+        href: "/services/generalTreatment/extractions",
         icon: extractions_link_icon,
         icon_hovered: extractions_link_icon,
       },
       {
         title: "Hygienist",
-        href: "/services?service=hygienist",
+        href: "/services/generalTreatment/hygienist",
         icon: hygienist_link_icon,
         icon_hovered: hygienist_link_icon,
       },
       {
         title: "White Fillings",
-        href: "/services?service=white-fillings",
+        href: "/services/generalTreatment/white-fillings",
         icon: white_fillings_link_icon,
         icon_hovered: white_fillings_link_icon,
       },
       {
         title: "Root Canal Treatments",
-        href: "/services?service=root-canal-treatments",
+        href: "/services/generalTreatment/root-canal-treatments",
         icon: root_canal_link_icon,
         icon_hovered: root_canal_link_icon,
       },
@@ -634,61 +681,61 @@ export const navlinks = [
     subLinks: [
       {
         title: "Invisalign",
-        href: "/services?service=invisalign",
+        href: "/services/cosmeticTreatment/invisalign",
         icon: invis_align_link_icon,
         icon_hovered: invis_align_link_icon,
       },
       {
         title: "Fixed Retainers",
-        href: "/services?service=fixed-retainers",
+        href: "/services/cosmeticTreatment/fixed-retainers",
         icon: fixed_retainers_link_icon,
         icon_hovered: fixed_retainers_link_icon,
       },
       {
         title: "Teeth Whitening",
-        href: "/services?service=teeth-whitening",
+        href: "/services/cosmeticTreatment/teeth-whitening",
         icon: teeth_whitening_link_icon,
         icon_hovered: teeth_whitening_link_icon,
       },
       {
         title: "Vivera Retainers",
-        href: "/services?service=vivera-retainers",
+        href: "/services/cosmeticTreatment/vivera-retainers",
         icon: vivera_retainers_link_icon,
         icon_hovered: vivera_retainers_link_icon,
       },
       {
         title: "Crowns/Veneers",
-        href: "/services?service=crowns",
+        href: "/services/cosmeticTreatment/crowns-veneers",
         icon: crown_veneers_link_icon,
         icon_hovered: crown_veneers_link_icon,
       },
       {
         title: "Composite Veneers",
-        href: "/services?service=composite-veneers",
+        href: "/services/cosmeticTreatment/composite-veneers",
         icon: composite_veneers_link_icon,
         icon_hovered: composite_veneers_link_icon,
       },
       {
         title: "Composite  Bonding",
-        href: "/services?service=composite-bonding",
+        href: "/services/cosmeticTreatment/composite-bonding",
         icon: composite_bonding_link_icon,
         icon_hovered: composite_bonding_link_icon,
       },
       {
         title: "Routine Examination",
-        href: "/services?service=routine-examination",
+        href: "/services/cosmeticTreatment/routine-examination",
         icon: routine_examination_link_icon,
         icon_hovered: routine_examination_link_icon,
       },
       {
         title: "Internal Tooth Whitening",
-        href: "/services?service=internal-tooth-whitening",
+        href: "/services/cosmeticTreatment/internal-tooth-whitening",
         icon: internal_tooth_whitening_link_icon,
         icon_hovered: internal_tooth_whitening_link_icon,
       },
       {
         title: "Composite Edge Bonding",
-        href: "/services?service=composite-edge-bonding",
+        href: "/services/cosmeticTreatment/composite-edge-bonding",
         icon: composite_edge_bonding_link_icon,
         icon_hovered: composite_edge_bonding_link_icon,
       },
@@ -754,6 +801,7 @@ export const service_awards_images = [];
 export const popular_services: HomePopularServicesType[] = [
   {
     image: teeth_whitening_service_image,
+    href: "/services/cosmeticTreatment/teeth-whitening",
     image_inverted: teeth_whitening_service_image_dark,
     title: "Teeth Whitening",
     description:
@@ -761,6 +809,7 @@ export const popular_services: HomePopularServicesType[] = [
   },
   {
     image: invisalign_service_image,
+    href: "/services/cosmeticTreatment/invisalign",
     image_inverted: invisalign_service_image_dark,
     title: "Invisalign",
     description:
@@ -768,23 +817,27 @@ export const popular_services: HomePopularServicesType[] = [
   },
   {
     image: composite_bonding_service_image,
+    href: "/services/cosmeticTreatment/composite-bonding",
     image_inverted: composite_bonding_service_image_dark,
     title: "Composite Bonding",
     description:
       "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of,...",
   },
-  {
-    image: general_dentistry_service_image,
-    image_inverted: general_dentistry_service_image_dark,
-    title: "General Dentistry",
-    description:
-      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
-  },
+  // {
+  //   image: general_dentistry_service_image,
+  //   href: "",
+  //   image_inverted: general_dentistry_service_image_dark,
+  //   title: "General Dentistry",
+  //   description:
+  //     "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
+  // },
 ];
 
 export const our_services: HomeOurServicesType[] = [
   {
     title: "Dentures",
+    price:"from £450",
+    href: "/services/generalTreatment/dentures",
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
     image: dentures_services_image,
@@ -792,6 +845,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Extractions",
+    price:"from £350",
+    href: "/services/generalTreatment/extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
     image: extraction_services_image,
@@ -799,6 +854,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Crowns / Veneers",
+    price:"£650",
+    href: "/services/generalTreatment/crowns-veneers",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_services_image,
@@ -806,6 +863,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Hygienist",
+    price:"£110",
+    href: "/services/generalTreatment/hygienist",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: hygienist_services_image,
@@ -813,6 +872,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Root Canal Treatments",
+    price:"from £495",
+    href: "/services/generalTreatment/root-canal-treatments",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
     image: root_canal_services_image,
@@ -820,6 +881,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Bridges",
+    price:"from £650",
+    href: "/services/generalTreatment/bridges",
     description:
       "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
     image: bridges_services_image,
@@ -827,6 +890,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "White Fillings",
+    price:"from £210",
+    href: "/services/generalTreatment/white-fillings",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: white_fillings_services_image,
@@ -834,6 +899,8 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Examination",
+    price:"£50",
+    href: "/services/generalTreatment/examination",
     description:
       "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
     image: examination_services_image,
@@ -844,6 +911,8 @@ export const our_services: HomeOurServicesType[] = [
 export const our_services2: HomeOurServicesType[] = [
   {
     title: "Invisalign",
+    price:"from £2500",
+    href: "/services/cosmeticTreatment/invisalign",
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
     image: invisalign_service_icon,
@@ -851,6 +920,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Composite Veneers",
+    price:"£110",
+    href: "/services/cosmeticTreatment/composite-veneers",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
     image: composite_veneers_service_icon,
@@ -858,6 +929,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Fixed Retainers",
+    price:"£150",
+    href: "/services/cosmeticTreatment/fixed-retainers",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
     image: fixed_retainer_service_icon,
@@ -865,6 +938,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Composite  Bonding",
+    price:"from £300",
+    href: "/services/cosmeticTreatment/composite-bonding",
     description:
       "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
     image: composite_bonding_service_icon,
@@ -872,6 +947,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Teeth Whitening",
+    price:"£350",
+    href: "/services/cosmeticTreatment/teeth-whitening",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: teeth_whitening_service_icon,
@@ -879,6 +956,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Routine Examination",
+    price:"£50",
+    href: "/services/cosmeticTreatment/routine-examination",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: routine_examination_service_icon,
@@ -886,6 +965,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Vivera Retainers",
+    price:"Single £250 - Dual £450",
+    href: "/services/cosmeticTreatment/vivera-retainers",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: vivera_retainers_service_icon,
@@ -893,6 +974,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Internal Tooth Whitening",
+    price:"£350",
+    href: "/services/cosmeticTreatment/internal-tooth-whitening",
     description:
       "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
     image: internal_tooth_whitening_service_icon,
@@ -900,6 +983,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Crowns/Veneers",
+    price:"£650",
+    href: "/services/cosmeticTreatment/crowns-veneers",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_service_icon,
@@ -907,6 +992,8 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Composite Edge Bonding",
+    price:"£250",
+    href: "/services/cosmeticTreatment/composite-edge-bonding",
     description:
       "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
     image: composite_edge_bonding_service_icon,
@@ -917,18 +1004,24 @@ export const our_services2: HomeOurServicesType[] = [
 export const change_life: HomeOurServicesType[] = [
   {
     title: "Increase Your Confidence",
+    price:"",
+    href: "",
     description:
       "Enhance self-esteem with improved oral health and a brighter smile.",
     image: increase_confidence_icon,
   },
   {
     title: "Unleash Your Charisma",
+    href: "",
+    price:"",
     description:
       "Enhance your natural appeal with a radiant, confident smile..",
     image: unleash_charisma_icon,
   },
   {
     title: "Empower Your Presence",
+    href: "",
+    price:"",
     description:
       "Strengthen your overall impact with a vibrant, assured smile.",
     image: empower_presence_icon,
@@ -970,30 +1063,40 @@ export const testimonial: TestimonialType[] = [
 export const home_process: HomeOurServicesType[] = [
   {
     title: "Initial Enquiry",
+    price:"",
+    href: "",
     description:
       "During the initial enquiry process, you can contact Dental Opulence by phone or email to schedule an appointment or ask any questions you may have.",
     image: process_initial_inquiry_image,
   },
   {
     title: "Initial Examination",
+    price:"",
+    href: "",
     description:
       "At Dental Opulence, our initial examinations set the gold standard for comprehensive dental care. We prioritise your oral health journey with precision and care.",
     image: process_initial_examination_image,
   },
   {
     title: "Treatment Planning",
+    price:"",
+    href: "",
     description:
       "At Dental Opulence, our meticulous treatment planning is tailored to your unique needs. We design personalised plans to ensure optimal oral health and stunning smiles.",
     image: process_treatment_plan_image,
   },
   {
     title: "Conduct Treatment ",
+    price:"",
+    href: "",
     description:
       "At Dental Opulence, our expert team uses cutting-edge technology to deliver exceptional results with skill & precision, ensuring a comfortable experience for every patient.",
     image: process_conduct_treatment_image,
   },
   {
     title: "Care & Maintenance ",
+    price:"",
+    href: "",
     description:
       " At Dental Opulence, our commitment to your smile doesn't end after treatment. We offer tailored care and maintenance services to preserve your beautiful smile for years to come.",
     image: process_care_maintenance_image,
@@ -1534,3 +1637,51 @@ export const checkPointSeven = [
     label: "Other",
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+// {
+//   title: "Dentures",
+//   href: "/services?service=dentures",
+//   icon: dentures_link_icon,
+//   icon_hovered: dentures_link_icon,
+// },
+// {
+//   title: "Examination",
+//   href: "/services?service=examination",
+//   icon: examination_link_icon,
+//   icon_hovered: examination_link_icon,
+// },
+// {
+//   title: "Extractions",
+//   href: "/services?service=extractions",
+//   icon: extractions_link_icon,
+//   icon_hovered: extractions_link_icon,
+// },
+// {
+//   title: "Hygienist",
+//   href: "/services?service=hygienist",
+//   icon: hygienist_link_icon,
+//   icon_hovered: hygienist_link_icon,
+// },
+// {
+//   title: "White Fillings",
+//   href: "/services?service=white-fillings",
+//   icon: white_fillings_link_icon,
+//   icon_hovered: white_fillings_link_icon,
+// },
+// {
+//   title: "Root Canal Treatments",
+//   href: "/services?service=root-canal-treatments",
+//   icon: root_canal_link_icon,
+//   icon_hovered: root_canal_link_icon,
+// },

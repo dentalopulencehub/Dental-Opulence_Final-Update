@@ -34,6 +34,7 @@ export type CaseStudyTypeProp = {
 
 export type HomePopularServicesType = {
   title: string;
+  href: string;
   description: string;
   image: any;
   image_inverted?: any;
@@ -44,6 +45,8 @@ export type HomeOurServicesType = {
   description: string;
   image: any;
   image_inverted?: any;
+  href: string;
+  price:string;
 };
 
 export type TestimonialType = {
@@ -97,6 +100,7 @@ export type ServicePageDataType = {
   price: string;
   heroImage?: any;
   type: serviceType;
+  // serviceVideo: string; 
 };
 
 export type serviceType =

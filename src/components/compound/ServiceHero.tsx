@@ -7,6 +7,8 @@ import service_hero_image from "../../../assets/images/service-hero-image.svg";
 const ServiceHero = () => {
   const { dispatch, servicePageData } = useContext(GlobalContext);
 
+  console.log('servicePageData Checking', servicePageData?.title)
+
   return (
     <div className="w-full">
       <div className="bg-[#FFFFFF] rounded-t-[24px] lg:pt-[50px] pt-[150px] pb-[120px] h-full xl:gap-0 gap-[40px] w-full items-center flex xl:flex-row flex-col justify-between xl:px-[100px] sm:px-[40px] px-[20px]">

@@ -9,7 +9,7 @@ const HomeChangeLife = () => {
   return (
     <div className="w-full">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[120px] bg-white">
-        <div className="flex flex-row flex-wrap justify-center gap-6 ">
+        <div className="flex flex-row flex-wrap justify-center gap-7 items-center">
           <div className="w-[289px] h-[284px] bg-[#100E10] p-8 rounded-lg flex flex-col justify-between">
             <h3 className="text-white font-Pangram-Bold text-[32px] leading-[44px]">
               Change Your Life With us

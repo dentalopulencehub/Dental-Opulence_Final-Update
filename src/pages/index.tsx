@@ -31,7 +31,9 @@ export default function Home() {
       <HomePeopleSlider />
       <HomePopularServices />
       <HomeOurServicesHeader />
+
       <HomeOurServices />
+      
       <HomeChangeLife />
       <CompositeBondingHowLong />
       <OurResult />

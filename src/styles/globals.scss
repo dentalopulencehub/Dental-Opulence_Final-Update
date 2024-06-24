@@ -415,3 +415,13 @@ button {
 }
 
 .nav-logo-wrapper svg {     filter: invert(0) } */
+
+
+$secondary-bg-color: #f3f3f3; // Replace with your actual color value
+$card-to: #e4e4e4; // Replace with your actual color value
+$text-color: #161616; // Replace with your actual color value
+
+.gradient-color-card {
+  background: linear-gradient(to bottom left, $secondary-bg-color 60%, $card-to);
+  color: $text-color;
+}

@@ -37,11 +37,11 @@ const AboutHero = () => {
         <video
           autoPlay={true}
           loop
-          height="470"
-          className="object-cover rounded-2xl w-full h-[470px]"
+          height=""
+          className="object-cover rounded-2xl w-full h-[900px]"
           id="video1"
           playsInline
-          muted
+          
           onClick={(e) => {
             if (e.currentTarget.paused) {
               e.currentTarget.play();
@@ -50,7 +50,7 @@ const AboutHero = () => {
             }
           }}
         >
-          <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
+          <source src="/videos/walkThrough/patientWalkThoroughCompressed.mp4" type="video/mp4" />
           <source src="example.webm" type="video/webm" />
           <track kind="captions" />
           Your browser does not support the video tag.
