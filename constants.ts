@@ -915,6 +915,142 @@ export const our_services: HomeOurServicesType[] = [
 ];
 
 
+export const our_services2: HomeOurServicesType[] = [
+  {
+    title: "Invisalign",
+    price:"from £2500",
+    href: "/services/cosmeticTreatment/invisalign",
+    description:
+      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
+    image: invisalign_service_icon,
+    image_inverted: invisalign_service_icon_light,
+  },
+  {
+    title: "Composite Veneers",
+    price:"£110",
+    href: "/services/cosmeticTreatment/composite-veneers",
+    description:
+      "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
+    image: composite_veneers_service_icon,
+    image_inverted: composite_veneers_service_icon_light,
+  },
+  {
+    title: "Fixed Retainers",
+    price:"£150",
+    href: "/services/cosmeticTreatment/fixed-retainers",
+    description:
+      "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
+    image: fixed_retainer_service_icon,
+    image_inverted: fixed_retainer_service_icon_light,
+  },
+  {
+    title: "Composite  Bonding",
+    price:"from £300",
+    href: "/services/cosmeticTreatment/composite-bonding",
+    description:
+      "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
+    image: composite_bonding_service_icon,
+    image_inverted: composite_bonding_service_icon_light,
+  },
+  {
+    title: "Teeth Whitening",
+    price:"£350",
+    href: "/services/cosmeticTreatment/teeth-whitening",
+    description:
+      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+    image: teeth_whitening_service_icon,
+    image_inverted: teeth_whitening_service_icon_light,
+  },
+
+
+
+  {
+    title: "Routine Examination",
+    price:"£50",
+    href: "/services/cosmeticTreatment/routine-examination",
+    description:
+      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+    image: routine_examination_service_icon,
+    image_inverted: routine_examination_service_icon_light,
+  },
+  {
+    title: "Vivera Retainers",
+    price:"Single £250 - Dual £450",
+    href: "/services/cosmeticTreatment/vivera-retainers",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+    image: vivera_retainers_service_icon,
+    image_inverted: vivera_retainers_service_icon_light,
+  },
+  {
+    title: "Internal Tooth Whitening",
+    price:"£350",
+    href: "/services/cosmeticTreatment/internal-tooth-whitening",
+    description:
+      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+    image: internal_tooth_whitening_service_icon,
+    image_inverted: internal_tooth_whitening_service_icon_light,
+  },
+
+  {
+    title: "Crowns/Veneers",
+    price:"£650",
+    href: "/services/cosmeticTreatment/crowns-veneers",
+    description:
+      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+    image: crown_veneers_service_icon,
+    image_inverted: crown_veneers_service_icon_light,
+  },
+ 
+
+  {
+    title: "Composite Edge Bonding",
+    price:"£250",
+    href: "/services/cosmeticTreatment/composite-edge-bonding",
+    description:
+      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+    image: composite_edge_bonding_service_icon,
+    image_inverted: composite_edge_bonding_service_icon_light,
+  },
+
+  // {
+  //   title: "Consultation",
+  //   price:"£50",
+  //   href: "/services/generalTreatment/examination",
+  //   description:
+  //     "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+  //   image: composite_edge_bonding_service_icon,
+  //   image_inverted: composite_edge_bonding_service_icon_light,
+  // },
+
+
+
+  // {
+  //   title: "Implant (Single Tooth)",
+  //   price:"from £2500",
+  //   href: "",
+  //   description:
+  //     "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+  //     image: composite_bonding_service_icon,
+  //     image_inverted: composite_bonding_service_icon_light,
+  // },
+  // {
+  //   title: "Dentures Stabilisation",
+  //   price:"from £4700",
+  //   href: "",
+  //   description:
+  //     "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+  //     image: composite_bonding_service_icon,
+  //     image_inverted: composite_bonding_service_icon_light,
+  // },
+
+
+
+
+
+];
+
+
 export const our_pricing_services: HomeOurServicesType[] = [
   {
     title: "Dentures",
