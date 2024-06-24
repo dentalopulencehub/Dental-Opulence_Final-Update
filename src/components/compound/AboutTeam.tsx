@@ -76,6 +76,13 @@ const people = [
     description: "Inayah joined Dental Opulence in January 2024 as a Dental Nurse. Inayah has always enjoyed dentistry and found it very interesting. She qualified in 2021 and has been working as a Dental Nurse since.Cosmetic Dentistry is her favourite! Although she has nursed for all types of dental treatments including implants, surgical extractions and even procedures done under sedation. Inayah likes to spend her free time going out with friends and family." ,
     designation:"Cosmetic Dentistry"
   },
+  { 
+    id: 9, 
+    name: 'Anahita Salehi ', 
+    description: "Anahita Salehi graduated from Birjand Dental School in Iran in 2019 and worked as a dedicated dental professional until 2023. Currently, she is pursuing a master's degree in Dental Materials at the University of Birmingham.In her free time, Anahita enjoys painting, hitting the gym, and she has a particular passion for reading, and discovering new cuisines. After graduation, Anahita gained extensive experience in various areas of dentistry, including aligners, aesthetic dentistry, and general dental treatments." ,
+    designation:"Aesthetic Dentistry"
+  },
+  
 ];
 
 const AboutTeam = () => {

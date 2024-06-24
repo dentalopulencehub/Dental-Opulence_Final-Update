@@ -99,11 +99,18 @@ const Footer = () => {
                       Home
                     </p>
                   </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/about")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       About us
                     </p>
                   </div>
+
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/our-pricing")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Pricing
+                    </p>
+                  </div>
+
                   <div
                     onClick={() => handleSetPathToNavigate(dispatch, "/cases")}
                   >
@@ -111,7 +118,7 @@ const Footer = () => {
                       Cases
                     </p>
                   </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Contact us
                     </p>

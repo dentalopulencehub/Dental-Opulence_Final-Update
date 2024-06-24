@@ -9,8 +9,10 @@ import img5 from '../../../../assets/ourTeam/img-5.svg';
 import img6 from '../../../../assets/ourTeam/img-6.svg';
 import img7 from '../../../../assets/ourTeam/img-7.svg';
 import img8 from '../../../../assets/ourTeam/img-8.svg';
+import img9 from '../../../../assets/ourTeam/img-9.svg';
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8,img9];
 
 interface PersonProps {
   id: number;

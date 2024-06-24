@@ -742,6 +742,11 @@ export const navlinks = [
     ],
   },
   {
+    href: "/our-pricing",
+    label: "Pricing",
+  },
+
+  {
     href: "/cases",
     label: "Cases",
   },
@@ -823,14 +828,14 @@ export const popular_services: HomePopularServicesType[] = [
     description:
       "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of,...",
   },
-  // {
-  //   image: general_dentistry_service_image,
-  //   href: "",
-  //   image_inverted: general_dentistry_service_image_dark,
-  //   title: "General Dentistry",
-  //   description:
-  //     "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
-  // },
+  {
+    image: general_dentistry_service_image,
+    href: "",
+    image_inverted: general_dentistry_service_image_dark,
+    title: "General Dentistry",
+    description:
+      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
+  },
 ];
 
 export const our_services: HomeOurServicesType[] = [
