@@ -36,7 +36,7 @@ import FixedRetainersVideo from "./FixedRetainersSection/FixedRetainersVideo";
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

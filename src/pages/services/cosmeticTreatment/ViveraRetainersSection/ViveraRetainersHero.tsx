@@ -4,6 +4,8 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 import vivera_service_hero_image from "../../../../../assets/images/vivera-service-hero-image.svg"
 
+import right_thick from '../../../../../assets/images/right_thick.svg'
+
 const ViveraRetainersHero = () => {
 
   return (
@@ -21,6 +23,20 @@ const ViveraRetainersHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
            At our dental practice, we offer Vivera retainers to maintain your straight and aligned smile after orthodontic treatment. They are convenient and comfortable for long-term results.
           </p>
+
+           {/* extra section */}
+ <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

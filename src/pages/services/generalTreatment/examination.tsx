@@ -36,7 +36,7 @@ import ExaminationVideo from "./examination/examinationVideo";
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

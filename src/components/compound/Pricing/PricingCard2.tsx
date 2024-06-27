@@ -81,7 +81,7 @@ const PricingCard2 = ({
      <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-5 py-5  max-w-[400px] h-[105px]   bg-[#222222] border border-[#2D2D2D] rounded-xl  service-card`}
+      className={`px-5 py-6  max-w-[400px] h-[115px]   bg-[#222222] border border-[#2D2D2D] rounded-xl  service-card`}
      >
 
 

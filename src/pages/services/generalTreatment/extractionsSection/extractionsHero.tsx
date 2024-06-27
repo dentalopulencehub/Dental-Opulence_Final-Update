@@ -5,6 +5,8 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 import extraction_service_hero_image from "../../../../../assets/images/extractions-service-hero-image.svg"
 
+import right_thick from '../../../../../assets/images/right_thick.svg'
+
 const ExtractionsHero = () => {
 
   return (
@@ -22,6 +24,19 @@ const ExtractionsHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
           At our dental practice, we understand that the thought of a tooth extraction can be stressful for some patients. That’s why we strive to make the extraction process as comfortable and anxiety-free as possible.
           </p>
+
+          <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

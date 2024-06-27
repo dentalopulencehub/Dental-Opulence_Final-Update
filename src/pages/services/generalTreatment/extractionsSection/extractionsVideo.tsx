@@ -1,14 +1,14 @@
-import React, { useState, useRef, useContext } from "react";
-import videoPlayButton from "../../../../../assets/videoPlayButton/videoPlayButton.svg";
-import Image from "next/image";
+import React, { useState, useRef } from "react";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-
-
+import videoPlayButton from "../../../../../assets/videoPlayButton/videoPlayButton.svg";
+import speakerIcon from "../../../../../assets/speakerIcon/speakerIcon.svg";
+import speakerMuteIcon from "../../../../../assets/speakerIcon/speakerMuteIcon.svg";
+import Image from "next/image";
 
 const ExtractionsVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-
 
   const handleVideoClick = () => {
     if (videoRef.current) {
@@ -18,6 +18,13 @@ const ExtractionsVideo = () => {
         videoRef.current.play();
       }
       setIsPlaying(!isPlaying);
+    }
+  };
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
     }
   };
 
@@ -33,8 +40,9 @@ const ExtractionsVideo = () => {
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
+            muted={isMuted} // Initial mute state
           >
-            <source src="/videos/DentalAllServicesVideo/GeneralTreatmentCompress/Extraction.mp4" type="video/mp4" />
+            <source src="/videos/DentalAllServicesVideo/GeneralTreatmentCompress/Extraction.mp4" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (
@@ -45,6 +53,15 @@ const ExtractionsVideo = () => {
               <Image src={videoPlayButton} alt="videoPlayButton" />
             </div>
           )}
+          <div
+            className="absolute bottom-4 left-4 cursor-pointer"
+            onClick={toggleMute}
+          >
+            <Image
+              src={isMuted ? speakerMuteIcon : speakerIcon}
+              alt="Speaker Icon"
+            />
+          </div>
         </div>
         <PrimaryLink
           href="/contact"
@@ -57,4 +74,3 @@ const ExtractionsVideo = () => {
 };
 
 export default ExtractionsVideo;
-

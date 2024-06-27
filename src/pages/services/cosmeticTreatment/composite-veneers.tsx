@@ -35,7 +35,7 @@ import CompositeVeneersVideo from "./CompositeVeneersSection/CompositeVeneersVid
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

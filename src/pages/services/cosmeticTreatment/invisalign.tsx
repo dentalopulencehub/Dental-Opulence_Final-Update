@@ -35,7 +35,7 @@ import InvisalignVideo from "./invisalignSection/invisalignVideo";
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

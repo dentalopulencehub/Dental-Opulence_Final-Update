@@ -15,6 +15,10 @@ import whatsapp_icon_mini from "../../../assets/images/whatsapp-icon-mini.svg";
 import { handleSetPathToNavigate } from "../../../context/action";
 import { GlobalContext } from "../../../context/GlobalContext";
 
+import logo_Link1 from '../../../assets/fonts/footer-logo-link1.svg'
+import logo_Link2 from '../../../assets/fonts/footer-logo-link2.svg'
+import logo_Link3 from '../../../assets/fonts/footer-logo-link3.svg'
+
 const hoverLinks = [
   {
     image: ig_logo,
@@ -46,7 +50,7 @@ const Footer = () => {
   return (
     <div className="w-full">
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
-        <div className="flex xl:flex-row flex-col gap-[162px] items-start">
+        <div className="flex xl:flex-row flex-col md:gap-[162px] gap-[50px] items-start">
           <div>
             <Image src={footer_logo} alt="" />
             <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
@@ -85,10 +89,24 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
+
+              <div className="md:flex items-center gap-2 md:mt-10 h-full w-full">
+                <Link href='https://test.cqc.org.uk/location/1-17708997775/contact'>
+                  <Image src={logo_Link1} alt="" className="w-[190px] h-[80px]"/>
+                </Link>
+                <Link href='https://www.gdc-uk.org'>
+                  <Image src={logo_Link2} alt="" className="w-[190px] h-[80px]  md:my-0 my-3"/>
+                </Link>
+                <Link href='https://gdpr-info.eu'>
+                  <Image src={logo_Link3} alt="" className="w-[190px] h-[80px]"/>
+                </Link>
+              </div>
+
+
             </div>
           </div>
           <div className="w-full">
-            <div className="flex flex-wrap gap-[49px] justify-between">
+            <div className="flex flex-wrap md:gap-[49px] justify-between">
               <div className="flex flex-col gap-10 w-[176px]">
                 <div>
                   <h3 className="text-white font-Pangram-Regular text-2xl">
@@ -131,7 +149,7 @@ const Footer = () => {
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={phone_icon} alt="" />
-                      <span>0121 272 9229  (Fri-Sat)</span>
+                      <span>0121 272 9229  (Tue-Sat) 9am - 5pm</span>
                     </p>
                   </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
@@ -143,7 +161,78 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-[227px]">
+
+
+              <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8">
+                <div>
+                  <h3 className="text-white font-Pangram-Regular text-2xl">
+                    Legal
+                  </h3>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "privacy-policy")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Privacy Policy
+                    </p>
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/about")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Complaints Procedure
+                    </p>
+                  </div>
+
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/terms-of-use")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Terms of Use
+                    </p>
+                  </div>
+
+                  <div
+                    onClick={() => handleSetPathToNavigate(dispatch, "/cases")}
+                  >
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Health & Safety
+                    </p>
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Appointment Terms
+                    </p>
+                  </div>
+ 
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Data Protection
+                    </p>
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                     Dental Plan Terms
+                    </p>
+                  </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Cookie Settings
+                    </p>
+                  </div>
+
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Competitions & Offers Terms
+                    </p>
+                  </div>
+
+
+                </div>
+              
+              </div>
+
+
+
+
+
+
+
+
+              <div className="w-[227px] md:mt-0 mt-6">
                 <h3 className="text-white font-Pangram-Regular text-2xl">
                   General Treatments
                 </h3>
@@ -189,7 +278,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-[227px]">
+              <div className="w-[227px] md:mt-0 mt-6">
                 <h3 className="text-white font-Pangram-Regular text-2xl">
                   Cosmetic Treatment
                 </h3>

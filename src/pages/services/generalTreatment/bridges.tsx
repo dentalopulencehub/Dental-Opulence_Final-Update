@@ -38,7 +38,9 @@ import BridgesHeroSection from "./bridgesSection/bridgesHeroSection";
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        
+        {/* <CompositeBondingHowLong /> */}
+
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

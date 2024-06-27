@@ -35,7 +35,7 @@ import InternalToothWhiteningVideo from "./InternalToothWhiteningSection/Interna
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

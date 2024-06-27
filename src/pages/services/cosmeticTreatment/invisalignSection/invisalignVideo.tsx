@@ -1,15 +1,14 @@
-import React, { useState, useRef, useContext } from "react";
-
-import videoPlayButton from "../../../../../assets/videoPlayButton/videoPlayButton.svg";
-import Image from "next/image";
+import React, { useState, useRef } from "react";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-
-
+import videoPlayButton from "../../../../../assets/videoPlayButton/videoPlayButton.svg";
+import speakerIcon from "../../../../../assets/speakerIcon/speakerIcon.svg";
+import speakerMuteIcon from "../../../../../assets/speakerIcon/speakerMuteIcon.svg";
+import Image from "next/image";
 
 const InvisalignVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-
 
   const handleVideoClick = () => {
     if (videoRef.current) {
@@ -22,11 +21,18 @@ const InvisalignVideo = () => {
     }
   };
 
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex flex-col items-center justify-between sm:gap-[64px] gap-[37px]">
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
-        Unveiling a Patient&apos;s Dental Journey
+          Unveiling a Patient&apos;s Dental Journey
         </h2>
         <div className="relative mx-auto my-4">
           <video
@@ -34,8 +40,9 @@ const InvisalignVideo = () => {
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
+            muted={isMuted} // Initial mute state
           >
-            <source src="/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/Invisalign.mp4" type="video/mp4" />
+            <source src="/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/Invisalign.mp4" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (
@@ -46,6 +53,15 @@ const InvisalignVideo = () => {
               <Image src={videoPlayButton} alt="videoPlayButton" />
             </div>
           )}
+          <div
+            className="absolute bottom-4 left-4 cursor-pointer"
+            onClick={toggleMute}
+          >
+            <Image
+              src={isMuted ? speakerMuteIcon : speakerIcon}
+              alt="Speaker Icon"
+            />
+          </div>
         </div>
         <PrimaryLink
           href="/contact"
@@ -58,4 +74,3 @@ const InvisalignVideo = () => {
 };
 
 export default InvisalignVideo;
-

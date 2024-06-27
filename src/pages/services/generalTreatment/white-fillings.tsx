@@ -35,7 +35,7 @@ import WhiteFillingVideo from "./whiteFillings/whiteFillingVideo";
         <ServiceElevate />
         <PatientWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

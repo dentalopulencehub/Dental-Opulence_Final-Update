@@ -37,7 +37,7 @@ import CrownsVeneerVideo from "./crownsVeneerSection/crownsVeneerVideo";
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

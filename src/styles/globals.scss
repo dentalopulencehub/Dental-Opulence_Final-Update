@@ -425,3 +425,23 @@ $text-color: #161616; // Replace with your actual color value
   background: linear-gradient(to bottom left, $secondary-bg-color 60%, $card-to);
   color: $text-color;
 }
+
+.leftArrow{
+ 
+  border:1px solid gray;
+}
+
+.leftArrow:hover{
+  // background-color:;
+  border: gray !important;
+}
+
+.rightArrow{
+ 
+  border:1px solid gray;
+}
+
+.rightArrow:hover{
+  // background-color:;
+  border: gray !important;
+}

@@ -37,7 +37,7 @@ import CompositeBondingVideo from "./CompositeBondingSection/CompositeBondingVid
         <CosmaticWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

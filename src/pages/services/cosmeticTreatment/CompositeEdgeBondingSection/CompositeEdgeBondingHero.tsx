@@ -4,7 +4,7 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
 import composite_edge_bonding_service_hero_image from "../../../../../assets/images/composite-edge-bonding-service-image.svg"
-
+import right_thick from '../../../../../assets/images/right_thick.svg'
 const CompositeEdgeBondingHero = () => {
 
   return (
@@ -22,6 +22,19 @@ const CompositeEdgeBondingHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
             We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite edge bonding as a solution for improving the appearance of your teeth.
           </p>
+
+           {/* extra section */}
+           <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

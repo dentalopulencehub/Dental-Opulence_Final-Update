@@ -7,15 +7,7 @@ import composite_veneers_service_hero_image from "../../../../../assets/images/c
 
 
 
-// import fixed_retainers_service_hero_image from "./assets/images/fixed-retainers-service-hero-image.svg"
-// import teeth_whitening_service_hero_image from "./assets/images/teeth-whitening-service-hero-image.svg"
-// import vivera_service_hero_image from "./assets/images/vivera-service-hero-image.svg"
-// import crowns_service_hero_image from "./assets/images/crowns-service-hero-image.svg"
-// import composite_veneers_service_hero_image from "./assets/images/composite-veneers-service-image.svg"
-// import composite_bonding_service_hero_image from "./assets/images/compositeB-service-hero-image.svg"
-// import routine_examination_service_hero_image from "./assets/images/routine-examination-service-image.svg"
-// import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg"
-// import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
+import right_thick from '../../../../../assets/images/right_thick.svg'
 
 const CompositeVeneersHero = () => {
 
@@ -34,6 +26,21 @@ const CompositeVeneersHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
             We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite veneers as a cosmetic solution for improving the appearance of your teeth.
           </p>
+
+
+         {/* extra section */}
+         <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

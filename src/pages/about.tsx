@@ -56,6 +56,7 @@ export default function Home() {
       <CompositeBondingHowLong />
      {/*  <AboutWhoWeAre /> */}
       <TestimonyComp />
+      
       <Faq />
       <HomePeopleSlider />
       <Footer />

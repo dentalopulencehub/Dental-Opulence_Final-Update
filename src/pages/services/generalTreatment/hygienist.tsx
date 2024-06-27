@@ -35,7 +35,7 @@ import HygienistVideo from "./hygienistSection/hygienistVideo";
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

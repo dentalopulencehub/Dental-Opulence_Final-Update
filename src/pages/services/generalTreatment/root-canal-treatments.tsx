@@ -37,7 +37,7 @@ import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTrea
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

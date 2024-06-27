@@ -36,7 +36,7 @@ import CompositeEdgeBondingVideo from "./CompositeEdgeBondingSection/CompositeEd
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

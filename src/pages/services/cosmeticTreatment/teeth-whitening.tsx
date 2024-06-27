@@ -35,7 +35,7 @@ import TeethWhiteningVideo from "./teethWhiteningSection/teethWhiteningVideo";
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         <TestimonyComp />
         <OurProcess />

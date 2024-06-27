@@ -34,7 +34,7 @@ import RoutineExaminationVideo from "./RoutineExaminationSection/RoutineExaminat
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

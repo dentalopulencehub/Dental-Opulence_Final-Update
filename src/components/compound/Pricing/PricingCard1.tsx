@@ -84,9 +84,9 @@ const PricingCard1 = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={` px-5 py-5 ${
+      className={` px-5 py-[21px] ${
         selectedTheme === "light" ? "bg-[#F3F3F3]" : "bg-[#282828]"
-      } border border-[#f4f4f4] rounded-xl max-w-[395px] h-[98px]  service-card duration-0`}
+      } border border-[#f4f4f4] rounded-xl max-w-[395px] h-[110px]  service-card duration-0`}
     >
 
 

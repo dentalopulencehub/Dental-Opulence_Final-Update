@@ -37,7 +37,7 @@ import CrownsVeneersVideo from "./CrownsVeneersSection/CrownsVeneersVideo";
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

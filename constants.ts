@@ -131,14 +131,16 @@ import process_treatment_plan_image from "./assets/images/process-treatment-plan
 import process_conduct_treatment_image from "./assets/images/process-contact-treatment.svg";
 import process_care_maintenance_image from "./assets/images/process-care-maintenance.svg";
 
-import people_img1 from "./assets/images/people-img1.svg";
-import people_img2 from "./assets/images/people-img2.svg";
-import people_img3 from "./assets/images/people-img3.svg";
-import people_img4 from "./assets/images/people-img4.svg";
-import people_img5 from "./assets/images/people-img5.svg";
-import people_img6 from "./assets/images/people-img6.svg";
-import people_img7 from "./assets/images/people-img7.svg";
-import people_img8 from "./assets/images/people-img8.svg";
+import people_img1 from "./assets/peopleImg/people_img1.svg";
+import people_img2 from "./assets/peopleImg/people_img2.svg";
+import people_img3 from "./assets/peopleImg/people_img3.svg";
+import people_img4 from "./assets/peopleImg/people_img4.svg";
+import people_img5 from "./assets/peopleImg/people_img5.svg";
+import people_img6 from "./assets/peopleImg/people_img6.svg";
+import people_img7 from "./assets/peopleImg/people_img7.svg";
+
+
+
 import people_img9 from "./assets/images/people-img9.svg";
 import people_img10 from "./assets/images/people-img10.svg";
 import people_img11 from "./assets/images/people-img11.svg";
@@ -284,7 +286,10 @@ const RoutineExamiination: string = "public/videos/DentalAllServicesVideo/COSMET
 const InternalToothWhitening: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/InternalToothWhitening.mp4";
 const CompositeEdgeBonding: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeEdgeBonding.mp4";
 
+import all_cases from './assets/images/casesDropdown/cases_All_cases.svg'
+import hover_all_cases from './assets/images/casesDropdown/hover_all_cases.svg'
 
+import cases_testi from './assets/images/casesDropdown/cases_testimonial.svg'
 
 
 //Service types images
@@ -744,11 +749,27 @@ export const navlinks = [
   {
     href: "/our-pricing",
     label: "Pricing",
+   
   },
 
   {
     href: "/cases",
     label: "Cases",
+    subLinks: [
+      {
+        title: "All Cases",
+        href: "/cases",
+        icon: hover_all_cases,
+        icon_hovered: hover_all_cases,
+      },
+      {
+        title: "Testimonials",
+        href: "/testimonials",
+        icon: cases_testi,
+        icon_hovered: cases_testi,
+      },
+    
+    ],
   },
 ];
 
@@ -1283,12 +1304,23 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   {
     title: "Dentures Stabilisation",
     price:"from £4700",
-    href: "",
+    href: "/services/generalTreatment/dentures",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
       image: composite_bonding_service_icon,
       image_inverted: composite_bonding_service_icon_light,
   },
+
+  {
+    title: "Multiple Teeth Replacement with fixes bridge work",
+    price:"from £5700",
+    href: "/services/generalTreatment/bridges",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      image: composite_bonding_service_icon,
+      image_inverted: composite_bonding_service_icon_light,
+  },
+
 
 
   // {
@@ -1459,7 +1491,7 @@ export const people_slider = [
   people_img3,
   people_img6,
   people_img7,
-  people_img8,
+ 
   people_img9,
   people_img10,
   people_img11,

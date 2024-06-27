@@ -124,7 +124,8 @@ const PricingMain = () => {
               />
             ))}
 
-    
+             
+
           </div>
         )}
       </div>

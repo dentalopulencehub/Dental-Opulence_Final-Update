@@ -32,7 +32,7 @@ import ViveraRetainersVideo from "./ViveraRetainersSection/ViveraRetainersVideo"
         <ServiceElevate />
         <CosmaticWalkThrough/>
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         <TestimonyComp />
         <OurProcess />

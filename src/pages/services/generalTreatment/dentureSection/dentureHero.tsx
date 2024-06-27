@@ -5,6 +5,8 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 import dentures_service_hero_image from "../../../../../assets/images/denture-service-hero-image.svg"
 
+import bridges_service_hero_image from "../../../../../assets/images/bridge-service-hero-image.svg"
+import right_thick from '../../../../../assets/images/right_thick.svg'
 
 const DentureHero = () => {
 
@@ -23,6 +25,22 @@ const DentureHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
             At our practice, we offer partial and complete dentures to replace missing teeth, improving both oral health and self-confidence.
           </p>
+
+           {/* extrasection */}
+           <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
+
+
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

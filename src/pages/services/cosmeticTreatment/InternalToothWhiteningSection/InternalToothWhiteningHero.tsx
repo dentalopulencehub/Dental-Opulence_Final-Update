@@ -4,7 +4,7 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
 import internal_tooth_whiteneing_service_hero_image from "../../../../../assets/images/internal-tooth-whitening-service-image.svg"
-
+import right_thick from '../../../../../assets/images/right_thick.svg'
 
 const InternalToothWhiteningHero = () => {
 
@@ -23,6 +23,20 @@ const InternalToothWhiteningHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
           Internal tooth whitening is a safe and effective procedure that lightens discolored teeth. It involves applying a bleaching agent to the inside of the tooth, which is then sealed and left in place for a specified period.
           </p>
+
+       {/* extra section */}
+       <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink

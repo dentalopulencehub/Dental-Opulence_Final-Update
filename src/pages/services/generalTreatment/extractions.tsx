@@ -36,7 +36,7 @@ import ExtractionsVideo from "./extractionsSection/extractionsVideo";
         <PatientWalkThrough/>
 
         <ServiceTransform />
-        <CompositeBondingHowLong />
+        {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />

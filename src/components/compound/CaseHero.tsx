@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import case_hero_ill from "../../../assets/images/cases-hero-illustration.svg";
-import stroke_hero_text from "../../../assets/images/stroke-case-text.svg";
+import stroke_hero_text_testi from "../../../assets/fonts/stroke_hero_text_testi.svg";
 
 const CaseHero = () => {
   return (
@@ -12,7 +12,7 @@ const CaseHero = () => {
             <span className="text-[#605E60] font-black mr-[26px]">OUR</span>
             <span className="text-white font-black">SUCCESS</span>
           </h1>
-          <Image src={stroke_hero_text} alt="" />
+          <Image src={stroke_hero_text_testi} alt="" />
         </div>
         <Image src={case_hero_ill} alt="Case Hero Illustration" />
       </div>

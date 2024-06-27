@@ -103,62 +103,53 @@ const Navbar = () => {
                   </p>
                 </div>
                 {link?.subLinks && (
-                  <div
-                    className={`dropdown-content h-fit w-full text-white font-Pangram-Regular rounded-lg ${
-                      link?.label === "General Treatment"
-                        ? "-right-[277%]"
-                        : "-right-[140%]"
-                    }`}
-                  >
-                    <div className="inline-grid grid-cols-2 p-6 grid-flow-row place-content-start place-items-start">
-                      {link.subLinks.map((subLink, index: number) => (
-                        <div
-                          onClick={() =>
-                            handleSetPathToNavigate(dispatch, subLink.href)
-                          }
-                          onMouseOver={() => setHoverId(index)}
-                          onMouseOut={() => setHoverId(null)}
-                          key={index}
-                          className="relative h-fit flex items-center w-full"
-                        >
-                          <p className="flex items-center relative">
-                            <Image
-                              src={
-                                hoverId === index
-                                  ? subLink?.icon_hovered
-                                  : subLink.icon
-                              }
-                              className=""
-                              alt=""
-                            />
-                            <span className="text-white text-base ml-3">
-                              {subLink.title}
-                            </span>
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="relative w-[351px] bg-[#222222] py-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">
-                      <Image src={nav_drop_down_img} className="w-fit" alt="" />
-                      <h3 className="text-[#8A8A8A] w-full text-[20px] mt-5 leading-[24px]">
-                        <span className="text-white">Transform</span> Your Smile
-                        Today with Dental Opulence!
-                      </h3>
+  <div
+    className={`dropdown-content h-fit w-full ${link?.label === "Cases" ? "w-1/2" : "w-full"} text-white font-Pangram-Regular rounded-lg ${
+      link?.label === "General Treatment" ? "-right-[277%]" : "-right-[140%]"
+    }`}
+  >
+    <div
+      className={`inline-grid p-6 grid-flow-row place-content-start place-items-start ${
+        link?.label === "Cases" ? "grid-cols-1" : "grid-cols-2"
+      }`}
+    >
+      {link.subLinks.map((subLink, index: number) => (
+        <div
+          onClick={() => handleSetPathToNavigate(dispatch, subLink.href)}
+          onMouseOver={() => setHoverId(index)}
+          onMouseOut={() => setHoverId(null)}
+          key={index}
+          className="relative h-fit flex items-center w-full"
+        >
+          <p className="flex items-center relative">
+            <Image
+              src={hoverId === index ? subLink?.icon_hovered : subLink.icon}
+              className=""
+              alt=""
+            />
+            <span className="text-white text-base ml-3">
+              {subLink.title}
+            </span>
+          </p>
+        </div>
+      ))}
+    </div>
+    <div className="relative w-[351px] bg-[#222222] py-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">
+      <Image src={nav_drop_down_img} className="w-fit" alt="" />
+      <h3 className="text-[#8A8A8A] w-full text-[20px] mt-5 leading-[24px]">
+        <span className="text-white">Transform</span> Your Smile
+        Today with Dental Opulence!
+      </h3>
 
-                      <PrimaryLink
-                        href="/contact"
-                        title="Book Now"
-                        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[14px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
-                      />
+      <PrimaryLink
+        href="/contact"
+        title="Book Now"
+        style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[14px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
+      />
+    </div>
+  </div>
+)}
 
-                      {/*  <Image
-                        src={logo_background_overlay}
-                        className="absolute  z-[7] w-[109px] bottom-[15px] right-4 h-[56px]"
-                        alt=""
-                      /> */}
-                    </div>
-                  </div>
-                )}
               </li>
             ))}
           </ul>

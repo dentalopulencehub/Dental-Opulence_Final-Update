@@ -17,15 +17,17 @@ const ServiceTransform = () => {
             Dental Opulence{" "}
           </h2>
           <div className="flex md:flex-row flex-col justify-center items-center gap-8 mt-[46px]">
+           
             <PrimaryLink
               href="/contact"
-              title="Book An Appointment"
-              style="py-4 px-[49px] xs:w-[276px] text-center rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
-            />
-            <PrimaryLink
-              href="/about"
               title="Make An Inquiry"
               style="py-4 px-[49px] xs:w-[276px] text-center rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white duration-0"
+            />
+
+            <PrimaryLink
+              href="/about"
+              title="About Us"
+              style="py-4 px-[49px] xs:w-[276px] text-center rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
             />
           </div>
 

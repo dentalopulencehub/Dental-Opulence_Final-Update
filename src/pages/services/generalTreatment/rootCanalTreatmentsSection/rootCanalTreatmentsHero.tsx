@@ -5,7 +5,7 @@ import PrimaryLink from "@/components/atom/PrimaryLink";
 
 import root_canal_treatments_service_hero_image from "../../../../../assets/images/root-canal-services-image2.svg"
 
-
+import right_thick from '../../../../../assets/images/right_thick.svg'
 
 // import invisalign_service_hero_image from "./assets/images/invisalign-service-hero-image.svg"
 // import fixed_retainers_service_hero_image from "./assets/images/fixed-retainers-service-hero-image.svg"
@@ -35,6 +35,19 @@ const RootCanalTreatmentsHero = () => {
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
           At our dental practice, we understand that the thought of a root canal treatment can be stressful for some patients. That’s why we strive to make the root canal process as comfortable and anxiety-free as possible.
           </p>
+
+           {/* extra section */}
+           <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink
