@@ -445,3 +445,12 @@ $text-color: #161616; // Replace with your actual color value
   // background-color:;
   border: gray !important;
 }
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  gap: 30px;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
