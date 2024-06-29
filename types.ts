@@ -4,6 +4,7 @@ import Home from "@/pages";
 export enum REDUCERS {
   SET_LOADING = "SET_LOADING",
   SET_SELECTED_CASE = "SET_SELECTED_CASE",
+  SET_SELECTED_VIDEO_TESTI="SET_SELECTED_VIDEO_TESTI",
   SET_PATH_TO_NAVIGATE = "SET_PATH_TO_NAVIGATE",
   SET_SERVICE_PAGE_DATA = "SET_SERVICE_PAGE_DATA",
   SET_MENU_STATE = "SET_MENU_STATE",
@@ -26,6 +27,13 @@ export type casesType =
   | "white_fillings"
   | "others";
 
+  export type videoTestiType =
+  | "all"
+  | "reactions"
+  | "before_&_after"
+
+
+
 export type CaseStudyTypeProp = {
   type: casesType;
   name: string;
@@ -33,7 +41,7 @@ export type CaseStudyTypeProp = {
 };
 
 export type TestiVideoStudyTypeProp = {
-  type: casesType;
+  type: videoTestiType;
   name: string;
   videos: any[];
 };

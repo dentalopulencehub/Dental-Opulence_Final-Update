@@ -46,7 +46,7 @@ const HomeOurServices = () => {
           onClick={() => handleSetSelectedTheme("light")}
           className={` ${
             selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-0 py-2" : ""
-          } flex gap-3 md:py-[6px] py-[10px] flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3  cursor-pointer`}
+          } flex gap-3 md:py-[6px] border border-[#000000] py-[10px] flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3  cursor-pointer`}
         >
           <Image
             src={
@@ -70,9 +70,9 @@ const HomeOurServices = () => {
           onClick={() => handleSetSelectedTheme("dark")}
           className={` flex gap-3 flex-row items-center justify-center service-tooth-div md:py-1 py-[6px] ${
             selectedTheme === "dark"
-              ? "bg-[#161616]"
+              ? "bg-[#161616] border border-[#000000]"
               : "border border-[#000000]"
-          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-1 py-[6px] cursor-pointer`}
+          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-[6px] py-[6px] cursor-pointer`}
         >
           <Image
             src={

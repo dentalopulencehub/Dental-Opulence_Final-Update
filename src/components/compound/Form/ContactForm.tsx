@@ -2,7 +2,7 @@
 import useAxios from "../../../../hooks/useAxios";
 import { useState } from "react";
 
-const ContactForm: React.FC = () => {
+const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void;}) => {
   const [formData, handleInputChange, handleSubmit] = useAxios();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -10,7 +10,10 @@ const ContactForm: React.FC = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await handleSubmit();
+    const sent = await handleSubmit();
+    if(sent ){
+      handleStepChange('successForm')
+    }
     setIsSubmitting(false);
   };
 
@@ -20,7 +23,7 @@ const ContactForm: React.FC = () => {
         <div className="content w-full flex flex-col xl:flex-row gap-5 xl:gap-24">
           <div>
             <h1 className="bold text-[32px] text-white text-center md:text-left xl:text-[56px]">
-              INPUT YOUR PERSONAL INFO
+            Input your personal info
             </h1>
           </div>
 
@@ -31,7 +34,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="firstName"
                   placeholder="First Name *"
-                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] text-white  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.firstName}
                   onChange={handleInputChange}
@@ -41,7 +44,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="lastName"
                   placeholder="Last Name *"
-                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] text-white  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.lastName}
                   onChange={handleInputChange}
@@ -53,7 +56,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="phone"
                   placeholder="Phone [optional] "
-                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] text-white  border border-[#454545] h-[56px] w-full p-2 sm:p-4  tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   value={formData.phone}
                   onChange={handleInputChange}
                 />
@@ -61,7 +64,7 @@ const ContactForm: React.FC = () => {
                   type="text"
                   name="email"
                   placeholder="Email*"
-                  className="bg-[#41414159]  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] text-white  border border-[#454545] h-[56px] w-full p-2 sm:p-4 tracking-widest rounded-md focus:outline-none placeholder:text-sm"
                   required
                   value={formData.email}
                   onChange={handleInputChange}
@@ -93,7 +96,7 @@ const ContactForm: React.FC = () => {
                 <textarea
                   name="message"
                   placeholder="Your message here...."
-                  className="bg-[#41414159] border border-[#454545] w-full md:min-h-[100px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none placeholder:text-sm"
+                  className="bg-[#41414159] text-white border border-[#454545] w-full md:min-h-[100px] tracking-[0.3rem] rounded-md px-6 py-3 text-md focus:outline-none placeholder:text-sm"
                   value={formData.message}
                   onChange={handleInputChange}
                 ></textarea>

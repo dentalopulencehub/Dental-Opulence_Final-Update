@@ -345,54 +345,40 @@ export const testi_video_studies: TestiVideoStudyTypeProp [] =[
     type: "all",
     name: "All",
     videos : [
-      cases_all_img1,
-      cases_all_img2,
-      cases_all_img3,
-      cases_all_img4,
-      cases_all_img5,
-      cases_all_img6,
-      cases_all_img7,
-      cases_all_img8,
-      cases_all_img9,
-      cases_all_img10,
-      cases_all_img11,
-      cases_all_img12,
-      cases_all_img13,
-      cases_all_img14,
-      cases_all_img15,
-      cases_all_img16,
+      "/videoTestimonials/All/COMPOSITEVENEERS-2.mp4",
+      "/videoTestimonials/All/EDGEBONDING-1.mp4",
+      "/videoTestimonials/All/EDGEBONDING-2.mp4",
+      "/videoTestimonials/All/EDGEBONDING-5.mp4",
+      "/videoTestimonials/All/EDGEBONDING-6.mp4",
+      "/videoTestimonials/All/EDGEBONDING-7.mp4",
+      "/videoTestimonials/All/PORCELAINVENEER-1.mp4",
+      // cases_all_img8,
+      // cases_all_img9,
+      // cases_all_img10,
+      // cases_all_img11,
+      // cases_all_img12,
+      // cases_all_img13,
+      // cases_all_img14,
+      // cases_all_img15,
+      // cases_all_img16,
     ],
   },
   {
-    type: "composite_edge_bonding",
-    name: "Composite Edge Bonding",
+    type: "reactions",
+    name: "Reactions",
     videos : [
-      cases_composite_edge_bonding_img1,
-      cases_composite_edge_bonding_img2,
-      cases_composite_edge_bonding_img3,
-      cases_composite_edge_bonding_img4,
-      cases_composite_edge_bonding_img5,
-      cases_composite_edge_bonding_img6,
-      cases_composite_edge_bonding_img7,
-      cases_composite_edge_bonding_img8,
-      cases_composite_edge_bonding_img9,
+      "/videoTestimonials/All/COMPOSITEVENEERS-2.mp4",
+      "/videoTestimonials/All/EDGEBONDING-1.mp4",
+      "/videoTestimonials/All/EDGEBONDING-2.mp4",
+      "/videoTestimonials/All/EDGEBONDING-5.mp4",
     ],
   },
   {
-    type: "combination_treatments",
-    name: "Combination treatments",
+    type: "before_&_after",
+    name: "Before & After ",
     videos : [
-      cases_combination_treatment_img1,
-      cases_combination_treatment_img2,
-      cases_combination_treatment_img3,
-      cases_combination_treatment_img4,
-      cases_combination_treatment_img5,
-      cases_combination_treatment_img6,
-      cases_combination_treatment_img7,
-      cases_combination_treatment_img8,
-      cases_combination_treatment_img9,
-      cases_combination_treatment_img10,
-      cases_combination_treatment_img11,
+   "/videoTestimonials/All/COMPOSITEVENEERS-2.mp4",
+      "/videoTestimonials/All/EDGEBONDING-1.mp4"
     ],
   },
 ]
@@ -1618,6 +1604,109 @@ export const about_award_winning: AboutAwardType[] = [
 
 // Glory Form Constants
 // form 1 - how can we help
+
+
+// form 2 - what type of project
+
+
+//form3 main=> commercial form 1
+
+
+//form4 main=> residential form 1
+
+
+//  FROM FORM 5 - 7 ARE RESIDENTIAL SUB SECTION
+// form5
+
+// form6
+
+
+// EN-SUIT FORM
+//form 7
+
+// --------------------------- COMMERCIAL FORM SECTION  cont'----------------
+//form-8 -> hotel
+
+
+//form-9 - form-12
+//commercial formOne - formThree all have the same options and title
+
+//form-13
+//commercial four - text field with a buttin next to it to update the state
+
+//form-14
+
+
+//commercial form 2 and 3 have the same sub forms
+
+//form 16
+//commercial form seven has the commercial form six as a sub form
+
+
+//--------------------------- CHECK POINT SECTION ----------------------------
+//todo: FIRST FORM CHECK POINT
+
+//todo: SECOND FORM CHECK POINT
+
+
+//todo: THIRD FORM CHECK POINT
+
+
+//todo: FOURTH FORM CHECK POINT
+
+//todo: FIFTH FORM CHECK POINT
+
+
+
+
+
+
+
+
+// Glory Form Constants
+// form 1 Are you?
+export const customerSelect = [
+  // DEFAULT
+  {
+    id: 1,
+    label: "Existing customer",
+  },
+  {
+    id: 1,
+    label: "New customer",
+  },
+];
+
+// form 2 - what type of project
+export const stepOne = [
+  {
+    title: "Would you like to?",
+    id: 1,
+    label: "Login to portal",
+  },
+
+  {
+    title: "WHAT TYPE OF PROJECT?",
+    id: 2,
+    label: "Make a new inquiry",
+  },
+];
+
+// form 3 - what type of project
+export const stepTwo = [
+  {
+    title: "What typeof service?",
+    id: 1,
+    label: "General Treatments",
+  },
+
+  {
+    title: "What typeof service?",
+    id: 2,
+    label: "Cosmetics Treatments",
+  },
+];
+// form 1 - how can we help
 export const helpSelect = [
   // DEFAULT
   {
@@ -1630,60 +1719,46 @@ export const helpSelect = [
   },
 ];
 
-// form 2 - what type of project
-export const stepOne = [
-  {
-    title: "WHAT TYPE OF SERVICE?",
-    id: 1,
-    label: "General Treatments",
-  },
-
-  {
-    title: "WHAT TYPE OF PROJECT?",
-    id: 2,
-    label: "Cosmetics  Treatments",
-  },
-];
 
 //form3 main=> commercial form 1
 export const commercialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Dentures",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Extractions",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Hygienist",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Root Canal Treatments ",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "White Fillings",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Bridges",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Examination",
   },
@@ -1692,54 +1767,54 @@ export const commercialForm = [
 //form4 main=> residential form 1
 export const residentialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Composite Bonding",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Vivera Retainers",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Teeth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Composite Edge Bonding",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "Fixed Retainers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Invisalign",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Internal Tooth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 9,
     label: "Composite Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 10,
     label: "Routine Examination",
   },
@@ -2053,12 +2128,6 @@ export const checkPointSeven = [
     label: "Other",
   },
 ];
-
-
-
-
-
-
 
 
 

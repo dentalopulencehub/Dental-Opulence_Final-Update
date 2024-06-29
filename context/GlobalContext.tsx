@@ -18,6 +18,7 @@ interface Props {
 const initialState: any = {
   loading: false as boolean,
   selectedCase: case_studies[0] as CaseStudyTypeProp,
+
   pathToNavigate: null as string | null,
   servicePageData: null as ServicePageDataType | null,
   layoutRef: null as any,

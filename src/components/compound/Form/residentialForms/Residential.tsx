@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { residentialForm } from "../../../../../constants";
 
 import { FormProps } from "../../../../../types";
 
-const FormFour = ({ handleStepChange, handleOptionSelect }: FormProps) => {
+const FormFour = ({ handleStepChange, handleOptionSelect, handleOptionDeselect }: FormProps) => {
   const getNextForm = (index: number) => {
     switch (index) {
       case 0:
@@ -17,33 +18,50 @@ const FormFour = ({ handleStepChange, handleOptionSelect }: FormProps) => {
         return "";
     }
   };
+  const [selectedIndex, setSelectedIndex] = useState<number[]>([]);
 
   return (
     <div className="flex flex-col gap-10 text-center" data-aos="fade-left">
-      <h1 className="bold text-3xl xl:text-7xl text-white">
-        {residentialForm[0].title}
-      </h1>
-      <div className="flex sm:flex-wrap flex-col sm:flex-row gap-10 justify-center items-center">
+      <div className="flex flex-col gap-2">
+        <h1 className="bold text-4xl xl:text-7xl text-white">
+          {residentialForm[0].title}{" "}
+        </h1>
+        <p className=" font-normal text-2xl text-[#A2A2A2]">
+          Select all applicable services.
+        </p>
+      </div>
+      <div className="flex sm:flex-wrap flex-col sm:flex-row gap-4 justify-center items-center">
         {residentialForm.map((item, index) => (
-          <div key={index} className="btn mb-4 relative">
+          <div key={index} className="btn cursor-pointer relative">
             <div
-              className="contact-bg sm:w-[250px] justify-center bg-[#2D2D2D] hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base py-3 xl:py-6 text-white rounded-full relative"
+              className={`${selectedIndex.includes(index) ? 'bg-white text-[#2D2D2D]' : 'bg-[#2D2D2D] text-white'} sm:w-[250px] justify-center hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base px-12 lg:py-6 py-3 rounded-full relative`}
               onClick={() => {
-                /*  const nextForm = getNextForm(index);
-                handleStepChange(nextForm);
-                */
-                handleOptionSelect(item.label, item.title || "");
-                handleStepChange("lastForm");
+                if (selectedIndex.includes(index)) {
+                  if (handleOptionDeselect) {
+                    handleOptionDeselect(item.label, item.title || "")
+                    const newList = selectedIndex.filter(item => item != index);
+                    setSelectedIndex(newList)
+                  }
+                } else {
+                  const newList = [...selectedIndex, index];;
+                  setSelectedIndex(newList)
+                  handleOptionSelect(item.label, item.title || "");
+
+                }
+
               }}
             >
-              {/*  <span>
-              <YellowButton />
-            </span> */}
+
 
               {item.label}
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <button onClick={() => {
+          handleStepChange("formSix");
+        }} type='button' className="text-white font-medium text-base rounded-full px-12 py-4 border-white border">Next</button>
       </div>
     </div>
   );
