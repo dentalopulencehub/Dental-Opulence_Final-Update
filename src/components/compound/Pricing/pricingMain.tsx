@@ -49,8 +49,8 @@ const PricingMain = () => {
         <div
           onClick={() => handleSetSelectedTheme("light")}
           className={` ${
-            selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-0 py-2" : ""
-          } flex gap-3 md:py-[6px] py-[10px] flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3  cursor-pointer`}
+            selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-[10px] py-[10px]" : ""
+          } flex gap-3 border border-[#000000] md:py-[10px] py-[10px] flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3  cursor-pointer`}
         >
           <Image
             src={
@@ -63,7 +63,7 @@ const PricingMain = () => {
           />
           <p
             className={`font-Pangram-Bold md:text-[18px] text-[15px] ${
-              selectedTheme === "dark" ? "text-[#000000]" : "text-white"
+              selectedTheme === "dark" ? "text-[#000000] " : "text-white"
             } `}
           >
             General Treatments
@@ -72,11 +72,11 @@ const PricingMain = () => {
         
         <div
           onClick={() => handleSetSelectedTheme("dark")}
-          className={` flex gap-3 flex-row items-center justify-center service-tooth-div md:py-1 py-[6px] ${
+          className={` flex gap-3 flex-row items-center justify-center service-tooth-div md:py-[10px] py-[10px] ${
             selectedTheme === "dark"
-              ? "bg-[#161616]"
+              ? "bg-[#161616] border border-[#000000]"
               : "border border-[#000000]"
-          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-1 py-[6px] cursor-pointer`}
+          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-[10px] py-[10px] cursor-pointer`}
         >
           <Image
             src={
@@ -88,7 +88,7 @@ const PricingMain = () => {
             className="tooth-image w-8 h-8"
           />
           <p
-            className={`font-Pangram-Bold md:text-[18px] text-[15px] mt-2 ${
+            className={`font-Pangram-Bold md:text-[18px] text-[15px] mb-[1px] ${
               selectedTheme === "light" ? "text-[#100E10]" : "text-white"
             } `}
           >

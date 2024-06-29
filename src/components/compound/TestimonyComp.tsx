@@ -16,29 +16,29 @@ import Link from 'next/link';
 const TestimonyComp = () => {
     const reviews = [
     {
-      name: 'LUIS HASANAJ (Entrepreneur)',
+      name: 'Lucy Ratcliffe',
       rating: '5.0',
       comment:
-        'I wasn’t very confident with my teeth until I met Dr Ali and the team at Dental Opulence. My smile was transformed giving me a new-found spring in my step. I cannot stop smiling, quite literally. The service and execution was second to none.',
+       "My smile white experience with Dr Asad Abbas has been amazing. He is the nicest dentist I've ever had especially when you aren't a fan of dentists he's super reassuring and very gentle. The dental nurses and reception staff are also lovely and will continue to go to them after my treatment is done."
     },
     {
-      name: 'MANUEL LANZINI (Footballer)',
+      name: 'Mohammed Nazir',
       rating: '5.0',
       comment:
-        'My experience at Dental Opulence was remarkable. The clinic combines art and science. I visited for a smile makeover, a decision I would considered for months. The calming ambiance, modern decor, and soothing colors made the visit memorable.',
+        "Booked in for a scale and polish for my composite veneers. I was pleasantly surprised with how friendly and professional the staff were. The practice seems like it is built around the patient for a one to one service. This was the best experience I have ever had at a dentist.",
     },
     {
-      name: 'MANUEL LANZINI (Footballer)',
+      name: 'Ahmad',
       rating: '5.0',
       comment:
-        'My experience at Dental Opulence was remarkable. The clinic combines art and science. I visited for a smile makeover, a decision I would considered for months. The calming ambiance, modern decor, and soothing colors made the visit memorable.',
+       "Extremely welcoming and professional at the same time. The whole team are very friendly and take care of you to the highest of standards. Very happy with my visit and would definitely recommend Dental Opulence to everyone.",
     },
-    // {
-    //   name: 'Z EL-HAFFAR',
-    //   rating: '5.0',
-    //   comment:
-    //     'As a family we have used this law firm for many years which we ALL highly recommend. Excellent communication, very friendly and always aim to do their very best for their clients. A* service.',
-    // },
+    {
+      name: 'Naheed Dad',
+      rating: '5.0',
+      comment:
+       "I had my first consultation today with Dr Ali, it was amazing. He made me feel at ease during the consultation and recommended a treatment plan that was tailored to my needs to achieve my dream smile. Really excited and can't wait to see the outcome!!",
+    },
   ]
   return (
     <div className="md:container mx-auto  md:px-14 px-5  mb-[9.44rem] md:mt-20 mt-14">
@@ -86,7 +86,7 @@ const TestimonyComp = () => {
                   {review.comment}
                 </p>
               </div>
-              <p className=" text-white font-[700] md:text-[24px] text-[18px]">{review.name}</p>
+              <p className=" text-white font-[700] md:text-[24px] text-[18px] uppercase">{review.name}</p>
             </div>
           </div>
         ))}

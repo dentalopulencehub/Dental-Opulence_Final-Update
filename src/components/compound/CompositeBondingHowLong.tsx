@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
-import { motion } from "framer-motion";
+
 
 interface VideoRefs {
   video1: React.RefObject<HTMLVideoElement>;
@@ -44,10 +44,10 @@ const CompositeBondingHowLong: React.FC = () => {
           
           
           <h2 className="font-Pangram  font-bold md:text-[48px] text-[35px] leading-[53px] text-[#100E10] text-center sm:max-w-[593px]">
-            Our patient success story showcase
+            Our patient’s success story showcase
           </h2>
           <p className="text-[#4C4C4C] text-[18px] font-Pangram-Regular text-center sm:max-w-[453px] mt-4 mb-14">
-              Dental Opulence and Smile Transformation,Take a look at some of our results below
+             Explore Our Smile Transformations at Dental Opulence. View our impressive results below.
           </p>
           
 
@@ -99,49 +99,3 @@ const CompositeBondingHowLong: React.FC = () => {
 
 export default CompositeBondingHowLong;
 
-{
-  /*
-<video
-              autoPlay={true}
-              loop
-              height="416"
-              className="object-cover rounded-2xl h-[416px] w-[394px]"
-              id="video1"
-              playsInline
-              muted
-              onClick={(e) => {
-                if (e.currentTarget.paused) {
-                  e.currentTarget.play();
-                } else {
-                  e.currentTarget.pause();
-                }
-              }}
-            >
-              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
-              <source src="example.webm" type="video/webm" />
-              <track kind="captions" />
-              Your browser does not support the video tag.
-            </video>
-            <video
-              autoPlay={true}
-              loop
-              height="416"
-              className="object-cover rounded-2xl h-[416px] w-[394px]"
-              id="video1"
-              playsInline
-              muted
-              onClick={(e) => {
-                if (e.currentTarget.paused) {
-                  e.currentTarget.play();
-                } else {
-                  e.currentTarget.pause();
-                }
-              }}
-            >
-              <source src={`/videos/DOREELWALKTHROUGH.mp4`} type="video/mp4" />
-              <source src="example.webm" type="video/webm" />
-              <track kind="captions" />
-              Your browser does not support the video tag.
-            </video>
-*/
-}

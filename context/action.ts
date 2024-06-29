@@ -1,5 +1,5 @@
 import { Dispatch } from "react";
-import { CaseStudyTypeProp, REDUCERS } from "../types";
+import { CaseStudyTypeProp, REDUCERS, TestiVideoStudyTypeProp } from "../types";
 import { DispatchType } from "../interface";
 
 export const handleSetSelectedCaseStudy = (
@@ -11,6 +11,17 @@ export const handleSetSelectedCaseStudy = (
     payload,
   });
 };
+
+export const handleSetSelectedVideoTestiCaseStudy = (
+  dispatch: Dispatch<DispatchType>,
+  payload: TestiVideoStudyTypeProp
+) => {
+  dispatch({
+    type: REDUCERS.SET_SELECTED_VIDEO_TESTI,
+    payload,
+  });
+};
+
 
 export const handleSetPathToNavigate = (
   dispatch: Dispatch<DispatchType>,

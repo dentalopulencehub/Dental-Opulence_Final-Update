@@ -11,12 +11,13 @@ import {
   AboutWhoWeAre,
   TestimonyComp,
   Faq,
-  HomePeopleSlider,
+
   AboutMissionVision,
   CompositeBondingHowLong,
   Footer,
 } from "../components/import";
 import { gsap, ScrollTrigger } from "../../lib/gsap";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -58,7 +59,7 @@ export default function Home() {
       <TestimonyComp />
       
       <Faq />
-      <HomePeopleSlider />
+      <HomePeopleSlider2 />
       <Footer />
     </Layout>
   );

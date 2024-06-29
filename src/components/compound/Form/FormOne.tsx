@@ -37,7 +37,7 @@ const FormOne = ({
         Are you?{" "}
       </h1>
       <div className="flex flex-wrap flex-col sm:flex-row gap-5 sm:gap-10 justify-center items-center">
-        {helpSelect.map((item:any, index) => (
+        {helpSelect?.map((item:any, index) => (
        
             <div
             key={index}

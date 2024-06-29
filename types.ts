@@ -4,6 +4,7 @@ import Home from "@/pages";
 export enum REDUCERS {
   SET_LOADING = "SET_LOADING",
   SET_SELECTED_CASE = "SET_SELECTED_CASE",
+  SET_SELECTED_VIDEO_TESTI="SET_SELECTED_VIDEO_TESTI",
   SET_PATH_TO_NAVIGATE = "SET_PATH_TO_NAVIGATE",
   SET_SERVICE_PAGE_DATA = "SET_SERVICE_PAGE_DATA",
   SET_MENU_STATE = "SET_MENU_STATE",
@@ -26,10 +27,23 @@ export type casesType =
   | "white_fillings"
   | "others";
 
+  export type videoTestiType =
+  | "all"
+  | "reactions"
+  | "before_&_after"
+
+
+
 export type CaseStudyTypeProp = {
   type: casesType;
   name: string;
   images: any[];
+};
+
+export type TestiVideoStudyTypeProp = {
+  type: videoTestiType;
+  name: string;
+  videos: any[];
 };
 
 export type HomePopularServicesType = {
@@ -41,7 +55,12 @@ export type HomePopularServicesType = {
 };
 
 export type HomeOurServicesType = {
-  processes:any;
+  title: string;
+  description: string;
+  image: any;
+  image_inverted?: any;
+  href: string;
+  price:string;
 };
 
 export type TestimonialType = {
@@ -77,7 +96,6 @@ export interface FormProps {
   // stepThree: HelpSelectItem[];
   handleStepChange: (step: string) => void;
   handleOptionSelect: (option: string, title: string) => void;
-  handleOptionDeselect?: (option: string, title: string) => void;
 }
 
 export interface FormData {

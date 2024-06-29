@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const GoogleCard = () => {
@@ -38,55 +39,13 @@ const GoogleCard = () => {
           <p className="text-[#1E1E1E] mt-2"> 250 reviews  </p>
         </div>
       </div>
+     <Link href='https://rb.gy/20dj6m' target='blank'>
       <div className="flex gap-[1.27rem]">
         <img src="/image/google.svg" />
         <img src="/image/arrow-diagonal.svg" className='arrow-transition-1 transition-all group-hover:opacity-100 opacity-0' />
         <img src="/image/arrow-diagonal.svg" className='arrow-transition-2 transition-all group-hover:opacity-0 opacity-100' />
-        {/* <div className="c-contact-slider__ico">
-          <div
-            className="c-contact-slider__ico__item u-hover w-embed"
-            style={{
-              transform:
-                'translate3d(125%, -125%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-              transformStyle: 'preserve-3d',
-            }}
-          >
-            <svg fill="none" viewBox="0 0 32 32">
-              <path
-                fill="black"
-                fillRule="evenodd"
-                d="M3.414 2h26v26h-4V8.828L4.828 29.414 2 26.586 22.586 6H3.414V2Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-          <div
-            data-w-id="5d919f60-03b1-970d-0d18-8edfc0b5c5ce"
-            className="c-contact-slider__ico__item has--hover w-embed"
-            style={{
-              transform:
-                'translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-              transformStyle: 'preserve-3d',
-            }}
-          >
-            <svg fill="none" viewBox="0 0 32 32">
-              <path
-                fill="black"
-                fillRule="evenodd"
-                d="M3.414 2h26v26h-4V8.828L4.828 29.414 2 26.586 22.586 6H3.414V2Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div> */}
-
-
-        {/* initial */}
-        {/* top */}
-        {/* style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; */}
-        {/* bottom */}
-        {/* transform: translate3d(-125%, 125%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; */}
       </div>
+    </Link>
     </div>
   )
 }

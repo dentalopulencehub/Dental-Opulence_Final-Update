@@ -7,16 +7,7 @@ import root_canal_treatments_service_hero_image from "../../../../../assets/imag
 
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
-// import invisalign_service_hero_image from "./assets/images/invisalign-service-hero-image.svg"
-// import fixed_retainers_service_hero_image from "./assets/images/fixed-retainers-service-hero-image.svg"
-// import teeth_whitening_service_hero_image from "./assets/images/teeth-whitening-service-hero-image.svg"
-// import vivera_service_hero_image from "./assets/images/vivera-service-hero-image.svg"
-// import crowns_service_hero_image from "./assets/images/crowns-service-hero-image.svg"
-// import composite_veneers_service_hero_image from "./assets/images/composite-veneers-service-image.svg"
-// import composite_bonding_service_hero_image from "./assets/images/compositeB-service-hero-image.svg"
-// import routine_examination_service_hero_image from "./assets/images/routine-examination-service-image.svg"
-// import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg"
-// import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
+
 
 const RootCanalTreatmentsHero = () => {
 

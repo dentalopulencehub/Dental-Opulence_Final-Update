@@ -11,18 +11,23 @@ import {
 } from "../components/import";
 import VideoTestimonials from "@/components/compound/videoTestimonials";
 import VideoTestimonialStrokeLine from "@/components/compound/videoTestimonialStrokeLine";
+import VideoTestHero from "@/components/compound/videoTestHero";
+import VideoTestimonialSelectOption from "@/components/compound/videoTestimonialSelectOption";
+import VideoGallary from "@/components/compound/VideoGallary";
 
 export default function Cases() {
   return (
     <Layout>
       <Navbar />
-      <CaseHero />
+      <VideoTestHero />
+      {/* <VideoTestimonialSelectOption/> */}
+     {/* <VideoTestimonialStrokeLine/>   */}
       
-     <VideoTestimonialStrokeLine/>  
-      
-     <VideoTestimonials/>
+     {/* <VideoTestimonials/> */}
+    <VideoGallary/>
 
-
+  
+    
       {/* <CaseSelectOptions /> */}
       {/* <CaseSelectedImages />
       <HomePeopleSlider /> */}

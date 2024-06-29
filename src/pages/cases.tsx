@@ -17,7 +17,7 @@ export default function Cases() {
       <CaseHero />
       <CaseSelectOptions />
       <CaseSelectedImages />
-      <HomePeopleSlider />
+      {/* <HomePeopleSlider /> */}
       <Footer />
     </Layout>
   );

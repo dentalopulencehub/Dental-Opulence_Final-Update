@@ -84,7 +84,7 @@ const Faq = () => {
     <div className="">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
         <h2 className="text-[32px] text-white text-left font-medium font-Pangram-Medium sm:w-[295px]">
-          Frequently Asked Question
+          Frequently Asked Questions
         </h2>
 
         <div className="flex flex-col gap-2 mt-10">

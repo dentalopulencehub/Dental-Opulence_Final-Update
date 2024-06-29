@@ -17,6 +17,8 @@ export default (state: any, action: ActionType) => {
         selectedCase: payload,
       };
 
+  
+
     case REDUCERS.SET_PATH_TO_NAVIGATE:
       return {
         ...state,

@@ -445,3 +445,26 @@ $text-color: #161616; // Replace with your actual color value
   // background-color:;
   border: gray !important;
 }
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  gap: 30px;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
