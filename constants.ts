@@ -1537,6 +1537,48 @@ export const about_award_winning: AboutAwardType[] = [
 ];
 
 // Glory Form Constants
+// form 1 Are you?
+export const customerSelect = [
+  // DEFAULT
+  {
+    id: 1,
+    label: "Existing customer",
+  },
+  {
+    id: 1,
+    label: "New customer",
+  },
+];
+
+// form 2 - what type of project
+export const stepOne = [
+  {
+    title: "Would you like to?",
+    id: 1,
+    label: "Login to portal",
+  },
+
+  {
+    title: "WHAT TYPE OF PROJECT?",
+    id: 2,
+    label: "Make a new inquiry",
+  },
+];
+
+// form 3 - what type of project
+export const stepTwo = [
+  {
+    title: "What typeof service?",
+    id: 1,
+    label: "General Treatments",
+  },
+
+  {
+    title: "What typeof service?",
+    id: 2,
+    label: "Cosmetics Treatments",
+  },
+];
 // form 1 - how can we help
 export const helpSelect = [
   // DEFAULT
@@ -1550,60 +1592,46 @@ export const helpSelect = [
   },
 ];
 
-// form 2 - what type of project
-export const stepOne = [
-  {
-    title: "WHAT TYPE OF SERVICE?",
-    id: 1,
-    label: "General Treatments",
-  },
-
-  {
-    title: "WHAT TYPE OF PROJECT?",
-    id: 2,
-    label: "Cosmetics  Treatments",
-  },
-];
 
 //form3 main=> commercial form 1
 export const commercialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Dentures",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Extractions",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Hygienist",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Root Canal Treatments ",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "White Fillings",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Bridges",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Examination",
   },
@@ -1612,54 +1640,54 @@ export const commercialForm = [
 //form4 main=> residential form 1
 export const residentialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Composite Bonding",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Vivera Retainers",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Teeth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Composite Edge Bonding",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "Fixed Retainers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Invisalign",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Internal Tooth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 9,
     label: "Composite Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 10,
     label: "Routine Examination",
   },

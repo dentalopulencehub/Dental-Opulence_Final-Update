@@ -54,7 +54,7 @@ const useAxios = (): [
       );
       console.log("Submission successful");
       // Navigate to success page
-      window.location.href = "/success";
+      // window.location.href = "/success";
 
       // Clear form fields
       setFormData({
@@ -66,8 +66,10 @@ const useAxios = (): [
         deadline: "",
         message: "",
       });
+      return true
     } catch (error) {
       console.error("Error submitting form:", error);
+      return false
     }
   };
 

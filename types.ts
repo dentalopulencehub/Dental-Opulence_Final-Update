@@ -77,6 +77,7 @@ export interface FormProps {
   // stepThree: HelpSelectItem[];
   handleStepChange: (step: string) => void;
   handleOptionSelect: (option: string, title: string) => void;
+  handleOptionDeselect?: (option: string, title: string) => void;
 }
 
 export interface FormData {
