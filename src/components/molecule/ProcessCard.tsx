@@ -22,8 +22,8 @@ const ProcessCard = ({processes, }: HomeOurServicesType) => {
               <Image src={arrow_right_light} alt="" />
             </button>
           </div>
-            {processes.map((data:any) => (
-               <MagicCard className="xs:w-[394px] w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
+            {processes.map((data:any, index:number) => (
+               <MagicCard key={index} className="xs:w-[394px] w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
                  <Image src={data.image} alt={data.title} />
                  <h3 className="font-Pangram-Regular text-2xl text-white mt-4">{data.title}</h3>
                  <p className="mt-6 text-[#C2C2C2] text-xs font-Pangram-Light">
