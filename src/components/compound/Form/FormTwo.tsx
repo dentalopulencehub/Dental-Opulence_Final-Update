@@ -5,10 +5,8 @@ import { FormProps } from "../../../../types";
 const FormTwo = ({ handleStepChange, handleOptionSelect }: FormProps) => {
   const getNextForm = (index: number) => {
     switch (index) {
-      case 0:
-        return "formThree";
       case 1:
-        return "formFour";
+        return "formThree";
       default:
         return "";
     }
@@ -23,6 +21,9 @@ const FormTwo = ({ handleStepChange, handleOptionSelect }: FormProps) => {
             <div
               className="contact-bg  btn bg-[#2D2D2D] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-base px-12 lg:py-6 py-3 text-white rounded-full relative"
               onClick={() => {
+                if(index==0){
+                return  window.open('https://dentalopulence.dentr.net/my-dental', '_newtab');
+                }
                 const nextForm = getNextForm(index);
                 handleStepChange(nextForm);
                 handleOptionSelect(item.label, item.title || "");  

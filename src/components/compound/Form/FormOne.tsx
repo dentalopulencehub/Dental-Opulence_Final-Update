@@ -17,7 +17,7 @@ const getNextForm = (index: number) => {
     case 0:
       return "formTwo";
     case 1:
-      return "lastForm";
+      return "formThree";
 
     default:
       return "";
@@ -34,7 +34,7 @@ const FormOne = ({
   return (
     <div className="flex flex-col gap-10 text-center">
       <h1 className="bold text-4xl xl:text-7xl text-white" data-aos="fade-up-right">
-        HOW CAN WE HELP?{" "}
+        Are you?{" "}
       </h1>
       <div className="flex flex-wrap flex-col sm:flex-row gap-5 sm:gap-10 justify-center items-center">
         {helpSelect.map((item:any, index) => (

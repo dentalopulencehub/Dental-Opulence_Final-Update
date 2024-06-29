@@ -62,24 +62,6 @@ import award_img10 from "./assets/images/award_img10.svg";
 import award_img11 from "./assets/images/award_img11.svg";
 import award_img12 from "./assets/images/award_img12.svg";
 
-
-
-import marque_img1 from './assets/marque_Images/marqueImg1.svg'
-import marque_img2 from './assets/marque_Images/marqueImg2.svg'
-import marque_img3 from './assets/marque_Images/marqueImg3.svg'
-import marque_img4 from './assets/marque_Images/marqueImg4.svg'
-import marque_img5 from './assets/marque_Images/marqueImg5.svg'
-import marque_img6 from './assets/marque_Images/marqueImg6.svg'
-import marque_img7 from './assets/marque_Images/marqueImg7.svg'
-import marque_img8 from './assets/marque_Images/marqueImg8.svg'
-import marque_img9 from './assets/marque_Images/marqueImg9.svg'
-import marque_img10 from './assets/marque_Images/marqueImg10.svg'
-import marque_img11 from './assets/marque_Images/marqueImg11.svg'
-import marque_img12 from './assets/marque_Images/marqueImg12.svg'
-
-
-
-
 import teeth_whitening_service_image from "./assets/images/teeth-whitening-service-img.svg";
 import teeth_whitening_service_image_dark from "./assets/images/teeth-whitening-service-img2.svg";
 import invisalign_service_image_dark from "./assets/images/invisalign-service-image.svg";
@@ -810,8 +792,6 @@ export const home_awards_images = [
   award_img4,
 ];
 
-
-
 export const homer_awards_images2 = [
   award_img7,
   award_img8,
@@ -826,13 +806,6 @@ export const homer_awards_images2 = [
   award_img11,
   award_img12,
 ];
-
-
-
-
-
-
-
 
 export const service_award_images = [
   service_award_img1,
@@ -1510,18 +1483,39 @@ export const faq: FaqType[] = [
 ];
 
 export const people_slider = [
-    marque_img1 ,
-   marque_img2 ,
-  marque_img3 ,
-  marque_img4 ,
-  marque_img5 ,
-  marque_img6 ,
-  marque_img7 ,
-  marque_img8 ,
-  marque_img9 ,
-  marque_img10 ,
-  marque_img11 ,
-  marque_img12 ,
+  people_img1,
+  people_img2,
+  people_img3,
+  people_img4,
+  people_img5,
+  people_img3,
+  people_img6,
+  people_img7,
+ 
+  people_img9,
+  people_img10,
+  people_img11,
+  people_img12,
+  people_img13,
+  people_img14,
+  people_img15,
+  people_img16,
+  people_img17,
+  people_img3,
+  people_img18,
+  people_img19,
+  people_img3,
+  people_img20,
+  people_img21,
+  people_img22,
+
+  people_img24,
+  people_img25,
+  people_img26,
+  people_img27,
+  people_img28,
+  people_img29,
+  people_img30,
 ];
 
 export const about_award_winning: AboutAwardType[] = [
@@ -1543,6 +1537,48 @@ export const about_award_winning: AboutAwardType[] = [
 ];
 
 // Glory Form Constants
+// form 1 Are you?
+export const customerSelect = [
+  // DEFAULT
+  {
+    id: 1,
+    label: "Existing customer",
+  },
+  {
+    id: 1,
+    label: "New customer",
+  },
+];
+
+// form 2 - what type of project
+export const stepOne = [
+  {
+    title: "Would you like to?",
+    id: 1,
+    label: "Login to portal",
+  },
+
+  {
+    title: "WHAT TYPE OF PROJECT?",
+    id: 2,
+    label: "Make a new inquiry",
+  },
+];
+
+// form 3 - what type of project
+export const stepTwo = [
+  {
+    title: "What typeof service?",
+    id: 1,
+    label: "General Treatments",
+  },
+
+  {
+    title: "What typeof service?",
+    id: 2,
+    label: "Cosmetics Treatments",
+  },
+];
 // form 1 - how can we help
 export const helpSelect = [
   // DEFAULT
@@ -1556,60 +1592,46 @@ export const helpSelect = [
   },
 ];
 
-// form 2 - what type of project
-export const stepOne = [
-  {
-    title: "WHAT TYPE OF SERVICE?",
-    id: 1,
-    label: "General Treatments",
-  },
-
-  {
-    title: "WHAT TYPE OF PROJECT?",
-    id: 2,
-    label: "Cosmetics  Treatments",
-  },
-];
 
 //form3 main=> commercial form 1
 export const commercialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Dentures",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Extractions",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Hygienist",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Root Canal Treatments ",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "White Fillings",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Bridges",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Examination",
   },
@@ -1618,54 +1640,54 @@ export const commercialForm = [
 //form4 main=> residential form 1
 export const residentialForm = [
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 1,
     label: "Composite Bonding",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 2,
     label: "Vivera Retainers",
   },
 
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 3,
     label: "Crowns / Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 4,
     label: "Teeth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 5,
     label: "Composite Edge Bonding",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 6,
     label: "Fixed Retainers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 7,
     label: "Invisalign",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 8,
     label: "Internal Tooth Whitening",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 9,
     label: "Composite Veneers",
   },
   {
-    title: "SELECT SERVICE TYPE",
+    title: "Select service type",
     id: 10,
     label: "Routine Examination",
   },

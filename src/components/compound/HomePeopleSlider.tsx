@@ -13,7 +13,7 @@ const HomePeopleSlider = () => {
               key={index}
               src={award}
               alt={index.toString()}
-              className="ml-[40px] md:w-full w-[100px] "
+              className="ml-[40px] md:w-full w-[100px]"
             />
           ))}
         </Marquee>

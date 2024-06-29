@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useState } from "react";
+import React, { useRef, useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
@@ -8,16 +8,10 @@ import { NavigationLoader } from "../../molecule";
 import { GlobalContext } from "../../../../context/GlobalContext";
 import { handleSetPathToNavigate } from "../../../../context/action";
 import tr_radius from "../../../../assets/images/Dental Opulence (1)/Vector-1.svg";
-import bl_radius from "../../../../assets/images/Dental Opulence (1)/Vector-2.svg";
-import br_radius from "../../../../assets/images/Dental Opulence (1)/Vector-3.svg";
-import tl_radius from "../../../../assets/images/Dental Opulence (1)/Vector.svg";
-
-import contact_info_button from "../../../../assets/contact_icons/contact_info_icon.svg";
-import contact_cross_button from "../../../../assets/contact_icons/contact_cross_icon.svg";
-import contact_page_button from "../../../../assets/contact_icons/contact_info_icon.svg";
-import whatsapp_icon from "../../../../assets/contact_icons/whatsAppIcon.svg";
-import call_icon from "../../../../assets/contact_icons/call_icon.svg";
-import contact_pen_icon from "../../../../assets/contact_icons/contct_Pen_Icon.svg";
+import bl_radius from "../../../../assets/images/Dental Opulence (1)/Vector-2.svg"
+import br_radius from "../../../../assets/images/Dental Opulence (1)/Vector-3.svg"
+import tl_radius from "../../../../assets/images/Dental Opulence (1)/Vector.svg"
+import contact_page_button from "../../../../assets/images/contact-page-button.svg";
 
 interface Props {
   children: React.ReactNode;
@@ -25,12 +19,8 @@ interface Props {
 
 const Index = ({ children }: Props) => {
   const { dispatch, menuOpen } = useContext(GlobalContext);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const tl: any = useRef(null);
 
-  const toggleExpanded = () => {
-    setIsExpanded(!isExpanded);
-  };
+  const tl: any = useRef(null);
 
   useGSAP(() => {
     tl.current = gsap.timeline({ paused: true });
@@ -67,52 +57,31 @@ const Index = ({ children }: Props) => {
   }, []);
 
   return (
-    <main className={`bg-white sticky`}>
+    <main
+      className={`bg-white sticky`}
+    >
       <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
         <div className="fixed bg-white w-screen h-[5px] top-0" />
         <Image src={tr_radius} className="fixed top-[5px] right-[5px]" alt="" />
         <Image src={bl_radius} className="fixed bottom-[5px] left-[5px]" alt="" />
         <Image src={br_radius} className="fixed bottom-[5px] right-[5px]" alt="" />
         <Image src={tl_radius} className="fixed top-[5px] left-[5px]" alt="" />
+
         <div className="fixed bg-white w-[5px] h-screen left-0 " />
+
         <div className="fixed bg-white w-[5px] h-screen right-0 " />
         <div className="fixed bg-white w-screen h-[5px] bottom-0 " />
       </main>
+
       <main className="relative w-[calc(100%-10px)] mx-auto rounded-[24px] z-[690]">
         {children}
-        <div className="fixed sm:bottom-10 bottom-3 right-[10px]">
-          {isExpanded && (
-            <div className="flex flex-col items-center space-y-2 mb-1">
-              <Link href="tel:+441212729229" target="blank">
-                <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
-                  src={call_icon}
-                  alt="Call Icon"
-                />
-              </Link>
-              <Link href="https://wa.me/+447301253447" target="blank">
-                <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
-                  src={whatsapp_icon}
-                  alt="WhatsApp Icon"
-                />
-              </Link>
-              <Link href="/contact">
-                <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
-                  src={contact_pen_icon}
-                  alt="Contact Icon"
-                />
-              </Link>
-            </div>
-          )}
-          <Image
-            className="w-[86px] h-[86px] contact-icon cursor-pointer"
-            src={isExpanded ? contact_cross_button : contact_info_button}
-            alt="floating contact page button"
-            onClick={toggleExpanded}
-          />
-        </div>
+
+        <Image
+          className="fixed w-[86px] h-[86px] sm:bottom-10 bottom-3 right-[10px] contact-icon cursor-pointer"
+          onClick={() => handleSetPathToNavigate(dispatch, "/contact")}
+          src={contact_page_button}
+          alt="floating contact page button"
+        />
       </main>
     </main>
   );
