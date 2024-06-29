@@ -10,6 +10,7 @@ import whatsapp_logo from "../../../assets/images/whatsapp-icon.svg";
 import whatsapp_logo_dark from "../../../assets/images/whatsapp-icon-dark-footer.svg";
 import tiktok_icon from "../../../assets/images/tiktok-icon.svg";
 import titktok_icon_dark from "../../../assets/images/tiktok-icon-dark.svg";
+
 import phone_icon from "../../../assets/images/phone-icon.svg";
 import whatsapp_icon_mini from "../../../assets/images/whatsapp-icon-mini.svg";
 import { handleSetPathToNavigate } from "../../../context/action";
@@ -19,26 +20,28 @@ import logo_Link1 from '../../../assets/fonts/footer-logo-link1.svg'
 import logo_Link2 from '../../../assets/fonts/footer-logo-link2.svg'
 import logo_Link3 from '../../../assets/fonts/footer-logo-link3.svg'
 
+
+
 const hoverLinks = [
   {
     image: ig_logo,
     image_inverted: ig_logo_dark,
-    link: "#",
+    link: "https://www.instagram.com/dentalopulence/",
   },
   {
     image: fb_logo,
     image_inverted: fb_logo_dark,
-    link: "#",
+    link: "https://www.facebook.com/DentalOpulence/",
   },
   {
     image: whatsapp_logo,
     image_inverted: whatsapp_logo_dark,
-    link: "#",
+    link: "https://wa.me/+447301253447",
   },
   {
     image: tiktok_icon,
     image_inverted: titktok_icon_dark,
-    link: "#",
+    link: "https://www.tiktok.com/@dentalopulence",
   },
 ];
 
@@ -49,8 +52,8 @@ const Footer = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[100px] sm:px-[40px] px-5">
-        <div className="flex xl:flex-row flex-col md:gap-[162px] gap-[50px] items-start">
+      <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[70px] sm:px-[40px] px-5">
+        <div className="flex xl:flex-row flex-col md:gap-[90px] gap-[50px] items-start">
           <div>
             <Image src={footer_logo} alt="" />
             <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
@@ -62,7 +65,7 @@ const Footer = () => {
                   href="mailto:info@dentalopulence.co.uk"
                   className="text-[#A2A2A2] cursor-pointer text-xl font-Pangram-Light font-normal"
                 >
-                  info@dentalopulence.co.uk
+                  info@do.co.uk
                 </Link>
               </div>
               <div className="mt-10">
@@ -71,13 +74,15 @@ const Footer = () => {
                 </h3>
                 <div className="flex items-center gap-4 mt-4">
                   {hoverLinks.map((item, index) => (
+                    
                     <div
                       key={index}
                       onMouseOver={() => setHoverIndex(index)}
                       onMouseOut={() => setHoverIndex(null)}
                       className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
                     >
-                      <Image
+                      <Link href={item.link} target="blank">
+                       <Image
                         src={
                           hoverIndex === index
                             ? item.image_inverted
@@ -85,6 +90,8 @@ const Footer = () => {
                         }
                         alt=""
                       />
+                      </Link>
+                   
                     </div>
                   ))}
                 </div>
@@ -92,14 +99,14 @@ const Footer = () => {
 
               <div className="md:flex items-center gap-2 md:mt-10 h-full w-full">
                 <Link href='https://test.cqc.org.uk/location/1-17708997775/contact'>
-                  <Image src={logo_Link1} alt="" className="w-[190px] h-[80px]"/>
+                  <Image src={logo_Link1} alt="" className="w-[180px] h-[80px]"/>
                 </Link>
-                <Link href='https://www.gdc-uk.org'>
+                {/* <Link href='https://www.gdc-uk.org'>
                   <Image src={logo_Link2} alt="" className="w-[190px] h-[80px]  md:my-0 my-3"/>
                 </Link>
                 <Link href='https://gdpr-info.eu'>
                   <Image src={logo_Link3} alt="" className="w-[190px] h-[80px]"/>
-                </Link>
+                </Link> */}
               </div>
 
 
@@ -158,6 +165,131 @@ const Footer = () => {
                       <span>+447301253447</span>
                     </p>
                   </div>
+                </div>
+              </div>
+
+              <div className="w-[227px] md:mt-0 mt-6">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
+                  General Treatments
+                </h3>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Bridges
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Dentures
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Crowns / Veneers
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Examination
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Extractions
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Hygienist
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    White Fillings
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Root Canal Treatments
+                  </p>
+                </div>
+
+
+               <div className="mt-8">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
+                   Opening Hours
+                </h3>
+                  <div>
+                     <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Tuesday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Thursday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Friday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Saturday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                  </div>
+               </div>
+
+
+              </div>
+
+
+              <div className="w-[227px] md:mt-0 mt-6">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
+                  Cosmetic Treatment
+                </h3>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Invisalign
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Fixed Retainers
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Teeth Whitening
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Vivera Retainers
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Crowns/Veneers
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Composite Veneers
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Routine Examination
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Internal Tooth Whitening
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                    Composite Edge Bonding
+                  </p>
                 </div>
               </div>
 
@@ -232,102 +364,9 @@ const Footer = () => {
 
 
 
-              <div className="w-[227px] md:mt-0 mt-6">
-                <h3 className="text-white font-Pangram-Regular text-2xl">
-                  General Treatments
-                </h3>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Bridges
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Dentures
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Crowns / Veneers
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Examination
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Extractions
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Hygienist
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    White Fillings
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Root Canal Treatments
-                  </p>
-                </div>
-              </div>
+             
 
-              <div className="w-[227px] md:mt-0 mt-6">
-                <h3 className="text-white font-Pangram-Regular text-2xl">
-                  Cosmetic Treatment
-                </h3>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Invisalign
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Fixed Retainers
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Teeth Whitening
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Vivera Retainers
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Crowns/Veneers
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Composite Veneers
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Routine Examination
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Internal Tooth Whitening
-                  </p>
-                </div>
-                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                    Composite Edge Bonding
-                  </p>
-                </div>
-              </div>
+           
             </div>
           </div>
         </div>

@@ -11,12 +11,13 @@ import {
 } from "../components/import";
 import VideoTestimonials from "@/components/compound/videoTestimonials";
 import VideoTestimonialStrokeLine from "@/components/compound/videoTestimonialStrokeLine";
+import VideoTestHero from "@/components/compound/videoTestHero";
 
 export default function Cases() {
   return (
     <Layout>
       <Navbar />
-      <CaseHero />
+      <VideoTestHero />
       
      <VideoTestimonialStrokeLine/>  
       

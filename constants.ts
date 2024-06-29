@@ -9,6 +9,7 @@ import {
   TeamType,
   serviceType,
   ServicePageDataType,
+  TestiVideoStudyTypeProp,
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -149,38 +150,8 @@ import process_treatment_plan_image from "./assets/images/process-treatment-plan
 import process_conduct_treatment_image from "./assets/images/process-contact-treatment.svg";
 import process_care_maintenance_image from "./assets/images/process-care-maintenance.svg";
 
-import people_img1 from "./assets/peopleImg/people_img1.svg";
-import people_img2 from "./assets/peopleImg/people_img2.svg";
-import people_img3 from "./assets/peopleImg/people_img3.svg";
-import people_img4 from "./assets/peopleImg/people_img4.svg";
-import people_img5 from "./assets/peopleImg/people_img5.svg";
-import people_img6 from "./assets/peopleImg/people_img6.svg";
-import people_img7 from "./assets/peopleImg/people_img7.svg";
 
 
-
-import people_img9 from "./assets/images/people-img9.svg";
-import people_img10 from "./assets/images/people-img10.svg";
-import people_img11 from "./assets/images/people-img11.svg";
-import people_img12 from "./assets/images/people-img12.svg";
-import people_img13 from "./assets/images/people-img13.svg";
-import people_img14 from "./assets/images/people-img14.svg";
-import people_img15 from "./assets/images/people-img15.svg";
-import people_img16 from "./assets/images/people-img16.svg";
-import people_img17 from "./assets/images/people-img17.svg";
-import people_img18 from "./assets/images/people-img18.svg";
-import people_img19 from "./assets/images/people-img19.svg";
-import people_img20 from "./assets/images/people-img20.svg";
-import people_img21 from "./assets/images/people-img21.svg";
-import people_img22 from "./assets/images/people-img22.svg";
-import people_img23 from "./assets/images/people-img23.jpg";
-import people_img24 from "./assets/images/people-img24.svg";
-import people_img25 from "./assets/images/people-img25.svg";
-import people_img26 from "./assets/images/people-img26.svg";
-import people_img27 from "./assets/images/people-img27.svg";
-import people_img28 from "./assets/images/people-img28.svg";
-import people_img29 from "./assets/images/people-img29.svg";
-import people_img30 from "./assets/images/people-img30.svg";
 
 import about_dentist_image from "./assets/images/about-dentist-img.svg";
 import about_award_image from "./assets/images/about-award-image.svg";
@@ -279,35 +250,46 @@ import routine_examination_service_hero_image from "./assets/images/routine-exam
 import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg"
 import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
 
+
+
 // General treatment
 
 // import BridgesVideo from './public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Bridges.mp4'
 
 // const BridgesVideo: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Bridges.mp4";
-const CrownsAndVeneers: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/CrownsAndVeneers.mp4";
-const Dentures: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Dentures.mp4";
-const Examination: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Examination.mp4";
-const Extraction: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Extraction.mp4";
-const Hygeinist: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/Hygeinist.mp4";
-const RootCanalTreatment: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/RootCanalTreatment.mp4";
-const WhiteFillings: string = "public/videos/DentalAllServicesVideo/GENERAL TREATMENTS_COMPRESSED/WhiteFillings.mp4";
 
-// Cosmetic treatment
-const Invisalign: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/Invisalign.mp4";
-const FixedRetainers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/FixedRetainers.mp4";
-const TeethWhitening: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/TeethWhitening.mp4";
-const ViveraRetainers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/ViveraRetainers.mp4";
-const Crownandveneers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/Crownandveneers.mp4";
-const CompositeVeneers: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeVeneers.mp4";
-const CompositeBonding: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeEdgeBonding.mp4";
-const RoutineExamiination: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/RoutineExamiination.mp4";
-const InternalToothWhitening: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/InternalToothWhitening.mp4";
-const CompositeEdgeBonding: string = "public/videos/DentalAllServicesVideo/COSMETIC TREATMENTS_COMPRESSED/CompositeEdgeBonding.mp4";
 
 import all_cases from './assets/images/casesDropdown/cases_All_cases.svg'
 import hover_all_cases from './assets/images/casesDropdown/hover_all_cases.svg'
 
 import cases_testi from './assets/images/casesDropdown/cases_testimonial.svg'
+
+
+import HMim1 from './assets/BMimges/BMimg1.svg'
+import HMim2 from './assets/BMimges/BMimg2.svg'
+import HMim3 from './assets/BMimges/BMimg3.svg'
+import HMim4 from './assets/BMimges/BMimg4.svg'
+import HMim5 from './assets/BMimges/BMimg5.svg'
+import HMim6 from './assets/BMimges/BMimg6.svg'
+import HMim7 from './assets/BMimges/BMimg7.svg'
+import HMim8 from './assets/BMimges/BMimg8.svg'
+import HMim9 from './assets/BMimges/BMimg9.svg'
+import HMim10 from './assets/BMimges/BMimg10.svg'
+import HMim11 from './assets/BMimges/BMimg11.svg'
+import HMim12 from './assets/BMimges/BMimg12.svg'
+import HMim13 from './assets/BMimges/BMimg13.svg'
+import HMim14 from './assets/BMimges/BMimg14.svg'
+import HMim15 from './assets/BMimges/BMimg15.svg'
+import HMim16 from './assets/BMimges/BMimg16.svg'
+import HMim17 from './assets/BMimges/BMimg17.svg'
+import HMim18 from './assets/BMimges/BMimg18.svg'
+import HMim19 from './assets/BMimges/BMimg19.svg'
+import HMim20 from './assets/BMimges/BMimg20.svg'
+import HMim21 from './assets/BMimges/BMimg21.svg'
+import HMim22 from './assets/BMimges/BMimg22.svg'
+import HMim23 from './assets/BMimges/BMimg23.svg'
+import HMim24 from './assets/BMimges/BMimg24.svg'
+
 
 
 //Service types images
@@ -355,6 +337,69 @@ export const team: TeamType[] = [
     image: team_sample_image,
   },
 ];
+
+
+
+export const testi_video_studies: TestiVideoStudyTypeProp [] =[
+  {
+    type: "all",
+    name: "All",
+    videos : [
+      cases_all_img1,
+      cases_all_img2,
+      cases_all_img3,
+      cases_all_img4,
+      cases_all_img5,
+      cases_all_img6,
+      cases_all_img7,
+      cases_all_img8,
+      cases_all_img9,
+      cases_all_img10,
+      cases_all_img11,
+      cases_all_img12,
+      cases_all_img13,
+      cases_all_img14,
+      cases_all_img15,
+      cases_all_img16,
+    ],
+  },
+  {
+    type: "composite_edge_bonding",
+    name: "Composite Edge Bonding",
+    videos : [
+      cases_composite_edge_bonding_img1,
+      cases_composite_edge_bonding_img2,
+      cases_composite_edge_bonding_img3,
+      cases_composite_edge_bonding_img4,
+      cases_composite_edge_bonding_img5,
+      cases_composite_edge_bonding_img6,
+      cases_composite_edge_bonding_img7,
+      cases_composite_edge_bonding_img8,
+      cases_composite_edge_bonding_img9,
+    ],
+  },
+  {
+    type: "combination_treatments",
+    name: "Combination treatments",
+    videos : [
+      cases_combination_treatment_img1,
+      cases_combination_treatment_img2,
+      cases_combination_treatment_img3,
+      cases_combination_treatment_img4,
+      cases_combination_treatment_img5,
+      cases_combination_treatment_img6,
+      cases_combination_treatment_img7,
+      cases_combination_treatment_img8,
+      cases_combination_treatment_img9,
+      cases_combination_treatment_img10,
+      cases_combination_treatment_img11,
+    ],
+  },
+]
+
+
+
+
 
 export const case_studies: CaseStudyTypeProp[] = [
   {
@@ -1523,6 +1568,35 @@ export const people_slider = [
   marque_img11 ,
   marque_img12 ,
 ];
+
+export const people_slider2 = [
+   HMim1  ,
+   HMim2  ,
+   HMim3  ,
+   HMim4  ,
+   HMim5  ,
+   HMim6  ,
+   HMim7  ,
+   HMim8  ,
+   HMim9  ,
+   HMim10 ,
+   HMim11 ,
+   HMim12 ,
+   HMim13 ,
+   HMim14 ,
+   HMim15 ,
+   HMim16 ,
+   HMim17 ,
+   HMim18 ,
+   HMim19 ,
+   HMim20 ,
+   HMim21 ,
+   HMim22 ,
+   HMim23 ,
+   HMim24 ,
+];
+
+
 
 export const about_award_winning: AboutAwardType[] = [
   {

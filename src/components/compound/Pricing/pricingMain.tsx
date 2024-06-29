@@ -88,7 +88,7 @@ const PricingMain = () => {
             className="tooth-image w-8 h-8"
           />
           <p
-            className={`font-Pangram-Bold md:text-[18px] text-[15px] mt-2 ${
+            className={`font-Pangram-Bold md:text-[18px] text-[15px]  ${
               selectedTheme === "light" ? "text-[#100E10]" : "text-white"
             } `}
           >

@@ -38,7 +38,7 @@ const AboutHero = () => {
           autoPlay={true}
           loop
           height=""
-          className="object-cover rounded-2xl w-full h-[900px]"
+          className="object-cover rounded-2xl w-full h-[700px]"
           id="video1"
           playsInline
           
@@ -50,7 +50,7 @@ const AboutHero = () => {
             }
           }}
         >
-          <source src="/videos/walkThrough/patientWalkThoroughCompressed.mp4" type="video/mp4" />
+          <source src="/video/aboutUsHeroVideo.mp4" type="video/mp4" />
           <source src="example.webm" type="video/webm" />
           <track kind="captions" />
           Your browser does not support the video tag.

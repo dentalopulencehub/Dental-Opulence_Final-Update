@@ -16,7 +16,7 @@ const HomeChangeLife = () => {
             </h3>
             <div className="flex justify-between items-center">
               <Image src={change_life_logo} alt="" />
-              <Image src={change_life_whatsapp_logo} alt="" />
+              {/* <Image src={change_life_whatsapp_logo} alt="" /> */}
             </div>
           </div>
 

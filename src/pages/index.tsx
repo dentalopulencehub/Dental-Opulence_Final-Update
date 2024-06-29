@@ -18,6 +18,7 @@ import {
   TestimonyComp,
   CompositeBondingHowLong,
 } from "../components/import";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,7 @@ export default function Home() {
       <TestimonyComp />
       <OurProcess />
       <Faq />
-      <HomePeopleSlider />
+      <HomePeopleSlider2 />
       <Footer />
     </Layout>
   );

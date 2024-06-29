@@ -32,6 +32,12 @@ export type CaseStudyTypeProp = {
   images: any[];
 };
 
+export type TestiVideoStudyTypeProp = {
+  type: casesType;
+  name: string;
+  videos: any[];
+};
+
 export type HomePopularServicesType = {
   title: string;
   href: string;

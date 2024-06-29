@@ -5,6 +5,7 @@ import expert_dentist_img from "../../../assets/images/expert-dentists-img.svg";
 import twoK_review_image from "../../../assets/images/2k-review-img.svg";
 import threeK_clients_image from "../../../assets/images/3k-client-img.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
+import AboutGetInTouch from "./AboutGetInTouch";
 
 const AboutMissionVision = () => {
   let value = `Our mission is to elevate the dental experience by combining state-of-the-art technology with personalised care, tailored to the unique needs of each patient. We are dedicated to promoting oral health and enhancing smiles, empowering our patients to achieve optimal dental wellness and confidence. At Dental Opulence, we are committed to creating a luxurious and transformative journey towards a brighter, healthier smile.`;
@@ -28,8 +29,8 @@ const AboutMissionVision = () => {
   const words2 = value.split(" ");
 
   return (
-    <div className="w-full">
-      <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
+    <div className="w-full bg-[#100E10]">
+      <div className=" w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="flex xl:flex-row flex-col gap-6 w-full">
           <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
             <div className="sm:max-w-[425px] w-full xl:h-[225px] bg-[#222222] rounded-2xl xs:p-10 p-7">
@@ -85,29 +86,33 @@ const AboutMissionVision = () => {
             <div className=" w-full xl:h-[310px] bg-[#222222] rounded-2xl flex sm:flex-row flex-col md:justify-around justify-between xs:p-10 p-7 sm:gap-0 gap-10">
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={expert_dentist_img} alt="" />
-                <h3 className="text-[48px] text-white">30+</h3>
-                <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
-                  EXPERT DENTISTS
+                <h3 className="text-[48px] text-white">20+</h3>
+                <p className="text-base text-center mr-3 font-Pangram-Regular text-[#D0D0D0]">
+                   SERVICES
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={twoK_review_image} alt="" />
-                <h3 className="text-[48px] text-white">2k+</h3>
+                <h3 className="text-[48px] text-white">5</h3>
                 <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
-                  REVIEWS
+                RATING
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={threeK_clients_image} alt="" />
-                <h3 className="text-[48px] text-white">3k+</h3>
+                <h3 className="text-[48px] text-white">500+</h3>
                 <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
-                  CLIENTS
+                CLIENTS
                 </p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
+        <AboutGetInTouch/>
+
     </div>
   );
 };

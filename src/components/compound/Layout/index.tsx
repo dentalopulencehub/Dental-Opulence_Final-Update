@@ -17,7 +17,10 @@ import contact_cross_button from "../../../../assets/contact_icons/contact_cross
 import contact_page_button from "../../../../assets/contact_icons/contact_info_icon.svg";
 import whatsapp_icon from "../../../../assets/contact_icons/whatsAppIcon.svg";
 import call_icon from "../../../../assets/contact_icons/call_icon.svg";
-import contact_pen_icon from "../../../../assets/contact_icons/contct_Pen_Icon.svg";
+
+import messageIcon from '../../../../assets/contact_icons/messageIcon.svg'
+
+import contact_pen_icon from "../../../../assets/contact_icons/contact_pen_icon.svg";
 
 interface Props {
   children: React.ReactNode;
@@ -85,30 +88,30 @@ const Index = ({ children }: Props) => {
             <div className="flex flex-col items-center space-y-2 mb-1">
               <Link href="tel:+441212729229" target="blank">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
+                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
                   src={call_icon}
                   alt="Call Icon"
                 />
               </Link>
               <Link href="https://wa.me/+447301253447" target="blank">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
+                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
                   src={whatsapp_icon}
                   alt="WhatsApp Icon"
                 />
               </Link>
               <Link href="/contact">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer"
-                  src={contact_pen_icon}
+                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
+                  src={messageIcon}
                   alt="Contact Icon"
                 />
               </Link>
             </div>
           )}
           <Image
-            className="w-[86px] h-[86px] contact-icon cursor-pointer"
-            src={isExpanded ? contact_cross_button : contact_info_button}
+            className="w-[86px] h-[86px] contact-icon cursor-pointer "
+            src={isExpanded ? contact_cross_button : contact_pen_icon}
             alt="floating contact page button"
             onClick={toggleExpanded}
           />

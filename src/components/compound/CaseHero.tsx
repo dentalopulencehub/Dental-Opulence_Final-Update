@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import case_hero_ill from "../../../assets/images/cases-hero-illustration.svg";
-import stroke_hero_text_testi from "../../../assets/fonts/stroke_hero_text_testi.svg";
+import stroke_hero_text_testi from "../../../assets/fonts/CASESImg.svg";
 
 const CaseHero = () => {
   return (

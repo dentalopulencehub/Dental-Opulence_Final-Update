@@ -109,20 +109,3 @@ const OurResult = () => {
 export default OurResult;
 
 
-{/* 
- <video
-            autoPlay={true}
-            loop
-           
-            height="483"
-            className="rounded-[20px] w-fit"
-            id="video1"
-            playsInline
-            muted
-          >
-            <source src={`/videos/BULLSTACKNOTXT.mp4`} type="video/mp4" />
-            <source src="example.webm" type="video/webm" />
-            <track kind="captions" />
-            Your browser does not support the video tag.
-          </video>
-*/}
