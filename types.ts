@@ -41,12 +41,7 @@ export type HomePopularServicesType = {
 };
 
 export type HomeOurServicesType = {
-  title: string;
-  description: string;
-  image: any;
-  image_inverted?: any;
-  href: string;
-  price:string;
+  processes:any;
 };
 
 export type TestimonialType = {
