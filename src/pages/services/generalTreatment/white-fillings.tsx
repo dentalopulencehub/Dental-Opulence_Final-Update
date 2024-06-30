@@ -1,3 +1,4 @@
+import { whiteFillingFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -40,7 +41,7 @@ import WhiteFillingVideo from "./whiteFillings/whiteFillingVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={whiteFillingFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

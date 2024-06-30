@@ -1,3 +1,4 @@
+import { internalTeethWhiteFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -40,7 +41,7 @@ import InternalToothWhiteningVideo from "./InternalToothWhiteningSection/Interna
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={internalTeethWhiteFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

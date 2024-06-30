@@ -1,3 +1,4 @@
+import { rootFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -42,7 +43,7 @@ import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTrea
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={rootFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>
