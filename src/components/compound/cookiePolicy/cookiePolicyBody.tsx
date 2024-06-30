@@ -6,7 +6,7 @@ const CookiePolicyBody = () => {
     <div className='lg:px-[100px] sm:px-[40px] px-[20px] py-20'>
         <div>
             <h2 className='font-Pangram-Bold text-[24px] font-[600]'>Introduction</h2>
-            <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>This Cookie Policy explains how Dental Opulence ("we", "us", "our") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies in accordance with this policy. If you do not agree to our use of cookies, you should adjust your browser settings accordingly or refrain from using our website.</p>
+            <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>This Cookie Policy explains how Dental Opulence (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies in accordance with this policy. If you do not agree to our use of cookies, you should adjust your browser settings accordingly or refrain from using our website.</p>
         </div>
 
         <div className='mt-8'>

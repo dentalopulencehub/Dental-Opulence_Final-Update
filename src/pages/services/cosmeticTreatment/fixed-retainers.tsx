@@ -1,3 +1,4 @@
+import { fixedRetainersFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -41,7 +42,7 @@ import FixedRetainersVideo from "./FixedRetainersSection/FixedRetainersVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={fixedRetainersFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

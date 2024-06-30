@@ -1,3 +1,4 @@
+import { faq } from "../../constants";
 import {
   Footer,
   Layout,
@@ -34,7 +35,7 @@ export default function Services() {
       {/* <HomeOurServices /> */}
       <TestimonyComp />
       <OurProcess />
-      <Faq />
+      <Faq faqList={faq} />
       <HomePeopleSlider />
       <Footer />
     </Layout>

@@ -1,3 +1,4 @@
+import { extractionFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -41,7 +42,7 @@ import ExtractionsVideo from "./extractionsSection/extractionsVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={extractionFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

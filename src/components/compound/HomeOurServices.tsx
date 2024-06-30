@@ -72,7 +72,7 @@ const HomeOurServices = () => {
             selectedTheme === "dark"
               ? "bg-[#161616] border border-[#000000]"
               : "border border-[#000000]"
-          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-[6px] py-[11px] cursor-pointer`}
+          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-[6px] py-[11.3px] cursor-pointer`}
         >
           <Image
             src={

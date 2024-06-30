@@ -19,6 +19,7 @@ import {
   CompositeBondingHowLong,
 } from "../components/import";
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { faq } from "../../constants";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,7 @@ export default function Home() {
       <OurResult />
       <TestimonyComp />
       <OurProcess />
-      <Faq />
+      <Faq faqList={faq} />
       <HomePeopleSlider2 />
       <Footer />
     </Layout>

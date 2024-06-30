@@ -18,6 +18,7 @@ import {
 } from "../components/import";
 import { gsap, ScrollTrigger } from "../../lib/gsap";
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { aboutFaq, faq } from "../../constants";
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -58,7 +59,7 @@ export default function Home() {
      {/*  <AboutWhoWeAre /> */}
       <TestimonyComp />
       
-      <Faq />
+      <Faq faqList={aboutFaq} />
       <HomePeopleSlider2 />
       <Footer />
     </Layout>

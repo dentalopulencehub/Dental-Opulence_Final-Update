@@ -1,3 +1,4 @@
+import { compositeEdgeFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -41,7 +42,7 @@ import CompositeEdgeBondingVideo from "./CompositeEdgeBondingSection/CompositeEd
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={compositeEdgeFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>
