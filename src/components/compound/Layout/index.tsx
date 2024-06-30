@@ -94,21 +94,21 @@ const Index = ({ children }: Props) => {
             <div className="flex flex-col items-center space-y-2 mb-1">
               <Link href="tel:+441212729229" target="blank">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
+                  className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
                   src={call_icon}
                   alt="Call Icon"
                 />
               </Link>
               <Link href="https://wa.me/+447301253447" target="blank">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
+                  className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
                   src={whatsapp_icon}
                   alt="WhatsApp Icon"
                 />
               </Link>
               <Link href="/contact">
                 <Image
-                  className="w-[40px] h-[40px] cursor-pointer bg-[#000] rounded-full"
+                  className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
                   src={messageIcon}
                   alt="Contact Icon"
                 />

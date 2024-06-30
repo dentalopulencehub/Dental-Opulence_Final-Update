@@ -9,7 +9,7 @@ const CookiePolicyBody = () => {
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>This Cookie Policy explains how Dental Opulence ("we", "us", "our") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies in accordance with this policy. If you do not agree to our use of cookies, you should adjust your browser settings accordingly or refrain from using our website.</p>
         </div>
 
-        <div>
+        <div className='mt-8'>
             <h2 className='font-Pangram-Bold text-[24px] font-[600]'>What are Cookies?</h2>
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They help the website recognise your device and store some information about your preferences or past actions.Cookies are small text files that are placed on your computer or mobile device when you visit a website. They help the website recognise your device and store some information about your preferences or past actions.</p>
         </div>
@@ -51,10 +51,10 @@ const CookiePolicyBody = () => {
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>You can manage your cookies preferences by adjusting your browser settings. Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary from browser to browser, and from version to version. You can however obtain up-to-date information about blocking and deleting cookies via these links:</p>
             <div className=''>
                <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D]'>
-                 <Link href={'https://support.google.com/chrome/answer/95647?hl=en-GB&co=GENIE.Platform%3DDesktop'}><li className='p-1 list-disc '>Chrome</li></Link>
-                 <Link href={'https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US'}> <li className='p-1 list-disc'>Firefox</li></Link>
-                 <Link href={'https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US'}><li className='p-1 list-disc'>Safari</li></Link>
-                 <Link href={'https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d'}><li className='p-1 list-disc'>Edge</li></Link>
+                 <Link href={'https://support.google.com/chrome/answer/95647?hl=en-GB&co=GENIE.Platform%3DDesktop'}><li className='p-1 list-disc '><u>Chrome</u></li></Link>
+                 <Link href={'https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US'}> <li className='p-1 list-disc'><u>Firefox</u></li></Link>
+                 <Link href={'https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US'}><li className='p-1 list-disc'><u>Safari</u></li></Link>
+                 <Link href={'https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d'}><li className='p-1 list-disc'><u>Edge</u></li></Link>
                </ul>
             </div>
             <p className=' text-[16px] font-[400] text-[#2D2D2D]'>Please note that blocking all cookies will have a negative impact upon the usability of many websites. If you block cookies, you may not be able to use all the features on our website.</p>

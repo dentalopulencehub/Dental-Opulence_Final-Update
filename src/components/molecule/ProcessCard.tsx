@@ -3,6 +3,7 @@ import Image from "next/image";
 import { HomeOurServicesType } from "../../../types";
 import { MagicCard, MagicContainer } from "../magicui/magic-card";
 import arrow_right_light from '../../../assets/images/arrow-right.svg'
+import Link from "next/link";
 const ProcessCard = ({processes }: HomeOurServicesType) => {
   return (
     <MagicContainer
@@ -17,10 +18,13 @@ const ProcessCard = ({processes }: HomeOurServicesType) => {
             <h3 className="xs:text-[36px] text-2xl font-Pangram-Bold text-white">
               Streamlined Dental Excellence
             </h3>
+           <Link href={'/testimonials'}>
             <button className="flex flex-row items-center">
               <span className="text-xs font-Pangram-Regular text-white">Our story</span>
               <Image src={arrow_right_light} alt="" />
             </button>
+           </Link> 
+          
           </div>
             {processes.map((data:any, index:number) => (
                <MagicCard key={index} className="xs:w-[394px] w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
