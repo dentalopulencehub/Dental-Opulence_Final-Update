@@ -1,3 +1,4 @@
+import { examinationFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -41,7 +42,7 @@ import ExaminationVideo from "./examination/examinationVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={examinationFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

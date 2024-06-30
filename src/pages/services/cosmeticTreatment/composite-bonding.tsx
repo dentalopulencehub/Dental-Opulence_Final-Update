@@ -1,3 +1,4 @@
+import { compositeBondingFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -42,7 +43,7 @@ import CompositeBondingVideo from "./CompositeBondingSection/CompositeBondingVid
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={compositeBondingFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

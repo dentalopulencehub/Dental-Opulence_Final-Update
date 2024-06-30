@@ -1,3 +1,4 @@
+import { bridgesFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -45,7 +46,7 @@ import BridgesHeroSection from "./bridgesSection/bridgesHeroSection";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={bridgesFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

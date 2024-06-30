@@ -1,3 +1,4 @@
+import { crownsFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -42,7 +43,7 @@ import CrownsVeneersVideo from "./CrownsVeneersSection/CrownsVeneersVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={crownsFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

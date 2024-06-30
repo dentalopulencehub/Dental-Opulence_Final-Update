@@ -1,3 +1,4 @@
+import { denturesFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -42,7 +43,7 @@ import DentureVideo from "./dentureSection/dentureVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={denturesFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

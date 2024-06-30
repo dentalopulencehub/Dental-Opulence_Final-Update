@@ -1,3 +1,4 @@
+import { compositeVeneerFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -40,7 +41,7 @@ import CompositeVeneersVideo from "./CompositeVeneersSection/CompositeVeneersVid
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={compositeVeneerFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

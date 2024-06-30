@@ -1,3 +1,4 @@
+import { hygienistFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -40,7 +41,7 @@ import HygienistVideo from "./hygienistSection/hygienistVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={hygienistFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

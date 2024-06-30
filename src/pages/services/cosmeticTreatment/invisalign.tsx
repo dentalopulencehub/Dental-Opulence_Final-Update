@@ -1,3 +1,4 @@
+import { invisalignFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -40,7 +41,7 @@ import InvisalignVideo from "./invisalignSection/invisalignVideo";
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={invisalignFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>

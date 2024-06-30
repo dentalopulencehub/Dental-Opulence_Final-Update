@@ -4,8 +4,9 @@ import { FaqAccordion } from "../molecule";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
 import { useRouter } from "next/router";
+import { FaqType } from "../../../types";
 
-const Faq = () => {
+const Faq = ({faqList}:{faqList:FaqType[]}) => {
 
   const { pathname } = useRouter()
 
@@ -88,7 +89,7 @@ const Faq = () => {
         </h2>
 
         <div className="flex flex-col gap-2 mt-10">
-          {faq.map((item, index) => (
+          {faqList.map((item, index) => (
             <FaqAccordion key={index} {...item} />
           ))}
         </div>

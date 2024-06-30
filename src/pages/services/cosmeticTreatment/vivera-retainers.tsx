@@ -1,3 +1,4 @@
+import { viveraRetainersFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -36,7 +37,7 @@ import ViveraRetainersVideo from "./ViveraRetainersSection/ViveraRetainersVideo"
         <ServiceOurService />
         <TestimonyComp />
         <OurProcess />
-        <Faq />
+        <Faq faqList={viveraRetainersFaq} />
         <HomePeopleSlider />
         <Footer />
       </Layout>
