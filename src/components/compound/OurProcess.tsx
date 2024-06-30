@@ -12,7 +12,7 @@ const OurProcess = () => {
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] bg-[#100E10]">
         <div className="flex justify-center flex-wrap gap-6">
 
-          <ProcessCard processes={home_process} />
+          <ProcessCard processes={home_process} title={""} description={""} image={undefined} href={""} price={""} />
 
         </div>
       </div>
