@@ -3,7 +3,7 @@ import Image from "next/image";
 import { HomeOurServicesType } from "../../../types";
 import { MagicCard, MagicContainer } from "../magicui/magic-card";
 import arrow_right_light from '../../../assets/images/arrow-right.svg'
-const ProcessCard = ({processes, }: HomeOurServicesType) => {
+const ProcessCard = ({processes }: HomeOurServicesType) => {
   return (
     <MagicContainer
       className={
@@ -23,6 +23,7 @@ const ProcessCard = ({processes, }: HomeOurServicesType) => {
             </button>
           </div>
             {processes.map((data:any) => (
+               // eslint-disable-next-line react/jsx-key
                <MagicCard className="xs:w-[394px] w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
                  <Image src={data.image} alt={data.title} />
                  <h3 className="font-Pangram-Regular text-2xl text-white mt-4">{data.title}</h3>

@@ -7,7 +7,7 @@ import { RootState } from "../lib/state/store";
 const useAxios = (): [
   FormData,
   (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
-  () => Promise<void> // Change return type to a function that handles form submission
+  () => Promise<boolean> // Change return type to a function that handles form submission
 ] => {
   const questionsAndAnswers = useSelector(
     (state: RootState) => state.formReducer.questionsAndAnswers
@@ -33,7 +33,7 @@ const useAxios = (): [
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (): Promise<boolean> => {
     const data = {
       first_name: formData.firstName,
       last_name: formData.lastName,
@@ -44,8 +44,6 @@ const useAxios = (): [
       message: formData.message,
       question: questionsAndAnswers,
     };
-
-   
 
     try {
       const response = await axios.post(
@@ -66,10 +64,10 @@ const useAxios = (): [
         deadline: "",
         message: "",
       });
-      return true
+      return true;
     } catch (error) {
       console.error("Error submitting form:", error);
-      return false
+      return false;
     }
   };
 
