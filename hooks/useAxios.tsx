@@ -7,7 +7,7 @@ import { RootState } from "../lib/state/store";
 const useAxios = (): [
   FormData,
   (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
-  () => Promise<void> // Change return type to a function that handles form submission
+  () => Promise<boolean> // Change return type to a function that handles form submission
 ] => {
   const questionsAndAnswers = useSelector(
     (state: RootState) => state.formReducer.questionsAndAnswers

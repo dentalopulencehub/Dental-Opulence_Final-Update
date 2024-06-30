@@ -3,7 +3,7 @@ import Image from "next/image";
 import { HomeOurServicesType } from "../../../types";
 import { MagicCard, MagicContainer } from "../magicui/magic-card";
 import arrow_right_light from '../../../assets/images/arrow-right.svg'
-const ProcessCard = ({processes, }: HomeOurServicesType) => {
+const ProcessCard = ({processes }: HomeOurServicesType) => {
   return (
     <MagicContainer
       className={
