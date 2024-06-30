@@ -61,7 +61,7 @@ export type HomeOurServicesType = {
   image_inverted?: any;
   href: string;
   price:string;
-
+  processes?:any,
 };
 
 export type TestimonialType = {
@@ -97,7 +97,7 @@ export interface FormProps {
   // stepThree: HelpSelectItem[];
   handleStepChange: (step: string) => void;
   handleOptionSelect: (option: string, title: string) => void;
-  handleOptionDeselect:(option: string, title: string) => void;
+  handleOptionDeselect?: (option: string, title: string) => void;
 }
 
 export interface FormData {
