@@ -15,7 +15,8 @@ const ServiceCompositeBonding = ({
   situationTitleData4,
   situationTitleData5,
   definationTitle,
-  definationTitleDesc  
+  definationTitleDesc ,
+  verb, 
 }: ServiceCompositeBondingType) => {
   return (
     <div className="w-full">
@@ -89,7 +90,7 @@ const ServiceCompositeBonding = ({
 
             <div className=" w-full bg-[#222222] h-fit rounded-2xl xs:pt-8 xs:px-10 pt-7 px-7 ">
               <h4 className="text-[#8A8A8A] text-[34px] leading-[39px] sm:max-w-[571px] mx-auto text-center">
-                What is <span className="text-white">{definationTitle}?</span>{" "}
+                What {verb} <span className="text-white">{definationTitle}?</span>{" "}
                 <br/>A Simple Explanation.
               </h4>
               <p className="text-white text-center sm:max-w-[571px] mx-auto mt-[18px] text-[18px] font-Pangram-Regular">
@@ -114,7 +115,7 @@ const ServiceCompositeBonding = ({
               </h3>
               <PrimaryLink
                 href="/contact"
-                title="Book Now"
+                title="Contact Us"
                 style="py-4 px-8 rounded-[34px] text-[#100E10] bg-white font-Pangram-Medium text-xs mt-6 hover:text-[#fff] w-fit hover:bg-transparent border border-transparent hover:border-[#fff] cursor-pointer duration-0"
               />
               <Image src={service_tooth_vector} alt="" className="absolute top-[-1%] right-0" />

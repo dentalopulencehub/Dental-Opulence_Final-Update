@@ -22,7 +22,7 @@ const PricingHero = () => {
           </h1>
           <PrimaryLink
             href="/contact"
-            title="Book Now"
+            title="Contact Us"
             style="py-4 px-8 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
           />
           {/* <CustomLink

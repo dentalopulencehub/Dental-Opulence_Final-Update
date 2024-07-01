@@ -1973,6 +1973,7 @@ export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
     situationTitleData4:'Restore function',
     situationTitleData5:'Preserve structure',
 
+    verb:'Are',
     definationTitle: 'Dental Bridges' ,
     definationTitleDesc:'Bridges replace missing teeth by anchoring artificial teeth (pontics) between two crowns. They restore chewing ability, improve smile aesthetics, and prevent adjacent teeth from shifting. Supported by natural teeth or implants, bridges offer a stable solution for tooth replacement.'
   }
@@ -1981,7 +1982,7 @@ export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
 export const serviceCompositeBonding_Dentures: ServiceCompositeBondingType[]= [
   {
     situationTitle:'Dentures' ,
-
+     
     situationTitleData1:'Missing Teeth',
     situationTitleData2:'Chronic problems',
     situationTitleData3:'Aesthetic ',
@@ -1989,6 +1990,7 @@ export const serviceCompositeBonding_Dentures: ServiceCompositeBondingType[]= [
     situationTitleData5:'Severe decay',
 
     definationTitle: 'Dentures' ,
+    verb:'Are',
     definationTitleDesc:'Dentures are removable dental appliances designed to replace missing teeth and surrounding tissues. They restore oral function, including chewing and speaking abilities, and support facial muscles. Partial dentures replace some missing teeth, while complete dentures are used when all teeth are missing.'
   }
 ]
@@ -2004,6 +2006,7 @@ export const serviceCompositeBonding_Extractions: ServiceCompositeBondingType[]=
     situationTitleData5:'Dental abscess',
 
     definationTitle: 'Extractions' ,
+     verb:'Are',
     definationTitleDesc:'Extractions involve removing a tooth from its socket in the bone. This procedure is necessary for various reasons, such as severe decay, damage, or crowding. Dentists ensure patient comfort using anaesthesia and provide post-extraction care instructions for healing and pain management.'
   }
 ]
@@ -2019,6 +2022,7 @@ export const serviceCompositeBonding_WhiteFillings: ServiceCompositeBondingType[
     situationTitleData5:'Minor decay',
 
     definationTitle: 'White Fillings' ,
+     verb:'Are',
     definationTitleDesc:'White fillings, also known as composite fillings, are tooth-colored materials used to repair decayed, chipped, or cracked teeth. They blend seamlessly with your natural teeth, providing a more aesthetically pleasing and less noticeable alternative to traditional metal fillings.'
   }
 ]
@@ -2034,6 +2038,7 @@ export const serviceCompositeBonding_CrownsVeneers: ServiceCompositeBondingType[
     situationTitleData5:'WORN TEETH',
 
     definationTitle: 'Crowns / Veneers' ,
+     verb:'Are',
     definationTitleDesc:'Crowns and veneers are dental treatments used to improve the appearance and function of teeth. Crowns cover the entire tooth to restore its shape, size, and strength, while veneers are thin shells placed over the front surface of teeth to improve their colour, shape, or size.'
   }
 ]
@@ -2050,6 +2055,7 @@ export const serviceCompositeBonding_Examination: ServiceCompositeBondingType[]=
     situationTitleData5:'Cosmetic prep',
 
     definationTitle: 'Examination' ,
+     verb:'is',
     definationTitleDesc:'An examination in dentistry is a comprehensive evaluation of teeth, gums, and oral health. It involves visual inspection, X-rays, and other tests to detect issues like cavities, gum disease, or oral cancer early, ensuring effective treatment and prevention of dental problems.'
   }
 ]
@@ -2065,6 +2071,7 @@ export const serviceCompositeBonding_Hygienist: ServiceCompositeBondingType[]= [
     situationTitleData5:'Teeth polishing',
 
     definationTitle: 'Hygienist' ,
+     verb:'is',
     definationTitleDesc:'A dental hygienist is a licensed oral health professional who focuses on preventive dental care. They clean teeth, assess oral health, provide treatments like fluoride applications, and educate patients on proper oral hygiene techniques to maintain healthy teeth and gums.'
   }
 ]
@@ -2080,6 +2087,7 @@ export const serviceCompositeBonding_RootCanalTreatments : ServiceCompositeBondi
     situationTitleData5:'Severe pain',
 
     definationTitle: 'Root Canal Treatments' ,
+     verb:'Are',
     definationTitleDesc:'Root canal treatment is a dental procedure used to repair and save a tooth that is badly decayed or infected. The procedure involves removing the damaged area of the tooth (the pulp), cleaning and disinfecting it, and then filling and sealing it. This helps to prevent further infection and restore the tooth function.'
   }
 ]
@@ -2097,6 +2105,7 @@ export const serviceCompositeBonding_Invisalign : ServiceCompositeBondingType[]=
     situationTitleData5:'Crossbite adjustment',
 
     definationTitle: 'Invisalign' ,
+     verb:'is',
     definationTitleDesc:'Invisalign is a clear aligner system designed to straighten teeth discreetly and comfortably. Custom-made, removable aligners gradually shift teeth into their correct positions. Invisalign is an effective alternative to traditional braces, offering convenience and a nearly invisible appearance for patients.'
   }
 ]
@@ -2112,6 +2121,7 @@ export const serviceCompositeBonding_TeethWhitening : ServiceCompositeBondingTyp
     situationTitleData5:'AESTHETICS',
 
     definationTitle: 'Teeth Whitening' ,
+     verb:'is',
     definationTitleDesc:'Teeth whitening is a non-invasive dental procedure that effectively lightens teeth by removing stains and discoloration. It involves applying a bleaching agent, usually hydrogen peroxide, which breaks down stains into smaller particles, resulting in a brighter and more attractive smile.'
   }
 ]
@@ -2127,6 +2137,7 @@ export const serviceCompositeBonding_CrownsVeneers2 : ServiceCompositeBondingTyp
     situationTitleData5:'Cosmetic Enhancement',
 
     definationTitle: 'Crowns / Veneers' ,
+     verb:'Are',
     definationTitleDesc:'Crowns and veneers are dental restorations used to improve the appearance and function of teeth. Crowns cover the entire tooth to restore shape, size, and strength, while veneers are thin shells bonded to the front surface to enhance aesthetics by changing color, shape, size, or length.'
   }
 ]
@@ -2142,6 +2153,7 @@ export const serviceCompositeBonding_Compositebonding : ServiceCompositeBondingT
     situationTitleData5:'Cavity repair',
 
     definationTitle: 'Composite bonding' ,
+     verb:'is',
     definationTitleDesc:'Composite bonding involves applying a tooth-colored resin to teeth to repair damage, improve appearance, or protect exposed roots. This non-invasive procedure can fix chips, cracks, and discoloration, providing a quick and effective solution for enhancing your smile.'
   }
 ]
@@ -2157,6 +2169,7 @@ export const serviceCompositeBonding_InternalToothWhitening : ServiceCompositeBo
     situationTitleData5:'Darkened teeth',
 
     definationTitle: 'Internal Tooth Whitening' ,
+     verb:'is',
     definationTitleDesc:'Internal tooth whitening involves applying a bleaching agent inside a tooth to whiten it from within. This procedure is typically used for teeth that have darkened due to trauma, root canal treatment, or intrinsic stains that cannot be treated externally.'
   }
 ]
@@ -2172,6 +2185,7 @@ export const serviceCompositeBonding_FixedRetainers : ServiceCompositeBondingTyp
     situationTitleData5:'Aesthetic retention',
 
     definationTitle: 'Fixed Retainers' ,
+     verb:'Are',
     definationTitleDesc:'Fixed retainers are permanent wires attached to the back of teeth to maintain alignment after orthodontic treatment. They prevent teeth from shifting back to their original positions, providing long-term stability and ensuring a straight, aligned smile.'
   }
 ]
@@ -2188,6 +2202,7 @@ export const serviceCompositeBonding_ViveraRetainers : ServiceCompositeBondingTy
     situationTitleData5:'Minor adjustments',
 
     definationTitle: 'Vivera Retainers' ,
+     verb:'Are',
     definationTitleDesc:'Vivera retainers are custom-made, clear plastic devices used to maintain teeth alignment after orthodontic treatment, such as braces or Invisalign. They are durable, comfortable, and virtually invisible, designed to prevent teeth from shifting back to their original positions.'
   }
 ]
@@ -2203,6 +2218,7 @@ export const serviceCompositeBonding_CompositeVeneers : ServiceCompositeBondingT
     situationTitleData5:'Damaged Enamel',
 
     definationTitle: 'Composite Veneers' ,
+     verb:'Are',
     definationTitleDesc:'Composite veneers are thin, tooth-colored resin shells applied to the front of teeth to improve their appearance. They are ideal for fixing chips, cracks, discoloration, and minor misalignment. This procedure is minimally invasive, quick, and cost-effective.'
   }
 ]
@@ -2218,6 +2234,7 @@ export const serviceCompositeBonding_RoutineExamination : ServiceCompositeBondin
     situationTitleData5:'Cosmetic evaluation',
 
     definationTitle: 'Routine Examination' ,
+     verb:'is',
     definationTitleDesc:'Routine examinations are regular dental check-ups that assess your oral health. They involve thorough examinations of teeth, gums, and mouth, aiming to detect issues like cavities and gum disease early. Early detection allows for prompt treatment, preserving oral health and preventing complications.'
   }
 ]
@@ -2234,6 +2251,7 @@ export const serviceCompositeBonding_CompositeEdgeBonding : ServiceCompositeBond
     situationTitleData5:'Cosmetic Improvements',
 
     definationTitle: 'Composite Edge Bonding' ,
+     verb:'is',
     definationTitleDesc:'Composite edge bonding is a dental procedure where a tooth-colored composite resin material is applied and bonded to the edges of teeth. It is used to fix minor imperfections like chips, gaps, and discoloration, enhancing the appearance of teeth quickly and effectively without the need for extensive preparation or invasive procedures.'
   }
 ]

@@ -91,7 +91,7 @@ const ServiceHero3 = () => {
         </div>
         <PrimaryLink
           href="/contact"
-          title="Book Free Consultation Now"
+          title="Contact us"
           style="py-4 px-8 rounded-[34px] w-fit text-white bg-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0"
         />
       </div>

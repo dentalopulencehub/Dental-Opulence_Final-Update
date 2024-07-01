@@ -143,7 +143,7 @@ const Navbar = () => {
 
       <PrimaryLink
         href="/contact"
-        title="Book Now"
+        title="Contact Us"
         style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-[14px] z-[9] w-fit hover:text-white hover:bg-transparent border border-transparent hover:border-white relative duration-0"
       />
     </div>
@@ -155,7 +155,7 @@ const Navbar = () => {
           </ul>
           <PrimaryLink
             href="/contact"
-            title="Book Now"
+            title="Contact Us"
             style="py-2 px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
           />
         </div>
