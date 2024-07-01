@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import PrimaryLink from "../atom/PrimaryLink";
 
-import service_transform_image1 from "../../../assets/images/service-transform-img1.svg";
+import service_transform_image1 from "../../../assets/images/service_transform_image1.svg";
+
+
 import service_transform_image2 from "../../../assets/images/service-transform-img2.svg";
 import service_transform_image3 from "../../../assets/images/service-transform-img3.svg";
 import service_transform_image4 from "../../../assets/images/service-transform-img4.svg";
