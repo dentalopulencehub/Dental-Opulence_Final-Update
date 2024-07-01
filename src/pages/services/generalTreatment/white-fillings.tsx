@@ -1,4 +1,5 @@
-import { whiteFillingFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { serviceCompositeBonding_WhiteFillings, serviceElevet_WhiteFillings, serviceHero2Desc_WhiteFillings, whiteFillingFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import WhiteFillingHero from "./whiteFillings/whiteFillingHero";
 import WhiteFillingVideo from "./whiteFillings/whiteFillingVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,19 +33,19 @@ import WhiteFillingVideo from "./whiteFillings/whiteFillingVideo";
         <Navbar />
         <WhiteFillingHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_WhiteFillings} />
         <WhiteFillingVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_WhiteFillings} />
+        <ServiceElevate service_elevate={serviceElevet_WhiteFillings}/>
         <PatientWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={whiteFillingFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

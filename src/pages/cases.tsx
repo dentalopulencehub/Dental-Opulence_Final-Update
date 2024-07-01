@@ -9,6 +9,7 @@ import {
   HomePeopleSlider,
   Footer,
 } from "../components/import";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 
 export default function Cases() {
   return (
@@ -17,7 +18,7 @@ export default function Cases() {
       <CaseHero />
       <CaseSelectOptions />
       <CaseSelectedImages />
-      {/* <HomePeopleSlider /> */}
+      <HomePeopleSlider2 />
       <Footer />
     </Layout>
   );

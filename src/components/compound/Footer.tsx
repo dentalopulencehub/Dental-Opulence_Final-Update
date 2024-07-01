@@ -143,11 +143,17 @@ const Footer = () => {
                       Cases
                     </p>
                   </div>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/testimonials")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                      Testimonials
+                    </p>
+                  </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Contact us
                     </p>
                   </div>
+
                 </div>
                 <div>
                   <h3 className="text-white font-Pangram-Bold text-2xl">
@@ -156,7 +162,7 @@ const Footer = () => {
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6 flex items-center gap-2">
                       <Image src={phone_icon} alt="" />
-                      <span>0121 272 9229  (Tue-Sat) 9am - 5pm</span>
+                      <span>0121 272 9229</span>
                     </p>
                   </div>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
@@ -305,7 +311,7 @@ const Footer = () => {
                       Privacy Policy
                     </p>
                   </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/about")}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/complaints-procedure")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Complaints Procedure
                     </p>
@@ -318,39 +324,39 @@ const Footer = () => {
                   </div>
 
                   <div
-                    onClick={() => handleSetPathToNavigate(dispatch, "/cases")}
+                    onClick={() => handleSetPathToNavigate(dispatch, "/health-and-safety")}
                   >
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Health & Safety
                     </p>
                   </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/appointment-terms")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Appointment Terms
                     </p>
                   </div>
  
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/data-protection")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Data Protection
                     </p>
                   </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                  {/* <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                      Dental Plan Terms
                     </p>
-                  </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                  </div> */}
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/cookie-policy")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
-                      Cookie Settings
+                      Cookie Policy
                     </p>
                   </div>
 
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
+                  {/* <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                       Competitions & Offers Terms
                     </p>
-                  </div>
+                  </div> */}
 
 
                 </div>

@@ -14,6 +14,7 @@ import VideoTestimonialStrokeLine from "@/components/compound/videoTestimonialSt
 import VideoTestHero from "@/components/compound/videoTestHero";
 import VideoTestimonialSelectOption from "@/components/compound/videoTestimonialSelectOption";
 import VideoGallary from "@/components/compound/VideoGallary";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 
 export default function Cases() {
   return (
@@ -31,6 +32,7 @@ export default function Cases() {
       {/* <CaseSelectOptions /> */}
       {/* <CaseSelectedImages />
       <HomePeopleSlider /> */}
+        <HomePeopleSlider2 />
       <Footer />
     </Layout>
   );

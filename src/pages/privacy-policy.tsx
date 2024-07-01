@@ -3,18 +3,17 @@ import { Inter } from "next/font/google";
 import {
   Layout,
   Navbar,
-  CaseHero,
+  
 
   Footer,
-  AboutHero,
+
   HomePeopleSlider,
 } from "../components/import";
-import VideoTestimonials from "@/components/compound/videoTestimonials";
-import VideoTestimonialStrokeLine from "@/components/compound/videoTestimonialStrokeLine";
+
 import PrivacyPolicyBody from "@/components/compound/privacyPolicyBody";
 import PrivacyPolicyHero from "@/components/compound/privacyPolicyHero";
 
-export default function Cases() {
+export default function PrivacyPolicy() {
   return (
     <Layout>
       <Navbar />

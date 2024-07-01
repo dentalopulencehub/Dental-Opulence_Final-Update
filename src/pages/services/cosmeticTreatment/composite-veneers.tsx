@@ -1,4 +1,5 @@
-import { compositeVeneerFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { compositeVeneerFaq, serviceCompositeBonding_CompositeVeneers, serviceElevet_CompositeVeneers, serviceHero2Desc_CompositeVeneers } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -20,6 +21,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import CompositeVeneersHero from "./CompositeVeneersSection/CompositeVeneersHero";
 import CompositeVeneersVideo from "./CompositeVeneersSection/CompositeVeneersVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -30,19 +33,19 @@ import CompositeVeneersVideo from "./CompositeVeneersSection/CompositeVeneersVid
         <Navbar />
         <CompositeVeneersHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_CompositeVeneers} />
         <CompositeVeneersVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_CompositeVeneers} />
+        <ServiceElevate service_elevate={serviceElevet_CompositeVeneers}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={compositeVeneerFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

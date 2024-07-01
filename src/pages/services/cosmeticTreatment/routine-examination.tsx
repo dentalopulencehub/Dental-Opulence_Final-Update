@@ -1,4 +1,5 @@
-import { dentalExaminationFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { dentalExaminationFaq, serviceCompositeBonding_RoutineExamination, serviceElevet_RoutineExamination, serviceHero2Desc_RoutineExamination } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -19,6 +20,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import RoutineExaminationHero from "./RoutineExaminationSection/RoutineExaminationHero";
 import RoutineExaminationVideo from "./RoutineExaminationSection/RoutineExaminationVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -29,19 +32,19 @@ import RoutineExaminationVideo from "./RoutineExaminationSection/RoutineExaminat
         <Navbar />
         <RoutineExaminationHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_RoutineExamination} />
         <RoutineExaminationVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_RoutineExamination} />
+        <ServiceElevate service_elevate={serviceElevet_RoutineExamination}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={dentalExaminationFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

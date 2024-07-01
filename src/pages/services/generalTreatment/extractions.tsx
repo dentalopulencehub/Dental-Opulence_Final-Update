@@ -1,4 +1,5 @@
-import { extractionFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { extractionFaq, serviceCompositeBonding_Extractions, serviceElevet_Extractions, serviceHero2DescExtyractions } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import ExtractionsHero from "./extractionsSection/extractionsHero";
 import ExtractionsVideo from "./extractionsSection/extractionsVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,10 +33,10 @@ import ExtractionsVideo from "./extractionsSection/extractionsVideo";
         <Navbar />
         <ExtractionsHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2DescExtyractions} />
          <ExtractionsVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Extractions} />
+        <ServiceElevate service_elevate={serviceElevet_Extractions}/>
         <PatientWalkThrough/>
 
         <ServiceTransform />
@@ -41,9 +44,9 @@ import ExtractionsVideo from "./extractionsSection/extractionsVideo";
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={extractionFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

@@ -33,7 +33,7 @@ const useAxios = (): [
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (): Promise<boolean> => {
     const data = {
       first_name: formData.firstName,
       last_name: formData.lastName,
@@ -45,11 +45,9 @@ const useAxios = (): [
       question: questionsAndAnswers,
     };
 
-   
-
     try {
       const response = await axios.post(
-        "https://luxe-transformations-be.vercel.app/api/v1/contact",
+        "https://transformations-be.vercel.app/api/v1/contact",
         data
       );
       console.log("Submission successful");
@@ -66,10 +64,10 @@ const useAxios = (): [
         deadline: "",
         message: "",
       });
-      return true
+      return true;
     } catch (error) {
       console.error("Error submitting form:", error);
-      return false
+      return false;
     }
   };
 

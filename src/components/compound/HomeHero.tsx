@@ -3,6 +3,9 @@ import Image from "next/image";
 import home_hero_ill from "../../../assets/images/home-hero-ill.svg";
 import PrimaryLink from "../atom/PrimaryLink";
 
+
+import right_thick from '../../../assets/fonts/right_thick_home.svg'
+
 const HomeHero = () => {
   return (
     <div className="">
@@ -17,6 +20,19 @@ const HomeHero = () => {
             offers cutting-edge technology and amenities for your comfort.
             Achieve your perfect smile with us.
           </p>
+
+          <div className="mt-6">
+            <div className="flex gap-2 items-center">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#fff] lg:text-left text-center">0% Finance Options</p>
+            </div>
+
+            <div className="flex gap-2 items-center mt-3">
+              <Image src={right_thick}  alt="right_thick"/>
+              <p className="text-[16px] text-[#fff] lg:text-left text-center">Evening and weekend appointments</p>
+            </div>
+          </div>
+
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] xl:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink
               href="/contact"

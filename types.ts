@@ -88,10 +88,32 @@ export type TeamType = {
 };
 
 export type ServiceElevateType = {
+  topTitle:string
   title: string;
   description: string;
   number_img: any;
 };
+
+export type ServiceElevetTitle={
+  topTitle:string;
+}
+
+export type ServiceHero2TextDesc={
+  textDes:string;
+}
+
+export type ServiceCompositeBondingType={
+   situationTitle:string;
+   situationTitleData1:string;
+   situationTitleData2:string;
+   situationTitleData3:string;
+   situationTitleData4:string;
+   situationTitleData5:string;
+
+   definationTitle:string;
+   definationTitleDesc:string
+}
+
 
 export interface FormProps {
   // stepThree: HelpSelectItem[];

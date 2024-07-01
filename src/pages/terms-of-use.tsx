@@ -16,7 +16,7 @@ import PrivacyPolicyHero from "@/components/compound/privacyPolicyHero";
 import TermsUseHero from "@/components/compound/TermsUseHero";
 import TermsOfUseBody from "@/components/compound/TermsOfUseBody";
 
-export default function Cases() {
+export default function TermsOfUse() {
   return (
     <Layout>
       <Navbar />

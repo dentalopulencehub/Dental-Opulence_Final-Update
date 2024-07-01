@@ -1,4 +1,5 @@
-import { hygienistFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { hygienistFaq, serviceCompositeBonding_Hygienist, serviceElevet_Hygienist, serviceHero2Desc_Hygienist } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -20,6 +21,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import HygienistHero from "./hygienistSection/hygienistHero";
 import HygienistVideo from "./hygienistSection/hygienistVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -29,10 +32,10 @@ import HygienistVideo from "./hygienistSection/hygienistVideo";
         <Navbar />
         <HygienistHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_Hygienist} />
         <HygienistVideo/> 
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding= {serviceCompositeBonding_Hygienist} />
+        <ServiceElevate service_elevate={serviceElevet_Hygienist}/>
         <PatientWalkThrough/>
 
         <ServiceTransform />
@@ -40,9 +43,9 @@ import HygienistVideo from "./hygienistSection/hygienistVideo";
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={hygienistFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );
