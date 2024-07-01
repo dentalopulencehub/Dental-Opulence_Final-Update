@@ -1973,7 +1973,7 @@ export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
     situationTitleData4:'Restore function',
     situationTitleData5:'Preserve structure',
 
-    definationTitle: 'Dental Bridges?' ,
+    definationTitle: 'Dental Bridges' ,
     definationTitleDesc:'Bridges replace missing teeth by anchoring artificial teeth (pontics) between two crowns. They restore chewing ability, improve smile aesthetics, and prevent adjacent teeth from shifting. Supported by natural teeth or implants, bridges offer a stable solution for tooth replacement.'
   }
 ]

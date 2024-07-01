@@ -32,7 +32,7 @@ const RoutineExaminationVideo = () => {
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex flex-col items-center justify-between sm:gap-[64px] gap-[37px]">
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
-          Unveiling a Patient&apos;s Dental Journey
+         Your Dental Visit,<br/> what to Expect.
         </h2>
         <div className="relative mx-auto my-4">
           <video

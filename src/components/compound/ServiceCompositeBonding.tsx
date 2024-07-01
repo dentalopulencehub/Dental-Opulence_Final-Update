@@ -89,8 +89,8 @@ const ServiceCompositeBonding = ({
 
             <div className=" w-full bg-[#222222] h-fit rounded-2xl xs:pt-8 xs:px-10 pt-7 px-7 ">
               <h4 className="text-[#8A8A8A] text-[34px] leading-[39px] sm:max-w-[571px] mx-auto text-center">
-                What is <span className="text-white">{definationTitle}</span>{" "}
-                explained made simple.
+                What is <span className="text-white">{definationTitle}?</span>{" "}
+                <br/>A Simple Explanation.
               </h4>
               <p className="text-white text-center sm:max-w-[571px] mx-auto mt-[18px] text-[18px] font-Pangram-Regular">
                 {definationTitleDesc}
