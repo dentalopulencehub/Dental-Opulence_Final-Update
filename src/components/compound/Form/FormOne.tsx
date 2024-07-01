@@ -33,26 +33,20 @@ const FormOne = ({
    }: FormOneProps) => {
   return (
     <div className="flex flex-col gap-10 text-center">
-      <h1 className="bold text-4xl xl:text-7xl text-white" data-aos="fade-up-right">
-        Are you?{" "}
+      <h1 className="bold text-lg md:text-4xl xl:text-7xl text-white" data-aos="fade-up-right">
+        Are you?
       </h1>
-      <div className="flex flex-wrap flex-col sm:flex-row gap-5 sm:gap-10 justify-center items-center">
+      <div className="flex flex-wrap gap-2 md:gap-5 justify-center items-center">
         {helpSelect?.map((item:any, index) => (
-       
             <div
             key={index}
-              className="contact-bg  btn bg-[#2D2D2D] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-base px-12 lg:py-6 py-3 text-white rounded-full relative"
+              className="contact-bg  btn bg-[#2D2D2D] hover:bg-[#6b6969] light text-center  cursor-pointer flex items-center gap-2 text-sm md:text-base p-2 md:px-12 lg:py-6  text-white rounded-full relative"
               onClick={() => {
                 let gottenForm = getNextForm(index)
                 handleStepChange(gottenForm);
                 handleOptionSelect(item.label, item?.title || "");  
               }}
             >
-              {/* {index === 0 && (
-                <span>
-                  <YellowButton />  
-                </span>
-              )} */}
               {item.label}
             </div>
         ))}
@@ -62,16 +56,3 @@ const FormOne = ({
 };
 
 export default FormOne;
-
-const YellowButton = () => {
-  return (
-    <div className="flex inset-y-0 items-center justify-center w-3 h-3 border-[0.5px] border-gray-600 rounded-full">
-      <div className=" w-1 h-1 bg-yellow-600  rounded-full"></div>
-    </div>
-  );
-};
-
-
-
-   // <div key={index} className="btn mb-4 text-center relative">
-          // <div key={index} className="">

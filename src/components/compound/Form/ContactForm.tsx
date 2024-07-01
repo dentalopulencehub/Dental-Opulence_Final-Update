@@ -22,14 +22,14 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
       <section className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5">
         <div className="content w-full flex flex-col xl:flex-row gap-5 xl:gap-24">
           <div>
-            <h1 className="bold text-[32px] text-white text-center md:text-left xl:text-[56px]">
+            <h1 className="bold text-lg md:text-[32px] text-white text-center md:text-left xl:text-[56px]">
             Input your personal info
             </h1>
           </div>
 
           <div className="thin text-xl w-full ">
-            <form onSubmit={onSubmit} className="space-y-5 ">
-              <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
+            <form onSubmit={onSubmit} className="space-y-2 md:space-y-5 ">
+              <div className="flex gap-2 sm:gap-5 flex-col md:flex-row">
                 <input
                   type="text"
                   name="firstName"
@@ -51,7 +51,7 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
                 />
               </div>
 
-              <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
+              <div className="flex gap-2 sm:gap-5 flex-col md:flex-row">
                 <input
                   type="text"
                   name="phone"
@@ -103,7 +103,7 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="regular bg-transparent tracking-widest rounded-full text-white text-base border border-[#fff] w-[200px] h-[51px] flex items-center justify-center"
+                  className="regular bg-transparent tracking-widest rounded-full text-white text-xs md:text-base border border-[#fff] w-[100px] h-[35px] md:w-[200px] md:h-[51px] flex items-center justify-center"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}
                 </button>

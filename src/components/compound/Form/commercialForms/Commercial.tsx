@@ -30,7 +30,7 @@ const CommercialForm = ({ handleStepChange, handleOptionSelect, handleOptionDese
           Select all applicable services.
         </p>
       </div>
-      <div className="flex sm:flex-wrap flex-col sm:flex-row  gap-4 justify-center items-center">
+      <div className="flex gap-2 flex-wrap md:gap-4 justify-center items-center">
         {commercialForm.map((item, index) => (
           <div key={index} className="btn cursor-pointer relative">
             <div
