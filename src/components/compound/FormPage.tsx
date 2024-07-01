@@ -160,9 +160,9 @@ const Page = () => {
         </div>
         {/* selected options */}{" "}
         {/* <div className="hidden  sm:flex flex-wrap items-center gap-5 sm:mt-16 md:mt-0 border-2 border-red-500"> */}
-        <div className="flex w-full  items-center mt-12 relative justify-between">
+        <div className="flex w-full  items-center mt-4 md:mt-12 relative justify-between">
           {visitedSteps.length == 0 ? (
-            <nav className=" mix-blend-difference h-[70px] bg-transparent cursor-pointer  flex items-center justify-between  ">
+            <nav className=" mix-blend-difference h-[40px] md:h-[70px] bg-transparent cursor-pointer  flex items-center justify-between  ">
               <div
                 className=""
                 onClick={() =>
@@ -209,12 +209,12 @@ const Page = () => {
             </nav>
           ) : (
             <div
-              className="arrow-main absolute left-0 border p-[22px] w-[84px] h-[84px] rounded-full sm:scale-[1] scale-[0.5]"
+              className="arrow-main absolute left-0 border p-[5px] md:p-[22px] flex items-center justify-center w-[40px] h-[40px] md:w-[84px] md:h-[84px] rounded-full sm:scale-[1] scale-[0.5]"
               data-state="1"
               onClick={handleBackButtonClick}
             >
               <div className="arrow-wrapper ">
-                <span className="arrow-span">
+                <span className="arrow-span h-[20px] md:h-[40px] ">
                   <Image
                     src={arrow_hex_1}
                     alt="Arrow icon with hexagon tip"
@@ -234,7 +234,7 @@ const Page = () => {
               </div>
             </div>
           )}
-          <div className="scroll w-full md:w-4/5 mx-auto flex md:flex-wrap items-center justify-center gap-5 z-0 relative md:top-0 top-[70px] overflow-x-auto cursor-grab md:cursor-pointer">
+          <div className="scroll w-full md:w-4/5 mx-auto flex md:flex-wrap items-center justify-center gap-2 md:gap-5 z-0 relative md:top-0 top-[55px] overflow-x-auto cursor-grab md:cursor-pointer">
             {selectedOptions.map((option, index) => (
               <button
                 type="button"
@@ -443,7 +443,7 @@ const Page = () => {
           {/* progress bar component */}
         </section>
         {/* back button */}
-        <div className="relative justify-between items-center flex  w-full sm:mb-12 mb-3">
+        <div className="md:relative mb-10 justify-between items-center flex  w-full sm:mb-12 md:mb-3">
          
           <div className="flex gap-8 w-full items-center justify-between">
             <div className="flex items-center gap-2">
@@ -452,12 +452,12 @@ const Page = () => {
                 <path d="M23.125 11.248C23.125 10.498 22.5375 9.34805 21.6625 8.41055C20.8625 7.54805 19.8 6.87305 18.75 6.87305" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M27.5 11.249C27.5 6.41152 23.5875 2.49902 18.75 2.49902" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <p className="text-[#C4C4C4] text-xl font-medium">0121 272 9229 </p>
+              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium">0121 272 9229 </p>
             </div>
 
-            <div className="w-[50%] h-2 bg-[#5C5C5C] rounded-full">
+            <div className="absolute md:flex w-[90%] md:w-[50%] h-2 bg-[#5C5C5C] rounded-full bottom-3">
               <div
-                className={`bg-white h-full rounded-full ${returnProgressBarWidth()}`}
+                className={`bg-white  h-full rounded-full ${returnProgressBarWidth()}`}
               />
             </div>
             <div className="flex items-center gap-2">
@@ -465,7 +465,7 @@ const Page = () => {
                 <path d="M2.5 15C2.5 10.286 2.5 7.92893 3.96447 6.46447C5.42893 5 7.78595 5 12.5 5H17.5C22.214 5 24.5711 5 26.0355 6.46447C27.5 7.92893 27.5 10.286 27.5 15C27.5 19.714 27.5 22.0711 26.0355 23.5355C24.5711 25 22.214 25 17.5 25H12.5C7.78595 25 5.42893 25 3.96447 23.5355C2.5 22.0711 2.5 19.714 2.5 15Z" stroke="#C4C4C4" stroke-width="1.5" />
                 <path d="M7.5 10L10.1986 12.2489C12.4944 14.162 13.6423 15.1186 15 15.1186C16.3577 15.1186 17.5056 14.162 19.8014 12.2488L22.5 10" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" />
               </svg>
-              <p className="text-[#C4C4C4] text-xl font-medium"> info@do.co.uk</p>
+              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium"> info@do.co.uk</p>
             </div>
 
           </div>

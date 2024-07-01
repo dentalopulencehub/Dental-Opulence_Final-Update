@@ -29,7 +29,7 @@ const deleteImage = (index: number) => { // Index of the item to delete
 }
   const [selectedIndex, setSelectedIndex] = useState<number[]>([]);
   return (
-    <div className="flex flex-col gap-10 text-center" data-aos="fade-left">
+    <div className="flex  mx-4 flex-col gap-4 md:gap-10 text-center" data-aos="fade-left">
       <input
             onChange={(e) => {
                 console.log('start')
@@ -44,15 +44,15 @@ const deleteImage = (index: number) => { // Index of the item to delete
             accept="image/png, image/jpeg, image/jpg"
         />
          <div className="flex flex-col gap-2">
-        <h1 className="bold text-4xl xl:text-7xl text-white">
+        <h1 className="bold text-lg md:text-4xl xl:text-7xl text-white">
           Upload  your Current Smile
         </h1>
-        <p className=" font-normal text-2xl text-[#A2A2A2]">
+        <p className=" font-normal text-base md:text-2xl text-[#A2A2A2]">
           Please upload three smile photos: one from the front and one from each side (left and right), with a focus on biting down on your back teeth.
         </p>
       </div>
      <div>
-     <div onClick={onClickIcon} className="border cursor-pointer border-[#FFFFFF33] flex py-12 rounded-xl gap-4 flex-col items-center bg-[#FFFFFF33]">
+     <div onClick={onClickIcon} className="border cursor-pointer border-[#FFFFFF33] flex py-6 md:py-12 rounded-xl gap-4 flex-col items-center bg-[#FFFFFF33]">
         <div>
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.8" d="M45.3481 24.9997C45.3481 36.2381 36.2376 45.3486 24.9992 45.3486C13.7609 45.3486 4.65039 36.2381 4.65039 24.9997C4.65039 13.7614 13.7609 4.65088 24.9992 4.65088C36.2376 4.65088 45.3481 13.7614 45.3481 24.9997ZM5.87132 24.9997C5.87132 35.5638 14.4352 44.1276 24.9992 44.1276C35.5633 44.1276 44.1271 35.5638 44.1271 24.9997C44.1271 14.4357 35.5633 5.87181 24.9992 5.87181C14.4352 5.87181 5.87132 14.4357 5.87132 24.9997Z" fill="#CFD4D9" />
@@ -64,12 +64,12 @@ const deleteImage = (index: number) => { // Index of the item to delete
         </div>
 
         <div>
-          <p className="text-white font-normal">Drag and Drop (or) <span className="text-orange-200 font-semibold">Choose Files</span></p>
+          <p className="text-white text-xs md:text-base font-normal">Drag and Drop (or) <span className="text-orange-200 font-semibold">Choose Files</span></p>
         </div>
       </div>
-      <div className="flex gap-4 mt-4">
-        {images.map((image:any, index:number)=> <button onClick={()=>deleteImage(index)} key={index} className="bg-[#FFFFFF33] w-full  items-center justify-center px-8 py-4 border border-[#FFFFFF33] flex gap-2  rounded-lg">
-          <p className="text-white text-base font-normal">{image.file.name}</p>
+      <div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-2 md:mt-4">
+        {images.map((image:any, index:number)=> <button onClick={()=>deleteImage(index)} key={index} className="bg-[#FFFFFF33] w-full  items-center justify-center px-8 py-2 md:py-4 border border-[#FFFFFF33] flex gap-2  rounded-lg">
+          <p className="text-white text-xs md:text-base font-normal">{image.file.name}</p>
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.16699 6.38597C3.16699 5.90152 3.51237 5.50879 3.93842 5.50879L6.60266 5.50832C7.13202 5.49306 7.59901 5.11033 7.77913 4.54412C7.78387 4.52923 7.78931 4.51087 7.80885 4.44424L7.92364 4.05256C7.99389 3.81241 8.0551 3.60318 8.14074 3.41617C8.47908 2.67736 9.10507 2.16432 9.82846 2.03297C10.0116 1.99972 10.2055 1.99986 10.4281 2.00002H13.9061C14.1287 1.99986 14.3226 1.99972 14.5057 2.03297C15.2291 2.16432 15.8551 2.67736 16.1934 3.41617C16.2791 3.60318 16.3403 3.81241 16.4105 4.05256L16.5253 4.44424C16.5448 4.51087 16.5503 4.52923 16.555 4.54412C16.7351 5.11033 17.2948 5.49353 17.8241 5.50879H20.3956C20.8216 5.50879 21.167 5.90152 21.167 6.38597C21.167 6.87043 20.8216 7.26316 20.3956 7.26316H3.93842C3.51237 7.26316 3.16699 6.87043 3.16699 6.38597Z" fill="#CD2020" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7626 22H12.5714C15.3541 22 16.7455 22 17.6501 21.1141C18.5547 20.2281 18.6473 18.7749 18.8324 15.8685L19.0991 11.6806C19.1996 10.1036 19.2498 9.31511 18.7959 8.81545C18.3421 8.31579 17.5757 8.31579 16.0429 8.31579H8.29104C6.75826 8.31579 5.99187 8.31579 5.53804 8.81545C5.08421 9.31511 5.13443 10.1036 5.23487 11.6806L5.50158 15.8685C5.68669 18.7749 5.77924 20.2281 6.68388 21.1141C7.58852 22 8.97988 22 11.7626 22ZM15.4133 12.3456C15.4545 11.9117 15.1538 11.5249 14.7416 11.4815C14.3295 11.4381 13.9619 11.7546 13.9207 12.1885L13.4207 17.4516C13.3795 17.8855 13.6802 18.2724 14.0924 18.3157C14.5045 18.3591 14.8721 18.0426 14.9133 17.6087L15.4133 12.3456ZM9.59236 11.4815C10.0045 11.4381 10.3721 11.7546 10.4133 12.1885L10.9133 17.4516C10.9545 17.8855 10.6538 18.2724 10.2416 18.3157C9.82946 18.3591 9.46193 18.0426 9.42071 17.6087L8.92071 12.3456C8.8795 11.9117 9.18021 11.5249 9.59236 11.4815Z" fill="#CD2020" />
@@ -81,7 +81,7 @@ const deleteImage = (index: number) => { // Index of the item to delete
       <div>
         <button onClick={() => {
           handleStepChange("lastForm");
-        }} type='button' className="text-white font-medium text-base rounded-full px-12 py-4 border-white border">Next</button>
+        }} type='button' className="text-white font-medium text-xs md:text-base rounded-full px-4 md:px-12 py-2 md:py-4 border-white border">Next</button>
       </div>
     </div>
   );

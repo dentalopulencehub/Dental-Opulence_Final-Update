@@ -23,18 +23,18 @@ const FormFour = ({ handleStepChange, handleOptionSelect, handleOptionDeselect }
   return (
     <div className="flex flex-col gap-10 text-center" data-aos="fade-left">
       <div className="flex flex-col gap-2">
-        <h1 className="bold text-4xl xl:text-7xl text-white">
+        <h1 className="bold text-lg md:text-4xl xl:text-7xl text-white">
           {residentialForm[0].title}{" "}
         </h1>
-        <p className=" font-normal text-2xl text-[#A2A2A2]">
+        <p className=" font-normal text-base md:text-2xl text-[#A2A2A2]">
           Select all applicable services.
         </p>
       </div>
-      <div className="flex sm:flex-wrap flex-col sm:flex-row gap-4 justify-center items-center">
+      <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-center">
         {residentialForm.map((item, index) => (
           <div key={index} className="btn cursor-pointer relative">
             <div
-              className={`${selectedIndex.includes(index) ? 'bg-white text-[#2D2D2D]' : 'bg-[#2D2D2D] text-white'} sm:w-[250px] justify-center hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base px-12 lg:py-6 py-3 rounded-full relative`}
+              className={`${selectedIndex.includes(index) ? 'bg-white text-[#2D2D2D]' : 'bg-[#2D2D2D] text-white'}  justify-center hover:bg-[#6b6969] thin flex text-center items-center gap-2 text-base px-4 md:px-12 lg:py-6 py-2 rounded-full relative`}
               onClick={() => {
                 if (selectedIndex.includes(index)) {
                   if (handleOptionDeselect) {
@@ -61,7 +61,7 @@ const FormFour = ({ handleStepChange, handleOptionSelect, handleOptionDeselect }
       <div>
         <button onClick={() => {
           handleStepChange("formSix");
-        }} type='button' className="text-white font-medium text-base rounded-full px-12 py-4 border-white border">Next</button>
+        }} type='button' className="text-white font-medium text-xs md:text-base rounded-full px-6 md:px-12 py-2 md:py-4 border-white border">Next</button>
       </div>
     </div>
   );
