@@ -1,4 +1,5 @@
-import { internalTeethWhiteFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { internalTeethWhiteFaq, serviceCompositeBonding_InternalToothWhitening, serviceElevet_InternalToothWhitening, serviceHero2Desc_InternalToothWhitening } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -20,6 +21,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import InternalToothWhiteningHero from "./InternalToothWhiteningSection/InternalToothWhiteningHero";
 import InternalToothWhiteningVideo from "./InternalToothWhiteningSection/InternalToothWhiteningVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -30,19 +33,19 @@ import InternalToothWhiteningVideo from "./InternalToothWhiteningSection/Interna
         <Navbar />
         <InternalToothWhiteningHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_InternalToothWhitening} />
         <InternalToothWhiteningVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_InternalToothWhitening} />
+        <ServiceElevate service_elevate={serviceElevet_InternalToothWhitening}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={internalTeethWhiteFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

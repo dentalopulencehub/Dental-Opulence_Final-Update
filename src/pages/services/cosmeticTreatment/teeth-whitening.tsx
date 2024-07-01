@@ -1,4 +1,5 @@
-import { teethWhiteFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { serviceCompositeBonding_TeethWhitening, serviceElevet_TeethWhitening, serviceHero2Desc_teethwhitening, teethWhiteFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import TeethWhiteningHero from "./teethWhiteningSection/teethWhiteningHero";
 import TeethWhiteningVideo from "./teethWhiteningSection/teethWhiteningVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -30,18 +33,18 @@ import TeethWhiteningVideo from "./teethWhiteningSection/teethWhiteningVideo";
         <Navbar />
         <TeethWhiteningHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_teethwhitening} />
         <TeethWhiteningVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_TeethWhitening} />
+        <ServiceElevate service_elevate={serviceElevet_TeethWhitening}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={teethWhiteFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

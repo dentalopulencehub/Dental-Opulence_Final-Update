@@ -1,4 +1,5 @@
-import { rootFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { rootFaq, serviceCompositeBonding_RootCanalTreatments, serviceElevet_RootCanalTreatments, serviceHero2Desc_RootCanalTreatments } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -20,6 +21,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import RootCanalTreatmentsHero from "./rootCanalTreatmentsSection/rootCanalTreatmentsHero";
 import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTreatmentsVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -30,10 +33,10 @@ import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTrea
         <Navbar />
         <RootCanalTreatmentsHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_RootCanalTreatments} />
         <RootCanalTreatmentsVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_RootCanalTreatments} />
+        <ServiceElevate service_elevate={serviceElevet_RootCanalTreatments}/>
 
         <PatientWalkThrough/>
 
@@ -42,9 +45,9 @@ import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTrea
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={rootFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

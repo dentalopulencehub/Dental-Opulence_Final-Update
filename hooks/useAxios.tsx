@@ -47,7 +47,7 @@ const useAxios = (): [
 
     try {
       const response = await axios.post(
-        "https://luxe-transformations-be.vercel.app/api/v1/contact",
+        "https://transformations-be.vercel.app/api/v1/contact",
         data
       );
       console.log("Submission successful");

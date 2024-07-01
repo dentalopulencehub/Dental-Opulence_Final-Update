@@ -11,18 +11,16 @@ import {
 } from "../components/import";
 
 
-import CookiePolicyHero from "@/components/compound/cookiePolicy/cookiePolicyHero";
-import CookiePolicyBody from "@/components/compound/cookiePolicy/cookiePolicyBody";
-import HealthSafetyHero from "@/components/compound/HealthSafety/HealthSafetyHero";
-import HealthSafetyBody from "@/components/compound/HealthSafety/HealthSafetyBody";
+import AppointmentTermsHero from "@/components/compound/AppointmentTerms/AppointmentTermsHero";
+import AppointmentTermsBody from "@/components/compound/AppointmentTerms/AppointmentTermsBody";
 
 export default function AppointmentTerms() {
   return (
     <Layout>
       <Navbar />
-       <HealthSafetyHero/>
+       <AppointmentTermsHero/>
 
-         <HealthSafetyBody/>
+         <AppointmentTermsBody/>
 
          <HomePeopleSlider />
       <Footer />

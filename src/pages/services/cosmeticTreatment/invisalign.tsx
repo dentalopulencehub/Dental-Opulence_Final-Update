@@ -1,4 +1,5 @@
-import { invisalignFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { invisalignFaq, serviceCompositeBonding_Invisalign, serviceElevet_Invisalign, serviceHero2Desc_Invisalign } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import InvisalignHero from "./invisalignSection/invisalignHero";
 import InvisalignVideo from "./invisalignSection/invisalignVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,19 +33,19 @@ import InvisalignVideo from "./invisalignSection/invisalignVideo";
         <Navbar />
         <InvisalignHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_Invisalign} />
         <InvisalignVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Invisalign} />
+        <ServiceElevate service_elevate={serviceElevet_Invisalign}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={invisalignFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

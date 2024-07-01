@@ -8,10 +8,10 @@ const ProcessCard = ({processes }: HomeOurServicesType) => {
   return (
     <MagicContainer
       className={
-        "flex w-full gap-4 md:flex-row md:flex-wrap"
+        "md:flex w-full gap-4 md:flex-row md:flex-wrap "
       }
     >
-       <div className="xs:w-[394px] w-full sm:h-[228px] h-full bg-[#161616] rounded-lg py-8 px-6 flex flex-col justify-between items-start border border-[#2D2D2D]">
+       <div className="xs:w-[394px] w-full  sm:h-[228px] h-full bg-[#161616] rounded-lg py-8 px-6 flex flex-col justify-between items-start border border-[#2D2D2D]">
             <p className="text-base font-Pangram-Bold text-[#AFAFAF] ">
               Our Process
             </p>
@@ -27,7 +27,7 @@ const ProcessCard = ({processes }: HomeOurServicesType) => {
           
           </div>
             {processes.map((data:any, index:number) => (
-               <MagicCard key={index} className="xs:w-[394px] w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
+               <MagicCard key={index} className="xs:w-[394px] md:my-0 my-5 w-full xs:h-[228px] h-full flex  cursor-pointer flex-col items-start justify-center overflow-hidden p-20 shadow-2xl">
                  <Image src={data.image} alt={data.title} />
                  <h3 className="font-Pangram-Regular text-2xl text-white mt-4">{data.title}</h3>
                  <p className="mt-6 text-[#C2C2C2] text-xs font-Pangram-Light">

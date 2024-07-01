@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 
 import Carousel from '../atom/carousel'
 import GoogleCard from '../molecule/GoogleCard'
@@ -10,10 +10,13 @@ import reaction_right_arrow from "../../../assets/fonts/reaction-arrow-right.svg
 
 import Image from 'next/image'
 import Link from 'next/link';
+import SecondaryLink from '../atom/SecondaryLink';
 
 
 
 const TestimonyComp = () => {
+  const [linkHover, setLinkHover] = useState(false);
+
     const reviews = [
     {
       name: 'Lucy Ratcliffe',
@@ -53,12 +56,18 @@ const TestimonyComp = () => {
          <p className="md:text-[34px] text-[28px] font-encode font-[700] mt-3 leading-[42px]">
            Your Reliable Dentist for <br/>Optimal Oral Health
          </p>
-         <div className='border border-[#100E10] rounded-full md:mt-0 mt-6'> 
-           <Link href={'/testimonials'} className='flex gap-3 items-center  px-7 py-2 '>
-             <button className='text-[16px] font-[500]'>See Client Reactions</button> 
-             <Image src={reaction_right_arrow} alt='reaction_right_arrow' className='mt-[1px]'/>
+        
+           <Link href={'/testimonials'} className='flex gap-3 items-center  md:px-7 py-2 '>
+           <SecondaryLink
+              href="#"
+              title="See Client Reactions"
+              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
+              hovered={linkHover}
+              setHovered={setLinkHover}
+            />
+            
            </Link>
-         </div>
+        
         </div> 
 
      </div>

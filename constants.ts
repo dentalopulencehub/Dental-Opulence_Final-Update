@@ -10,6 +10,10 @@ import {
   serviceType,
   ServicePageDataType,
   TestiVideoStudyTypeProp,
+  ServiceElevateType,
+  ServiceElevetTitle,
+  ServiceCompositeBondingType,
+  ServiceHero2TextDesc,
 } from "./types";
 
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
@@ -251,6 +255,10 @@ import internal_tooth_whiteneing_service_hero_image from "./assets/images/intern
 import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg"
 
 
+
+import service_01 from "./assets/images/service-01.svg";
+import service_02 from "./assets/images/service-02.svg";
+import service_03 from "./assets/images/service-03.svg";
 
 // General treatment
 
@@ -802,7 +810,7 @@ export const navlinks = [
   },
 
   {
-    href: "/cases",
+    href: "",
     label: "Cases",
     subLinks: [
       {
@@ -1395,6 +1403,12 @@ export const our_pricing_services2: HomeOurServicesType[] = [
 
 ];
 
+ 
+
+
+
+
+
 export const change_life: HomeOurServicesType[] = [
   {
     title: "Increase Your Confidence",
@@ -1496,6 +1510,846 @@ export const home_process: HomeOurServicesType[] = [
     image: process_care_maintenance_image,
   },
 ];
+
+
+
+export const elevetTitleName:ServiceElevetTitle[]=[
+  {
+    topTitle: 'Dental Bridges'
+  }
+]
+
+
+//Sevice elevet data start here
+
+export const serviceElevetBridges: ServiceElevateType[]= [
+  {
+    topTitle:'Dental Bridges' ,
+    title: "Restoring Functionality",
+    description:
+      "Dental bridges help restore your ability to chew and speak properly by filling in the gaps caused by missing teeth.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Preventing Shifting",
+    description:
+      "By filling in gaps, bridges prevent adjacent teeth from shifting out of place, helping to maintain proper alignment.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improving Appearance",
+    description:
+      "Bridges enhance your smile by filling in gaps and maintaining the natural shape of your face.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_Dentures: ServiceElevateType[]= [
+  {
+    topTitle:'Dentures' ,
+    title: "Improved Appearance",
+    description:
+      "Dentures can restore your smile and facial appearance by replacing missing teeth and supporting facial muscles.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Enhanced Speech",
+    description:
+      "Dentures can improve your ability to speak clearly and confidently by replacing missing teeth and supporting the tongue and lips.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Oral Health",
+    description:
+      "Dentures can help maintain the alignment of your remaining teeth and prevent them from shifting out of place.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_Extractions: ServiceElevateType[]= [
+  {
+    topTitle:'Extractions' ,
+    title: "Pain Relief",
+    description:
+      "Extracting a severely decayed or infected tooth can provide immediate relief from pain and discomfort.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Prevents Infection",
+    description:
+      "Removing a tooth that is severely decayed or infected can prevent the spread of infection to other teeth and surrounding tissues.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Restores Function",
+    description:
+      "Extracting a tooth that is severely damaged or infected can restore normal chewing and speaking function.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_WhiteFillings: ServiceElevateType[]= [
+  {
+    topTitle:'White Fillings' ,
+    title: "Tooth Preservation",
+    description:
+      "White fillings require less removal of healthy tooth structure compared to metal fillings, preserving more of your natural tooth.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Versatility",
+    description:
+      "White fillings seamlessly repair cavities, chips, and cracks, blending naturally with your teeth for aesthetic restoration.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Aesthetically Pleasing",
+    description:
+      "White fillings blend naturally with teeth, offering a pleasing appearance unlike metal fillings.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_CrownsVeneers: ServiceElevateType[]= [
+  {
+    topTitle:'Crowns / Veneers' ,
+    title: "Improved Appearance",
+    description:
+      "Crowns and veneers improve teeth by covering imperfections like discoloration, chips, or misalignment for enhanced appearance.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Versatility",
+    description:
+      "Crowns and veneers restore and enhance teeth, fixing breaks, chips, discoloration, and shaping for better appearance.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Natural Look",
+    description:
+      " Crowns and veneers can be matched to the color of your natural teeth, making them virtually invisible.",
+    number_img: service_03,
+  },
+] 
+
+
+export const serviceElevet_Examination: ServiceElevateType[]= [
+  {
+    topTitle:'Examination' ,
+    title: "Early Detection",
+    description:
+      "Dental examinations can detect oral health issues early, allowing for prompt treatment and prevention of further damage.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Preventive Care",
+    description:
+      "Regular dental examinations can help prevent dental problems by identifying and addressing potential issues before they become serious.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Oral Health",
+    description:
+      "Dental examinations can improve overall oral health by identifying and treating dental issues such as cavities, gum disease, and tooth decay.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_Hygienist: ServiceElevateType[]= [
+  {
+    topTitle:'Hygienist' ,
+    title: "Preventive Care",
+    description:
+      "Dental hygienists provide preventive care, such as cleanings and fluoride treatments, to help maintain optimal oral health.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Early Detection",
+    description:
+      " Dental hygienists can detect early signs of dental issues, such as cavities, gum disease, and oral cancer, allowing for prompt treatment.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Personalised Care",
+    description:
+      "Hygienists provide personalised care based on each patient's unique needs and concerns.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_RootCanalTreatments: ServiceElevateType[]= [
+  {
+    topTitle:'Root Canal Treatments' ,
+    title: "Pain Relief",
+    description:
+      "Root canal treatments can provide immediate relief from tooth pain caused by infection or damage.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Tooth Preservation",
+    description:
+      "Root canal treatments can save a tooth that would otherwise need to be extracted due to infection or damage.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Oral Health",
+    description:
+      "It helps to improve overall oral health by removing infection and preventing further damage to the tooth and surrounding tissues.",
+    number_img: service_03,
+  },
+] 
+
+//cosmetic elevated Service
+
+export const serviceElevet_Invisalign: ServiceElevateType[]= [
+  {
+    topTitle:'Invisalign' ,
+    title: "Discreet",
+    description:
+      "Invisalign aligners are virtually invisible, making them a discreet option for teeth straightening.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Comfortable",
+    description:
+      "The aligners are made of smooth, comfortable plastic, unlike traditional braces with metal brackets and wires.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Efficient",
+    description:
+      "Invisalign treatment typically takes 4-8 months, depending on the complexity of the case, making it a faster option than traditional braces.",
+    number_img: service_03,
+  },
+] 
+
+
+export const serviceElevet_TeethWhitening: ServiceElevateType[]= [
+  {
+    topTitle:'Teeth Whitening' ,
+    title: "Enhanced Appearance",
+    description:
+      "Teeth whitening can significantly improve the appearance of your smile, making your teeth look brighter and more youthful.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Increased Confidence",
+    description:
+      "A whiter smile can boost your self-confidence and make you feel more comfortable in social situations.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Oral Health",
+    description:
+      "Teeth whitening can remove surface stains and plaque, which can help prevent tooth decay and gum disease.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_CrownsVeneers2: ServiceElevateType[]= [
+  {
+    topTitle:'Crowns / Veneers' ,
+    title: "Enhanced Aesthetics",
+    description:
+      "Crowns and veneers can improve the appearance of teeth by covering imperfections like discoloration, chips, or misalignment.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Boosted Confidence",
+    description:
+      "A beautiful smile can enhance self-confidence and overall well-being, improving your quality of life.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Prevention Damage",
+    description:
+      "They can protect teeth from further damage by providing a protective barrier.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_CompositeBonding: ServiceElevateType[]= [
+  {
+    topTitle:'Composite Bonding' ,
+    title: "Natural Appearance",
+    description:
+      "The composite resin used in bonding can be color-matched to your natural teeth, providing a seamless and natural look",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Versatile",
+    description:
+      "Composite bonding can address various cosmetic dental issues, including chipped, discolored, or misshapen teeth.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Minimally Invasive",
+    description:
+      "Unlike some other cosmetic dental procedures, composite bonding typically requires minimal alteration of the natural tooth structure.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_InternalToothWhitening: ServiceElevateType[]= [
+  {
+    topTitle:'Internal Tooth Whitening' ,
+    title: "Effective Stain Removal",
+    description:
+      "Internal tooth whitening effectively removes deep stains and discoloration from within the tooth, resulting in a brighter smile.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Non-Invasive",
+    description:
+      "Unlike some other dental procedures, internal tooth whitening is minimally invasive and does not require any drilling or removal of tooth structure.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Safe and Comfortable",
+    description:
+      "The procedure is performed by experienced professionals in a controlled environment, ensuring your safety and comfort throughout.",
+    number_img: service_03,
+  },
+]
+
+
+export const serviceElevet_FixedRetainers: ServiceElevateType[]= [
+  {
+    topTitle:'Fixed Retainers' ,
+    title: "Long-term Stability",
+    description:
+      "Fixed retainers help maintain the alignment of your teeth after orthodontic treatment, ensuring long-term stability.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Comfortable",
+    description:
+      "Once bonded, fixed retainers are comfortable and virtually unnoticeable.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Convenient",
+    description:
+      "Unlike removable retainers, fixed retainers do not require daily insertion and removal.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_ViveraRetainers: ServiceElevateType[]= [
+  {
+    topTitle:'Vivera Retainers' ,
+    title: "Durability",
+    description:
+      "Vivera retainers are made from a durable and long-lasting material, ensuring they can withstand daily wear and tear.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Comfort",
+    description:
+      "These retainers are custom-made to fit your teeth perfectly, ensuring maximum comfort and effectiveness",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Invisibility",
+    description:
+      "Vivera retainers are virtually invisible, allowing you to maintain your smile discreetly.",
+    number_img: service_03,
+  },
+]
+
+
+export const serviceElevet_CompositeVeneers: ServiceElevateType[]= [
+  {
+    topTitle:'Composite Veneers' ,
+    title: "Quick and Convenient",
+    description:
+      "Composite veneers can be applied in just one visit, making them a convenient option for those with busy schedules.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Non-Invasive",
+    description:
+      "Unlike traditional porcelain veneers, composite veneers do not require any tooth reduction, preserving the natural structure of your teeth.s",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Natural-Looking",
+    description:
+      "The composite resin material used in composite veneers can be colour-matched to your natural teeth, ensuring a natural-looking result.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_RoutineExamination: ServiceElevateType[]= [
+  {
+    topTitle:'Routine Examination' ,
+    title: "Early Detection",
+    description:
+      "It allow for the early detection of dental issues which can be treated more effectively when caught early.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Education and Advice",
+    description:
+      "During your Visit, your dentist can provide you with information and advice on how to maintain good oral hygiene and prevent dental problems.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Oral Health",
+    description:
+      "Routine examinations help maintain good oral health by ensuring that your teeth and gums are in optimal condition.",
+    number_img: service_03,
+  },
+]
+
+export const serviceElevet_CompositeEdgeBonding: ServiceElevateType[]= [
+  {
+    topTitle:'Composite Edge Bonding' ,
+    title: "Non-Invasive",
+    description:
+      "It is a non-invasive procedure that doesn't require any tooth reduction, making it a conservative option for improving the appearance of your teeth.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Versatile",
+    description:
+      "It can be used to fix chips, cracks, or gaps, and can also be used to improve the shape and contour of your teeth.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Quick Procedure",
+    description:
+      "Composite edge bonding can be completed in just one visit, saving you time and hassle.",
+    number_img: service_03,
+  },
+]
+
+
+// service composite bonding general start here
+
+export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Dental Bridges' ,
+
+    situationTitleData1:'Replace teeth',
+    situationTitleData2:'Support adjacent',
+    situationTitleData3:'Enhance aesthetics',
+    situationTitleData4:'Restore function',
+    situationTitleData5:'Preserve structure',
+
+    definationTitle: 'Dental Bridges?' ,
+    definationTitleDesc:'Bridges replace missing teeth by anchoring artificial teeth (pontics) between two crowns. They restore chewing ability, improve smile aesthetics, and prevent adjacent teeth from shifting. Supported by natural teeth or implants, bridges offer a stable solution for tooth replacement.'
+  }
+]
+
+export const serviceCompositeBonding_Dentures: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Dentures' ,
+
+    situationTitleData1:'Missing Teeth',
+    situationTitleData2:'Chronic problems',
+    situationTitleData3:'Aesthetic ',
+    situationTitleData4:'GENERAL WEAR',
+    situationTitleData5:'Severe decay',
+
+    definationTitle: 'Dentures' ,
+    definationTitleDesc:'Dentures are removable dental appliances designed to replace missing teeth and surrounding tissues. They restore oral function, including chewing and speaking abilities, and support facial muscles. Partial dentures replace some missing teeth, while complete dentures are used when all teeth are missing.'
+  }
+]
+
+export const serviceCompositeBonding_Extractions: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Extractions' ,
+
+    situationTitleData1:'Gum disease',
+    situationTitleData2:'Tooth fractures',
+    situationTitleData3:'Orthodontic prep ',
+    situationTitleData4:'Severe decay',
+    situationTitleData5:'Dental abscess',
+
+    definationTitle: 'Extractions' ,
+    definationTitleDesc:'Extractions involve removing a tooth from its socket in the bone. This procedure is necessary for various reasons, such as severe decay, damage, or crowding. Dentists ensure patient comfort using anaesthesia and provide post-extraction care instructions for healing and pain management.'
+  }
+]
+
+export const serviceCompositeBonding_WhiteFillings: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'White Fillings' ,
+
+    situationTitleData1:'Tooth gaps',
+    situationTitleData2:'Cracked teeth',
+    situationTitleData3:'AESTHETICS ',
+    situationTitleData4:'Small cavities',
+    situationTitleData5:'Minor decay',
+
+    definationTitle: 'White Fillings' ,
+    definationTitleDesc:'White fillings, also known as composite fillings, are tooth-colored materials used to repair decayed, chipped, or cracked teeth. They blend seamlessly with your natural teeth, providing a more aesthetically pleasing and less noticeable alternative to traditional metal fillings.'
+  }
+]
+
+export const serviceCompositeBonding_CrownsVeneers: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Crowns / Veneers' ,
+
+    situationTitleData1:'Cracked teeth',
+    situationTitleData2:'Tooth gaps',
+    situationTitleData3:'STAINS ',
+    situationTitleData4:'Misshapen Teeth',
+    situationTitleData5:'WORN TEETH',
+
+    definationTitle: 'Crowns / Veneers' ,
+    definationTitleDesc:'Crowns and veneers are dental treatments used to improve the appearance and function of teeth. Crowns cover the entire tooth to restore its shape, size, and strength, while veneers are thin shells placed over the front surface of teeth to improve their colour, shape, or size.'
+  }
+]
+
+
+export const serviceCompositeBonding_Examination: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Examination' ,
+
+    situationTitleData1:'Oral hygiene',
+    situationTitleData2:'dental implants',
+    situationTitleData3:'Gum health ',
+    situationTitleData4:'tooth development',
+    situationTitleData5:'Cosmetic prep',
+
+    definationTitle: 'Examination' ,
+    definationTitleDesc:'An examination in dentistry is a comprehensive evaluation of teeth, gums, and oral health. It involves visual inspection, X-rays, and other tests to detect issues like cavities, gum disease, or oral cancer early, ensuring effective treatment and prevention of dental problems.'
+  }
+]
+
+export const serviceCompositeBonding_Hygienist: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Hygienist' ,
+
+    situationTitleData1:'Routine cleanings',
+    situationTitleData2:'Oral education',
+    situationTitleData3:'Gum disease',
+    situationTitleData4:'Plaque removal',
+    situationTitleData5:'Teeth polishing',
+
+    definationTitle: 'Hygienist' ,
+    definationTitleDesc:'A dental hygienist is a licensed oral health professional who focuses on preventive dental care. They clean teeth, assess oral health, provide treatments like fluoride applications, and educate patients on proper oral hygiene techniques to maintain healthy teeth and gums.'
+  }
+]
+
+export const serviceCompositeBonding_RootCanalTreatments : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Root Canal Treatments' ,
+
+    situationTitleData1:'Deep Decay',
+    situationTitleData2:'Cracked tooth',
+    situationTitleData3:'Tooth darkening',
+    situationTitleData4:'Gum swelling',
+    situationTitleData5:'Severe pain',
+
+    definationTitle: 'Root Canal Treatments' ,
+    definationTitleDesc:'Root canal treatment is a dental procedure used to repair and save a tooth that is badly decayed or infected. The procedure involves removing the damaged area of the tooth (the pulp), cleaning and disinfecting it, and then filling and sealing it. This helps to prevent further infection and restore the tooth function.'
+  }
+]
+
+// service composite bonding cosmatic start here
+
+export const serviceCompositeBonding_Invisalign : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Invisalign' ,
+
+    situationTitleData1:'Teeth crowding',
+    situationTitleData2:'Orthodontic convenience',
+    situationTitleData3:'Discreet treatment',
+    situationTitleData4:'Removable aligners',
+    situationTitleData5:'Crossbite adjustment',
+
+    definationTitle: 'Invisalign' ,
+    definationTitleDesc:'Invisalign is a clear aligner system designed to straighten teeth discreetly and comfortably. Custom-made, removable aligners gradually shift teeth into their correct positions. Invisalign is an effective alternative to traditional braces, offering convenience and a nearly invisible appearance for patients.'
+  }
+]
+
+export const serviceCompositeBonding_TeethWhitening : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Teeth Whitening' ,
+
+    situationTitleData1:'Stained teeth',
+    situationTitleData2:'Discolored teeth',
+    situationTitleData3:'Yellowed teeth',
+    situationTitleData4:'Uniform color',
+    situationTitleData5:'AESTHETICS',
+
+    definationTitle: 'Teeth Whitening' ,
+    definationTitleDesc:'Teeth whitening is a non-invasive dental procedure that effectively lightens teeth by removing stains and discoloration. It involves applying a bleaching agent, usually hydrogen peroxide, which breaks down stains into smaller particles, resulting in a brighter and more attractive smile.'
+  }
+]
+
+export const serviceCompositeBonding_CrownsVeneers2 : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Crowns / Veneers' ,
+
+    situationTitleData1:'Broken Teeth',
+    situationTitleData2:'Decayed Teeth',
+    situationTitleData3:'Worn Teeth',
+    situationTitleData4:'Discolored Teeth',
+    situationTitleData5:'Cosmetic Enhancement',
+
+    definationTitle: 'Crowns / Veneers' ,
+    definationTitleDesc:'Crowns and veneers are dental restorations used to improve the appearance and function of teeth. Crowns cover the entire tooth to restore shape, size, and strength, while veneers are thin shells bonded to the front surface to enhance aesthetics by changing color, shape, size, or length.'
+  }
+]
+
+export const serviceCompositeBonding_Compositebonding : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Composite bonding' ,
+
+    situationTitleData1:'CHIPPED TEETH',
+    situationTitleData2:'Cracked teeth',
+    situationTitleData3:'Decayed teeth',
+    situationTitleData4:'Worn teeth',
+    situationTitleData5:'Cavity repair',
+
+    definationTitle: 'Composite bonding' ,
+    definationTitleDesc:'Composite bonding involves applying a tooth-colored resin to teeth to repair damage, improve appearance, or protect exposed roots. This non-invasive procedure can fix chips, cracks, and discoloration, providing a quick and effective solution for enhancing your smile.'
+  }
+]
+
+export const serviceCompositeBonding_InternalToothWhitening : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Internal Tooth Whitening' ,
+
+    situationTitleData1:'Tooth discoloration',
+    situationTitleData2:'Root canal treatment',
+    situationTitleData3:'Internal bleeding',
+    situationTitleData4:'Non-vital teeth',
+    situationTitleData5:'Darkened teeth',
+
+    definationTitle: 'Internal Tooth Whitening' ,
+    definationTitleDesc:'Internal tooth whitening involves applying a bleaching agent inside a tooth to whiten it from within. This procedure is typically used for teeth that have darkened due to trauma, root canal treatment, or intrinsic stains that cannot be treated externally.'
+  }
+]
+
+export const serviceCompositeBonding_FixedRetainers : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Fixed Retainers' ,
+
+    situationTitleData1:'Minor tooth movement',
+    situationTitleData2:'Post-braces',
+    situationTitleData3:'Misalignment prevention',
+    situationTitleData4:'Orthodontic relapse',
+    situationTitleData5:'Aesthetic retention',
+
+    definationTitle: 'Fixed Retainers' ,
+    definationTitleDesc:'Fixed retainers are permanent wires attached to the back of teeth to maintain alignment after orthodontic treatment. They prevent teeth from shifting back to their original positions, providing long-term stability and ensuring a straight, aligned smile.'
+  }
+]
+
+
+export const serviceCompositeBonding_ViveraRetainers : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Vivera Retainers' ,
+
+    situationTitleData1:'Post-Invisalign',
+    situationTitleData2:'Retainer replacement',
+    situationTitleData3:'Post-braces',
+    situationTitleData4:'Orthodontic retention',
+    situationTitleData5:'Minor adjustments',
+
+    definationTitle: 'Vivera Retainers' ,
+    definationTitleDesc:'Vivera retainers are custom-made, clear plastic devices used to maintain teeth alignment after orthodontic treatment, such as braces or Invisalign. They are durable, comfortable, and virtually invisible, designed to prevent teeth from shifting back to their original positions.'
+  }
+]
+
+export const serviceCompositeBonding_CompositeVeneers : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Composite Veneers' ,
+
+    situationTitleData1:'Cracked Teeth',
+    situationTitleData2:'Chipped Teeth',
+    situationTitleData3:'Worn Teeth',
+    situationTitleData4:'Uneven Teeth',
+    situationTitleData5:'Damaged Enamel',
+
+    definationTitle: 'Composite Veneers' ,
+    definationTitleDesc:'Composite veneers are thin, tooth-colored resin shells applied to the front of teeth to improve their appearance. They are ideal for fixing chips, cracks, discoloration, and minor misalignment. This procedure is minimally invasive, quick, and cost-effective.'
+  }
+]
+
+export const serviceCompositeBonding_RoutineExamination : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Routine Examination' ,
+
+    situationTitleData1:'Preventive care',
+    situationTitleData2:'Oral hygiene',
+    situationTitleData3:'Dental check-up',
+    situationTitleData4:'Pediatric dentistry',
+    situationTitleData5:'Cosmetic evaluation',
+
+    definationTitle: 'Routine Examination' ,
+    definationTitleDesc:'Routine examinations are regular dental check-ups that assess your oral health. They involve thorough examinations of teeth, gums, and mouth, aiming to detect issues like cavities and gum disease early. Early detection allows for prompt treatment, preserving oral health and preventing complications.'
+  }
+]
+
+
+export const serviceCompositeBonding_CompositeEdgeBonding : ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Composite Edge Bonding' ,
+
+    situationTitleData1:'CHIPPED TEETH',
+    situationTitleData2:'Gap Teeth',
+    situationTitleData3:'Misshapen Teeth',
+    situationTitleData4:'Discolored Teeth',
+    situationTitleData5:'Cosmetic Improvements',
+
+    definationTitle: 'Composite Edge Bonding' ,
+    definationTitleDesc:'Composite edge bonding is a dental procedure where a tooth-colored composite resin material is applied and bonded to the edges of teeth. It is used to fix minor imperfections like chips, gaps, and discoloration, enhancing the appearance of teeth quickly and effectively without the need for extensive preparation or invasive procedures.'
+  }
+]
+
+
+export const serviceHero2DescBridge : ServiceHero2TextDesc[]=[
+  {
+    textDes:'A dental bridge fills gaps caused by missing teeth, comprising crowns for adjacent teeth and a false tooth in between to restore the smile\'s natural appearance. Crafted from quality materials, bridges mimic natural teeth in look and function. Our dentists create personalised treatment plans, ensuring patients achieve their desired smile. Bridges can be color-matched for a seamless blend with natural teeth, offering an invisible solution.'
+  }
+]
+
+export const serviceHero2DescDentures : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Partial dentures replace some missing teeth and are used when some natural teeth remain in the upper or lower jaw. Complete dentures replace all missing teeth in an arch. Our skilled dentists will assess your needs and create a personalised treatment plan for you. Contact us today to schedule your appointment and learn more about how dentures can benefit you.'
+  }
+]
+
+export const serviceHero2DescExtyractions : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Tooth extractions are recommended for severely decayed, infected, or damaged teeth. Our skilled dentists use the latest techniques and equipment to minimise discomfort during the procedure. Afterward, we provide detailed instructions for care and discuss replacement options. Contact us today to schedule your appointment and learn more about how we can make your tooth extraction as comfortable as possible.'
+  }
+]
+
+export const serviceHero2Desc_WhiteFillings : ServiceHero2TextDesc[]=[
+  {
+    textDes:'During your visit, our dentist will remove decay and place a tooth-colored filling, made of composite resin matching your natural teeth. White fillings bond directly to the tooth surface, providing a strong, durable, and virtually invisible restoration. They preserve tooth structure and enhance your smile\'s appearance. Contact us to learn more about how white fillings can benefit you.'
+  }
+]
+
+export const serviceHero2Desc_CrownsVeneers : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Crowns and veneers are both custom-made dental solutions that can restore and enhance the appearance of your teeth. Our skilled dentists will work with you to determine the best solution for your individual needs and create a treatment plan that will give you the smile you deserve. Contact us today to schedule your appointment and learn more about how crowns and veneers can benefit you and give you the smile you’ve always wanted.'
+  }
+]
+
+export const serviceHero2Desc_Examination : ServiceHero2TextDesc[]=[
+  {
+    textDes:'A dental bridge fills gaps caused by missing teeth, comprising crowns for adjacent teeth and a false tooth in between to restore the smile\'s natural appearance. Crafted from quality materials, bridges mimic natural teeth in look and function. Our dentists create personalised treatment plans, ensuring patients achieve their desired smile. Bridges can be color-matched for a seamless blend with natural teeth, offering an invisible solution.'
+  }
+]
+
+export const serviceHero2Desc_Hygienist : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Our hygienists provide personalised and gentle care to ensure your teeth and gums are clean and healthy. They thoroughly clean your teeth, remove plaque and tartar, and polish your teeth to a sparkling shine. They also check for signs of gum disease and provide preventative care. You\'ll leave with a fresh, clean mouth and a better understanding of how to maintain oral health. Contact us to schedule your next visit.'
+  }
+]
+
+export const serviceHero2Desc_RootCanalTreatments : ServiceHero2TextDesc[]=[
+  {
+    textDes:'A root canal treatment is a procedure used to save a tooth that has been infected or is at risk of infection. Our skilled dentist will remove the infected or damaged pulp and clean and disinfect the inside of the tooth. They will then fill and seal the tooth to prevent further infection. Contact us today to schedule your appointment and learn more about how we can make your root canal treatment as comfortable as possible.'
+  }
+]
+
+
+
+export const serviceHero2Desc_Invisalign : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Invisalign aligners are virtually invisible and comfortable to wear, making them a popular choice for teeth straightening. They are custom-made to fit your teeth and worn for about 22 hours a day for 4-8 months. Our experienced team will work with you to determine the best solution for your needs and provide detailed instructions on how to use the aligners.'
+  }
+]
+
+export const serviceHero2Desc_teethwhitening : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Home teeth whitening is a safe and effective way to achieve a brighter, more youthful-looking smile. Our dental practice offers this solution to boost self-confidence and improve overall well-being. The treatment involves using custom-made whitening trays and a professional-grade whitening gel, which can be done in the comfort of your own home.'
+  }
+]
+
+export const serviceHero2Desc_crowsVeneers2 : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Crowns and veneers are custom-made dental solutions that can restore and enhance the appearance of your teeth. Crowns are caps that fit over existing teeth, providing strength and stability, while veneers are thin shells bonded to the front of teeth to improve their appearance. Both can address issues like chipping, discoloration, or poor shape.'
+  }
+]
+
+export const serviceHero2Desc_compositeBonding : ServiceHero2TextDesc[]=[
+  {
+    textDes:'At Dental Opulence, we offer composite bonding with two options: edge bonding and veneers. Edge bonding addresses minor imperfections, while veneers provide a comprehensive smile transformation. Both options offer natural-looking results and can be tailored to your specific needs. Whether you seek a subtle enhancement or dramatic change, composite bonding offers versatile possibilities.'
+  }
+]
+
+export const serviceHero2Desc_InternalToothWhitening : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Internal tooth whitening is a safe and effective method for whitening discolored teeth from within. Our experienced team will customise a treatment plan to address your unique needs, enhancing your smile and boosting your confidence. Schedule a consultation today to learn more about the benefits of internal tooth whitening.'
+  }
+]
+
+export const serviceHero2Desc_FixedRetainers : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Fixed retainers are custom-made orthodontic appliances designed to maintain teeth alignment after treatment. They consist of a thin wire bonded to the back of teeth and are virtually invisible. While effective, they should be used alongside removable retainers for optimal results. Contact us for a consultation on how fixed retainers can benefit you.'
+  }
+]
+
+export const serviceHero2Desc_ViveraRetainers : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Vivera retainers are custom-made, durable, and virtually invisible, designed to maintain your teeth\'s new position after orthodontic treatment. They are comfortable, removable, and effective, ensuring long-term results. Our experienced team provides detailed instructions on their use, ensuring the best outcome for your smile.'
+  }
+]
+
+export const serviceHero2Desc_CompositeVeneers : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Composite veneers are a type of dental veneer made of tooth-colored composite resin. They can be applied and sculpted directly onto the surface of your existing teeth. Unlike traditional porcelain veneers, composite veneers can be done in one visit and do not require any tooth reduction. They can fix minor imperfections like chips, cracks, or gaps and improve the shape, color, and overall appearance of your teeth.'
+  }
+]
+
+export const serviceHero2Desc_RoutineExamination : ServiceHero2TextDesc[]=[
+  {
+    textDes:'During your visit, our experienced dentists conduct thorough examinations, checking for cavities, gum disease, and other oral health concerns. Digital X-rays provide detailed views for personalised treatment plans. Preventative care and education are prioritised, with routine examinations crucial for identifying and preventing dental problems. Schedule your examination today for optimal oral health.'
+  }
+]
+
+export const serviceHero2Desc_CompositeEdgebonding : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Composite edge bonding is a non-invasive procedure that involves applying a tooth-colored composite resin material to the edges of your teeth. This material is sculpted and shaped to match the contour of your existing teeth, and is then hardened and polished to create a natural-looking finish. The result is an improvement in the appearance of your teeth, that can be used to fix minor imperfections such as chips, cracks, or gaps.'
+  }
+]
+
+
 
 
 export const bridgesFaq: FaqType[] = [
@@ -2531,42 +3385,3 @@ export const checkPointSeven = [
 
 
 
-
-
-
-// {
-//   title: "Dentures",
-//   href: "/services?service=dentures",
-//   icon: dentures_link_icon,
-//   icon_hovered: dentures_link_icon,
-// },
-// {
-//   title: "Examination",
-//   href: "/services?service=examination",
-//   icon: examination_link_icon,
-//   icon_hovered: examination_link_icon,
-// },
-// {
-//   title: "Extractions",
-//   href: "/services?service=extractions",
-//   icon: extractions_link_icon,
-//   icon_hovered: extractions_link_icon,
-// },
-// {
-//   title: "Hygienist",
-//   href: "/services?service=hygienist",
-//   icon: hygienist_link_icon,
-//   icon_hovered: hygienist_link_icon,
-// },
-// {
-//   title: "White Fillings",
-//   href: "/services?service=white-fillings",
-//   icon: white_fillings_link_icon,
-//   icon_hovered: white_fillings_link_icon,
-// },
-// {
-//   title: "Root Canal Treatments",
-//   href: "/services?service=root-canal-treatments",
-//   icon: root_canal_link_icon,
-//   icon_hovered: root_canal_link_icon,
-// },
