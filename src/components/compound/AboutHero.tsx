@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client"
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import underline_vector from "../../../assets/images/underline-vector.svg";
 import about_hero_image from "../../../assets/images/about-hero-image.svg";
@@ -7,8 +8,37 @@ import CustomLink from "../atom/CustomLink";
 import arrow_right_light from "../../../assets/images/arrow-right.svg";
 import arrow_right_dark from "../../../assets/images/arrow-right-dark.svg";
 
+import videoPlayButton from "../../../assets/videoPlayButton/videoPlayButton.svg";
+import speakerIcon from "../../../assets/speakerIcon/speakerIcon.svg";
+import speakerMuteIcon from "../../../assets/speakerIcon/speakerMuteIcon.svg";
+
 const AboutHero = () => {
   const [linkHover, setLinkHover] = useState(false);
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+
+
   return (
     <div className="w-full">
       <div className="bg-[#100E10] rounded-t-[24px] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
@@ -22,7 +52,7 @@ const AboutHero = () => {
           </h1>
           <PrimaryLink
             href="/contact"
-            title="Book Now"
+            title="Contact Us"
             style="py-4 px-8 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
           />
           {/* <CustomLink
@@ -34,27 +64,36 @@ const AboutHero = () => {
             setHovered={setLinkHover}
           /> */}
         </div>
-        <video
-          autoPlay={true}
-          loop
-          height=""
-          className="object-cover rounded-2xl w-full h-[700px]"
-          id="video1"
-          playsInline
-          
-          onClick={(e) => {
-            if (e.currentTarget.paused) {
-              e.currentTarget.play();
-            } else {
-              e.currentTarget.pause();
-            }
-          }}
-        >
-          <source src="/video/aboutUsHeroVideo.mp4" type="video/mp4" />
-          <source src="example.webm" type="video/webm" />
-          <track kind="captions" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="relative mx-auto my-4">
+          <video
+            ref={videoRef}
+            className="object-cover rounded-2xl w-full h-full opacity-1"
+            onClick={handleVideoClick}
+            playsInline
+            muted={isMuted} // Initial mute state
+          >
+            <source src="/videos/aboutVideo/aboutVideo.mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {!isPlaying && (
+            <div
+              className="absolute inset-0 flex justify-center items-center cursor-pointer"
+              onClick={handleVideoClick}
+            >
+              <Image src={videoPlayButton} alt="videoPlayButton" />
+            </div>
+          )}
+          <div
+            className="absolute bottom-4 left-4 cursor-pointer"
+            onClick={toggleMute}
+          >
+            <Image
+              src={isMuted ? speakerMuteIcon : speakerIcon}
+              alt="Speaker Icon"
+              className="w-10 h-10"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

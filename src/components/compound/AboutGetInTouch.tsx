@@ -84,7 +84,8 @@ const AboutGetInTouch = () => {
 
             <div className="mt-[85px]">
               <Link
-                href={"/contact"}
+                href={"https://dentalopulence.dentr.net/login"}
+                target="blank"
                 className="bg-[#fff] px-10 py-4 rounded-full"
               >
                 <button className="text-[#000] ">START BOOKING</button>

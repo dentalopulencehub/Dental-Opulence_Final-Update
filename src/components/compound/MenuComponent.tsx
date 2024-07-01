@@ -142,7 +142,7 @@ const MenuComponent = () => {
       </ul>
       <PrimaryLink
         href="/contact"
-        title="Book Now"
+        title="Contact Us"
         style="py-2 px-4 rounded-[34px] w-full max-w-[335px] h-[56px] flex items-center justify-center mt-6 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-xs hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
       />
     </div>

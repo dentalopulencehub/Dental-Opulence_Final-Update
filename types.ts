@@ -111,6 +111,7 @@ export type ServiceCompositeBondingType={
    situationTitleData5:string;
 
    definationTitle:string;
+   verb:string;
    definationTitleDesc:string
 }
 
