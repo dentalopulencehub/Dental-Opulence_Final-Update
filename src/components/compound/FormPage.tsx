@@ -457,7 +457,7 @@ const Page = () => {
               <p className="text-[#C4C4C4] text-xs md:text-xl font-medium">0121 272 9229 </p>
             </div>
 
-            <div className="absolute md:flex w-[90%] md:w-[50%] h-2 bg-[#5C5C5C] rounded-full bottom-3">
+            <div className="absolute md:relative flex w-[90%] md:w-[50%] h-2 bg-[#5C5C5C] rounded-full bottom-3 ">
               <div
                 className={`bg-white  h-full rounded-full ${returnProgressBarWidth()}`}
               />
