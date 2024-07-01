@@ -581,16 +581,14 @@ $text-color: #161616; // Replace with your actual color value
 }
 
 .banner {
-  background-color: #252731;
-  border-radius: 27px;
+  // background-color: #252731;
+  // border-radius: 27px;
   display: flex;
   gap: 20px;
   font-size: 14px;
   line-height: 1.4;
   color: #e1e3eb;
-  box-shadow: 0px 1px 3px rgba(9, 10, 15, 0.25),
-    0px 4px 16px rgba(9, 10, 15, 0.1), 0px 8px 24px rgba(9, 10, 15, 0.1),
-    inset 0px 1px 1px #323543;
+  
     
   @media(min-width: 601px) {
     align-items: center;
