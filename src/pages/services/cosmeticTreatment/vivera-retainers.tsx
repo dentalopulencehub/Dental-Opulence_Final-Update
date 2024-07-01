@@ -1,4 +1,5 @@
-import { viveraRetainersFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { serviceCompositeBonding_ViveraRetainers, serviceElevet_ViveraRetainers, serviceHero2Desc_ViveraRetainers, viveraRetainersFaq } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -19,6 +20,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import ViveraRetainersHero from "./ViveraRetainersSection/ViveraRetainersHero";
 import ViveraRetainersVideo from "./ViveraRetainersSection/ViveraRetainersVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
   
   export default function ViveraRetainers() {
@@ -27,18 +30,18 @@ import ViveraRetainersVideo from "./ViveraRetainersSection/ViveraRetainersVideo"
         <Navbar />
         <ViveraRetainersHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_ViveraRetainers} />
         <ViveraRetainersVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_ViveraRetainers} />
+        <ServiceElevate service_elevate={serviceElevet_ViveraRetainers}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={viveraRetainersFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

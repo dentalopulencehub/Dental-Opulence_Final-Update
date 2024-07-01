@@ -5,35 +5,29 @@ import VideoCard from './videoCard';
 
 // Define videos with specific paths and titles
 const videos = {
-    all: [
-        { src: `/videoTestimonials/All/video1.mp4`, title: `Composite Veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video3.mp4`, title: `Composite Veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video5.mp4`, title: `Edge Bonding For Two Teeth`, rating: 5 },
-        { src: `/videoTestimonials/All/video6.mp4`, title: `Composite Veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video7.mp4`, title: `Composite Veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video8.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video9.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video10.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video11.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video12.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video13.mp4`, title: `Edge Bonding`, rating: 5 },
-        { src: `/videoTestimonials/All/video14.mp4`, title: `Composite Veneers`, rating: 5 },
-        { src: `/videoTestimonials/All/video15.mp4`, title: `Edge Bonding`, rating: 5 },
-      ],
-
-  reactions: [
-    { src: `/videoTestimonials/REACTIONS/video1.mp4`, title: `Composite Veneers`, rating: 5 },
-    { src: `/videoTestimonials/REACTIONS/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
-    { src: `/videoTestimonials/REACTIONS/video3.mp4`, title: `Composite Veneers`, rating: 5 },
-    { src: `/videoTestimonials/REACTIONS/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
-    { src: `/videoTestimonials/REACTIONS/video5.mp4`, title: `Edge Bonding For Two Teeth`, rating: 5 },
-    { src: `/videoTestimonials/REACTIONS/video6.mp4`, title: `Composite Veneers`, rating: 5 },
+  all: [
+    { src: `/videoTestimonials/All/video1.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/All/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video3.mp4`, title: `Composite Veneers`, rating: 5 },
+    // { src: `/videoTestimonials/All/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
+    { src: `/videoTestimonials/All/video5.mp4`, title: `Edge Bonding For Two Teeth`, rating: 5 },
+    { src: `/videoTestimonials/All/video6.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/All/video7.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/All/video8.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video9.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video10.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video11.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video12.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video13.mp4`, title: `Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/All/video14.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/All/video15.mp4`, title: `Edge Bonding`, rating: 5 },
   ],
-
-
-
+  reactions: [
+    { src: `/videoTestimonials/Reactions/video1.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/Reactions/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/Reactions/video3.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/Reactions/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
+  ],
   before: [
     { src: `/videoTestimonials/BeforeAfter/video1.mp4`, title: `Edge Bonding For Two Teeth`, rating: 5 },
     { src: `/videoTestimonials/BeforeAfter/video2.mp4`, title: `Composite Veneers`, rating: 5 },
@@ -54,7 +48,7 @@ const VideoGallary: React.FC = () => {
 
   return (
     <div className="bg-[#100E10] lg:px-[100px] sm:px-[40px] px-[20px]">
-      <div className="text-[#fff] container">
+      <div className="text-[#fff] md:container">
         <div>
           <VideoTestimonialStrokeLine />
         </div>
@@ -69,7 +63,7 @@ const VideoGallary: React.FC = () => {
               } rounded-full shadow`}
               onClick={() => setActiveCategory(category as 'all' | 'reactions' | 'before')}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'before' ? 'Before & After' : category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
@@ -88,5 +82,3 @@ const VideoGallary: React.FC = () => {
 };
 
 export default VideoGallary;
-
-

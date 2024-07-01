@@ -284,14 +284,16 @@ const Page = () => {
             {activeStep === "formTwo" && (
               <FormTwo
                 handleStepChange={handleStepChange}
-                handleOptionSelect={handleOptionSelect}
-              />
+                handleOptionSelect={handleOptionSelect} handleOptionDeselect={function (option: string, title: string): void {
+                  throw new Error("Function not implemented.");
+                } }              />
             )}
             {activeStep === "formThree" && (
               <FormThree
                 handleStepChange={handleStepChange}
-                handleOptionSelect={handleOptionSelect}
-              />
+                handleOptionSelect={handleOptionSelect} handleOptionDeselect={function (option: string, title: string): void {
+                  throw new Error("Function not implemented.");
+                } }              />
             )}
             {/* {activeStep === "formThree" && (
               <Commercial

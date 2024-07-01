@@ -1,4 +1,5 @@
-import { denturesFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { denturesFaq, serviceCompositeBonding_Dentures, serviceElevet_Dentures, serviceHero2DescDentures } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import DentureHero from "./dentureSection/dentureHero";
 import DentureVideo from "./dentureSection/dentureVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,10 +33,10 @@ import DentureVideo from "./dentureSection/dentureVideo";
         <Navbar />
         <DentureHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2DescDentures} />
         <DentureVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Dentures} />
+        <ServiceElevate  service_elevate={serviceElevet_Dentures}/>
 
         <PatientWalkThrough/>
 
@@ -42,9 +45,9 @@ import DentureVideo from "./dentureSection/dentureVideo";
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={denturesFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

@@ -1,4 +1,5 @@
-import { crownsFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { crownsFaq, serviceCompositeBonding_CrownsVeneers, serviceElevet_CrownsVeneers, serviceHero2Desc_CrownsVeneers } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -20,6 +21,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import CrownsVeneerHero from "./crownsVeneerSection/crownsVeneerHero";
 import CrownsVeneerVideo from "./crownsVeneerSection/crownsVeneerVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,10 +33,10 @@ import CrownsVeneerVideo from "./crownsVeneerSection/crownsVeneerVideo";
         <CrownsVeneerHero/>
         {/* <CrownsVeneerHero/> */}
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_CrownsVeneers} />
         <CrownsVeneerVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_CrownsVeneers} />
+        <ServiceElevate service_elevate={serviceElevet_CrownsVeneers}/>
 
         <PatientWalkThrough/>
 
@@ -42,9 +45,9 @@ import CrownsVeneerVideo from "./crownsVeneerSection/crownsVeneerVideo";
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={crownsFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

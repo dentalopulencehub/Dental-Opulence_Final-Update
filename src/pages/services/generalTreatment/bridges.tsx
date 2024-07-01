@@ -1,4 +1,5 @@
-import { bridgesFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { bridgesFaq, serviceCompositeBonding_Bridges, serviceElevetBridges, serviceHero2DescBridge } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import BridgeVideo from "./bridgesSection/bridgeVideo";
 import BridgesHeroSection from "./bridgesSection/bridgesHeroSection";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
   
@@ -30,11 +33,15 @@ import BridgesHeroSection from "./bridgesSection/bridgesHeroSection";
         <Navbar />
         <BridgesHeroSection/>
         <ServiceAward />
-        <ServiceHero2 />
+        
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2DescBridge} />
         
         <BridgeVideo/>
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Bridges}/>
+        
+        <ServiceElevate service_elevate={serviceElevetBridges}/>
+        
 
         <PatientWalkThrough/>
 
@@ -45,9 +52,9 @@ import BridgesHeroSection from "./bridgesSection/bridgesHeroSection";
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={bridgesFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

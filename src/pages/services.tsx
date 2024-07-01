@@ -25,10 +25,10 @@ export default function Services() {
       <Navbar />
       <ServiceHero />
       <ServiceAward />
-      <ServiceHero2 />
+      {/* <ServiceHero2 />
       <ServiceHero3 />
       <ServiceCompositeBonding />
-      <ServiceElevate />
+      <ServiceElevate /> */}
       <ServiceTransform />
       <CompositeBondingHowLong />
       <ServiceOurService />

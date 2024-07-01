@@ -76,31 +76,7 @@ const OurResult = () => {
           ))}
         </div>
 
-        {/*  <div className="relative" >
-          <div className="embla">
-            <div
-              className="embla__viewport bg-[#F8F8F8] rounded-xl md:px-10 sm:px-5 px-4 md:py-[56px] py-[30px] mt-20 "
-              ref={emblaRef}
-            >
-              <div className="embla__container">
-                {testimonial.map((data, index) => (
-                  <TestimonyCard key={index} {...data} />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="embla__dots">
-            {scrollSnaps.map((_, index: any) => (
-              <DotButton
-                key={index}
-                onClick={() => scrollTo(index)}
-                className={"embla__dot".concat(
-                  index === selectedIndex ? " embla__dot--selected" : ""
-                )}
-              />
-            ))}
-          </div>
-        </div> */}
+ 
       </div>
     </div>
   );

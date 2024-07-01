@@ -1,4 +1,5 @@
-import { fixedRetainersFaq } from "../../../../constants";
+import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
+import { fixedRetainersFaq, serviceCompositeBonding_FixedRetainers, serviceElevet_FixedRetainers, serviceHero2Desc_FixedRetainers } from "../../../../constants";
 import { 
     Layout,
     Navbar,
@@ -21,6 +22,8 @@ import {
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import FixedRetainersHero from "./FixedRetainersSection/FixedRetainersHero";
 import FixedRetainersVideo from "./FixedRetainersSection/FixedRetainersVideo";
+import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
+import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
 
 
@@ -31,19 +34,19 @@ import FixedRetainersVideo from "./FixedRetainersSection/FixedRetainersVideo";
         <Navbar />
         <FixedRetainersHero/>
         <ServiceAward />
-        <ServiceHero2 />
+        <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_FixedRetainers} />
         <FixedRetainersVideo/> 
-        <ServiceCompositeBonding />
-        <ServiceElevate />
+        <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_FixedRetainers} />
+        <ServiceElevate service_elevate={serviceElevet_FixedRetainers}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
         <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
-        <OurProcess />
+        {/* <OurProcess /> */}
         <Faq faqList={fixedRetainersFaq} />
-        <HomePeopleSlider />
+        <HomePeopleSlider2 />
         <Footer />
       </Layout>
     );

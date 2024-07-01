@@ -24,15 +24,24 @@ const VideoCard: React.FC<VideoCardProps> = ({ videoSrc, title, rating }) => {
   };
 
   return (
-    <div className=" p-4 rounded-lg ">
+    <div className="p-4 rounded-lg">
       <div className="relative">
-        <video ref={videoRef} src={videoSrc} className="w-full h-full rounded" />
-        <Image
-          src={videoPlayButton}
-          alt="Play Button"
-          className="absolute inset-0 m-auto cursor-pointer"
+        <video
+          ref={videoRef}
+          src={videoSrc}
+          className="w-full h-full rounded"
           onClick={togglePlayPause}
+          onPause={() => setIsPlaying(false)}
+          onPlay={() => setIsPlaying(true)}
         />
+        {!isPlaying && (
+          <Image
+            src={videoPlayButton}
+            alt="Play Button"
+            className="absolute inset-0 m-auto cursor-pointer"
+            onClick={togglePlayPause}
+          />
+        )}
       </div>
       <h3 className="mt-2 text-lg font-bold">{title}</h3>
       <div className="flex mt-1">

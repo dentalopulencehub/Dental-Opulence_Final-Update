@@ -4,9 +4,12 @@ import service_her2_ill from "../../../assets/images/service-about-image.svg";
 import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
+import { ServiceHero2TextDesc } from "../../../types";
 
-const ServiceHero2 = () => {
-  let value = `A dental bridge fills gaps caused by missing teeth, comprising crowns for adjacent teeth and a false tooth in between to restore the smile's natural appearance. Crafted from quality materials, bridges mimic natural teeth in look and function. Our dentists create personalised treatment plans, ensuring patients achieve their desired smile. Bridges can be color-matched for a seamless blend with natural teeth, offering an invisible solution.`;
+const ServiceHero2 = ({ 
+  textDes
+}: ServiceHero2TextDesc) => {
+  let value = textDes;
 
   const element = useRef(null);
   const container = useRef(null);
