@@ -2812,12 +2812,7 @@ export const people_slider = [
   marque_img4 ,
   marque_img5 ,
   marque_img6 ,
-  marque_img7 ,
-  marque_img8 ,
-  marque_img9 ,
-  marque_img10 ,
-  marque_img11 ,
-  marque_img12 ,
+
 ];
 
 export const people_slider2 = [

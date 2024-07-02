@@ -82,23 +82,22 @@ const DataProtectionBody = () => {
             <div>
                <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D] mt-2'>
                  <li className='p-1 list-disc'>Our Location</li>
-                   <li className='p-1 list-disc ml-3'>1190 Stratford Road, Hall Green, Birmingham, B28 8AB</li>
+                   <li className='p-1 list-disc ml-4'>1190 Stratford Road, Hall Green, Birmingham, B28 8AB</li>
                </ul>
 
                <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D] mt-2'>
                  <li className='p-1 list-disc'>Phone</li>
-                   <li className='p-1 list-disc ml-3'>0121 272 9229 (Fri-Sat)</li>
-                   <li className='p-1 list-disc ml-3'>+447301253447</li>
+                   <li className='p-1 list-disc ml-4'>0121 272 9229</li>
+                   <li className='p-1 list-disc ml-4'>+447301253447</li>
                </ul>
 
                <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D] mt-2'>
                  <li className='p-1 list-disc'>Email</li>
-                   <li className='p-1 list-disc ml-3'>info@do.co.uk</li>
+                   <li className='p-1 list-disc ml-4'>info@do.co.uk</li>
                    
                </ul>
             </div>
-           <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>We are committed to ensuring your personal information is handled with the utmost care and respect.
-           4o</p>
+           <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>We are committed to ensuring your personal information is handled with the utmost care and respect.</p>
         </div>
 
      
