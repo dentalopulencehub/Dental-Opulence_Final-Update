@@ -6,9 +6,13 @@ const ComplaintsProcedureBody = () => {
         <div>
             <h2 className='font-Pangram-Bold text-[24px] font-[600]'>Introduction</h2>
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'> 
-
-             At Dental Opulence, we take complaints very seriously and strive to ensure that all our patients are satisfied with their experience of our service. When patients complain, they are dealt with courteously and promptly so that the matter is resolved as quickly as possible. This procedure is based on these objectives.<br/>
-             Our aim is to address complaints in the manner in which we would want our own complaints about a service to be handled. We learn from every mistake we make and respond to customers concerns in a caring and sensitive manner.
+              At Dental Opulence, we take complaints very seriously and strive to ensure that all our patients are satisfied with their experience 
+              of our service. When patients complain, they are dealt with courteously and promptly so that the matter is resolved as quickly as 
+              possible. This procedure is based on these objectives.
+            </p>
+            <p>
+              Our aim is to address complaints in the manner in which we would want our own complaints about a service to be handled. We learn 
+              from every mistake we make and respond to patient concerns in a caring and sensitive manner.
             </p>
         </div>
 

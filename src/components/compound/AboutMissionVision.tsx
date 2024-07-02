@@ -86,23 +86,30 @@ const AboutMissionVision = () => {
             <div className=" w-full xl:h-[310px] bg-[#222222] rounded-2xl flex sm:flex-row flex-col md:justify-around justify-between xs:p-10 p-7 sm:gap-0 gap-10">
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={expert_dentist_img} alt="" />
-                <h3 className="text-[48px] text-white">20+</h3>
+                <h3 className="text-[48px] text-white">3+</h3>
                 <p className="text-base text-center mr-3 font-Pangram-Regular text-[#D0D0D0]">
-                   SERVICES
+                 AWARDS
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={twoK_review_image} alt="" />
-                <h3 className="text-[48px] text-white">5</h3>
+                <div className="flex ">
+                 <h3 className="text-[48px] text-white">5</h3>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="mt-3">
+                   <path d="M12 2.5l2.47 7.68h8.07l-6.53 4.75 2.47 7.68L12 17.86 5.52 22.61 8 14.93 1.47 10.18h8.07L12 2.5z"/>
+                  </svg>
+                 </div>
+               
+
                 <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
-                RATING
+                  RATINGS
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={threeK_clients_image} alt="" />
                 <h3 className="text-[48px] text-white">500+</h3>
                 <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
-                CLIENTS
+                  SMILE TRANSMORMATIONS
                 </p>
               </div>
             </div>

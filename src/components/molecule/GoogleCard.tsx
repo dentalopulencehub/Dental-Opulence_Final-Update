@@ -9,7 +9,7 @@ const GoogleCard = () => {
       <div />
       <div className="flex gap-[1.63rem]">
         <img src="/image/g.svg" alt='googleIcon' />
-        <div className=" text-2xl font-encode text-black group-hover:text-[#ff3d2d]">
+        <div className=" text-2xl font-encode text-[#BDBDBD] group-hover:text-[#000]">
           <div className="flex  gap-[0.56rem]">
             {arr.map((star, i) => (
               <svg
@@ -18,7 +18,7 @@ const GoogleCard = () => {
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
-                className=" transition-all"
+                className=" transition-all "
                 fill="none"
               >
                 <g clip-path="url(#clip0_550_1606)">
@@ -36,7 +36,7 @@ const GoogleCard = () => {
             ))}
           </div>
 
-          <p className="text-[#1E1E1E] mt-2"> 250 reviews  </p>
+          <p className="text-[#1E1E1E] mt-2"> 30+ reviews   </p>
         </div>
       </div>
      <Link href='https://rb.gy/20dj6m' target='blank'>
