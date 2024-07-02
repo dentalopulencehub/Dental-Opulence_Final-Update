@@ -277,30 +277,19 @@ import hover_all_cases from './assets/images/casesDropdown/hover_all_cases.svg'
 import cases_testi from './assets/images/casesDropdown/cases_testimonial.svg'
 
 
-import HMim1 from './assets/BMimges/BMimg1.svg'
-import HMim2 from './assets/BMimges/BMimg2.svg'
-import HMim3 from './assets/BMimges/BMimg3.svg'
-import HMim4 from './assets/BMimges/BMimg4.svg'
-import HMim5 from './assets/BMimges/BMimg5.svg'
-import HMim6 from './assets/BMimges/BMimg6.svg'
-import HMim7 from './assets/BMimges/BMimg7.svg'
-import HMim8 from './assets/BMimges/BMimg8.svg'
-import HMim9 from './assets/BMimges/BMimg9.svg'
-import HMim10 from './assets/BMimges/BMimg10.svg'
-import HMim11 from './assets/BMimges/BMimg11.svg'
-import HMim12 from './assets/BMimges/BMimg12.svg'
-import HMim13 from './assets/BMimges/BMimg13.svg'
-import HMim14 from './assets/BMimges/BMimg14.svg'
-import HMim15 from './assets/BMimges/BMimg15.svg'
-import HMim16 from './assets/BMimges/BMimg16.svg'
-import HMim17 from './assets/BMimges/BMimg17.svg'
-import HMim18 from './assets/BMimges/BMimg18.svg'
-import HMim19 from './assets/BMimges/BMimg19.svg'
-import HMim20 from './assets/BMimges/BMimg20.svg'
-import HMim21 from './assets/BMimges/BMimg21.svg'
-import HMim22 from './assets/BMimges/BMimg22.svg'
-import HMim23 from './assets/BMimges/BMimg23.svg'
-import HMim24 from './assets/BMimges/BMimg24.svg'
+import HMim1 from './assets/BMimges/MMimgPair1.svg'
+import HMim2 from './assets/BMimges/MMimgPair2.svg'
+import HMim3 from './assets/BMimges/MMimgPair3.svg'
+import HMim4 from './assets/BMimges/MMimgPair4.svg'
+import HMim5 from './assets/BMimges/MMimgPair5.svg'
+import HMim6 from './assets/BMimges/MMimgPair6.svg'
+import HMim7 from './assets/BMimges/MMimgPair7.svg'
+import HMim8 from './assets/BMimges/MMimgPair8.svg'
+import HMim9 from './assets/BMimges/MMimgPair9.svg'
+import HMim10 from './assets/BMimges/MMimgPair10.svg'
+import HMim11 from './assets/BMimges/MMimgPair11.svg'
+import HMim12 from './assets/BMimges/MMimgPair12.svg'
+
 
 
 
@@ -2844,18 +2833,7 @@ export const people_slider2 = [
    HMim10 ,
    HMim11 ,
    HMim12 ,
-   HMim13 ,
-   HMim14 ,
-   HMim15 ,
-   HMim16 ,
-   HMim17 ,
-   HMim18 ,
-   HMim19 ,
-   HMim20 ,
-   HMim21 ,
-   HMim22 ,
-   HMim23 ,
-   HMim24 ,
+  
 ];
 
 

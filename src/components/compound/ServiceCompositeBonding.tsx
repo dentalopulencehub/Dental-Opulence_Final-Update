@@ -27,7 +27,7 @@ const ServiceCompositeBonding = ({
             <div className="w-full xl:h-[200px] bg-[#222222] rounded-2xl xs:p-8 p-7">
               <Image src={about_mission_logo} alt="" />
               <h3 className="text-white text-[34px] mt-[23px] leading-[45px]">
-                100 Happy smile{" "}
+                +1000 Happy smile{" "}
                 <span className="text-[#8A8A8A] font-Pangram-Medium">around the world</span>
               </h3>
             </div>

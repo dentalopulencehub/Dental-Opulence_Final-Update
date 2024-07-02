@@ -110,6 +110,44 @@ const Footer = () => {
               </div>
 
 
+              
+              <div className="mt-8">
+                <h3 className="text-white font-Pangram-Regular text-2xl">
+                   Opening Hours
+                </h3>
+                  <div>
+                     <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Sunday</p>
+                        <p className="">Closed</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Monday</p>
+                        <p>Closed</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Tuesday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Wednesday</p>
+                        <p>Closed</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Thursday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Friday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                      <div className="flex justify-between text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
+                        <p>Saturday</p>
+                        <p>9am - 5pm</p>
+                      </div>
+                  </div>
+               </div>
+
+
             </div>
           </div>
           <div className="w-full">
@@ -220,29 +258,6 @@ const Footer = () => {
                 </div>
 
 
-               <div className="mt-8">
-                <h3 className="text-white font-Pangram-Regular text-2xl">
-                   Opening Hours
-                </h3>
-                  <div>
-                     <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
-                        <p>Tuesday</p>
-                        <p>9am - 5pm</p>
-                      </div>
-                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
-                        <p>Thursday</p>
-                        <p>9am - 5pm</p>
-                      </div>
-                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
-                        <p>Friday</p>
-                        <p>9am - 5pm</p>
-                      </div>
-                      <div className="flex text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-5">
-                        <p>Saturday</p>
-                        <p>9am - 5pm</p>
-                      </div>
-                  </div>
-               </div>
 
 
               </div>
@@ -351,6 +366,15 @@ const Footer = () => {
                       Cookie Policy
                     </p>
                   </div>
+
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/cookie-policy")}>
+                    <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
+                       Competitions & Offers Terms
+                    </p>
+                  </div>
+
+
+
 
                   {/* <div onClick={() => handleSetPathToNavigate(dispatch, "/contact")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
