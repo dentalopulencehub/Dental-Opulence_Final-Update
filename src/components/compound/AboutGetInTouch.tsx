@@ -58,9 +58,10 @@ const AboutGetInTouch = () => {
         <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
           <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-7">
             <Image src={about_mission_logo} alt="" />
-            <p className="text-[22px] font-[500] my-7">
-              To book your appointment, please click the button below:
+            <p className="text-[22px] font-[500] mt-7">
+            To log in to the patient portal or make a new inquiry click the buttons below
             </p>
+            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: new patient should click contact us for inquires and existing user can login.</p>
 
             <div className="">
               <div className="flex gap-2 items-center">
@@ -82,13 +83,19 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="mt-[85px]">
+            <div className="mt-8 flex gap-4 items-center justify-between">
               <Link
                 href={"https://dentalopulence.dentr.net/login"}
                 target="blank"
-                className="bg-[#fff] px-10 py-4 rounded-full"
+                className="bg-[#fff] px-10 py-2 rounded-full"
               >
-                <button className="text-[#000] ">START BOOKING</button>
+                <button className="text-[#000] text-sm ">Login Now</button>
+              </Link>
+              <Link
+                href={"contact"}
+                className="border border-white px-10 py-2 rounded-full"
+              >
+                <button className="text-white ">Contact us</button>
               </Link>
             </div>
           </div>
