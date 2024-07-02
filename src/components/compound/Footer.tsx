@@ -367,7 +367,7 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div onClick={() => handleSetPathToNavigate(dispatch, "/cookie-policy")}>
+                  <div onClick={() => handleSetPathToNavigate(dispatch, "/competitions-and-offer-terms")}>
                     <p className="text-base text-[#A2A2A2] cursor-pointer font-Pangram-Regular mt-6">
                        Competitions & Offers Terms
                     </p>

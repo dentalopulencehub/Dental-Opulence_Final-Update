@@ -22,7 +22,7 @@ const ComplaintsProcedureBody = () => {
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>Complaints Handling Process</p>
             <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>1. Complaints Made in Person or by Telephone</p>
             <div>
-               <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D]'>
+               <ul className='ml-10 text-[16px] font-[400] text-[#2D2D2D]'>
                  <li className='p-1 list-disc'>If a patient complains by telephone or in person, we will listen to their complaint and offer to refer them to the Practice Principal immediately.</li>
                  <li className='p-1 list-disc'>If the Practice Principal is not available at the time, the patient will be informed of when they will be able to speak with the Practice Principal, and arrangements will be made accordingly.</li>
                  <li className='p-1 list-disc'>The staff member will take brief details of the complaint and pass them on to the Practice Principal.</li>
@@ -77,17 +77,17 @@ const ComplaintsProcedureBody = () => {
             <div>
                <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D] mt-2'>
                  <li className='p-1 list-disc'>The Parliamentary and Health Service Ombudsman</li>
-                    <li className='p-1 list-disc ml-2'>Address: Millbank Tower, Millbank, London, SW1P 4QP</li>
-                    <li className='p-1 list-disc ml-2'>Telephone: 03450 154 033</li>
-                    <li className='p-1 list-disc ml-2'>Website: <a href='www.ombudsman.org.uk' target='blank'></a>Website: www.ombudsman.org.uk</li>
+                    <li className='p-1 list-disc ml-5'>Address: Millbank Tower, Millbank, London, SW1P 4QP</li>
+                    <li className='p-1 list-disc ml-5'>Telephone: 03450 154 033</li>
+                    <li className='p-1 list-disc ml-5'>Website: <a href='www.ombudsman.org.uk' target='blank'></a>Website: www.ombudsman.org.uk</li>
                  <li className='p-1 list-disc'>The Dental Complaints Service</li>
-                    <li className='p-1 list-disc ml-2'>Address: The Lansdowne Building, 2 Lansdowne Road, Croydon, Greater London, CR9 2ER</li>
-                    <li className='p-1 list-disc ml-2'>Telephone: 08456 120 540</li>
-                    <li className='p-1 list-disc ml-2'>Website: <a href='www.dentalcomplaints.org.uk' target='blank'></a>Website: www.dentalcomplaints.org.uk</li> 
+                    <li className='p-1 list-disc ml-5'>Address: The Lansdowne Building, 2 Lansdowne Road, Croydon, Greater London, CR9 2ER</li>
+                    <li className='p-1 list-disc ml-5'>Telephone: 08456 120 540</li>
+                    <li className='p-1 list-disc ml-5'>Website: <a href='www.dentalcomplaints.org.uk' target='blank'></a>Website: www.dentalcomplaints.org.uk</li> 
                  <li className='p-1 list-disc'>The General Dental Council</li>
-                    <li className='p-1 list-disc ml-2'>Address: 37 Wimpole Street, London, W1N 8DQ</li>
-                    <li className='p-1 list-disc ml-2'>Telephone: 08452 224 141</li>
-                    <li className='p-1 list-disc ml-2'>Website: <a href='www.gdc-uk.org' target='blank'></a>Website: www.gdc-uk.org</li>     
+                    <li className='p-1 list-disc ml-5'>Address: 37 Wimpole Street, London, W1N 8DQ</li>
+                    <li className='p-1 list-disc ml-5'>Telephone: 08452 224 141</li>
+                    <li className='p-1 list-disc ml-5'>Website: <a href='www.gdc-uk.org' target='blank'></a>Website: www.gdc-uk.org</li>     
                </ul>
             </div>
            
@@ -96,18 +96,18 @@ const ComplaintsProcedureBody = () => {
         <div className='mt-8'>
             <h2 className='font-Pangram-Bold text-[24px] font-[600]'>Contact Details for Dental Opulence</h2>
            <p>Our Location</p>
-           <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D]'>
+           <ul className='ml-10 text-[16px] font-[400] text-[#2D2D2D]'>
                  <li className='p-1 list-disc'>1190 Stratford Road, Hall Green, Birmingham, B28 8AB</li>
            </ul>
 
            <p>Phone</p>
-           <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D]'>
-                 <li className='p-1 list-disc'>0121 272 9229 (Fri-Sat)</li>
+           <ul className='ml-10 text-[16px] font-[400] text-[#2D2D2D]'>
+                 <li className='p-1 list-disc'>0121 272 9229</li>
                  <li className='p-1 list-disc'>+447301253447</li>
            </ul>
 
            <p>Email</p>
-           <ul className='ml-7 text-[16px] font-[400] text-[#2D2D2D]'>
+           <ul className='ml-10 text-[16px] font-[400] text-[#2D2D2D]'>
                  <li className='p-1 list-disc'>info@do.co.uk</li>
            </ul>
            <p>We value your feedback and are committed to improving our services based on the complaints and suggestions we receive.</p>

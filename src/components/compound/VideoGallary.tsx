@@ -23,10 +23,10 @@ const videos = {
     { src: `/videoTestimonials/All/video15.mp4`, title: `Edge Bonding`, rating: 5 },
   ],
   reactions: [
-    { src: `/videoTestimonials/Reactions/video1.mp4`, title: `Composite Veneers`, rating: 5 },
-    { src: `/videoTestimonials/Reactions/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
-    { src: `/videoTestimonials/Reactions/video3.mp4`, title: `Composite Veneers`, rating: 5 },
-    { src: `/videoTestimonials/Reactions/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
+    { src: `/videoTestimonials/latestReaction/video1.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/latestReaction/video2.mp4`, title: `Composite Edge Bonding`, rating: 5 },
+    { src: `/videoTestimonials/latestReaction/video3.mp4`, title: `Composite Veneers`, rating: 5 },
+    { src: `/videoTestimonials/latestReaction/video4.mp4`, title: `Porcelain veneers`, rating: 5 },
   ],
   before: [
     { src: `/videoTestimonials/BeforeAfter/video1.mp4`, title: `Edge Bonding For Two Teeth`, rating: 5 },
