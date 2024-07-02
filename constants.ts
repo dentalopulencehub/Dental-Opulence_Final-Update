@@ -91,8 +91,12 @@ import invisalign_service_image_dark from "./assets/images/invisalign-service-im
 import invisalign_service_image from "./assets/images/invisalign-service-image2.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
 import composite_bonding_service_image_dark from "./assets/images/composite-bonding-service-image2.svg";
-import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
-import general_dentistry_service_image_dark from "./assets/images/general-dentistry-service-image2.svg";
+
+
+import general_dentistry_service_image from "./assets/fonts/composite_veenerDarkBgImg.svg";
+import general_dentistry_service_image_dark from "./assets/fonts/composite_veenerDarkBgImgWhiteBg.svg";
+
+
 
 import dentures_services_image from "./assets/images/dentures-services-image.svg";
 import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg";
@@ -897,7 +901,7 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: teeth_whitening_service_image_dark,
     title: "Teeth Whitening",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. T...",
+      "Teeth whitening is a convenient and effective way to achieve a brighter, more youthful-looking smile. Our dental practice offers this solution to boost self-confidence and improve...",
   },
   {
     image: invisalign_service_image,
@@ -905,7 +909,7 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: invisalign_service_image_dark,
     title: "Invisalign",
     description:
-      "At our dental practice, we understand that a straight and aligned smile can boost self-confidence and improve overall...      ",
+      "We offer Invisalign to boost self-confidence and well-being. This modern alternative to braces uses custom-made, clear aligners to gradually and comfortably shift teeth into place...",
   },
   {
     image: composite_bonding_service_image,
@@ -913,15 +917,15 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: composite_bonding_service_image_dark,
     title: "Composite Bonding",
     description:
-      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of,...",
+      "At Dental Opulence, we specialize in composite bonding, a versatile cosmetic dentistry solution. Our clinic offers two types: composite edge bonding and composite veneers, each catering...",
   },
   {
     image: general_dentistry_service_image,
-    href: "",
+    href: "/services/cosmeticTreatment/composite-veneers",
     image_inverted: general_dentistry_service_image_dark,
-    title: "General Dentistry",
+    title: "Composite Veneers",
     description:
-      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
+      "We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite veneers as a cosmetic solution for improving the...",
   },
 ];
 
