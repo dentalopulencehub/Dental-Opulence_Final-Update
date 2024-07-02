@@ -3,7 +3,7 @@ import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
-import dentures_service_hero_image from "../../../../../assets/images/denture-service-hero-image.svg"
+import dentures_service_hero_image from "../../../../../assets/HeroSectionImages/denture-service-hero-image.svg"
 
 import bridges_service_hero_image from "../../../../../assets/images/bridge-service-hero-image.svg"
 import right_thick from '../../../../../assets/images/right_thick.svg'

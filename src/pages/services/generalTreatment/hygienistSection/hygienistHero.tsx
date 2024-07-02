@@ -3,7 +3,7 @@ import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
-import hygienist_service_hero_image from "../../../../../assets/images/hygienist-service-hero-image.svg"
+import hygienist_service_hero_image from "../../../../../assets/HeroSectionImages/hygienist-service-hero-image.svg"
 
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
@@ -38,7 +38,7 @@ const HygienistHero = () => {
             </div>
           </div>
 
-          <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
+          <div className="flex gap-6 xs:mt-[48px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
             <PrimaryLink
               href="/contact"
               title="Contact Us"
@@ -51,7 +51,7 @@ const HygienistHero = () => {
             />
           </div>
         </div>
-        <Image src={hygienist_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[684px]" />
+        <Image src={hygienist_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[690px]" />
       </div>
     </div>
   );

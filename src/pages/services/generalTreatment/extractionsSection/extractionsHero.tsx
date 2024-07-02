@@ -3,7 +3,7 @@ import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
-import extraction_service_hero_image from "../../../../../assets/images/extractions-service-hero-image.svg"
+import extraction_service_hero_image from "../../../../../assets/HeroSectionImages/extractions-service-hero-image.svg"
 
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
