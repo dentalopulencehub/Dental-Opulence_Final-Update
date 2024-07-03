@@ -58,12 +58,10 @@ const AboutGetInTouch = () => {
         <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
           <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-5">
             <Image src={about_mission_logo} alt="" />
-            <p className="text-[21px] font-[500] mt-6">
-              To log in to the patient portal or make a new inquiry click the buttons below
+            <p className="text-[22px] font-[500] mt-7">
+            To log in to the patient portal or make a new inquiry click the buttons below
             </p>
-            <p className="text-[13px] font-[500] my-4 text-[#C3C3C3]">
-              Note: new patient should click contact us for inquires and existing user can login.
-            </p>
+            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: new patient should click contact us for inquires and existing user can login.</p>
 
             <div className="text-[15px]">
               <div className="flex gap-2 items-center">
@@ -85,17 +83,19 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-5 mt-8">
+            <div className="mt-8 flex gap-4 items-center justify-between">
               <Link
                 href={"https://dentalopulence.dentr.net/login"}
                 target="blank"
-                className="bg-[#fff] px-10 py-3 rounded-full border border-[#fff]"
+                className="bg-[#fff] px-10 py-2 rounded-full"
               >
-                <button className="text-[#000] text-[15px]">Login Now</button>
+                <button className="text-[#000] text-sm ">Login Now</button>
               </Link>
-
-              <Link href={'/contact'} className="border border-[#fff] px-10 py-3 rounded-full hover:bg-[#fff] text-[#fff] hover:text-[#000]">
-                 <button className=" text-[15px]">Contact us</button>
+              <Link
+                href={"contact"}
+                className="border border-white px-10 py-2 rounded-full"
+              >
+                <button className="text-white ">Contact us</button>
               </Link>
             </div>
           </div>
