@@ -42,7 +42,7 @@ const people = [
    },
   {
      id: 3,
-     name: 'Amelia', 
+     name: 'Amelia Jamil', 
      description: "Amelia started as a Dental Nurse in February 2023, she has worked in both NHS and private dentistry. Amelia started at Dental Opulence as one of the first nurses to come on board back in November 2023. Amelia loves to assist in many treatments. In general dentistry her favourite treatments to assist in are Extractions and Root Canals. And in Cosmetic Dentistry her favourite treatment to assist in is Composite Bonding! In her spare time she enjoys going to the gym, baking, reading books and painting.", 
      designation:"Nurse"
     },

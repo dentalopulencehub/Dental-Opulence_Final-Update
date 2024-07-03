@@ -3,7 +3,7 @@ import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
-import white_fillings_service_hero_image from "../../../../../assets/images/white-fillings-service-hero-image.svg"
+import white_fillings_service_hero_image from "../../../../../assets/HeroSectionImages/white-fillings-service-hero-image.svg"
 
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
@@ -51,7 +51,7 @@ const WhiteFillingHero = () => {
             />
           </div>
         </div>
-        <Image src={white_fillings_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[684px]" />
+        <Image src={white_fillings_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[700px]" />
       </div>
     </div>
   );

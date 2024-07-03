@@ -56,14 +56,14 @@ const AboutGetInTouch = () => {
     <div className="text-[#fff] lg:px-[100px] sm:px-[40px] px-[20px] pb-28 pt-8">
       <div className="flex xl:flex-row flex-col gap-6 w-full">
         <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
-          <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-7">
+          <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-5">
             <Image src={about_mission_logo} alt="" />
             <p className="text-[22px] font-[500] mt-7">
             To log in to the patient portal or make a new inquiry click the buttons below
             </p>
             <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: new patient should click contact us for inquires and existing user can login.</p>
 
-            <div className="">
+            <div className="text-[15px]">
               <div className="flex gap-2 items-center">
                 <Image src={email} alt="email" />
                 <p>info@do.co.uk</p>
@@ -180,8 +180,8 @@ const AboutGetInTouch = () => {
                  />
                </div>  
 
-              <div className="mt-2">
-                <button className="bg-[#fff] text-[#000] px-10 mt-5 py-4 rounded-full text-[16px] font-[500]">Submit</button>
+              <div className="mt-4">
+                <button className="bg-[#fff] text-[#000] px-10 mt-5 py-3 rounded-full text-[16px] font-[500]">Submit</button>
               </div>
              
             </form>

@@ -6,7 +6,7 @@ import { GlobalContext } from "../../../../../context/GlobalContext";
 import PrimaryLink from "@/components/atom/PrimaryLink";
 
 
-import bridges_service_hero_image from "../../../../../assets/images/bridge-service-hero-image.svg"
+import bridges_service_hero_image from "../../../../../assets/HeroSectionImages/bridge-service-hero-image.svg"
 
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
@@ -26,7 +26,7 @@ const BridgesHeroSection = () => {
               /from {servicePageData?.price}
             </span> */}
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-8 lg:text-left text-center">
           At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.
           </p>
 
@@ -58,7 +58,7 @@ const BridgesHeroSection = () => {
             />
           </div>
         </div>
-        <Image src={bridges_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[684px]" />
+        <Image src={bridges_service_hero_image} alt="" className="xl:absolute right-0 top-0 xl:w-[680px]" />
       </div>
     </div>
   );

@@ -91,8 +91,12 @@ import invisalign_service_image_dark from "./assets/images/invisalign-service-im
 import invisalign_service_image from "./assets/images/invisalign-service-image2.svg";
 import composite_bonding_service_image from "./assets/images/composite-bonding-service-image.svg";
 import composite_bonding_service_image_dark from "./assets/images/composite-bonding-service-image2.svg";
-import general_dentistry_service_image from "./assets/images/general-dentistry-service-image.svg";
-import general_dentistry_service_image_dark from "./assets/images/general-dentistry-service-image2.svg";
+
+
+import general_dentistry_service_image from "./assets/fonts/composite_veenerDarkBgImg.svg";
+import general_dentistry_service_image_dark from "./assets/fonts/composite_veenerDarkBgImgWhiteBg.svg";
+
+
 
 import dentures_services_image from "./assets/images/dentures-services-image.svg";
 import dentures_service_image_dark from "./assets/images/dentures-services-image-dark.svg";
@@ -273,30 +277,19 @@ import hover_all_cases from './assets/images/casesDropdown/hover_all_cases.svg'
 import cases_testi from './assets/images/casesDropdown/cases_testimonial.svg'
 
 
-import HMim1 from './assets/BMimges/BMimg1.svg'
-import HMim2 from './assets/BMimges/BMimg2.svg'
-import HMim3 from './assets/BMimges/BMimg3.svg'
-import HMim4 from './assets/BMimges/BMimg4.svg'
-import HMim5 from './assets/BMimges/BMimg5.svg'
-import HMim6 from './assets/BMimges/BMimg6.svg'
-import HMim7 from './assets/BMimges/BMimg7.svg'
-import HMim8 from './assets/BMimges/BMimg8.svg'
-import HMim9 from './assets/BMimges/BMimg9.svg'
-import HMim10 from './assets/BMimges/BMimg10.svg'
-import HMim11 from './assets/BMimges/BMimg11.svg'
-import HMim12 from './assets/BMimges/BMimg12.svg'
-import HMim13 from './assets/BMimges/BMimg13.svg'
-import HMim14 from './assets/BMimges/BMimg14.svg'
-import HMim15 from './assets/BMimges/BMimg15.svg'
-import HMim16 from './assets/BMimges/BMimg16.svg'
-import HMim17 from './assets/BMimges/BMimg17.svg'
-import HMim18 from './assets/BMimges/BMimg18.svg'
-import HMim19 from './assets/BMimges/BMimg19.svg'
-import HMim20 from './assets/BMimges/BMimg20.svg'
-import HMim21 from './assets/BMimges/BMimg21.svg'
-import HMim22 from './assets/BMimges/BMimg22.svg'
-import HMim23 from './assets/BMimges/BMimg23.svg'
-import HMim24 from './assets/BMimges/BMimg24.svg'
+import HMim1 from './assets/BMimges/MMimgPair1.svg'
+import HMim2 from './assets/BMimges/MMimgPair2.svg'
+import HMim3 from './assets/BMimges/MMimgPair3.svg'
+import HMim4 from './assets/BMimges/MMimgPair4.svg'
+import HMim5 from './assets/BMimges/MMimgPair5.svg'
+import HMim6 from './assets/BMimges/MMimgPair6.svg'
+import HMim7 from './assets/BMimges/MMimgPair7.svg'
+import HMim8 from './assets/BMimges/MMimgPair8.svg'
+import HMim9 from './assets/BMimges/MMimgPair9.svg'
+import HMim10 from './assets/BMimges/MMimgPair10.svg'
+import HMim11 from './assets/BMimges/MMimgPair11.svg'
+import HMim12 from './assets/BMimges/MMimgPair12.svg'
+
 
 
 
@@ -897,7 +890,7 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: teeth_whitening_service_image_dark,
     title: "Teeth Whitening",
     description:
-      "At our dental practice, we understand that a bright, white smile can boost self-confidence and improve overall well-being. T...",
+      "Teeth whitening is a convenient and effective way to achieve a brighter, more youthful-looking smile. Our dental practice offers this solution to boost self-confidence and improve...",
   },
   {
     image: invisalign_service_image,
@@ -905,7 +898,7 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: invisalign_service_image_dark,
     title: "Invisalign",
     description:
-      "At our dental practice, we understand that a straight and aligned smile can boost self-confidence and improve overall...      ",
+      "We offer Invisalign to boost self-confidence and well-being. This modern alternative to braces uses custom-made, clear aligners to gradually and comfortably shift teeth into place...",
   },
   {
     image: composite_bonding_service_image,
@@ -913,15 +906,15 @@ export const popular_services: HomePopularServicesType[] = [
     image_inverted: composite_bonding_service_image_dark,
     title: "Composite Bonding",
     description:
-      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of,...",
+      "At Dental Opulence, we specialize in composite bonding, a versatile cosmetic dentistry solution. Our clinic offers two types: composite edge bonding and composite veneers, each catering...",
   },
   {
     image: general_dentistry_service_image,
-    href: "",
+    href: "/services/cosmeticTreatment/composite-veneers",
     image_inverted: general_dentistry_service_image_dark,
-    title: "General Dentistry",
+    title: "Composite Veneers",
     description:
-      "Welcome to Dental Opulence, your go-to destination for achieving a radiant and natural smile! Explore the wonders of..",
+      "We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite veneers as a cosmetic solution for improving the...",
   },
 ];
 
@@ -2819,12 +2812,7 @@ export const people_slider = [
   marque_img4 ,
   marque_img5 ,
   marque_img6 ,
-  marque_img7 ,
-  marque_img8 ,
-  marque_img9 ,
-  marque_img10 ,
-  marque_img11 ,
-  marque_img12 ,
+
 ];
 
 export const people_slider2 = [
@@ -2840,18 +2828,7 @@ export const people_slider2 = [
    HMim10 ,
    HMim11 ,
    HMim12 ,
-   HMim13 ,
-   HMim14 ,
-   HMim15 ,
-   HMim16 ,
-   HMim17 ,
-   HMim18 ,
-   HMim19 ,
-   HMim20 ,
-   HMim21 ,
-   HMim22 ,
-   HMim23 ,
-   HMim24 ,
+  
 ];
 
 

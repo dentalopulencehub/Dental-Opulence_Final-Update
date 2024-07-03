@@ -96,7 +96,7 @@ const PrivacyPolicyBody = () => {
 
         <div  className='mt-8'>
             <h2 className='font-Pangram-Bold text-[24px] font-[600]'>Changes to this privacy notice</h2>
-            <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>We keep our privacy notice under regular review. This privacy notice was last updated on May 14th, 2018.</p>
+            <p className='mt-2 text-[16px] font-[400] text-[#2D2D2D]'>We keep our privacy notice under regular review. This privacy notice was last updated on March 14th, 2024.</p>
         </div>
 
     </div>

@@ -121,7 +121,14 @@ const AboutMissionVision = () => {
               </div>
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={twoK_review_image} alt="" />
-                <h3 className="text-[48px] text-white">5</h3>
+                <div className="flex ">
+                 <h3 className="text-[48px] text-white">5</h3>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="mt-3">
+                   <path d="M12 2.5l2.47 7.68h8.07l-6.53 4.75 2.47 7.68L12 17.86 5.52 22.61 8 14.93 1.47 10.18h8.07L12 2.5z"/>
+                  </svg>
+                 </div>
+               
+
                 <p className="text-base font-Pangram-Regular text-[#D0D0D0]">
                   RATING
                 </p>
