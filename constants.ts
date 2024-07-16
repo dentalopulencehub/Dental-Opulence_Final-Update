@@ -1310,15 +1310,6 @@ export const our_pricing_services2: HomeOurServicesType[] = [
     image: teeth_whitening_service_icon,
     image_inverted: teeth_whitening_service_icon_light,
   },
-  {
-    title: "Composite Veneers",
-    price:"£110",
-    href: "/services/cosmeticTreatment/composite-veneers",
-    description:
-      "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
-    image: composite_veneers_service_icon,
-    image_inverted: composite_veneers_service_icon_light,
-  },
 
 
   {
