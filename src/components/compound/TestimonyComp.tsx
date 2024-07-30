@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, ReactNode } from 'react'
+import React, { useState, ReactNode, useEffect } from 'react'
 import { motion } from "framer-motion";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
@@ -9,9 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import SecondaryLink from '../atom/SecondaryLink';
 
-const CARD_WIDTH = 320;
-const MARGIN = 20;
-const CARD_SIZE = CARD_WIDTH + MARGIN;
+
 const BREAKPOINTS = {
   sm: 640,
   lg: 1024,
@@ -24,20 +22,31 @@ interface CardCarouselProps {
 const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
+  const [cardSize, setCardSize] = useState(340); // Default card size (including margin)
   const childrenArray = React.Children.toArray(children);
   const isMobile = width <= BREAKPOINTS.sm;
   const visibleCards = isMobile ? 1 : width > BREAKPOINTS.lg ? 3 : 2;
+  
+  useEffect(() => {
+    // Adjust card size based on screen width
+    if (isMobile) {
+      setCardSize(width);
+    } else {
+      setCardSize(340); // Default desktop card size
+    }
+  }, [width, isMobile]);
+
   const CAN_SHIFT_LEFT = offset < 0;
-  const CAN_SHIFT_RIGHT = Math.abs(offset) < CARD_SIZE * (childrenArray.length - visibleCards);
+  const CAN_SHIFT_RIGHT = Math.abs(offset) < cardSize * (childrenArray.length - visibleCards);
   
   const shiftLeft = () => {
     if (!CAN_SHIFT_LEFT) return;
-    setOffset((pv) => Math.min(0, pv + CARD_SIZE));
+    setOffset((pv) => Math.min(0, pv + cardSize));
   };
   
   const shiftRight = () => {
     if (!CAN_SHIFT_RIGHT) return;
-    setOffset((pv) => Math.max(-(CARD_SIZE * (childrenArray.length - visibleCards)), pv - CARD_SIZE));
+    setOffset((pv) => Math.max(-(cardSize * (childrenArray.length - visibleCards)), pv - cardSize));
   };
 
   return (
@@ -48,7 +57,20 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
             animate={{ x: offset }}
             className="flex"
           >
-            {children}
+            {React.Children.map(children, (child, index) => (
+              <div 
+                key={index} 
+                style={{ 
+                  width: cardSize, 
+                  flexShrink: 0, 
+                  padding: isMobile ? 0 : '0 10px',
+                  height: isMobile ? 'auto' : '400px' // Fixed height for larger screens
+                }}
+                className="flex"
+              >
+                {child}
+              </div>
+            ))}
           </motion.div>
         </div>
         {childrenArray.length > visibleCards && (
@@ -181,26 +203,28 @@ const TestimonyComp = () => {
       <div className='flex flex-col mt-6 md:flex-row items-center'>
         <GoogleCard />
         <div className="w-full md:w-auto mt-6 md:mt-0">
-          <CardCarousel>
-            {reviews.map((review, i) => (
-              <div
-                key={i}
-                className="w-full md:ml-5 md:w-[316px] flex-shrink-0 px-2 md:px-0"
-              >
-                <div className="pt-[2.625rem] pb-[2.933rem] w-full h-full min-h-[24.5rem] px-4 md:px-8 rounded-[0.875rem] bg-black flex flex-col justify-between">
-                  <div>
-                    <p className="text-yellow-400 font-encode font-medium text-xl md:text-2xl">
-                      {renderStars(review.rating)}
-                    </p>
-                    <p className="mt-[2rem] font-Pangram-Light font-[200] text-white text-[14px]">
-                      {review.comment}
-                    </p>
-                  </div>
-                  <p className="text-white font-[500] text-[14px] md:text-[18px] uppercase">{review.name}</p>
-                </div>
-              </div>
-            ))}
-          </CardCarousel>
+        <CardCarousel>
+  {reviews.map((review, i) => (
+    <div
+      key={i}
+      className="w-full h-full flex-shrink-0"
+    >
+      <div className="h-full w-full rounded-[0.875rem] bg-black flex flex-col justify-between p-8">
+        <div>
+          <p className="text-yellow-400 font-encode font-medium text-xl md:text-2xl">
+            {renderStars(review.rating)}
+          </p>
+          <p className="mt-6 font-Pangram-Light font-[200] text-white text-[14px]">
+            {review.comment}
+          </p>
+        </div>
+        <p className="text-white font-[500] text-[14px] md:text-[18px] uppercase mt-4">
+          {review.name}
+        </p>
+      </div>
+    </div>
+  ))}
+</CardCarousel>
         </div>
       </div>
     </div>
