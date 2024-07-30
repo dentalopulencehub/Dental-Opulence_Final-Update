@@ -31,6 +31,7 @@ import {
   CheckPointFormSix,
   CheckPointFormSeven,
   ContactForm,
+  CombinedForm,
 } from "./Form";
 import { useState } from "react";
 import arrow_hex_1 from "../../../assets/images/arrow-left-light-large.svg";
@@ -311,6 +312,13 @@ const Page = () => {
 
             {activeStep === "formFive" && (
               <Residential
+                handleStepChange={handleStepChange}
+                handleOptionSelect={handleOptionSelect}
+                handleOptionDeselect={handleOptionDeselect}
+              />
+            )}
+             {activeStep === "formCombined" && (
+              <CombinedForm
                 handleStepChange={handleStepChange}
                 handleOptionSelect={handleOptionSelect}
                 handleOptionDeselect={handleOptionDeselect}

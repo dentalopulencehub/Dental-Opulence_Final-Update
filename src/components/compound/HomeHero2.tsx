@@ -32,11 +32,8 @@ const HomeHero2 = () => {
   return (
     <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
-          <h2 className="sm:text-[40px] text-[30px] text-white font-Pangram-Bold">
-            Experience Dental Opulence: Radiant Smiles, Optimal Oral Health
-          </h2>
-          <Image src={home_hero2_ill} alt="" className="mt-10" />
+        <div className="xl:max-w-[600px] md:w-[70%] w-[90%]">
+          <Image src={home_hero2_ill} alt="" className="mt-10 xl:w-[500px]" />
         </div>
 
         <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
@@ -45,7 +42,7 @@ const HomeHero2 = () => {
             <Image src={underline_vector} alt="" />
           </p>
           <h4
-            className="text-white font-Pangram-Regular mt-6 sm:text-[30px] text-[20px] sm:leading-[36px] leading-[28px] xl:text-left text-center flex flex-wrap"
+            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] xl:text-left text-center flex flex-wrap"
             ref={element}
           >
             {words.map((word, index) => {

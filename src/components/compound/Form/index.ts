@@ -23,6 +23,7 @@ import CheckPointFormFive from "./checkpointForms/CheckPointFormFive";
 import CheckPointFormSix from "./checkpointForms/CheckPointFormSix";
 import CheckPointFormSeven from "./checkpointForms/CheckPointFormSeven";
 import ContactForm from "./ContactForm";
+import CombinedForm from "./CommercialAndResidential";
 
 
 
@@ -35,7 +36,7 @@ export{
     ResidentialFormOne,
     ResidentialFormTwo,
     EnSuitForm,
-     
+     CombinedForm,
 
     CommercialFormOne,
     CommercialFormTwo,

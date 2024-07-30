@@ -28,6 +28,7 @@ export default function Home() {
     <Layout>
       <Navbar />
       <HomeHero />
+
       <HomeAwards />
       <HomeHero2 />
       <HomePeopleSlider />
@@ -40,7 +41,8 @@ export default function Home() {
       <CompositeBondingHowLong />
       <OurResult />
       <TestimonyComp />
-      <OurProcess />
+
+      {/* <OurProcess /> */}
       <Faq faqList={faq} />
       <HomePeopleSlider2 />
       <Footer />

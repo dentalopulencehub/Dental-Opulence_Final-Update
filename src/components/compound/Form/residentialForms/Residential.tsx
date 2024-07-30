@@ -30,7 +30,7 @@ const FormFour = ({ handleStepChange, handleOptionSelect, handleOptionDeselect }
           Select all applicable services.
         </p>
       </div>
-      <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-center">
+      <div className="flex max-w-5xl flex-wrap gap-2 md:gap-4 justify-center items-center">
         {residentialForm.map((item, index) => (
           <div key={index} className="btn cursor-pointer relative">
             <div

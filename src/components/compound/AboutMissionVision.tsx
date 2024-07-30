@@ -1,6 +1,6 @@
 import React, { ReactNode, useRef, useState } from "react";
 import Image from "next/image";
-import about_mission_logo from "../../../assets/images/about-mission-logo.svg";
+import about_mission_logo from "../../../assets/images/do.svg";
 import expert_dentist_img from "../../../assets/images/expert-dentists-img.svg";
 import twoK_review_image from "../../../assets/images/2k-review-img.svg";
 import threeK_clients_image from "../../../assets/images/3k-client-img.svg";
@@ -63,7 +63,7 @@ const AboutMissionVision = () => {
           <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
             <div className="sm:max-w-[425px] w-full xl:h-[225px] bg-[#222222] rounded-2xl xs:p-10 p-7">
               <Image src={about_mission_logo} alt="" />
-              <h3 className="text-white text-[48px] mt-[58px]">Who we are</h3>
+              <h3 className="text-white text-[30px] md:text-[48px] mt-[38px]">Who we are</h3>
             </div>
             <div className="w-full xl:min-h-[388px] bg-[#222222] rounded-2xl xs:p-10 p-7">
               <h4 className="text-white text-[34px]">Vision</h4>

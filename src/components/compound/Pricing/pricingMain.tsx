@@ -1,105 +1,54 @@
+"use client"
 import React, { useRef, useState } from "react";
-import Image from "next/image";
-
-import general_treatment_tooth_icon from "../../../../assets/images/general-treatment-tooth-icon.svg";
-
-
-
-import general_treatment_tooth_icon_dark from "../../../../assets/images/general-treatment-tooth-icon-inverted.svg";
-import cosmetic_treatment_tooth_icon from "../../../../assets/images/cosmetic-treatment-tooth-icon.svg";
-import cosmetic_treatment_tooth_icon_dark from "../../../../assets/images/cosmetic-treatment-tooth-icon-inverted.svg";
-
-// import { our_services, our_services2 } from "../../../constants";
-// import { OurServiceCard, OurServiceCardDark } from "../molecule";
-
-import { motion } from "framer-motion";
+import { our_pricing_services, our_pricing_services2 } from "../../../../constants";
 import PricingCard1 from "./PricingCard1";
 import PricingCard2 from "./PricingCard2";
-import { our_pricing_services, our_pricing_services2 } from "../../../../constants";
 
-type theme = "light" | "dark";
+type Theme = "light" | "dark";
 
-const PricingMain = () => {
+const PricingMain: React.FC = () => {
   const tl: any = useRef(null);
+  const [selectedTheme, setSelectedTheme] = useState<Theme>("light");
 
-  const [isHovered, setIsHovered] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
-
-  const [selectedTheme, setSelectedTheme] = useState<theme>("light");
-
-  const handleHover1 = () => {
-    setIsHovered(!isHovered);
-  };
-
-  const handleHover2 = () => {
-    setIsHovered2(!isHovered2);
-  };
-
-  const handleSetSelectedTheme = (_theme: theme) => {
-    setSelectedTheme(_theme);
+  const handleSetSelectedTheme = (theme: Theme) => {
+    setSelectedTheme(theme);
   };
 
   return (
-    <div className={`w-full md:py-20 py-10`}>
+    <div className={`w-full`}>
       <div
-        className={`flex sm:flex-row  sm:items-end items-start mt-10 gap-4 justify-center border-b ${
+        className={`flex sm:flex-row sm:items-end items-start mt-10 gap-4 justify-center border-b ${
           selectedTheme === "light" ? "border-[#000000]" : "border-[#000000]"
         }`}
       >
         <div
-          onClick={() => handleSetSelectedTheme("light")}
-          className={` ${
-            selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-[10px] py-[10px]" : ""
-          } flex gap-3 border border-[#000000] md:py-[10px] py-[10px] flex-row items-center justify-center service-tooth-div bg-[#000000] rounded-tl-2xl rounded-tr-[4px] px-3  cursor-pointer`}
+          onClick={() => handleSetSelectedTheme("dark")}
+          className={`flex gap-3 flex-row items-center justify-center service-tooth-div
+        bg-[#161616] border border-[#000000]
+       rounded-t-xl px-4 md:py-[9px] py-[12px] cursor-pointer`}
         >
-          <Image
-            src={
-              selectedTheme === "light"
-                ? general_treatment_tooth_icon
-                : general_treatment_tooth_icon_dark
-            }
-            alt="Tooth image light"
-            className="tooth-image w-8 h-8"
-          />
+          <p className={`md:text-[18px] text-[15px] mt-[0px] text-white`}>
+            Cosmetic Treatments
+          </p>
+        </div>
+        <div
+          onClick={() => handleSetSelectedTheme("light")}
+          className={`${
+            selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-0 py-2" : "bg-gray-100"
+          } flex gap-3 md:py-[9px] border border-[#000000] py-[7px] flex-row items-center justify-center service-tooth-div rounded-t-xl px-4 cursor-pointer`}
+        >
           <p
-            className={`font-Pangram-Bold md:text-[18px] text-[15px] ${
-              selectedTheme === "dark" ? "text-[#000000] " : "text-white"
-            } `}
+            className={`md:text-[18px] text-[15px] ${
+              selectedTheme === "dark" ? "text-[#000000]" : "text-gray-800"
+            }`}
           >
             General Treatments
           </p>
         </div>
-        
-        <div
-          onClick={() => handleSetSelectedTheme("dark")}
-          className={` flex gap-3 flex-row items-center justify-center service-tooth-div md:py-[10px] py-[10px] ${
-            selectedTheme === "dark"
-              ? "bg-[#161616] border border-[#000000]"
-              : "border border-[#000000]"
-          } rounded-tl-2xl rounded-tr-[4px] px-3 md:py-[10px] py-[10px] cursor-pointer`}
-        >
-          <Image
-            src={
-              selectedTheme === "dark"
-                ? cosmetic_treatment_tooth_icon_dark
-                : cosmetic_treatment_tooth_icon
-            }
-            alt="Tooth image light"
-            className="tooth-image w-8 h-8"
-          />
-          <p
-            className={`font-Pangram-Bold md:text-[18px] text-[15px] mb-[1px] ${
-              selectedTheme === "light" ? "text-[#100E10]" : "text-white"
-            } `}
-          >
-            Cosmetic Treatments
-          </p>
-        </div>
       </div>
-      
       <div
-        className={`w-full md:py-[100px] py-[80px] lg:px-[100px] sm:px-[40px] px-[20px] ${
-          selectedTheme === "light" ? "bg-white" : "bg-[#FFF]"
+        className={`w-full md:py-[120px] py-[80px] lg:px-[100px] sm:px-[40px] px-[20px] ${
+          selectedTheme === "light" ? "bg-white" : "bg-[#161616]"
         }`}
       >
         {selectedTheme === "light" ? (
@@ -112,8 +61,6 @@ const PricingMain = () => {
               />
             ))}
           </div>
-
-          
         ) : (
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
             {our_pricing_services2.map((service, index) => (
@@ -123,9 +70,6 @@ const PricingMain = () => {
                 selectedTheme={selectedTheme}
               />
             ))}
-
-             
-
           </div>
         )}
       </div>

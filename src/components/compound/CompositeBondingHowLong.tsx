@@ -44,7 +44,7 @@ const CompositeBondingHowLong: React.FC = () => {
           
           
           <h2 className="font-Pangram  font-bold md:text-[48px] text-[35px] leading-[53px] text-[#100E10] text-center sm:max-w-[593px]">
-            Our patient’s success story showcase
+            Our Patients’ Success Stories
           </h2>
           <p className="text-[#4C4C4C] text-[18px] font-Pangram-Regular text-center sm:max-w-[453px] mt-4 mb-14">
              Explore Our Smile Transformations at Dental Opulence. View our impressive results below.

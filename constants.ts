@@ -16,6 +16,10 @@ import {
   ServiceHero2TextDesc,
 } from "./types";
 
+import awardimagecolor1 from "./assets/images/a1.svg"
+import awardimagecolor2 from "./assets/images/a2.svg"
+import awardimagecolor3 from "./assets/images/a3.svg"
+import awardimagecolor4 from "./assets/images/a4.svg"
 import bridge_link_icon from "./assets/images/bridge-link-icon.svg";
 import bridge_link_icon_light from "./assets/images/bridge-link-icon.svg";
 import crown_link_icon from "./assets/images/crown-link-icon.svg";
@@ -692,6 +696,7 @@ export const navlinks = [
         icon: crown_link_icon,
         icon_hovered: crown_link_icon,
       },
+      
       {
         title: "Dentures",
         href: "/services/generalTreatment/dentures",
@@ -725,6 +730,18 @@ export const navlinks = [
       {
         title: "Root Canal Treatments",
         href: "/services/generalTreatment/root-canal-treatments",
+        icon: root_canal_link_icon,
+        icon_hovered: root_canal_link_icon,
+      },
+      {
+        title: "Sedation",
+        href: "/services/generalTreatment/sedation",
+        icon: root_canal_link_icon,
+        icon_hovered: root_canal_link_icon,
+      },
+      {
+        title: "Scale & Polish",
+        href: "/services/generalTreatment/scale-and-polish",
         icon: root_canal_link_icon,
         icon_hovered: root_canal_link_icon,
       },
@@ -763,6 +780,12 @@ export const navlinks = [
         href: "/services/cosmeticTreatment/crowns-veneers",
         icon: crown_veneers_link_icon,
         icon_hovered: crown_veneers_link_icon,
+      },
+      {
+        title: "Implants",
+        href: "/services/cosmeticTreatment/implants",
+        icon: composite_bonding_link_icon,
+        icon_hovered: composite_bonding_link_icon,
       },
       {
         title: "Composite Veneers",
@@ -845,18 +868,12 @@ export const home_awards_images = [
 
 
 export const homer_awards_images2 = [
-  award_img7,
-  award_img8,
-  award_img9,
-  award_img10,
-  award_img11,
-  award_img12,
-  award_img7,
-  award_img8,
-  award_img9,
-  award_img10,
-  award_img11,
-  award_img12,
+  awardimagecolor1,
+  awardimagecolor2,
+  awardimagecolor3,
+  awardimagecolor4,
+
+
 ];
 
 
@@ -904,9 +921,9 @@ export const popular_services: HomePopularServicesType[] = [
     image: composite_bonding_service_image,
     href: "/services/cosmeticTreatment/composite-bonding",
     image_inverted: composite_bonding_service_image_dark,
-    title: "Composite Bonding",
+    title: "Edge Bonding",
     description:
-      "At Dental Opulence, we specialize in composite bonding, a versatile cosmetic dentistry solution. Our clinic offers two types: composite edge bonding and composite veneers, each catering...",
+      "We understand that the look of your teeth can greatly impact your self-confidence and overall well-being. That's why we provide composite edge bonding as a solution to enhance the...",
   },
   {
     image: general_dentistry_service_image,
@@ -989,6 +1006,24 @@ export const our_services: HomeOurServicesType[] = [
     href: "/services/generalTreatment/examination",
     description:
       "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+    image: examination_services_image,
+    image_inverted: examination_services_image_dark,
+  },
+  {
+    title: "Scale and Polish",
+    price:"",
+    href: "/services/generalTreatment/scale-and-polish",
+    description:
+      "Scaling removes plaque (calculus) causing teeth damage and gum disease then polishing smooths teeth.",
+    image: examination_services_image,
+    image_inverted: examination_services_image_dark,
+  },
+  {
+    title: "Sedation",
+    price:"",
+    href: "/services/generalTreatment/sedation",
+    description:
+      "Oral sedation involves administering sedative drugs orally to ease anxiety and facilitate dental procedures.",
     image: examination_services_image,
     image_inverted: examination_services_image_dark,
   },
@@ -1105,15 +1140,15 @@ export const our_services2: HomeOurServicesType[] = [
 
 
 
-  // {
-  //   title: "Implant (Single Tooth)",
-  //   price:"from £2500",
-  //   href: "",
-  //   description:
-  //     "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
-  //     image: composite_bonding_service_icon,
-  //     image_inverted: composite_bonding_service_icon_light,
-  // },
+  {
+    title: "Implant",
+    price:"from £2500",
+    href: "/services/cosmeticTreatment/implants",
+    description:
+      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      image: composite_bonding_service_icon,
+      image_inverted: composite_bonding_service_icon_light,
+  },
   // {
   //   title: "Dentures Stabilisation",
   //   price:"from £4700",
@@ -1602,6 +1637,78 @@ export const serviceElevet_WhiteFillings: ServiceElevateType[]= [
   },
 ] 
 
+export const serviceElevet_ScaleAndPolish: ServiceElevateType[]= [
+  {
+    topTitle:'Scale & Polish' ,
+    title: "Improved Oral Hygiene",
+    description:
+      "Regular scaling and polishing remove plaque and tartar, lowering the risk of cavities and gum disease.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Fresh Breath",
+    description:
+      "White fillings seamlessly repair cavities, chips, and cracks, blending naturally with your teeth for aesthetic restoration.It eliminate bacteria and food particles that cause bad breath, ensuring long-lasting freshness and confidence in social interactions.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Enhanced Aesthetics",
+    description:
+      "Polishing smooths tooth surfaces, making teeth look cleaner and shinier, boosting self-esteem and encouraging confident smiles.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_Sedation: ServiceElevateType[]= [
+  {
+    topTitle:'Sedation' ,
+    title: "Enhanced Comfort",
+    description:
+      "Dental sedation minimizes discomfort during procedures, ensuring a more relaxed experience for anxious patients.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Reduced Anxiety",
+    description:
+      "Sedation alleviates dental anxiety, making necessary treatments more accessible and less daunting.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Cooperation",
+    description:
+      "Sedated patients are more cooperative, allowing for shorter appointment times and better outcomes.",
+    number_img: service_03,
+  },
+] 
+
+export const serviceElevet_Implants: ServiceElevateType[]= [
+  {
+    topTitle:'Implants' ,
+    title: "Enhanced Functionality",
+    description:
+      "Implants improve chewing ability, allowing you to enjoy various foods comfortably while mimicking natural teeth for stability and confidence.",
+    number_img: service_01,
+  },
+  {
+    topTitle:'' ,
+    title: "Improved Aesthetics",
+    description:
+      "Implants mimic natural teeth, enhancing your smile and boosting self-esteem. They blend seamlessly with existing teeth for a natural look.",
+    number_img: service_02,
+  },
+  {
+    topTitle:'' ,
+    title: "Long-Lasting Durability",
+    description:
+      "With proper care, implants can last a lifetime, offering a cost-effective solution without the need for frequent replacements or adjustments.",
+    number_img: service_03,
+  },
+] 
+
 export const serviceElevet_CrownsVeneers: ServiceElevateType[]= [
   {
     topTitle:'Crowns / Veneers' ,
@@ -2010,7 +2117,36 @@ export const serviceCompositeBonding_WhiteFillings: ServiceCompositeBondingType[
     definationTitleDesc:'White fillings, also known as composite fillings, are tooth-colored materials used to repair decayed, chipped, or cracked teeth. They blend seamlessly with your natural teeth, providing a more aesthetically pleasing and less noticeable alternative to traditional metal fillings.'
   }
 ]
+export const serviceCompositeBonding_Sedation: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Dental Sedation' ,
 
+    situationTitleData1:'Minor surgeries',
+    situationTitleData2:'Dental anxiety',
+    situationTitleData3:'Paediatric procedures',
+    situationTitleData4:'Painful treatments',
+    situationTitleData5:'Strong gag reflex',
+
+    definationTitle: 'Dental Sedation' ,
+     verb:'Is',
+    definationTitleDesc:'Sedation is a medical process used to calm patients or make them sleep during procedures. It involves administering drugs to reduce anxiety, discomfort, and pain. Patients remain conscious but relaxed, or in deeper sedation, they may be asleep.'
+  }
+]
+export const serviceCompositeBonding_ScaleAndPolish: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Scale & Polish' ,
+
+    situationTitleData1:'Preventive Care',
+    situationTitleData2:'Post-Dental Work',
+    situationTitleData3:'Bad Breath ',
+    situationTitleData4:'Before Orthodontics',
+    situationTitleData5:'Tartar Buildup',
+
+    definationTitle: 'Scale & Polish' ,
+     verb:'Are',
+    definationTitleDesc:'Scale and polish is a dental procedure designed to improve oral hygiene. It involves scaling to remove hardened plaque, or calculus, from teeth, followed by polishing to smooth surfaces and enhance shine, ultimately promoting better dental health and preventing gum disease.'
+  }
+]
 export const serviceCompositeBonding_CrownsVeneers: ServiceCompositeBondingType[]= [
   {
     situationTitle:'Crowns / Veneers' ,
@@ -2142,6 +2278,21 @@ export const serviceCompositeBonding_Compositebonding : ServiceCompositeBondingT
   }
 ]
 
+export const serviceCompositeBonding_Implants: ServiceCompositeBondingType[]= [
+  {
+    situationTitle:'Dental Implants' ,
+
+    situationTitleData1:'Missing Teeth',
+    situationTitleData2:'Severe Tooth Decay',
+    situationTitleData3:'Jawbone Loss',
+    situationTitleData4:'Stability Issues',
+    situationTitleData5:'Facial Aesthetics',
+
+    definationTitle: 'Dental Implants' ,
+     verb:'Are',
+    definationTitleDesc:'Dental implants are titanium posts surgically placed in the jawbone to replace missing teeth. They serve as artificial tooth roots, providing a stable foundation for crowns or dentures, and help restore functionality and aesthetics to your smile effectively and durably.'
+  }
+]
 export const serviceCompositeBonding_InternalToothWhitening : ServiceCompositeBondingType[]= [
   {
     situationTitle:'Internal Tooth Whitening' ,
@@ -2264,7 +2415,16 @@ export const serviceHero2Desc_WhiteFillings : ServiceHero2TextDesc[]=[
     textDes:'During your visit, our dentist will remove decay and place a tooth-colored filling, made of composite resin matching your natural teeth. White fillings bond directly to the tooth surface, providing a strong, durable, and virtually invisible restoration. They preserve tooth structure and enhance your smile\'s appearance. Contact us to learn more about how white fillings can benefit you.'
   }
 ]
-
+export const serviceHero2Desc_ScaleAndPolish : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Scaling is a vital dental procedure that targets hardened plaque, or calculus, which forms on teeth and can lead to significant oral health issues, such as cavities and gum disease. After scaling, polishing is performed to smooth the tooth surface, enhancing their appearance and making it harder for plaque to accumulate.'
+  }
+]
+export const serviceHero2Desc_Sedation : ServiceHero2TextDesc[]=[
+  {
+    textDes:'Oral sedation dentistry involves administering sedative medication orally to help patients relax during dental procedures. It is especially beneficial for those with dental anxiety or phobia, ensuring a more comfortable and stress-free experience. The sedation allows patients to stay awake but feel significantly more at ease and less aware of the procedure.'
+  }
+]
 export const serviceHero2Desc_CrownsVeneers : ServiceHero2TextDesc[]=[
   {
     textDes:'Crowns and veneers are both custom-made dental solutions that can restore and enhance the appearance of your teeth. Our skilled dentists will work with you to determine the best solution for your individual needs and create a treatment plan that will give you the smile you deserve. Contact us today to schedule your appointment and learn more about how crowns and veneers can benefit you and give you the smile you’ve always wanted.'
@@ -2273,7 +2433,7 @@ export const serviceHero2Desc_CrownsVeneers : ServiceHero2TextDesc[]=[
 
 export const serviceHero2Desc_Examination : ServiceHero2TextDesc[]=[
   {
-    textDes:'A dental bridge fills gaps caused by missing teeth, comprising crowns for adjacent teeth and a false tooth in between to restore the smile\'s natural appearance. Crafted from quality materials, bridges mimic natural teeth in look and function. Our dentists create personalised treatment plans, ensuring patients achieve their desired smile. Bridges can be color-matched for a seamless blend with natural teeth, offering an invisible solution.'
+    textDes:'During your visit, our dentists will thoroughly examine your teeth, gums, and mouth, checking for cavities, gum disease, and other oral health issues. They will also assess the appearance of your smile and discuss any cosmetic concerns, offering treatment recommendations. Contact us to schedule your next examination and experience the difference in your oral health and appearance.'
   }
 ]
 
@@ -2344,7 +2504,11 @@ export const serviceHero2Desc_RoutineExamination : ServiceHero2TextDesc[]=[
     textDes:'During your visit, our experienced dentists conduct thorough examinations, checking for cavities, gum disease, and other oral health concerns. Digital X-rays provide detailed views for personalised treatment plans. Preventative care and education are prioritised, with routine examinations crucial for identifying and preventing dental problems. Schedule your examination today for optimal oral health.'
   }
 ]
-
+export const serviceHero2Desc_Implants : ServiceHero2TextDesc[]=[
+  {
+    textDes:'A dental implant is a titanium post surgically inserted into the jawbone to serve as a sturdy foundation for a replacement tooth or bridge. This procedure not only enhances the appearance of your smile but also restores functionality, allowing for improved chewing and speaking. With proper maintenance, implants can last many years.'
+  }
+]
 export const serviceHero2Desc_CompositeEdgebonding : ServiceHero2TextDesc[]=[
   {
     textDes:'Composite edge bonding is a non-invasive procedure that involves applying a tooth-colored composite resin material to the edges of your teeth. This material is sculpted and shaped to match the contour of your existing teeth, and is then hardened and polished to create a natural-looking finish. The result is an improvement in the appearance of your teeth, that can be used to fix minor imperfections such as chips, cracks, or gaps.'
@@ -2410,6 +2574,7 @@ export const whiteFillingFaq: FaqType[] = [
   },
  
 ];
+
 
 export const crownsFaq: FaqType[] = [
   {
@@ -2935,13 +3100,13 @@ export const stepOne = [
 // form 3 - what type of project
 export const stepTwo = [
   {
-    title: "What typeof service?",
+    title: "How can we improve your smile?",
     id: 1,
     label: "General Treatments",
   },
 
   {
-    title: "What typeof service?",
+    title: "How can we improve your smile?",
     id: 2,
     label: "Cosmetics Treatments",
   },
@@ -3002,6 +3167,16 @@ export const commercialForm = [
     id: 8,
     label: "Examination",
   },
+  {
+    title: "Select service type",
+    id: 9,
+    label: "Scale & Polish",
+  },
+  {
+    title: "Select service type",
+    id: 10,
+    label: "Sedation",
+  },
 ];
 
 //form4 main=> residential form 1
@@ -3056,8 +3231,14 @@ export const residentialForm = [
   {
     title: "Select service type",
     id: 10,
+    label: "Implants",
+  },
+  {
+    title: "Select service type",
+    id: 11,
     label: "Routine Examination",
   },
+ 
 ];
 
 //  FROM FORM 5 - 7 ARE RESIDENTIAL SUB SECTION

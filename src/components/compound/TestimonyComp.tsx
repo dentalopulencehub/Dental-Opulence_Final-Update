@@ -1,199 +1,210 @@
 'use client'
-import React, { useState } from 'react'
-
-import Carousel from '../atom/carousel'
+import React, { useState, ReactNode } from 'react'
+import { motion } from "framer-motion";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import useMeasure from "react-use-measure";
 import GoogleCard from '../molecule/GoogleCard'
-
-
 import underline_vector from "../../../assets/fonts/underlineBlackStoke.svg";
-import reaction_right_arrow from "../../../assets/fonts/reaction-arrow-right.svg";
-
 import Image from 'next/image'
 import Link from 'next/link';
 import SecondaryLink from '../atom/SecondaryLink';
 
+const CARD_WIDTH = 320;
+const MARGIN = 20;
+const CARD_SIZE = CARD_WIDTH + MARGIN;
+const BREAKPOINTS = {
+  sm: 640,
+  lg: 1024,
+};
 
+interface CardCarouselProps {
+  children: ReactNode;
+}
+
+const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
+  const [ref, { width }] = useMeasure();
+  const [offset, setOffset] = useState(0);
+  const childrenArray = React.Children.toArray(children);
+  const isMobile = width <= BREAKPOINTS.sm;
+  const visibleCards = isMobile ? 1 : width > BREAKPOINTS.lg ? 3 : 2;
+  const CAN_SHIFT_LEFT = offset < 0;
+  const CAN_SHIFT_RIGHT = Math.abs(offset) < CARD_SIZE * (childrenArray.length - visibleCards);
+  
+  const shiftLeft = () => {
+    if (!CAN_SHIFT_LEFT) return;
+    setOffset((pv) => Math.min(0, pv + CARD_SIZE));
+  };
+  
+  const shiftRight = () => {
+    if (!CAN_SHIFT_RIGHT) return;
+    setOffset((pv) => Math.max(-(CARD_SIZE * (childrenArray.length - visibleCards)), pv - CARD_SIZE));
+  };
+
+  return (
+    <section className="bg-transparent" ref={ref}>
+      <div className="relative overflow-hidden">
+        <div className="mx-auto lg:max-w-6xl">
+          <motion.div
+            animate={{ x: offset }}
+            className="flex"
+          >
+            {children}
+          </motion.div>
+        </div>
+        {childrenArray.length > visibleCards && (
+          <>
+            <motion.button
+              initial={false}
+              animate={{ x: CAN_SHIFT_LEFT ? "0%" : "-100%" }}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-30 rounded-r-xl bg-slate-100/30 p-3 pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3"
+              onClick={shiftLeft}
+            >
+              <FiChevronLeft />
+            </motion.button>
+            <motion.button
+              initial={false}
+              animate={{ x: CAN_SHIFT_RIGHT ? "0%" : "100%" }}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+              onClick={shiftRight}
+            >
+              <FiChevronRight />
+            </motion.button>
+          </>
+        )}
+      </div>
+    </section>
+  );
+};
+
+interface Review {
+  name: string;
+  rating: number;
+  comment: string;
+}
 
 const TestimonyComp = () => {
   const [linkHover, setLinkHover] = useState(false);
 
-    const reviews = [
+  const reviews = [
     {
-      name: 'Lucy Ratcliffe',
-      rating: '5.0',
+      name: 'Kristie',
+      rating: 5,
       comment:
-       "My smile white experience with Dr Asad Abbas has been amazing. He is the nicest dentist I've ever had especially when you aren't a fan of dentists he's super reassuring and very gentle. The dental nurses and reception staff are also lovely and will continue to go to them after my treatment is done."
+       "Fantastic service from start to finish. I previously had  composite bonding veneers to my front 6 teeth at another dentists, but was very unhappy with the overall look and poor finish. When I spoke to Dr Ali about correcting this work, he was really helpful, explained the process well and made me feel at ease.  I’m now really happy with the more natural composite edge bonding he has given me.",
     },
     {
-      name: 'Mohammed Nazir',
-      rating: '5.0',
+      name: 'Mohammed',
+      rating: 5,
       comment:
         "Booked in for a scale and polish for my composite veneers. I was pleasantly surprised with how friendly and professional the staff were. The practice seems like it is built around the patient for a one to one service. This was the best experience I have ever had at a dentist.",
     },
     {
       name: 'Ahmad',
-      rating: '5.0',
+      rating: 5,
       comment:
        "Extremely welcoming and professional at the same time. The whole team are very friendly and take care of you to the highest of standards. Very happy with my visit and would definitely recommend Dental Opulence to everyone.",
     },
     {
-      name: 'Naheed Dad',
-      rating: '5.0',
+      name: 'Lucy',
+      rating: 5,
+      comment:
+       "My smile white experience with Dr Asad Abbas has been amazing. He is the nicest dentist I've ever had especially when you aren't a fan of dentists he's super reassuring and very gentle. The dental nurses and reception staff are also lovely and will continue to go to them after my treatment is done."
+    },
+    {
+      name: 'Hope',
+      rating: 5,
+      comment:
+       "Had my smile white experience at dental oppulance. Cannot recommend enough. All the staff were friendly and answered all questions I had! I’ll be coming back for composite edge bonding once after my aligners.",
+    },
+    {
+      name: 'Stevie',
+      rating: 5,
+      comment:
+       "Just had my checkup here and it was an amazing experience! Clinic is so nice and modern compared to other practices I’ve been to and really liked the personalised service. I really felt valued rather than being on a conveyor belt and the dentist has won so many awards! Just wanted a checkup but now decided to get my teeth sorted as I think I’ve finally found a dental practice I can trust! Definitely recommend.",
+    },
+    {
+      name: 'Jack',
+      rating: 5,
+      comment:
+       "The practice's service is truly exemplary; the dentist I saw truly appreciated my time as a patient and listened to all my concerns and has clearly put a lot of time into perfecting his skills. 10/10 would defo recommend coming here.",
+    },
+    {
+      name: 'Kashif',
+      rating: 5,
+      comment:
+       "Went in on Saturday for consultation and received great service from the receptionist to the dentist. Treated well and would recommend.",
+    },
+    {
+      name: 'Fawziyah',
+      rating: 5,
+      comment:
+       "Been to dental opulence twice now and felt very welcomed, the clinic was giving me aesthetic vibes as it was so clean. Had a good experience the first time i been here also. Theres even a TV on the ceiling once you go in for your treatment which is cool. Dr Abbas and his team were friendly and professional would highly recommend dental opulence to anyone you wont be disappointed! 🤭",
+    },
+
+    {
+      name: 'Naheed',
+      rating: 5,
       comment:
        "I had my first consultation today with Dr Ali, it was amazing. He made me feel at ease during the consultation and recommended a treatment plan that was tailored to my needs to achieve my dream smile. Really excited and can't wait to see the outcome!!",
     },
+ 
+ 
+
   ]
+
+  const renderStars = (rating: number) => {
+    return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+  };
+
   return (
-    <div className="md:container mx-auto  md:px-14 px-5  mb-[9.44rem] md:mt-20 mt-14">
-
-     <div>
-         <p className="">
-           <span className="text-[#000] font-Pangram-Regular text-[16px] font-[500]">Online Reviews</span>
-           <Image src={underline_vector} alt="underline_vector" />
-          </p>
-
+    <div className="md:container mx-auto md:px-14 px-5 mb-[6.6rem] md:mt-14 mt-10">
+      <div>
+        <p className="">
+          <span className="text-[#000] font-Pangram-Regular text-[16px] font-[500]">Online Reviews</span>
+          <Image src={underline_vector} alt="underline_vector" />
+        </p>
         <div className='md:flex justify-between items-center'>
-         <p className="md:text-[34px] text-[28px] font-encode font-[700] mt-3 leading-[42px]">
-           Your Reliable Dentist for <br/>Optimal Oral Health
-         </p>
-        
-           <Link href={'/testimonials'} className='flex gap-3 items-center  md:px-7 py-2 '>
-           <SecondaryLink
+          <p className="md:text-[34px] text-[28px] font-encode font-[700] mt-3 leading-[42px]">
+            Your Reliable Dentist for <br/>Optimal Oral Health
+          </p>
+          <Link href={'/testimonials'} className='flex gap-3 items-center  md:px-7 py-2 '>
+            <SecondaryLink
               href="#"
               title="See Client Reactions"
               style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
               hovered={linkHover}
               setHovered={setLinkHover}
             />
-            
-           </Link>
-        
-        </div> 
-
-     </div>
-
-    
-      <Carousel className="md:mt-[3.25rem] mt-[2rem]">
-        <div
-          className={`max-w-[309px] flex-shrink-0 w-full md:max-w-[28.0625rem] mr-[2rem]`}
-        >
-          <GoogleCard />
+          </Link>
         </div>
-        {reviews.map((review, i, arr) => (
-          <div
-            key={i}
-            className={`max-w-[309px] flex-shrink-0 w-full md:max-w-[28.0625rem] ${
-              i !== arr.length - 1 ? 'mr-[2rem]' : ''
-            }`}
-          >
-            <div className=" md:pt-[3.75rem] pt-[1.4rem] card pb-[4.19rem] w-full md:min-h-[35rem] min-h-[26rem] md:px-12 px-6 rounded-[1.25rem] bg-black flex flex-col justify-between">
-              <div>
-                <p className=" text-white font-encode font-medium md:text-3xl text-2xl">
-                  {review.rating}
-                </p>
-                <p className="md:mt-[2.87rem] mt-[1.7rem] font-[400] text-white md:text-[20px] text-[16px]">
-                  {review.comment}
-                </p>
+      </div>
+      <div className='flex flex-col mt-6 md:flex-row items-center'>
+        <GoogleCard />
+        <div className="w-full md:w-auto mt-6 md:mt-0">
+          <CardCarousel>
+            {reviews.map((review, i) => (
+              <div
+                key={i}
+                className="w-full md:ml-5 md:w-[316px] flex-shrink-0 px-2 md:px-0"
+              >
+                <div className="pt-[2.625rem] pb-[2.933rem] w-full h-full min-h-[24.5rem] px-4 md:px-8 rounded-[0.875rem] bg-black flex flex-col justify-between">
+                  <div>
+                    <p className="text-yellow-400 font-encode font-medium text-xl md:text-2xl">
+                      {renderStars(review.rating)}
+                    </p>
+                    <p className="mt-[2rem] font-Pangram-Light font-[200] text-white text-[14px]">
+                      {review.comment}
+                    </p>
+                  </div>
+                  <p className="text-white font-[500] text-[14px] md:text-[18px] uppercase">{review.name}</p>
+                </div>
               </div>
-              <p className=" text-white font-[700] md:text-[24px] text-[18px] uppercase">{review.name}</p>
-            </div>
-          </div>
-        ))}
-      </Carousel>
+            ))}
+          </CardCarousel>
+        </div>
+      </div>
     </div>
   )
 }
 
 export default TestimonyComp
-
-
-
-
-
-
-
-
-
-// import { EmblaCarouselType } from "embla-carousel";
-// import Autoplay from "embla-carousel-autoplay";
-// import useEmblaCarousel from "embla-carousel-react";
-// import { useCallback, useEffect, useState } from "react";
-// import { testimonial } from "../../../constants";
-// import { DotButton } from "../atom/DotButton";
-// import { TestimonyCard } from "../molecule";
-// import { useRouter } from "next/router";
-
-// const TestimonyComp = () => {
-//   const { pathname } = useRouter();
-
-//   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-//   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
-//   const [selectedIndex, setSelectedIndex] = useState(0);
-
-//   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
-//     setScrollSnaps(emblaApi.scrollSnapList());
-//   }, []);
-
-//   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
-//     setSelectedIndex(emblaApi.selectedScrollSnap());
-//   }, []);
-
-//   const scrollTo = useCallback(
-//     (index: number) => emblaApi && emblaApi.scrollTo(index),
-//     [emblaApi]
-//   );
-
-//   useEffect(() => {
-//     if (!emblaApi) return;
-
-//     onInit(emblaApi);
-//     onSelect(emblaApi);
-//     emblaApi.on("reInit", onInit);
-//     emblaApi.on("reInit", onSelect);
-//     emblaApi.on("select", onSelect);
-//   }, [emblaApi, onInit, onSelect]);
-
-//   return (
-//     <div
-//       className={` w-full`}
-//     >
-//       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pb-[80px] bg-white">
-//         <div className="relative">
-//           <div className="embla">
-//             <div
-//               className="embla__viewport bg-[#F8F8F8] rounded-xl md:px-10 sm:px-5 px-4 md:py-[56px] py-[30px] mt-20 "
-//               ref={emblaRef}
-//             >
-//               <div className="embla__container">
-//                 {testimonial.map((data, index) => (
-//                   <TestimonyCard key={index} {...data} />
-//                 ))}
-//               </div>
-//             </div>
-//           </div>
-//           <div className="embla__dots">
-//             {scrollSnaps.map((_, index: any) => (
-//               <DotButton
-//                 key={index}
-//                 onClick={() => scrollTo(index)}
-//                 className={"embla__dot".concat(
-//                   index === selectedIndex ? " embla__dot--selected" : ""
-//                 )}
-//               />
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TestimonyComp;
-
-
-
-
-
-
-
-

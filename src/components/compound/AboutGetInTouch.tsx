@@ -1,11 +1,11 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from "react";
-import about_mission_logo from "../../../assets/images/about-mission-logo.svg";
+import about_mission_logo from "../../../assets/images/do.svg";
 
 import email from "../../../assets/fonts/email.svg";
 import call from "../../../assets/fonts/phone_call.svg";
-import whatsApp from "../../../assets/fonts/whatsApp.svg";
+import whatsApp from "../../../assets/images/Vector.png";
 import location from "../../../assets/fonts/location.svg";
 import Link from "next/link";
 
@@ -57,11 +57,11 @@ const AboutGetInTouch = () => {
       <div className="flex xl:flex-row flex-col gap-6 w-full">
         <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
           <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-5">
-            <Image src={about_mission_logo} alt="" />
+            <Image src={about_mission_logo} width={70} alt="" />
             <p className="text-[22px] font-[500] mt-7">
             To log in to the patient portal or make a new inquiry click the buttons below
             </p>
-            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: new patient should click contact us for inquires and existing user can login.</p>
+            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: New patients should click ‘contact us’ to start a new enquiry and existing patients can click ‘login now’</p>
 
             <div className="text-[15px]">
               <div className="flex gap-2 items-center">
@@ -71,10 +71,10 @@ const AboutGetInTouch = () => {
 
               <div className="flex gap-2 items-center my-4">
                 <Image src={call} alt="email" />
-                <p>0121 272 9229 (Fri-Sat)</p>
+                <p>0121 272 9229</p>
               </div>
               <div className="flex gap-2 items-center ">
-                <Image src={whatsApp} alt="email" />
+                <Image width={18} src={whatsApp} alt="email" />
                 <p>+447301253447</p>
               </div>
               <div className="flex gap-2 items-center my-3">
@@ -83,7 +83,7 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="mt-8 flex gap-4 items-center justify-between">
+            <div className="flex gap-4 items-center justify-between">
               <Link
                 href={"https://dentalopulence.dentr.net/login"}
                 target="blank"
