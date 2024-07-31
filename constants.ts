@@ -2981,7 +2981,6 @@ export const people_slider2 = [
    HMim7  ,
    HMim8  ,
    HMim9  ,
-   HMim10 ,
    HMim11 ,
    HMim12 ,
   
