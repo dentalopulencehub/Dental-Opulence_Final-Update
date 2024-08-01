@@ -23,6 +23,7 @@ import CompositeVeneersHero from "./CompositeVeneersSection/CompositeVeneersHero
 import CompositeVeneersVideo from "./CompositeVeneersSection/CompositeVeneersVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import CompositeVeneersOurCases from "./CompositeVeneersSection/OurCases";
 
 
 
@@ -34,13 +35,14 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CompositeVeneersHero/>
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_CompositeVeneers} />
+        <CompositeVeneersOurCases />
         <CompositeVeneersVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_CompositeVeneers} />
         <ServiceElevate service_elevate={serviceElevet_CompositeVeneers}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+     
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

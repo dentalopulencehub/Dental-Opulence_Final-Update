@@ -24,6 +24,7 @@ import InvisalignHero from "./invisalignSection/invisalignHero";
 import InvisalignVideo from "./invisalignSection/invisalignVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import InvisalignOurCases from "./invisalignSection/OurCases";
 
 
   
@@ -34,13 +35,15 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <InvisalignHero/>
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_Invisalign} />
+        <InvisalignOurCases />
+
         <InvisalignVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Invisalign} />
         <ServiceElevate service_elevate={serviceElevet_Invisalign}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        <InvisalignOurCases />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

@@ -24,6 +24,7 @@ import CompositeEdgeBondingHero from "./CompositeEdgeBondingSection/CompositeEdg
 import CompositeEdgeBondingVideo from "./CompositeEdgeBondingSection/CompositeEdgeBondingVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import CompositeEdgeBondingOurCases from "./CompositeEdgeBondingSection/OurCases";
 
 
 
@@ -35,13 +36,14 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CompositeEdgeBondingHero/>
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_CompositeEdgebonding}/>
+        <CompositeEdgeBondingOurCases />
+
         <CompositeEdgeBondingVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_CompositeEdgeBonding} />
         <ServiceElevate service_elevate={serviceElevet_CompositeEdgeBonding}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

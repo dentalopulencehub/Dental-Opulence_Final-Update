@@ -24,6 +24,7 @@ import CrownsVeneersHero from "./CrownsVeneersSection/CrownsVeneersHero";
 import CrownsVeneersVideo from "./CrownsVeneersSection/CrownsVeneersVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import CrownVeneersOurCases from "./CrownsVeneersSection/OurCases";
 
 
 
@@ -36,13 +37,14 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CrownsVeneersHero/>
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_crowsVeneers2} />
+        <CrownVeneersOurCases />
         <CrownsVeneersVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_CrownsVeneers2} />
         <ServiceElevate service_elevate={serviceElevet_CrownsVeneers2}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+       
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

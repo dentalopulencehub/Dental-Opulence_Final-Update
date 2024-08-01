@@ -23,6 +23,7 @@ import CompositeBondingHero from "./CompositeBondingSection/CompositeBondingHero
 import CompositeBondingVideo from "./CompositeBondingSection/CompositeBondingVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import CompositeBondingOurCases from "./CompositeBondingSection/OurCases";
 
 
 
@@ -34,6 +35,8 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CompositeBondingHero/> 
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_compositeBonding} />
+        <CompositeBondingOurCases />
+
         <CompositeBondingVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_Compositebonding} />
         <ServiceElevate service_elevate={serviceElevet_CompositeBonding}/>
@@ -42,7 +45,6 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

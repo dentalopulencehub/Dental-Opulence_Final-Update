@@ -24,6 +24,7 @@ import TeethWhiteningHero from "./teethWhiteningSection/teethWhiteningHero";
 import TeethWhiteningVideo from "./teethWhiteningSection/teethWhiteningVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import TeethWhiteningOurCases from "./teethWhiteningSection/OurCases";
 
 
 
@@ -34,13 +35,14 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <TeethWhiteningHero/>
         <ServiceAward />
         <ServiceHero2Main ServiceHeroTwoDesc={serviceHero2Desc_teethwhitening} />
+        <TeethWhiteningOurCases />
         <TeethWhiteningVideo/>
         <ServiceCompositeBondingMain service_compositeBonding={serviceCompositeBonding_TeethWhitening} />
         <ServiceElevate service_elevate={serviceElevet_TeethWhitening}/>
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        
         <TestimonyComp />
         {/* <OurProcess /> */}
         <Faq faqList={teethWhiteFaq} />

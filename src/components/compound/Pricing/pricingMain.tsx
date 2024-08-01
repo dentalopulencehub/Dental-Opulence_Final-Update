@@ -16,16 +16,13 @@ const PricingMain: React.FC = () => {
 
   return (
     <div className={`w-full`}>
-      <div
-        className={`flex sm:flex-row sm:items-end items-start mt-10 gap-4 justify-center border-b ${
-          selectedTheme === "light" ? "border-[#000000]" : "border-[#000000]"
-        }`}
-      >
+      <div className={`flex sm:flex-row sm:items-end items-start mt-10 gap-4 justify-center relative`}>
         <div
           onClick={() => handleSetSelectedTheme("dark")}
           className={`flex gap-3 flex-row items-center justify-center service-tooth-div
-        bg-[#161616] border border-[#000000]
-       rounded-t-xl px-4 md:py-[9px] py-[12px] cursor-pointer`}
+          bg-[#161616] border-t border-x border-[#161616]
+          rounded-t-xl px-4 md:py-[9px] py-[12px] cursor-pointer
+          ${selectedTheme === "dark" ? "border-b-0" : ""}`}
         >
           <p className={`md:text-[18px] text-[15px] mt-[0px] text-white`}>
             Cosmetic Treatments
@@ -33,9 +30,13 @@ const PricingMain: React.FC = () => {
         </div>
         <div
           onClick={() => handleSetSelectedTheme("light")}
-          className={`${
-            selectedTheme === "dark" ? "border border-[#000000] bg-[#fff] md:py-0 py-2" : "bg-gray-100"
-          } flex gap-3 md:py-[9px] border border-[#000000] py-[7px] flex-row items-center justify-center service-tooth-div rounded-t-xl px-4 cursor-pointer`}
+          className={`flex gap-3 flex-row items-center justify-center service-tooth-div
+          rounded-t-xl px-4 cursor-pointer
+          ${
+            selectedTheme === "dark"
+              ? "border-t border-x border-[#000000] bg-[#fff] md:py-[9px] py-2"
+              : "bg-white border-t border-x border-[#000000] border-b-0 md:py-[9px] pb-10 z-[50]"
+          }`}
         >
           <p
             className={`md:text-[18px] text-[15px] ${
@@ -45,6 +46,7 @@ const PricingMain: React.FC = () => {
             General Treatments
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#000000]"></div>
       </div>
       <div
         className={`w-full md:py-[120px] py-[80px] lg:px-[100px] sm:px-[40px] px-[20px] ${

@@ -123,8 +123,8 @@ const Navbar = () => {
           </ul>
           <PrimaryLink
             href="/contact"
-            title="Contact Us"
-            style="py-2 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-xs ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+            title="Book now"
+            style="py-3 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-sm ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
           />
         </div>
         <div className="relative right-0">
