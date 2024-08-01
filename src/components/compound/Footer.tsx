@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import footer_logo from "../../../assets/images/do.svg";
+import footer_logo from "../../../assets/images/do_logo.png";
 
 import footer_text from "../../../assets/images/Dental Opulence.svg";
 import ig_logo from "../../../assets/images/instagram-icon.svg";
@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[90px] sm:px-[40px] px-4">
         <div className="flex xl:flex-row flex-col md:gap-[90px] gap-[50px] items-start">
           <div>
-            <div className="flex gap-4"><Image src={footer_logo} alt="" /> <Image src={footer_text} alt="Dental Opulence" /></div>
+            <div className="flex gap-4"><Image src={footer_logo} height={60} alt="" /> <Image src={footer_text} alt="Dental Opulence" /></div>
             <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
               <div className="">
                 <h3 className="text-white  text-sm">
@@ -162,40 +162,39 @@ const Footer = () => {
                
               </div>
               <div className="">
-                <h3 className="text-white  font-inter  text-xl">
-                  Opening Hours
-                </h3>
-                <div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter"> Sunday</p>
-                    <p className=" font-inter">Closed</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter">Monday</p>
-                    <p className=" font-inter">Closed</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter">Tuesday</p>
-                    <p className=" font-inter">9am - 5pm</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p>Wednesday</p>
-                    <p>Closed</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter">Thursday</p>
-                    <p className=" font-inter">9am - 5pm</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter">Friday</p>
-                    <p className=" font-inter">9am - 5pm</p>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
-                    <p className=" font-inter">Saturday</p>
-                    <p className=" font-inter">9am - 5pm</p>
-                  </div>
-                </div>
-              </div>
+  <h3 className="text-white font-inter text-xl mb-5">
+    Opening Hours
+  </h3>
+  <div className="grid grid-cols-[1fr,10px,1fr] text-sm text-[#A2A2A2] font-inter">
+    <div className="space-y-5">
+      <p>Sunday</p>
+      <p>Monday</p>
+      <p>Tuesday</p>
+      <p>Wednesday</p>
+      <p>Thursday</p>
+      <p>Friday</p>
+      <p>Saturday</p>
+    </div>
+    <div className="space-y-5">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+    <div className="space-y-5">
+      <p>Closed</p>
+      <p>Closed</p>
+      <p>9am - 5pm</p>
+      <p>Closed</p>
+      <p>9am - 5pm</p>
+      <p>9am - 5pm</p>
+      <p>9am - 5pm</p>
+    </div>
+  </div>
+</div>
               <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8">
                 <div>
                   <h3 className="text-white   font-inter text-xl">

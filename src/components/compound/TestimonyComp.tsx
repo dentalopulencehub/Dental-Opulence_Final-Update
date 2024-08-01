@@ -86,7 +86,7 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
             <motion.button
               initial={false}
               animate={{ x: CAN_SHIFT_RIGHT ? "0%" : "100%" }}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+              className="absolute right-10 top-1/2 -translate-y-1/2 z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
               onClick={shiftRight}
             >
               <FiChevronRight />

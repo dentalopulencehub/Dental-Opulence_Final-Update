@@ -40,9 +40,9 @@ const RoutineExaminationHero = () => {
 
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
-            <PrimaryLink
-              href="/contact"
-              title="Contact Us"
+          <PrimaryLink
+              href="https://book.do.co.uk/"
+              title="Book now"
               style="py-4 px-8 rounded-[34px] text-white bg-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"
             />
             <PrimaryLink

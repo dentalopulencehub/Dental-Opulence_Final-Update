@@ -281,18 +281,18 @@ import hover_all_cases from './assets/images/casesDropdown/hover_all_cases.svg'
 import cases_testi from './assets/images/casesDropdown/cases_testimonial.svg'
 
 
-import HMim1 from './assets/BMimges/MMimgPair1.svg'
-import HMim2 from './assets/BMimges/MMimgPair2.svg'
-import HMim3 from './assets/BMimges/MMimgPair3.svg'
-import HMim4 from './assets/BMimges/MMimgPair4.svg'
-import HMim5 from './assets/BMimges/MMimgPair5.svg'
-import HMim6 from './assets/BMimges/MMimgPair6.svg'
-import HMim7 from './assets/BMimges/MMimgPair7.svg'
-import HMim8 from './assets/BMimges/MMimgPair8.svg'
-import HMim9 from './assets/BMimges/MMimgPair9.svg'
-import HMim10 from './assets/BMimges/MMimgPair10.svg'
-import HMim11 from './assets/BMimges/MMimgPair11.svg'
-import HMim12 from './assets/BMimges/MMimgPair12.svg'
+import HMim1 from './assets/BMimges/MMimgPair1.png'
+import HMim2 from './assets/BMimges/MMimgPair2.png'
+import HMim3 from './assets/BMimges/MMimgPair3.png'
+import HMim4 from './assets/BMimges/MMimgPair4.png'
+import HMim5 from './assets/BMimges/MMimgPair5.png'
+import HMim6 from './assets/BMimges/MMimgPair6.png'
+import HMim7 from './assets/BMimges/MMimgPair7.png'
+import HMim8 from './assets/BMimges/MMimgPair8.png'
+import HMim9 from './assets/BMimges/MMimgPair9.png'
+import HMim10 from './assets/BMimges/MMimgPair10.png'
+import HMim11 from './assets/BMimges/MMimgPair11.png'
+import HMim12 from './assets/BMimges/MMimgPair12.png'
 
 
 
@@ -3086,13 +3086,13 @@ export const stepOne = [
   {
     title: "Would you like to?",
     id: 1,
-    label: "Login to portal",
+    label: "Book an appointment",
   },
 
   {
     title: "WHAT TYPE OF PROJECT?",
     id: 2,
-    label: "Make a new inquiry",
+    label: "Make an enquiry",
   },
 ];
 

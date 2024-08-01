@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from "react";
-import about_mission_logo from "../../../assets/images/do.svg";
+import about_mission_logo from "../../../assets/images/do_logo.png"
 
 import email from "../../../assets/fonts/email.svg";
 import call from "../../../assets/fonts/phone_call.svg";
@@ -61,9 +61,9 @@ const AboutGetInTouch = () => {
             <p className="text-[22px] font-[500] mt-7">
             To log in to the patient portal or make a new inquiry click the buttons below
             </p>
-            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: New patients should click ‘contact us’ to start a new enquiry and existing patients can click ‘login now’</p>
+            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: New patients should click ‘contact us’ to start a new enquiry and existing patients can click ‘book now’</p>
 
-            <div className="text-[15px]">
+            <div className="text-[13.5px]">
               <div className="flex gap-2 items-center">
                 <Image src={email} alt="email" />
                 <p>info@do.co.uk</p>
@@ -83,13 +83,13 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 items-center justify-between">
+            <div className="flex gap-4 mt-1 items-center justify-between">
               <Link
-                href={"https://dentalopulence.dentr.net/login"}
+                href={"https://book.do.co.uk/"}
                 target="blank"
                 className="bg-[#fff] px-10 py-2 rounded-full"
               >
-                <button className="text-[#000] text-sm ">Login Now</button>
+                <button className="text-[#000] text-sm ">Book now</button>
               </Link>
               <Link
                 href={"contact"}

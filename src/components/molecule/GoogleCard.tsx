@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FcGoogle } from "react-icons/fc";
+import googleLogo from "../../../assets/images/logos_google.svg"
 
 const GoogleCard: React.FC = () => {
   const arr = ['', '', '', '', '']
@@ -10,7 +11,7 @@ const GoogleCard: React.FC = () => {
       <div className="md:pt-[2.625rem] pt-[1rem] card pb-[2rem] md:pb-[2.933rem] w-full md:h-full md:min-h-[24.5rem] min-h-[16rem] md:px-8 px-4 rounded-[0.875rem] bg-gray-100 flex flex-col justify-between group google-card">
         <div className="flex items-center gap-4">
           <FcGoogle size={48} className="md:w-[60px] md:h-[60px]"/>
-          <div className="text-xl font-encode text-[#BDBDBD] group-hover:text-[#000]">
+          <div className="text-xl font-encode text-[#BDBDBD] group-hover:text-[#FEC600]">
             <div className="flex gap-1">
               {arr.map((star, i) => (
                 <svg
@@ -41,7 +42,7 @@ const GoogleCard: React.FC = () => {
         </div>
         <Link href='https://rb.gy/20dj6m' target='blank' className="mt-auto">
           <div className="flex border-black border-b pb-3 items-center">
-            <img src="/image/google.svg" alt="Google" className="w-24 md:w-32" />
+          <Image src={googleLogo} alt="Google" className="w-24 md:w-32" />
           </div>
         </Link>
       </div>
