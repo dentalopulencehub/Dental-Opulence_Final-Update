@@ -241,17 +241,20 @@ import cases_others_img1 from "./assets/images/cases-others-img1.jpg";
 import cases_others_img2 from "./assets/images/cases-others-img2.jpg";
 import cases_others_img3 from "./assets/images/cases-others-img3.jpg";
 
-import white_fillings_our_cases_1 from "./assets/images/white_fillings_our_cases_1.webp";
+import white_fillings_our_cases_1 from "./assets/images/white_fillings_our_case_1.webp";
 import white_fillings_our_cases_2 from "./assets/images/white_fillings_our_cases_2.webp";
 import white_fillings_our_cases_3 from "./assets/images/white_fillings_our_cases_3.webp";
 import white_fillings_our_cases_4 from "./assets/images/white_fillings_our_cases_4.webp";
 import white_fillings_our_cases_5 from "./assets/images/white_fillings_our_cases_5.webp";
-
+import white_fillings_our_cases_6 from "./assets/images/white_fillings_our_case_6.webp";
 
 import invisalign_our_cases_1 from "./assets/images/invisalign_our_cases_1.webp";
 import invisalign_our_cases_2 from "./assets/images/invisalign_our_cases_2.webp";
 import invisalign_our_cases_3 from "./assets/images/invisalign_our_cases_3.webp";
 import invisalign_our_cases_4 from "./assets/images/invisalign_our_cases_4.webp";
+import invisalign_our_cases_5 from "./assets/images/invisalign_our_cases_5.png";
+import invisalign_our_cases_6 from "./assets/images/invisalign_our_cases_6.png";
+
 
 
 import theeth_whitening_our_cases_1 from "./assets/images/theeth_whitening_our_cases_1.webp";
@@ -263,18 +266,26 @@ import crown_our_cases_1 from "./assets/images/crown_our_cases_1.webp";
 import crown_our_cases_2 from "./assets/images/crown_our_cases_2.webp";
 import crown_our_cases_3 from "./assets/images/crown_our_cases_3.webp";
 import crown_our_cases_4 from "./assets/images/crown_our_cases_4.webp";
+import crown_our_cases_5 from "./assets/images/crown_our_cases_5.jpg";
+import crown_our_cases_6 from "./assets/images/crown_our_cases_6.jpg";
+import crown_our_cases_7 from "./assets/images/crown_our_cases_7.jpg";
+
+
 
 import composite_bonding_our_cases_1 from "./assets/images/composite_bonding_our_cases_1.webp";
 import composite_bonding_our_cases_2 from "./assets/images/composite_bonding_our_cases_2.webp";
 import composite_bonding_our_cases_3 from "./assets/images/composite_bonding_our_cases_3.webp";
 import composite_bonding_our_cases_4 from "./assets/images/composite_bonding_our_cases_4.webp";
 import composite_bonding_our_cases_5 from "./assets/images/composite_bonding_our_cases_5.webp";
+import composite_bonding_our_cases_6 from "./assets/images/composite_bonding_our_cases_6.webp";
 
 import composite_veneers_our_cases_1 from "./assets/images/composite_veneers_ou_cases_1.webp";
 import composite_veneers_our_cases_2 from "./assets/images/composite_veneers_ou_cases_2.webp";
 import composite_veneers_our_cases_3 from "./assets/images/composite_veneers_ou_cases_3.webp";
 import composite_veneers_our_cases_4 from "./assets/images/composite_veneers_ou_cases_4.webp";
 import composite_veneers_our_cases_5 from "./assets/images/composite_veneers_ou_cases_5.webp";
+import composite_veneers_our_cases_6 from "./assets/images/composite_veneers_ou_cases_6.webp";
+
 
 import composite_edge_bonding_our_cases_1 from "./assets/images/composite_edge_bonding_our_cases_1.webp";
 import composite_edge_bonding_our_cases_2 from "./assets/images/composite_edge_bonding_our_cases_2.webp";
@@ -1522,45 +1533,62 @@ export const home_result_images = [
   result_image7,
   result_image8,
 ];
+
 export const white_fillings_our_cases_images = [
+  white_fillings_our_cases_1,
   white_fillings_our_cases_2,
   white_fillings_our_cases_3,
   white_fillings_our_cases_4,
-  white_fillings_our_cases_5
+  white_fillings_our_cases_5,
+  white_fillings_our_cases_6
 
 ];
+
 export const invisalign_our_cases_images = [
   invisalign_our_cases_1,
   invisalign_our_cases_2,
   invisalign_our_cases_3,
-  invisalign_our_cases_4
+  invisalign_our_cases_4,
+  invisalign_our_cases_5,
+  invisalign_our_cases_6,
 ];
+
 export const theeth_whitening_our_cases_images = [
   theeth_whitening_our_cases_1,
   theeth_whitening_our_cases_2,
   theeth_whitening_our_cases_3,
   theeth_whitening_our_cases_4
 ];
+
 export const crown_our_cases_images = [
   crown_our_cases_1,
   crown_our_cases_2,
   crown_our_cases_3,
   crown_our_cases_4,
+  crown_our_cases_5,
+  crown_our_cases_6,
+  crown_our_cases_7
+
 ];
+
 export const composite_bonding_images = [
   composite_bonding_our_cases_1,
   composite_bonding_our_cases_2,
   composite_bonding_our_cases_3,
   composite_bonding_our_cases_4,
   composite_bonding_our_cases_5,
+  composite_bonding_our_cases_6
 ];
+
 export const composite_veneers_images = [
   composite_veneers_our_cases_1,
   composite_veneers_our_cases_2,
   composite_veneers_our_cases_3,
   composite_veneers_our_cases_4,
   composite_veneers_our_cases_5,
+  composite_veneers_our_cases_6
 ];
+
 export const composite_edge_bonding_images = [
   composite_edge_bonding_our_cases_1,
   composite_edge_bonding_our_cases_2,

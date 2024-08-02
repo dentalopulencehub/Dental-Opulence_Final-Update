@@ -64,7 +64,7 @@ const CompositeVeneersOurCases = () => {
               }`}
               key={index}
             >
-              <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
+              <div className="bg-[#100E10]  px-[20px] py-[15px] flex items-center rounded-t-2xl">
                 <Image src={result_logo_micro} alt="Result logo micro" />
                 <p className="text-xs font-Pangram-Regular text-white ml-3">
                   dentalopulence

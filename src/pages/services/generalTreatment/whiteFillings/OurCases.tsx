@@ -59,7 +59,7 @@ const WhiteFillingOurCases = () => {
         <Carousel direction={direction} setDirection={setDirection}>
           {white_fillings_our_cases_images.map((data, index, arr) => (
             <div
-              className={`sm:w-[280px] w-fit mx-auto card flex-shrink-0 ${
+              className={`sm:w-[280px] rounded-3xl overflow-hidden w-fit mx-auto card flex-shrink-0 ${
                 index !== arr.length - 1 ? "mr-[40px]" : "mr-[130px]"
               }`}
               key={index}
