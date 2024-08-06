@@ -41,7 +41,7 @@ import ScaleAndPolishVideo from "./scaleAndPolish/scaleAndPolishVideo";
         <PatientWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

@@ -11,7 +11,7 @@ const PricingHero = () => {
   const [linkHover, setLinkHover] = useState(false);
   return (
     <div className="w-full">
-      <div className="bg-[#100E10] rounded-t-[24px] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
+      <div className="bg-[#100E10] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col items-center">
           <p className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">Pricing</span>

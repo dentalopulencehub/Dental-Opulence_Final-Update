@@ -41,7 +41,7 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

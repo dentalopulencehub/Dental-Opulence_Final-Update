@@ -37,7 +37,7 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}
         <Faq faqList={viveraRetainersFaq} />

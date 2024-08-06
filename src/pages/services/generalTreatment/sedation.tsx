@@ -43,7 +43,7 @@ import SedationVideo from "./sedation/SedationVideo";
         <PatientWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

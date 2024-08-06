@@ -86,7 +86,7 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
             <motion.button
               initial={false}
               animate={{ x: CAN_SHIFT_RIGHT ? "0%" : "100%" }}
-              className="absolute right-10 top-1/2 -translate-y-1/2 z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
+              className="absolute  right-0 lg:right-10 top-1/2 -translate-y-1/2 z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3"
               onClick={shiftRight}
             >
               <FiChevronRight />
@@ -202,7 +202,7 @@ const TestimonyComp = () => {
       </div>
       <div className='flex flex-col mt-6 md:flex-row items-center'>
         <GoogleCard />
-        <div className="w-full md:w-auto mt-6 md:mt-0">
+        <div className="w-full flex-grow md:w-auto mt-6 md:mt-0">
         <CardCarousel>
   {reviews.map((review, i) => (
     <div

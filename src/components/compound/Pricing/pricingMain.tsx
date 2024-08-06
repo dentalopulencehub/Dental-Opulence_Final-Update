@@ -8,7 +8,7 @@ type Theme = "light" | "dark";
 
 const PricingMain: React.FC = () => {
   const tl: any = useRef(null);
-  const [selectedTheme, setSelectedTheme] = useState<Theme>("light");
+  const [selectedTheme, setSelectedTheme] = useState<Theme>("dark");
 
   const handleSetSelectedTheme = (theme: Theme) => {
     setSelectedTheme(theme);
@@ -21,7 +21,7 @@ const PricingMain: React.FC = () => {
           onClick={() => handleSetSelectedTheme("dark")}
           className={`flex gap-3 flex-row items-center justify-center service-tooth-div
           bg-[#161616] border-t border-x border-[#161616]
-          rounded-t-xl px-4 md:py-[9px] py-[12px] cursor-pointer
+          rounded-t-xl px-4 md:py-[9px] py-2 cursor-pointer
           ${selectedTheme === "dark" ? "border-b-0" : ""}`}
         >
           <p className={`md:text-[18px] text-[15px] mt-[0px] text-white`}>
@@ -35,7 +35,7 @@ const PricingMain: React.FC = () => {
           ${
             selectedTheme === "dark"
               ? "border-t border-x border-[#000000] bg-[#fff] md:py-[9px] py-2"
-              : "bg-white border-t border-x border-[#000000] border-b-0 md:py-[9px] pb-10 z-[50]"
+              : "bg-white border-t border-x border-[#000000] border-b-0 md:py-[9px] py-2 z-[50]"
           }`}
         >
           <p

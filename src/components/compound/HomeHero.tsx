@@ -3,12 +3,12 @@ import Image from "next/image";
 import home_hero_ill from "../../../assets/images/home-hero-ill.svg";
 import PrimaryLink from "../atom/PrimaryLink";
 
-
-import right_thick from '../../../assets/fonts/right_thick_home.svg'
+import right_thick from '../../../assets/fonts/right_thick_home.svg';
+import Link from "next/link";
 
 const HomeHero = () => {
   return (
-    <div className="">
+    <div className="show-scrollbar">
       <div className="bg-[#100E10] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
           <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center sm:leading-[76px] leading-[56px] text-white">
@@ -23,22 +23,25 @@ const HomeHero = () => {
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">
-              <Image src={right_thick}  alt="right_thick"/>
+              <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">0% Finance Options</p>
             </div>
 
             <div className="flex gap-2 items-center mt-3">
-              <Image src={right_thick}  alt="right_thick"/>
+              <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">Evening and weekend appointments</p>
             </div>
           </div>
 
           <div className="flex gap-6 xs:mt-[56px] mt-[32px] xl:mx-0 mx-auto xs:flex-row flex-col">
-            <PrimaryLink
-            href="https://book.do.co.uk/"
+            <Link
+              href="https://book.do.co.uk/"
+              target="_blank"
               title="Book now"
-              style="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
-            />
+              className="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+            >
+              Book now
+            </Link>
                
             <PrimaryLink
               href="/about"

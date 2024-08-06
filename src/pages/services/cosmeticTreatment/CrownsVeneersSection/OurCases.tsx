@@ -24,7 +24,7 @@ const CrownVeneersOurCases = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[80px] bg-white flex justify-between items-center">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[80px] bg-white flex  flex-col lg:flex-row justify-between items-center">
         <div className="">
           <p className="flex flex-col">
             <span className={`text-[#4e4e4e] text-base font-Pangram-Regular`}>
@@ -60,7 +60,7 @@ const CrownVeneersOurCases = () => {
           {crown_our_cases_images.map((data, index, arr) => (
             <div
               className={`sm:w-[280px] rounded-3xl overflow-hidden w-fit mx-auto card flex-shrink-0 ${
-                index !== arr.length - 1 ? "mr-[40px]" : "mr-[130px]"
+                index !== arr.length - 1 ? "lg:mr-[40px]" : "lg:mr-[130px]"
               }`}
               key={index}
             >

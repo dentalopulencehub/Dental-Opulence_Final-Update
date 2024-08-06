@@ -39,7 +39,7 @@ const TeethWhiteningOurCases = () => {
           </h2>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="lg:flex hidden items-center gap-3">
           <Image
             src={slider_arrow_left}
             alt=""

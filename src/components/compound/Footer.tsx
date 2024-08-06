@@ -54,7 +54,7 @@ const Footer = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#100E10] rounded-b-[24px] w-full py-[80px] md:px-[90px] sm:px-[40px] px-4">
+      <div className="bg-[#100E10] w-full py-[80px] md:px-[90px] sm:px-[40px] px-4">
         <div className="flex xl:flex-row flex-col md:gap-[90px] gap-[50px] items-start">
           <div>
             <div className="flex gap-4"><Image src={footer_logo} height={60} alt="" /> <Image src={footer_text} alt="Dental Opulence" /></div>

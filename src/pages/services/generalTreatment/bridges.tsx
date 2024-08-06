@@ -49,7 +49,7 @@ import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
         
         {/* <CompositeBondingHowLong /> */}
 
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

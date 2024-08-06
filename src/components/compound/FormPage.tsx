@@ -138,7 +138,7 @@ const Page = () => {
   return (
     // <section className="bg-black relative  overflow-hidden rounded-3xl w-full h-full  md:px-4">
     <>
-      <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden  rounded-3xl  sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] flex flex-col items-center justify-between mx-auto my-auto">
+      <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden  sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] flex flex-col items-center justify-between mx-auto my-auto">
         <div className="w-full h-[100vh] absolute flex items-center justify-center">
           <svg
             width="1053"

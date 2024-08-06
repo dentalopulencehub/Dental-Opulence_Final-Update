@@ -42,7 +42,7 @@ import ImplantsVideo from "./Implants/ImplantsVideo";
         <CosmaticWalkThrough/>
         <ServiceTransform />
         {/* <CompositeBondingHowLong /> */}
-        <ServiceOurService />
+        {/* <ServiceOurService /> */}
         {/* <HomeOurServices /> */}
         <TestimonyComp />
         {/* <OurProcess /> */}

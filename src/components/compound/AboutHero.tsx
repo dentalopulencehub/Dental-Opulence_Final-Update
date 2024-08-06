@@ -7,6 +7,7 @@ import PrimaryLink from "../atom/PrimaryLink";
 import CustomLink from "../atom/CustomLink";
 import arrow_right_light from "../../../assets/images/arrow-right.svg";
 import arrow_right_dark from "../../../assets/images/arrow-right-dark.svg";
+import about_us_poster from "../../../assets/images/about_us_poster.png"
 
 import videoPlayButton from "../../../assets/videoPlayButton/videoPlayButton.svg";
 import speakerIcon from "../../../assets/speakerIcon/speakerIcon.svg";
@@ -41,7 +42,7 @@ const AboutHero = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#100E10] rounded-t-[24px] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
+      <div className="bg-[#100E10] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col items-center">
           <p className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">About us</span>

@@ -39,7 +39,7 @@ const WhiteFillingOurCases = () => {
           </h2>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="lg:flex hidden items-center gap-3">
           <Image
             src={slider_arrow_left}
             alt=""
@@ -60,7 +60,7 @@ const WhiteFillingOurCases = () => {
           {white_fillings_our_cases_images.map((data, index, arr) => (
             <div
               className={`sm:w-[280px] rounded-3xl overflow-hidden w-fit mx-auto card flex-shrink-0 ${
-                index !== arr.length - 1 ? "mr-[40px]" : "mr-[130px]"
+                index !== arr.length - 1 ? "lg:mr-[40px]" : "lg:mr-[130px]"
               }`}
               key={index}
             >

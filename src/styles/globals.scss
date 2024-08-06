@@ -17,12 +17,26 @@ body{
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px; 
+  overflow-y: auto; /* Show scrollbar only when necessary */
+  scrollbar-width: thin; /* Firefox: Makes the scrollbar thin */
+  scrollbar-color: #888 #f5f5f5;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Background of the scrollbar track */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 3px; /* Round the corners of the scrollbar thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Scrollbar thumb color on hover */
+}
+
 
 @font-face {
   font-family: 'Pangram-Regular';

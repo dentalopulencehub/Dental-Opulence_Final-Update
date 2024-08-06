@@ -72,7 +72,7 @@ const Index = ({ children }: Props) => {
 
   return (
     <main
-      className={`sticky`}
+      className={`sticky show-scrollbar`}
     >
       {/* <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
         <div className="fixed bg-white w-screen h-[5px] top-0" />
