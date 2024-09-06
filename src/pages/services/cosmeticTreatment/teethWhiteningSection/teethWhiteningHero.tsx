@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import teeth_whitening_service_hero_image from "../../../../../assets/images/teeth-whitening-service-hero-image.svg"
+import teeth_whitening_service_hero_image from "../../../../../assets/DO Format/5.jpg"
 import right_thick from '../../../../../assets/images/right_thick.svg'
 import Link from "next/link";
 

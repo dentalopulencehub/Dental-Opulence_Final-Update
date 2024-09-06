@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import examination_service_hero_image from "../../../../../assets/HeroSectionImages/examination-service-hero-image.svg.svg"
+import examination_service_hero_image from "../../../../../assets/DO Format/2.jpg"
 import right_thick from '../../../../../assets/images/right_thick.svg'
 import Link from "next/link";
 

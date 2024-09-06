@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import service_her2_ill from "../../../assets/images/service-about-image.svg";
+import service_her2_ill from "../../../assets/DO Format/3.jpg";
 import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";

@@ -45,6 +45,8 @@ const BridgeVideo = () => {
             <source src="/videos/DentalAllServicesVideo/GeneralTreatmentCompress/Bridges.mp4" />
             Your browser does not support the video tag.
           </video>
+
+          
           {!isPlaying && (
             <div
               className="absolute inset-0 flex justify-center items-center cursor-pointer"
