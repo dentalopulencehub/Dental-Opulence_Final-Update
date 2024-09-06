@@ -32,39 +32,18 @@ const BridgeVideo = () => {
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex flex-col items-center justify-between sm:gap-[64px] gap-[37px]">
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
-         What You Should Know<br/> about Bridges
+          What You Should Know
+          <br /> about Bridges
         </h2>
-        <div className="relative mx-auto my-4">
-          <video
-            ref={videoRef}
-            className="object-cover rounded-2xl w-full h-full opacity-1"
-            onClick={handleVideoClick}
-            playsInline
-            muted={isMuted} // Initial mute state
-          >
-            <source src="/videos/DentalAllServicesVideo/GeneralTreatmentCompress/Bridges.mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          
-          {!isPlaying && (
-            <div
-              className="absolute inset-0 flex justify-center items-center cursor-pointer"
-              onClick={handleVideoClick}
-            >
-              <Image src={videoPlayButton} alt="videoPlayButton" />
-            </div>
-          )}
-          <div
-            className="absolute bottom-4 left-4 cursor-pointer"
-            onClick={toggleMute}
-          >
-            <Image
-              src={isMuted ? speakerMuteIcon : speakerIcon}
-              alt="Speaker Icon"
-              className="w-10 h-10 grayscale invert"
-            />
-          </div>
+        <div className="relative mx-auto my-4 w-full">
+          <iframe
+            src="https://player.vimeo.com/video/1006679852?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="100%"
+            height="700"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Bridges"
+          ></iframe>
         </div>
         <PrimaryLink
           href="/contact"

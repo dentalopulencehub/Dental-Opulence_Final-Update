@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import underline_vector from "../../../assets/images/underline-vector.svg";
@@ -7,7 +7,7 @@ import PrimaryLink from "../atom/PrimaryLink";
 import CustomLink from "../atom/CustomLink";
 import arrow_right_light from "../../../assets/images/arrow-right.svg";
 import arrow_right_dark from "../../../assets/images/arrow-right-dark.svg";
-import about_us_poster from "../../../assets/images/about_us_poster.png"
+import about_us_poster from "../../../assets/images/about_us_poster.png";
 
 import videoPlayButton from "../../../assets/videoPlayButton/videoPlayButton.svg";
 import speakerIcon from "../../../assets/speakerIcon/speakerIcon.svg";
@@ -38,8 +38,6 @@ const AboutHero = () => {
     }
   };
 
-
-
   return (
     <div className="w-full">
       <div className="bg-[#100E10] pt-[220px] pb-[120px] h-full xl:gap-[120px] gap-[40px] w-full items-center flex flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
@@ -65,35 +63,15 @@ const AboutHero = () => {
             setHovered={setLinkHover}
           /> */}
         </div>
-        <div className="relative mx-auto my-4">
-          <video
-            ref={videoRef}
-            className="object-cover rounded-2xl w-full h-full opacity-1"
-            onClick={handleVideoClick}
-            playsInline
-            muted={isMuted} // Initial mute state
-          >
-            <source src="/videos/aboutVideo/aboutVideo.mp4" />
-            Your browser does not support the video tag.
-          </video>
-          {!isPlaying && (
-            <div
-              className="absolute inset-0 flex justify-center items-center cursor-pointer"
-              onClick={handleVideoClick}
-            >
-              <Image src={videoPlayButton} alt="videoPlayButton" />
-            </div>
-          )}
-          <div
-            className="absolute bottom-4 left-4 cursor-pointer"
-            onClick={toggleMute}
-          >
-            <Image
-              src={isMuted ? speakerMuteIcon : speakerIcon}
-              alt="Speaker Icon"
-              className="w-10 h-10 grayscale invert"
-            />
-          </div>
+        <div className="relative mx-auto my-4 w-full">
+          <iframe
+            src="https://player.vimeo.com/video/1006670545?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="100%"
+            height="700"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="DOREELHORI_LQ"
+          ></iframe>
         </div>
       </div>
     </div>

@@ -31,10 +31,10 @@ const ScaleAndPolishVideo = () => {
   return (
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex flex-col items-center justify-between sm:gap-[64px] gap-[37px]">
-        <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
+        {/* <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
           What You Should Know<br/> about Scale & Polish
-        </h2>
-        <div className="relative mx-auto my-4">
+        </h2> */}
+        {/* <div className="relative mx-auto my-4">
           <video
             ref={videoRef}
             className="object-cover rounded-2xl w-full h-full opacity-1"
@@ -63,7 +63,7 @@ const ScaleAndPolishVideo = () => {
               className="w-10 h-10 grayscale invert" 
             />
           </div>
-        </div>
+        </div> */}
         <PrimaryLink
           href="/contact"
           title="Contact us"
