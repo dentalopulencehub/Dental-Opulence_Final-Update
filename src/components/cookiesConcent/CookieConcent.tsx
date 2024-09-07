@@ -12,13 +12,14 @@ const CookieConsentBanner = () => {
         <CookieConsent
             contentClasses={styles.banner}
             location="bottom"
-            buttonText="I accept"
+            buttonText="I ACCEPT"
             cookieName="myCookieConsent"
             style={{display:'flex', alignItems:'center', margin:'auto', width:'99%', borderRadius:'27px', marginLeft:'10px', marginRight:'10px', background: 'rgb(39,37,39)', color: '#fff', padding: '20px', boxShadow:'0px 1px 3px rgba(9, 10, 15, 0.25),0px 4px 16px rgba(9, 10, 15, 0.1), 0px 8px 24px rgba(9, 10, 15, 0.1),inset 0px 1px 1px #323543'}}
             ButtonComponent={CustomAcceptButton}
             declineButtonClasses={styles.button}
             buttonClasses={styles.button}
             enableDeclineButton
+            declineButtonText="I DECLINE"
         >
 
             <div className="banner">
