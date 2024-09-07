@@ -1256,8 +1256,8 @@ export const our_pricing_services: HomeOurServicesType[] = [
   },
 
   {
-    title: "Extraction Simple",
-    price:"from £350",
+    title: "Simple Extraction",
+    price:"from £150",
     href: "/services/generalTreatment/extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
@@ -1266,8 +1266,8 @@ export const our_pricing_services: HomeOurServicesType[] = [
   },
 
   {
-    title: "Extraction Complex",
-    price:"from £350",
+    title: "Complex Extraction",
+    price:"from £280",
     href: "/services/generalTreatment/extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
@@ -1317,7 +1317,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
   {
     title: "Scale and Polish",
     price:"£55",
-    href: "",
+    href: "/services/generalTreatment/scale-and-polish",
     description:
       "Scale and polish removes plaque and tartar, followed by a thorough cleaning and polishing, enhancing oral health and smile brightness.",
     image: hygienist_services_image,
@@ -1326,8 +1326,8 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Sedation",
-    price:"from £250 (per sessions)",
-    href: "",
+    price:"from £250 (per session)",
+    href: "/services/generalTreatment/sedation",
     description:
       "Dental sedation ensures a comfortable, anxiety-free experience during procedures by calming patients with medication.",
     image: hygienist_services_image,
@@ -1448,7 +1448,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   {
     title: "Implant (Single Tooth)",
     price:"from £2500",
-    href: "",
+    href: "services/cosmeticTreatment/implants",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
       image: composite_bonding_service_icon,
@@ -2076,14 +2076,14 @@ export const serviceElevet_FixedRetainers: ServiceElevateType[]= [
   },
   {
     topTitle:'' ,
-    title: "Comfortable",
+    title: "Comfort",
     description:
       "Once bonded, fixed retainers are comfortable and virtually unnoticeable.",
     number_img: service_02,
   },
   {
     topTitle:'' ,
-    title: "Convenient",
+    title: "Convenience",
     description:
       "Unlike removable retainers, fixed retainers do not require daily insertion and removal.",
     number_img: service_03,
