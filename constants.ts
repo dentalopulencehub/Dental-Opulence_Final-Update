@@ -2192,7 +2192,7 @@ export const serviceElevet_CompositeEdgeBonding: ServiceElevateType[]= [
 
 export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Dental Bridges' ,
+    situationTitle:'DENTAL BRIDGES' ,
 
     situationTitleData1:'Replace teeth',
     situationTitleData2:'Support adjacent',
@@ -2208,7 +2208,7 @@ export const serviceCompositeBonding_Bridges: ServiceCompositeBondingType[]= [
 
 export const serviceCompositeBonding_Dentures: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Dentures' ,
+    situationTitle:'DENTURES' ,
      
     situationTitleData1:'Missing Teeth',
     situationTitleData2:'Chronic problems',
@@ -2224,7 +2224,7 @@ export const serviceCompositeBonding_Dentures: ServiceCompositeBondingType[]= [
 
 export const serviceCompositeBonding_Extractions: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Extractions' ,
+    situationTitle:'EXTRACTIONS' ,
 
     situationTitleData1:'Gum disease',
     situationTitleData2:'Tooth fractures',
@@ -2240,7 +2240,7 @@ export const serviceCompositeBonding_Extractions: ServiceCompositeBondingType[]=
 
 export const serviceCompositeBonding_WhiteFillings: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'White Fillings' ,
+    situationTitle:'WHITE FILLINGS' ,
 
     situationTitleData1:'Tooth gaps',
     situationTitleData2:'Cracked teeth',
@@ -2255,7 +2255,7 @@ export const serviceCompositeBonding_WhiteFillings: ServiceCompositeBondingType[
 ]
 export const serviceCompositeBonding_Sedation: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Dental Sedation' ,
+    situationTitle:'DENTAL SEDATION' ,
 
     situationTitleData1:'Minor surgeries',
     situationTitleData2:'Dental anxiety',
@@ -2270,7 +2270,7 @@ export const serviceCompositeBonding_Sedation: ServiceCompositeBondingType[]= [
 ]
 export const serviceCompositeBonding_ScaleAndPolish: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Scale & Polish' ,
+    situationTitle:'SCALE & POLISH' ,
 
     situationTitleData1:'Preventive Care',
     situationTitleData2:'Post-Dental Work',
@@ -2285,7 +2285,7 @@ export const serviceCompositeBonding_ScaleAndPolish: ServiceCompositeBondingType
 ]
 export const serviceCompositeBonding_CrownsVeneers: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Crowns / Veneers' ,
+    situationTitle:'CROWNS / VENEERS' ,
 
     situationTitleData1:'Cracked teeth',
     situationTitleData2:'Tooth gaps',
@@ -2302,7 +2302,7 @@ export const serviceCompositeBonding_CrownsVeneers: ServiceCompositeBondingType[
 
 export const serviceCompositeBonding_Examination: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Examination' ,
+    situationTitle:'EXAMINATION' ,
 
     situationTitleData1:'Oral hygiene',
     situationTitleData2:'dental implants',
@@ -2318,7 +2318,7 @@ export const serviceCompositeBonding_Examination: ServiceCompositeBondingType[]=
 
 export const serviceCompositeBonding_Hygienist: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Hygienist' ,
+    situationTitle:'HYGIENIST' ,
 
     situationTitleData1:'Routine cleanings',
     situationTitleData2:'Oral education',
@@ -2334,7 +2334,7 @@ export const serviceCompositeBonding_Hygienist: ServiceCompositeBondingType[]= [
 
 export const serviceCompositeBonding_RootCanalTreatments : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Root Canal Treatments' ,
+    situationTitle:'ROOT CANAL TREATMENTS' ,
 
     situationTitleData1:'Deep Decay',
     situationTitleData2:'Cracked tooth',
@@ -2352,7 +2352,7 @@ export const serviceCompositeBonding_RootCanalTreatments : ServiceCompositeBondi
 
 export const serviceCompositeBonding_Invisalign : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Invisalign' ,
+    situationTitle:'INVISALIGN' ,
 
     situationTitleData1:'Teeth crowding',
     situationTitleData2:'Orthodontic convenience',
@@ -2368,7 +2368,7 @@ export const serviceCompositeBonding_Invisalign : ServiceCompositeBondingType[]=
 
 export const serviceCompositeBonding_TeethWhitening : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Teeth Whitening' ,
+    situationTitle:'TEETH WHITENING' ,
 
     situationTitleData1:'Stained teeth',
     situationTitleData2:'Discolored teeth',
@@ -2384,7 +2384,7 @@ export const serviceCompositeBonding_TeethWhitening : ServiceCompositeBondingTyp
 
 export const serviceCompositeBonding_CrownsVeneers2 : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Crowns / Veneers' ,
+    situationTitle:'CROWNS / VENEERS' ,
 
     situationTitleData1:'Broken Teeth',
     situationTitleData2:'Decayed Teeth',
@@ -2400,7 +2400,7 @@ export const serviceCompositeBonding_CrownsVeneers2 : ServiceCompositeBondingTyp
 
 export const serviceCompositeBonding_Compositebonding : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Composite bonding' ,
+    situationTitle:'COMPOSITE BONDING' ,
 
     situationTitleData1:'CHIPPED TEETH',
     situationTitleData2:'Cracked teeth',
@@ -2416,7 +2416,7 @@ export const serviceCompositeBonding_Compositebonding : ServiceCompositeBondingT
 
 export const serviceCompositeBonding_Implants: ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Dental Implants' ,
+    situationTitle:'DENTAL IMPLANTS' ,
 
     situationTitleData1:'Missing Teeth',
     situationTitleData2:'Severe Tooth Decay',
@@ -2431,7 +2431,7 @@ export const serviceCompositeBonding_Implants: ServiceCompositeBondingType[]= [
 ]
 export const serviceCompositeBonding_InternalToothWhitening : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Internal Tooth Whitening' ,
+    situationTitle:'INTERNAL TOOTH WHITENING' ,
 
     situationTitleData1:'Tooth discoloration',
     situationTitleData2:'Root canal treatment',
@@ -2447,7 +2447,7 @@ export const serviceCompositeBonding_InternalToothWhitening : ServiceCompositeBo
 
 export const serviceCompositeBonding_FixedRetainers : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Fixed Retainers' ,
+    situationTitle:'FIXED RETAINERS' ,
 
     situationTitleData1:'Minor tooth movement',
     situationTitleData2:'Post-braces',
@@ -2464,7 +2464,7 @@ export const serviceCompositeBonding_FixedRetainers : ServiceCompositeBondingTyp
 
 export const serviceCompositeBonding_ViveraRetainers : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Vivera Retainers' ,
+    situationTitle:'VIVERA RETAINERS' ,
 
     situationTitleData1:'Post-Invisalign',
     situationTitleData2:'Retainer replacement',
@@ -2480,7 +2480,7 @@ export const serviceCompositeBonding_ViveraRetainers : ServiceCompositeBondingTy
 
 export const serviceCompositeBonding_CompositeVeneers : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Composite Veneers' ,
+    situationTitle:'COMPOSITE VENEERS' ,
 
     situationTitleData1:'Cracked Teeth',
     situationTitleData2:'Chipped Teeth',
@@ -2496,7 +2496,7 @@ export const serviceCompositeBonding_CompositeVeneers : ServiceCompositeBondingT
 
 export const serviceCompositeBonding_RoutineExamination : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Routine Examination' ,
+    situationTitle:'ROUTINE EXAMINATIONS' ,
 
     situationTitleData1:'Preventive care',
     situationTitleData2:'Oral hygiene',
@@ -2513,7 +2513,7 @@ export const serviceCompositeBonding_RoutineExamination : ServiceCompositeBondin
 
 export const serviceCompositeBonding_CompositeEdgeBonding : ServiceCompositeBondingType[]= [
   {
-    situationTitle:'Composite Edge Bonding' ,
+    situationTitle:'COMPOSITE EDGE BONDING' ,
 
     situationTitleData1:'CHIPPED TEETH',
     situationTitleData2:'Gap Teeth',
