@@ -16,8 +16,7 @@ const RootCanalTreatmentsHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          At our dental practice, we understand that the thought of a root canal treatment can be stressful for some patients. That’s why we strive to make the root canal process as comfortable and anxiety-free as possible.
-          </p>
+          At our dental practice, we understand that the thought of a root canal treatment can be stressful for some patients. That’s why we strive to make the root canal process as comfortable and anxiety-free as possible.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

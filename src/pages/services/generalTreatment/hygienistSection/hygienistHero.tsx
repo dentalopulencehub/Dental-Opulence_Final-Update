@@ -16,8 +16,7 @@ const HygienistHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          A visit with one of our highly trained dental hygienists is an essential part of maintaining a healthy and beautiful smile.
-          </p>
+          A visit with one of our highly trained dental hygienists is an essential part of maintaining a healthy and beautiful smile.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

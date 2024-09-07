@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import invisalign_service_hero_image from "../../../../../assets/DO Format/10.jpg"
-import right_thick from '../../../../../assets/images/right_thick.svg'
+import invisalign_service_hero_image from "../../../../../assets/DO Format/10.jpg";
+import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 
 const InvisalignHero = () => {
@@ -12,22 +12,29 @@ const InvisalignHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full sm:leading-[64px] text-[44px] xl:text-left text-center text-[#161616]">
-            Invisalign
+              Invisalign
             </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We offer Invisalign to boost self-confidence and well-being. This modern alternative to braces uses custom-made, clear aligners to gradually and comfortably shift teeth into place.
+            we offer Invisalign—the modern, discreet alternative to traditional
+            braces. Invisalign's custom- made, clear aligners are designed to
+            gradually and comfortably shift your teeth into perfect alignment,
+            enhancing both your smile and self-confidence.{" "}
           </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                0% Finance Options
+              </p>
             </div>
 
             <div className="flex gap-2 items-center mt-3">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                Evening and weekend appointments
+              </p>
             </div>
           </div>
 
@@ -48,7 +55,11 @@ const InvisalignHero = () => {
           </div>
         </div>
         <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
-          <Image src={invisalign_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
+          <Image
+            src={invisalign_service_hero_image}
+            alt="Composite Bonding Hero Image"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>

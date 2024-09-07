@@ -16,8 +16,7 @@ const CrownsVeneerHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We understand tooth damage and discoloration can impact oral health and self-confidence. We offer crowns and veneers to restore and enhance your teeth&apos;s appearance.
-          </p>
+          Crowns and veneers are cosmetic dental solutions that enhance the appearance of your teeth. Crowns cover damaged or discoloured teeth, providing a natural look and restoring functionality. Veneers are thin shells applied to the front of teeth to correct imperfections such as chips, gaps, or uneven shapes. Both options improve the aesthetics of your smile, offering a more uniform and radiant appearance. With crowns and veneers, you can achieve a flawless, confident smile.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

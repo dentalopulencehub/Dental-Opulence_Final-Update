@@ -17,8 +17,7 @@ const WhiteFillingHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We offer white fillings as cosmetic and functional solutions for tooth decay. These tooth-colored alternatives to metal fillings restore decayed teeth and replace old fillings for a natural appearance.
-          </p>
+          We offer white fillings as cosmetic and functional solutions for tooth decay. These tooth-colored alternatives to metal fillings restore decayed teeth and replace old fillings for a natural appearance.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

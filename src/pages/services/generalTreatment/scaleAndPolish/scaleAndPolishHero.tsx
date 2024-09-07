@@ -17,8 +17,7 @@ const RootCanalTreatmentsHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          Scaling is a dental procedure that removes hardened plaque, known as calculus, which can damage teeth and lead to gum disease. Polishing follows to smoothen teeth.
-          </p>
+          Scaling is a dental procedure that removes hardened plaque, known as calculus, which can damage teeth and lead to gum disease. Polishing follows to smoothen teeth.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

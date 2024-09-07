@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import routine_examination_service_hero_image from "../../../../../assets/DO Format/2.jpg"
-import right_thick from '../../../../../assets/images/right_thick.svg'
+import routine_examination_service_hero_image from "../../../../../assets/DO Format/2.jpg";
+import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 
 const RoutineExaminationHero = () => {
@@ -12,22 +12,31 @@ const RoutineExaminationHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full sm:leading-[64px] text-[44px] xl:text-left text-center text-[#161616]">
-            Routine Examination
+              Routine Examination
             </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          Regular routine examinations are crucial for maintaining oral health. Our comprehensive assessment identifies potential issues early on, ensuring top-quality care for all patients at our dental practice.
+            Regular routine dental examinations are essential for maintaining
+            your oral health. At Dental Opulence, our comprehensive assessments
+            help identify potential issues early, ensuring that you receive
+            top-quality care and proactive treatment. Schedule your routine
+            examination today to safeguard your smile and prevent future dental
+            problem.{" "}
           </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                0% Finance Options
+              </p>
             </div>
 
             <div className="flex gap-2 items-center mt-3">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                Evening and weekend appointments
+              </p>
             </div>
           </div>
 
@@ -48,7 +57,11 @@ const RoutineExaminationHero = () => {
           </div>
         </div>
         <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
-          <Image src={routine_examination_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
+          <Image
+            src={routine_examination_service_hero_image}
+            alt="Composite Bonding Hero Image"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>

@@ -17,8 +17,7 @@ const SedationHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          Oral sedation involves taking sedative drugs to ease anxiety and ensure a stress-free dental procedure, allowing patients to feel calm and comfortable throughout their visit.
-          </p>
+          Oral sedation involves taking sedative drugs to ease anxiety and ensure a stress-free dental procedure, allowing patients to feel calm and comfortable throughout their visit.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

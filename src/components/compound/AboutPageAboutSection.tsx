@@ -7,7 +7,7 @@ import { useIsomorphicLayoutEffect } from "../../../hooks";
 import PrimaryLink from "../atom/PrimaryLink";
 
 const AboutPageAboutSection = () => {
-  let value = `Dental Opulence is a new dental clinic that offers a combination of general dentistry and cosmetic dentistry services. The clinic is equipped with modern facilities and technology to provide exceptional dental care. The team at Dental Opulence is dedicated to ensuring a comprehensive and comfortable dental experience for patients. The clinic's focus is on maintaining oral health and enhancing smiles through cosmetic procedures.`;
+  let value = `Welcome to Dental Opulence, your premier dental clinic for general and cosmetic dentistry. With state-of-the-art technology and modern facilities, we provide exceptional care. Our experienced team is committed to maintaining your oral health and enhancing your smile. Whether you need routine check-ups or advanced cosmetic procedures, we offer personalised care tailored to you. Visit us today to achieve a healthy, beautiful smile that boosts your confidence.`;
 
   let value2 = `From routine check-ups to advanced cosmetic procedures, their skilled team ensures comprehensive and comfortable dental experiences. Combining a focus on general dentistry with the artistry of cosmetic dentistry, Dental Opulence prioritizes both oral health and aesthetic aspirations in an opulent environment.`;
 

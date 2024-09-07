@@ -638,7 +638,7 @@ export const services_page_data: ServicePageDataType[] = [
     title: "Root Canal Treatments",
     price: "£650",
     description:
-      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
+      "Root canal treatment removes infected pulp, cleans and seals the tooth, restoring function and relieving pain.",
       heroImage: root_canal_treatments_service_hero_image,
     type: "root-canal-treatments",
     
@@ -1010,7 +1010,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"from £450",
     href: "/services/generalTreatment/dentures",
     description:
-      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
+      "Dentures replace some missing teeth while preserving natural ones, while complete dentures replace all missing teeth for full-mouth restoration.",
     image: dentures_services_image,
     image_inverted: dentures_service_image_dark,
   },
@@ -1019,7 +1019,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"from £350",
     href: "/services/generalTreatment/extractions",
     description:
-      "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
+      "Tooth extractions for decayed or damaged teeth are performed with minimal discomfort and detailed aftercare instructions.",
     image: extraction_services_image,
     image_inverted: extraction_sevices_image_dark,
   },
@@ -1028,7 +1028,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"£650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
-      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+      "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
     image: crown_veneers_services_image,
     image_inverted: crown_veneers_services_image_dark,
   },
@@ -1037,7 +1037,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"£110",
     href: "/services/generalTreatment/hygienist",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "A dental hygienist performs cleanings, removes plaque and tartar, and gives advice to maintain optimal oral health.",
     image: hygienist_services_image,
     image_inverted: hygienist_services_image_dark,
   },
@@ -1055,7 +1055,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"from £650",
     href: "/services/generalTreatment/bridges",
     description:
-      "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
+      "A dental bridge fills gaps with crowns and a false tooth, restoring your smile with natural-looking, colour-matched results.",
     image: bridges_services_image,
     image_inverted: bridges_services_image_dark,
   },
@@ -1064,7 +1064,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"from £210",
     href: "/services/generalTreatment/white-fillings",
     description:
-      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+      "White fillings restore decayed teeth with a tooth-colored material, blending seamlessly with your natural teeth for a discreet, durable solution.",
     image: white_fillings_services_image,
     image_inverted: white_fillings_services_image_dark,
   },
@@ -1073,7 +1073,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"£50",
     href: "/services/generalTreatment/examination",
     description:
-      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+      "We perform comprehensive dental examinations to assess oral health, identify issues, and create tailored treatment plans for your needs.",
     image: examination_services_image,
     image_inverted: examination_services_image_dark,
   },
@@ -1082,7 +1082,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"",
     href: "/services/generalTreatment/scale-and-polish",
     description:
-      "Scaling removes plaque (calculus) causing teeth damage and gum disease then polishing smooths teeth.",
+      "Scale and polish removes plaque and tartar, followed by a thorough cleaning and polishing, enhancing oral health and smile brightness.",
     image: examination_services_image,
     image_inverted: examination_services_image_dark,
   },
@@ -1091,7 +1091,7 @@ export const our_services: HomeOurServicesType[] = [
     price:"",
     href: "/services/generalTreatment/sedation",
     description:
-      "Oral sedation involves administering sedative drugs orally to ease anxiety and facilitate dental procedures.",
+      "Dental sedation ensures a comfortable, anxiety-free experience during procedures by calming patients with medication.",
     image: examination_services_image,
     image_inverted: examination_services_image_dark,
   },
@@ -1104,16 +1104,16 @@ export const our_services2: HomeOurServicesType[] = [
     price:"from £2500",
     href: "/services/cosmeticTreatment/invisalign",
     description:
-      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
+      "Invisalign aligners are comfortable, nearly invisible, and effectively straighten teeth with personalized guidance.",
     image: invisalign_service_icon,
     image_inverted: invisalign_service_icon_light,
   },
-  {
+  { 
     title: "Composite Veneers",
     price:"£110",
     href: "/services/cosmeticTreatment/composite-veneers",
     description:
-      "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
+      "Composite veneers quickly enhance your smile, fixing minor imperfections and improving teeth color and shape.",
     image: composite_veneers_service_icon,
     image_inverted: composite_veneers_service_icon_light,
   },
@@ -1122,7 +1122,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£150",
     href: "/services/cosmeticTreatment/fixed-retainers",
     description:
-      "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
+      "Fixed retainers are custom-made, thin-wire appliances bonded to teeth, keeping them aligned after treatment for optimal results.",
     image: fixed_retainer_service_icon,
     image_inverted: fixed_retainer_service_icon_light,
   },
@@ -1140,7 +1140,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£350",
     href: "/services/cosmeticTreatment/teeth-whitening",
     description:
-      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+      "Teeth whitening is a convenient and effective solution for achieving a brighter, more youthful-looking smile. ",
     image: teeth_whitening_service_icon,
     image_inverted: teeth_whitening_service_icon_light,
   },
@@ -1152,7 +1152,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£50",
     href: "/services/cosmeticTreatment/routine-examination",
     description:
-      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+      "Regular dental exams are crucial for maintaining oral health and preventing potential issues before they develop.",
     image: routine_examination_service_icon,
     image_inverted: routine_examination_service_icon_light,
   },
@@ -1161,7 +1161,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"Single £250 - Dual £450",
     href: "/services/cosmeticTreatment/vivera-retainers",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "Vivera retainers are custom-made, durable, and nearly invisible, preserving teeth alignment after orthodontic treatment.",
     image: vivera_retainers_service_icon,
     image_inverted: vivera_retainers_service_icon_light,
   },
@@ -1170,7 +1170,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£350",
     href: "/services/cosmeticTreatment/internal-tooth-whitening",
     description:
-      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
+      "Internal tooth whitening safely brightens discolored teeth from within, customized to enhance your smile and confidence.",
     image: internal_tooth_whitening_service_icon,
     image_inverted: internal_tooth_whitening_service_icon_light,
   },
@@ -1180,7 +1180,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£650",
     href: "/services/cosmeticTreatment/crowns-veneers",
     description:
-      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+      "Crowns and veneers are custom-made dental solutions designed to restore and enhance the appearance of your teeth.",
     image: crown_veneers_service_icon,
     image_inverted: crown_veneers_service_icon_light,
   },
@@ -1191,7 +1191,7 @@ export const our_services2: HomeOurServicesType[] = [
     price:"£250",
     href: "/services/cosmeticTreatment/composite-edge-bonding",
     description:
-      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+      "Composite edge bonding enhances your teeth’s appearance by applying and shaping tooth-colored resin to fix minor imperfections.",
     image: composite_edge_bonding_service_icon,
     image_inverted: composite_edge_bonding_service_icon_light,
   },
@@ -1209,11 +1209,11 @@ export const our_services2: HomeOurServicesType[] = [
 
 
   {
-    title: "Implant",
+    title: "Implants",
     price:"from £2500",
     href: "/services/cosmeticTreatment/implants",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "A dental implant is a titanium post inserted into the jawbone, providing a stable foundation for replacement teeth.",
       image: composite_bonding_service_icon,
       image_inverted: composite_bonding_service_icon_light,
   },
@@ -1240,7 +1240,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"from £450",
     href: "/services/generalTreatment/dentures",
     description:
-      "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile",
+      "Dentures replace some missing teeth while preserving natural ones, while complete dentures replace all missing teeth for full-mouth restoration.",
     image: dentures_services_image,
     image_inverted: dentures_service_image_dark,
   },
@@ -1280,7 +1280,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"from £650",
     href: "/services/generalTreatment/bridges",
     description:
-      "Bridging Smiles, Connecting Confidence: Seamlessly Restore Your Complete Smile with Expertly Crafted Bridges.",
+      "A dental bridge fills gaps with crowns and a false tooth, restoring your smile with natural-looking, colour-matched results.",
     image: bridges_services_image,
     image_inverted: bridges_services_image_dark,
   },
@@ -1291,7 +1291,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"£650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
-      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+      "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
     image: crown_veneers_services_image,
     image_inverted: crown_veneers_services_image_dark,
   },
@@ -1300,7 +1300,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"from £210",
     href: "/services/generalTreatment/white-fillings",
     description:
-      "Radiant Smiles, Seamless Repairs: Unveil the Beauty of White Fillings at Our Dental Oasis!",
+      "White fillings restore decayed teeth with a tooth-colored material, blending seamlessly with your natural teeth for a discreet, durable solution.",
     image: white_fillings_services_image,
     image_inverted: white_fillings_services_image_dark,
   },
@@ -1309,7 +1309,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"£110",
     href: "/services/generalTreatment/hygienist",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "A dental hygienist performs cleanings, removes plaque and tartar, and gives advice to maintain optimal oral health.",
     image: hygienist_services_image,
     image_inverted: hygienist_services_image_dark,
   },
@@ -1319,7 +1319,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"£55",
     href: "",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "Scale and polish removes plaque and tartar, followed by a thorough cleaning and polishing, enhancing oral health and smile brightness.",
     image: hygienist_services_image,
     image_inverted: hygienist_services_image_dark,
   },
@@ -1329,7 +1329,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
     price:"from £250 (per sessions)",
     href: "",
     description:
-      "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
+      "Dental sedation ensures a comfortable, anxiety-free experience during procedures by calming patients with medication.",
     image: hygienist_services_image,
     image_inverted: hygienist_services_image_dark,
   },
@@ -2530,13 +2530,13 @@ export const serviceCompositeBonding_CompositeEdgeBonding : ServiceCompositeBond
 
 export const serviceHero2DescBridge : ServiceHero2TextDesc[]=[
   {
-    textDes:'A dental bridge fills gaps caused by missing teeth, comprising crowns for adjacent teeth and a false tooth in between to restore the smile\'s natural appearance. Crafted from quality materials, bridges mimic natural teeth in look and function. Our dentists create personalised treatment plans, ensuring patients achieve their desired smile. Bridges can be color-matched for a seamless blend with natural teeth, offering an invisible solution.'
+    textDes:'A dental bridge is an effective solution for filling gaps caused by missing teeth. It consists of crowns placed on adjacent teeth with a false tooth in between, restoring your smiles natural appearance. Crafted from high-quality materials, our bridges are designed to mimic the look and function of natural teeth. At Dental Opulence, our skilled dentists create personalized treatment plans to ensure you achieve your desired smile. Our bridges can be colour-matched to blend perfectly with your natural teeth, providing a discreet and aesthetically pleasing solution.'
   }
 ]
 
 export const serviceHero2DescDentures : ServiceHero2TextDesc[]=[
   {
-    textDes:'Partial dentures replace some missing teeth and are used when some natural teeth remain in the upper or lower jaw. Complete dentures replace all missing teeth in an arch. Our skilled dentists will assess your needs and create a personalised treatment plan for you. Contact us today to schedule your appointment and learn more about how dentures can benefit you.'
+    textDes:'Partial dentures are designed to replace some missing teeth while preserving the natural teeth that remain in the upper or lower jaw. Complete dentures are used to replace all missing teeth in an arch, providing a comprehensive solution for full-mouth restoration. At Dental Opulence, our skilled dentists will assess your needs and create a personalized treatment plan to ensure the best fit and function for your dentures.'
   }
 ]
 
@@ -2548,34 +2548,34 @@ export const serviceHero2DescExtyractions : ServiceHero2TextDesc[]=[
 
 export const serviceHero2Desc_WhiteFillings : ServiceHero2TextDesc[]=[
   {
-    textDes:'During your visit, our dentist will remove decay and place a tooth-colored filling, made of composite resin matching your natural teeth. White fillings bond directly to the tooth surface, providing a strong, durable, and virtually invisible restoration. They preserve tooth structure and enhance your smile\'s appearance. Contact us to learn more about how white fillings can benefit you.'
+    textDes:'During your visit, our dentist will remove decay and place a tooth-colored filling, made of composite resin matching your natural teeth. White fillings bond directly to the tooth surface, providing a strong, durable, and virtually invisible restoration. They preserve tooth structure and enhance your smile s appearance. Contact us to learn more about how white fillings can benefit you.'
   }
 ]
 export const serviceHero2Desc_ScaleAndPolish : ServiceHero2TextDesc[]=[
   {
-    textDes:'Scaling is a vital dental procedure that targets hardened plaque, or calculus, which forms on teeth and can lead to significant oral health issues, such as cavities and gum disease. After scaling, polishing is performed to smooth the tooth surface, enhancing their appearance and making it harder for plaque to accumulate.'
+    textDes:'Scaling is a vital dental procedure that targets hardened plaque, or calculus, which forms on teeth and can lead to significant oral health issues, such as cavities and gum disease. After scaling, polishing is performed to smooth the teeths surface, enhancing their appearance and making it harder for plaque to accumulate.'
   }
 ]
 export const serviceHero2Desc_Sedation : ServiceHero2TextDesc[]=[
   {
-    textDes:'Oral sedation dentistry involves administering sedative medication orally to help patients relax during dental procedures. It is especially beneficial for those with dental anxiety or phobia, ensuring a more comfortable and stress-free experience. The sedation allows patients to stay awake but feel significantly more at ease and less aware of the procedure.'
+    textDes:'Oral sedation dentistry involves administering sedative medication orally to help patients relax during dental procedures. Its especially beneficial for those with dental anxiety or phobia, ensuring a more comfortable and stress-free experience. The sedation allows patients to stay awake but feel significantly more at ease and less aware of the procedure.'
   }
 ]
 export const serviceHero2Desc_CrownsVeneers : ServiceHero2TextDesc[]=[
   {
-    textDes:'Crowns and veneers are both custom-made dental solutions that can restore and enhance the appearance of your teeth. Our skilled dentists will work with you to determine the best solution for your individual needs and create a treatment plan that will give you the smile you deserve. Contact us today to schedule your appointment and learn more about how crowns and veneers can benefit you and give you the smile you’ve always wanted.'
+    textDes:'During your visit, our dentists will thoroughly examine your teeth, gums, and mouth, checking for cavities, gum disease, and other oral health issues. They will also assess the any cosmetic concerns, offering treatment recommendations. Contact us to schedule your next examination and experience the difference in your oral health and appearance.'
   }
 ]
 
 export const serviceHero2Desc_Examination : ServiceHero2TextDesc[]=[
   {
-    textDes:'During your visit, our dentists will thoroughly examine your teeth, gums, and mouth, checking for cavities, gum disease, and other oral health issues. They will also assess the appearance of your smile and discuss any cosmetic concerns, offering treatment recommendations. Contact us to schedule your next examination and experience the difference in your oral health and appearance.'
+    textDes:'During your visit, our dentists will thoroughly examine your teeth, gums, and mouth, checking for cavities, gum disease, and other oral health issues. They ll also assess the appearance of your smile and discuss any cosmetic concerns, offering treatment recommendations. Contact us to schedule your next examination and experience the difference in your oral health and appearance.'
   }
 ]
 
 export const serviceHero2Desc_Hygienist : ServiceHero2TextDesc[]=[
   {
-    textDes:'Our hygienists provide personalised and gentle care to ensure your teeth and gums are clean and healthy. They thoroughly clean your teeth, remove plaque and tartar, and polish your teeth to a sparkling shine. They also check for signs of gum disease and provide preventative care. You\'ll leave with a fresh, clean mouth and a better understanding of how to maintain oral health. Contact us to schedule your next visit.'
+    textDes:'Our hygienists provide personalised and gentle care to ensure your teeth and gums are clean and healthy. They thoroughly clean your teeth, remove plaque and tartar, and polish your teeth to a sparkling shine. They also check for signs of gum disease and provide preventative care. You ll leave with a fresh, clean mouth and a better understanding of how to maintain oral health. Contact us to schedule your next visit.'
   }
 ]
 
@@ -2589,19 +2589,19 @@ export const serviceHero2Desc_RootCanalTreatments : ServiceHero2TextDesc[]=[
 
 export const serviceHero2Desc_Invisalign : ServiceHero2TextDesc[]=[
   {
-    textDes:'Invisalign aligners are virtually invisible and comfortable to wear, making them a popular choice for teeth straightening. They are custom-made to fit your teeth and worn for about 22 hours a day for 4-8 months. Our experienced team will work with you to determine the best solution for your needs and provide detailed instructions on how to use the aligners.'
+    textDes:'Invisalign aligners are a popular choice for teeth straightening because they are virtually invisible and comfortable to wear. These custom-made aligners fit your teeth perfectly and are worn for about 22 hours a day over a period of 4-8 months, gradually achieving the desired alignment. At Dental Opulence our experienced team is dedicated to finding the best teeth-straightening solution for you. We provide personalized guidance and detailed instructions on how to use your Invisalign aligners effectively, ensuring you achieve the best possible result'
   }
 ]
 
 export const serviceHero2Desc_teethwhitening : ServiceHero2TextDesc[]=[
   {
-    textDes:'Home teeth whitening is a safe and effective way to achieve a brighter, more youthful-looking smile. Our dental practice offers this solution to boost self-confidence and improve overall well-being. The treatment involves using custom-made whitening trays and a professional-grade whitening gel, which can be done in the comfort of your own home.'
+    textDes:'Teeth whitening is a safe and effective method for achieving a brighter, more youthful- looking smile. At Dental Opulence, we offer personalized whitening solutions to enhance your smile, boost your self-confidence, and improve your overall well-being.Our teeth whitening treatment utilizes custom-made whitening trays and professional-grade whitening gel. You can choose to undergo the treatment in the comfort of your own home or at our clinic, ensuring flexibility and convenience'
   }
 ]
 
 export const serviceHero2Desc_crowsVeneers2 : ServiceHero2TextDesc[]=[
   {
-    textDes:'Crowns and veneers are custom-made dental solutions that can restore and enhance the appearance of your teeth. Crowns are caps that fit over existing teeth, providing strength and stability, while veneers are thin shells bonded to the front of teeth to improve their appearance. Both can address issues like chipping, discoloration, or poor shape.'
+    textDes:'Crowns and veneers are custom-made dental solutions designed to restore and enhance the appearance of your teeth. Crowns are durable caps that fit over existing teeth, providing added strength and stability. In contrast, veneers are thin, custom-made shells bonded to the front of your teeth to improve their appearance. Both crowns and veneers effectively address issues such as chipping, discoloration, and poor shape, offering a comprehensive solution to achieve a flawless smile.'
   }
 ]
 
@@ -2619,35 +2619,35 @@ export const serviceHero2Desc_InternalToothWhitening : ServiceHero2TextDesc[]=[
 
 export const serviceHero2Desc_FixedRetainers : ServiceHero2TextDesc[]=[
   {
-    textDes:'Fixed retainers are custom-made orthodontic appliances designed to maintain teeth alignment after treatment. They consist of a thin wire bonded to the back of teeth and are virtually invisible. While effective, they should be used alongside removable retainers for optimal results. Contact us for a consultation on how fixed retainers can benefit you.'
+    textDes:'Fixed retainers are custom-made orthodontic appliances designed to keep your teeth perfectly aligned after treatment. Composed of a thin wire bonded to the back of your teeth, these retainers are virtually invisible and highly effective. For optimal results, fixed retainers are best used in combination with removable retainers.'
   }
 ]
 
 export const serviceHero2Desc_ViveraRetainers : ServiceHero2TextDesc[]=[
   {
-    textDes:'Vivera retainers are custom-made, durable, and virtually invisible, designed to maintain your teeth\'s new position after orthodontic treatment. They are comfortable, removable, and effective, ensuring long-term results. Our experienced team provides detailed instructions on their use, ensuring the best outcome for your smile.'
+    textDes:'Vivera retainers are custom-made, durable, and virtually invisible, designed to preserve your teeth’s new position after orthodontic treatment. These retainers are comfortable, removable, and highly effective, ensuring long-term results and maintaining the alignment of your smile. At Dental Opulence, our experienced team provides detailed instructions on using your Vivera retainers to ensure the best outcome for your smile. Trust us to help you keep your smile looking its best for years to come'
   }
 ]
 
 export const serviceHero2Desc_CompositeVeneers : ServiceHero2TextDesc[]=[
   {
-    textDes:'Composite veneers are a type of dental veneer made of tooth-colored composite resin. They can be applied and sculpted directly onto the surface of your existing teeth. Unlike traditional porcelain veneers, composite veneers can be done in one visit and do not require any tooth reduction. They can fix minor imperfections like chips, cracks, or gaps and improve the shape, color, and overall appearance of your teeth.'
+    textDes:'Composite veneers are a convenient and effective option for enhancing your smile. Made from tooth-coloured composite resin, these dental veneers are applied and sculpted directly onto the surface of your existing teeth. Unlike traditional porcelain veneers, composite veneers can be completed in a single visit and require no tooth reduction. Perfect for fixing minor imperfections such as chips, cracks, or gaps, composite veneers also improve the shape, colour, and overall appearance of your teeth, giving you a stunning smile in just one appointment.'
   }
 ]
 
 export const serviceHero2Desc_RoutineExamination : ServiceHero2TextDesc[]=[
   {
-    textDes:'During your visit, our experienced dentists conduct thorough examinations, checking for cavities, gum disease, and other oral health concerns. Digital X-rays provide detailed views for personalised treatment plans. Preventative care and education are prioritised, with routine examinations crucial for identifying and preventing dental problems. Schedule your examination today for optimal oral health.'
+    textDes:'During your visit to Dental Opulence, our experienced dentists perform comprehensive dental examinations to check for cavities, gum disease, and other oral health concerns. We utilize digital X-rays to provide detailed images, allowing us to develop personalized treatment plans tailored specifically to your needs. At Dental Opulence, we prioritize preventive care and patient education. Routine examinations are essential for identifying and preventing dental problems, ensuring you maintain optimal oral health.'
   }
 ]
 export const serviceHero2Desc_Implants : ServiceHero2TextDesc[]=[
   {
-    textDes:'A dental implant is a titanium post surgically inserted into the jawbone to serve as a sturdy foundation for a replacement tooth or bridge. This procedure not only enhances the appearance of your smile but also restores functionality, allowing for improved chewing and speaking. With proper maintenance, implants can last many years.'
+    textDes:'A dental implant is a titanium post surgically inserted into the jawbone to provide a sturdy foundation for a replacement tooth or bridge. This procedure not only enhances the appearance of your smile but also restores functionality, improving your ability to chew and speak effectively. With proper maintenance, dental implants can last for many years, offering a long-term solution for missing teeth.'
   }
 ]
 export const serviceHero2Desc_CompositeEdgebonding : ServiceHero2TextDesc[]=[
   {
-    textDes:'Composite edge bonding is a non-invasive procedure that involves applying a tooth-colored composite resin material to the edges of your teeth. This material is sculpted and shaped to match the contour of your existing teeth, and is then hardened and polished to create a natural-looking finish. The result is an improvement in the appearance of your teeth, that can be used to fix minor imperfections such as chips, cracks, or gaps.'
+    textDes:'Composite edge bonding is a non-invasive procedure designed to improve the appearance of your teeth. This technique involves applying a tooth-coloured composite resin material to the edges of your teeth. The resin is sculpted and shaped to seamlessly match the contour of your existing teeth, then hardened and polished to achieve a natural-looking finish.Composite edge bonding effectively addresses minor imperfections such as chips, cracks, or gaps,'
   }
 ]
 

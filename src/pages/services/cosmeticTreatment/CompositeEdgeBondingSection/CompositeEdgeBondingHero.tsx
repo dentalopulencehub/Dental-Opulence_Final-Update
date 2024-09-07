@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import composite_edge_bonding_service_hero_image from "../../../../../assets/DO Format/10.jpg"
+import composite_edge_bonding_service_hero_image from "../../../../../assets/DO Format/10.jpg";
 import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 
@@ -16,18 +16,25 @@ const CompositeEdgeBondingHero = () => {
             </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite edge bonding as a solution for improving the appearance of your teeth.
+            We understand that the appearance of your teeth can affect your
+            self-confidence and overall well-being. That’s why we offer
+            composite edge bonding as a solution for improving the appearance of
+            your teeth.{" "}
           </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                0% Finance Options
+              </p>
             </div>
 
             <div className="flex gap-2 items-center mt-3">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                Evening and weekend appointments
+              </p>
             </div>
           </div>
 
@@ -48,7 +55,11 @@ const CompositeEdgeBondingHero = () => {
           </div>
         </div>
         <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
-          <Image src={composite_edge_bonding_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
+          <Image
+            src={composite_edge_bonding_service_hero_image}
+            alt="Composite Bonding Hero Image"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>

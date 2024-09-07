@@ -16,8 +16,7 @@ const ExaminationHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We strive to make every dental visit stress-free and comfortable. Our comprehensive examination assesses your oral health and enhances your smile&apos;s appearance.
-          </p>
+          We strive to make every dental visit stress-free and comfortable. Our comprehensive examination assesses your oral health and enhances your smile's appearance.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

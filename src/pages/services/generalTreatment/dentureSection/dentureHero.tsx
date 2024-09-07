@@ -16,8 +16,7 @@ const DentureHero = () => {
                         </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          At our practice, we offer partial and complete dentures to replace missing teeth, improving both oral health and self-confidence.
-          </p>
+          At Dental Opulence, we offer partial and complete dentures as effective solutions for replacing missing teeth. Our dentures not only enhance your oral health but also boost your self-confidence by restoring the natural look and function of your smile.          </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">

@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import composite_veneers_service_hero_image from "../../../../../assets/DO Format/7.jpg"
-import right_thick from '../../../../../assets/images/right_thick.svg'
-
+import composite_veneers_service_hero_image from "../../../../../assets/DO Format/7.jpg";
+import right_thick from "../../../../../assets/images/right_thick.svg";
 
 import Link from "next/link";
 
@@ -18,18 +17,25 @@ const CompositeVeneersHero = () => {
             </h1>
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
-          We understand that the appearance of your teeth can affect your self-confidence and overall well-being. That’s why we offer composite veneers as a cosmetic solution for improving the appearance of your teeth.
+            we understand that the appearance of your teeth plays a crucial role
+            in your self-confidence and overall well-being. That's why we offer
+            composite veneers—a highly effective cosmetic dentistry solution for
+            transforming your smile.{" "}
           </p>
 
           <div className="mt-6">
             <div className="flex gap-2 items-center">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">0% Finance Options</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                0% Finance Options
+              </p>
             </div>
 
             <div className="flex gap-2 items-center mt-3">
               <Image src={right_thick} alt="right_thick" />
-              <p className="text-[16px] text-[#161616] lg:text-left text-center">Evening and weekend appointments</p>
+              <p className="text-[16px] text-[#161616] lg:text-left text-center">
+                Evening and weekend appointments
+              </p>
             </div>
           </div>
 
@@ -50,7 +56,11 @@ const CompositeVeneersHero = () => {
           </div>
         </div>
         <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
-          <Image src={composite_veneers_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
+          <Image
+            src={composite_veneers_service_hero_image}
+            alt="Composite Bonding Hero Image"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </div>
