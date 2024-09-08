@@ -81,11 +81,12 @@ const OurServiceCard = ({
         selectedTheme === "light" ? "bg-[#F8F8F8]" : "bg-[#282828]"
       } border border-[#f4f4f4] rounded-xl max-w-[289px] md:h-[220px] h-[340px] service-card duration-0`}
     >
+
       {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" />
       </div> */}
       <div>
-        <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>
+        <h3 className="text-xl text-[#100E10] font-Pangram-Bold">{title}</h3>
         <p className="text-[13px] text-[#4e4e4e] font-Pangram-Regular mt-1">
           {description}
         </p>

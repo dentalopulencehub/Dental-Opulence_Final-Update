@@ -32,7 +32,8 @@ const PatientWalkThrough = () => {
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex flex-col items-center justify-between sm:gap-[64px] gap-[37px]">
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-bold md:w-[650px] text-center w-full">
-          What to expect during<br/> your dental visit
+          What to expect during
+          <br /> your dental visit
         </h2>
         <div className="relative mx-auto my-4">
           <video
@@ -42,7 +43,7 @@ const PatientWalkThrough = () => {
             playsInline
             muted={isMuted} // Initial mute state
           >
-            <source src="/videos/walkThrough/patientWalkThoroughCompressed.mp4" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006679852/rendition/1080p/file.mp4?loc=external&signature=79105608789778f69d2be3df701bfcc7edef102043c89a9ddc448bf76c9a3f8f" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (

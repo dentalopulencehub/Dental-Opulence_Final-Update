@@ -42,7 +42,7 @@ const CosmaticWalkThrough = () => {
             playsInline
             muted={isMuted} // Initial mute state
           >
-            <source src="/videos/walkThrough/patientWalkThoroughCompressed.mp4" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006679852/rendition/1080p/file.mp4?loc=external&signature=79105608789778f69d2be3df701bfcc7edef102043c89a9ddc448bf76c9a3f8f" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (

@@ -72,11 +72,11 @@ const TeethWhiteningOurCases = () => {
               </div> */}
               <div className="relative overflow-hidden">
                 <Image src={data} alt="Result Image" className="w-full" />
-                <Image
+                {/* <Image
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                   src={result_logo_mini}
                   alt=""
-                />
+                /> */}
               </div>
             </div>
           ))}

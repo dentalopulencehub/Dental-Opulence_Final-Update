@@ -17,7 +17,7 @@ const BridgesHeroSection = () => {
               Bridges
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify">
             At Dental Opulence, we recognize that missing teeth can impact both
             your oral health and self-confidence. That’s why we offer dental
             bridges as an effective solution for replacing missing teeth. Our
