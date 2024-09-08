@@ -40,7 +40,7 @@ const TeethWhiteningOurCases = () => {
         </div>
 
         <div className="lg:flex hidden items-center gap-3">
-          <Image
+          {/* <Image
             src={slider_arrow_left}
             alt=""
             onClick={handleOuterLeftClick}
@@ -51,7 +51,7 @@ const TeethWhiteningOurCases = () => {
             alt=""
             onClick={handleOuterRightClick}
             className="cursor-pointer"
-          />
+          /> */}
         </div>
       </div>
 
@@ -64,12 +64,12 @@ const TeethWhiteningOurCases = () => {
               }`}
               key={index}
             >
-              <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
+              {/* <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
                 <Image src={result_logo_micro} alt="Result logo micro" />
                 <p className="text-xs font-Pangram-Regular text-white ml-3">
                   dentalopulence
                 </p>
-              </div>
+              </div> */}
               <div className="relative overflow-hidden">
                 <Image src={data} alt="Result Image" className="w-full" />
                 <Image

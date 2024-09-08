@@ -116,7 +116,7 @@ const AboutMissionVision = () => {
                 <Image src={expert_dentist_img} alt="" />
                 <h3 className="text-[48px] text-white">3+</h3>
                 <p className="text-base text-center mr-3 font-Pangram-Regular text-[#D0D0D0]">
-                  AWARDS
+                CLIENT SATISFACTION
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-2">

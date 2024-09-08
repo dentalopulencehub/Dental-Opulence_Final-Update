@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import home_hero_ill from "../../../assets/images/home-hero-ill.svg";
+import home_hero_ill from "../../../assets/DO Format/DO 1.png";
 import PrimaryLink from "../atom/PrimaryLink";
 
 import right_thick from '../../../assets/fonts/right_thick_home.svg';
@@ -53,7 +53,7 @@ const HomeHero = () => {
         <Image
           src={home_hero_ill}
           alt="Home hero illustration"
-          className="xl:mt-0 mt-12"
+          className="xxl:mt-0 mt-12 w-[50%] h-auto"
         />
       </div>
     </div>

@@ -257,10 +257,10 @@ import invisalign_our_cases_6 from "./assets/images/invisalign_our_cases_6.png";
 
 
 
-import theeth_whitening_our_cases_1 from "./assets/images/theeth_whitening_our_cases_1.webp";
-import theeth_whitening_our_cases_2 from "./assets/images/theeth_whitening_our_cases_2.webp";
-import theeth_whitening_our_cases_3 from "./assets/images/theeth_whitening_our_cases_3.webp";
-import theeth_whitening_our_cases_4 from "./assets/images/theeth_whitening_our_cases_4.webp";
+import theeth_whitening_our_cases_1 from "./assets/images/case1.png";
+import theeth_whitening_our_cases_2 from "./assets/images/case2.png";
+import theeth_whitening_our_cases_3 from "./assets/images/case3.png";
+import theeth_whitening_our_cases_4 from "./assets/images/case4.png";
 
 import crown_our_cases_1 from "./assets/images/crown_our_cases_1.webp";
 import crown_our_cases_2 from "./assets/images/crown_our_cases_2.webp";
@@ -2058,7 +2058,7 @@ export const serviceElevet_InternalToothWhitening: ServiceElevateType[]= [
   },
   {
     topTitle:'' ,
-    title: "Safe and Comfortable",
+    title: "Safety and Comfort",
     description:
       "The procedure is performed by experienced professionals in a controlled environment, ensuring your safety and comfort throughout.",
     number_img: service_03,
