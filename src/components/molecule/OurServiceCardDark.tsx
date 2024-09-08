@@ -78,13 +78,13 @@ const OurServiceCardDark = ({
      <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-4 py-[26px] flex flex-col gap-4 items-start md:h-[267px] h-[340px]  bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[289px]  service-card`}
+      className={`px-4 py-[20px] flex flex-col gap-4 items-start md:h-[220px] h-[340px]  bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[289px]  service-card`}
      >
-      <div className="">
+      {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" className="" />
-      </div>
+      </div> */}
       <div>
-        <h3 className="text-base text-[#fff] font-Pangram-Bold">{title}</h3>
+        <h3 className="text-xl text-[#fff] font-Pangram-Bold">{title}</h3>
         <p className="text-sm text-[#B2B2B2] font-Pangram-Regular mt-1">
           {description}
         </p>

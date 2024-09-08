@@ -18,7 +18,7 @@ const CompositeVeneersHero = () => {
           </div>
           <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
             we understand that the appearance of your teeth plays a crucial role
-            in your self-confidence and overall well-being. That's why we offer
+            in your self-confidence and overall well-being. That&apos;s why we offer
             composite veneers—a highly effective cosmetic dentistry solution for
             transforming your smile.{" "}
           </p>
