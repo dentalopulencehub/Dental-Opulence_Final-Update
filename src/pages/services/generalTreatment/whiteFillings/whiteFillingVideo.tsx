@@ -35,15 +35,35 @@ const WhiteFillingVideo = () => {
           What You Should Know
           <br /> about White Fillings
         </h2>
-        <div className="relative mx-auto my-4 w-full">
-          <iframe
-            src="https://player.vimeo.com/video/1006679728?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="100%"
-            height="700"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            title="White Fillings"
-          ></iframe>
+        <div className="relative mx-auto my-4">
+          <video
+            ref={videoRef}
+            className="object-cover rounded-2xl w-full h-full opacity-1"
+            onClick={handleVideoClick}
+            playsInline
+            muted={isMuted} // Initial mute state
+          >
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006679728/rendition/1080p/file.mp4?loc=external&signature=3677ffd86689b89ecccbafcd62e3853dbc3953193aa828cc287ad1fd32f7286b" />
+            Your browser does not support the video tag.
+          </video>
+          {!isPlaying && (
+            <div
+              className="absolute inset-0 flex justify-center items-center cursor-pointer"
+              onClick={handleVideoClick}
+            >
+              <Image src={videoPlayButton} alt="videoPlayButton" />
+            </div>
+          )}
+          <div
+            className="absolute bottom-4 left-4 cursor-pointer"
+            onClick={toggleMute}
+          >
+            <Image
+              src={isMuted ? speakerMuteIcon : speakerIcon}
+              alt="Speaker Icon"
+              className="w-10 h-10"
+            />
+          </div>
         </div>
         <PrimaryLink
           href="/contact"
