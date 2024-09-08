@@ -202,7 +202,7 @@ const Footer = () => {
                   </h3>
                   <div
                     onClick={() =>
-                      handleSetPathToNavigate(dispatch, "privacy-policy")
+                      handleSetPathToNavigate(dispatch, "/privacy-policy")
                     }
                   >
                     <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
