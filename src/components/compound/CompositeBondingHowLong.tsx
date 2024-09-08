@@ -64,7 +64,16 @@ const CompositeBondingHowLong: React.FC = () => {
               controls={false}
               onClick={() => handlePlayPause(videoId as keyof VideoRefs)}
             >
-              <source src={`/video/${videoId}.mp4`} type="video/mp4" />
+              <source 
+                src={
+                  videoId === "video1" 
+                    ? `https://player.vimeo.com/progressive_redirect/playback/1007244718/rendition/1080p/file.mp4?loc=external&signature=338dd884244b3928a1892afd0b982d5c010646b43bbcbd965b44f485b0ca6075` 
+                    : videoId === "video2" 
+                    ? `https://player.vimeo.com/progressive_redirect/playback/1007244473/rendition/1080p/file.mp4?loc=external&signature=5ab98ed61b8caaa110eb6e514e84eaaa6af70518e81c11da6677a00e3600bc15` 
+                    : `https://player.vimeo.com/progressive_redirect/playback/1007243878/rendition/1080p/file.mp4?loc=external&signature=1ab524e2fb5c0892ad29aa36accd451173f0469e793154e59e9663146f0354d5`
+                } 
+                type="video/mp4" 
+              />
               Your browser does not support the video tag.
             </video>
             {!isPlaying[videoId as keyof IsPlayingState] && (
