@@ -15,7 +15,7 @@ const InvisalignHero = () => {
               Invisalign
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             we offer Invisalign—the modern, discreet alternative to traditional
             braces. Invisalign&apos;s custom- made, clear aligners are designed to
             gradually and comfortably shift your teeth into perfect alignment,
@@ -54,7 +54,7 @@ const InvisalignHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={invisalign_service_hero_image}
             alt="Composite Bonding Hero Image"

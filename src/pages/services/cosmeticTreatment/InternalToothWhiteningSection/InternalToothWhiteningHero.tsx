@@ -15,7 +15,7 @@ const InternalToothWhiteningHero = () => {
               Internal Tooth Whitening
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             Internal tooth whitening is a safe and effective procedure designed
             to lighten discoloured teeth from within. This treatment involves
             applying a specialized bleaching agent to the inside of the tooth,
@@ -54,7 +54,7 @@ const InternalToothWhiteningHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={internal_tooth_whiteneing_service_hero_image}
             alt="Composite Bonding Hero Image"

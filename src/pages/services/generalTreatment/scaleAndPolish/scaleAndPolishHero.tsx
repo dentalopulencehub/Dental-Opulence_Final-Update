@@ -16,7 +16,7 @@ const RootCanalTreatmentsHero = () => {
             Scale & Polish
                         </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
           Scaling is a dental procedure that removes hardened plaque, known as calculus, which can damage teeth and lead to gum disease. Polishing follows to smoothen teeth.          </p>
 
           <div className="mt-6">
@@ -47,7 +47,7 @@ const RootCanalTreatmentsHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image src={scale_and_polish_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
         </div>
       </div>

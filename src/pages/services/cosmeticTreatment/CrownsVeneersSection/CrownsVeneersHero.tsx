@@ -17,7 +17,7 @@ const CrownsVeneersHero = () => {
             Crowns / Veneers
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
           At our dental practice, we understand that tooth damage and discoloration can affect not only your oral health but also your self-confidence. That’s why we offer crowns and veneers as cosmetic solutions for restoring and enhancing the appearance of your teeth.
           </p>
 
@@ -49,7 +49,7 @@ const CrownsVeneersHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image src={crowns_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
         </div>
       </div>

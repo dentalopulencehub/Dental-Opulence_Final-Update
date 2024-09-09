@@ -11,13 +11,13 @@ const BridgesHeroSection = () => {
   return (
     <div className="w-full">
       <div className="bg-[#FFFFFF] rounded-t-[24px] pt-[100px] pb-[100px] h-full w-full items-center flex xl:flex-row flex-col justify-between xl:px-[100px] sm:px-[40px] px-[20px]">
-        <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
+        <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8 ">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full sm:leading-[64px] text-[44px] xl:text-left text-center text-[#161616]">
               Bridges
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             At Dental Opulence, we recognize that missing teeth can impact both
             your oral health and self-confidence. That’s why we offer dental
             bridges as an effective solution for replacing missing teeth. Our
@@ -58,11 +58,11 @@ const BridgesHeroSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={bridges_service_hero_image}
             alt="Composite Bonding Hero Image"
-            className="max-w-full h-auto"
+            className="max-w-full h-full"
           />
         </div>
       </div>

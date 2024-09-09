@@ -15,7 +15,7 @@ const CompositeEdgeBondingHero = () => {
               Composite Bonding
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             We understand that the appearance of your teeth can affect your
             self-confidence and overall well-being. That’s why we offer
             composite edge bonding as a solution for improving the appearance of
@@ -54,7 +54,7 @@ const CompositeEdgeBondingHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={composite_edge_bonding_service_hero_image}
             alt="Composite Bonding Hero Image"

@@ -15,7 +15,7 @@ const TeethWhiteningHero = () => {
               Teeth Whitening
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             Teeth whitening is a convenient and effective solution for achieving
             a brighter, more youthful-looking smile. At Dental opulence we offer
             professional teeth whitening treatments designed to enhance your
@@ -55,7 +55,7 @@ const TeethWhiteningHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={teeth_whitening_service_hero_image}
             alt="Composite Bonding Hero Image"

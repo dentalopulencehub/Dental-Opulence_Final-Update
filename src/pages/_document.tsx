@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <link rel="icon" href="/favicon.ico" />
+
       <meta name="description" content="Dental Opulence" />
         <link rel="shortcut icon" href="/384.png" />
         <link rel="mask-icon" href="/384.png" color="#FFFFFF" />

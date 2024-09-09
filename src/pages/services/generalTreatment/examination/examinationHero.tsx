@@ -15,7 +15,7 @@ const ExaminationHero = () => {
               Examination
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             We strive to make every dental visit stress-free and comfortable.
             Our comprehensive examination assesses your oral health and enhances
             your smile&apos;s appearance.{" "}
@@ -53,7 +53,7 @@ const ExaminationHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={examination_service_hero_image}
             alt="Composite Bonding Hero Image"

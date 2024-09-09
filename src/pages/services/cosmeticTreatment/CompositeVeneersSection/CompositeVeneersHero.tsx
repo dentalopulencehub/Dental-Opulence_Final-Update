@@ -16,7 +16,7 @@ const CompositeVeneersHero = () => {
               Composite Veneers
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
             we understand that the appearance of your teeth plays a crucial role
             in your self-confidence and overall well-being. That&apos;s why we offer
             composite veneers—a highly effective cosmetic dentistry solution for
@@ -55,7 +55,7 @@ const CompositeVeneersHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[50%] mt-8 xl:mt-0">
+        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
           <Image
             src={composite_veneers_service_hero_image}
             alt="Composite Bonding Hero Image"
