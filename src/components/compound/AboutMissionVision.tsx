@@ -114,7 +114,7 @@ const AboutMissionVision = () => {
             <div className=" w-full xl:h-[310px] bg-[#222222] rounded-2xl flex sm:flex-row flex-col md:justify-around justify-between xs:p-10 p-7 sm:gap-0 gap-10">
               <div className="flex flex-col items-center justify-center gap-2">
                 <Image src={expert_dentist_img} alt="" />
-                <h3 className="text-[48px] text-white">3+</h3>
+                <h3 className="text-[48px] text-white">99%</h3>
                 <p className="text-base text-center mr-3 font-Pangram-Regular text-[#D0D0D0]">
                 CLIENT SATISFACTION
                 </p>

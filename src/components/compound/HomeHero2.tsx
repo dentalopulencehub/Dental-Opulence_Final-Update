@@ -32,7 +32,7 @@ const HomeHero2 = () => {
   return (
     <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        <div className="xl:max-w-[600px] md:w-[70%] w-[90%]">
+        <div className="xl:max-w-[600px] md:w-[70%] w-[90%] mx-auto sm:text-center">
           <Image src={home_hero2_ill} alt="" className="mt-10 xl:w-[500px]" />
         </div>
 
@@ -42,7 +42,7 @@ const HomeHero2 = () => {
             <Image src={underline_vector} alt="" />
           </p>
           <h4
-            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] xl:text-left text-center flex flex-wrap"
+            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] xl:text-left text-center flex flex-wrap text-center sm:text-left"
             ref={element}
           >
             {words.map((word, index) => {

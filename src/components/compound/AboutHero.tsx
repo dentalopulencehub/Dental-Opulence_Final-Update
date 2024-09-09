@@ -64,14 +64,24 @@ const AboutHero = () => {
           /> */}
         </div>
         <div className="relative mx-auto my-4 w-full">
-          <iframe
-            src="https://player.vimeo.com/video/1006670545?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="100%"
-            height="700"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            title="DOREELHORI_LQ"
-          ></iframe>
+          <video
+            ref={videoRef}
+            className="object-cover rounded-2xl w-full h-full opacity-1"
+            onClick={handleVideoClick}
+            playsInline
+            muted={isMuted} // Initial mute state
+          >
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1007730186/rendition/1080p/file.mp4?loc=external&signature=099268b9ef324adb45ed7666f23cc83ea7f9b590b5e44a69478e3638c818743b" />
+            Your browser does not support the video tag.
+          </video>
+          {!isPlaying && (
+            <div
+              className="absolute inset-0 flex justify-center items-center cursor-pointer"
+              onClick={handleVideoClick}
+            >
+              <Image src={videoPlayButton} alt="videoPlayButton" />
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -77,7 +77,7 @@ const OurServiceCard = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-4 py-[20px] flex flex-col gap-4 items-start ${
+      className={`px-[25px] py-[20px] flex flex-col gap-4 items-start ${
         selectedTheme === "light" ? "bg-[#F8F8F8]" : "bg-[#282828]"
       } border border-[#f4f4f4] rounded-xl max-w-[289px] md:h-[220px] h-[340px] service-card duration-0`}
     >

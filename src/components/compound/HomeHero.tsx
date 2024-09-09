@@ -22,12 +22,12 @@ const HomeHero = () => {
           </p>
 
           <div className="mt-6">
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-center justify-center sm:justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">0% Finance Options</p>
             </div>
 
-            <div className="flex gap-2 items-center mt-3">
+            <div className="flex gap-2 items-center mt-3 justify-center sm:justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">Evening and weekend appointments</p>
             </div>
@@ -53,7 +53,7 @@ const HomeHero = () => {
         <Image
           src={home_hero_ill}
           alt="Home hero illustration"
-          className="xxl:mt-0 mt-12 w-[50%] h-auto"
+          className="xxl:mt-0 mt-12 w-[85%] h-auto sm:w-[50%]" // Increased size for mobile view
         />
       </div>
     </div>
