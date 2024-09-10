@@ -206,9 +206,10 @@ const TestimonyComp = () => {
         </div>
       </div>
       <div className="flex flex-col mt-6 md:flex-row items-center">
-        <GoogleCard />
-        <div className="w-full flex-grow md:w-auto mt-6 md:mt-0">
+        <div className="w-full flex-grow md:w-auto mt-6 md:mt-0 overflow-x-auto">
           <CardCarousel>
+            
+            <GoogleCard />
             {reviews.map((review, i) => (
               <div key={i} className="w-full h-full flex-shrink-0">
                 <div className="h-full w-full rounded-[0.875rem] bg-black flex flex-col justify-between p-8">

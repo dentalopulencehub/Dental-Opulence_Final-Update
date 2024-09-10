@@ -45,7 +45,6 @@ const OurResult = () => {
   return (
     <div className="w-full">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] bg-white">
-        
         <div className="flex justify-between items-start">
           <div>
             <p className="flex flex-col">
@@ -70,18 +69,23 @@ const OurResult = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-6 mt-10 sm:grid sm:grid-cols-2 xs:grid xs:grid-cols-2">
-          {home_result_images.map((data, index) => (
-            <ResultCard key={index} image={data} />
-          ))}
+        <div className="flex gap-6 mt-10">
+          <div className="block sm:hidden overflow-x-auto whitespace-nowrap">
+            {home_result_images.map((data, index) => (
+              <div className="inline-block mr-4" key={index}>
+                <ResultCard image={data} />
+              </div>
+            ))}
+          </div>
+          <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 w-full">
+            {home_result_images.map((data, index) => (
+              <ResultCard key={index} image={data} />
+            ))}
+          </div>
         </div>
-
- 
       </div>
     </div>
   );
 };
 
 export default OurResult;
-
-
