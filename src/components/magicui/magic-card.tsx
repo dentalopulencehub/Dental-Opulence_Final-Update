@@ -30,7 +30,7 @@ function useMousePosition(): MousePosition {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [onmousemove]);
+  }, []);
 
   return mousePosition;
 }
