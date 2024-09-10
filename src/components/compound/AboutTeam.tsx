@@ -32,7 +32,8 @@ const people = [
     id: 1,
     name: 'Dr Ali Al Hassan.', 
     description: "Ali graduated from Cardiff University with an honour’s degree, having achieved many awards such as the Margaret Probert Prize. Since then Ali has dedicated himself to learning the most up to date and cutting-edge techniques in Dentistry. Early on Ali worked in Hospital helping those most vulnerable where he completed his sedation training and the Member of the Faculty of Dental Surgery (MFDS) Examination from the Royal College of Surgeons, Glagow. After gaining an acute insight into pain management, surgery and Sedation Ali moved on to follow his passion – Cosmetic Dentistry. Since then Ali has completed numerous courses in Cosmetic Dentistry, most recently a Post Graduate Diploma in the Progressive Management of Advanced Aesthetic Restorative Dentistry with distinction. Ali is very passionate about his profession with a particular emphasis on minimally invasive restorative treatment, Invisalign, Bonding and the management of anxious patients. He has invested heavily in postgraduate education with some of the best in the country and prides himself on keeping up to date with new treatments to offer the highest quality evidence-based care for his patients. Ali won Best Young Dentist as voted by The Dentistry Awards, recognising his achievements to date. Furthermore, he is a multiple published author in leading publications such as Nature, The British Dental Journal and Young Dentist Magazine. Perhaps Ali’s best quality is he gets on really well with everyone he meets and is easy to talk to. He loves putting patients at ease. Ali believes that it is important that he gets to know you so I can find the best treatment for you. He will always take the time to listen to you, to fully understand your needs, and discuss all of the options available to you. In his spare time Ali loves sports, he can talk about it all day!",
-    designation:"Co-Founder / Clinical Director"
+    designation:"Co-Founder / Clinical Director",
+    gdc:265075
   },
   { 
     id: 2, 
@@ -43,8 +44,8 @@ const people = [
   {
      id: 3,
      name: 'Amelia Jamil', 
-     description: "Amelia started as a Dental Nurse in February 2023, she has worked in both NHS and private dentistry. Amelia started at Dental Opulence as one of the first nurses to come on board back in November 2023. Amelia loves to assist in many treatments. In general dentistry her favourite treatments to assist in are Extractions and Root Canals. And in Cosmetic Dentistry her favourite treatment to assist in is Composite Bonding! In her spare time she enjoys going to the gym, baking, reading books and painting.", 
-     designation:"Nurse"
+     description: "Amelia joined Dental Opulence in November 2023 as a receptionist with aspirations to become a dental nurse. She brings a wealth of experience from working in both NHS and private dentistry settings. Her dedication to the field is evident in her enthusiastic approach to learning and growth within the dental practice.In her role as a receptionist, Amelia is dedicated to providing exceptional support to patients. She handles scheduling and manages appointments efficiently, ensuring that patients receive timely care. Amelia is also skilled at answering questions, addressing concerns, and creating a welcoming atmosphere that helps to ease any apprehensions patients may have about their treatments. Her commitment to making each visit smooth and comfortable reflects her deep care for patient well-being. Outside of her professional life, Amelia maintains a vibrant balance of interests. She enjoys going to the gym, baking, reading, and painting, which provide her with relaxation and creative fulfilment, complementing her dedication to her career.", 
+     designation:"Receptionist"
     },
   { 
     id: 4, 
@@ -56,13 +57,15 @@ const people = [
     id: 5, 
     name: 'Dr. Asad Abbas', 
     description: "Dr. Asad Abbas is a passionate, dedicated, and personable dentist who approaches the quest for a beautiful smile with both success and fun. His love for people is only matched by his enthusiasm and energy for dentistry. Dr. Abbas embraces challenges and opportunities with unparalleled commitment to helping each patient achieve their dental goals. After completing his Bachelor of Dental Surgery at the University of Manchester, Dr. Abbas was invited to work in the West Midlands, where he spent his early years training and gaining valuable experience in cosmetic dentistry and dental implantology. Dr. Abbas has had the privilege of working with many master technicians and ceramists, leading to genuine friendships and a shared passion for creating unique cosmetic results for each patient. Over the years, their collaboration has resulted in countless new smiles for their patients. Actively involved in the dental community, Dr. Abbas is a member of the Local Dental Committee and participates in various West Midlands study clubs and dental organisations. Committed to continuous learning, he continuously enhances his knowledge by attending courses worldwide, including completing a Practical Implantology course in Egypt. In addition to his own education, Dr. Abbas also finds joy in teaching others. Since 2021, he has been serving as a PLVE Trainer, a prestigious role that involves training and mentoring newly qualified dentists from his practice. Outside of dentistry, Dr. Abbas enjoys spending quality time with his family and friends. He is also an avid footballer and plays for a local team on weekends. Dr. Asad Abbas BDS is a well-rounded individual dedicated to both his profession and personal interests.", 
-    designation:"Cosmetic / General Dentist"
+    designation:"Cosmetic / General Dentist",
+    gdc:244989
   },
   { 
     id: 6, 
     name: 'Dr Nazar Syed', 
     description: "Since graduating in 2013, Nazar has undertaken extensive training in oral surgery in several hospitals. This has involved participating in major deformity, trauma and cancer surgeries. During his hospital posts, Nazar also became involved in training and teaching of younger colleagues in oral surgery. This passion for teaching led Nazar to complete a post graduate certificate in medical education and he now runs hands-on oral surgery courses for dentists as well mentoring dentists in oral surgery and sedation. He has also undertaken training and post graduate qualifications in dental implants and conscious sedation for very anxious patients. Nazar's clinical practice is limited to oral surgery, implant dentistry and sedation dentistry. He is very experienced with dealing with nervous patients and receives a large number of referrals from other dentists to help treat anxious and nervous patients. Nazar has attended national and international conferences both as a contributor and as an attendee.Outside of work, Nazar enjoys an active lifestyle with a particular passion for both playing and watching football. His other great love is travelling and food, and his dream job is to be a travelling food journalist/chef like the Hairy Bikers!", 
-    designation:"Implantologist "
+    designation:"Implantologist ",
+    gdc:244712
   },
   { 
     id: 7, 
@@ -74,13 +77,14 @@ const people = [
     id: 8, 
     name: 'Inayah Sajad', 
     description: "Inayah joined Dental Opulence in January 2024 as a Dental Nurse. Inayah has always enjoyed dentistry and found it very interesting. She qualified in 2021 and has been working as a Dental Nurse since.Cosmetic Dentistry is her favourite! Although she has nursed for all types of dental treatments including implants, surgical extractions and even procedures done under sedation. Inayah likes to spend her free time going out with friends and family." ,
-    designation:"Nurse"
+    designation:"Nurse",
+    gdc:299706
   },
   { 
     id: 9, 
     name: 'Anahita Salehi ', 
     description: "Anahita Salehi graduated from Birjand Dental School in Iran in 2019 and worked as a dedicated dental professional until 2023. Currently, she is pursuing a master's degree in Dental Materials at the University of Birmingham.In her free time, Anahita enjoys painting, hitting the gym, and she has a particular passion for reading, and discovering new cuisines. After graduation, Anahita gained extensive experience in various areas of dentistry, including aligners, aesthetic dentistry, and general dental treatments." ,
-    designation:"Nurse"
+    designation:"Trainee"
   },
   
 ];
@@ -118,7 +122,7 @@ const AboutTeam = () => {
 
  
       <div className="md:col-span-6 w-full md:mt-0 mt-5">
-        <LifeDescription name={selectedPerson.name} description={selectedPerson.description} designation={selectedPerson.designation}/>
+        <LifeDescription name={selectedPerson.name} description={selectedPerson.description} designation={selectedPerson.designation} gdc={selectedPerson.gdc}/>
       </div>
 
     </div>

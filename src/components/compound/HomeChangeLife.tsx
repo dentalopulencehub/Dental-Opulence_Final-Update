@@ -19,12 +19,9 @@ const HomeChangeLife = () => {
               {/* <Image src={change_life_whatsapp_logo} alt="" /> */}
             </div>
           </div>
-
-          
-            {change_life.map((data, index) => (
-              <ChangeLifeCard key={index} {...data} />
-            ))}
-         
+          {change_life.map((data, index) => (
+            <ChangeLifeCard key={index} {...data} />
+          ))}
         </div>
       </div>
     </div>

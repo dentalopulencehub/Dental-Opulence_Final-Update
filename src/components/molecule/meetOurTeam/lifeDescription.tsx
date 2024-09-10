@@ -7,9 +7,10 @@ interface DescriptionProps {
   description: string;  
   name: string;
   designation:string;
+  gdc:number | undefined
 }
 
-const LifeDescription: React.FC<DescriptionProps> = ({ name, description,designation }) => {
+const LifeDescription: React.FC<DescriptionProps> = ({ name, description,designation,gdc}) => {
   return (
     <div className="py-8 px-10 bg-[#F3F3F3] rounded-[16px] w-full">
       <p className="mt-2 text-[19px] font-[500] ">{description}</p>
@@ -19,6 +20,7 @@ const LifeDescription: React.FC<DescriptionProps> = ({ name, description,designa
       </div>
       
       <p className='text-[16px] font-[400] mt-2'>{designation}</p>
+      {gdc && <p className='text-[16px] font-[400] mt-2 font-bold'>GDC No. {gdc}</p>}
     </div>
   );
 };

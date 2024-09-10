@@ -7,7 +7,7 @@ import { useIsomorphicLayoutEffect } from "../../../hooks";
 import PrimaryLink from "../atom/PrimaryLink";
 
 const AboutPageAboutSection = () => {
-  let value = `Welcome to Dental Opulence, your premier dental clinic for general and cosmetic dentistry. With state-of-the-art technology and modern facilities, we provide exceptional care. Our experienced team is committed to maintaining your oral health and enhancing your smile. Whether you need routine check-ups or advanced cosmetic procedures, we offer personalised care tailored to you. Visit us today to achieve a healthy, beautiful smile that boosts your confidence.`;
+  let value = `Dental Opulence is a private dental clinic that offers a combination of general dentistry and cosmetic dentistry services. The clinic is equipped with modern facilities and technology to provide exceptional dental care. The team at Dental Opulence is dedicated to ensuring a comprehensive and comfortable dental experience for patients. The clinic's focus is on maintaining oral health and enhancing smiles through cosmetic procedures.`;
 
   let value2 = `From routine check-ups to advanced cosmetic procedures, their skilled team ensures comprehensive and comfortable dental experiences. Combining a focus on general dentistry with the artistry of cosmetic dentistry, Dental Opulence prioritizes both oral health and aesthetic aspirations in an opulent environment.`;
 
@@ -36,7 +36,7 @@ const AboutPageAboutSection = () => {
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
           <h2 className="sm:text-[34px] sm:leading-[42px] text-[28px] text-white font-Pangram-Bold">
-            Experience Dental Opulence: Radiant Smiles, Optimal Oral Health
+            A Private Dental Clinic for Radiant Smiles and Optimal Oral Health{" "}
           </h2>
           <Image src={home_hero2_ill} alt="" className="mt-10" />
         </div>
@@ -66,7 +66,7 @@ const AboutPageAboutSection = () => {
             })}
           </h4>
 
-        {/*   <h4
+          {/*   <h4
             className="text-white font-Pangram-Regular mt-6 sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-left text-center flex flex-wrap"
             ref={element2}
           >
@@ -85,7 +85,7 @@ const AboutPageAboutSection = () => {
               );
             })}
           </h4> */}
-         {/*  <PrimaryLink
+          {/*  <PrimaryLink
             href="#"
             title="Contact us"
             style="py-4 px-[49px] mt-12 rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white"
