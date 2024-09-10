@@ -18,9 +18,9 @@ const HomePopularServices = () => {
           Client Favorites for Proven Results.
         </h2>
 
-        <div className="mt-10 flex flex-wrap justify-center lg:gap-4 gap-2">
+        <div className="mt-10 flex flex-wrap justify-center gap-2 lg:flex grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
           {popular_services.map((service, index) => (
-            <div className="w-full sm:w-1/2 lg:w-auto">
+            <div className="w-full sm:w-auto">
               <PopularServiceCard key={index} {...service} />
             </div>
           ))}

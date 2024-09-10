@@ -19,22 +19,22 @@ const PopularServiceCard = ({
       <div
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
-        className="w-[289px] h-auto p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
+        className="w-full xs:w-[140px] sm:w-[180px] md:w-[220px] lg:w-[289px] h-auto p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
       >
         {/* <Image src={hover ? image_inverted : image} alt={title} /> */}
         <h3
           className={`mt-7 ${
             hover ? "text-white" : "text-[#100E10]"
-          } text-[24px] font-Pangram-Bold text-center md:text-left`}
+          } text-[20px] xs:text-[16px] sm:text-[18px] font-Pangram-Bold text-center md:text-left`}
         >
           {title}
         </h3>
         <p
-          className={`mt-4 text-[#4E4E4E] text-[14px] font-Pangram-Regular ${
+          className={`mt-4 text-[#4E4E4E] text-[12px] xs:text-[10px] sm:text-[12px] md:text-[14px] font-Pangram-Regular ${
             hover
               ? "text-[#D6D6D6]"
               : "text-[#100E10] leading-[22px] text-center md:text-left"
-          } `}
+          }`}
         >
           {description}
         </p>
@@ -47,7 +47,7 @@ const PopularServiceCard = ({
             <p className="flex items-center gap-[10px] justify-center">
               <span
                 className={`text-xs ${
-                  hover ? "text-[#100E10]" : "text-[#100E10] "
+                  hover ? "text-[#100E10]" : "text-[#100E10]"
                 } `}
               >
                 More Info

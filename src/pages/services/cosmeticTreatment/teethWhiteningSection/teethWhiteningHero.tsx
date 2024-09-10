@@ -15,12 +15,8 @@ const TeethWhiteningHero = () => {
               Teeth Whitening
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
-            Teeth whitening is a convenient and effective solution for achieving
-            a brighter, more youthful-looking smile. At Dental opulence we offer
-            professional teeth whitening treatments designed to enhance your
-            smile, boost your self-confidence, and improve your overall well-
-            being.{" "}
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%] leading-tight">
+            Teeth whitening is a convenient and effective solution for achieving a brighter, more youthful-looking smile. At Dental opulence we offer professional teeth whitening treatments designed to enhance your smile, boost your self-confidence, and improve your overall well-being.
           </p>
 
           <div className="mt-6">
