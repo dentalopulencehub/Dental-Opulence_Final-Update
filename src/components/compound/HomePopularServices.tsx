@@ -20,9 +20,9 @@ const HomePopularServices = () => {
 
         <div className="mt-10 flex flex-wrap justify-center gap-2 lg:flex grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
           {popular_services.map((service, index) => (
-            <div className="w-full sm:w-auto">
+            // <div className="w-full sm:w-auto">
               <PopularServiceCard key={index} {...service} />
-            </div>
+            // </div>
           ))}
         </div>
       </div>

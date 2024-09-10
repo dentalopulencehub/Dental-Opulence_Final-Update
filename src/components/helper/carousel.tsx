@@ -1,5 +1,5 @@
 import useCarousel from "../../../hooks/useCarousel";
-import React, { ReactNode } from "react";
+import React, { ReactNode ,useEffect} from "react";
 
 const Carousel = ({
   children,
@@ -14,7 +14,7 @@ const Carousel = ({
 }) => {
   const { carouselRef, next, prev } = useCarousel();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (direction === "Left") {
       prev();
       setDirection(null);
@@ -22,7 +22,7 @@ const Carousel = ({
       next();
       setDirection(null);
     }
-  }, [direction]);
+  }, [next, prev,direction]);
 
   return (
     <div className={`relative ${className}`}>
