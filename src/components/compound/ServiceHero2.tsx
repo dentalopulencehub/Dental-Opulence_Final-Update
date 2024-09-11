@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import service_her2_ill from "../../../assets/DO Format/3.jpg";
+import service_her2_ill from "../../../assets/DO Format/hero-for-DO.png";
 import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
@@ -36,9 +36,9 @@ const ServiceHero2 = ({
           <Image src={service_her2_ill} alt="" className="mt-8" />
         </div>
 
-        <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
+        <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-end items-center">
           <h4
-            className="text-[#161616] font-Pangram-Regular sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-left text-center flex flex-wrap"
+            className="text-[#161616] font-Pangram-Regular sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-right text-center flex flex-wrap"
             ref={element}
           >
             {words.map((word, index) => {
