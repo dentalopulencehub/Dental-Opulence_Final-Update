@@ -15,7 +15,7 @@ const OurProcess = () => {
           <ProcessCard processes={home_process} title={""} description={""} image={undefined} href={""} price={""} />
 
         </div>
-      </div>
+      </div>  
     </div>
   );
 };
