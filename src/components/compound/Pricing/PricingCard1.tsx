@@ -5,9 +5,6 @@ import Image from "next/image";
 import arrow_right from "../../../../assets/images/arrow-right.svg";
 import bordered_arrow_right from "../../../../assets/images/bordered-arrow-right.svg";
 
-
-
-
 import { useGSAP } from "@gsap/react";
 // import { gsap } from "../../../lib/gsap";
 import Link from "next/link";
@@ -81,44 +78,39 @@ const PricingCard1 = ({
 
   return (
     <Link href={href}>
-    <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      className={` px-5 py-[21px] ${
-        selectedTheme === "light" ? "bg-[#F3F3F3]" : "bg-[#282828]"
-      } border border-[#f4f4f4] rounded-xl max-w-[395px] h-[110px]  service-card duration-0`}
-    >
-
-
-     <div className="flex justify-between items-center">
-        <div className="flex items-center gap-6">
-           <div>
+      <div
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className={` px-5 py-[21px] ${
+          selectedTheme === "light" ? "bg-[#F3F3F3]" : "bg-[#282828]"
+        } border border-[#f4f4f4] rounded-xl max-w-[395px] h-[150px] md:h-[110px] service-card duration-0`}
+      >
+        <div className="flex flex-row justify-between items-center gap-3">
+          <div className="flex flex-col items-start justify-start w-[70%]">
+            {/* <div>
              <Image src={hover ? image_inverted : image} alt="" className="w-[55px] h-[55px]"/>
-           </div> 
-           <div>
-             <h3 className="text-base text-[#100E10] font-Pangram-Bold">{title}</h3>
-             <p className="mt-1">{price}</p>
-           </div>
+           </div>  */}
+              <h3 className="text-base text-[#100E10] font-Pangram-Bold text-left">
+                {title}
+              </h3>
+              <p className="mt-1 text-left">{price}</p>
+          </div>
+
+          <div className="self-center md:self-end mb-1 w-[30%]">
+            <Image
+              src={arrow_right}
+              alt=""
+              className="absolute -left-4 arrow-right opacity-0e w-6 md:w-8"
+            />
+            <Image
+              src={bordered_arrow_right}
+              alt=""
+              className="bordered-arrow-right  w-6 md:w-8 "
+            />
+          </div>
         </div>
 
-        <div className="relative self-end mb-1">
-          <Image
-            src={arrow_right}
-            alt=""
-            className="absolute -left-4 arrow-right opacity-0"
-           />
-         <Image
-            src={bordered_arrow_right}
-            alt=""
-            className="bordered-arrow-right relative"
-          />
-        </div> 
-     </div>
-
-
-
-
-      {/* <div className="">
+        {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" />
       </div>
       <div>
@@ -137,8 +129,8 @@ const PricingCard1 = ({
           className="bordered-arrow-right relative"
         />
       </div> */}
-    </div>
-  </Link>
+      </div>
+    </Link>
   );
 };
 

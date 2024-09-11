@@ -82,6 +82,16 @@ const AboutHero = () => {
               <Image src={videoPlayButton} alt="videoPlayButton" />
             </div>
           )}
+          <div
+            className="absolute bottom-4 left-4 cursor-pointer"
+            onClick={toggleMute}
+          >
+            <Image
+              src={isMuted ? speakerMuteIcon : speakerIcon}
+              alt="Speaker Icon"
+              className="w-10 h-10"
+            />
+          </div>
         </div>
       </div>
     </div>

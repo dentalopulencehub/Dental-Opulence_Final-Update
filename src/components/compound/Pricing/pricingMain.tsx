@@ -54,7 +54,7 @@ const PricingMain: React.FC = () => {
         }`}
       >
         {selectedTheme === "light" ? (
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-5">
             {our_pricing_services.map((service, index) => (
               <PricingCard1
                 key={index}
@@ -64,7 +64,7 @@ const PricingMain: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-5">
             {our_pricing_services2.map((service, index) => (
               <PricingCard2
                 key={index}

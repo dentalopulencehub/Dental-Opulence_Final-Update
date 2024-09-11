@@ -1236,7 +1236,7 @@ export const our_services2: HomeOurServicesType[] = [
 
 export const our_pricing_services: HomeOurServicesType[] = [
   {
-    title: "Dentures",
+    title:"Dentures",
     price:"from £450",
     href: "/services/generalTreatment/dentures",
     description:
@@ -1360,7 +1360,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
 export const our_pricing_services2: HomeOurServicesType[] = [
   {
-    title: "Composite  Bonding",
+    title: "Composite Bonding",
     price:"from £300",
     href: "/services/cosmeticTreatment/composite-bonding",
     description:
@@ -1465,7 +1465,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
 
   {
-    title: "Multiple Teeth Replacement with fixes bridge work",
+    title: "Multiple Teeth Replacement",
     price:"from £5700",
     href: "/services/generalTreatment/bridges",
     description:

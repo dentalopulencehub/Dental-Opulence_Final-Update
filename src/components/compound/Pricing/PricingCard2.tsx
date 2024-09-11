@@ -78,40 +78,45 @@ const PricingCard2 = ({
 
   return (
     <Link href={href}>
-     <div
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      className={`px-5 py-6  max-w-[400px] h-[115px]   bg-[#222222] border border-[#2D2D2D] rounded-xl  service-card`}
-     >
+      <div
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className={`px-5 py-6 max-w-[400px] h-[150px] md:h-[115px] bg-[#222222] border border-[#2D2D2D] rounded-xl service-card`}
+      >
+        <div className="flex flex-row justify-between items-center gap-3">
+          <div className="flex flex-col items-start justify-start w-[70%]">
+            {/* <div>
+              <Image
+                src={hover ? image_inverted : image}
+                alt=""
+                className="w-[55px] h-[55px]"
+              />
+            </div> */}
+            <div>
+              <h3 className="text-base text-[#fff] font-Pangram-Bold">
+                {title}
+              </h3>
+              <p className=" text-[#B2B2B2] font-Pangram-Regular mt-1">
+                {price}
+              </p>
+            </div>
+          </div>
 
-
-<div className="flex justify-between items-center">
-        <div className="flex items-center gap-6">
-           <div>
-             <Image src={hover ? image_inverted : image} alt="" className="w-[55px] h-[55px]" />
-           </div> 
-           <div>
-           <h3 className="text-base text-[#fff] font-Pangram-Bold">{title}</h3>
-             <p className=" text-[#B2B2B2] font-Pangram-Regular mt-1">{price}</p>
-           </div>
+          <div className="self-center md:self-end mb-1 w-[30%]">
+            <Image
+              src={bordered_arrow_right}
+              alt=""
+              className="arrow-right -left-4 absolute opacity-0 w-6 md:w-8"
+            />
+            <Image
+              src={arrow_right}
+              alt=""
+              className="bordered-arrow-right w-6 md:w-8"
+            />
+          </div>
         </div>
 
-        <div className="relative self-end mb-1">
-        <Image
-          src={bordered_arrow_right}
-          alt=""
-          className="arrow-right -left-4 absolute opacity-0"
-        />
-        <Image
-          src={arrow_right}
-          alt=""
-          className="relative   bordered-arrow-right"
-        />
-        </div> 
-     </div>
-
-
-      {/* <div className="">
+        {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" className="" />
       </div>
       <div>
@@ -132,10 +137,8 @@ const PricingCard2 = ({
           className="relative   bordered-arrow-right"
         />
       </div> */}
-    </div>
-
+      </div>
     </Link>
-   
   );
 };
 
