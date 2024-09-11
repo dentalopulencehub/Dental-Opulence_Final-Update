@@ -26,7 +26,7 @@ const ContactForm = ({
       <section className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5">
         <div className="content w-full flex flex-col xl:flex-row gap-5 xl:gap-24">
           <div>
-            <h1 className="bold text-lg md:text-[32px] text-white text-center md:text-left xl:text-[56px]">
+            <h1 className="bold md:text-[28px] text-white text-center md:text-left xl:text-[56px] leading-tight">
               Input your personal info
             </h1>
           </div>

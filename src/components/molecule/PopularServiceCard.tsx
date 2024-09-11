@@ -51,7 +51,7 @@ const PopularServiceCard = ({
                   hover ? "text-[#100E10]" : "text-[#100E10]"
                 } `}
               >
-                More Info  dem
+                More Info
               </span>
               <Image
                 src={hover ? pointer_right_dark : pointer_right_dark}
