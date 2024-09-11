@@ -42,7 +42,7 @@ const HomeHero2 = () => {
             <Image src={underline_vector} alt="" />
           </p>
           <h4
-            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] xl:text-left text-center flex flex-wrap text-center sm:text-left"
+            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] justify-center md:text-left text-center flex flex-wrap "
             ref={element}
           >
             {words.map((word, index) => {

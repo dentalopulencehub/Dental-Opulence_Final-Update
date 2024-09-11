@@ -77,9 +77,9 @@ const OurResult = () => {
               </div>
             ))}
           </div>
-          <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 w-full">
-            {home_result_images.map((data, index) => (
-              <ResultCard key={index} image={data} />
+          <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+           {home_result_images.map((data, index) => (
+              <ResultCard key={index} image={data} /> 
             ))}
           </div>
         </div>

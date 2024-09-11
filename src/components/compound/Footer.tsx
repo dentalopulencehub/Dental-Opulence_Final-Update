@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import footer_logo from "../../../assets/images/do_logo.png";
+import footer_logo2 from "../../../assets/images/footer_logo2.svg";
 
 import footer_text from "../../../assets/images/Dental Opulence.svg";
 import ig_logo from "../../../assets/images/instagram-icon.svg";
@@ -87,12 +88,19 @@ const Footer = () => {
               </div>
 
               <div className="md:flex items-center gap-2 md:mt-10 h-full w-full">
-                <Link href="https://test.cqc.org.uk/location/1-17708997775/contact">
+                <Link href="https://test.cqc.org.uk/location/1-17708997775/contact" 
+                 className="flex gap-2"
+                >
                   <Image
                     src={logo_Link1}
                     alt=""
                     className="w-[100px]"
                   />
+               <Image
+                 src={footer_logo2}
+                 alt=""
+                 className="filter brightness-[1] invert-[1] saturate-[0] w-[50px]"
+               />
                 </Link>
                 {/* <Link href='https://www.gdc-uk.org'>
                   <Image src={logo_Link2} alt="" className="w-[190px] h-[80px]  md:my-0 my-3"/>

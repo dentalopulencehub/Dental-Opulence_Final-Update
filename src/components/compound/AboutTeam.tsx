@@ -106,7 +106,9 @@ const AboutTeam = () => {
      </div>
   </div>
 
-  <div className="md:flex md:flex-wrap grid grid-cols-2 w-full bg-[#F3F3F3] p-10 rounded-[16px] md:mt-0 mt-5 md:h-[530px]">
+  <div className="flex md:flex-wrap  w-full bg-[#F3F3F3] p-10 rounded-[16px] md:mt-0 mt-5 md:h-[530px]
+  snap-x overflow-x-auto md:overflow-x-hidden
+  ">
     {people.map((person) => (
       <Person
         key={person.id}

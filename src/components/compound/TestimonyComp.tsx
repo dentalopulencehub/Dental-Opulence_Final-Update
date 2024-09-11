@@ -36,28 +36,39 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ children }) => {
   }, [width, isMobile]);
 
   const CAN_SHIFT_LEFT = offset < 0;
-  const CAN_SHIFT_RIGHT =
-    Math.abs(offset) < cardSize * (childrenArray.length - visibleCards);
-
+  // const CAN_SHIFT_RIGHT =
+  //   Math.abs(offset) < cardSize * (childrenArray.length - visibleCards);
+const CAN_SHIFT_RIGHT =
+  Math.abs(offset) < cardSize * (childrenArray.length - visibleCards - 1) &&
+  offset !== -(cardSize * (childrenArray.length - visibleCards));
   const shiftLeft = () => {
     if (!CAN_SHIFT_LEFT) return;
     setOffset((pv) => Math.min(0, pv + cardSize));
   };
 
-  const shiftRight = () => {
-    if (!CAN_SHIFT_RIGHT) return;
-    setOffset((pv) =>
-      Math.max(
-        -(cardSize * (childrenArray.length - visibleCards)),
-        pv - cardSize
-      )
-    );
-  };
-
+  // const shiftRight = () => {
+  //   if (!CAN_SHIFT_RIGHT) return;
+  //   setOffset((pv) =>
+  //     Math.max(
+  //       -(cardSize * (childrenArray.length - visibleCards)),
+  //       pv - cardSize
+  //     )
+  //   );
+  // };
+const shiftRight = () => {
+  if (!CAN_SHIFT_RIGHT) return;
+  setOffset((pv) =>
+    Math.max(
+      -(cardSize * (childrenArray.length - visibleCards - 1)),
+      pv - cardSize
+    )
+  );
+};
   return (
     <section className="bg-transparent" ref={ref}>
       <div className="relative overflow-hidden">
-        <div className="mx-auto lg:max-w-6xl">
+      {/* lg:max-w-6xl */}
+        <div className="mx-auto ">
           <motion.div animate={{ x: offset }} className="flex">
             {React.Children.map(children, (child, index) => (
               <div
@@ -178,7 +189,7 @@ const TestimonyComp = () => {
   };
 
   return (
-    <div className="md:container mx-auto md:px-14 px-5 mb-[6.6rem] md:mt-14 mt-10">
+    <div className="md:container mx-auto md:px-14 px-5 md:mb-[6.6rem] mb-[3rem] md:mt-14 mt-10">
       <div>
         <p className="">
           <span className="text-[#000] font-Pangram-Regular text-[16px] font-[500]">
@@ -193,7 +204,7 @@ const TestimonyComp = () => {
           </p>
           <Link
             href={"/testimonials"}
-            className="flex gap-3 items-center  md:px-7 py-2 "
+            className="md:flex hidden gap-3 items-center  md:px-7 py-2 "
           >
             <SecondaryLink
               href="#"
@@ -230,6 +241,18 @@ const TestimonyComp = () => {
           </CardCarousel>
         </div>
       </div>
+      <Link
+            href={"/testimonials"}
+            className="md:hidden flex gap-3 items-center  md:px-7 py-2 "
+          >
+            <SecondaryLink
+              href="#"
+              title="See Client Reactions"
+              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
+              hovered={linkHover}
+              setHovered={setLinkHover}
+            />
+          </Link>
     </div>
   );
 };
