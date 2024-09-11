@@ -56,7 +56,7 @@ const AboutGetInTouch = () => {
     <div className="text-[#fff] lg:px-[100px] sm:px-[40px] px-[20px] pb-28 pt-8">
       <div className="flex xl:flex-row flex-col gap-6 w-full">
         <div className="flex flex-col flex-wrap gap-6 justify-between xl:max-w-[425px] w-full">
-          <div className="sm:max-w-[425px] w-full xl:h-[530px] bg-[#222222] rounded-2xl xs:p-10 p-5">
+          <div className="sm:max-w-[425px] w-full xl:h-[560px] bg-[#222222] rounded-2xl xs:p-10 p-5">
             <Image src={about_mission_logo} width={70} alt="" />
             <p className="text-[22px] font-[500] mt-7">
             To log in to the patient portal or make a new inquiry click the buttons below
@@ -83,7 +83,7 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 mt-1 items-center justify-between">
+            <div className="flex gap-4 mt-[3rem] items-center justify-between">
               <Link
                 href={"https://book.do.co.uk/"}
                 target="blank"

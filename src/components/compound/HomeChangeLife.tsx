@@ -10,11 +10,11 @@ const HomeChangeLife = () => {
     <div className="w-full">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[120px] bg-white">
         <div className="flex flex-row flex-wrap justify-center gap-7 items-center">
-          <div className="w-full md:w-[23%] h-[284px] bg-[#100E10] p-8 rounded-lg flex flex-col justify-between">
-            <h3 className="text-white font-Pangram-Bold text-[32px] leading-[44px]">
-              Change Your Life With us
+          <div className="w-full lg:w-[23%] xs:w-[40%] md:h-[284px] h-max bg-[#100E10] p-8 md:rounded-2xl xs:rounded-[14px] flex flex-col justify-between">
+            <h3 className="text-white font-Pangram-Bold md:text-[32px] text-[26px] md:leading-[44px] leading-9">
+              Experience Life-Changing Dental Care
             </h3>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt-4">
               <Image src={change_life_logo} alt="" />
               {/* <Image src={change_life_whatsapp_logo} alt="" /> */}
             </div>

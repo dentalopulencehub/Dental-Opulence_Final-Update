@@ -19,9 +19,10 @@ const PopularServiceCard = ({
       <div
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
-        className="w-full xs:w-[140px] sm:w-[180px] md:w-[220px] lg:w-[289px] h-auto p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
+        // xs:w-[140px] sm:w-[180px] md:w-[220px] lg:w-[289px]
+        className="w-full h-auto p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
       >
-        {/* <Image src={hover ? image_inverted : image} alt={title} /> */}
+        <Image className="hidden md:block" src={hover ? image_inverted : image} alt={title} />
         <h3
           className={`mt-7 ${
             hover ? "text-white" : "text-[#100E10]"
@@ -38,9 +39,9 @@ const PopularServiceCard = ({
         >
           {description}
         </p>
-        <Link href={href} className="flex justify-center">
+        <Link href={href} className="flex justify-center  md:justify-stretch  ">
           <button
-            className={`py-2 px-4 border border-[#100E10] rounded-[32px] mt-7 flex justify-center ${
+            className={`py-2 px-4 border border-[#100E10] rounded-[32px] mt-7 flex  justify-center ${
               hover ? "bg-white" : "bg-transparent"
             }`}
           >
@@ -50,7 +51,7 @@ const PopularServiceCard = ({
                   hover ? "text-[#100E10]" : "text-[#100E10]"
                 } `}
               >
-                More Info
+                More Info  dem
               </span>
               <Image
                 src={hover ? pointer_right_dark : pointer_right_dark}

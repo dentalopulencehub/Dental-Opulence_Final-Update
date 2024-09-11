@@ -5,7 +5,8 @@ import result_logo_micro from "../../../assets/images/result-logo-micro.svg";
 
 const ResultCard = ({ image }: { image: any }) => {
   return (
-    <div className="w-full sm:w-[40%] h-fit rounded-2xl md:w-[284px]">
+    // sm:w-[40%] md:w-[284px]
+    <div className="w-full  h-fit rounded-2xl ">
       <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
         <Image src={result_logo_micro} alt="Result logo micro" />
         <p className="text-xs font-Pangram-Regular text-white ml-3">
