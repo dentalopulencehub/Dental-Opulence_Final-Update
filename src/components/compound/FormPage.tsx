@@ -77,18 +77,16 @@ const Page = () => {
   };
 
   const handleClearOptions = () => {
-    dispatch(
-      setQuestionsAndAnswers([])
-    );
+    dispatch(setQuestionsAndAnswers([]));
     dispatch(setSelectedOptions([]));
-  }
+  };
   const handleOptionDeselect = (option: string, title?: string) => {
     if (title === undefined) {
       console.error("Title is undefined for option:", option);
       return;
     }
 
-    const newOptions = selectedOptions.filter(item => item != option)
+    const newOptions = selectedOptions.filter((item) => item != option);
 
     dispatch(setSelectedOptions(newOptions));
   };
@@ -285,16 +283,21 @@ const Page = () => {
             {activeStep === "formTwo" && (
               <FormTwo
                 handleStepChange={handleStepChange}
-                handleOptionSelect={handleOptionSelect} handleOptionDeselect={function (option: string, title: string): void {
+                handleOptionSelect={handleOptionSelect}
+                handleOptionDeselect={function (
+                  option: string,
+                  title: string
+                ): void {
                   throw new Error("Function not implemented.");
-                } }              />
+                }}
+              />
             )}
             {activeStep === "formThree" && (
               <FormThree
                 handleStepChange={handleStepChange}
-                handleOptionSelect={handleOptionSelect} handleOptionDeselect={function (option: string, title: string): void {
-                  throw new Error("Function not implemented.");
-                } }              />
+                handleOptionSelect={handleOptionSelect}
+                handleOptionDeselect={handleOptionDeselect}
+              />
             )}
             {/* {activeStep === "formThree" && (
               <Commercial
@@ -317,21 +320,21 @@ const Page = () => {
                 handleOptionDeselect={handleOptionDeselect}
               />
             )}
-             {activeStep === "formCombined" && (
+            {activeStep === "formCombined" && (
               <CombinedForm
                 handleStepChange={handleStepChange}
                 handleOptionSelect={handleOptionSelect}
                 handleOptionDeselect={handleOptionDeselect}
               />
             )}
-              {activeStep === "formSix" && (
+            {activeStep === "formSix" && (
               <FormSix
                 handleStepChange={handleStepChange}
                 handleOptionSelect={handleOptionSelect}
                 handleOptionDeselect={handleOptionDeselect}
               />
             )}
-              {activeStep === "successForm" && (
+            {activeStep === "successForm" && (
               <FormSuccess
                 handleStepChange={handleStepChange}
                 handleOptionSelect={handleClearOptions}
@@ -448,21 +451,49 @@ const Page = () => {
             )} */}
           </section>
 
-          <section>{activeStep === "lastForm" && <ContactForm handleStepChange={handleStepChange} />}</section>
+          <section>
+            {activeStep === "lastForm" && (
+              <ContactForm handleStepChange={handleStepChange} />
+            )}
+          </section>
 
           {/* progress bar component */}
         </section>
         {/* back button */}
         <div className="md:relative mb-10 justify-between items-center flex  w-full sm:mb-12 md:mb-3">
-         
           <div className="flex gap-8 w-full items-center justify-between">
             <div className="flex items-center gap-2">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.4645 22.9115C27.4645 23.3615 27.3645 23.824 27.152 24.274C26.9395 24.724 26.6645 25.149 26.302 25.549C25.6895 26.224 25.0145 26.7115 24.252 27.024C23.502 27.3365 22.6895 27.499 21.8145 27.499C20.5395 27.499 19.177 27.199 17.7395 26.5865C16.302 25.974 14.8645 25.149 13.4395 24.1115C12.002 23.0615 10.6395 21.899 9.33945 20.6115C8.05195 19.3115 6.88945 17.949 5.85195 16.524C4.82695 15.099 4.00195 13.674 3.40195 12.2615C2.80195 10.8365 2.50195 9.47402 2.50195 8.17402C2.50195 7.32402 2.65195 6.51152 2.95195 5.76152C3.25195 4.99902 3.72695 4.29902 4.38945 3.67402C5.18945 2.88652 6.06445 2.49902 6.98945 2.49902C7.33945 2.49902 7.68945 2.57402 8.00195 2.72402C8.32695 2.87402 8.61445 3.09902 8.83945 3.42402L11.7395 7.51152C11.9645 7.82402 12.127 8.11152 12.2395 8.38652C12.352 8.64902 12.4145 8.91152 12.4145 9.14902C12.4145 9.44902 12.327 9.74902 12.152 10.0365C11.9895 10.324 11.752 10.624 11.452 10.924L10.502 11.9115C10.3645 12.049 10.302 12.2115 10.302 12.4115C10.302 12.5115 10.3145 12.599 10.3395 12.699C10.377 12.799 10.4145 12.874 10.4395 12.949C10.6645 13.3615 11.052 13.899 11.602 14.549C12.1645 15.199 12.7645 15.8615 13.4145 16.524C14.0895 17.1865 14.7395 17.799 15.402 18.3615C16.052 18.9115 16.5895 19.2865 17.0145 19.5115C17.077 19.5365 17.152 19.574 17.2395 19.6115C17.3395 19.649 17.4395 19.6615 17.552 19.6615C17.7645 19.6615 17.927 19.5865 18.0645 19.449L19.0145 18.5115C19.327 18.199 19.627 17.9615 19.9145 17.8115C20.202 17.6365 20.4895 17.549 20.802 17.549C21.0395 17.549 21.2895 17.599 21.5645 17.7115C21.8395 17.824 22.127 17.9865 22.4395 18.199L26.577 21.1365C26.902 21.3615 27.127 21.624 27.2645 21.9365C27.3895 22.249 27.4645 22.5615 27.4645 22.9115Z" stroke="#C4C4C4" stroke-width="1.5" stroke-miterlimit="10" />
-                <path d="M23.125 11.248C23.125 10.498 22.5375 9.34805 21.6625 8.41055C20.8625 7.54805 19.8 6.87305 18.75 6.87305" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M27.5 11.249C27.5 6.41152 23.5875 2.49902 18.75 2.49902" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.4645 22.9115C27.4645 23.3615 27.3645 23.824 27.152 24.274C26.9395 24.724 26.6645 25.149 26.302 25.549C25.6895 26.224 25.0145 26.7115 24.252 27.024C23.502 27.3365 22.6895 27.499 21.8145 27.499C20.5395 27.499 19.177 27.199 17.7395 26.5865C16.302 25.974 14.8645 25.149 13.4395 24.1115C12.002 23.0615 10.6395 21.899 9.33945 20.6115C8.05195 19.3115 6.88945 17.949 5.85195 16.524C4.82695 15.099 4.00195 13.674 3.40195 12.2615C2.80195 10.8365 2.50195 9.47402 2.50195 8.17402C2.50195 7.32402 2.65195 6.51152 2.95195 5.76152C3.25195 4.99902 3.72695 4.29902 4.38945 3.67402C5.18945 2.88652 6.06445 2.49902 6.98945 2.49902C7.33945 2.49902 7.68945 2.57402 8.00195 2.72402C8.32695 2.87402 8.61445 3.09902 8.83945 3.42402L11.7395 7.51152C11.9645 7.82402 12.127 8.11152 12.2395 8.38652C12.352 8.64902 12.4145 8.91152 12.4145 9.14902C12.4145 9.44902 12.327 9.74902 12.152 10.0365C11.9895 10.324 11.752 10.624 11.452 10.924L10.502 11.9115C10.3645 12.049 10.302 12.2115 10.302 12.4115C10.302 12.5115 10.3145 12.599 10.3395 12.699C10.377 12.799 10.4145 12.874 10.4395 12.949C10.6645 13.3615 11.052 13.899 11.602 14.549C12.1645 15.199 12.7645 15.8615 13.4145 16.524C14.0895 17.1865 14.7395 17.799 15.402 18.3615C16.052 18.9115 16.5895 19.2865 17.0145 19.5115C17.077 19.5365 17.152 19.574 17.2395 19.6115C17.3395 19.649 17.4395 19.6615 17.552 19.6615C17.7645 19.6615 17.927 19.5865 18.0645 19.449L19.0145 18.5115C19.327 18.199 19.627 17.9615 19.9145 17.8115C20.202 17.6365 20.4895 17.549 20.802 17.549C21.0395 17.549 21.2895 17.599 21.5645 17.7115C21.8395 17.824 22.127 17.9865 22.4395 18.199L26.577 21.1365C26.902 21.3615 27.127 21.624 27.2645 21.9365C27.3895 22.249 27.4645 22.5615 27.4645 22.9115Z"
+                  stroke="#C4C4C4"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M23.125 11.248C23.125 10.498 22.5375 9.34805 21.6625 8.41055C20.8625 7.54805 19.8 6.87305 18.75 6.87305"
+                  stroke="#C4C4C4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M27.5 11.249C27.5 6.41152 23.5875 2.49902 18.75 2.49902"
+                  stroke="#C4C4C4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
-              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium">0121 272 9229 </p>
+              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium">
+                0121 272 9229 
+              </p>
             </div>
 
             <div className="absolute md:relative flex w-[90%] md:w-[50%] h-2 bg-[#5C5C5C] rounded-full bottom-3">
@@ -471,13 +502,29 @@ const Page = () => {
               />
             </div>
             <div className="flex items-center gap-2">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 15C2.5 10.286 2.5 7.92893 3.96447 6.46447C5.42893 5 7.78595 5 12.5 5H17.5C22.214 5 24.5711 5 26.0355 6.46447C27.5 7.92893 27.5 10.286 27.5 15C27.5 19.714 27.5 22.0711 26.0355 23.5355C24.5711 25 22.214 25 17.5 25H12.5C7.78595 25 5.42893 25 3.96447 23.5355C2.5 22.0711 2.5 19.714 2.5 15Z" stroke="#C4C4C4" stroke-width="1.5" />
-                <path d="M7.5 10L10.1986 12.2489C12.4944 14.162 13.6423 15.1186 15 15.1186C16.3577 15.1186 17.5056 14.162 19.8014 12.2488L22.5 10" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.5 15C2.5 10.286 2.5 7.92893 3.96447 6.46447C5.42893 5 7.78595 5 12.5 5H17.5C22.214 5 24.5711 5 26.0355 6.46447C27.5 7.92893 27.5 10.286 27.5 15C27.5 19.714 27.5 22.0711 26.0355 23.5355C24.5711 25 22.214 25 17.5 25H12.5C7.78595 25 5.42893 25 3.96447 23.5355C2.5 22.0711 2.5 19.714 2.5 15Z"
+                  stroke="#C4C4C4"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7.5 10L10.1986 12.2489C12.4944 14.162 13.6423 15.1186 15 15.1186C16.3577 15.1186 17.5056 14.162 19.8014 12.2488L22.5 10"
+                  stroke="#C4C4C4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
               </svg>
-              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium"> info@do.co.uk</p>
+              <p className="text-[#C4C4C4] text-xs md:text-xl font-medium">
+                 info@do.co.uk
+              </p>
             </div>
-
           </div>
           <div />
         </div>

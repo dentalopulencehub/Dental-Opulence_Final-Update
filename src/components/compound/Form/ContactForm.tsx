@@ -2,7 +2,11 @@
 import useAxios from "../../../../hooks/useAxios";
 import { useState } from "react";
 
-const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void;}) => {
+const ContactForm = ({
+  handleStepChange,
+}: {
+  handleStepChange: (step: string) => void;
+}) => {
   const [formData, handleInputChange, handleSubmit] = useAxios();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -11,8 +15,8 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
     e.preventDefault();
     setIsSubmitting(true);
     const sent = await handleSubmit();
-    if(sent ){
-      handleStepChange('successForm')
+    if (sent) {
+      handleStepChange("successForm");
     }
     setIsSubmitting(false);
   };
@@ -23,7 +27,7 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
         <div className="content w-full flex flex-col xl:flex-row gap-5 xl:gap-24">
           <div>
             <h1 className="bold text-lg md:text-[32px] text-white text-center md:text-left xl:text-[56px]">
-            Input your personal info
+              Input your personal info
             </h1>
           </div>
 
@@ -71,7 +75,7 @@ const ContactForm = ({handleStepChange}:{handleStepChange:(step: string) => void
                 />
               </div>
 
-            {/*   <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
+              {/*   <div className="flex gap-2 sm:gap-5 max-tablet:flex-col">
                 <input
                   type="date"
                   name="company"

@@ -42,7 +42,7 @@ const CosmaticWalkThrough = () => {
             playsInline
             muted={isMuted} // Initial mute state
           >
-            <source src="https://player.vimeo.com/progressive_redirect/playback/1006679852/rendition/1080p/file.mp4?loc=external&signature=79105608789778f69d2be3df701bfcc7edef102043c89a9ddc448bf76c9a3f8f" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006669337/rendition/1080p/file.mp4?loc=external&signature=d49d342b1c4c72e134e91eba206368ee955221a9cbef95caa112b548ac5d9360" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (
