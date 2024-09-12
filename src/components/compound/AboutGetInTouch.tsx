@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import about_mission_logo from "../../../assets/images/do_logo.png"
+import about_mission_logo from "../../../assets/images/do_logo.png";
 
 import email from "../../../assets/fonts/email.svg";
 import call from "../../../assets/fonts/phone_call.svg";
@@ -13,7 +13,6 @@ import mapWhatsApp from "../../../assets/mapSectionSocialIcon/WhatsAPP.svg";
 import mapTickTok from "../../../assets/mapSectionSocialIcon/ticktok.svg";
 import mapInstagram from "../../../assets/mapSectionSocialIcon/instagram.svg";
 import mapFacebook from "../../../assets/mapSectionSocialIcon/facebook.svg";
-
 
 import ig_logo from "../../../assets/images/instagram-icon.svg";
 
@@ -49,7 +48,6 @@ const hoverLinks = [
 ];
 
 const AboutGetInTouch = () => {
-
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
 
   return (
@@ -59,9 +57,13 @@ const AboutGetInTouch = () => {
           <div className="sm:max-w-[425px] w-full xl:h-[560px] bg-[#222222] rounded-2xl xs:p-10 p-5">
             <Image src={about_mission_logo} width={70} alt="" />
             <p className="text-[22px] font-[500] mt-7">
-            To log in to the patient portal or make a new inquiry click the buttons below
+              To log in to the patient portal or make a new inquiry click the
+              buttons below
             </p>
-            <p className="text-sm text-[#C3C3C3] font-medium my-4">Note: New patients should click ‘contact us’ to start a new enquiry and existing patients can click ‘book now’</p>
+            <p className="text-sm text-[#C3C3C3] font-medium my-4">
+              Note: New patients should click ‘contact us’ to start a new
+              enquiry and existing patients can click ‘book now’
+            </p>
 
             <div className="text-[13.5px]">
               <div className="flex gap-2 items-center">
@@ -116,32 +118,25 @@ const AboutGetInTouch = () => {
               <Link href="https://www.facebook.com/DentalOpulence/"></Link>
               <Image src={mapFacebook} alt="facbook" />
             </div> */}
-               <div className="flex items-center gap-4 mt-7">
-                  {hoverLinks.map((item, index) => (
-                    
-                    <div
-                      key={index}
-                      onMouseOver={() => setHoverIndex(index)}
-                      onMouseOut={() => setHoverIndex(null)}
-                      className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
-                    >
-                      <Link href={item.link} target="blank">
-                       <Image
-                        src={
-                          hoverIndex === index
-                            ? item.image_inverted
-                            : item.image
-                        }
-                        alt=""
-                      />
-                      </Link>
-                   
-                    </div>
-                  ))}
+            <div className="flex items-center gap-4 mt-7">
+              {hoverLinks.map((item, index) => (
+                <div
+                  key={index}
+                  onMouseOver={() => setHoverIndex(index)}
+                  onMouseOut={() => setHoverIndex(null)}
+                  className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
+                >
+                  <Link href={item.link} target="blank">
+                    <Image
+                      src={
+                        hoverIndex === index ? item.image_inverted : item.image
+                      }
+                      alt=""
+                    />
+                  </Link>
                 </div>
-
-
-
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full">
@@ -149,41 +144,39 @@ const AboutGetInTouch = () => {
             <h4 className="text-white text-[34px]">Get In Touch With Us</h4>
 
             <form className="mt-7">
-             
-
               <div className="flex gap-10">
                 <input
                   type="text"
                   placeholder="Your Name*"
                   className="w-full bg-transparent border-b border-[#5C5C5C] text-[18px] font-[400] text-[#fff] placeholder-[#8A8A8A] focus:outline-none pb-2"
-                 />
+                />
 
                 <input
                   type="text"
                   placeholder="Your Email*"
                   className="w-full bg-transparent border-b border-[#5C5C5C] text-[18px] font-[400] text-[#fff] placeholder-[#8A8A8A] focus:outline-none pb-2"
-                 />
-               </div>  
+                />
+              </div>
 
-
-               <div className="flex gap-10 mt-[44px]">
-                 <input
+              <div className="flex gap-10 mt-[44px]">
+                <input
                   type="number"
                   placeholder="Mobile Number*"
                   className="w-full bg-transparent border-b border-[#5C5C5C] text-[18px] font-[400] text-[#fff] placeholder-[#8A8A8A] focus:outline-none pb-2"
-                 />
+                />
 
                 <input
                   type="text"
                   placeholder="Enter Message here...*"
                   className="w-full bg-transparent border-b border-[#5C5C5C] text-[18px] font-[400] text-[#fff] placeholder-[#8A8A8A] focus:outline-none pb-2"
-                 />
-               </div>  
+                />
+              </div>
 
               <div className="mt-4">
-                <button className="bg-[#fff] text-[#000] px-10 mt-5 py-3 rounded-full text-[16px] font-[500]">Submit</button>
+                <button className="bg-[#fff] text-[#000] px-10 mt-5 py-3 rounded-full text-[16px] font-[500]">
+                  Submit
+                </button>
               </div>
-             
             </form>
           </div>
 

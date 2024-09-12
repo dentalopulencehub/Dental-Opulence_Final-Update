@@ -30,7 +30,7 @@ const ServiceHero2 = ({
     <div className="w-full">
       <div className="bg-[#fff] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
         <div className="xl:max-w-[400px] md:w-[70%] w-[90%]">
-          <h2 className="text-[34px] text-[#100E10] font-Pangram-Medium sm:w-[309px] w-full">
+          <h2 className="text-[34px] text-[#100E10] font-Pangram-Medium sm:w-[309px] w-full text-center md:text-left">
             Restore Your Smile&apos;s Integrity
           </h2>
           <Image src={service_her2_ill} alt="" className="mt-8" />
@@ -38,10 +38,10 @@ const ServiceHero2 = ({
 
         <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-end items-center">
           <h4
-            className="text-[#161616] font-Pangram-Regular sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-right text-center flex flex-wrap"
+            className="text-[#161616] font-Pangram-Regular sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] md:text-left text-center flex flex-wrap"
             ref={element}
           >
-            {words.map((word, index) => {
+            {/* {words.map((word, index) => {
               const start = index / words.length;
               const end = start + 1 / words.length;
               //console.log(start, end);
@@ -54,7 +54,8 @@ const ServiceHero2 = ({
                   {word}
                 </Word>
               );
-            })}
+            })} */}
+            {value}
           </h4>
         </div>
       </div>
