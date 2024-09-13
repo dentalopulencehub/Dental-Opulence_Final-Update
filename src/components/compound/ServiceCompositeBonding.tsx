@@ -21,9 +21,8 @@ const ServiceCompositeBonding = ({
   return (
     <div className="w-full">
       <div className="w-full md:bg-[#100E10] md:mb-[0px] mb-[850px] lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        {" "}
-        <div className="flex xl:flex-row flex-col gap-6 w-full max-h-[700px]">
-          <div className="flex flex-col flex-wrap gap-6 xl:max-w-[425px] w-full max-h-[700px]">
+        <div className="flex md:flex-row flex-col gap-6 w-full max-h-[700px]">
+          <div className="flex flex-col gap-6 w-full max-h-[700px] md:flex-row md:flex-wrap xl:max-w-[425px]">
             <div className="w-full xl:h-[200px] bg-[#222222] rounded-2xl xs:p-8 p-7">
               <Image src={about_mission_logo} alt="" />
               <h3 className="text-white text-[34px] mt-[23px] leading-[45px]">
@@ -33,16 +32,7 @@ const ServiceCompositeBonding = ({
                 </span>
               </h3>
             </div>
-
-            {/* here */}
-
-            {/* {service_elevate.map((service: ServiceElevateType, index: number) => (
-             <ServiceElevateCard key={index} {...service} />
-            ))} */}
-
             <div className="w-full h-[475px] bg-[#222222] rounded-2xl xs:p-8 p-5">
-              <div></div>
-
               <h3 className="text-[#8A8A8A] md:text-[34px] text-[30px] leading-[39px]">
                 <span className="text-white font-Pangram-Medium">
                   {situationTitle}{" "}
@@ -50,7 +40,6 @@ const ServiceCompositeBonding = ({
                 <br />
                 SUITABILITY CHECK:
               </h3>
-
               <div className="flex flex-col mt-[24px] uppercase">
                 <div className="flex items-center gap-4 border-b border-b-[#737373] pb-4">
                   <Image src={checked_icon} alt="Checked Icon" />
