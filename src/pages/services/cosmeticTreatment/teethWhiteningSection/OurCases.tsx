@@ -7,7 +7,13 @@ import result_logo_mini from "../../../../../assets/images/result-mini-logo.svg"
 import result_logo_micro from "../../../../../assets/images/result-logo-micro.svg";
 
 import Carousel from "@/components/helper/carousel";
-import { home_result_images, invisalign_our_cases_images, theeth_whitening_our_cases_images, white_fillings_our_cases_images } from "../../../../../constants";
+import {
+  home_result_images,
+  invisalign_our_cases_images,
+  theeth_whitening_our_cases_images,
+  white_fillings_our_cases_images,
+} from "../../../../../constants";
+import { ResultCard } from "@/components/molecule";
 
 type dir = "Left" | "right";
 
@@ -39,8 +45,8 @@ const TeethWhiteningOurCases = () => {
           </h2>
         </div>
 
-        <div className="lg:flex hidden items-center gap-3">
-          {/* <Image
+        {/* <div className="lg:flex hidden items-center gap-3">
+          <Image
             src={slider_arrow_left}
             alt=""
             onClick={handleOuterLeftClick}
@@ -51,36 +57,23 @@ const TeethWhiteningOurCases = () => {
             alt=""
             onClick={handleOuterRightClick}
             className="cursor-pointer"
-          /> */}
-        </div>
+          />
+        </div> */}
       </div>
 
-      <div className="mt-6">
-        <Carousel direction={direction} setDirection={setDirection}>
-          {theeth_whitening_our_cases_images.map((data, index, arr) => (
-            <div
-              className={`sm:w-[280px] rounded-3xl overflow-hidden w-fit mx-auto card flex-shrink-0 ${
-                index !== arr.length - 1 ? "mr-[40px]" : "mr-[130px]"
-              }`}
-              key={index}
-            >
-              {/* <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
-                <Image src={result_logo_micro} alt="Result logo micro" />
-                <p className="text-xs font-Pangram-Regular text-white ml-3">
-                  dentalopulence
-                </p>
-              </div> */}
-              <div className="relative overflow-hidden">
-                <Image src={data} alt="Result Image" className="w-full" />
-                {/* <Image
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src={result_logo_mini}
-                  alt=""
-                /> */}
-              </div>
+      <div className="flex gap-6 mt-10">
+        <div className="block sm:hidden overflow-x-auto whitespace-nowrap ml-5">
+          {home_result_images.map((data, index) => (
+            <div className="inline-block mr-4" key={index}>
+              <ResultCard image={data} />
             </div>
           ))}
-        </Carousel>
+        </div>
+        <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
+          {theeth_whitening_our_cases_images.map((data, index) => (
+            <ResultCard key={index} image={data} />
+          ))}
+        </div>
       </div>
     </div>
   );

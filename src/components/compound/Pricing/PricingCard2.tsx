@@ -83,7 +83,7 @@ const PricingCard2 = ({
         onMouseLeave={() => setHover(false)}
         className={`px-5 py-6 max-w-[400px] h-[150px] md:h-[115px] bg-[#222222] border border-[#2D2D2D] rounded-xl service-card`}
       >
-        <div className="flex flex-row justify-between items-center gap-3">
+        <div className="flex flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-start justify-start w-[70%]">
             {/* <div>
               <Image
@@ -102,7 +102,7 @@ const PricingCard2 = ({
             </div>
           </div>
 
-          <div className="self-center md:self-end mb-1 w-[30%]">
+          <div className="self-center md:self-center mb-1 w-[20%]">
             <Image
               src={bordered_arrow_right}
               alt=""

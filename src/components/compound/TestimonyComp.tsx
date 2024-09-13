@@ -217,7 +217,7 @@ const TestimonyComp = () => {
         </div>
       </div>
       <div className="flex flex-col mt-6 md:flex-row items-center">
-        <div className="w-full flex md:w-auto mt-6 md:mt-0 overflow-x-auto">
+        <div className="w-full flex md:w-auto mt-6 md:mt-0 overflow-x-auto scrollbar-hidden">
             
             <GoogleCard />
             {reviews.map((review, i) => (
@@ -246,7 +246,7 @@ const TestimonyComp = () => {
             <SecondaryLink
               href="#"
               title="See Client Reactions"
-              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
+              style="mt-4 border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
               hovered={linkHover}
               setHovered={setLinkHover}
             />

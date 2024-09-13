@@ -20,7 +20,8 @@ const ServiceCompositeBonding = ({
 }: ServiceCompositeBondingType) => {
   return (
     <div className="w-full">
-      <div className="w-full md:bg-[#100E10] md:mb-[0px] mb-[850px] lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
+      <div className="w-full md:bg-[#100E10] md:mb-[0px] mb-[850px] lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
+        {" "}
         <div className="flex xl:flex-row flex-col gap-6 w-full max-h-[700px]">
           <div className="flex flex-col flex-wrap gap-6 xl:max-w-[425px] w-full max-h-[700px]">
             <div className="w-full xl:h-[200px] bg-[#222222] rounded-2xl xs:p-8 p-7">
@@ -46,7 +47,7 @@ const ServiceCompositeBonding = ({
                 <span className="text-white font-Pangram-Medium">
                   {situationTitle}{" "}
                 </span>
-                <br/>
+                <br />
                 SUITABILITY CHECK:
               </h3>
 

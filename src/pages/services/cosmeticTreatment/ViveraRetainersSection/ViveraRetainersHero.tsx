@@ -15,22 +15,24 @@ const ViveraRetainersHero = () => {
               Vivera Retainers
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center">
+          <p
+            className="text-[18px] text-[#161616] mt-6 lg:text-left text-center w-[90%] leading-tight"
+            style={{ lineHeight: "1.6" }}
+          >
             At Dental Opulence, we offer Vivera retainers to help you maintain a
             straight and aligned smile after orthodontic treatment. Designed for
             convenience and comfort, Vivera retainers are an excellent choice
             for achieving long-term results.{" "}
           </p>
 
-          <div className="mt-6">
-            <div className="flex gap-2 items-center">
+          <div className="mt-6 flex-col items-center text-center md:text-left">
+            <div className="flex gap-2 items-center justify-center md:justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 0% Finance Options
               </p>
             </div>
-
-            <div className="flex gap-2 items-center mt-3">
+            <div className="flex gap-2 items-center justify-center md:justify-start mt-3"> 
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 Evening and weekend appointments
@@ -43,14 +45,14 @@ const ViveraRetainersHero = () => {
               href="https://book.do.co.uk/"
               target="_blank"
               title="Book now"
-              className="py-4 px-8 rounded-[34px] text-white bg-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"
+              className="py-4 px-8 rounded-[34px] text-white font-Pangram-Medium bg-[#100E10]  text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"
             >
               Book now
             </Link>
             <PrimaryLink
               href="/about"
               title="About us"
-              style="py-4 px-8 rounded-[34px] font-Pangram-Medium text-xs xs:mt-6 border border-[#100E10] bg-transparent text-[#100E10] hover:text-[#fff] hover:bg-[#100E10] hover:border-[#100E10] duration-0 cursor-pointer"
+              style="py-4 px-8 rounded-[34px] font-Pangram-Medium text-xs mt-6 border border-[#100E10] bg-transparent text-[#100E10] hover:text-[#fff] hover:bg-[#100E10] hover:border-[#100E10] duration-0 cursor-pointer"
             />
           </div>
         </div>

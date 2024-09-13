@@ -20,7 +20,7 @@ const PopularServiceCard = ({
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
         // xs:w-[140px] sm:w-[180px] md:w-[220px] lg:w-[289px]
-        className="w-full h-auto p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
+        className="w-full h-[400px] md:h-[360px] p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
       >
         <Image className="hidden md:block" src={hover ? image_inverted : image} alt={title} />
         <h3

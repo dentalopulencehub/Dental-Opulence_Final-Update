@@ -8,6 +8,7 @@ import result_logo_micro from "../../../../../assets/images/result-logo-micro.sv
 
 import Carousel from "@/components/helper/carousel";
 import { home_result_images, white_fillings_our_cases_images } from "../../../../../constants";
+import { ResultCard } from "@/components/molecule";
 
 type dir = "Left" | "right";
 
@@ -39,7 +40,7 @@ const WhiteFillingOurCases = () => {
           </h2>
         </div>
 
-        <div className="lg:flex hidden items-center gap-3">
+        {/* <div className="lg:flex hidden items-center gap-3">
           <Image
             src={slider_arrow_left}
             alt=""
@@ -52,35 +53,22 @@ const WhiteFillingOurCases = () => {
             onClick={handleOuterRightClick}
             className="cursor-pointer"
           />
-        </div>
+        </div> */}
       </div>
 
-      <div className="mt-6">
-        <Carousel direction={direction} setDirection={setDirection}>
-          {white_fillings_our_cases_images.map((data, index, arr) => (
-            <div
-              className={`sm:w-[280px] rounded-3xl overflow-hidden w-fit mx-auto card flex-shrink-0 ${
-                index !== arr.length - 1 ? "lg:mr-[40px]" : "lg:mr-[130px]"
-              }`}
-              key={index}
-            >
-              <div className="bg-[#100E10] px-[20px] py-[15px] flex items-center rounded-t-2xl">
-                <Image src={result_logo_micro} alt="Result logo micro" />
-                <p className="text-xs font-Pangram-Regular text-white ml-3">
-                  dentalopulence
-                </p>
-              </div>
-              <div className="relative">
-                <Image src={data} alt="Result Image" className="w-full" />
-                <Image
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src={result_logo_mini}
-                  alt=""
-                />
-              </div>
+      <div className="flex gap-6 mt-10">
+        <div className="block sm:hidden overflow-x-auto whitespace-nowrap ml-5">
+          {white_fillings_our_cases_images.map((data, index) => (
+            <div className="inline-block mr-4" key={index}>
+              <ResultCard image={data} />
             </div>
           ))}
-        </Carousel>
+        </div>
+        <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
+          {white_fillings_our_cases_images.map((data, index) => (
+            <ResultCard key={index} image={data} />
+          ))}
+        </div>
       </div>
     </div>
   );

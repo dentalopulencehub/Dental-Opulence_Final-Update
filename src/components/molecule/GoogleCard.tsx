@@ -7,8 +7,8 @@ import googleLogo from "../../../assets/images/logos_google.svg"
 const GoogleCard: React.FC = () => {
   const arr = ['', '', '', '', '']
   return (
-    <div className="w-full md:max-w-[19.64rem] md:mr-[1.4rem] flex-shrink-0 ">
-      <div className="md:pt-[2.625rem] pt-[1rem] card pb-[2rem] md:pb-[2.933rem] w-full md:h-full md:min-h-[24.5rem] min-h-[20rem] md:px-8 px-4 rounded-[0.875rem] bg-gray-100 flex flex-col justify-between group google-card">
+    <div className="w-[80%] md:max-w-[19.64rem] md:mr-[1.4rem] flex-shrink-0 mr-4">
+      <div className="md:pt-[2.625rem] pt-[1rem] card pb-[2rem] md:pb-[2.933rem] w-full h-full md:min-h-[24.5rem] min-h-[20rem] md:px-8 px-4 rounded-[0.875rem] bg-gray-100 flex flex-col justify-between group google-card">
         <div className="flex items-center gap-4">
           <FcGoogle size={48} className="md:w-[60px] md:h-[60px]"/>
           <div className="text-xl font-encode text-[#BDBDBD] group-hover:text-[#FEC600]">

@@ -23,7 +23,7 @@ interface PersonProps {
 
 const Person: React.FC<PersonProps> = ({ id, name, onClick, active }) => {
   return (
-    <div className="p-2 bg-[#F3F3F3] snap-start">
+    <div className="p-2 pt-1 h-[150px] bg-[#F3F3F3] snap-start">
       <div
         className={`h-[120px] w-[120px] rounded-full overflow-hidden cursor-pointer border-4 border-[#F3F3F3]${
           active ? 'border-4 border-[#C9C9C9]' : ''

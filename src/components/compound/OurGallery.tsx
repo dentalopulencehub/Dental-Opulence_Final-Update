@@ -5,8 +5,8 @@ const OurGallery = () => {
   return (
 
         <div className='w-full'>
-            <h3 className='w-full mx-auto z-[5] text-center text-5xl font-semibold'>Explore our gallery</h3>
-            <Image src={image} height={1024} alt='gallery' className='w-full h-full p-8' width={1920}/>
+            <h3 className='w-full mx-auto z-[5] text-center text-4xl md:text-5xl font-semibold'>Explore our gallery</h3>
+            <Image src={image} height={1024} alt='gallery' className='w-full h-full p-5' width={1920}/>
         </div>
   
   )

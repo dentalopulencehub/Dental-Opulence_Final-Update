@@ -67,21 +67,16 @@ const people = [
     designation:"Implantologist ",
     gdc:244712
   },
+  
   { 
     id: 7, 
-    name: 'Betul Sitki ', 
-    description: "Betul Sitki graduated from dental school in 2020 in Istanbul, Turkey. She actively worked until September 2023 and is currently pursuing a master's in Advanced General Dentistry. Her hobbies include long-distance running, cycling, and swimming (she attends races in different cities), playing the piano, and traveling. She grew up in Canada. After graduating from dental school, she mainly focused on aesthetic dentistry and developed a passion for dental photography.", 
-    designation:"Nurse "
-  },
-  { 
-    id: 8, 
     name: 'Inayah Sajad', 
     description: "Inayah joined Dental Opulence in January 2024 as a Dental Nurse. Inayah has always enjoyed dentistry and found it very interesting. She qualified in 2021 and has been working as a Dental Nurse since.Cosmetic Dentistry is her favourite! Although she has nursed for all types of dental treatments including implants, surgical extractions and even procedures done under sedation. Inayah likes to spend her free time going out with friends and family." ,
     designation:"Nurse",
     gdc:299706
   },
   { 
-    id: 9, 
+    id: 8, 
     name: 'Anahita Salehi ', 
     description: "Anahita Salehi graduated from Birjand Dental School in Iran in 2019 and worked as a dedicated dental professional until 2023. Currently, she is pursuing a master's degree in Dental Materials at the University of Birmingham.In her free time, Anahita enjoys painting, hitting the gym, and she has a particular passion for reading, and discovering new cuisines. After graduation, Anahita gained extensive experience in various areas of dentistry, including aligners, aesthetic dentistry, and general dental treatments." ,
     designation:"Trainee"
@@ -106,8 +101,8 @@ const AboutTeam = () => {
      </div>
   </div>
 
-  <div className="flex md:flex-wrap  w-full bg-[#F3F3F3] p-10 rounded-[16px] md:mt-0 mt-5 md:h-[530px]
-  snap-x overflow-x-auto md:overflow-x-hidden
+  <div className="flex md:flex-wrap w-full bg-[#F3F3F3] p-10 rounded-[16px] md:mt-0 mt-4 md:h-[450px]
+  snap-x overflow-x-auto md:overflow-x-hidden leading-[1.2]
   ">
     {people.map((person) => (
       <Person

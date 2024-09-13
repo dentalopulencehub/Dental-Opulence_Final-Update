@@ -5,7 +5,7 @@ import underline_vector_dark from "../../../assets/images/underline-vector-dark.
 const HomeOurServicesHeader = () => {
   return (
     <div className="w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[80px] bg-white">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[30px] md:pt-[80px] bg-white">
         <p className="flex flex-col">
           <span className={`text-[#4e4e4e] text-base font-Pangram-Regular`}>
             Our Services

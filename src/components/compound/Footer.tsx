@@ -58,12 +58,13 @@ const Footer = () => {
       <div className="bg-[#100E10] w-full py-[80px] md:px-[90px] sm:px-[40px] px-4">
         <div className="flex xl:flex-row flex-col md:gap-[90px] gap-[50px] items-start">
           <div>
-            <div className="flex gap-4"><Image src={footer_logo} height={60} alt="" /> <Image src={footer_text} alt="Dental Opulence" /></div>
+            <div className="flex gap-4">
+              <Image src={footer_logo} height={60} alt="" />{" "}
+              <Image src={footer_text} alt="Dental Opulence" />
+            </div>
             <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
               <div className="">
-                <h3 className="text-white  text-sm">
-                  Find us on social media
-                </h3>
+                <h3 className="text-white  text-sm">Find us on social media</h3>
                 <div className="flex items-center gap-4 mt-4">
                   {hoverLinks.map((item, index) => (
                     <div
@@ -88,19 +89,16 @@ const Footer = () => {
               </div>
 
               <div className="md:flex items-center gap-2 md:mt-10 h-full w-full">
-                <Link href="https://test.cqc.org.uk/location/1-17708997775/contact" 
-                 className="flex gap-2"
+                <Link
+                  href="https://test.cqc.org.uk/location/1-17708997775/contact"
+                  className="flex gap-2"
                 >
+                  <Image src={logo_Link1} alt="" className="w-[100px]" />
                   <Image
-                    src={logo_Link1}
+                    src={footer_logo2}
                     alt=""
-                    className="w-[100px]"
+                    className="filter brightness-[1] invert-[1] saturate-[0] w-[50px]"
                   />
-               <Image
-                 src={footer_logo2}
-                 alt=""
-                 className="filter brightness-[1] invert-[1] saturate-[0] w-[50px]"
-               />
                 </Link>
                 {/* <Link href='https://www.gdc-uk.org'>
                   <Image src={logo_Link2} alt="" className="w-[190px] h-[80px]  md:my-0 my-3"/>
@@ -112,8 +110,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full font-inter">
-            <div className="flex flex-wrap md:gap-[49px] justify-between">
-              <div className="flex flex-col gap-10  w-[176px]">
+            <div className="grid grid-cols-2 md:flex md:flex-wrap md:gap-[49px] justify-between">
+              <div className="flex flex-col gap-10 w-[176px] h-[300px]"> {/* Added flex-1 */}
                 <div>
                   <h3 className="text-white font-inter  text-xl">
                     Quick Links
@@ -167,47 +165,44 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-               
               </div>
-              <div className="">
-  <h3 className="text-white font-inter text-xl mb-5">
-    Opening Hours
-  </h3>
-  <div className="grid grid-cols-[1fr,10px,1fr] text-sm text-[#A2A2A2] font-inter">
-    <div className="space-y-5">
-      <p>Sunday</p>
-      <p>Monday</p>
-      <p>Tuesday</p>
-      <p>Wednesday</p>
-      <p>Thursday</p>
-      <p>Friday</p>
-      <p>Saturday</p>
-    </div>
-    <div className="space-y-5">
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-    </div>
-    <div className="space-y-5">
-      <p>Closed</p>
-      <p>Closed</p>
-      <p>9am - 5pm</p>
-      <p>Closed</p>
-      <p>9am - 5pm</p>
-      <p>9am - 5pm</p>
-      <p>9am - 5pm</p>
-    </div>
-  </div>
-</div>
-              <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8">
+              <div className="flex-1 h-[300px]"> {/* Added flex-1 */}
+                <h3 className="text-white font-inter text-xl mb-5">
+                  Opening Hours
+                </h3>
+                <div className="grid grid-cols-[1fr,10px,1fr] text-sm text-[#A2A2A2] font-inter">
+                  <div className="space-y-5">
+                    <p>Sunday</p>
+                    <p>Monday</p>
+                    <p>Tuesday</p>
+                    <p>Wednesday</p>
+                    <p>Thursday</p>
+                    <p>Friday</p>
+                    <p>Saturday</p>
+                  </div>
+                  <div className="space-y-5">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div className="space-y-5">
+                    <p>Closed</p>
+                    <p>Closed</p>
+                    <p>9am - 5pm</p>
+                    <p>Closed</p>
+                    <p>9am - 5pm</p>
+                    <p>9am - 5pm</p>
+                    <p>9am - 5pm</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8 flex-1 h-[300px]"> {/* Added flex-1 */}
                 <div>
-                  <h3 className="text-white   font-inter text-xl">
-                    Legal
-                  </h3>
+                  <h3 className="text-white   font-inter text-xl">Legal</h3>
                   <div
                     onClick={() =>
                       handleSetPathToNavigate(dispatch, "/privacy-policy")
@@ -289,37 +284,37 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                  <h3 className="text-white  font-inter text-xl">
-                    Our Info
-                  </h3>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
-                      <Image src={letter_icon} alt="" />
-                      <span className="font-inter">info@do.co.uk
-                      </span>
-                    </p>
-                  </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
-                      <Image src={phone_icon} alt="" />
-                      <span  className="font-inter">0121 272 9229</span>
-                    </p>
-                  </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
-                      <Image src={whatsapp_icon_mini} alt="" />
-                      <span className="font-inter">+447301253447</span>
-                    </p>
-                  </div>
-                  <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-start gap-2">
-                      <Image src={location_icon} alt="" />
-                      <span className="font-inter">1190 Stratford Rd,<br/> Birmingham B28 8AB,<br/> United Kingdom</span>
-                    </p>
-                  </div>
-                  
+              <div className="flex-1 h-[300px]"> {/* Added flex-1 */}
+                <h3 className="text-white mt-7 md:mt-0 font-inter text-xl">Our Info</h3>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                    <Image src={letter_icon} alt="" />
+                    <span className="font-inter">info@do.co.uk</span>
+                  </p>
                 </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                    <Image src={phone_icon} alt="" />
+                    <span className="font-inter">0121 272 9229</span>
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                    <Image src={whatsapp_icon_mini} alt="" />
+                    <span className="font-inter">+447301253447</span>
+                  </p>
+                </div>
+                <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
+                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-start gap-2">
+                    <Image src={location_icon} alt="" />
+                    <span className="font-inter">
+                      1190 Stratford Rd,
+                      <br /> Birmingham B28 8AB,
+                      <br /> United Kingdom
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const BridgesHeroSection = () => {
               Bridges
             </h1>
           </div>
-          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-justify w-[70%]">
+          <p className="text-[18px] text-[#161616] mt-6 lg:text-left text-center w-[90%] leading-tight" style={{ lineHeight: '1.6' }}>
             At Dental Opulence, we recognize that missing teeth can impact both
             your oral health and self-confidence. That’s why we offer dental
             bridges as an effective solution for replacing missing teeth. Our
@@ -26,15 +26,15 @@ const BridgesHeroSection = () => {
             smile.
           </p>
 
-          <div className="mt-6">
-            <div className="flex gap-2 items-center">
+          <div className="mt-6 flex-col items-center text-center md:text-left"> {/* Changed item-center to items-center and added text-center */}
+          <div className="flex gap-2 items-center justify-center md:justify-start"> {/* Added justify-center */}
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 0% Finance Options
               </p>
             </div>
 
-            <div className="flex gap-2 items-center mt-3">
+            <div className="flex gap-2 items-center justify-center md:justify-start mt-3"> {/* Added justify-center */}
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 Evening and weekend appointments
@@ -42,19 +42,19 @@ const BridgesHeroSection = () => {
             </div>
           </div>
 
-          <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto xs:flex-row flex-col">
+          <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-row ">
             <Link
               href="https://book.do.co.uk/"
               target="_blank"
               title="Book now"
-              className="py-4 px-8 rounded-[34px] text-white bg-[#100E10] font-Pangram-Medium text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"
+              className="py-4 px-8 rounded-[34px] text-white font-Pangram-Medium bg-[#100E10]  text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"
             >
               Book now
             </Link>
             <PrimaryLink
               href="/about"
               title="About us"
-              style="py-4 px-8 rounded-[34px] font-Pangram-Medium text-xs xs:mt-6 border border-[#100E10] bg-transparent text-[#100E10] hover:text-[#fff] hover:bg-[#100E10] hover:border-[#100E10] duration-0 cursor-pointer"
+              style="py-4 px-8 rounded-[34px] font-Pangram-Medium text-xs mt-6 border border-[#100E10] bg-transparent text-[#100E10] hover:text-[#fff] hover:bg-[#100E10] hover:border-[#100E10] duration-0 cursor-pointer"
             />
           </div>
         </div>
