@@ -56,19 +56,19 @@ const CompositeBondingOurCases = () => {
         </div> */}
       </div>
 
-      <div className="flex gap-6 mt-10">
-        <div className="block sm:hidden overflow-x-auto whitespace-nowrap ml-5">
-          {composite_bonding_images.map((data, index) => (
-            <div className="inline-block mr-4" key={index}>
+      <div className="flex gap-6 w-full mt-10">
+      <div className="block  overflow-x-auto scrollbar-hidden whitespace-nowrap">
+      {composite_bonding_images.map((data, index) => (
+            <div className="inline-block mr-4 md:h-[400px] md:w-[300px] h-[300px] w-[200px]" key={index}>
               <ResultCard image={data} />
             </div>
           ))}
         </div>
-        <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
-          {composite_bonding_images.map((data, index) => (
+        {/* <div className="hidden sm:grid  md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
+          {white_fillings_our_cases_images.map((data, index) => (
             <ResultCard key={index} image={data} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

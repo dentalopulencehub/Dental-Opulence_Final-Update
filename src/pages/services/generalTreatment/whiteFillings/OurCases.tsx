@@ -24,7 +24,7 @@ const WhiteFillingOurCases = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[80px] bg-white flex justify-between items-center">
         <div className="">
           <p className="flex flex-col">
@@ -56,19 +56,19 @@ const WhiteFillingOurCases = () => {
         </div> */}
       </div>
 
-      <div className="flex gap-6 mt-10">
-        <div className="block sm:hidden overflow-x-auto whitespace-nowrap ml-5">
+      <div className="flex gap-6 w-full mt-10">
+        <div className="block  overflow-x-auto scrollbar-hidden whitespace-nowrap">
           {white_fillings_our_cases_images.map((data, index) => (
-            <div className="inline-block mr-4" key={index}>
+            <div className="inline-block mr-4 md:h-[400px] md:w-[300px] h-[300px] w-[200px]" key={index}>
               <ResultCard image={data} />
             </div>
           ))}
         </div>
-        <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
+        {/* <div className="hidden sm:grid  md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
           {white_fillings_our_cases_images.map((data, index) => (
             <ResultCard key={index} image={data} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

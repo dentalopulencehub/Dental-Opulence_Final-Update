@@ -17,7 +17,7 @@ const CompositeVeneersHero = () => {
             </h1>
           </div>
           <p
-            className="text-[18px] text-[#161616] mt-6 text-left w-full leading-tight"
+            className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
             We understand that the appearance of your teeth plays a crucial role
@@ -42,6 +42,14 @@ const CompositeVeneersHero = () => {
             </div>
           </div>
 
+          <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
+            <Image
+              src={composite_veneers_service_hero_image}
+              alt="Composite Bonding Hero Image"
+              className="max-w-full h-full"
+            />
+          </div>
+
           <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
             <Link
               href="https://book.do.co.uk/"
@@ -58,7 +66,7 @@ const CompositeVeneersHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
+        <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={composite_veneers_service_hero_image}
             alt="Composite Bonding Hero Image"

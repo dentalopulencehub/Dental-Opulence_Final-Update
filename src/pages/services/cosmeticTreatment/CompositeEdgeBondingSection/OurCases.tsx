@@ -56,10 +56,10 @@ const CompositeEdgeBondingOurCases = () => {
         </div> */}
       </div>
 
-      <div className="flex gap-6 mt-10">
-        <div className="block sm:hidden overflow-x-auto whitespace-nowrap ml-5">
-          {composite_edge_bonding_images.map((data, index) => (
-            <div className="inline-block mr-4" key={index}>
+      <div className="flex gap-6 w-full mt-10">
+      <div className="block  overflow-x-auto scrollbar-hidden whitespace-nowrap">
+      {composite_edge_bonding_images.map((data, index) => (
+            <div className="inline-block mr-4 md:h-[400px] md:w-[300px] h-[300px] w-[200px]" key={index}>
               <ResultCard image={data} />
             </div>
           ))}

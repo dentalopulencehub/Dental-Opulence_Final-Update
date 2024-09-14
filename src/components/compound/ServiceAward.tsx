@@ -17,7 +17,7 @@ const ServiceAwards = () => {
   return (
     <div className="w-full">
       <div className="bg-white w-full pb-[100px]">
-        <Marquee className="" speed={100} direction="left">
+        <Marquee className="" speed={100} direction="left" loop={0} pauseOnHover={true}>
           {repeatedAwards}
         </Marquee>
 

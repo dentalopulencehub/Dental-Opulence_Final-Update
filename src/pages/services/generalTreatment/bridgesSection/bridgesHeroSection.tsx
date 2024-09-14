@@ -13,14 +13,16 @@ const BridgesHeroSection = () => {
       <div className="bg-[#FFFFFF] rounded-t-[24px] pt-[100px] pb-[100px] h-full w-full items-center flex xl:flex-row flex-col justify-between xl:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8 ">
           <div className="flex flex-row items-center gap-4">
-          <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
+            <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
               Bridges
             </h1>
           </div>
           <p
-            className="text-[18px] text-[#161616] mt-6 text-left w-full leading-tight"
+            className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >            At Dental Opulence, we recognize that missing teeth can impact both
+          >
+            {" "}
+            At Dental Opulence, we recognize that missing teeth can impact both
             your oral health and self-confidence. That’s why we offer dental
             bridges as an effective solution for replacing missing teeth. Our
             dental bridges are designed to seamlessly fill the gaps left by
@@ -29,7 +31,7 @@ const BridgesHeroSection = () => {
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
-          <div className="flex gap-2 w-full items-center justify-start">
+            <div className="flex gap-2 w-full items-center justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 0% Finance Options
@@ -42,6 +44,14 @@ const BridgesHeroSection = () => {
                 Evening and weekend appointments
               </p>
             </div>
+          </div>
+
+          <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
+            <Image
+              src={bridges_service_hero_image}
+              alt="Composite Bonding Hero Image"
+              className="max-w-full h-full"
+            />
           </div>
 
           <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
@@ -60,7 +70,7 @@ const BridgesHeroSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
+        <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={bridges_service_hero_image}
             alt="Composite Bonding Hero Image"

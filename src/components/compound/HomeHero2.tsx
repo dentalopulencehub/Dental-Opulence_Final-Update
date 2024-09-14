@@ -32,20 +32,20 @@ const HomeHero2 = () => {
   return (
     <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        <div className="xl:max-w-[600px] md:w-[70%] w-[90%] mx-auto sm:text-center">
-          <Image src={home_hero2_ill} alt="" className="mt-10 xl:w-[500px]" />
+        <div className="xl:max-w-[600px] md:w-[70%] w-[100%] mx-auto sm:text-center">
+          <Image src={home_hero2_ill} alt="" className="mt-10 w-[100%] h-auto xl:w-[500px]" />
         </div>
 
-        <div className="xl:max-w-[690px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
-          <p className="flex flex-col items-centehttp://localhost:3002/_next/static/media/home-hero2-ill.fd70e812.svgr">
+        <div className="xl:max-w-[690px] w-[100%] mx-auto flex flex-col xl:items-start items-center">
+          <p className="flex flex-col justify-start">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
           </p>
           <h4
-            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] md:text-left text-center md:text-left flex flex-wrap "
+            className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] text-left flex flex-wrap "
             ref={element}
           >
-            {/* {words.map((word, index) => {
+            {words.map((word, index) => {
               const start = index / words.length;
               const end = start + 1 / words.length;
               //console.log(start, end);
@@ -58,8 +58,8 @@ const HomeHero2 = () => {
                   {word}
                 </Word>
               );
-            })} */}
-            {value}
+            })}
+            {/* {value} */}
           </h4>
         </div>
       </div>

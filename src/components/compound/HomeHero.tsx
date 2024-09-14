@@ -11,34 +11,42 @@ const HomeHero = () => {
     <div className="show-scrollbar">
       <div className="bg-[#100E10] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
-          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] xl:text-left text-center sm:leading-[76px] leading-[56px] text-white">
+          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] text-left sm:leading-[76px] leading-[56px] text-white">
             Elevate Your Smile with Dental Opulence
           </h1>
-          <p className="mt-6 sm:text-[18px] sm:leading-8 text-base leading-7 text-white xl:text-left text-center">
+          <p className="mt-6 sm:text-[18px] sm:leading-8 text-base leading-7 text-white text-left">
             Welcome to Dental Opulence, where we blend everyday dentistry with
             cosmetic artistry to create your perfect smile. Our modern clinic
             offers cutting-edge technology and amenities for your comfort.
             Achieve your perfect smile with us.
           </p>
 
-          <div className="mt-6">
-            <div className="flex gap-2 items-center justify-center sm:justify-start">
+          <div className="mt-6 mt-6 flex-col w-full items-center text-center md:text-left">
+            <div className="flex gap-2 w-full items-center justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">0% Finance Options</p>
             </div>
 
-            <div className="flex gap-2 items-center mt-3 justify-center sm:justify-start">
+            <div className="flex gap-2 items-center justify-start mt-3">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">Evening and weekend appointments</p>
             </div>
           </div>
 
-          <div className="flex gap-6 xs:mt-[56px] mt-[32px] xl:mx-0 mx-auto xs:flex-row flex-col">
+          <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
+            <Image
+              src={home_hero_ill}
+              alt="Composite Bonding Hero Image"
+              className="max-w-full h-full"
+            />
+          </div>
+
+          <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
             <Link
               href="https://book.do.co.uk/"
               target="_blank"
               title="Book now"
-              className="py-4 px-[49px] rounded-[32px] bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+              className="py-4 px-[49px] rounded-[32px] text-center bg-white text-[#100E10] font-Pangram-Medium text-base hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
             >
               Book now
             </Link>
@@ -46,14 +54,14 @@ const HomeHero = () => {
             <PrimaryLink
               href="/about"
               title="About us"
-              style="py-4 px-[49px] rounded-[32px] bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white duration-0"
+              style="py-4 px-[49px] rounded-[32px] text-center bg-transparent text-white border border-[#fff] font-Pangram-Medium text-base hover:text-[#100E10] hover:bg-white duration-0"
             />
           </div>
         </div>
         <Image
           src={home_hero_ill}
           alt="Home hero illustration"
-          className="xxl:mt-0 mt-12 w-[85%] h-auto sm:w-[50%]" // Increased size for mobile view
+          className="hidden xxl:mt-0 mt-12 w-[85%] h-auto sm:w-[50%]" // Increased size for mobile view
         />
       </div>
     </div>

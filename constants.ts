@@ -2442,7 +2442,7 @@ export const serviceCompositeBonding_CompositeEdgeBonding: ServiceCompositeBondi
 export const serviceHero2DescBridge: ServiceHero2TextDesc[] = [
   {
     textDes:
-      "A dental bridge is an effective solution for filling gaps caused by missing teeth. It consists of crowns placed on adjacent teeth with a false tooth in between, restoring your smiles natural appearance. Crafted from high-quality materials, our bridges are designed to mimic the look and function of natural teeth. At Dental Opulence, our skilled dentists create personalized treatment plans to ensure you achieve your desired smile. Our bridges can be colour-matched to blend perfectly with your natural teeth, providing a discreet and aesthetically pleasing solution.",
+      "A dental bridge is an effective solution for filling gaps caused by missing teeth. It consists of crowns placed on adjacent teeth with a false tooth in between, restoring your smile's natural appearance. Crafted from high-quality materials, our bridges are designed to mimic the look and function of natural teeth. At Dental Opulence, our skilled dentists create personalized treatment plans to ensure you achieve your desired smile. Our bridges can be colour-matched to blend perfectly with your natural teeth, providing a discreet and aesthetically pleasing solution.",
   },
 ];
 
