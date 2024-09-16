@@ -85,17 +85,17 @@ const AboutGetInTouch = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 mt-[3rem] items-center justify-between">
+            <div className="flex flex-col md:flex-row gap-4 mt-[3rem] items-center justify-between">
               <Link
                 href={"https://book.do.co.uk/"}
                 target="blank"
-                className="bg-[#fff] px-10 py-2 rounded-full"
+                className="bg-[#fff] w-full text-center px-10 py-2 rounded-full"
               >
                 <button className="text-[#000] text-sm ">Book now</button>
               </Link>
               <Link
                 href={"contact"}
-                className="border border-white px-10 py-2 rounded-full"
+                className="border w-full text-center border-white px-10 py-2 rounded-full"
               >
                 <button className="text-white ">Contact us</button>
               </Link>

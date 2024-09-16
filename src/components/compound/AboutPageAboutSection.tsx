@@ -41,16 +41,16 @@ const AboutPageAboutSection = () => {
           <Image src={home_hero2_ill} alt="" className="mt-10" />
         </div>
 
-        <div className="xl:max-w-[584px] w-[90%] mx-auto flex flex-col xl:items-start items-center">
+        <div className="xl:max-w-[584px] w-[100%] mx-auto flex flex-col xl:items-start items-center">
           <p className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
           </p>
           <h4
-            className="text-white font-Pangram-Regular mt-6  text-[20px]  sm:leading-[30px] leading-[28px] text-center md:text-left flex flex-wrap"
+            className="text-white w-full md:w-auto font-Pangram-Regular mt-6  text-[20px]  sm:leading-[30px] leading-[28px] text-left flex flex-wrap"
             ref={element}
           >
-            {/* {words.map((word, index) => {
+            {words.map((word, index) => {
               const start = index / words.length;
               const end = start + 1 / words.length;
               //console.log(start, end);
@@ -63,8 +63,8 @@ const AboutPageAboutSection = () => {
                   {word}
                 </Word>
               );
-            })} */}
-            {value}
+            })}
+            {/* {value} */}
           </h4>
 
           {/*   <h4

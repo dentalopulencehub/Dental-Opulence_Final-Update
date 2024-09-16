@@ -199,7 +199,7 @@ const TestimonyComp = () => {
         </p>
         <div className="md:flex justify-between items-center">
           <p className="md:text-[34px] text-[28px] font-encode font-[700] mt-3 leading-[42px]">
-            Your Reliable Dentist for <br />
+            Your Reliable Dentist for 
             Optimal Oral Health
           </p>
           <Link

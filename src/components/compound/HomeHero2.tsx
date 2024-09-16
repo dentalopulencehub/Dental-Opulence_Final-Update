@@ -32,7 +32,7 @@ const HomeHero2 = () => {
   return (
     <div className="w-full">
       <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
-        <div className="xl:max-w-[600px] md:w-[70%] w-[100%] mx-auto sm:text-center">
+        <div className="xl:max-w-[600px] md:w-[70%] w-[100%] mx-auto sm:text-center xl:ml-0">
           <Image src={home_hero2_ill} alt="" className="mt-10 w-[100%] h-auto xl:w-[500px]" />
         </div>
 

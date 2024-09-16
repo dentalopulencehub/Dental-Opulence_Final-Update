@@ -58,11 +58,13 @@ const HomeHero = () => {
             />
           </div>
         </div>
-        <Image
-          src={home_hero_ill}
-          alt="Home hero illustration"
-          className="hidden xxl:mt-0 mt-12 w-[85%] h-auto sm:w-[50%]" // Increased size for mobile view
-        />
+        <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
+          <Image
+            src={home_hero_ill}
+            alt="Composite Bonding Hero Image"
+            className="max-w-full h-full"
+          />
+        </div>
       </div>
     </div>
   );
