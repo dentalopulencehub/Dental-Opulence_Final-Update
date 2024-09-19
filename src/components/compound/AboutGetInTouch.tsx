@@ -193,7 +193,8 @@ const AboutGetInTouch = () => {
               referrerPolicy="no-referrer-when-downgrade"
               frameBorder="0"
               aria-hidden="false"
-            />
+              title="Google Maps location of Dental Opulence" // Added descriptive title
+            ></iframe>
           </div>
         </div>
       </div>
