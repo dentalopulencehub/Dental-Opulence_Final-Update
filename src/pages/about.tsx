@@ -20,6 +20,7 @@ import { gsap, ScrollTrigger } from "../../lib/gsap";
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { aboutFaq, faq } from "../../constants";
 import OurGallery from "@/components/compound/OurGallery";
+import Head from "next/head";
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -48,6 +49,9 @@ export default function Home() {
 
   return (
     <Layout>
+      <Head>
+        <title>About</title>
+      </Head>
       <Navbar />
       <AboutHero />
       <HomeAwards />

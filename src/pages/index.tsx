@@ -18,17 +18,23 @@ import Head from "next/head"; // Add this import
 const HomeHero = dynamic(() => import("../components/compound/HomeHero"));
 const HomeAwards = dynamic(() => import("../components/compound/HomeAwards"));
 const HomeHero2 = dynamic(() => import("../components/compound/HomeHero2"));
-const HomeOurServices = dynamic(() => import("../components/compound/HomeOurServices"));
-const HomePeopleSlider = dynamic(() => import("../components/compound/HomePeopleSlider"));
-const HomePeopleSlider2 = dynamic(() => import("../components/compound/HomePeopleSlider2"));
+const HomeOurServices = dynamic(
+  () => import("../components/compound/HomeOurServices")
+);
+const HomePeopleSlider = dynamic(
+  () => import("../components/compound/HomePeopleSlider")
+);
+const HomePeopleSlider2 = dynamic(
+  () => import("../components/compound/HomePeopleSlider2")
+);
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title></title> 
-      </Head>
       <Layout>
+        <Head>
+          <title>Home</title>
+        </Head>
         <Navbar />
         <HomeHero />
         <HomeAwards />
