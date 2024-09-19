@@ -42,11 +42,11 @@ const AboutPageAboutSection = () => {
         </div>
 
         <div className="xl:max-w-[584px] w-[100%] mx-auto flex flex-col xl:items-start items-center">
-          <p className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <span className="text-white font-Pangram-Regular">About us</span>
             <Image src={underline_vector} alt="" />
-          </p>
-          <h4
+          </div>
+          <p
             className="text-white w-full md:w-auto font-Pangram-Regular mt-6  text-[20px]  sm:leading-[30px] leading-[28px] text-left flex flex-wrap"
             ref={element}
           >
@@ -65,7 +65,7 @@ const AboutPageAboutSection = () => {
               );
             })}
             {/* {value} */}
-          </h4>
+          </p>
 
           {/*   <h4
             className="text-white font-Pangram-Regular mt-6 sm:text-[24px] text-[20px] sm:leading-[30px] leading-[28px] xl:text-left text-center flex flex-wrap"

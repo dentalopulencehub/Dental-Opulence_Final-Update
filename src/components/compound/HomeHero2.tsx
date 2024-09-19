@@ -44,11 +44,11 @@ const HomeHero2 = () => {
           </div>
 
           <div className="xl:max-w-[690px] w-[100%] mx-auto flex flex-col xl:items-start items-center">
-            <p className="flex flex-col justify-start">
+            <div className="flex flex-col justify-start">
               <span className="text-white font-Pangram-Regular">About us</span>
               <Image src={underline_vector} alt="" />
-            </p>
-            <h4
+            </div>
+            <p
               className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] text-left flex flex-wrap "
               ref={element}
             >
@@ -67,7 +67,7 @@ const HomeHero2 = () => {
                 );
               })}
               {/* {value} */}
-            </h4>
+            </p>
           </div>
         </div>
       </div>

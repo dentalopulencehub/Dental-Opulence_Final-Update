@@ -27,21 +27,25 @@ import logo_Link3 from "../../../assets/fonts/footer-logo-link3.svg";
 
 const hoverLinks = [
   {
+    title:"Instagram",
     image: ig_logo,
     image_inverted: ig_logo_dark,
     link: "https://www.instagram.com/dentalopulence/",
   },
   {
+    title:"Facebook",
     image: fb_logo,
     image_inverted: fb_logo_dark,
     link: "https://www.facebook.com/DentalOpulence/",
   },
   {
+    title:"Whatsapp",
     image: whatsapp_logo,
     image_inverted: whatsapp_logo_dark,
     link: "https://wa.me/+447301253447",
   },
   {
+    title:"Tiktok",
     image: tiktok_icon,
     image_inverted: titktok_icon_dark,
     link: "https://www.tiktok.com/@dentalopulence",
@@ -73,14 +77,14 @@ const Footer = () => {
                       onMouseOut={() => setHoverIndex(null)}
                       className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
                     >
-                      <Link href={item.link} target="blank" aria-label={`Visit our ${item.link}`}>
+                      <Link href={item.link} target="blank" aria-label={`Visit our ${item.title}`}>
                         <Image
                           src={
                             hoverIndex === index
                               ? item.image_inverted
                               : item.image
                           }
-                          alt={`Link to ${item.link}`}
+                          alt={`Link to ${item.title}`}
                         />
                       </Link>
                     </div>
