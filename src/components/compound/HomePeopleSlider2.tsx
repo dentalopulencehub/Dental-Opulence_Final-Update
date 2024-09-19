@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { people_slider2 } from "../../../constants";
+import { CldImage } from "next-cloudinary";
 
 const HomePeopleSlider2 = () => {
   return (
@@ -11,10 +12,12 @@ const HomePeopleSlider2 = () => {
           <div className="flex gap-8 md:gap-20">
             {people_slider2.map((image, index) => (
               <div key={index} className="">
-                <Image 
+                <CldImage 
                   src={image} 
                   alt={`Image ${index + 1}`} 
-                 className="w-[488px]"
+                  width={488} 
+                  height={300} 
+                  className="w-[488px]"
                 />
               </div>
             ))}

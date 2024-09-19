@@ -204,12 +204,12 @@ const TestimonyComp = () => {
           </p>
           <Link
             href={"/testimonials"}
-            className="md:flex hidden gap-3 items-center  md:px-7 py-2 "
+            className="md:flex hidden gap-3 items-center md:px-7 py-3" // Increased vertical padding
           >
             <SecondaryLink
               href="#"
               title="See Client Reactions"
-              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[280px] h-[56px] duration-0"
+              style="border border-[#100E10] hover:bg-[#100E10] hover:text-white flex flex-row gap-3 items-center justify-center rounded-[32px] w-[300px] h-[60px] duration-0" // Increased width and height
               hovered={linkHover}
               setHovered={setLinkHover}
             />

@@ -1,51 +1,51 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 import {
   Layout,
-  HomeHero,
   Navbar,
-  HomeAwards,
-  HomeHero2,
   HomePopularServices,
-  HomeOurServices,
+  HomeOurServicesHeader,
   HomeChangeLife,
   OurResult,
-  OurProcess,
-  Faq,
-  HomeOurServicesHeader,
-  HomePeopleSlider,
-  Footer,
   TestimonyComp,
+  Faq,
+  Footer,
   CompositeBondingHowLong,
 } from "../components/import";
-import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { faq } from "../../constants";
+import Head from "next/head"; // Add this import
 
-const inter = Inter({ subsets: ["latin"] });
+// Dynamic imports for lazy loading
+const HomeHero = dynamic(() => import("../components/compound/HomeHero"));
+const HomeAwards = dynamic(() => import("../components/compound/HomeAwards"));
+const HomeHero2 = dynamic(() => import("../components/compound/HomeHero2"));
+const HomeOurServices = dynamic(() => import("../components/compound/HomeOurServices"));
+const HomePeopleSlider = dynamic(() => import("../components/compound/HomePeopleSlider"));
+const HomePeopleSlider2 = dynamic(() => import("../components/compound/HomePeopleSlider2"));
 
 export default function Home() {
   return (
-    <Layout>
-      <Navbar />
-      <HomeHero />
-
-      <HomeAwards />
-      <HomeHero2 />
-      <HomePeopleSlider />
-      <HomePopularServices />
-      <HomeOurServicesHeader />
-
-      <HomeOurServices />
-      
-      <HomeChangeLife />
-      <CompositeBondingHowLong />
-      <OurResult />
-      <TestimonyComp />
-
-      {/* <OurProcess /> */}
-      <Faq faqList={faq} />
-      <HomePeopleSlider2 />
-      <Footer />
-    </Layout>
+    <>
+      <Head>
+        <title></title> 
+      </Head>
+      <Layout>
+        <Navbar />
+        <HomeHero />
+        <HomeAwards />
+        <HomeHero2 />
+        <HomePeopleSlider />
+        <HomePopularServices />
+        <HomeOurServicesHeader />
+        <HomeOurServices />
+        <HomeChangeLife />
+        <CompositeBondingHowLong />
+        <OurResult />
+        <TestimonyComp />
+        {/* <OurProcess /> */}
+        <Faq faqList={faq} />
+        <HomePeopleSlider2 />
+        <Footer />
+      </Layout>
+    </>
   );
 }

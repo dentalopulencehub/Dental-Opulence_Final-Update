@@ -73,14 +73,14 @@ const Footer = () => {
                       onMouseOut={() => setHoverIndex(null)}
                       className="w-10 h-10 p-[13px] rounded-full border border-[#fff] cursor-pointer hover:bg-white"
                     >
-                      <Link href={item.link} target="blank">
+                      <Link href={item.link} target="blank" aria-label={`Visit our ${item.link}`}>
                         <Image
                           src={
                             hoverIndex === index
                               ? item.image_inverted
                               : item.image
                           }
-                          alt=""
+                          alt={`Link to ${item.link}`}
                         />
                       </Link>
                     </div>
@@ -92,20 +92,16 @@ const Footer = () => {
                 <Link
                   href="https://test.cqc.org.uk/location/1-17708997775/contact"
                   className="flex gap-2"
+                  aria-label="Contact us at CQC" // Added aria-label for clarity
                 >
-                  <Image src={logo_Link1} alt="" className="w-[100px]" />
+                  <Image src={logo_Link1} alt="Footer Logo Link 1" className="w-[100px]" /> {/* Updated alt text */}
                   <Image
                     src={footer_logo2}
-                    alt=""
+                    alt="Footer Logo" // Updated alt text
                     className="filter brightness-[1] invert-[1] saturate-[0] w-[50px]"
                   />
                 </Link>
-                {/* <Link href='https://www.gdc-uk.org'>
-                  <Image src={logo_Link2} alt="" className="w-[190px] h-[80px]  md:my-0 my-3"/>
-                </Link>
-                <Link href='https://gdpr-info.eu'>
-                  <Image src={logo_Link3} alt="" className="w-[190px] h-[80px]"/>
-                </Link> */}
+                
               </div>
             </div>
           </div>

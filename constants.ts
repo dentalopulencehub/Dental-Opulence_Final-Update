@@ -319,18 +319,18 @@ import hover_all_cases from "./assets/images/casesDropdown/hover_all_cases.svg";
 
 import cases_testi from "./assets/images/casesDropdown/cases_testimonial.svg";
 
-import HMim1 from "./assets/BMimges/MMimgPair1.png";
-import HMim2 from "./assets/BMimges/MMimgPair2.png";
-import HMim3 from "./assets/BMimges/MMimgPair3.png";
-import HMim4 from "./assets/BMimges/MMimgPair4.png";
-import HMim5 from "./assets/BMimges/MMimgPair5.png";
-import HMim6 from "./assets/BMimges/MMimgPair6.png";
-import HMim7 from "./assets/BMimges/MMimgPair7.png";
-import HMim8 from "./assets/BMimges/MMimgPair8.png";
-import HMim9 from "./assets/BMimges/MMimgPair9.png";
+import HMim1 from "./assets/BMimges/MMimgPair1.webp";
+import HMim2 from "./assets/BMimges/MMimgPair2.webp";
+import HMim3 from "./assets/BMimges/MMimgPair3.webp";
+import HMim4 from "./assets/BMimges/MMimgPair4.webp";
+import HMim5 from "./assets/BMimges/MMimgPair5.webp";
+import HMim6 from "./assets/BMimges/MMimgPair6.webp";
+import HMim7 from "./assets/BMimges/MMimgPair7.webp";
+import HMim8 from "./assets/BMimges/MMimgPair8.webp";
+import HMim9 from "./assets/BMimges/MMimgPair9.webp";
 import HMim10 from "./assets/BMimges/MMimgPair10.png";
-import HMim11 from "./assets/BMimges/MMimgPair11.png";
-import HMim12 from "./assets/BMimges/MMimgPair12.png";
+import HMim11 from "./assets/BMimges/MMimgPair11.webp";
+import HMim12 from "./assets/BMimges/MMimgPair12.webp";
 
 //Service types images
 
@@ -3003,17 +3003,17 @@ export const people_slider = [
 ];
 
 export const people_slider2 = [
-  HMim1,
-  HMim2,
-  HMim3,
-  HMim4,
-  HMim5,
-  HMim6,
-  HMim7,
-  HMim8,
-  HMim9,
-  HMim11,
-  HMim12,
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair11_znmo6e.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair12_owjqgp.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair9_lledal.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair10_t73zph.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair8_i809rk.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769235/MMimgPair7_lloecq.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair3_ltbvhz.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair6_vdp17d.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769236/MMimgPair5_zip25f.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769235/MMimgPair2_nlwk8w.webp",
+  "https://res.cloudinary.com/dxdupctdf/image/upload/v1726769235/MMimgPair1_ngd6rn.webp",
 ];
 
 export const about_award_winning: AboutAwardType[] = [

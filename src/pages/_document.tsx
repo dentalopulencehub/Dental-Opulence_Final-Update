@@ -4,9 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
-      <meta name="description" content="Dental Opulence" />
+        <meta name="description" content="Dental Opulence" />
+        {/* <title>Dental Opulence</title> */}
         <link rel="shortcut icon" href="/384.png" />
         <link rel="mask-icon" href="/384.png" color="#FFFFFF" />
         <meta name="theme-color" content="#ffffff" />

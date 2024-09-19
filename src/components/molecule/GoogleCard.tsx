@@ -13,7 +13,7 @@ const GoogleCard: React.FC = () => {
           <FcGoogle size={48} className="md:w-[60px] md:h-[60px]"/>
           <div className="text-xl font-encode text-[#BDBDBD] group-hover:text-[#FEC600]">
             <div className="flex gap-1">
-              {arr.map((star, i) => (
+              {arr.map((_, i) => (
                 <svg
                   key={i}
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const GoogleCard: React.FC = () => {
         </div>
         <Link href='https://rb.gy/20dj6m' target='blank' className="mt-auto">
           <div className="flex border-black border-b pb-3 items-center">
-          <Image src={googleLogo} alt="Google" className="w-24 md:w-32" />
+            <Image src={googleLogo} alt="Google" className="w-24 md:w-32" layout="responsive" /> {/* Added layout prop */}
           </div>
         </Link>
       </div>
