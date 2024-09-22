@@ -13,6 +13,9 @@ const MemoizedImage = memo(({ src, alt }: { src: string; alt: string }) => (
   />
 ));
 
+// Set the displayName for debugging purposes
+MemoizedImage.displayName = "MemoizedImage";
+
 const HomeAwards = () => {
   const repeatedAwards = Array.from({ length: 100 }, (_, index) => (
     homer_awards_images2.map((award, i) => (

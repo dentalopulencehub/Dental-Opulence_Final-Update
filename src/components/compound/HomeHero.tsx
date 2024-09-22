@@ -2,11 +2,9 @@ import React, { memo } from "react";
 import Image from "next/image";
 import home_hero_ill from "../../../assets/DO Format/DO 1.webp";
 import PrimaryLink from "../atom/PrimaryLink";
-
 import right_thick from "../../../assets/fonts/right_thick_home.svg";
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-// import cloudinary from "../../../cloudinaryConfig"
 
 const HomeHero = memo(() => {
   const renderFinanceOptions = () => (
@@ -38,9 +36,8 @@ const HomeHero = memo(() => {
             Achieve your perfect smile with us.
           </p>
 
-          <div className="mt-6 mt-6 flex-col w-full items-center text-center md:text-left">
-            {renderFinanceOptions()}{" "}
-            {/* Use the function to render finance options */}
+          <div className="mt-6 flex-col w-full items-center text-center md:text-left">
+            {renderFinanceOptions()}
             <div className="flex gap-2 items-center justify-start mt-3">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#fff] lg:text-left text-center">
@@ -56,7 +53,7 @@ const HomeHero = memo(() => {
               className="max-w-full h-full"
               width={380}
               height={100}
-              style={{ objectFit: "cover" }} // Add style for cover
+              style={{ objectFit: "cover" }}
             />
           </div>
 
@@ -84,12 +81,15 @@ const HomeHero = memo(() => {
             className="max-w-full h-full"
             width={800}
             height={100}
-            style={{ objectFit: "cover" }} // Add style for cover
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>
     </div>
   );
 });
+
+// Set displayName for the memoized component
+HomeHero.displayName = "HomeHero";
 
 export default HomeHero;

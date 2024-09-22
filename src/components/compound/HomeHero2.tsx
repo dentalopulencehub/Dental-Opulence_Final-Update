@@ -23,10 +23,6 @@ const HomeHero2 = () => {
     offset: ["start 0.9", "start 0.15"],
   });
 
-  /*   useIsomorphicLayoutEffect(() => {
-    scrollYProgress.on("change", (e) => console.log(e));
-  }, []); */
-
   const words = value.split(" ");
 
   return (
@@ -55,7 +51,6 @@ const HomeHero2 = () => {
               {words.map((word, index) => {
                 const start = index / words.length;
                 const end = start + 1 / words.length;
-                //console.log(start, end);
                 return (
                   <Word
                     key={index}
@@ -66,7 +61,6 @@ const HomeHero2 = () => {
                   </Word>
                 );
               })}
-              {/* {value} */}
             </p>
           </div>
         </div>
@@ -104,6 +98,9 @@ const Word = React.memo(({
   );
 });
 
+// Set displayName for better debugging
+Word.displayName = "Word";
+
 const Character = React.memo(({
   children,
   range,
@@ -116,3 +113,6 @@ const Character = React.memo(({
   const opacity = useTransform(progress, range, [0.2, 1]);
   return <motion.span style={{ opacity }}>{children}</motion.span>;
 });
+
+// Set displayName for better debugging
+Character.displayName = "Character";
