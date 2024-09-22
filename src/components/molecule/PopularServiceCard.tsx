@@ -22,7 +22,11 @@ const PopularServiceCard = ({
         // xs:w-[140px] sm:w-[180px] md:w-[220px] lg:w-[289px]
         className="w-full h-[400px] md:h-[360px] p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0"
       >
-        <Image className="hidden md:block" src={hover ? image_inverted : image} alt={title} />
+        <Image
+          className="hidden md:block"
+          src={hover ? image_inverted : image}
+          alt={title}
+        />
         <h3
           className={`mt-7 ${
             hover ? "text-white" : "text-[#100E10]"
@@ -49,9 +53,10 @@ const PopularServiceCard = ({
               <span
                 className={`text-xs ${
                   hover ? "text-[#100E10]" : "text-[#100E10]"
-                } `}
+                }`}
+                aria-label={`More Info about ${title}`} 
               >
-                More Info about {title}
+                More Info
               </span>
               <Image
                 src={hover ? pointer_right_dark : pointer_right_dark}

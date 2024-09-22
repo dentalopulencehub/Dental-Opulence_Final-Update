@@ -30,7 +30,7 @@ const TeethWhiteningOurCases = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] pt-[80px] bg-white flex justify-between items-center">
+      <div className="w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] bg-white">
         <div className="">
           <p className="flex flex-col">
             <span className={`text-[#4e4e4e] text-base font-Pangram-Regular`}>
@@ -45,34 +45,19 @@ const TeethWhiteningOurCases = () => {
           </h2>
         </div>
 
-        {/* <div className="lg:flex hidden items-center gap-3">
-          <Image
-            src={slider_arrow_left}
-            alt=""
-            onClick={handleOuterLeftClick}
-            className="cursor-pointer"
-          />
-          <Image
-            src={slider_arrow_right}
-            alt=""
-            onClick={handleOuterRightClick}
-            className="cursor-pointer"
-          />
-        </div> */}
-      </div>
-
-      <div className="flex gap-6 w-full mt-10">
-      <div className="block  overflow-x-auto scrollbar-hidden whitespace-nowrap">
-      {home_result_images.map((data, index) => (
-            <div className="inline-block mr-4 md:h-[400px] md:w-[300px] h-[300px] w-[200px]" key={index}>
-              <ResultCard image={data} />
-            </div>
-          ))}
-        </div>
-        <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:mx-[97px]">
-          {theeth_whitening_our_cases_images.map((data, index) => (
-            <ResultCard key={index} image={data} />
-          ))}
+        <div className="flex gap-6 mt-10">
+          <div className="block  overflow-x-auto whitespace-nowrap scrollbar-hidden">
+            {theeth_whitening_our_cases_images.map((data, index) => (
+              <div className="inline-block mr-4" key={index}>
+                <ResultCard image={data} />
+              </div>
+            ))}
+          </div>
+          {/* <div className="hidden sm:grid xs:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 w-full">
+            {composite_veneers_images.map((data, index) => (
+              <ResultCard key={index} image={data} />
+            ))}
+          </div> */}
         </div>
       </div>
     </div>
