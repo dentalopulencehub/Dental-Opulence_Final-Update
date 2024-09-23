@@ -26,7 +26,7 @@ const HomeHero = memo(() => {
       </style>
       <div className="bg-[#100E10] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
-          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] text-left sm:leading-[76px] leading-[56px] text-white">
+          <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] text-left sm:leading-[76px] leading-[56px] text-white" style={{ fontFamily: '"Pangram-Bold", Arial, sans-serif' }}>
             Elevate Your Smile with Dental Opulence
           </h1>
           <p className="mt-6 sm:text-[18px] sm:leading-8 text-base leading-7 text-white text-left">
@@ -53,6 +53,7 @@ const HomeHero = memo(() => {
               className="max-w-full h-full"
               width={380}
               height={100}
+              loading="lazy"
               style={{ objectFit: "cover" }}
             />
           </div>
