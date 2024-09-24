@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import home_hero2_ill from "../../../assets/images/home-hero2-ill.svg";
+import home_hero2_ill from "../../../assets/images/home-hero2-ill.png";
 import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
@@ -38,7 +38,7 @@ const AboutPageAboutSection = () => {
           <h2 className="sm:text-[34px] sm:leading-[42px] text-[28px] text-white text-center md:text-left font-Pangram-Bold">
             A Private Dental Clinic for Radiant Smiles and Optimal Oral Health{" "}
           </h2>
-          <Image src={home_hero2_ill} alt="" className="mt-10" />
+          <Image src={home_hero2_ill} alt="" className="mt-10 w-full overflow:hidden" />
         </div>
 
         <div className="xl:max-w-[584px] w-[100%] mx-auto flex flex-col xl:items-start items-center">

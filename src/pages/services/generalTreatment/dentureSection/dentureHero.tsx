@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import dentures_service_hero_image from "../../../../../assets/DO Format/6.jpg";
+import dentures_service_hero_image from "../../../../../assets/DO Format/6.webp";
 import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 
@@ -64,7 +64,7 @@ const DentureHero = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0">
+        <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={dentures_service_hero_image}
             alt="Composite Bonding Hero Image"

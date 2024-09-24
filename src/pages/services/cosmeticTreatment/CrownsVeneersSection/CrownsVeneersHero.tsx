@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import crowns_service_hero_image from "../../../../../assets/DO Format/17.jpg"
+import crowns_service_hero_image from "../../../../../assets/DO Format/17.webp"
 import right_thick from '../../../../../assets/images/right_thick.svg'
 
 

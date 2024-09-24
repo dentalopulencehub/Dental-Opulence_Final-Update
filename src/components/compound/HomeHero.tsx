@@ -48,7 +48,7 @@ const HomeHero = memo(() => {
 
           <div className="flex justify-center w-full md:w-[60%] mt-8 xl:mt-0 md:hidden">
             <CldImage
-              src="https://res.cloudinary.com/dxdupctdf/image/upload/v1726766335/DO_1_xk8sj7.webp"
+              src="https://res.cloudinary.com/dxdupctdf/image/upload/v1727202273/1_mjd6uf.webp"
               alt="Composite Bonding Hero Image"
               className="max-w-full h-full"
               width={380}

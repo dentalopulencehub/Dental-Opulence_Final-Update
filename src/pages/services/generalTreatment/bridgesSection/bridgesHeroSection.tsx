@@ -3,7 +3,7 @@ import Image from "next/image";
 import service_hero_image from "../../../assets/images/service-hero-image.svg";
 import { GlobalContext } from "../../../../../context/GlobalContext";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import bridges_service_hero_image from "../../../../../assets/DO Format/1.jpg";
+import bridges_service_hero_image from "../../../../../assets/DO Format/DO 1.webp";
 import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 

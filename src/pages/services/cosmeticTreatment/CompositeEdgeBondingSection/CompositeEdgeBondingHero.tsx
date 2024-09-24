@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import PrimaryLink from "@/components/atom/PrimaryLink";
-import composite_edge_bonding_service_hero_image from "../../../../../assets/DO Format/10.jpg";
+import composite_edge_bonding_service_hero_image from "../../../../../assets/DO Format/10.webp";
 import right_thick from "../../../../../assets/images/right_thick.svg";
 import Link from "next/link";
 
