@@ -140,7 +140,7 @@ const AboutGetInTouch = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 w-full">
-          <div className="w-full xl:min-h-[360px] bg-[#222222] rounded-2xl xs:p-10 p-7">
+          {/* <div className="w-full xl:min-h-[360px] bg-[#222222] rounded-2xl xs:p-10 p-7">
             <h4 className="text-white text-[34px]">Get In Touch With Us</h4>
 
             <form className="mt-7">
@@ -178,15 +178,15 @@ const AboutGetInTouch = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
 
-          <div className=" w-full xl:h-[360px] bg-[#222222] rounded-2xl flex sm:flex-row flex-col md:justify-around justify-between  sm:gap-0 gap-10">
+          <div className=" w-full h-full bg-[#222222] rounded-2xl flex sm:flex-row flex-col md:justify-around justify-between  sm:gap-0 gap-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.347447162731!2d-1.8491155230562837!3d52.43662054239905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb5a9b427bd9%3A0x3b5cf1c19e6303b3!2sDental%20Opulence!5e0!3m2!1sen!2sbd!4v1719599974267!5m2!1sen!2sbd"
               style={{
                 border: 0,
                 width: "100%",
-                height: "360px",
+                height: "100%",
                 borderRadius: "10px",
               }}
               loading="lazy"
