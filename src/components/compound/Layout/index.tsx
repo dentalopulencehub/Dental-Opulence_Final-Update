@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef, useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +19,7 @@ import contact_page_button from "../../../../assets/contact_icons/contact_info_i
 import whatsapp_icon from "../../../../assets/contact_icons/whatsAppIcon.svg";
 import call_icon from "../../../../assets/contact_icons/call_icon.svg";
 
-import messageIcon from '../../../../assets/contact_icons/messageIcon.svg'
+import messageIcon from "../../../../assets/contact_icons/messageIcon.svg";
 
 import contact_pen_icon from "../../../../assets/contact_icons/contact_pen_icon.svg";
 
@@ -27,23 +27,140 @@ interface Props {
   children: React.ReactNode;
 }
 
+// const Index = ({ children }: Props) => {
+//   const { dispatch, menuOpen } = useContext(GlobalContext);
+//   const [isExpanded, setIsExpanded] = useState(false);
+//   const tl: any = useRef(null);
+
+//   const toggleExpanded = () => {
+//     setIsExpanded(!isExpanded);
+//   };
+
+//   useGSAP(() => {
+//     tl.current = gsap.timeline({ paused: true });
+//     gsap.set(".contact-icon", { scale: 0.6 });
+
+//     let contact_icon = document.querySelector(".contact-icon");
+
+//     function learnMoreHover() {
+//       tl.current.to(contact_icon, 0.3, {
+//         scale: 1,
+//         duration: 0.3,
+//         ease: "back",
+//       });
+//       return tl.current;
+//     }
+
+//     contact_icon?.addEventListener("mouseover", () => {
+//       learnMoreHover().play();
+//     });
+
+//     contact_icon?.addEventListener("mouseleave", () => {
+//       learnMoreHover().reverse();
+//     });
+
+//     return () => {
+//       contact_icon?.removeEventListener("mouseover", () => {
+//         learnMoreHover().play();
+//       });
+
+//       contact_icon?.removeEventListener("mouseleave", () => {
+//         learnMoreHover().reverse();
+//       });
+//     };
+//   }, []);
+
+//   return (
+//     <main
+//       className={`sticky show-scrollbar`}
+//     >
+//       {/* <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
+//         <div className="fixed bg-white w-screen h-[5px] top-0" />
+//         <Image src={tr_radius} className="fixed top-[5px] right-[5px]" alt="" />
+//         <Image src={bl_radius} className="fixed bottom-[5px] left-[5px]" alt="" />
+//         <Image src={br_radius} className="fixed bottom-[5px] right-[5px]" alt="" />
+//         <Image src={tl_radius} className="fixed top-[5px] left-[5px]" alt="" />
+
+//         <div className="fixed bg-white w-[5px] h-screen left-0 " />
+
+//         <div className="fixed bg-white w-[5px] h-screen right-0 " />
+//         <div className="fixed bg-white w-screen h-[5px] bottom-0 " />
+//       </main> */}
+
+//       <main className="relative w-[calc(100%)] mx-auto rounded-[24px] z-[690]">
+//         {children}
+//         <div className="fixed sm:bottom-10 bottom-3 right-[10px]">
+//           {isExpanded && (
+//             <div className="flex flex-col items-center space-y-2 mb-1">
+//               <Link href="tel:+441212729229" target="blank">
+//                 <Image
+//                   className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
+//                   src={call_icon}
+//                   alt="Call Icon"
+//                 />
+//               </Link>
+//               <Link href="https://wa.me/+447301253447" target="blank">
+//                 <Image
+//                   className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
+//                   src={whatsapp_icon}
+//                   alt="WhatsApp Icon"
+//                 />
+//               </Link>
+//               <Link href="/contact">
+//                 <Image
+//                   className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
+//                   src={messageIcon}
+//                   alt="Contact Icon"
+//                 />
+//               </Link>
+//             </div>
+//           )}
+//           <Image
+//             className="w-[86px] h-[86px] contact-icon cursor-pointer "
+//             src={isExpanded ? contact_cross_button : contact_pen_icon}
+//             alt="floating contact page button"
+//             onClick={toggleExpanded}
+//           />
+//         </div>
+
+//       </main>
+//     </main>
+//   );
+// };
+
+// export default Index;
+
 const Index = ({ children }: Props) => {
   const { dispatch, menuOpen } = useContext(GlobalContext);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isLeftExpanded, setIsLeftExpanded] = useState(false); // New state for left button
   const tl: any = useRef(null);
+
+  const toggleLeftExpanded = () => {
+    setIsLeftExpanded(!isLeftExpanded); // Toggle left button
+    if (!isLeftExpanded) {
+      window.open("https://book.do.co.uk/");
+    }
+  };
 
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
   };
 
+  // const toggleLeftExpanded = () => {
+  //   setIsLeftExpanded(!isLeftExpanded); // Toggle left button
+
+  // };
+
   useGSAP(() => {
     tl.current = gsap.timeline({ paused: true });
-    gsap.set(".contact-icon", { scale: 0.6 });
+    gsap.set(".contact-icon, .left-contact-icon", { scale: 0.6 });
 
     let contact_icon = document.querySelector(".contact-icon");
+    let left_contact_icon = document.querySelector(".left-contact-icon");
 
-    function learnMoreHover() {
-      tl.current.to(contact_icon, 0.3, {
+    function learnMoreHover(iconClass: string) {
+      tl.current.to(iconClass, 0.3, {
         scale: 1,
         duration: 0.3,
         ease: "back",
@@ -52,43 +169,43 @@ const Index = ({ children }: Props) => {
     }
 
     contact_icon?.addEventListener("mouseover", () => {
-      learnMoreHover().play();
+      learnMoreHover(".contact-icon").play();
     });
 
     contact_icon?.addEventListener("mouseleave", () => {
-      learnMoreHover().reverse();
+      learnMoreHover(".contact-icon").reverse();
+    });
+
+    left_contact_icon?.addEventListener("mouseover", () => {
+      learnMoreHover(".left-contact-icon").play();
+    });
+
+    left_contact_icon?.addEventListener("mouseleave", () => {
+      learnMoreHover(".left-contact-icon").reverse();
     });
 
     return () => {
       contact_icon?.removeEventListener("mouseover", () => {
-        learnMoreHover().play();
+        learnMoreHover(".contact-icon").play();
       });
-
       contact_icon?.removeEventListener("mouseleave", () => {
-        learnMoreHover().reverse();
+        learnMoreHover(".contact-icon").reverse();
+      });
+      left_contact_icon?.removeEventListener("mouseover", () => {
+        learnMoreHover(".left-contact-icon").play();
+      });
+      left_contact_icon?.removeEventListener("mouseleave", () => {
+        learnMoreHover(".left-contact-icon").reverse();
       });
     };
   }, []);
 
   return (
-    <main
-      className={`sticky show-scrollbar`}
-    >
-      {/* <main className="fixed bg-white rounded-[24px] z-[700] w-full top-0 left-0 ">
-        <div className="fixed bg-white w-screen h-[5px] top-0" />
-        <Image src={tr_radius} className="fixed top-[5px] right-[5px]" alt="" />
-        <Image src={bl_radius} className="fixed bottom-[5px] left-[5px]" alt="" />
-        <Image src={br_radius} className="fixed bottom-[5px] right-[5px]" alt="" />
-        <Image src={tl_radius} className="fixed top-[5px] left-[5px]" alt="" />
-
-        <div className="fixed bg-white w-[5px] h-screen left-0 " />
-
-        <div className="fixed bg-white w-[5px] h-screen right-0 " />
-        <div className="fixed bg-white w-screen h-[5px] bottom-0 " />
-      </main> */}
-
+    <main className={`sticky show-scrollbar`}>
       <main className="relative w-[calc(100%)] mx-auto rounded-[24px] z-[690]">
         {children}
+
+        {/* Right bottom button */}
         <div className="fixed sm:bottom-10 bottom-3 right-[10px]">
           {isExpanded && (
             <div className="flex flex-col items-center space-y-2 mb-1">
@@ -116,11 +233,24 @@ const Index = ({ children }: Props) => {
             </div>
           )}
           <Image
-            className="w-[86px] h-[86px] contact-icon cursor-pointer "
+            className="w-[86px] h-[86px] contact-icon cursor-pointer"
             src={isExpanded ? contact_cross_button : contact_pen_icon}
             alt="floating contact page button"
             onClick={toggleExpanded}
           />
+        </div>
+
+        {/* Left bottom button */}
+        <div className="fixed sm:bottom-10 bottom-3 left-[10px]">
+          <button
+            className="w-[86px] h-[86px] left-contact-icon cursor-pointer bg-[#404040] rounded-full"
+            onClick={toggleLeftExpanded}
+            aria-label="Floating left button"
+          >
+            <span className="absolute inset-0 flex items-center justify-center text-white font-bold">
+              Book now
+            </span>
+          </button>
         </div>
       </main>
     </main>
