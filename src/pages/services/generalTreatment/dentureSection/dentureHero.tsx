@@ -11,21 +11,23 @@ const DentureHero = () => {
       <div className="bg-[#FFFFFF] rounded-t-[24px] pt-[100px] pb-[100px] h-full w-full items-center flex xl:flex-row flex-col justify-between xl:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
-          <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
+            <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
               Dentures
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >            At Dental Opulence, we offer partial and complete dentures as
+          >
+            {" "}
+            At Dental Opulence, we offer partial and complete dentures as
             effective solutions for replacing missing teeth. Our dentures not
             only enhance your oral health but also boost your self-confidence by
             restoring the natural look and function of your smile.{" "}
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
-          <div className="flex gap-2 w-full items-center justify-start">
+            <div className="flex gap-2 w-full items-center justify-start">
               <Image src={right_thick} alt="right_thick" />
               <p className="text-[16px] text-[#161616] lg:text-left text-center">
                 0% Finance Options
@@ -48,8 +50,8 @@ const DentureHero = () => {
             />
           </div>
 
-          <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
-          <Link
+          <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
+            <Link
               href="https://book.do.co.uk/"
               target="_blank"
               title="Book now"
