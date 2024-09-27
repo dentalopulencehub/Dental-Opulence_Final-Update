@@ -52,7 +52,7 @@ const CrownsVeneerHero = () => {
             />
           </div>
 
-          <div className="flex gap-6 xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-row ">
+          <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
             <Link
               href="https://book.do.co.uk/"
               target="_blank"
