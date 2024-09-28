@@ -207,8 +207,17 @@ const Index = ({ children }: Props) => {
 
         {/* Right bottom button */}
         <div className="fixed sm:bottom-10 bottom-3 right-[10px]">
+          <button
+            className="w-[86px] h-[86px] left-contact-icon cursor-pointer bg-[#404040] rounded-full hover:scale-110 transition-transform duration-300 ease-in-out"
+            onClick={toggleLeftExpanded}
+            aria-label="Floating left button"
+          >
+            <span className="absolute inset-0 flex items-center justify-center text-white font-bold">
+              Book now
+            </span>
+          </button>
           {isExpanded && (
-            <div className="flex flex-col items-center space-y-2 mb-1">
+            <div className="flex flex-col items-center space-y-1 mt-1">
               <Link href="tel:+441212729229" target="blank">
                 <Image
                   className="w-[45px] h-[45px] cursor-pointer bg-[#000] rounded-full"
@@ -241,17 +250,7 @@ const Index = ({ children }: Props) => {
         </div>
 
         {/* Left bottom button */}
-        <div className="fixed sm:bottom-10 bottom-3 left-[10px]">
-          <button
-            className="w-[86px] h-[86px] left-contact-icon cursor-pointer bg-[#404040] rounded-full"
-            onClick={toggleLeftExpanded}
-            aria-label="Floating left button"
-          >
-            <span className="absolute inset-0 flex items-center justify-center text-white font-bold">
-              Book now
-            </span>
-          </button>
-        </div>
+        {/* <div className="fixed sm:bottom-[160px] bottom-[120px] right-[10px]"></div> */}
       </main>
     </main>
   );
