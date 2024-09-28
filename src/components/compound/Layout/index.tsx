@@ -208,7 +208,7 @@ const Index = ({ children }: Props) => {
         {/* Right bottom button */}
         <div className="fixed sm:bottom-10 bottom-3 right-[10px]">
           <button
-            className="w-[86px] h-[86px] left-contact-icon cursor-pointer bg-[#404040] rounded-full hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="w-[86px] h-[86px] left-contact-icon cursor-pointer bg-[#2f2f2f] rounded-full hover:scale-110 transition-transform duration-300 ease-in-out"
             onClick={toggleLeftExpanded}
             aria-label="Floating left button"
           >
