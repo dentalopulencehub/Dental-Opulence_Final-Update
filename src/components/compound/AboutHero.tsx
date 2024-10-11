@@ -71,7 +71,7 @@ const AboutHero = () => {
             playsInline
             muted={isMuted} // Initial mute state
           >
-            <source src="https://player.vimeo.com/progressive_redirect/playback/1007730186/rendition/1080p/file.mp4?loc=external&signature=099268b9ef324adb45ed7666f23cc83ea7f9b590b5e44a69478e3638c818743b" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1009139266/rendition/source/file.mp4?loc=external&signature=afc3359a861323fc5ba309a24697877dbaf4c5548ac192620997f3c7f09edf12" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (

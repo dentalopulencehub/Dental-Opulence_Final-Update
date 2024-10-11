@@ -36,6 +36,7 @@ const InvisalignVideo = () => {
           <br /> about Invisalign
         </h2>
         <div className="relative mx-auto my-4">
+       
           <video
             ref={videoRef}
             className="object-cover rounded-2xl w-full h-full opacity-1"
@@ -43,7 +44,7 @@ const InvisalignVideo = () => {
             playsInline
             muted={isMuted} // Initial mute state
           >
-            <source src="https://player.vimeo.com/progressive_redirect/playback/1006679590/rendition/1080p/file.mp4?loc=external&signature=c6936c898b2a7bd254f3c4237113e5510fec27b292e0fab1fe271fa023836d27" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006678656/rendition/1080p/file.mp4?loc=external&signature=d54df91b6260b0a5ce6c49066a006799a0f7d479478e3a58902a5f6c5389ed2f" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (
