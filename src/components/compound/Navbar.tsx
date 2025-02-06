@@ -130,11 +130,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <PrimaryLink
+          <a className="py-3 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-sm ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0" href='https://book.do.co.uk/' target="_blank">
+          Contact
+          </a>
+          {/* <PrimaryLink
             href="/contact"
             title="Contact"
             style="py-3 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-sm ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
-          />
+          /> */}
         </div>
         <div className="relative right-0">
           <Hambuger />

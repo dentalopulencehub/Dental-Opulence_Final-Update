@@ -200,7 +200,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8 flex-1 h-[300px]"> {/* Added flex-1 */}
+              <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8 flex-1 h-[350px]"> {/* Added flex-1 */}
                 <div>
                   <h3 className="text-white   font-inter text-xl">Legal</h3>
                   <div
@@ -280,6 +280,18 @@ const Footer = () => {
                   >
                     <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
                       Competitions & Offers Terms
+                    </p>
+                  </div>
+                  <div
+                    onClick={() =>
+                      handleSetPathToNavigate(
+                        dispatch,
+                        "/smile-white-giveaway"
+                      )
+                    }
+                  >
+                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                      Smile White Giveaway
                     </p>
                   </div>
                 </div>
