@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import {
   Layout,
   Navbar,
@@ -23,7 +23,7 @@ import OurGallery from "@/components/compound/OurGallery";
 import Head from "next/head";
 
 export default function Home() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     let mm = gsap.matchMedia();
 
     let ctx: any = gsap.context(() => {
@@ -50,13 +50,18 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>About</title>
+        <title>About Us - Dental Opulence | Cosmetic Dentist Hall Green</title>
+        <meta
+          name="description"
+          content="Learn about Dental Opulence, a new dental clinic in Hall Green offering general and cosmetic dentistry services with modern facilities and exceptional care."
+        />
+        <meta name="keywords" content="Dental clinic Hall Green, Cosmetic dentist Hall Green, Private dentist Birmingham" />
+        <link rel="canonical" href="https://www.do.co.uk/about" />
       </Head>
       <Navbar />
       <AboutHero />
       <HomeAwards />
-     {/*  <AboutAwardSection />
-      <AboutVideoSection /> */}
+      <AboutAwardSection />
       <AboutPageAboutSection />
       <AboutMissionVision />
       <AboutTeam />

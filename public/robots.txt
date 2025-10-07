@@ -1,0 +1,13 @@
+# Dental Opulence - robots.txt
+# https://www.do.co.uk/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.do.co.uk/sitemap.xml

@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { compositeBondingFaq, serviceCompositeBonding_Compositebonding, serviceElevet_CompositeBonding, serviceHero2Desc_compositeBonding } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,10 +13,10 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
-  
+
 } from "../../../components/import";
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
 import CompositeBondingHero from "./CompositeBondingSection/CompositeBondingHero";
@@ -24,13 +24,23 @@ import CompositeBondingVideo from "./CompositeBondingSection/CompositeBondingVid
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import CompositeBondingOurCases from "./CompositeBondingSection/OurCases";
+import Head from "next/head";
 
 
 
-  
+
   export default function CompositeBonding() {
     return (
       <Layout>
+        <Head>
+          <title>Composite Bonding Hall Green | Dental Opulence, Birmingham</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Composite Bonding in Hall Green treatment includes edge bonding and composite veneers solutions to enhance your smile. Book today!"
+          />
+          <meta name="keywords" content="Composite Bonding, Composite bonding Hall Green, Edge bonding, Composite veneers Hall Green" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/composite-bonding" />
+        </Head>
         <Navbar />
         <CompositeBondingHero/> 
         <ServiceAward />

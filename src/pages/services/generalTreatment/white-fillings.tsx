@@ -27,10 +27,20 @@ import WhiteFillingVideo from "./whiteFillings/whiteFillingVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import WhiteFillingOurCases from "./whiteFillings/OurCases";
+import Head from "next/head";
 
 export default function WhiteFillings() {
   return (
     <Layout>
+      <Head>
+        <title>Composite White Fillings Hall Green | Dental Opulence, Birmingham</title>
+        <meta
+          name="description"
+          content="Composite White Fillings in Hall Green at Dental Opulence can replace old fillings or treat tooth decay with tooth-coloured fillings for a natural appearance."
+        />
+        <meta name="keywords" content="White Fillings, Composite white fillings Hall Green, White fillings Hall Green, Tooth-coloured fillings Birmingham" />
+        <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/white-fillings" />
+      </Head>
       <Navbar />
       <WhiteFillingHero />
       <ServiceAward />

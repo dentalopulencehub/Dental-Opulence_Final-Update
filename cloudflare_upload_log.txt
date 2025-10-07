@@ -1,0 +1,2208 @@
+DO 1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+bridge-service-hero-image.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img10.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img10_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img10_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img10_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img2_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img2_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img2_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img3_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img3_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img3_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img5.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img5_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img5_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img5_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img6.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img6_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img6_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img6_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img7.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img7_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img7_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img7_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img8.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img8_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img8_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img8_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img9.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img9_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img9_2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-combination-treatment-img9_3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img1_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img2.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img2_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img3.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img3_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img4.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img4_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img6.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img6_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img7.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img7_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img9.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+case-composite-edge-bonding-img9_1.jpg -> ERROR: {
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "code": 5409,
+      "message": "Resource already exists. Verify the resource information and try again."
+    }
+  ],
+  "messages": []
+}
+cases-all-img11.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img11",
+    "filename": "cases-all-img11.jpg",
+    "uploaded": "2025-10-07T13:09:07.502Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img11/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img11_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img11_1",
+    "filename": "cases-all-img11_1.jpg",
+    "uploaded": "2025-10-07T13:09:09.745Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img11_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img11_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img11_2",
+    "filename": "cases-all-img11_2.jpg",
+    "uploaded": "2025-10-07T13:09:11.566Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img11_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img11_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img11_3",
+    "filename": "cases-all-img11_3.jpg",
+    "uploaded": "2025-10-07T13:09:13.416Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img11_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img13.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img13",
+    "filename": "cases-all-img13.jpg",
+    "uploaded": "2025-10-07T13:09:15.611Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img13/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img13_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img13_1",
+    "filename": "cases-all-img13_1.jpg",
+    "uploaded": "2025-10-07T13:09:17.874Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img13_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img14.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img14",
+    "filename": "cases-all-img14.jpg",
+    "uploaded": "2025-10-07T13:09:19.884Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img14/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img14_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img14_1",
+    "filename": "cases-all-img14_1.jpg",
+    "uploaded": "2025-10-07T13:09:22.197Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img14_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img16.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img16",
+    "filename": "cases-all-img16.jpg",
+    "uploaded": "2025-10-07T13:09:24.129Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img16/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img16_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img16_1",
+    "filename": "cases-all-img16_1.jpg",
+    "uploaded": "2025-10-07T13:09:27.346Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img16_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img3",
+    "filename": "cases-all-img3.jpg",
+    "uploaded": "2025-10-07T13:09:29.140Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img3_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img3_1",
+    "filename": "cases-all-img3_1.jpg",
+    "uploaded": "2025-10-07T13:09:31.156Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img3_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img3_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img3_2",
+    "filename": "cases-all-img3_2.jpg",
+    "uploaded": "2025-10-07T13:09:32.825Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img3_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img3_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img3_3",
+    "filename": "cases-all-img3_3.jpg",
+    "uploaded": "2025-10-07T13:09:34.962Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img3_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img4.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img4",
+    "filename": "cases-all-img4.jpg",
+    "uploaded": "2025-10-07T13:09:37.182Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img4_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img4_1",
+    "filename": "cases-all-img4_1.jpg",
+    "uploaded": "2025-10-07T13:09:39.093Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img4_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img4_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img4_2",
+    "filename": "cases-all-img4_2.jpg",
+    "uploaded": "2025-10-07T13:09:40.840Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img4_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img4_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img4_3",
+    "filename": "cases-all-img4_3.jpg",
+    "uploaded": "2025-10-07T13:09:42.779Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img4_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img7.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img7",
+    "filename": "cases-all-img7.jpg",
+    "uploaded": "2025-10-07T13:09:44.631Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img7/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img7_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img7_1",
+    "filename": "cases-all-img7_1.jpg",
+    "uploaded": "2025-10-07T13:09:46.541Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img7_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img7_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img7_2",
+    "filename": "cases-all-img7_2.jpg",
+    "uploaded": "2025-10-07T13:09:48.246Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img7_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img7_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img7_3",
+    "filename": "cases-all-img7_3.jpg",
+    "uploaded": "2025-10-07T13:09:49.794Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img7_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img8.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img8",
+    "filename": "cases-all-img8.jpg",
+    "uploaded": "2025-10-07T13:09:51.932Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img8/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img8_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img8_1",
+    "filename": "cases-all-img8_1.jpg",
+    "uploaded": "2025-10-07T13:09:54.075Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img8_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img8_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img8_2",
+    "filename": "cases-all-img8_2.jpg",
+    "uploaded": "2025-10-07T13:09:55.509Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img8_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img8_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img8_3",
+    "filename": "cases-all-img8_3.jpg",
+    "uploaded": "2025-10-07T13:09:57.084Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img8_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img9.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img9",
+    "filename": "cases-all-img9.jpg",
+    "uploaded": "2025-10-07T13:09:59.201Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img9/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img9_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img9_1",
+    "filename": "cases-all-img9_1.jpg",
+    "uploaded": "2025-10-07T13:10:01.183Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img9_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img9_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img9_2",
+    "filename": "cases-all-img9_2.jpg",
+    "uploaded": "2025-10-07T13:10:06.833Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img9_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-all-img9_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-all-img9_3",
+    "filename": "cases-all-img9_3.jpg",
+    "uploaded": "2025-10-07T13:10:10.608Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-all-img9_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img1",
+    "filename": "cases-composite-veneers-img1.jpg",
+    "uploaded": "2025-10-07T13:10:12.542Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img10.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img10",
+    "filename": "cases-composite-veneers-img10.jpg",
+    "uploaded": "2025-10-07T13:10:14.677Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img10/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img10_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img10_1",
+    "filename": "cases-composite-veneers-img10_1.jpg",
+    "uploaded": "2025-10-07T13:10:16.740Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img10_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img11.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img11",
+    "filename": "cases-composite-veneers-img11.jpg",
+    "uploaded": "2025-10-07T13:10:18.575Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img11/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img11_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img11_1",
+    "filename": "cases-composite-veneers-img11_1.jpg",
+    "uploaded": "2025-10-07T13:10:20.613Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img11_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img11_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img11_2",
+    "filename": "cases-composite-veneers-img11_2.jpg",
+    "uploaded": "2025-10-07T13:10:25.179Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img11_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img11_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img11_3",
+    "filename": "cases-composite-veneers-img11_3.jpg",
+    "uploaded": "2025-10-07T13:10:26.919Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img11_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img12.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img12",
+    "filename": "cases-composite-veneers-img12.jpg",
+    "uploaded": "2025-10-07T13:10:28.913Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img12/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img12_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img12_1",
+    "filename": "cases-composite-veneers-img12_1.jpg",
+    "uploaded": "2025-10-07T13:10:31.017Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img12_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img12_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img12_2",
+    "filename": "cases-composite-veneers-img12_2.jpg",
+    "uploaded": "2025-10-07T13:10:32.723Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img12_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img12_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img12_3",
+    "filename": "cases-composite-veneers-img12_3.jpg",
+    "uploaded": "2025-10-07T13:10:34.405Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img12_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img13.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img13",
+    "filename": "cases-composite-veneers-img13.jpg",
+    "uploaded": "2025-10-07T13:10:36.360Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img13/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img13_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img13_1",
+    "filename": "cases-composite-veneers-img13_1.jpg",
+    "uploaded": "2025-10-07T13:10:38.567Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img13_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img14.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img14",
+    "filename": "cases-composite-veneers-img14.jpg",
+    "uploaded": "2025-10-07T13:10:40.550Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img14/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img14_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img14_1",
+    "filename": "cases-composite-veneers-img14_1.jpg",
+    "uploaded": "2025-10-07T13:10:42.842Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img14_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img1_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img1_1",
+    "filename": "cases-composite-veneers-img1_1.jpg",
+    "uploaded": "2025-10-07T13:10:45.112Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img1_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img2",
+    "filename": "cases-composite-veneers-img2.jpg",
+    "uploaded": "2025-10-07T13:10:47.215Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img2_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img2_1",
+    "filename": "cases-composite-veneers-img2_1.jpg",
+    "uploaded": "2025-10-07T13:10:49.342Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img2_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img4.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img4",
+    "filename": "cases-composite-veneers-img4.jpg",
+    "uploaded": "2025-10-07T13:10:51.140Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img4_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img4_1",
+    "filename": "cases-composite-veneers-img4_1.jpg",
+    "uploaded": "2025-10-07T13:10:53.366Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img4_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img4_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img4_2",
+    "filename": "cases-composite-veneers-img4_2.jpg",
+    "uploaded": "2025-10-07T13:10:55.147Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img4_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img4_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img4_3",
+    "filename": "cases-composite-veneers-img4_3.jpg",
+    "uploaded": "2025-10-07T13:10:57.024Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img4_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img9.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img9",
+    "filename": "cases-composite-veneers-img9.jpg",
+    "uploaded": "2025-10-07T13:10:58.838Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img9/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-composite-veneers-img9_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-composite-veneers-img9_1",
+    "filename": "cases-composite-veneers-img9_1.jpg",
+    "uploaded": "2025-10-07T13:11:01.222Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-composite-veneers-img9_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img3",
+    "filename": "cases-invisalign-teeth-straightening-img3.jpg",
+    "uploaded": "2025-10-07T13:11:04.006Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img3_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img3_1",
+    "filename": "cases-invisalign-teeth-straightening-img3_1.jpg",
+    "uploaded": "2025-10-07T13:11:06.170Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img3_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img3_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img3_2",
+    "filename": "cases-invisalign-teeth-straightening-img3_2.jpg",
+    "uploaded": "2025-10-07T13:11:08.197Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img3_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img3_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img3_3",
+    "filename": "cases-invisalign-teeth-straightening-img3_3.jpg",
+    "uploaded": "2025-10-07T13:11:10.056Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img3_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img4.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img4",
+    "filename": "cases-invisalign-teeth-straightening-img4.jpg",
+    "uploaded": "2025-10-07T13:11:11.886Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img4_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img4_1",
+    "filename": "cases-invisalign-teeth-straightening-img4_1.jpg",
+    "uploaded": "2025-10-07T13:11:13.801Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img4_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img4_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img4_2",
+    "filename": "cases-invisalign-teeth-straightening-img4_2.jpg",
+    "uploaded": "2025-10-07T13:11:15.589Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img4_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img4_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img4_3",
+    "filename": "cases-invisalign-teeth-straightening-img4_3.jpg",
+    "uploaded": "2025-10-07T13:11:17.447Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img4_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img5.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img5",
+    "filename": "cases-invisalign-teeth-straightening-img5.jpg",
+    "uploaded": "2025-10-07T13:11:19.291Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img5/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img5_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img5_1",
+    "filename": "cases-invisalign-teeth-straightening-img5_1.jpg",
+    "uploaded": "2025-10-07T13:11:21.121Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img5_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img5_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img5_2",
+    "filename": "cases-invisalign-teeth-straightening-img5_2.jpg",
+    "uploaded": "2025-10-07T13:11:22.804Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img5_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img5_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img5_3",
+    "filename": "cases-invisalign-teeth-straightening-img5_3.jpg",
+    "uploaded": "2025-10-07T13:11:24.677Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img5_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img6.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img6",
+    "filename": "cases-invisalign-teeth-straightening-img6.jpg",
+    "uploaded": "2025-10-07T13:11:26.535Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img6/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img6_1.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img6_1",
+    "filename": "cases-invisalign-teeth-straightening-img6_1.jpg",
+    "uploaded": "2025-10-07T13:11:28.328Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img6_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img6_2.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img6_2",
+    "filename": "cases-invisalign-teeth-straightening-img6_2.jpg",
+    "uploaded": "2025-10-07T13:11:30.195Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img6_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+cases-invisalign-teeth-straightening-img6_3.jpg -> ERROR: {
+  "result": {
+    "id": "cases-invisalign-teeth-straightening-img6_3",
+    "filename": "cases-invisalign-teeth-straightening-img6_3.jpg",
+    "uploaded": "2025-10-07T13:11:32.083Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/cases-invisalign-teeth-straightening-img6_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+composite-edge-bonding-service-image.jpg -> ERROR: {
+  "result": {
+    "id": "composite-edge-bonding-service-image",
+    "filename": "composite-edge-bonding-service-image.jpg",
+    "uploaded": "2025-10-07T13:11:33.904Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/composite-edge-bonding-service-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+composite-veneers-service-image.jpg -> ERROR: {
+  "result": {
+    "id": "composite-veneers-service-image",
+    "filename": "composite-veneers-service-image.jpg",
+    "uploaded": "2025-10-07T13:11:35.745Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/composite-veneers-service-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+compositeB-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "compositeB-service-hero-image",
+    "filename": "compositeB-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:37.531Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/compositeB-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+crown-veneer-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "crown-veneer-service-hero-image",
+    "filename": "crown-veneer-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:39.314Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/crown-veneer-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+crowns-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "crowns-service-hero-image",
+    "filename": "crowns-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:42.908Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/crowns-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+denture-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "denture-service-hero-image",
+    "filename": "denture-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:44.571Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/denture-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+examination-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "examination-service-hero-image",
+    "filename": "examination-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:46.361Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/examination-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+extractions-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "extractions-service-hero-image",
+    "filename": "extractions-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:48.109Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/extractions-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+hygienist-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "hygienist-service-hero-image",
+    "filename": "hygienist-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:11:49.727Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/hygienist-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+internal-tooth-whitening-service-image.jpg -> ERROR: {
+  "result": {
+    "id": "internal-tooth-whitening-service-image",
+    "filename": "internal-tooth-whitening-service-image.jpg",
+    "uploaded": "2025-10-07T13:11:51.473Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/internal-tooth-whitening-service-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+nav-drop-down-img-old.jpg -> ERROR: {
+  "result": {
+    "id": "nav-drop-down-img-old",
+    "filename": "nav-drop-down-img-old.jpg",
+    "uploaded": "2025-10-07T13:11:53.186Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/nav-drop-down-img-old/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img1.jpg -> ERROR: {
+  "result": {
+    "id": "people-img1",
+    "filename": "people-img1.jpg",
+    "uploaded": "2025-10-07T13:11:55.034Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img10.jpg -> ERROR: {
+  "result": {
+    "id": "people-img10",
+    "filename": "people-img10.jpg",
+    "uploaded": "2025-10-07T13:11:56.792Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img10/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img11.jpg -> ERROR: {
+  "result": {
+    "id": "people-img11",
+    "filename": "people-img11.jpg",
+    "uploaded": "2025-10-07T13:11:58.511Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img11/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img13.jpg -> ERROR: {
+  "result": {
+    "id": "people-img13",
+    "filename": "people-img13.jpg",
+    "uploaded": "2025-10-07T13:12:00.056Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img13/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img14.jpg -> ERROR: {
+  "result": {
+    "id": "people-img14",
+    "filename": "people-img14.jpg",
+    "uploaded": "2025-10-07T13:12:01.821Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img14/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img16.jpg -> ERROR: {
+  "result": {
+    "id": "people-img16",
+    "filename": "people-img16.jpg",
+    "uploaded": "2025-10-07T13:12:03.895Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img16/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img17.jpg -> ERROR: {
+  "result": {
+    "id": "people-img17",
+    "filename": "people-img17.jpg",
+    "uploaded": "2025-10-07T13:12:05.725Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img17/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img18.jpg -> ERROR: {
+  "result": {
+    "id": "people-img18",
+    "filename": "people-img18.jpg",
+    "uploaded": "2025-10-07T13:12:07.342Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img18/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img19.jpg -> ERROR: {
+  "result": {
+    "id": "people-img19",
+    "filename": "people-img19.jpg",
+    "uploaded": "2025-10-07T13:12:09.112Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img19/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img1_1.jpg -> ERROR: {
+  "result": {
+    "id": "people-img1_1",
+    "filename": "people-img1_1.jpg",
+    "uploaded": "2025-10-07T13:12:10.911Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img1_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img2.jpg -> ERROR: {
+  "result": {
+    "id": "people-img2",
+    "filename": "people-img2.jpg",
+    "uploaded": "2025-10-07T13:12:13.233Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img20.jpg -> ERROR: {
+  "result": {
+    "id": "people-img20",
+    "filename": "people-img20.jpg",
+    "uploaded": "2025-10-07T13:12:15.182Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img20/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img22.jpg -> ERROR: {
+  "result": {
+    "id": "people-img22",
+    "filename": "people-img22.jpg",
+    "uploaded": "2025-10-07T13:12:16.891Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img22/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img25.jpg -> ERROR: {
+  "result": {
+    "id": "people-img25",
+    "filename": "people-img25.jpg",
+    "uploaded": "2025-10-07T13:12:18.516Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img25/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img26.jpg -> ERROR: {
+  "result": {
+    "id": "people-img26",
+    "filename": "people-img26.jpg",
+    "uploaded": "2025-10-07T13:12:20.334Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img26/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img28.jpg -> ERROR: {
+  "result": {
+    "id": "people-img28",
+    "filename": "people-img28.jpg",
+    "uploaded": "2025-10-07T13:12:22.431Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img28/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img29.jpg -> ERROR: {
+  "result": {
+    "id": "people-img29",
+    "filename": "people-img29.jpg",
+    "uploaded": "2025-10-07T13:12:24.587Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img29/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img4.jpg -> ERROR: {
+  "result": {
+    "id": "people-img4",
+    "filename": "people-img4.jpg",
+    "uploaded": "2025-10-07T13:12:26.471Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img5.jpg -> ERROR: {
+  "result": {
+    "id": "people-img5",
+    "filename": "people-img5.jpg",
+    "uploaded": "2025-10-07T13:12:28.378Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img5/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+people-img7.jpg -> ERROR: {
+  "result": {
+    "id": "people-img7",
+    "filename": "people-img7.jpg",
+    "uploaded": "2025-10-07T13:12:30.838Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/people-img7/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image-sample1.jpg -> ERROR: {
+  "result": {
+    "id": "result-image-sample1",
+    "filename": "result-image-sample1.jpg",
+    "uploaded": "2025-10-07T13:12:32.325Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image-sample1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image1.jpg -> ERROR: {
+  "result": {
+    "id": "result-image1",
+    "filename": "result-image1.jpg",
+    "uploaded": "2025-10-07T13:12:34.371Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image2.jpg -> ERROR: {
+  "result": {
+    "id": "result-image2",
+    "filename": "result-image2.jpg",
+    "uploaded": "2025-10-07T13:12:36.570Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image3.jpg -> ERROR: {
+  "result": {
+    "id": "result-image3",
+    "filename": "result-image3.jpg",
+    "uploaded": "2025-10-07T13:12:38.525Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image4.jpg -> ERROR: {
+  "result": {
+    "id": "result-image4",
+    "filename": "result-image4.jpg",
+    "uploaded": "2025-10-07T13:12:40.722Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+result-image5.jpg -> ERROR: {
+  "result": {
+    "id": "result-image5",
+    "filename": "result-image5.jpg",
+    "uploaded": "2025-10-07T13:12:42.906Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image5/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+root-canal-services-image2.jpg -> ERROR: {
+  "result": {
+    "id": "root-canal-services-image2",
+    "filename": "root-canal-services-image2.jpg",
+    "uploaded": "2025-10-07T13:12:44.751Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/root-canal-services-image2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+root-canal-treatment-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "root-canal-treatment-service-hero-image",
+    "filename": "root-canal-treatment-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:12:46.541Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/root-canal-treatment-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+routine-examination-service-image.jpg -> ERROR: {
+  "result": {
+    "id": "routine-examination-service-image",
+    "filename": "routine-examination-service-image.jpg",
+    "uploaded": "2025-10-07T13:12:48.581Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/routine-examination-service-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1",
+    "filename": "service_transform_image1.jpg",
+    "uploaded": "2025-10-07T13:12:50.257Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_1.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_1",
+    "filename": "service_transform_image1_1.jpg",
+    "uploaded": "2025-10-07T13:12:52.299Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_1/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_2.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_2",
+    "filename": "service_transform_image1_2.jpg",
+    "uploaded": "2025-10-07T13:12:54.108Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_2/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_3.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_3",
+    "filename": "service_transform_image1_3.jpg",
+    "uploaded": "2025-10-07T13:12:55.951Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_3/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_4.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_4",
+    "filename": "service_transform_image1_4.jpg",
+    "uploaded": "2025-10-07T13:12:57.750Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_4/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_5.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_5",
+    "filename": "service_transform_image1_5.jpg",
+    "uploaded": "2025-10-07T13:12:59.786Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_5/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+service_transform_image1_6.jpg -> ERROR: {
+  "result": {
+    "id": "service_transform_image1_6",
+    "filename": "service_transform_image1_6.jpg",
+    "uploaded": "2025-10-07T13:13:01.718Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/service_transform_image1_6/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+teeth-whitening-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "teeth-whitening-service-hero-image",
+    "filename": "teeth-whitening-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:13:03.758Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/teeth-whitening-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+vivera-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "vivera-service-hero-image",
+    "filename": "vivera-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:13:05.276Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/vivera-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+white-fillings-service-hero-image.jpg -> ERROR: {
+  "result": {
+    "id": "white-fillings-service-hero-image",
+    "filename": "white-fillings-service-hero-image.jpg",
+    "uploaded": "2025-10-07T13:13:07.399Z",
+    "requireSignedURLs": false,
+    "variants": [
+      "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/white-fillings-service-hero-image/public"
+    ]
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}

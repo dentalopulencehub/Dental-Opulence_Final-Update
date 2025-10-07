@@ -63,8 +63,8 @@ const Footer = () => {
         <div className="flex xl:flex-row flex-col md:gap-[90px] gap-[50px] items-start">
           <div>
             <div className="flex gap-4">
-              <Image src={footer_logo} height={60} alt="" />{" "}
-              <Image src={footer_text} alt="Dental Opulence" />
+              <Image src={footer_logo} height={60} alt="Dental Practice in Hall Green" title="Dental Practice in Hall Green" />
+              <Image src={footer_text} alt="Dental Opulence" title="Dental Opulence" />
             </div>
             <div className="flex flex-col md:gap-0 gap-[40px] justify-between mt-10">
               <div className="">
@@ -162,6 +162,15 @@ const Footer = () => {
                   >
                     <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
                       Contact us
+                    </p>
+                  </div>
+                  <div
+                    onClick={() =>
+                      handleSetPathToNavigate(dispatch, "/blog")
+                    }
+                  >
+                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                      Blog
                     </p>
                   </div>
                 </div>
@@ -292,6 +301,18 @@ const Footer = () => {
                   >
                     <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
                       Smile White Giveaway
+                    </p>
+                  </div>
+                  <div
+                    onClick={() =>
+                      handleSetPathToNavigate(
+                        dispatch,
+                        "/sitemap"
+                      )
+                    }
+                  >
+                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                      Sitemap
                     </p>
                   </div>
                 </div>

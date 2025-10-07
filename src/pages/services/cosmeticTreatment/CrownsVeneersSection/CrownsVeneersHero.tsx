@@ -14,13 +14,14 @@ const CrownsVeneersHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
           <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-          Crowns / Veneers
+          Dental Crowns / Veneers<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >          At our dental practice, we understand that tooth damage and discoloration can affect not only your oral health but also your self-confidence. That’s why we offer crowns and veneers as cosmetic solutions for restoring and enhancing the appearance of your teeth.
+          >
+            At our <a href="/">Hall Green dental practice</a>, we understand that tooth damage and discoloration can affect not only your oral health but also your self-confidence. That's why we offer crowns and veneers as cosmetic solutions for restoring and enhancing the appearance of your teeth.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
@@ -38,7 +39,8 @@ const CrownsVeneersHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={crowns_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Dental Crowns & Veneers Hall Green"
+              title="Dental Crowns & Veneers Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -60,7 +62,7 @@ const CrownsVeneersHero = () => {
           </div>
         </div>
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
-          <Image src={crowns_service_hero_image} alt="Composite Bonding Hero Image" className="max-w-full h-auto" />
+          <Image src={crowns_service_hero_image} alt="Dental Crowns & Veneers Hall Green" title="Dental Crowns & Veneers Hall Green" className="max-w-full h-auto" />
         </div>
       </div>
     </div>

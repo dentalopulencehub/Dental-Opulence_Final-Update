@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { crownsFaq, serviceCompositeBonding_CrownsVeneers2, serviceElevet_CrownsVeneers2, serviceHero2Desc_crowsVeneers2 } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,7 +13,7 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
 
@@ -25,14 +25,24 @@ import CrownsVeneersVideo from "./CrownsVeneersSection/CrownsVeneersVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import CrownVeneersOurCases from "./CrownsVeneersSection/OurCases";
+import Head from "next/head";
 
 
 
 
-  
+
   export default function Crowns() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Crowns & Veneers in Hall Green, Birmingham | Dental Opulence</title>
+          <meta
+            name="description"
+            content="Dental Crowns & Veneers in Hall Green can improve your smile, restore strength, and regain confidence with our tailored cosmetic dentistry solutions."
+          />
+          <meta name="keywords" content="Dental Crowns, Dental crowns Hall Green, Dental veneers Hall Green, Crowns and veneers Birmingham" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/crowns-veneers" />
+        </Head>
         <Navbar />
         <CrownsVeneersHero/>
         <ServiceAward />

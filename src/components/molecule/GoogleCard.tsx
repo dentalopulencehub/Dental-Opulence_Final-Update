@@ -42,7 +42,7 @@ const GoogleCard: React.FC = () => {
         </div>
         <Link href='https://rb.gy/20dj6m' target='blank' className="mt-auto">
           <div className="flex border-black border-b pb-3 items-center">
-            <Image src={googleLogo} alt="Google" className="w-24 md:w-32" layout="responsive" /> {/* Added layout prop */}
+            <Image src={googleLogo} alt="Google" className="w-24 md:w-32" />
           </div>
         </Link>
       </div>

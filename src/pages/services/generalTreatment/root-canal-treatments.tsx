@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { rootFaq, serviceCompositeBonding_RootCanalTreatments, serviceElevet_RootCanalTreatments, serviceHero2Desc_RootCanalTreatments } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,7 +13,7 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
 
@@ -23,13 +23,23 @@ import RootCanalTreatmentsHero from "./rootCanalTreatmentsSection/rootCanalTreat
 import RootCanalTreatmentsVideo from "./rootCanalTreatmentsSection/rootCanalTreatmentsVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
 
-  
+
   export default function Examination() {
     return (
       <Layout>
+        <Head>
+          <title>Root Canal Treatment in Hall Green, Birmingham | Dental Opulence</title>
+          <meta
+            name="description"
+            content="Root Canal Treatment in Hall Green at Dental Opulence can remove infection, clean, and seal your tooth with dental crown to prevent further damage."
+          />
+          <meta name="keywords" content="Root Canal Treatment, Root canal treatment Hall Green, Root canal therapy Birmingham, Endodontic treatment Hall Green" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/root-canal-treatments" />
+        </Head>
         <Navbar />
         <RootCanalTreatmentsHero/>
         <ServiceAward />

@@ -161,3 +161,15 @@ export type serviceType =
   | "routine-examination"
   | "internal-tooth-whitening"
   | "composite-edge-bonding";
+
+export type BlogPostType = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: any;
+  date: string;
+  author: string;
+  category: string;
+  readTime: string;
+};

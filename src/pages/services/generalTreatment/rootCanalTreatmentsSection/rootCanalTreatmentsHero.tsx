@@ -12,17 +12,14 @@ const RootCanalTreatmentsHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
           <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Root Canal
-              <br /> Treatments
+              Root Canal Treatments<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >            At our dental practice, we understand that the thought of a root
-            canal treatment can be stressful for some patients. That’s why we
-            strive to make the root canal process as comfortable and
-            anxiety-free as possible.{" "}
+          >
+            At our <a href="/">Hall Green dental practice</a>, we understand that root canal treatment can be stressful. We strive to make the process as comfortable and anxiety-free as possible. Our skilled dentist will remove infected pulp, clean and disinfect the tooth, then seal it with a <a href="/services/cosmeticTreatment/crowns-veneers">dental crown</a> to prevent further infection.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
@@ -44,7 +41,8 @@ const RootCanalTreatmentsHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={root_canal_treatments_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Root Canal Treatment Hall Green"
+              title="Root Canal Therapy Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -68,7 +66,8 @@ const RootCanalTreatmentsHero = () => {
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={root_canal_treatments_service_hero_image}
-            alt="Composite Bonding Hero Image"
+            alt="Root Canal Treatment Hall Green"
+            title="Root Canal Therapy Hall Green"
             className="max-w-full h-auto"
           />
         </div>

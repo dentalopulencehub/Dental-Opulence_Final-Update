@@ -13,7 +13,7 @@ const CompositeVeneersHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Composite Veneers
+              Composite Veneers<br />Hall Green
             </h1>
           </div>
           <p
@@ -23,7 +23,7 @@ const CompositeVeneersHero = () => {
             We understand that the appearance of your teeth plays a crucial role
             in your self-confidence and overall well-being. That&apos;s why we
             offer composite veneers—a highly effective cosmetic dentistry
-            solution for transforming your smile.{" "}
+            solution for transforming your smile.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

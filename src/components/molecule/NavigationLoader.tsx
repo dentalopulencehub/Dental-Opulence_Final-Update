@@ -132,37 +132,11 @@
 
 "use client";
 
-import { useRouter } from "next/router";
-import { useRef, useContext, useEffect } from "react";
-import { GlobalContext } from "../../../context/GlobalContext";
-import { handleSetPathToNavigate } from "../../../context/action";
+// NavigationLoader is kept for backwards compatibility but no longer used
+// Navigation now uses native Next.js Link components for better performance
 
 const NavigationLoader = () => {
-  const router = useRouter();
-  const { pathToNavigate, dispatch } = useContext(GlobalContext);
-
-  useEffect(() => {
-    if (pathToNavigate) {
-      // Navigate immediately without animation
-
-      router.push(pathToNavigate);
-      handleSetPathToNavigate(dispatch, null);
-
-    }
-
-  }, [pathToNavigate, router, dispatch]);
-
-  return (
-    <div className="loader-cnt hidden overflow-hidden h-full w-full fixed top-0 left-0 z-[200]">
-
-      <div className="top-d absolute w-dvw h-dvh bg-[#232323] z-[200] -top-full " />
-
-      <div className="bottom-d absolute w-dvw h-dvh bg-[#232323] z-[200] -bottom-full" />
-      <div className="left-d absolute w-dvw h-dvh bg-[#232323] z-[200] top-0 -left-full " />
-
-      <div className="right-d absolute w-dvw h-dvh bg-[#232323] z-[200] top-0 -right-full" />
-    </div>
-  );
+  return null;
 };
 
 export default NavigationLoader;

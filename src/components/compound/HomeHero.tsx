@@ -27,11 +27,11 @@ const HomeHero = memo(() => {
       <div className="bg-[#100E10] pt-[220px] pb-[100px] w-full h-full items-center flex xl:flex-row flex-col justify-between lg:px-[100px] sm:px-[40px] px-[20px]">
         <div className="flex flex-col max-w-[539px]">
           <h1 className="font-Pangram-Bold sm:text-[64px] text-[44px] text-left sm:leading-[76px] leading-[56px] text-white" style={{ fontFamily: '"Pangram-Bold", Arial, sans-serif' }}>
-            Elevate Your Smile with Dental Opulence
+            Dentist in Hall Green, Birmingham
           </h1>
           <p className="mt-6 sm:text-[18px] sm:leading-8 text-base leading-7 text-white text-left">
             Welcome to Dental Opulence, where we blend everyday dentistry with
-            cosmetic artistry to create your perfect smile. Our modern clinic
+            cosmetic artistry to create your perfect smile. Our modern private dental clinic
             offers cutting-edge technology and amenities for your comfort.
             Achieve your perfect smile with us.
           </p>
@@ -49,7 +49,8 @@ const HomeHero = memo(() => {
           <div className="flex justify-center w-full md:w-[40%] mt-8 xl:mt-0 md:hidden">
             <CldImage
               src="https://res.cloudinary.com/dxdupctdf/image/upload/v1727202273/1_mjd6uf.webp"
-              alt="Composite Bonding Hero Image"
+              alt="Private Dentistry Hall Green"
+              title="Private Dentistry Hall Green"
               className="max-w-full h-full"
               width={380}
               height={100}
@@ -75,13 +76,14 @@ const HomeHero = memo(() => {
             />
           </div>
         </div>
-        <div className="hidden md:flex justify-end w-full md:w-[40%] xl:w-[60%] mt-8 xl:mt-0 ">
+        <div className="hidden md:flex justify-end items-start w-full md:w-[50%] xl:w-[55%] mt-8 xl:mt-0">
           <CldImage
             src="https://res.cloudinary.com/dxdupctdf/image/upload/v1726766335/DO_1_xk8sj7.webp"
-            alt="Composite Bonding Hero Image"
-            className="max-w-full h-full"
-            width={600}
-            height={100}
+            alt="Private Dentistry Hall Green"
+            title="Private Dentistry Hall Green"
+            className="w-full h-auto object-cover"
+            width={800}
+            height={900}
             style={{ objectFit: "cover" }}
           />
         </div>

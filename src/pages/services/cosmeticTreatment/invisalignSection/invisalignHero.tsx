@@ -12,18 +12,14 @@ const InvisalignHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Invisalign
+              Invisalign Clear Braces<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            {" "}
-            We offer Invisalign—the modern, discreet alternative to traditional
-            braces. Invisalign&apos;s custom- made, clear aligners are designed
-            to gradually and comfortably shift your teeth into perfect
-            alignment, enhancing both your smile and self-confidence.{" "}
+            We offer Invisalign—the modern, discreet alternative to traditional braces. Invisalign's custom-made, clear braces or aligners are designed to gradually and comfortably shift your teeth into perfect alignment, enhancing both your smile and self-confidence.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

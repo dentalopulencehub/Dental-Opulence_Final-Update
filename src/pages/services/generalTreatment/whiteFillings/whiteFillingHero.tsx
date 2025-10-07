@@ -12,16 +12,17 @@ const WhiteFillingHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
           <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              White Fillings
+              White Fillings<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >             We offer white fillings as cosmetic and functional solutions for
-            tooth decay. These tooth-colored alternatives to metal fillings
+          >
+            We offer white fillings as cosmetic and functional solutions for
+            tooth decay. These tooth-coloured alternatives to metal fillings
             restore decayed teeth and replace old fillings for a natural
-            appearance.{" "}
+            appearance.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
@@ -43,7 +44,8 @@ const WhiteFillingHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={white_fillings_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Composite White Fillings in Hall Green"
+              title="White Fillings in Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -67,7 +69,8 @@ const WhiteFillingHero = () => {
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={white_fillings_service_hero_image}
-            alt="Composite Bonding Hero Image"
+            alt="Composite White Fillings in Hall Green"
+            title="White Fillings in Hall Green"
             className="max-w-full h-auto"
           />
         </div>

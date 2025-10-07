@@ -13,17 +13,16 @@ const CompositeBondingHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Composite Bonding
+              Composite Bonding Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            {" "}
             Welcome to Dental Opulence, where we specialise in composite
             bonding, a versatile cosmetic dentistry solution. Our clinic offers
-            two types: composite edge bonding and composite veneers, catering to
+            two types: <a href="/services/cosmeticTreatment/composite-edge-bonding" className="text-[#161616] underline hover:text-[#100E10]">composite edge bonding</a> and <a href="/services/cosmeticTreatment/composite-veneers" className="text-[#161616] underline hover:text-[#100E10]">composite veneers</a>, catering to
             different aesthetic needs.
           </p>
 
@@ -47,7 +46,8 @@ const CompositeBondingHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={composite_bonding_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Composite Bonding in Hall Green"
+              title="Composite Bonding in Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -71,7 +71,8 @@ const CompositeBondingHero = () => {
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={composite_bonding_service_hero_image}
-            alt="Composite Bonding Hero Image"
+            alt="Composite Bonding in Hall Green"
+            title="Composite Bonding in Hall Green"
             className="max-w-full h-auto"
           />
         </div>

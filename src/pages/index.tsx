@@ -11,6 +11,7 @@ import {
   Footer,
   CompositeBondingHowLong,
 } from "../components/import";
+import HomeBlogSection from "../components/compound/HomeBlogSection";
 import { faq } from "../../constants";
 import Head from "next/head"; // Add this import
 
@@ -33,7 +34,17 @@ export default function Home() {
     <>
       <Layout>
         <Head>
-          <title>Home</title>
+          <title>Cosmetic & Private Dentist in Hall Green, Birmingham | Dental Opulence</title>
+          <meta
+            name="description"
+            content="Dentist Hall Green – Visit Dental Opulence for cosmetic and private dentistry in Hall Green, Birmingham providing modern care, from routine check-ups to smile makeovers, in a relaxing setting."
+          />
+          <meta name="keywords" content="Dentist Hall Green, Cosmetic dentist Hall Green, Private dentist Birmingham, Dental clinic Hall Green" />
+          <link rel="canonical" href="https://www.do.co.uk/" />
+          <meta property="og:title" content="Cosmetic & Private Dentist in Hall Green, Birmingham | Dental Opulence" />
+          <meta property="og:description" content="Dentist Hall Green – Visit Dental Opulence for cosmetic and private dentistry in Hall Green, Birmingham providing modern care, from routine check-ups to smile makeovers, in a relaxing setting." />
+          <meta property="og:url" content="https://www.do.co.uk/" />
+          <meta property="og:type" content="website" />
         </Head>
         <Navbar />
         <HomeHero />
@@ -48,6 +59,7 @@ export default function Home() {
         <OurResult />
         <TestimonyComp />
         {/* <OurProcess /> */}
+        <HomeBlogSection />
         <Faq faqList={faq} />
         <HomePeopleSlider2 />
         <Footer />

@@ -33,7 +33,7 @@ const ServiceHero2 = ({
           <h2 className="text-[34px] text-[#100E10] font-Pangram-Medium sm:w-[309px] w-full text-left md:text-left">
             Restore Your Smile&apos;s Integrity
           </h2>
-          <Image src={service_her2_ill} alt="" className="mt-2 w-full" />
+          <Image src={service_her2_ill} alt="Smile Makeover Treatment" title="Smile Makeover Treatment" className="mt-2 w-full" />
         </div>
 
         <div className="xl:max-w-[690px] w-[100%] mx-auto flex flex-col xl:items-end items-center h-full"> {/* Added h-full */}

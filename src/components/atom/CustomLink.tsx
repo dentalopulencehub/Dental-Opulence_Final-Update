@@ -1,9 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import arrow_right_dark from "../../../assets/images/arrow-right-dark.svg";
-import { GlobalContext } from "../../../context/GlobalContext";
-import { handleSetPathToNavigate } from "../../../context/action";
 
 interface CustomLinkProps {
   title: string;
@@ -22,21 +19,17 @@ const CustomLink = ({
   textStyle,
   setHovered,
 }: CustomLinkProps) => {
-  const { dispatch } = useContext(GlobalContext);
-
   return (
     <Link
-      href="#"
-      onClick={() => handleSetPathToNavigate(dispatch, href)}
-      onMouseOver={() => setHovered!(true)}
-      onMouseOut={() => setHovered!(false)}
+      href={href}
+      onMouseOver={() => setHovered && setHovered(true)}
+      onMouseOut={() => setHovered && setHovered(false)}
+      className={style}
     >
-      <button className={style}>
-        <span className={textStyle}>{title}</span>
-        <div className="w-10 h-10 items-center flex justify-center">
-          <Image src={image} alt="" />
-        </div>
-      </button>
+      <span className={textStyle}>{title}</span>
+      <span className="w-10 h-10 items-center flex justify-center">
+        <Image src={image} alt="" />
+      </span>
     </Link>
   );
 };

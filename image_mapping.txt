@@ -1,0 +1,82 @@
+assets/images/DO 1.svg -> DO 1.jpg
+assets/images/bridge-service-hero-image.svg -> bridge-service-hero-image.png
+assets/images/case-combination-treatment-img10.svg -> case-combination-treatment-img10.png, case-combination-treatment-img10_1.png, case-combination-treatment-img10_2.png, case-combination-treatment-img10_3.png
+assets/images/case-combination-treatment-img2.svg -> case-combination-treatment-img2.png, case-combination-treatment-img2_1.png, case-combination-treatment-img2_2.png, case-combination-treatment-img2_3.png
+assets/images/case-combination-treatment-img3.svg -> case-combination-treatment-img3.png, case-combination-treatment-img3_1.png, case-combination-treatment-img3_2.png, case-combination-treatment-img3_3.png
+assets/images/case-combination-treatment-img5.svg -> case-combination-treatment-img5.png, case-combination-treatment-img5_1.png, case-combination-treatment-img5_2.png, case-combination-treatment-img5_3.png
+assets/images/case-combination-treatment-img6.svg -> case-combination-treatment-img6.png, case-combination-treatment-img6_1.png, case-combination-treatment-img6_2.png, case-combination-treatment-img6_3.png
+assets/images/case-combination-treatment-img7.svg -> case-combination-treatment-img7.png, case-combination-treatment-img7_1.png, case-combination-treatment-img7_2.png, case-combination-treatment-img7_3.png
+assets/images/case-combination-treatment-img8.svg -> case-combination-treatment-img8.png, case-combination-treatment-img8_1.png, case-combination-treatment-img8_2.png, case-combination-treatment-img8_3.png
+assets/images/case-combination-treatment-img9.svg -> case-combination-treatment-img9.png, case-combination-treatment-img9_1.png, case-combination-treatment-img9_2.png, case-combination-treatment-img9_3.png
+assets/images/case-composite-edge-bonding-img1.svg -> case-composite-edge-bonding-img1.png, case-composite-edge-bonding-img1_1.png
+assets/images/case-composite-edge-bonding-img2.svg -> case-composite-edge-bonding-img2.png, case-composite-edge-bonding-img2_1.png
+assets/images/case-composite-edge-bonding-img3.svg -> case-composite-edge-bonding-img3.jpg, case-composite-edge-bonding-img3_1.jpg
+assets/images/case-composite-edge-bonding-img4.svg -> case-composite-edge-bonding-img4.jpg, case-composite-edge-bonding-img4_1.jpg
+assets/images/case-composite-edge-bonding-img6.svg -> case-composite-edge-bonding-img6.jpg, case-composite-edge-bonding-img6_1.jpg
+assets/images/case-composite-edge-bonding-img7.svg -> case-composite-edge-bonding-img7.jpg, case-composite-edge-bonding-img7_1.jpg
+assets/images/case-composite-edge-bonding-img9.svg -> case-composite-edge-bonding-img9.jpg, case-composite-edge-bonding-img9_1.jpg
+assets/images/cases-all-img11.svg -> cases-all-img11.png, cases-all-img11_1.png, cases-all-img11_2.png, cases-all-img11_3.png
+assets/images/cases-all-img13.svg -> cases-all-img13.jpg, cases-all-img13_1.jpg
+assets/images/cases-all-img14.svg -> cases-all-img14.jpg, cases-all-img14_1.jpg
+assets/images/cases-all-img16.svg -> cases-all-img16.jpg, cases-all-img16_1.jpg
+assets/images/cases-all-img3.svg -> cases-all-img3.png, cases-all-img3_1.png, cases-all-img3_2.png, cases-all-img3_3.png
+assets/images/cases-all-img4.svg -> cases-all-img4.png, cases-all-img4_1.png, cases-all-img4_2.png, cases-all-img4_3.png
+assets/images/cases-all-img7.svg -> cases-all-img7.png, cases-all-img7_1.png, cases-all-img7_2.png, cases-all-img7_3.png
+assets/images/cases-all-img8.svg -> cases-all-img8.png, cases-all-img8_1.png, cases-all-img8_2.png, cases-all-img8_3.png
+assets/images/cases-all-img9.svg -> cases-all-img9.png, cases-all-img9_1.png, cases-all-img9_2.png, cases-all-img9_3.png
+assets/images/cases-composite-veneers-img1.svg -> cases-composite-veneers-img1.jpg, cases-composite-veneers-img1_1.jpg
+assets/images/cases-composite-veneers-img10.svg -> cases-composite-veneers-img10.jpg, cases-composite-veneers-img10_1.jpg
+assets/images/cases-composite-veneers-img11.svg -> cases-composite-veneers-img11.png, cases-composite-veneers-img11_1.png, cases-composite-veneers-img11_2.png, cases-composite-veneers-img11_3.png
+assets/images/cases-composite-veneers-img12.svg -> cases-composite-veneers-img12.png, cases-composite-veneers-img12_1.png, cases-composite-veneers-img12_2.png, cases-composite-veneers-img12_3.png
+assets/images/cases-composite-veneers-img13.svg -> cases-composite-veneers-img13.jpg, cases-composite-veneers-img13_1.jpg
+assets/images/cases-composite-veneers-img14.svg -> cases-composite-veneers-img14.jpg, cases-composite-veneers-img14_1.jpg
+assets/images/cases-composite-veneers-img2.svg -> cases-composite-veneers-img2.jpg, cases-composite-veneers-img2_1.jpg
+assets/images/cases-composite-veneers-img4.svg -> cases-composite-veneers-img4.png, cases-composite-veneers-img4_1.png, cases-composite-veneers-img4_2.png, cases-composite-veneers-img4_3.png
+assets/images/cases-composite-veneers-img9.svg -> cases-composite-veneers-img9.jpg, cases-composite-veneers-img9_1.jpg
+assets/images/cases-invisalign-teeth-straightening-img3.svg -> cases-invisalign-teeth-straightening-img3.png, cases-invisalign-teeth-straightening-img3_1.png, cases-invisalign-teeth-straightening-img3_2.png, cases-invisalign-teeth-straightening-img3_3.png
+assets/images/cases-invisalign-teeth-straightening-img4.svg -> cases-invisalign-teeth-straightening-img4.png, cases-invisalign-teeth-straightening-img4_1.png, cases-invisalign-teeth-straightening-img4_2.png, cases-invisalign-teeth-straightening-img4_3.png
+assets/images/cases-invisalign-teeth-straightening-img5.svg -> cases-invisalign-teeth-straightening-img5.png, cases-invisalign-teeth-straightening-img5_1.png, cases-invisalign-teeth-straightening-img5_2.png, cases-invisalign-teeth-straightening-img5_3.png
+assets/images/cases-invisalign-teeth-straightening-img6.svg -> cases-invisalign-teeth-straightening-img6.png, cases-invisalign-teeth-straightening-img6_1.png, cases-invisalign-teeth-straightening-img6_2.png, cases-invisalign-teeth-straightening-img6_3.png
+assets/images/composite-edge-bonding-service-image.svg -> composite-edge-bonding-service-image.png
+assets/images/composite-veneers-service-image.svg -> composite-veneers-service-image.png
+assets/images/compositeB-service-hero-image.svg -> compositeB-service-hero-image.png
+assets/images/crown-veneer-service-hero-image.svg -> crown-veneer-service-hero-image.png
+assets/images/crowns-service-hero-image.svg -> crowns-service-hero-image.png
+assets/images/denture-service-hero-image.svg -> denture-service-hero-image.png
+assets/images/examination-service-hero-image.svg -> examination-service-hero-image.png
+assets/images/extractions-service-hero-image.svg -> extractions-service-hero-image.png
+assets/images/hygienist-service-hero-image.svg -> hygienist-service-hero-image.png
+assets/images/internal-tooth-whitening-service-image.svg -> internal-tooth-whitening-service-image.png
+assets/images/nav-drop-down-img-old.svg -> nav-drop-down-img-old.jpg
+assets/images/people-img1.svg -> people-img1.jpg, people-img1_1.png
+assets/images/people-img10.svg -> people-img10.png
+assets/images/people-img11.svg -> people-img11.png
+assets/images/people-img13.svg -> people-img13.png
+assets/images/people-img14.svg -> people-img14.png
+assets/images/people-img16.svg -> people-img16.png
+assets/images/people-img17.svg -> people-img17.png
+assets/images/people-img18.svg -> people-img18.png
+assets/images/people-img19.svg -> people-img19.png
+assets/images/people-img2.svg -> people-img2.png
+assets/images/people-img20.svg -> people-img20.png
+assets/images/people-img22.svg -> people-img22.png
+assets/images/people-img25.svg -> people-img25.png
+assets/images/people-img26.svg -> people-img26.png
+assets/images/people-img28.svg -> people-img28.png
+assets/images/people-img29.svg -> people-img29.png
+assets/images/people-img4.svg -> people-img4.png
+assets/images/people-img5.svg -> people-img5.png
+assets/images/people-img7.svg -> people-img7.png
+assets/images/result-image-sample1.svg -> result-image-sample1.png
+assets/images/result-image1.svg -> result-image1.png
+assets/images/result-image2.svg -> result-image2.png
+assets/images/result-image3.svg -> result-image3.png
+assets/images/result-image4.svg -> result-image4.png
+assets/images/result-image5.svg -> result-image5.png
+assets/images/root-canal-services-image2.svg -> root-canal-services-image2.png
+assets/images/root-canal-treatment-service-hero-image.svg -> root-canal-treatment-service-hero-image.png
+assets/images/routine-examination-service-image.svg -> routine-examination-service-image.png
+assets/images/service_transform_image1.svg -> service_transform_image1.jpg, service_transform_image1_1.png, service_transform_image1_2.png, service_transform_image1_3.png, service_transform_image1_4.png, service_transform_image1_5.png, service_transform_image1_6.png
+assets/images/teeth-whitening-service-hero-image.svg -> teeth-whitening-service-hero-image.png
+assets/images/vivera-service-hero-image.svg -> vivera-service-hero-image.png
+assets/images/white-fillings-service-hero-image.svg -> white-fillings-service-hero-image.png

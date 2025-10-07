@@ -12,13 +12,14 @@ const TeethWhiteningHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
           <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-          Teeth Whitening
+          Teeth Whitening<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
-          >            Teeth whitening is a convenient and effective solution for achieving a brighter, more youthful-looking smile. At Dental opulence we offer professional teeth whitening treatments designed to enhance your smile, boost your self-confidence, and improve your overall well-being.
+          >
+            Teeth whitening is a convenient and effective solution for achieving a brighter, more youthful-looking smile. At Dental Opulence we offer professional teeth whitening treatments designed to enhance your smile, boost your self-confidence, and improve your overall well-being.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
@@ -41,7 +42,8 @@ const TeethWhiteningHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={teeth_whitening_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Teeth Whitening in Hall Green"
+              title="Teeth Whitening in Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -65,7 +67,8 @@ const TeethWhiteningHero = () => {
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={teeth_whitening_service_hero_image}
-            alt="Composite Bonding Hero Image"
+            alt="Teeth Whitening in Hall Green"
+            title="Teeth Whitening in Hall Green"
             className="max-w-full h-auto"
           />
         </div>

@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { hygienistFaq, serviceCompositeBonding_Hygienist, serviceElevet_Hygienist, serviceHero2Desc_Hygienist } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,22 +13,32 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
-    
+
 } from "../../../components/import";
 import PatientWalkThrough from "../reuseable/patientWalkThrough";
 import HygienistHero from "./hygienistSection/hygienistHero";
 import HygienistVideo from "./hygienistSection/hygienistVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
-  
+
   export default function Examination() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Hygienist Hall Green – Teeth Cleaning & Gum Disease Treatment</title>
+          <meta
+            name="description"
+            content="Dental hygienist in Hall Green offer professional cleaning, plaque removal, gum disease treatment, and preventative care to maintain a healthy and brighter smile."
+          />
+          <meta name="keywords" content="Dental Hygienist, Dental hygienist Hall Green, Teeth cleaning Hall Green, Gum disease treatment Birmingham" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/hygienist" />
+        </Head>
         <Navbar />
         <HygienistHero/>
         <ServiceAward />

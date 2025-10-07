@@ -6,13 +6,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
 
 const HomeHero2 = () => {
-  let value = `Dental Opulence is a new dental clinic that offers a combination of
-  general dentistry and cosmetic dentistry services. The clinic is
-  equipped with modern facilities and technology to provide
-  exceptional dental care. The team at Dental Opulence is dedicated to
-  ensuring a comprehensive and comfortable dental experience for
-  patients. The clinic's focus is on maintaining oral health and
-  enhancing smiles through cosmetic procedures.`;
+  let value = `Dental Opulence is a new dental clinic in Hall Green that offers a combination of general dentistry and cosmetic dentistry services. The clinic is equipped with modern facilities and technology to provide exceptional dental care. The team at Dental Opulence is dedicated to ensuring a comprehensive and comfortable dental experience for patients. The clinic's focus is on maintaining oral health and enhancing smiles through cosmetic procedures.`;
 
   const element = useRef(null);
   const container = useRef(null);
@@ -36,7 +30,7 @@ const HomeHero2 = () => {
       <div className="w-full">
         <div className="bg-[#100E10] w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[80px] flex xl:flex-row flex-col justify-between gap-[70px] xl:gap-0">
           <div className="xl:max-w-[600px] md:w-[70%] w-[100%] mx-auto sm:text-center xl:ml-0">
-            <Image src={home_hero2_ill} alt="" className="mt-10 w-[100%] h-auto xl:w-[500px]" />
+            <Image src={home_hero2_ill} alt="Cosmetic Dentistry Hall Green" title="Cosmetic Dentistry Hall Green" className="mt-10 w-[100%] h-auto xl:w-[500px]" />
           </div>
 
           <div className="xl:max-w-[690px] w-[100%] mx-auto flex flex-col xl:items-start items-center">
@@ -44,6 +38,9 @@ const HomeHero2 = () => {
               <span className="text-white font-Pangram-Regular">About us</span>
               <Image src={underline_vector} alt="" />
             </div>
+            <h2 className="text-white font-Pangram-Bold mt-6 sm:text-[34px] text-[28px] sm:leading-[42px] leading-[36px] text-left">
+              Elevate Your Smile with Dental Opulence
+            </h2>
             <p
               className="text-white font-Pangram-Regular mt-6 sm:text-[25px] text-[20px] sm:leading-[36px] leading-[28px] text-left flex flex-wrap "
               ref={element}

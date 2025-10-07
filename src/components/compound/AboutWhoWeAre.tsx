@@ -8,9 +8,7 @@ import underline_vector from "../../../assets/images/underline-vector.svg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useIsomorphicLayoutEffect } from "../../../hooks";
 import PrimaryLink from "../atom/PrimaryLink";
-//import { gsap, ScrollTrigger } from "../../../lib/gsap";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap } from "../../../lib/gsap";
 
 const AboutWhoWeAre = () => {
   let value = `Our vision at Dental Opulence is to revolutionize the dental industry by providing unparalleled service and creating an environment of opulence and comfort for our patients. We strive to exceed expectations, delivering exceptional results and ensuring the utmost satisfaction of every individual who walks through our doors.`;

@@ -10,7 +10,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { TestimonyCard } from "../molecule";
 import { DotButton } from "../atom/DotButton";
 
-import result_sample_image1 from "../../../assets/images/result-image-sample1.svg";
+const result_sample_image1 = "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/result-image-sample1/public";
 import result_sample_video1 from "../../../assets/images/result-video-sample1.svg";
 
 const OurResult = () => {

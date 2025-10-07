@@ -12,18 +12,14 @@ const DentureHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
             <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Dentures
+              Dentures<br />Hall Green
             </h1>
           </div>
           <p
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            {" "}
-            At Dental Opulence, we offer partial and complete dentures as
-            effective solutions for replacing missing teeth. Our dentures not
-            only enhance your oral health but also boost your self-confidence by
-            restoring the natural look and function of your smile.{" "}
+            At Dental Opulence, we offer partial and complete dentures as effective solutions for replacing missing teeth. Our dentures not only enhance your oral health but also boost your self-confidence by restoring the natural look and function of your smile.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">
@@ -45,7 +41,8 @@ const DentureHero = () => {
           <div className="flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 md:hidden">
             <Image
               src={dentures_service_hero_image}
-              alt="Composite Bonding Hero Image"
+              alt="Dentures in Hall Green"
+              title="Partial & Complete Dentures Hall Green"
               className="max-w-full h-full"
             />
           </div>
@@ -69,7 +66,8 @@ const DentureHero = () => {
         <div className="hidden md:flex justify-center w-full xl:w-[60%] mt-8 xl:mt-0 ">
           <Image
             src={dentures_service_hero_image}
-            alt="Composite Bonding Hero Image"
+            alt="Dentures in Hall Green"
+            title="Partial & Complete Dentures Hall Green"
             className="max-w-full h-auto"
           />
         </div>

@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { serviceCompositeBonding_TeethWhitening, serviceElevet_TeethWhitening, serviceHero2Desc_teethwhitening, teethWhiteFaq } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,10 +13,10 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
-  
+
 
 } from "../../../components/import";
 import CosmaticWalkThrough from "../reuseable/cosmaticWalkThrough";
@@ -25,12 +25,22 @@ import TeethWhiteningVideo from "./teethWhiteningSection/teethWhiteningVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import TeethWhiteningOurCases from "./teethWhiteningSection/OurCases";
+import Head from "next/head";
 
 
 
   export default function TeethWhitening() {
     return (
       <Layout>
+        <Head>
+          <title>Teeth Whitening in Hall Green, Birmingham | Dental Opulence</title>
+          <meta
+            name="description"
+            content="Get professional Teeth Whitening in Hall Green at Dental Opulence. We offer both in-clinic and home whitening kits to brighten your discoloured teeth."
+          />
+          <meta name="keywords" content="Teeth Whitening, Teeth whitening Hall Green, Professional teeth whitening Birmingham, Teeth whitening treatment" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/teeth-whitening" />
+        </Head>
         <Navbar />
         <TeethWhiteningHero/>
         <ServiceAward />

@@ -4,7 +4,7 @@ import Image from "next/image";
 import nav_logo from "../../../assets/images/nav-logo.svg";
 import pointer_down from "../../../assets/images/pointer-down.svg";
 import logo_background_overlay from "../../../assets/images/logo-bg-overlay.svg";
-import nav_drop_down_img from "../../../assets/images/nav-drop-down-img.svg";
+import nav_drop_down_img from "../../../assets/images/nav-drop-down-img-optimized.jpg";
 
 import PrimaryLink from "../atom/PrimaryLink";
 import Hambuger from "../atom/Hamburger";
@@ -39,37 +39,37 @@ const Navbar = () => {
 
   return (
     <div className="relative lg:px-[100px] sm:px-[40px] px-[20px] w-full h-full">
-      <nav className="fixed w-fit mix-blend-difference h-[70px] bg-transparent flex items-center justify-between top-[30px] z-[10]">
-        <div
-          className="nav-logo-wrapper"
-          onClick={() => handleSetPathToNavigate(dispatch, "/")}
-        >
-          <Image width={80} src={nav_logo} alt="" />
-        </div>
+      <nav className="fixed w-fit mix-blend-difference bg-transparent flex items-center justify-between top-[30px] z-[10]">
+        <Link href="/" className="nav-logo-wrapper flex items-center cursor-pointer">
+          <Image width={100} src={nav_logo} alt="Dentist in Hall Green" title="Dental Opulence" />
+        </Link>
       </nav>
-      <div className="fixed w-fit top-[30px] z-[10] lg:right-[100px] sm:right-[40px] right-[20px]">
+      <div className="fixed w-fit top-[30px] z-[10] lg:right-[100px] sm:right-[40px] right-[20px] flex items-center">
         <div className="pl-[43.5px] pr-[14px] justify-between min-w-[872px] bg-[#494849]/40 rounded-[80px] lg:flex hidden items-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
-          <ul className="flex items-center text-white gap-10">
+          <ul className="flex items-center text-white gap-7">
             {navlinks.map((link, index) => (
               <li
                 key={index}
                 className="font-Pangram-Regular link-list dropdown"
               >
-                <div
-                  onClick={() => handleSetPathToNavigate(dispatch, link.href)}
-                  className="cursor-pointer"
-                >
-                  <p className="flex items-center py-6">
-                    <span className="dropbtn">{link.label}</span>
-                    {link.subLinks && (
+                {link.subLinks ? (
+                  <div className="cursor-pointer">
+                    <p className="flex items-center py-6">
+                      <span className="dropbtn">{link.label}</span>
                       <Image
                         src={pointer_down}
                         alt=""
                         className="ml-2 link-pointer-down"
                       />
-                    )}
-                  </p>
-                </div>
+                    </p>
+                  </div>
+                ) : (
+                  <Link href={link.href} className="cursor-pointer">
+                    <p className="flex items-center py-6">
+                      <span className="dropbtn">{link.label}</span>
+                    </p>
+                  </Link>
+                )}
                 {link?.subLinks && (
                   <div
                     className={`dropdown-content h-fit w-full ${
@@ -86,14 +86,12 @@ const Navbar = () => {
                       }`}
                     >
                       {link.subLinks.map((subLink, index: number) => (
-                        <div
-                          onClick={() =>
-                            handleSetPathToNavigate(dispatch, subLink.href)
-                          }
-                          onMouseOver={() => setHoverId(index)}
-                          onMouseOut={() => setHoverId(null)}
+                        <Link
+                          href={subLink.href}
                           key={index}
                           className="relative h-fit flex items-center w-full"
+                          onMouseOver={() => setHoverId(index)}
+                          onMouseOut={() => setHoverId(null)}
                         >
                           <p className="flex items-center relative">
                             <Image
@@ -109,7 +107,7 @@ const Navbar = () => {
                               {subLink.title}
                             </span>
                           </p>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                     <div className="relative w-[351px] bg-[#222222] py-[31px] px-[27px] z-[40] rounded-tr-2xl rounded-br-2xl">

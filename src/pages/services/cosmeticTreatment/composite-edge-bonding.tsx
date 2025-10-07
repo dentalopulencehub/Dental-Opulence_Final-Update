@@ -1,6 +1,6 @@
 import HomePeopleSlider2 from "@/components/compound/HomePeopleSlider2";
 import { compositeEdgeFaq, serviceCompositeBonding_CompositeEdgeBonding, serviceElevet_CompositeEdgeBonding, serviceHero2Desc_CompositeEdgebonding } from "../../../../constants";
-import { 
+import {
     Layout,
     Navbar,
     ServiceAward ,
@@ -13,7 +13,7 @@ import {
     ServiceOurService,
     TestimonyComp,
     OurProcess,
-    Faq, 
+    Faq,
     HomePeopleSlider,
     Footer,
 
@@ -25,13 +25,23 @@ import CompositeEdgeBondingVideo from "./CompositeEdgeBondingSection/CompositeEd
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import CompositeEdgeBondingOurCases from "./CompositeEdgeBondingSection/OurCases";
+import Head from "next/head";
 
 
 
-  
+
   export default function CompositeEdgeBonding() {
     return (
       <Layout>
+        <Head>
+          <title>Composite Edge Bonding in Hall Green | Dental Opulence, Birmingham</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, Composite Edge Bonding in Hall Green can improve tooth shape, repair chips, cracks and fill gaps to restore confidence. Book your consultation today."
+          />
+          <meta name="keywords" content="Composite Edge Bonding, Composite edge bonding Hall Green, Edge bonding Hall Green, Edge bonding Birmingham" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/composite-edge-bonding" />
+        </Head>
         <Navbar />
         <CompositeEdgeBondingHero/>
         <ServiceAward />
