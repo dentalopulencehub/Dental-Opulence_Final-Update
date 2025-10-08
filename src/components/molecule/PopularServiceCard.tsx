@@ -20,7 +20,7 @@ const PopularServiceCard = ({
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       onTouchStart={() => setHover(true)}
-      className="w-full h-[400px] md:h-[360px] p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 block group"
+      className="w-full h-auto min-h-[320px] md:h-[360px] p-4 md:p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 flex flex-col group"
     >
       <Image
         className="hidden md:block"
@@ -28,18 +28,18 @@ const PopularServiceCard = ({
         alt={title}
       />
       <h3
-        className="mt-7 text-[#100E10] group-hover:text-white text-[20px] xs:text-[16px] sm:text-[18px] font-Pangram-Bold text-center md:text-left"
+        className="mt-4 md:mt-7 text-[#100E10] group-hover:text-white text-[16px] sm:text-[18px] md:text-[20px] font-Pangram-Bold text-center md:text-left leading-tight"
       >
         {title}
       </h3>
       <p
-        className="mt-4 text-[#4E4E4E] group-hover:text-[#D6D6D6] text-[12px] xs:text-[10px] sm:text-[12px] md:text-[14px] font-Pangram-Regular leading-[22px] text-center md:text-left"
+        className="mt-2 md:mt-4 text-[#4E4E4E] group-hover:text-[#D6D6D6] text-[11px] sm:text-[12px] md:text-[14px] font-Pangram-Regular leading-[16px] sm:leading-[18px] md:leading-[22px] text-center md:text-left line-clamp-4"
       >
         {description}
       </p>
-      <div className="flex justify-center md:justify-stretch">
+      <div className="flex justify-center md:justify-stretch mt-auto pt-4 md:pt-7">
         <button
-          className="py-2 px-4 border border-[#100E10] group-hover:border-white rounded-[32px] mt-7 flex justify-center bg-transparent group-hover:bg-white"
+          className="py-2 px-4 border border-[#100E10] group-hover:border-white rounded-[32px] flex justify-center bg-transparent group-hover:bg-white w-full sm:w-auto"
         >
           <p className="flex items-center gap-[10px] justify-center">
             <span
