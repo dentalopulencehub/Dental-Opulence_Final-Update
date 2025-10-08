@@ -69,14 +69,14 @@ const MenuComponent = () => {
       gsap.to(`.${classSelector}`, {
         height: 0,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.2,
       });
     } else {
       gsap.to(`.${classSelector}`, {
         height: "auto",
         opacity: 1,
         zIndex: 1,
-        duration: 0.5,
+        duration: 0.2,
       });
     }
 
@@ -94,21 +94,19 @@ const MenuComponent = () => {
       <ul>
         {navlinks.map((link, index) => (
           <div
-            onClick={() =>
-              link.subLinks &&
-              handleInnerLinkDropToggle(link?.label, `innerlink-${index}`)
-            }
             key={index}
             className="border-b border-b-[#2D2D2D] w-full py-5"
           >
             <li>
               <div
-                className="text-[#B9B9B9] flex items-center justify-between"
-                onClick={() =>
-                  link.subLinks
-                    ? null
-                    : handleSetPathToNavigate(dispatch, link.href)
-                }
+                className="text-[#B9B9B9] flex items-center justify-between cursor-pointer"
+                onClick={() => {
+                  if (link.subLinks) {
+                    handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
+                  } else {
+                    handleSetPathToNavigate(dispatch, link.href);
+                  }
+                }}
               >
                 <span className="text-base">{link.label}</span>
                 <Image

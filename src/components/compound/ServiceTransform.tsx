@@ -13,7 +13,7 @@ const ServiceTransform = () => {
   return (
     <div className="w-full">
       <div className="bg-white w-full lg:px-[100px] sm:px-[40px] px-[20px] py-[20px] md:py-[80px]">
-        <div className="bg-[#161616] rounded-2xl pt-[70px] relative">
+        <div className="bg-[#161616] rounded-2xl pt-[70px] pb-[70px] relative">
           <h2 className="text-[#5C5C5C] sm:text-[48px] sm:leading-[56px] p-2 text-[34px] leading-[40px] text-center sm:max-w-[643px] mx-auto">
             <span className="text-white">Transform</span> your smile today with{" "}
             <span className="text-white">Dental Opulence</span>
@@ -33,9 +33,6 @@ const ServiceTransform = () => {
             />
           </div>
 
-          <div className="w-full h-[50%] mx-auto  mt-[77px]">
-            <Image src={service_transform_image1} alt="" width={1200} height={800} className="mx-auto" />
-          </div>
         </div>
       </div>
     </div>

@@ -34,13 +34,18 @@ const CompositeVeneersVideo = () => {
         <h2 className="text-[#100E10] sm:text-[34px] text-[26px] font-normal font-Pangram-Medium md:w-[650px] text-center w-full">
           What You Should Know about Composite Veneers
         </h2>
-        <div className="relative mx-auto my-4">
+        <div className="relative mx-auto my-4 bg-gray-100 rounded-2xl">
           <video
             ref={videoRef}
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
-            muted={isMuted} // Initial mute state
+            muted={isMuted}
+            preload="metadata"
+            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E"
+            onLoadedData={(e) => {
+              (e.target as HTMLVideoElement).poster = '';
+            }}
           >
             <source src="https://player.vimeo.com/progressive_redirect/playback/1006679590/rendition/1080p/file.mp4?loc=external&signature=c6936c898b2a7bd254f3c4237113e5510fec27b292e0fab1fe271fa023836d27" />
             Your browser does not support the video tag.

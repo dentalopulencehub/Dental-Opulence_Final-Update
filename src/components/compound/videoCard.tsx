@@ -26,7 +26,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ videoSrc, title, rating }) => {
 
   return (
     <div className="p-4 rounded-lg">
-      <div className="relative">
+      <div className="relative bg-gray-100 rounded">
         <video
           ref={videoRef}
           src={videoSrc}
@@ -34,6 +34,11 @@ const VideoCard: React.FC<VideoCardProps> = ({ videoSrc, title, rating }) => {
           onClick={togglePlayPause}
           onPause={() => setIsPlaying(false)}
           onPlay={() => setIsPlaying(true)}
+          preload="metadata"
+          poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E"
+          onLoadedData={(e) => {
+            (e.target as HTMLVideoElement).poster = '';
+          }}
         />
         {!isPlaying && (
           <Image

@@ -35,13 +35,18 @@ const BridgeVideo = () => {
           What You Should Know
           <br /> about Bridges
         </h2>
-        <div className="relative mx-auto my-4">
+        <div className="relative mx-auto my-4 bg-gray-100 rounded-2xl">
           <video
             ref={videoRef}
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
-            muted={isMuted} // Initial mute state
+            muted={isMuted}
+            preload="metadata"
+            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E"
+            onLoadedData={(e) => {
+              (e.target as HTMLVideoElement).poster = '';
+            }}
           >
             <source src="https://player.vimeo.com/progressive_redirect/playback/1006679852/rendition/1080p/file.mp4?loc=external&signature=79105608789778f69d2be3df701bfcc7edef102043c89a9ddc448bf76c9a3f8f" />
             Your browser does not support the video tag.

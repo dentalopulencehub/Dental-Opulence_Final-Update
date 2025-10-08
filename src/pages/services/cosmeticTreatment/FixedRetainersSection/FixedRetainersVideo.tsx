@@ -41,9 +41,10 @@ const FixedRetainersVideo = () => {
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
-            muted={isMuted} // Initial mute state
+            muted={isMuted}
+            preload="metadata"
           >
-            <source src="https://player.vimeo.com/progressive_redirect/playback/1006678339/rendition/1080p/file.mp4?loc=external&signature=42499e7022bf9af5c987eee6ec2254b5c8016eac45e0a5088859f62c6d642717" />
+            <source src="https://player.vimeo.com/progressive_redirect/playback/1006678339/rendition/720p/file.mp4?loc=external&signature=42499e7022bf9af5c987eee6ec2254b5c8016eac45e0a5088859f62c6d642717" />
             Your browser does not support the video tag.
           </video>
           {!isPlaying && (

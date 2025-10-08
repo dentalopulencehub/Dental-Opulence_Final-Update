@@ -5,6 +5,9 @@ import { Layout, Navbar, Footer } from "../../components/import";
 import { blogPosts } from "../../../constants";
 
 export default function Blog() {
+  console.log('Blog posts count:', blogPosts.length);
+  console.log('First blog post:', blogPosts[0]?.title);
+
   return (
     <Layout>
       <Head>
@@ -41,8 +44,7 @@ export default function Blog() {
             {blogPosts.map((post, index) => {
               const imageSrc = typeof post.image === 'string' ? post.image : post.image.src;
               return (
-                <Link key={index} href={`/blog/${post.slug}`}>
-                  <div className="group cursor-pointer bg-white border border-[#E8E8E8] rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
+                <Link key={index} href={`/blog/${post.slug}`} className="group cursor-pointer bg-white border border-[#E8E8E8] rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row">
                     <div className="relative w-full md:w-[400px] h-[240px] md:h-[280px] flex-shrink-0 overflow-hidden">
                       <img
                         src={imageSrc}
@@ -77,7 +79,6 @@ export default function Blog() {
                         </p>
                       </div>
                     </div>
-                  </div>
                 </Link>
               );
             })}

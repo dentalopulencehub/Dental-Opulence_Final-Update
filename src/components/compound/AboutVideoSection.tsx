@@ -29,13 +29,18 @@ const AboutVideoSection = () => {
 
   return (
     <div className="bg-white sm:px-5 px-2 w-full py-[80px]">
-      <div className="relative mx-auto max-w-[1200px]">
+      <div className="relative mx-auto max-w-[1200px] bg-gray-100 rounded-2xl">
         <video
           ref={videoRef}
           className="object-cover rounded-2xl w-full h-full opacity-1"
           onClick={handleVideoClick}
           playsInline
           muted={isMuted}
+          preload="metadata"
+          poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E"
+          onLoadedData={(e) => {
+            (e.target as HTMLVideoElement).poster = '';
+          }}
         >
           <source src="https://player.vimeo.com/progressive_redirect/playback/1006678002/rendition/1080p/file.mp4?loc=external&signature=f2118c0959b5af3eb77bbbf91b71d5029beeac99866e7113d2e17043f39d36e3" />
           Your browser does not support the video tag.

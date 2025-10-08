@@ -35,13 +35,18 @@ const DentureVideo = () => {
           What You Should Know
           <br /> about Dentures
         </h2>
-        <div className="relative mx-auto my-4">
+        <div className="relative mx-auto my-4 bg-gray-100 rounded-2xl">
           <video
             ref={videoRef}
             className="object-cover rounded-2xl w-full h-full opacity-1"
             onClick={handleVideoClick}
             playsInline
-            muted={isMuted} // Initial mute state
+            muted={isMuted}
+            preload="metadata"
+            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E"
+            onLoadedData={(e) => {
+              (e.target as HTMLVideoElement).poster = '';
+            }}
           >
             <source src="https://player.vimeo.com/progressive_redirect/playback/1006680121/rendition/1080p/file.mp4?loc=external&signature=665e855c1df1297a68f1ee66e62b4be9ce0f31806e3df2a052039d72c2576d0b" />
             Your browser does not support the video tag.

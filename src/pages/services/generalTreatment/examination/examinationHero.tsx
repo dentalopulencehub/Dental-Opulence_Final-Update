@@ -12,7 +12,7 @@ const ExaminationHero = () => {
         <div className="flex flex-col xl:items-start items-center w-full xl:w-[50%] py-8">
           <div className="flex flex-row items-center gap-4">
           <h1 className="font-Pangram-Bold sm:text-[60px] w-full  text-[44px] text-left  text-[#161616]">
-              Examination
+              Examination Hall&nbsp;Green
             </h1>
           </div>
           <p
