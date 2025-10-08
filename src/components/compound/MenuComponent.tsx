@@ -128,23 +128,37 @@ const MenuComponent = () => {
             className="border-b border-b-[#2D2D2D] w-full py-5"
           >
             <li>
-              <div
-                className="text-[#B9B9B9] flex items-center justify-between cursor-pointer"
-                onClick={() => {
-                  if (link.subLinks) {
+              {link.subLinks ? (
+                <div
+                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2 active:bg-[#2D2D2D] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
-                  } else {
-                    handleSetPathToNavigate(dispatch, link.href);
-                  }
-                }}
-              >
-                <span className="text-base">{link.label}</span>
-                <Image
-                  src={menu_pointer_down}
-                  className={`${link?.subLinks ? "block" : "hidden"}`}
-                  alt="menu arrow"
-                />
-              </div>
+                  }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
+                  }}
+                >
+                  <span className="text-base">{link.label}</span>
+                  <Image
+                    src={menu_pointer_down}
+                    className={`transition-transform duration-200 ${
+                      innerLinkState.find(item => item.name === link.label)?.state ? 'rotate-180' : ''
+                    }`}
+                    alt="menu arrow"
+                  />
+                </div>
+              ) : (
+                <div
+                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2"
+                  onClick={() => handleSetPathToNavigate(dispatch, link.href)}
+                >
+                  <span className="text-base">{link.label}</span>
+                </div>
+              )}
             </li>
 
             <ul
