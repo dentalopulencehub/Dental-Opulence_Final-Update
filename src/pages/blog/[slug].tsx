@@ -90,6 +90,66 @@ export default function BlogPost({ post, relatedPosts }: BlogPostPageProps) {
     alert('Link copied to clipboard!');
   };
 
+  const imageUrl = typeof post.image === 'string' ? post.image : post.image.src;
+
+  // Structured Data - Article Schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": imageUrl,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Person",
+      "name": "Dr Ali",
+      "jobTitle": "Dentist",
+      "worksFor": {
+        "@type": "Dentist",
+        "name": "Dental Opulence"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dental Opulence",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.do.co.uk/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.do.co.uk/blog/${post.slug}`
+    }
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.do.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.do.co.uk/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://www.do.co.uk/blog/${post.slug}`
+      }
+    ]
+  };
+
   return (
     <Layout>
       <Head>
@@ -101,7 +161,19 @@ export default function BlogPost({ post, relatedPosts }: BlogPostPageProps) {
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:url" content={`https://www.do.co.uk/blog/${post.slug}`} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={typeof post.image === 'string' ? post.image : post.image.src} />
+        <meta property="og:image" content={imageUrl} />
+
+        {/* Structured Data - Article Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+
+        {/* Structured Data - Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
 
       {/* Progress Bar */}

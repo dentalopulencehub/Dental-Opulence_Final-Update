@@ -30,6 +30,43 @@ const HomePeopleSlider2 = dynamic(
 );
 
 export default function Home() {
+  // LocalBusiness Schema for SEO
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dental Opulence",
+    "image": "https://www.do.co.uk/logo.png",
+    "description": "Cosmetic and private dentistry in Hall Green, Birmingham. Modern dental care from routine check-ups to smile makeovers.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hall Green",
+      "addressLocality": "Birmingham",
+      "addressRegion": "West Midlands",
+      "postalCode": "B28",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.4370,
+      "longitude": -1.8395
+    },
+    "url": "https://www.do.co.uk",
+    "telephone": "+44 121 123 4567",
+    "priceRange": "££",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/dentalopulence",
+      "https://www.instagram.com/dentalopulence"
+    ]
+  };
+
   return (
     <>
       <Layout>
@@ -45,6 +82,12 @@ export default function Home() {
           <meta property="og:description" content="Dentist Hall Green – Visit Dental Opulence for cosmetic and private dentistry in Hall Green, Birmingham providing modern care, from routine check-ups to smile makeovers, in a relaxing setting." />
           <meta property="og:url" content="https://www.do.co.uk/" />
           <meta property="og:type" content="website" />
+
+          {/* Structured Data - LocalBusiness Schema */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          />
         </Head>
         <Navbar />
         <HomeHero />

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import nav_logo from "../../../assets/images/nav-logo.svg";
+import nav_logo from "../../../assets/images/DOLogoC (1).svg";
 import pointer_down from "../../../assets/images/pointer-down.svg";
 import logo_background_overlay from "../../../assets/images/logo-bg-overlay.svg";
 import nav_drop_down_img from "../../../assets/images/nav-drop-down-img-optimized.jpg";
