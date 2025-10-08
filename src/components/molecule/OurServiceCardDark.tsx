@@ -78,14 +78,14 @@ const OurServiceCardDark = ({
       href={href}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="px-4 py-[20px] flex flex-col gap-4 items-start md:h-[220px] h-[340px] xs:h-[227px] bg-[#222222] border border-[#2D2D2D] rounded-xl max-w-[289px] service-card block"
+      className="px-[16px] md:px-[20px] py-[16px] md:py-[20px] flex flex-col gap-3 md:gap-4 items-start h-auto min-h-[200px] md:min-h-[220px] bg-[#222222] border border-[#2D2D2D] rounded-xl w-full max-w-[289px] service-card block"
     >
       {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" className="" />
       </div> */}
-      <div>
-        <h3 className="text-xl text-[#fff] pb-1 font-Pangram-Bold">{title}</h3>
-        <p className="text-sm text-[#B2B2B2] font-Pangram-Regular mt-1">
+      <div className="flex-1">
+        <h3 className="text-[16px] md:text-[18px] lg:text-xl text-[#fff] font-Pangram-Bold leading-tight">{title}</h3>
+        <p className="text-[12px] md:text-[13px] lg:text-sm text-[#B2B2B2] font-Pangram-Regular mt-1 md:mt-2 leading-relaxed line-clamp-3">
           {description}
         </p>
       </div>

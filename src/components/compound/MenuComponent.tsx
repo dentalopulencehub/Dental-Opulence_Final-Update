@@ -123,16 +123,15 @@ const MenuComponent = () => {
               } gap-[21px] flex-col relative top-5 h-0 -z-[1] opacity-0 innerlink-${index}`}
             >
               {link.subLinks?.map((innerlink, innerindex) => (
-                <div
-                  onClick={() =>
-                    handleSetPathToNavigate(dispatch, innerlink.href)
-                  }
+                <Link
+                  href={innerlink.href}
+                  onClick={() => handleSetMenuState(dispatch, false)}
                   key={innerindex}
-                  className="text-sm flex gap-3 items-center px-[10px] relative"
+                  className="text-sm flex gap-3 items-center px-[10px] relative cursor-pointer"
                 >
                   <Image src={innerlink.icon} alt={innerlink.title} />
                   <span className="text-white">{innerlink.title}</span>
-                </div>
+                </Link>
               ))}
             </ul>
           </div>

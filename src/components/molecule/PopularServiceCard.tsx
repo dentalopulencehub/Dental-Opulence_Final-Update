@@ -19,25 +19,23 @@ const PopularServiceCard = ({
       href={href}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      className="w-full h-[400px] md:h-[360px] p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 block"
+      className="w-full h-auto min-h-[360px] md:min-h-[320px] p-4 md:p-6 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 block"
     >
       <Image
-        className="hidden md:block"
+        className="hidden md:block w-full h-auto"
         src={hover ? image_inverted : image}
         alt={title}
       />
       <h3
-        className={`mt-7 ${
+        className={`mt-4 md:mt-7 ${
           hover ? "text-white" : "text-[#100E10]"
-        } text-[20px] xs:text-[16px] sm:text-[18px] font-Pangram-Bold text-center md:text-left`}
+        } text-[18px] xs:text-[16px] sm:text-[18px] md:text-[20px] font-Pangram-Bold text-center md:text-left leading-tight`}
       >
         {title}
       </h3>
       <p
-        className={`mt-4 text-[#4E4E4E] text-[12px] xs:text-[10px] sm:text-[12px] md:text-[14px] font-Pangram-Regular ${
-          hover
-            ? "text-[#D6D6D6]"
-            : "text-[#100E10] leading-[22px] text-center md:text-left"
+        className={`mt-3 md:mt-4 text-[13px] xs:text-[12px] sm:text-[13px] md:text-[14px] font-Pangram-Regular leading-[20px] md:leading-[22px] text-center md:text-left ${
+          hover ? "text-[#D6D6D6]" : "text-[#4E4E4E]"
         }`}
       >
         {description}
