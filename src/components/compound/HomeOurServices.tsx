@@ -52,7 +52,7 @@ const HomeOurServices: React.FC = () => {
         }`}
       >
         {selectedTheme === "light" ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 justify-items-center items-stretch">
+          <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-6 justify-center items-center">
             {our_services.map((service, index) => (
               <OurServiceCard
                 key={index}
@@ -62,7 +62,7 @@ const HomeOurServices: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 justify-items-center items-stretch">
+          <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:gap-6 justify-center items-center">
             {our_services2.map((service, index) => (
               <OurServiceCardDark
                 key={index}

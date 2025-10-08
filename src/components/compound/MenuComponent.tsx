@@ -46,7 +46,24 @@ const MenuComponent = () => {
   }, []);
 
   useGSAP(() => {
-    menuOpen ? tl.current.play() : tl.current.reverse();
+    if (menuOpen) {
+      tl.current.play();
+    } else {
+      tl.current.reverse();
+      // Reset all dropdowns when menu closes
+      setTimeout(() => {
+        setInnerLinkState((prev) =>
+          prev.map((item) => ({ ...item, state: false }))
+        );
+        // Close all dropdowns visually
+        navlinks.forEach((_, index) => {
+          gsap.set(`.innerlink-${index}`, {
+            height: 0,
+            opacity: 0,
+          });
+        });
+      }, 200);
+    }
   }, [menuOpen]);
 
   const [innerLinkState, setInnerLinkState] = useState<any[]>([]);
@@ -65,6 +82,18 @@ const MenuComponent = () => {
   const handleInnerLinkDropToggle = (title: string, classSelector: string) => {
     const findState = innerLinkState.find((el: any) => el.name === title);
 
+    // Close all other dropdowns first
+    innerLinkState.forEach((item, idx) => {
+      if (item.name !== title && item.state) {
+        gsap.to(`.innerlink-${navlinks.findIndex(l => l.label === item.name)}`, {
+          height: 0,
+          opacity: 0,
+          duration: 0.2,
+        });
+      }
+    });
+
+    // Toggle current dropdown
     if (findState?.state) {
       gsap.to(`.${classSelector}`, {
         height: 0,
@@ -80,11 +109,12 @@ const MenuComponent = () => {
       });
     }
 
+    // Update state: close all others, toggle current
     let newState = innerLinkState.map((el: any) => {
       if (el.name === title) {
         return { ...el, state: !el.state };
       }
-      return el;
+      return { ...el, state: false };
     });
     setInnerLinkState(newState);
   };
