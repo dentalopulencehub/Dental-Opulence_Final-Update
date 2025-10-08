@@ -4,23 +4,20 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../../lib/gsap";
 import { GlobalContext } from "../../../context/GlobalContext";
-import PrimaryLink from "../atom/PrimaryLink";
-import {
-  handleSetMenuState,
-  handleSetPathToNavigate,
-} from "../../../context/action";
+import { handleSetMenuState } from "../../../context/action";
 import { navlinks } from "../../../constants";
 import menu_pointer_down from "../../../assets/images/menu-pointer-down.svg";
 
 const MenuComponent = () => {
   const { dispatch, menuOpen } = useContext(GlobalContext);
-  let tl: any = useRef(null);
+  const tl = useRef<any>(null);
+  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
   useGSAP(() => {
     tl.current = gsap.timeline({ paused: true });
 
-    tl?.current
-      ?.to(".menuOverlay", {
+    tl.current
+      .to(".menuOverlay", {
         duration: 0.2,
         opacity: 1,
         display: "block",
@@ -30,19 +27,6 @@ const MenuComponent = () => {
         overflow: "hidden",
         duration: 0.2,
       });
-    /* .fromTo(
-        ".menu_links",
-        {
-          y: 100,
-        },
-        {
-          duration: 0.5,
-          opacity: 1,
-          y: 0,
-          stagger: 0.1,
-          ease: "power2.inOut",
-        }
-      ) */
   }, []);
 
   useGSAP(() => {
@@ -50,135 +34,91 @@ const MenuComponent = () => {
       tl.current.play();
     } else {
       tl.current.reverse();
-      // Reset all dropdowns when menu closes
+      // Reset dropdown state when menu closes
       setTimeout(() => {
-        setInnerLinkState((prev) =>
-          prev.map((item) => ({ ...item, state: false }))
-        );
-        // Close all dropdowns visually
-        navlinks.forEach((_, index) => {
-          gsap.set(`.innerlink-${index}`, {
-            height: 0,
-            opacity: 0,
-          });
-        });
+        setOpenDropdown(null);
       }, 200);
     }
   }, [menuOpen]);
 
-  const [innerLinkState, setInnerLinkState] = useState<any[]>([]);
+  const toggleDropdown = (index: number) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
 
-  useEffect(() => {
-    navlinks?.forEach((el, index) => {
-      if (el.subLinks) {
-        setInnerLinkState((prev) => [
-          ...prev,
-          { name: el.label, state: false },
-        ]);
-      }
-    });
-  }, []);
-
-  const handleInnerLinkDropToggle = (title: string, classSelector: string) => {
-    const findState = innerLinkState.find((el: any) => el.name === title);
-
-    // Close all other dropdowns first
-    innerLinkState.forEach((item, idx) => {
-      if (item.name !== title && item.state) {
-        gsap.to(`.innerlink-${navlinks.findIndex(l => l.label === item.name)}`, {
-          height: 0,
-          opacity: 0,
-          duration: 0.2,
-        });
-      }
-    });
-
-    // Toggle current dropdown
-    if (findState?.state) {
-      gsap.to(`.${classSelector}`, {
-        height: 0,
-        opacity: 0,
-        duration: 0.2,
-      });
-    } else {
-      gsap.to(`.${classSelector}`, {
-        height: "auto",
-        opacity: 1,
-        zIndex: 1,
-        duration: 0.2,
-      });
-    }
-
-    // Update state: close all others, toggle current
-    let newState = innerLinkState.map((el: any) => {
-      if (el.name === title) {
-        return { ...el, state: !el.state };
-      }
-      return { ...el, state: false };
-    });
-    setInnerLinkState(newState);
+  const closeMenu = () => {
+    handleSetMenuState(dispatch, false);
   };
 
   return (
-    <div className="fixed xs:h-[88%] h-[85%] overflow-y-scroll -bottom-[1%] px-5 hidden opacity-0 -translate-x-[50%] w-[calc(100%-10px)] left-[50%] menuOverlay z-[14]  bg-[#222222]">
-      <ul>
+    <div className="fixed xs:h-[88%] h-[85%] overflow-y-auto -bottom-[1%] px-5 hidden opacity-0 -translate-x-[50%] w-[calc(100%-10px)] left-[50%] menuOverlay z-[14] bg-[#222222] rounded-t-2xl">
+      <ul className="pb-6">
         {navlinks.map((link, index) => (
-          <div
+          <li
             key={index}
-            className="border-b border-b-[#2D2D2D] w-full py-5"
+            className="border-b border-b-[#2D2D2D] w-full"
           >
-            <li>
-              {link.subLinks ? (
-                <div
-                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2 active:bg-[#2D2D2D] transition-colors touch-manipulation"
-                  onClick={(e) => {
-                    handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
-                  }}
+            {link.subLinks ? (
+              <>
+                <button
+                  className="text-[#B9B9B9] flex items-center justify-between w-full py-5 active:opacity-70 transition-opacity"
+                  onClick={() => toggleDropdown(index)}
+                  type="button"
                 >
-                  <span className="text-base">{link.label}</span>
+                  <span className="text-base font-Pangram-Regular">{link.label}</span>
                   <Image
                     src={menu_pointer_down}
-                    className={`transition-transform duration-200 ${
-                      innerLinkState.find(item => item.name === link.label)?.state ? 'rotate-180' : ''
+                    className={`transition-transform duration-300 ${
+                      openDropdown === index ? 'rotate-180' : ''
                     }`}
-                    alt="menu arrow"
+                    alt=""
+                    width={12}
+                    height={12}
                   />
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    openDropdown === index ? 'max-h-[500px] pb-4' : 'max-h-0'
+                  }`}
+                >
+                  <ul className="flex flex-col gap-4 pt-2">
+                    {link.subLinks.map((innerlink, innerindex) => (
+                      <li key={innerindex}>
+                        <Link
+                          href={innerlink.href}
+                          onClick={closeMenu}
+                          className="flex gap-3 items-center px-2 py-2 active:opacity-70 transition-opacity"
+                        >
+                          <Image
+                            src={innerlink.icon}
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
+                          <span className="text-white text-sm font-Pangram-Regular">
+                            {innerlink.title}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              ) : (
-                <Link
-                  href={link.href}
-                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2"
-                  onClick={() => handleSetMenuState(dispatch, false)}
-                >
-                  <span className="text-base">{link.label}</span>
-                </Link>
-              )}
-            </li>
-
-            <ul
-              className={`${
-                link.subLinks ? "flex" : "hidden"
-              } gap-[21px] flex-col relative mt-3 h-0 opacity-0 innerlink-${index}`}
-            >
-              {link.subLinks?.map((innerlink, innerindex) => (
-                <Link
-                  href={innerlink.href}
-                  onClick={() => handleSetMenuState(dispatch, false)}
-                  key={innerindex}
-                  className="text-sm flex gap-3 items-center px-[10px] relative cursor-pointer"
-                >
-                  <Image src={innerlink.icon} alt={innerlink.title} />
-                  <span className="text-white">{innerlink.title}</span>
-                </Link>
-              ))}
-            </ul>
-          </div>
+              </>
+            ) : (
+              <Link
+                href={link.href}
+                className="text-[#B9B9B9] flex items-center justify-between w-full py-5 active:opacity-70 transition-opacity"
+                onClick={closeMenu}
+              >
+                <span className="text-base font-Pangram-Regular">{link.label}</span>
+              </Link>
+            )}
+          </li>
         ))}
       </ul>
       <Link
         href="/contact"
-        onClick={() => handleSetMenuState(dispatch, false)}
-        className="py-2 px-4 rounded-[34px] w-full max-w-[335px] h-[56px] flex items-center justify-center mt-6 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-xs hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+        onClick={closeMenu}
+        className="py-3 px-6 rounded-full w-full max-w-[335px] h-[56px] flex items-center justify-center mt-4 mb-8 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-sm active:opacity-70 transition-opacity"
       >
         Contact Us
       </Link>
