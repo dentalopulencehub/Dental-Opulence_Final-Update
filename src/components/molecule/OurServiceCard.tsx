@@ -77,16 +77,16 @@ const OurServiceCard = ({
       href={href}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`px-[16px] md:px-[20px] py-[16px] md:py-[20px] flex flex-col gap-3 md:gap-4 items-start ${
+      className={`px-[16px] md:px-[25px] py-[16px] md:py-[20px] flex flex-col gap-3 md:gap-4 items-start ${
         selectedTheme === "light" ? "bg-[#F8F8F8]" : "bg-[#282828]"
-      } border border-[#f4f4f4] rounded-xl w-full max-w-[289px] h-auto min-h-[200px] md:min-h-[220px] service-card duration-0 block`}
+      } border border-[#f4f4f4] rounded-xl w-full max-w-[289px] h-auto min-h-[200px] md:h-[220px] service-card duration-0 block`}
     >
       {/* <div className="">
         <Image src={hover ? image_inverted : image} alt="" />
       </div> */}
       <div className="flex-1">
-        <h3 className="text-[16px] md:text-[18px] lg:text-xl text-[#100E10] font-Pangram-Bold leading-tight">{title}</h3>
-        <p className="text-[12px] md:text-[13px] text-[#4e4e4e] font-Pangram-Regular mt-1 md:mt-2 leading-relaxed line-clamp-3">
+        <h3 className="text-[16px] md:text-xl text-[#100E10] font-Pangram-Bold leading-tight">{title}</h3>
+        <p className="text-[12px] md:text-[13px] text-[#4e4e4e] font-Pangram-Regular mt-1 leading-relaxed line-clamp-3">
           {description}
         </p>
       </div>
