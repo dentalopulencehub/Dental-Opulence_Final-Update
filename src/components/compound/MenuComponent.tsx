@@ -130,15 +130,8 @@ const MenuComponent = () => {
             <li>
               {link.subLinks ? (
                 <div
-                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2 active:bg-[#2D2D2D] transition-colors"
+                  className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2 active:bg-[#2D2D2D] transition-colors touch-manipulation"
                   onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
-                  }}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
                     handleInnerLinkDropToggle(link?.label, `innerlink-${index}`);
                   }}
                 >
@@ -152,19 +145,20 @@ const MenuComponent = () => {
                   />
                 </div>
               ) : (
-                <div
+                <Link
+                  href={link.href}
                   className="text-[#B9B9B9] flex items-center justify-between cursor-pointer py-2"
-                  onClick={() => handleSetPathToNavigate(dispatch, link.href)}
+                  onClick={() => handleSetMenuState(dispatch, false)}
                 >
                   <span className="text-base">{link.label}</span>
-                </div>
+                </Link>
               )}
             </li>
 
             <ul
               className={`${
                 link.subLinks ? "flex" : "hidden"
-              } gap-[21px] flex-col relative top-5 h-0 -z-[1] opacity-0 innerlink-${index}`}
+              } gap-[21px] flex-col relative mt-3 h-0 opacity-0 innerlink-${index}`}
             >
               {link.subLinks?.map((innerlink, innerindex) => (
                 <Link
@@ -181,11 +175,13 @@ const MenuComponent = () => {
           </div>
         ))}
       </ul>
-      <PrimaryLink
+      <Link
         href="/contact"
-        title="Contact Us"
-        style="py-2 px-4 rounded-[34px] w-full max-w-[335px] h-[56px] flex items-center justify-center mt-6 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-xs hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
-      />
+        onClick={() => handleSetMenuState(dispatch, false)}
+        className="py-2 px-4 rounded-[34px] w-full max-w-[335px] h-[56px] flex items-center justify-center mt-6 mx-auto text-center bg-white text-[#100E10] font-Pangram-Medium text-xs hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0"
+      >
+        Contact Us
+      </Link>
     </div>
   );
 };
