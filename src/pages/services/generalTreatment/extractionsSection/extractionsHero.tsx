@@ -19,7 +19,7 @@ const ExtractionsHero = () => {
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            At our dental practice, we understand that the thought of a tooth extraction can be stressful for some patients. That's why we strive to make the extraction process as comfortable and anxiety-free as possible.
+            At our dental practice, we understand that the thought of a tooth extraction can be stressful for some patients. That&apos;s why we strive to make the extraction process as comfortable and anxiety-free as possible.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

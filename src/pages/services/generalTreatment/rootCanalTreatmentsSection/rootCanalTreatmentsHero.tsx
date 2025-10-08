@@ -19,7 +19,7 @@ const RootCanalTreatmentsHero = () => {
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            At our <a href="/">Hall Green dental practice</a>, we understand that root canal treatment can be stressful. We strive to make the process as comfortable and anxiety-free as possible. Our skilled dentist will remove infected pulp, clean and disinfect the tooth, then seal it with a <a href="/services/cosmeticTreatment/crowns-veneers">dental crown</a> to prevent further infection.
+            At our <Link href="/" className="text-[#161616] underline hover:text-[#100E10]">Hall Green dental practice</Link>, we understand that root canal treatment can be stressful. We strive to make the process as comfortable and anxiety-free as possible. Our skilled dentist will remove infected pulp, clean and disinfect the tooth, then seal it with a <Link href="/services/cosmeticTreatment/crowns-veneers" className="text-[#161616] underline hover:text-[#100E10]">dental crown</Link> to prevent further infection.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

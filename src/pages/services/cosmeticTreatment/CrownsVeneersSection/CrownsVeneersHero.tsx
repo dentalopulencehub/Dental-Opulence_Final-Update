@@ -21,7 +21,7 @@ const CrownsVeneersHero = () => {
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            At our <a href="/">Hall Green dental practice</a>, we understand that tooth damage and discoloration can affect not only your oral health but also your self-confidence. That's why we offer crowns and veneers as cosmetic solutions for restoring and enhancing the appearance of your teeth.
+            At our <Link href="/" className="text-[#161616] underline hover:text-[#100E10]">Hall Green dental practice</Link>, we understand that tooth damage and discoloration can affect not only your oral health but also your self-confidence. That&apos;s why we offer crowns and veneers as cosmetic solutions for restoring and enhancing the appearance of your teeth.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

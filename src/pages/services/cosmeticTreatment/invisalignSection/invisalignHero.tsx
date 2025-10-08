@@ -19,7 +19,7 @@ const InvisalignHero = () => {
             className="text-[18px] text-[#161616] mt-6 text-left w-full md:w-[70%] leading-tight"
             style={{ lineHeight: "1.6" }}
           >
-            We offer Invisalign—the modern, discreet alternative to traditional braces. Invisalign's custom-made, clear braces or aligners are designed to gradually and comfortably shift your teeth into perfect alignment, enhancing both your smile and self-confidence.
+            We offer Invisalign—the modern, discreet alternative to traditional braces. Invisalign&apos;s custom-made, clear braces or aligners are designed to gradually and comfortably shift your teeth into perfect alignment, enhancing both your smile and self-confidence.
           </p>
 
           <div className="mt-6 flex-col w-full items-center text-center md:text-left">

@@ -20,7 +20,7 @@ const CompositeEdgeBondingHero = () => {
             style={{ lineHeight: "1.6" }}
           >
             We understand that the appearance of your teeth can affect your
-            self-confidence and overall well-being. That's why we offer
+            self-confidence and overall well-being. That&apos;s why we offer
             composite edge bonding as a solution for improving the appearance of
             your teeth.
           </p>

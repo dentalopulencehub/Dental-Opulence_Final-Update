@@ -22,7 +22,7 @@ const CompositeBondingHero = () => {
           >
             Welcome to Dental Opulence, where we specialise in composite
             bonding, a versatile cosmetic dentistry solution. Our clinic offers
-            two types: <a href="/services/cosmeticTreatment/composite-edge-bonding" className="text-[#161616] underline hover:text-[#100E10]">composite edge bonding</a> and <a href="/services/cosmeticTreatment/composite-veneers" className="text-[#161616] underline hover:text-[#100E10]">composite veneers</a>, catering to
+            two types: <Link href="/services/cosmeticTreatment/composite-edge-bonding" className="text-[#161616] underline hover:text-[#100E10]">composite edge bonding</Link> and <Link href="/services/cosmeticTreatment/composite-veneers" className="text-[#161616] underline hover:text-[#100E10]">composite veneers</Link>, catering to
             different aesthetic needs.
           </p>
 
