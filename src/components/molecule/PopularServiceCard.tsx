@@ -20,7 +20,7 @@ const PopularServiceCard = ({
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       onTouchStart={() => setHover(true)}
-      className="w-full h-auto min-h-[320px] md:h-[360px] p-4 md:p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 flex flex-col group"
+      className="w-full h-auto min-h-[280px] md:h-[360px] p-4 md:p-4 hover:bg-[#000000] hover:shadow-xl ease-in-out transition border border-[#E8E8E8] rounded-[24px] duration-0 flex flex-col group"
     >
       <Image
         className="hidden md:block"
