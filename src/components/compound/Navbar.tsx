@@ -41,7 +41,16 @@ const Navbar = () => {
     <div className="relative lg:px-[100px] sm:px-[40px] px-[20px] w-full h-full">
       <nav className="fixed w-fit mix-blend-difference bg-transparent flex items-center justify-between top-[30px] z-[10]">
         <Link href="/" className="nav-logo-wrapper flex items-center cursor-pointer">
-          <Image width={100} height={40} src={nav_logo} alt="Dentist in Hall Green" title="Dental Opulence" className="w-[80px] sm:w-[100px] h-auto object-contain" />
+          <Image
+            width={100}
+            height={40}
+            src={nav_logo}
+            alt="Dentist in Hall Green"
+            title="Dental Opulence"
+            className="w-[80px] sm:w-[100px] h-auto object-contain"
+            priority
+            quality={100}
+          />
         </Link>
       </nav>
       <div className="fixed w-fit top-[30px] z-[10] lg:right-[100px] sm:right-[40px] right-[20px] flex items-center">
