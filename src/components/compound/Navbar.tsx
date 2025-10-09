@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import nav_logo from "../../../assets/images/nav-logo.svg";
+import nav_logo from "../../../assets/images/dental Opulence logo.svg";
 import pointer_down from "../../../assets/images/pointer-down.svg";
 import logo_background_overlay from "../../../assets/images/logo-bg-overlay.svg";
 import nav_drop_down_img from "../../../assets/images/nav-drop-down-img-optimized.jpg";
@@ -40,14 +40,14 @@ const Navbar = () => {
   return (
     <div className="relative lg:px-[100px] sm:px-[40px] px-[20px] w-full h-full">
       <nav className="fixed w-fit mix-blend-difference bg-transparent flex items-center justify-between top-[30px] z-[10]">
-        <Link href="/" className="nav-logo-wrapper flex items-center cursor-pointer pr-4 pt-4 pb-4 overflow-visible">
+        <Link href="/" className="nav-logo-wrapper flex items-center cursor-pointer p-1 -ml-[6px]">
           <Image
             width={120}
             height={50}
             src={nav_logo}
             alt="Dentist in Hall Green"
             title="Dental Opulence"
-            className="w-[100px] sm:w-[110px] md:w-[120px] h-auto object-contain overflow-visible"
+            className="w-[100px] sm:w-[110px] md:w-[120px] h-auto object-contain"
             priority
             quality={100}
           />
