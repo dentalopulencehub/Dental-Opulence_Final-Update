@@ -24,13 +24,23 @@ import FixedRetainersHero from "./FixedRetainersSection/FixedRetainersHero";
 import FixedRetainersVideo from "./FixedRetainersSection/FixedRetainersVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
 
-  
+
   export default function invisalign() {
     return (
       <Layout>
+        <Head>
+          <title>Fixed Retainers Hall Green | Permanent Retainers | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Fixed Retainers in Hall Green provide permanent teeth retention solutions after orthodontic treatment to maintain your straight smile. Book today!"
+          />
+          <meta name="keywords" content="Fixed retainers Hall Green, Permanent retainers Birmingham, Orthodontic retainers Hall Green, Teeth retention Hall Green" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/fixed-retainers" />
+        </Head>
         <Navbar />
         <FixedRetainersHero/>
         <ServiceAward />

@@ -109,22 +109,22 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full font-inter">
+          <div className="w-full font-Pangram-Regular">
             <div className="grid grid-cols-2 md:flex md:flex-wrap md:gap-[49px] justify-between">
               <div className="flex flex-col gap-10 w-[176px] h-[300px]"> {/* Added flex-1 */}
                 <div>
-                  <h3 className="text-white font-inter  text-xl">
+                  <h3 className="text-white font-Pangram-Regular  text-xl">
                     Quick Links
                   </h3>
                   <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                    <p className="text-sm font-light  font-inter text-[#A2A2A2] font-inter cursor-pointer  mt-5">
+                    <p className="text-sm font-light  font-Pangram-Regular text-[#A2A2A2] font-Pangram-Regular cursor-pointer  mt-5">
                       Home
                     </p>
                   </div>
                   <div
                     onClick={() => handleSetPathToNavigate(dispatch, "/about")}
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       About us
                     </p>
                   </div>
@@ -134,7 +134,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/our-pricing")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Pricing
                     </p>
                   </div>
@@ -142,7 +142,7 @@ const Footer = () => {
                   <div
                     onClick={() => handleSetPathToNavigate(dispatch, "/cases")}
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Cases
                     </p>
                   </div>
@@ -151,7 +151,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/testimonials")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Testimonials
                     </p>
                   </div>
@@ -160,7 +160,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/contact")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Contact us
                     </p>
                   </div>
@@ -169,17 +169,17 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/blog")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Blog
                     </p>
                   </div>
                 </div>
               </div>
               <div className="flex-1 h-[300px]"> {/* Added flex-1 */}
-                <h3 className="text-white font-inter text-xl mb-5">
+                <h3 className="text-white font-Pangram-Regular text-xl mb-5">
                   Opening Hours
                 </h3>
-                <div className="grid grid-cols-[1fr,10px,1fr] text-sm text-[#A2A2A2] font-inter">
+                <div className="grid grid-cols-2 gap-8 text-sm text-[#A2A2A2] font-Pangram-Regular">
                   <div className="space-y-5">
                     <p>Sunday</p>
                     <p>Monday</p>
@@ -188,15 +188,6 @@ const Footer = () => {
                     <p>Thursday</p>
                     <p>Friday</p>
                     <p>Saturday</p>
-                  </div>
-                  <div className="space-y-5">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
                   </div>
                   <div className="space-y-5">
                     <p>Closed</p>
@@ -211,13 +202,13 @@ const Footer = () => {
               </div>
               <div className="flex flex-col gap-10 w-[176px] md:mt-0 mt-8 flex-1 h-[350px]"> {/* Added flex-1 */}
                 <div>
-                  <h3 className="text-white   font-inter text-xl">Legal</h3>
+                  <h3 className="text-white   font-Pangram-Regular text-xl">Legal</h3>
                   <div
                     onClick={() =>
                       handleSetPathToNavigate(dispatch, "/privacy-policy")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Privacy Policy
                     </p>
                   </div>
@@ -226,7 +217,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/complaints-procedure")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Complaints Procedure
                     </p>
                   </div>
@@ -236,7 +227,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/terms-of-use")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Terms of Use
                     </p>
                   </div>
@@ -246,7 +237,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/health-and-safety")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Health & Safety
                     </p>
                   </div>
@@ -255,7 +246,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/appointment-terms")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Appointment Terms
                     </p>
                   </div>
@@ -265,7 +256,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/data-protection")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Data Protection
                     </p>
                   </div>
@@ -274,7 +265,7 @@ const Footer = () => {
                       handleSetPathToNavigate(dispatch, "/cookie-policy")
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Cookie Policy
                     </p>
                   </div>
@@ -287,7 +278,7 @@ const Footer = () => {
                       )
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Competitions & Offers Terms
                     </p>
                   </div>
@@ -299,7 +290,7 @@ const Footer = () => {
                       )
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Smile White Giveaway
                     </p>
                   </div>
@@ -311,36 +302,36 @@ const Footer = () => {
                       )
                     }
                   >
-                    <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5">
+                    <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5">
                       Sitemap
                     </p>
                   </div>
                 </div>
               </div>
               <div className="flex-1 h-[300px]"> {/* Added flex-1 */}
-                <h3 className="text-white mt-7 md:mt-0 font-inter text-xl">Our Info</h3>
+                <h3 className="text-white mt-7 md:mt-0 font-Pangram-Regular text-xl">Our Info</h3>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                  <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5 flex items-center gap-2">
                     <Image src={letter_icon} alt="" />
-                    <span className="font-inter">info@do.co.uk</span>
+                    <span className="font-Pangram-Regular">info@do.co.uk</span>
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                  <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5 flex items-center gap-2">
                     <Image src={phone_icon} alt="" />
-                    <span className="font-inter">0121 272 9229</span>
+                    <span className="font-Pangram-Regular">0121 272 9229</span>
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-center gap-2">
+                  <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5 flex items-center gap-2">
                     <Image src={whatsapp_icon_mini} alt="" />
-                    <span className="font-inter">+447301253447</span>
+                    <span className="font-Pangram-Regular">+447301253447</span>
                   </p>
                 </div>
                 <div onClick={() => handleSetPathToNavigate(dispatch, null)}>
-                  <p className="text-sm text-[#A2A2A2] font-inter cursor-pointer   mt-5 flex items-start gap-2">
+                  <p className="text-sm text-[#A2A2A2] font-Pangram-Regular cursor-pointer   mt-5 flex items-start gap-2">
                     <Image src={location_icon} alt="" />
-                    <span className="font-inter">
+                    <span className="font-Pangram-Regular">
                       1190 Stratford Rd,
                       <br /> Birmingham B28 8AB,
                       <br /> United Kingdom
@@ -352,8 +343,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#454545] w-full h-[1px] mt-[60px]" />
-        <p className="text-center text-sm font-light  font-inter max-w-[788px] mx-auto text-white mt-[60px]">
+        <p className="text-center text-sm font-light  font-Pangram-Regular max-w-[788px] mx-auto text-white mt-[140px] mb-[40px]">
           Copyright © {new Date().getFullYear()} John Clive Industries Ltd.
           Registered in England and Wales, UK. All rights reserved. Website
           Developed by Lintech Group

@@ -17,7 +17,7 @@ export default function Document() {
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="P5YegVXkovfmkro7y9zhmgj0jlxcMR-lsMrU7ULfZ3M" />
 
-        <meta name="description" content="Dental Opulence" />
+        {/* Page-specific meta descriptions are set in individual pages */}
         {/* <title>Dental Opulence</title> */}
         <link rel="shortcut icon" href="/384.png" />
         <link rel="mask-icon" href="/384.png" color="#FFFFFF" />

@@ -27,12 +27,22 @@ import ScaleAndPolishHero from "./scaleAndPolish/scaleAndPolishHero";
 import ScaleAndPolishVideo from "./scaleAndPolish/scaleAndPolishVideo";
 import SedationHero from "./sedation/SedationHero";
 import SedationVideo from "./sedation/SedationVideo";
+import Head from "next/head";
 
 
-  
+
   export default function Sedation() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Sedation Hall Green | Sedation Dentistry | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Dental Sedation in Hall Green provides anxiety-free treatment for nervous patients with safe and comfortable sedation options. Book today!"
+          />
+          <meta name="keywords" content="Dental sedation Hall Green, Sedation dentistry Birmingham, Anxiety-free dentistry Hall Green, Nervous patient treatment" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/sedation" />
+        </Head>
         <Navbar />
         <SedationHero/>
         <ServiceAward />

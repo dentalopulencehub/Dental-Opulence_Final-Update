@@ -137,7 +137,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a className="py-3 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-sm ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0" href='https://book.do.co.uk/' target="_blank">
+          <a className="py-3 cursor-pointer px-4 rounded-[34px] bg-white text-[#100E10] font-Pangram-Medium text-sm ml-10 hover:text-white hover:bg-transparent border border-transparent hover:border-white duration-0" href='https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ' target="_blank">
           Book now
           </a>
           {/* <PrimaryLink

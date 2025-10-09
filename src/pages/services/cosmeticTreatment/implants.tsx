@@ -26,12 +26,22 @@ import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeB
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import ImplantsHero from "./Implants/ImplantsHero";
 import ImplantsVideo from "./Implants/ImplantsVideo";
+import Head from "next/head";
 
 
-  
+
   export default function Implants() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Implants Hall Green | Tooth Implants | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Dental Implants in Hall Green provide permanent tooth replacement solutions to restore function, appearance, and confidence. Book today!"
+          />
+          <meta name="keywords" content="Dental implants Hall Green, Tooth implants Birmingham, Dental implant surgery Hall Green, Permanent teeth replacement" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/implants" />
+        </Head>
         <Navbar />
         <ImplantsHero/>
         <ServiceAward />

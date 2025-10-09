@@ -88,7 +88,7 @@ export const blogPosts: BlogPostType[] = [
   <h2>The Invisalign Treatment Process at Dental Opulence</h2>
 
   <h3>Step 1: Initial Consultation</h3>
-  <p>During your <a href="https://book.do.co.uk/" target="_blank">free consultation</a>, we'll:</p>
+  <p>During your <a href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ" target="_blank">free consultation</a>, we'll:</p>
   <ul>
     <li>Assess your teeth and bite alignment</li>
     <li>Discuss your smile goals and concerns</li>
@@ -182,7 +182,7 @@ export const blogPosts: BlogPostType[] = [
 
   <p>Invisalign is more than an orthodontic treatment—it's an investment in your confidence, health, and overall quality of life. From improved oral health to enhanced self-esteem, the benefits extend far beyond a straighter smile.</p>
 
-  <p>Ready to discover how Invisalign can transform your life? <a href="https://book.do.co.uk/" target="_blank">Book your free consultation</a> at Dental Opulence today. Our expert team will assess your smile, answer your questions, and create a personalized treatment plan tailored to your goals.</p>
+  <p>Ready to discover how Invisalign can transform your life? <a href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ" target="_blank">Book your free consultation</a> at Dental Opulence today. Our expert team will assess your smile, answer your questions, and create a personalized treatment plan tailored to your goals.</p>
 
   <p>For more information about our orthodontic services, visit our <a href="/services/cosmeticTreatment/invisalign">Invisalign page</a> or explore our other <a href="/services/cosmeticTreatment/composite-veneers">cosmetic dentistry options</a>.</p>`,
     image: "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/e558e2c1-0ff6-4866-5208-4e350b051300/public",
@@ -362,7 +362,7 @@ export const blogPosts: BlogPostType[] = [
     <li>Offer comprehensive aftercare and guarantees</li>
   </ul>
 
-  <p><a href="https://book.do.co.uk/" target="_blank">Book your consultation</a> today to discuss how we can help you achieve your dream smile safely and effectively.</p>`,
+  <p><a href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ" target="_blank">Book your consultation</a> today to discuss how we can help you achieve your dream smile safely and effectively.</p>`,
     image: "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/2c22eae3-ef85-48dc-2fbd-72ef61936c00/public",
     date: "2025-02-20",
     author: "Dr Ali",
@@ -427,7 +427,7 @@ export const blogPosts: BlogPostType[] = [
     <p>Opening bottles or tearing packets with your teeth can cause chips and fractures. Keep your smile safe — use the right tool instead!</p>
 
     <h2>4. Skipping Dental Appointments</h2>
-    <p>Regular check-ups prevent small issues from becoming painful (and expensive) problems. <a href="https://book.do.co.uk/" target="_blank">Book your dental check-up</a> every six months.</p>
+    <p>Regular check-ups prevent small issues from becoming painful (and expensive) problems. <a href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ" target="_blank">Book your dental check-up</a> every six months.</p>
 
     <h2>5. Drinking Too Many Fizzy Drinks</h2>
     <p>Even "diet" drinks contain acid that erodes enamel. Stick to water or milk when possible.</p>
@@ -522,7 +522,7 @@ export const blogPosts: BlogPostType[] = [
       <li><strong>Maintenance:</strong> Keep your new smile bright with hygiene visits</li>
     </ul>
 
-    <p><a href="https://book.do.co.uk/" target="_blank">Book a consultation</a> to start your smile makeover journey.</p>`,
+    <p><a href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ" target="_blank">Book a consultation</a> to start your smile makeover journey.</p>`,
     image: "https://imagedelivery.net/W93NbEGaswuledAsk5GMeA/519a1b99-41ff-4dfe-ecd6-74948d967000/public",
     date: "2025-01-20",
     author: "Dr Ali",

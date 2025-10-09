@@ -23,12 +23,22 @@ import ExaminationHero from "./examination/examinationHero";
 import ExaminationVideo from "./examination/examinationVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
-  
+
   export default function Examination() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Examination Hall Green | Comprehensive Check-up | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Dental Examination in Hall Green provides thorough oral health assessments, early problem detection, and treatment planning. Book today!"
+          />
+          <meta name="keywords" content="Dental examination Hall Green, Dental assessment Birmingham, Oral health check Hall Green, Comprehensive dental exam" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/examination" />
+        </Head>
         <Navbar />
         <ExaminationHero/>
         <ServiceAward />

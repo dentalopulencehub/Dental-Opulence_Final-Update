@@ -144,7 +144,7 @@ const Index = ({ children }: Props) => {
   const toggleLeftExpanded = () => {
     setIsLeftExpanded(!isLeftExpanded); // Toggle left button
     if (!isLeftExpanded) {
-      window.open("https://book.do.co.uk/");
+      window.open("https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ");
     }
   };
 
@@ -216,7 +216,7 @@ const Index = ({ children }: Props) => {
         <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[800] bg-white/95 backdrop-blur-sm border-t border-gray-100 shadow-lg">
           <div className="flex items-center justify-between gap-2 px-4 py-2">
             <a
-              href="https://book.do.co.uk/"
+              href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#000000] text-white flex-1 py-2 rounded-full text-sm font-Pangram-Bold hover:bg-[#2f2f2f] transition-colors duration-200 text-center"

@@ -22,13 +22,22 @@ import RoutineExaminationHero from "./RoutineExaminationSection/RoutineExaminati
 import RoutineExaminationVideo from "./RoutineExaminationSection/RoutineExaminationVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
 
-  
   export default function RoutineExamination() {
     return (
       <Layout>
+        <Head>
+          <title>Routine Dental Examination Hall Green | Dental Check-up | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Routine Examination in Hall Green includes comprehensive dental check-ups, early detection, and preventative care. Book today!"
+          />
+          <meta name="keywords" content="Routine dental examination Hall Green, Dental check-up Birmingham, Dental screening Hall Green, Preventative dentistry" />
+          <link rel="canonical" href="https://www.do.co.uk/services/cosmeticTreatment/routine-examination" />
+        </Head>
         <Navbar />
         <RoutineExaminationHero/>
         <ServiceAward />

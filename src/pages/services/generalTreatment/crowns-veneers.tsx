@@ -23,12 +23,22 @@ import CrownsVeneerHero from "./crownsVeneerSection/crownsVeneerHero";
 import CrownsVeneerVideo from "./crownsVeneerSection/crownsVeneerVideo";
 import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeBondingMain";
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
+import Head from "next/head";
 
 
-  
+
   export default function CrownsVeneers() {
     return (
       <Layout>
+        <Head>
+          <title>Dental Crowns Hall Green | Tooth Crowns | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Dental Crowns in Hall Green can restore damaged teeth, improve strength, and enhance your smile. Book today!"
+          />
+          <meta name="keywords" content="Dental crowns Hall Green, Tooth crowns Birmingham, Dental caps Hall Green, Crown restoration" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/crowns-veneers" />
+        </Head>
         <Navbar />
         <CrownsVeneerHero/>
         {/* <CrownsVeneerHero/> */}

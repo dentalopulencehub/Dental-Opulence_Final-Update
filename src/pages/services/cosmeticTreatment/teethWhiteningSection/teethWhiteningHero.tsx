@@ -50,7 +50,7 @@ const TeethWhiteningHero = () => {
 
           <div className="flex gap-4 w-full md:w-auto xs:mt-[56px] mt-[32px] sm:mx-0 mx-auto flex-col md:flex-row ">
             <Link
-              href="https://book.do.co.uk/"
+              href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ"
               target="_blank"
               title="Book now"
               className="py-4 px-8 text-center w-full md:w-auto rounded-[34px] text-white font-Pangram-Medium bg-[#100E10]  text-xs mt-6 hover:text-[#100E10] hover:bg-transparent border border-transparent hover:border-[#100E10] duration-0 cursor-pointer"

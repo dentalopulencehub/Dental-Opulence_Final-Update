@@ -25,12 +25,22 @@ import ServiceCompositeBondingMain from "@/components/compound/serviceCompositeB
 import ServiceHero2Main from "@/components/compound/ServiceHero2Main";
 import ScaleAndPolishHero from "./scaleAndPolish/scaleAndPolishHero";
 import ScaleAndPolishVideo from "./scaleAndPolish/scaleAndPolishVideo";
+import Head from "next/head";
 
 
-  
+
   export default function ScaleAndPolish() {
     return (
       <Layout>
+        <Head>
+          <title>Scale and Polish Hall Green | Professional Teeth Cleaning | Dental Opulence</title>
+          <meta
+            name="description"
+            content="At Dental Opulence, our Scale and Polish treatment in Hall Green removes plaque, tartar, and stains for a cleaner, brighter smile. Book today!"
+          />
+          <meta name="keywords" content="Scale and polish Hall Green, Teeth cleaning Birmingham, Professional dental cleaning Hall Green, Tartar removal" />
+          <link rel="canonical" href="https://www.do.co.uk/services/generalTreatment/scale-and-polish" />
+        </Head>
         <Navbar />
         <ScaleAndPolishHero/>
         <ServiceAward />
