@@ -43,9 +43,9 @@ const people = [
    },
   {
      id: 3,
-     name: 'Amelia Jamil', 
-     description: "Amelia joined Dental Opulence in November 2023 as a receptionist with aspirations to become a dental nurse. She brings a wealth of experience from working in both NHS and private dentistry settings. Her dedication to the field is evident in her enthusiastic approach to learning and growth within the dental practice.In her role as a receptionist, Amelia is dedicated to providing exceptional support to patients. She handles scheduling and manages appointments efficiently, ensuring that patients receive timely care. Amelia is also skilled at answering questions, addressing concerns, and creating a welcoming atmosphere that helps to ease any apprehensions patients may have about their treatments. Her commitment to making each visit smooth and comfortable reflects her deep care for patient well-being. Outside of her professional life, Amelia maintains a vibrant balance of interests. She enjoys going to the gym, baking, reading, and painting, which provide her with relaxation and creative fulfilment, complementing her dedication to her career.", 
-     designation:"Receptionist"
+     name: 'Amelia Jamil',
+     description: "Amelia joined Dental Opulence in November 2023 as a receptionist with aspirations to become a dental nurse. She brings a wealth of experience from working in both NHS and private dentistry settings. Her dedication to the field is evident in her enthusiastic approach to learning and growth within the dental practice.In her role as a receptionist, Amelia is dedicated to providing exceptional support to patients. She handles scheduling and manages appointments efficiently, ensuring that patients receive timely care. Amelia is also skilled at answering questions, addressing concerns, and creating a welcoming atmosphere that helps to ease any apprehensions patients may have about their treatments. Her commitment to making each visit smooth and comfortable reflects her deep care for patient well-being. Outside of her professional life, Amelia maintains a vibrant balance of interests. She enjoys going to the gym, baking, reading, and painting, which provide her with relaxation and creative fulfilment, complementing her dedication to her career.",
+     designation:"Dental Office Manager"
     },
   { 
     id: 4, 
@@ -68,16 +68,9 @@ const people = [
     gdc:244712
   },
   
-  { 
-    id: 7, 
-    name: 'Inayah Sajad', 
-    description: "Inayah joined Dental Opulence in January 2024 as a Dental Nurse. Inayah has always enjoyed dentistry and found it very interesting. She qualified in 2021 and has been working as a Dental Nurse since.Cosmetic Dentistry is her favourite! Although she has nursed for all types of dental treatments including implants, surgical extractions and even procedures done under sedation. Inayah likes to spend her free time going out with friends and family." ,
-    designation:"Nurse",
-    gdc:299706
-  },
-  { 
-    id: 8, 
-    name: 'Anahita Salehi ', 
+  {
+    id: 7,
+    name: 'Anahita Salehi ',
     description: "Anahita Salehi graduated from Birjand Dental School in Iran in 2019 and worked as a dedicated dental professional until 2023. Currently, she is pursuing a master's degree in Dental Materials at the University of Birmingham.In her free time, Anahita enjoys painting, hitting the gym, and she has a particular passion for reading, and discovering new cuisines. After graduation, Anahita gained extensive experience in various areas of dentistry, including aligners, aesthetic dentistry, and general dental treatments." ,
     designation:"Trainee"
   },

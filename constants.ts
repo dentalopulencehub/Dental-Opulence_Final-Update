@@ -957,7 +957,7 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Crowns / Veneers",
-    price: "£650",
+    price: "from £650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
       "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
@@ -1106,7 +1106,7 @@ export const our_services2: HomeOurServicesType[] = [
 
   {
     title: "Crowns/Veneers",
-    price: "£650",
+    price: "from £650",
     href: "/services/cosmeticTreatment/crowns-veneers",
     description:
       "Crowns and veneers are custom-made dental solutions designed to restore and enhance the appearance of your teeth.",
@@ -1197,7 +1197,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Crowns / Veneers",
-    price: "£650",
+    price: "from £650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
       "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
@@ -1294,7 +1294,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
   {
     title: "Crowns/Veneers",
-    price: "£650",
+    price: "from £650",
     href: "/services/cosmeticTreatment/crowns-veneers",
     description:
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
