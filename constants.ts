@@ -1399,6 +1399,16 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
 
   {
+    title: "Composite Bonded Veneers",
+    price: "from £350",
+    href: "/services/cosmeticTreatment/composite-veneers",
+    description:
+      "Composite bonded veneers reshape and brighten your front teeth in a single visit, without removing healthy enamel.",
+    image: composite_veneers_service_icon,
+    image_inverted: composite_veneers_service_icon_light,
+  },
+
+  {
     title: "Gum Contouring",
     price: "from £150",
     href: "/contact",
