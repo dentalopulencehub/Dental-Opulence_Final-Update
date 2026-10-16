@@ -58,7 +58,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { loc: `${DOMAIN}/services/cosmeticTreatment/implants`, lastmod: currentDate, changefreq: 'monthly', priority: 0.8 },
     { loc: `${DOMAIN}/services/cosmeticTreatment/fixed-retainers`, lastmod: currentDate, changefreq: 'monthly', priority: 0.7 },
     { loc: `${DOMAIN}/services/cosmeticTreatment/vivera-retainers`, lastmod: currentDate, changefreq: 'monthly', priority: 0.7 },
-    { loc: `${DOMAIN}/services/cosmeticTreatment/internal-tooth-whitening`, lastmod: currentDate, changefreq: 'monthly', priority: 0.7 },
     { loc: `${DOMAIN}/services/cosmeticTreatment/routine-examination`, lastmod: currentDate, changefreq: 'monthly', priority: 0.7 },
 
     // General Treatment Services

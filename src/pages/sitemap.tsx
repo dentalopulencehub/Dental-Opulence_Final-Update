@@ -121,11 +121,6 @@ export default function Sitemap() {
                     Vivera Retainers
                   </Link>
                 </li>
-                <li>
-                  <Link href="/services/cosmeticTreatment/internal-tooth-whitening" className="text-[#161616] hover:text-[#666] transition-colors">
-                    Internal Tooth Whitening
-                  </Link>
-                </li>
               </ul>
             </div>
 

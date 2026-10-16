@@ -184,24 +184,7 @@ export const compositeBondingFaq: FaqType[] = [
       "Composite bonding offers several benefits, including being a minimally invasive and quick procedure that can often be completed in one visit. It is less expensive than other cosmetic treatments and provides a natural-looking result. Additionally, the composite resin material bonds well to the tooth structure, adding strength and durability.",
   },
 ];
-export const internalTeethWhiteFaq: FaqType[] = [
-  {
-    question: "What is internal tooth whitening and when is it needed?",
-    answer:
-      "Internal tooth whitening is a procedure used to lighten a tooth that has darkened due to internal staining, often as a result of trauma, decay, or a previous root canal treatment. Unlike external whitening, which treats the outer surface, internal whitening targets the discolouration from within the tooth.",
-  },
 
-  {
-    question: "How is the internal tooth whitening procedure performed?",
-    answer:
-      "During the internal whitening procedure, a bleaching agent is placed inside the tooth. The tooth is then sealed temporarily, allowing the bleaching agent to work from within. This process may need to be repeated several times over a few weeks until the desired level of whiteness is achieved.",
-  },
-  {
-    question: "How long do the results of internal tooth whitening last?",
-    answer:
-      "The results of internal tooth whitening can last several years, but it depends on your oral hygiene habits and dietary choices. Regular dental check-ups and good oral hygiene practices can help maintain the whiteness of the treated tooth.",
-  },
-];
 
 export const compositeEdgeFaq: FaqType[] = [
   {

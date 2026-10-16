@@ -159,7 +159,6 @@ export type serviceType =
   | "composite-veneers"
   | "composite-bonding"
   | "routine-examination"
-  | "internal-tooth-whitening"
   | "composite-edge-bonding";
 
 export type BlogPostType = {

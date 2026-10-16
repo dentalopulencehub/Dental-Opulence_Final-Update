@@ -46,6 +46,18 @@ const nextConfig = {
   // Performance optimizations
   swcMinify: true, // Use SWC for minification (faster than Terser)
 
+  // Redirects
+  async redirects() {
+    return [
+      {
+        // Internal tooth whitening is no longer offered - send visitors to teeth whitening
+        source: '/services/cosmeticTreatment/internal-tooth-whitening',
+        destination: '/services/cosmeticTreatment/teeth-whitening',
+        permanent: true,
+      },
+    ];
+  },
+
   // Security Headers
   async headers() {
     return [

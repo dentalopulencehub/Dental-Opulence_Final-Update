@@ -47,8 +47,6 @@ import composite_bonding_service_icon from "../assets/images/composite-bonding-s
 import composite_bonding_service_icon_light from "../assets/images/composite-bonding-service-icon-light.svg";
 import routine_examination_service_icon from "../assets/images/routine-examination-service-icon.svg";
 import routine_examination_service_icon_light from "../assets/images/routine-examination-service-icon-light.svg";
-import internal_tooth_whitening_service_icon from "../assets/images/internal-tooth-whitening-service-icon.svg";
-import internal_tooth_whitening_service_icon_light from "../assets/images/internal-tooth-whitening-service-icon-light.svg";
 import composite_edge_bonding_service_icon from "../assets/images/composite-edge-bonding-service-icon.svg";
 import composite_edge_bonding_service_icon_light from "../assets/images/composite-edge-bonding-service-icon-light.svg";
 
@@ -68,7 +66,6 @@ import crowns_service_hero_image from "../assets/images/crowns-service-hero-imag
 import composite_veneers_service_hero_image from "../assets/images/composite-veneers-service-image.svg";
 import composite_bonding_service_hero_image from "../assets/images/compositeB-service-hero-image.svg";
 import routine_examination_service_hero_image from "../assets/images/routine-examination-service-image.svg";
-import internal_tooth_whiteneing_service_hero_image from "../assets/images/internal-tooth-whitening-service-image.svg";
 import composite_edge_bonding_service_hero_image from "../assets/images/composite-edge-bonding-service-image.svg";
 
 export const services_page_data: ServicePageDataType[] = [
@@ -201,14 +198,6 @@ export const services_page_data: ServicePageDataType[] = [
       "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That's why we offer dental bridges as a solution for replacing missing teeth.",
     heroImage: routine_examination_service_hero_image,
     type: "routine-examination",
-  },
-  {
-    title: "Internal Tooth Whitening",
-    price: "£650",
-    description:
-      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That's why we offer dental bridges as a solution for replacing missing teeth.",
-    heroImage: internal_tooth_whiteneing_service_hero_image,
-    type: "internal-tooth-whitening",
   },
   {
     title: "Composite Edge Bonding",
@@ -351,7 +340,7 @@ export const our_services: HomeOurServicesType[] = [
 export const our_services2: HomeOurServicesType[] = [
   {
     title: "Invisalign",
-    price: "from £2500",
+    price: "from £2999",
     href: "/services/cosmeticTreatment/invisalign",
     description:
       "Invisalign aligners are comfortable, nearly invisible, and effectively straighten teeth with personalized guidance.",
@@ -412,15 +401,6 @@ export const our_services2: HomeOurServicesType[] = [
       "Vivera retainers are custom-made, durable, and nearly invisible, preserving teeth alignment after orthodontic treatment.",
     image: vivera_retainers_service_icon,
     image_inverted: vivera_retainers_service_icon_light,
-  },
-  {
-    title: "Internal Tooth Whitening",
-    price: "£350",
-    href: "/services/cosmeticTreatment/internal-tooth-whitening",
-    description:
-      "Internal tooth whitening safely brightens discolored teeth from within, customized to enhance your smile and confidence.",
-    image: internal_tooth_whitening_service_icon,
-    image_inverted: internal_tooth_whitening_service_icon_light,
   },
 
   {
@@ -604,7 +584,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
   {
     title: "Invisalign",
-    price: "from £2500",
+    price: "from £2999",
     href: "/services/cosmeticTreatment/invisalign",
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
@@ -619,15 +599,6 @@ export const our_pricing_services2: HomeOurServicesType[] = [
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_service_icon,
     image_inverted: crown_veneers_service_icon_light,
-  },
-  {
-    title: "Internal Tooth Whitening",
-    price: "£350",
-    href: "/services/cosmeticTreatment/internal-tooth-whitening",
-    description:
-      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
-    image: internal_tooth_whitening_service_icon,
-    image_inverted: internal_tooth_whitening_service_icon_light,
   },
   {
     title: "Teeth Whitening",

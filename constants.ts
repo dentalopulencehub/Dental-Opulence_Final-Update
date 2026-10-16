@@ -53,8 +53,6 @@ import composite_bonding_link_icon from "./assets/images/composite-bonding-link-
 import composite_bonding_link_icon_light from "./assets/images/composite-bonding-link-icon-light.svg";
 import routine_examination_link_icon from "./assets/images/routine-examination-link-icon.svg";
 import routine_examination_link_icon_light from "./assets/images/routine-examination-link-icon-light.svg";
-import internal_tooth_whitening_link_icon from "./assets/images/internal-tooth-whitening-link-icon.svg";
-import internal_tooth_whitening_link_icon_light from "./assets/images/internal-tooth-whitening-link-icon-light.svg";
 import composite_edge_bonding_link_icon from "./assets/images/composite-edge-bonding-link-icon.svg";
 import composite_edge_bonding_link_icon_light from "./assets/images/composite-edge-bonding-link-icon-light.svg";
 
@@ -128,8 +126,6 @@ import composite_bonding_service_icon from "./assets/images/composite-bonding-se
 import composite_bonding_service_icon_light from "./assets/images/composite-bonding-service-icon-light.svg";
 import routine_examination_service_icon from "./assets/images/routine-examination-service-icon.svg";
 import routine_examination_service_icon_light from "./assets/images/routine-examination-service-icon-light.svg";
-import internal_tooth_whitening_service_icon from "./assets/images/internal-tooth-whitening-service-icon.svg";
-import internal_tooth_whitening_service_icon_light from "./assets/images/internal-tooth-whitening-service-icon-light.svg";
 import composite_edge_bonding_service_icon from "./assets/images/composite-edge-bonding-service-icon.svg";
 import composite_edge_bonding_service_icon_light from "./assets/images/composite-edge-bonding-service-icon-light.svg";
 
@@ -302,7 +298,6 @@ import crowns_service_hero_image from "./assets/images/crowns-service-hero-image
 import composite_veneers_service_hero_image from "./assets/images/composite-veneers-service-image.svg";
 import composite_bonding_service_hero_image from "./assets/images/compositeB-service-hero-image.svg";
 import routine_examination_service_hero_image from "./assets/images/routine-examination-service-image.svg";
-import internal_tooth_whiteneing_service_hero_image from "./assets/images/internal-tooth-whitening-service-image.svg";
 import composite_edge_bonding_service_hero_image from "./assets/images/composite-edge-bonding-service-image.svg";
 
 import service_01 from "./assets/images/service-01.svg";
@@ -664,14 +659,6 @@ export const services_page_data: ServicePageDataType[] = [
     type: "routine-examination",
   },
   {
-    title: "Internal Tooth Whitening",
-    price: "£650",
-    description:
-      "At our dental practice, we understand that missing teeth can affect not only your oral health but also your self-confidence. That’s why we offer dental bridges as a solution for replacing missing teeth.",
-    heroImage: internal_tooth_whiteneing_service_hero_image,
-    type: "internal-tooth-whitening",
-  },
-  {
     title: "Composite Edge Bonding",
     price: "£650",
     description:
@@ -814,12 +801,6 @@ export const navlinks = [
         href: "/services/cosmeticTreatment/routine-examination",
         icon: routine_examination_link_icon,
         icon_hovered: routine_examination_link_icon,
-      },
-      {
-        title: "Internal Tooth Whitening",
-        href: "/services/cosmeticTreatment/internal-tooth-whitening",
-        icon: internal_tooth_whitening_link_icon,
-        icon_hovered: internal_tooth_whitening_link_icon,
       },
       {
         title: "Composite Edge Bonding",
@@ -1032,7 +1013,7 @@ export const our_services: HomeOurServicesType[] = [
 export const our_services2: HomeOurServicesType[] = [
   {
     title: "Invisalign",
-    price: "from £2500",
+    price: "from £2999",
     href: "/services/cosmeticTreatment/invisalign",
     description:
       "Invisalign aligners are comfortable, nearly invisible, and effectively straighten teeth with personalized guidance.",
@@ -1093,15 +1074,6 @@ export const our_services2: HomeOurServicesType[] = [
       "Vivera retainers are custom-made, durable, and nearly invisible, preserving teeth alignment after orthodontic treatment.",
     image: vivera_retainers_service_icon,
     image_inverted: vivera_retainers_service_icon_light,
-  },
-  {
-    title: "Internal Tooth Whitening",
-    price: "£350",
-    href: "/services/cosmeticTreatment/internal-tooth-whitening",
-    description:
-      "Internal tooth whitening safely brightens discolored teeth from within, customized to enhance your smile and confidence.",
-    image: internal_tooth_whitening_service_icon,
-    image_inverted: internal_tooth_whitening_service_icon_light,
   },
 
   {
@@ -1285,7 +1257,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
   {
     title: "Invisalign",
-    price: "from £2500",
+    price: "from £2999",
     href: "/services/cosmeticTreatment/invisalign",
     description:
       "Rediscover Confidence, Embrace Comfort: Tailored Dentures for Your Perfect Smile.",
@@ -1300,15 +1272,6 @@ export const our_pricing_services2: HomeOurServicesType[] = [
       "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
     image: crown_veneers_service_icon,
     image_inverted: crown_veneers_service_icon_light,
-  },
-  {
-    title: "Internal Tooth Whitening",
-    price: "£350",
-    href: "/services/cosmeticTreatment/internal-tooth-whitening",
-    description:
-      "Beyond Every Smile Lies a Story: Thorough Examinations for Your Dental Well-being.",
-    image: internal_tooth_whitening_service_icon,
-    image_inverted: internal_tooth_whitening_service_icon_light,
   },
   {
     title: "Teeth Whitening",
@@ -1926,30 +1889,6 @@ export const serviceElevet_CompositeBonding: ServiceElevateType[] = [
   },
 ];
 
-export const serviceElevet_InternalToothWhitening: ServiceElevateType[] = [
-  {
-    topTitle: "Internal Tooth Whitening",
-    title: "Effective Stain Removal",
-    description:
-      "Internal tooth whitening effectively removes deep stains and discoloration from within the tooth, resulting in a brighter smile.",
-    number_img: service_01,
-  },
-  {
-    topTitle: "",
-    title: "Non-Invasive",
-    description:
-      "Unlike some other dental procedures, internal tooth whitening is minimally invasive and does not require any drilling or removal of tooth structure.",
-    number_img: service_02,
-  },
-  {
-    topTitle: "",
-    title: "Safety and Comfort",
-    description:
-      "The procedure is performed by experienced professionals in a controlled environment, ensuring your safety and comfort throughout.",
-    number_img: service_03,
-  },
-];
-
 export const serviceElevet_FixedRetainers: ServiceElevateType[] = [
   {
     topTitle: "Fixed Retainers",
@@ -2336,24 +2275,6 @@ export const serviceCompositeBonding_Implants: ServiceCompositeBondingType[] = [
       "Dental implants are titanium posts surgically placed in the jawbone to replace missing teeth. They serve as artificial tooth roots, providing a stable foundation for crowns or dentures, and help restore functionality and aesthetics to your smile effectively and durably.",
   },
 ];
-export const serviceCompositeBonding_InternalToothWhitening: ServiceCompositeBondingType[] =
-  [
-    {
-      situationTitle: "INTERNAL TOOTH WHITENING",
-
-      situationTitleData1: "Tooth discoloration",
-      situationTitleData2: "Root canal treatment",
-      situationTitleData3: "Internal bleeding",
-      situationTitleData4: "Non-vital teeth",
-      situationTitleData5: "Darkened teeth",
-
-      definationTitle: "Internal Tooth Whitening",
-      verb: "is",
-      definationTitleDesc:
-        "Internal tooth whitening involves applying a bleaching agent inside a tooth to whiten it from within. This procedure is typically used for teeth that have darkened due to trauma, root canal treatment, or intrinsic stains that cannot be treated externally.",
-    },
-  ];
-
 export const serviceCompositeBonding_FixedRetainers: ServiceCompositeBondingType[] =
   [
     {
@@ -2536,13 +2457,6 @@ export const serviceHero2Desc_compositeBonding: ServiceHero2TextDesc[] = [
   {
     textDes:
       "At Dental Opulence, we offer composite bonding with two options: edge bonding and veneers. Edge bonding addresses minor imperfections, while veneers provide a comprehensive smile transformation. Both options offer natural-looking results and can be tailored to your specific needs. Whether you seek a subtle enhancement or dramatic change, composite bonding offers versatile possibilities.",
-  },
-];
-
-export const serviceHero2Desc_InternalToothWhitening: ServiceHero2TextDesc[] = [
-  {
-    textDes:
-      "Internal tooth whitening is a safe and effective method for whitening discolored teeth from within. Our experienced team will customise a treatment plan to address your unique needs, enhancing your smile and boosting your confidence. Schedule a consultation today to learn more about the benefits of internal tooth whitening.",
   },
 ];
 
@@ -2770,25 +2684,6 @@ export const compositeBondingFaq: FaqType[] = [
       "Composite bonding offers several benefits, including being a minimally invasive and quick procedure that can often be completed in one visit. It is less expensive than other cosmetic treatments and provides a natural-looking result. Additionally, the composite resin material bonds well to the tooth structure, adding strength and durability.",
   },
 ];
-export const internalTeethWhiteFaq: FaqType[] = [
-  {
-    question: "What is internal tooth whitening and when is it needed?",
-    answer:
-      "Internal tooth whitening is a procedure used to lighten a tooth that has darkened due to internal staining, often as a result of trauma, decay, or a previous root canal treatment. Unlike external whitening, which treats the outer surface, internal whitening targets the discolouration from within the tooth.",
-  },
-
-  {
-    question: "How is the internal tooth whitening procedure performed?",
-    answer:
-      "During the internal whitening procedure, a bleaching agent is placed inside the tooth. The tooth is then sealed temporarily, allowing the bleaching agent to work from within. This process may need to be repeated several times over a few weeks until the desired level of whiteness is achieved.",
-  },
-  {
-    question: "How long do the results of internal tooth whitening last?",
-    answer:
-      "The results of internal tooth whitening can last several years, but it depends on your oral hygiene habits and dietary choices. Regular dental check-ups and good oral hygiene practices can help maintain the whiteness of the treated tooth.",
-  },
-];
-
 export const compositeEdgeFaq: FaqType[] = [
   {
     question: "What is composite edge bonding and how is it used?",
@@ -3231,11 +3126,6 @@ export const residentialForm = [
     title: "Select service type",
     id: 7,
     label: "Invisalign",
-  },
-  {
-    title: "Select service type",
-    id: 8,
-    label: "Internal Tooth Whitening",
   },
   {
     title: "Select service type",

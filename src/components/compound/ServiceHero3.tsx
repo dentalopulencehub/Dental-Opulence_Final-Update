@@ -21,7 +21,6 @@ type VideoTitle =
   | "Composite Veneers"
   | "Composite Bonding"
   | "Routine Examination"
-  | "Internal Tooth Whitening"
   | "Composite Edge Bonding";
 
 const videoPaths: Record<VideoTitle, string> = {
@@ -41,7 +40,6 @@ const videoPaths: Record<VideoTitle, string> = {
   "Composite Veneers": "/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/CompositeVeneers.mp4",
   "Composite Bonding": "/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/CompositeEdgeBonding.mp4",
   "Routine Examination": "/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/RoutineExamiination.mp4",
-  "Internal Tooth Whitening": "/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/InternalToothWhitening.mp4",
   "Composite Edge Bonding": "/videos/DentalAllServicesVideo/CosmaticTreatmentCompressed/CompositeEdgeBonding.mp4",
 };
 

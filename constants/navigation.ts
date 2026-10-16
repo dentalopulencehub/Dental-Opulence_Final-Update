@@ -30,8 +30,6 @@ import composite_bonding_link_icon from "../assets/images/composite-bonding-link
 import composite_bonding_link_icon_light from "../assets/images/composite-bonding-link-icon-light.svg";
 import routine_examination_link_icon from "../assets/images/routine-examination-link-icon.svg";
 import routine_examination_link_icon_light from "../assets/images/routine-examination-link-icon-light.svg";
-import internal_tooth_whitening_link_icon from "../assets/images/internal-tooth-whitening-link-icon.svg";
-import internal_tooth_whitening_link_icon_light from "../assets/images/internal-tooth-whitening-link-icon-light.svg";
 import composite_edge_bonding_link_icon from "../assets/images/composite-edge-bonding-link-icon.svg";
 import composite_edge_bonding_link_icon_light from "../assets/images/composite-edge-bonding-link-icon-light.svg";
 
@@ -172,12 +170,6 @@ export const navlinks = [
         href: "/services/cosmeticTreatment/routine-examination",
         icon: routine_examination_link_icon,
         icon_hovered: routine_examination_link_icon,
-      },
-      {
-        title: "Internal Tooth Whitening",
-        href: "/services/cosmeticTreatment/internal-tooth-whitening",
-        icon: internal_tooth_whitening_link_icon,
-        icon_hovered: internal_tooth_whitening_link_icon,
       },
       {
         title: "Composite Edge Bonding",
