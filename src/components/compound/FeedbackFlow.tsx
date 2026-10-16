@@ -197,8 +197,8 @@ const FeedbackFlow = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] flex flex-col items-center justify-between mx-auto my-auto">
-      <div className="w-full h-[100vh] absolute flex items-center justify-center pointer-events-none">
+    <section className="relative bg-[#100E10] w-full min-h-[100svh] overflow-hidden pt-5 sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] pb-[110px] lg:pb-10 flex flex-col mx-auto">
+      <div className="w-full h-full absolute inset-0 flex items-center justify-center pointer-events-none">
         <svg
           width="1053"
           height="545"
@@ -220,9 +220,9 @@ const FeedbackFlow = () => {
       </div>
 
       {/* top bar: logo or back button, answered pills, close button */}
-      <div className="flex w-full items-center mt-4 md:mt-12 relative justify-between">
+      <div className="flex w-full items-center gap-3 md:mt-12 relative justify-between shrink-0">
         {isWelcome || isDone ? (
-          <nav className="mix-blend-difference h-[40px] md:h-[70px] bg-transparent cursor-pointer flex items-center justify-between">
+          <nav className="mix-blend-difference h-[44px] md:h-[70px] bg-transparent cursor-pointer flex items-center justify-between shrink-0">
             <div
               className="nav-logo-wrapper"
               onClick={() => handleSetPathToNavigate(reactContextDispatch, "/")}
@@ -237,73 +237,76 @@ const FeedbackFlow = () => {
             </div>
           </nav>
         ) : (
-          <div
-            className="arrow-main absolute left-0 border p-[5px] md:p-[22px] flex items-center justify-center w-[40px] h-[40px] md:w-[84px] md:h-[84px] rounded-full sm:scale-[1] scale-[0.5] cursor-pointer"
+          <button
+            type="button"
+            aria-label="Back to previous question"
+            className="arrow-main border flex items-center justify-center w-[48px] h-[48px] md:w-[84px] md:h-[84px] md:p-[22px] rounded-full cursor-pointer shrink-0"
             data-state="1"
             onClick={handleBack}
           >
             <div className="arrow-wrapper">
-              <span className="arrow-span h-[20px] md:h-[40px]">
+              <span className="arrow-span h-[22px] md:h-[40px]">
                 <Image
                   src={arrow_hex_1}
-                  alt="Back"
-                  className="arr-1 w-10 a-btn-1"
+                  alt=""
+                  className="arr-1 w-[22px] md:w-10 a-btn-1"
                   width={40}
                   height={40}
                 />
                 <Image
                   src={arrow_hex_1}
-                  alt="Back"
-                  className="arr-2 w-10 a-btn-2"
+                  alt=""
+                  className="arr-2 w-[22px] md:w-10 a-btn-2"
                   width={40}
                   height={40}
                 />
               </span>
             </div>
-          </div>
+          </button>
         )}
 
-        <div className="scroll w-full md:w-4/5 mx-auto flex md:flex-wrap items-center justify-center gap-2 md:gap-5 z-0 relative md:top-0 top-[55px] overflow-x-auto">
+        <div className="scroll flex-1 min-w-0 flex flex-wrap items-center justify-center gap-2 md:gap-5">
           {selectedPills.map((option, index) => (
-            <button
-              type="button"
+            <span
               key={index}
-              className="contact-bg bg-[#2D2D2D] border border-[#454545] thin flex items-center gap-2 md:text-sm text-[9px] px-3 py-2 text-white rounded-full"
+              className="contact-bg bg-[#2D2D2D] border border-[#454545] thin md:text-sm text-[11px] px-3 py-1.5 text-white rounded-full whitespace-nowrap"
             >
               {option}
-            </button>
+            </span>
           ))}
         </div>
 
-        <div
-          className="arrow-main absolute right-0 border p-[22px] w-[84px] h-[84px] sm:scale-[1] scale-[0.5] rounded-full cursor-pointer"
+        <button
+          type="button"
+          aria-label="Leave feedback form"
+          className="arrow-main border flex items-center justify-center w-[48px] h-[48px] md:w-[84px] md:h-[84px] md:p-[22px] rounded-full cursor-pointer shrink-0"
           data-state="1"
           onClick={() => router.back()}
         >
           <div className="arrow-wrapper">
-            <span className="arrow-span">
+            <span className="arrow-span h-[18px] md:h-[30px]">
               <Image
                 src={cancel}
-                alt="Close"
-                className="arr-1 w-10 a-btn-1"
+                alt=""
+                className="arr-1 w-[18px] md:w-[30px] a-btn-1"
                 width={30}
                 height={30}
               />
               <Image
                 src={cancel}
-                alt="Close"
-                className="arr-2 w-10 a-btn-2"
+                alt=""
+                className="arr-2 w-[18px] md:w-[30px] a-btn-2"
                 width={30}
                 height={30}
               />
             </span>
           </div>
-        </div>
+        </button>
       </div>
 
       {/* step content */}
-      <section className="w-full sm:w-4/5 sm:h-3/6 absolute top-[55%] sm:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-between">
-        <section className="w-full h-full flex flex-col items-center justify-center px-2">
+      <section className="w-full sm:w-4/5 mx-auto flex-1 flex flex-col items-center justify-center py-8 md:py-10">
+        <section className="w-full flex flex-col items-center justify-center">
           {isWelcome && (
             <div className="flex flex-col gap-8 md:gap-10 text-center" data-aos="fade-up-right">
               <div className="flex flex-col gap-3">
@@ -327,7 +330,7 @@ const FeedbackFlow = () => {
                 <button
                   type="button"
                   onClick={() => setStepIndex(0)}
-                  className="text-black bg-white hover:bg-[#E5E5E5] font-medium text-xs md:text-base rounded-full px-4 md:px-12 py-2 md:py-4 border-white border"
+                  className="text-black bg-white hover:bg-[#E5E5E5] font-medium text-base rounded-full min-h-[56px] w-full max-w-[320px] sm:w-auto px-10 md:px-12 py-4 border-white border"
                 >
                   Start
                 </button>
@@ -336,15 +339,16 @@ const FeedbackFlow = () => {
           )}
 
           {!isWelcome && !isDone && current?.kind === "rating" && (
-            <div className="flex flex-col gap-8 md:gap-10 text-center" data-aos="fade-up-right">
-              <h1 className="bold text-base md:text-3xl xl:text-5xl text-white max-w-[900px] mx-auto">
+            <div className="flex flex-col gap-7 md:gap-10 text-center w-full" data-aos="fade-up-right">
+              <h1 className="bold text-xl md:text-3xl xl:text-5xl text-white max-w-[900px] mx-auto leading-snug">
                 {current.question}
               </h1>
-              <div className="flex flex-wrap gap-2 md:gap-5 justify-center items-center">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 md:gap-5 justify-center items-stretch sm:items-center w-full max-w-[420px] sm:max-w-none mx-auto">
                 {current.options.map((option) => (
-                  <div
+                  <button
+                    type="button"
                     key={option}
-                    className={`contact-bg btn light text-center cursor-pointer flex items-center gap-2 text-sm md:text-base p-2 md:px-12 lg:py-6 rounded-full relative ${
+                    className={`contact-bg btn light text-center cursor-pointer flex items-center justify-center min-h-[56px] px-6 py-4 md:px-12 lg:py-6 text-base md:text-base rounded-full relative w-full sm:w-auto ${
                       answers[current.id] === option
                         ? "bg-white text-[#100E10]"
                         : "bg-[#2D2D2D] hover:bg-[#6b6969] text-white"
@@ -352,15 +356,15 @@ const FeedbackFlow = () => {
                     onClick={() => handleOptionSelect(option)}
                   >
                     {option}
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
           )}
 
           {!isWelcome && !isDone && current?.kind === "comment" && (
-            <div className="flex flex-col gap-6 md:gap-10 w-full max-w-[760px]" data-aos="fade-left">
-              <h1 className="bold text-base md:text-3xl xl:text-5xl text-white text-center">
+            <div className="flex flex-col gap-6 md:gap-10 w-full max-w-[760px] mx-auto" data-aos="fade-left">
+              <h1 className="bold text-xl md:text-3xl xl:text-5xl text-white text-center leading-snug">
                 {current.question}
               </h1>
               <textarea
@@ -380,7 +384,7 @@ const FeedbackFlow = () => {
                   type="button"
                   disabled={isSubmitting}
                   onClick={handleCommentNext}
-                  className="text-black bg-white hover:bg-[#E5E5E5] font-medium text-xs md:text-base rounded-full px-4 md:px-12 py-2 md:py-4 border-white border disabled:opacity-60"
+                  className="text-black bg-white hover:bg-[#E5E5E5] font-medium text-base rounded-full min-h-[56px] w-full sm:w-auto px-8 md:px-12 py-4 border-white border disabled:opacity-60"
                 >
                   {isSubmitting
                     ? "Sending..."
@@ -418,7 +422,7 @@ const FeedbackFlow = () => {
                 <Link
                   href="/"
                   type="button"
-                  className="text-black bg-white font-medium text-xs md:text-base rounded-full px-4 md:px-12 py-2 md:py-4 border-white border"
+                  className="text-black bg-white font-medium text-base rounded-full inline-flex items-center justify-center min-h-[56px] px-10 md:px-12 py-4 border-white border"
                 >
                   Home page
                 </Link>
@@ -429,14 +433,19 @@ const FeedbackFlow = () => {
       </section>
 
       {/* progress bar */}
-      <div className="w-full flex items-center justify-center mb-6 md:mb-10 relative">
+      <div className="w-full flex flex-col items-center justify-center gap-2 shrink-0">
         {!isWelcome && !isDone && (
-          <div className="absolute md:relative flex w-[90%] md:w-[50%] h-2 bg-[#5C5C5C] rounded-full bottom-3">
-            <div
-              className="bg-white h-full rounded-full transition-all duration-300"
-              style={{ width: progressWidth }}
-            />
-          </div>
+          <>
+            <div className="flex w-full md:w-[50%] h-2 bg-[#5C5C5C] rounded-full">
+              <div
+                className="bg-white h-full rounded-full transition-all duration-300"
+                style={{ width: progressWidth }}
+              />
+            </div>
+            <p className="thin text-[#8F8F8F] text-xs md:text-sm">
+              Question {stepIndex + 1} of {steps.length}
+            </p>
+          </>
         )}
       </div>
     </section>
