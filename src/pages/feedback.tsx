@@ -101,7 +101,9 @@ const Feedback = () => {
         first_name: "Anonymous",
         last_name: "Patient Feedback",
         phone: "",
-        email: "",
+        // The mail endpoint requires a non-empty email, so a fixed no-reply
+        // address is sent. No patient contact details are collected.
+        email: "noreply@do.co.uk",
         company: "",
         deadline: "",
         message,
