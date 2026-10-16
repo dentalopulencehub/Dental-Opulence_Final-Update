@@ -279,14 +279,31 @@ const Index = ({ children }: Props) => {
 
         {/* Desktop floating buttons */}
         <div className="hidden lg:flex fixed sm:bottom-10 bottom-3 right-[10px] flex-col items-center space-y-3">
-          {/* Book now button */}
+          {/* Book now button - submits feedback on the feedback page */}
           <button
             className="w-[100px] h-[100px] left-contact-icon cursor-pointer bg-[#2f2f2f] rounded-full hover:scale-110 transition-transform duration-300 ease-in-out shadow-lg"
-            onClick={toggleLeftExpanded}
-            aria-label="Book now"
+            onClick={
+              isFeedbackPage
+                ? () =>
+                    window.dispatchEvent(new CustomEvent("do:submit-feedback"))
+                : toggleLeftExpanded
+            }
+            aria-label={isFeedbackPage ? "Submit feedback" : "Book now"}
           >
             <span className="flex items-center justify-center text-white font-Pangram-Bold text-[15px] leading-tight">
-              Book<br/>Now
+              {isFeedbackPage ? (
+                <>
+                  Submit
+                  <br />
+                  Feedback
+                </>
+              ) : (
+                <>
+                  Book
+                  <br />
+                  Now
+                </>
+              )}
             </span>
           </button>
 
