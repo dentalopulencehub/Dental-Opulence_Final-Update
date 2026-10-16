@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
@@ -170,6 +170,31 @@ const FeedbackFlow = () => {
     if (current?.kind !== "comment") return;
     advance(answers);
   };
+
+  // The sticky mobile bar shows "Submit feedback" on this page. Tapping it
+  // sends whatever has been answered so far, so patients can finish early.
+  const stickyState = useRef({ stepIndex, answers, isSubmitting });
+  stickyState.current = { stepIndex, answers, isSubmitting };
+
+  useEffect(() => {
+    const onStickySubmit = () => {
+      const { stepIndex: i, answers: a, isSubmitting: busy } =
+        stickyState.current;
+      if (busy || i === steps.length) return;
+      if (i === -1) {
+        setStepIndex(0);
+        return;
+      }
+      if (Object.values(a).some((v) => v?.trim())) {
+        submitFeedback(a);
+      }
+    };
+
+    window.addEventListener("do:submit-feedback", onStickySubmit);
+    return () =>
+      window.removeEventListener("do:submit-feedback", onStickySubmit);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section className="relative bg-[#100E10] w-full min-h-[100vh] h-full overflow-hidden sm:pt-10 lg:px-[100px] sm:px-[40px] px-[20px] flex flex-col items-center justify-between mx-auto my-auto">

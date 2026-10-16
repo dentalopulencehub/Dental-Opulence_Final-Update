@@ -2,6 +2,7 @@
 import React, { useRef, useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useGSAP } from "@gsap/react";
 import pen_icon from "../../../../assets/images/pen-icon.svg";
 import { gsap } from "../../../../lib/gsap";
@@ -136,6 +137,10 @@ const Index = ({ children }: Props) => {
   const [isLeftExpanded, setIsLeftExpanded] = useState(false); // New state for left button
   const [isMounted, setIsMounted] = useState(false);
   const tl: any = useRef(null);
+  const router = useRouter();
+
+  // On the feedback page the sticky bar submits feedback instead of booking.
+  const isFeedbackPage = router.pathname === "/feedback";
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -215,14 +220,26 @@ const Index = ({ children }: Props) => {
         {/* Mobile sticky bottom bar with Book now and Call buttons */}
         <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[800] bg-white/95 backdrop-blur-sm border-t border-gray-100 shadow-lg">
           <div className="flex items-center justify-between gap-2 px-4 py-2">
-            <a
-              href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#000000] text-white flex-1 py-2 rounded-full text-sm font-Pangram-Bold hover:bg-[#2f2f2f] transition-colors duration-200 text-center"
-            >
-              Book Now
-            </a>
+            {isFeedbackPage ? (
+              <button
+                type="button"
+                onClick={() =>
+                  window.dispatchEvent(new CustomEvent("do:submit-feedback"))
+                }
+                className="bg-[#000000] text-white flex-1 py-2 rounded-full text-sm font-Pangram-Bold hover:bg-[#2f2f2f] transition-colors duration-200 text-center"
+              >
+                Submit feedback
+              </button>
+            ) : (
+              <a
+                href="https://book.do.co.uk/?utm_source=ig_bio&fbclid=PAZXh0bgNhZW0CMTEAAaeVB8Sg96VedwGan1nAVtPXXdiTJ1C6s8Agqjqu-pgpjvvyvcDoCICiCE6sLg_aem_oT_dmApmZVEyFHD25KvFLQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#000000] text-white flex-1 py-2 rounded-full text-sm font-Pangram-Bold hover:bg-[#2f2f2f] transition-colors duration-200 text-center"
+              >
+                Book Now
+              </a>
+            )}
             <a
               href="https://wa.me/+447301253447"
               target="_blank"
