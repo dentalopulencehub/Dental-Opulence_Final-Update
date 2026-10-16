@@ -937,11 +937,20 @@ export const our_services: HomeOurServicesType[] = [
     image_inverted: extraction_sevices_image_dark,
   },
   {
-    title: "Crowns / Veneers",
+    title: "Crowns",
     price: "from £650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
-      "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
+      "Crowns cover and protect damaged or weakened teeth, restoring strength and a natural, radiant appearance.",
+    image: crown_veneers_services_image,
+    image_inverted: crown_veneers_services_image_dark,
+  },
+  {
+    title: "Veneers",
+    price: "from £850",
+    href: "/services/generalTreatment/crowns-veneers",
+    description:
+      "Veneers correct imperfections in shape, colour and alignment, giving you a refined and natural-looking smile.",
     image: crown_veneers_services_image,
     image_inverted: crown_veneers_services_image_dark,
   },
@@ -956,7 +965,7 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Root Canal Treatments",
-    price: "from £495",
+    price: "from £500",
     href: "/services/generalTreatment/root-canal-treatments",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
@@ -965,7 +974,7 @@ export const our_services: HomeOurServicesType[] = [
   },
   {
     title: "Bridges",
-    price: "from £650",
+    price: "from £700",
     href: "/services/generalTreatment/bridges",
     description:
       "A dental bridge fills gaps with crowns and a false tooth, restoring your smile with natural-looking, colour-matched results.",
@@ -1022,7 +1031,7 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Composite Veneers",
-    price: "£110",
+    price: "from £350",
     href: "/services/cosmeticTreatment/composite-veneers",
     description:
       "Composite veneers quickly enhance your smile, fixing minor imperfections and improving teeth color and shape.",
@@ -1031,7 +1040,7 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Fixed Retainers",
-    price: "£150",
+    price: "£150 per arch",
     href: "/services/cosmeticTreatment/fixed-retainers",
     description:
       "Fixed retainers are custom-made, thin-wire appliances bonded to teeth, keeping them aligned after treatment for optimal results.",
@@ -1068,7 +1077,7 @@ export const our_services2: HomeOurServicesType[] = [
   },
   {
     title: "Vivera Retainers",
-    price: "Single £250 - Dual £450",
+    price: "Single £350 - Dual £450",
     href: "/services/cosmeticTreatment/vivera-retainers",
     description:
       "Vivera retainers are custom-made, durable, and nearly invisible, preserving teeth alignment after orthodontic treatment.",
@@ -1077,11 +1086,20 @@ export const our_services2: HomeOurServicesType[] = [
   },
 
   {
-    title: "Crowns/Veneers",
+    title: "Crowns",
     price: "from £650",
     href: "/services/cosmeticTreatment/crowns-veneers",
     description:
-      "Crowns and veneers are custom-made dental solutions designed to restore and enhance the appearance of your teeth.",
+      "Crowns are custom-made caps that cover and protect damaged teeth, restoring both strength and appearance.",
+    image: crown_veneers_service_icon,
+    image_inverted: crown_veneers_service_icon_light,
+  },
+  {
+    title: "Veneers",
+    price: "from £850",
+    href: "/services/cosmeticTreatment/crowns-veneers",
+    description:
+      "Veneers are thin, custom-made facings that improve the shape, shade and alignment of your front teeth.",
     image: crown_veneers_service_icon,
     image_inverted: crown_veneers_service_icon_light,
   },
@@ -1129,7 +1147,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Root Canal Treatments",
-    price: "from £495",
+    price: "from £500",
     href: "/services/generalTreatment/root-canal-treatments",
     description:
       "Rooted in Precision, Reviving Smiles: Expert Care for Painless Root Canal Treatments.",
@@ -1139,7 +1157,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Simple Extraction",
-    price: "from £150",
+    price: "from £350",
     href: "/services/generalTreatment/extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
@@ -1149,7 +1167,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Complex Extraction",
-    price: "from £280",
+    price: "from £400",
     href: "/services/generalTreatment/extractions",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
@@ -1159,7 +1177,7 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Bridges",
-    price: "from £650",
+    price: "from £700",
     href: "/services/generalTreatment/bridges",
     description:
       "A dental bridge fills gaps with crowns and a false tooth, restoring your smile with natural-looking, colour-matched results.",
@@ -1168,11 +1186,20 @@ export const our_pricing_services: HomeOurServicesType[] = [
   },
 
   {
-    title: "Crowns / Veneers",
+    title: "Crowns",
     price: "from £650",
     href: "/services/generalTreatment/crowns-veneers",
     description:
-      "Crowns cover damaged teeth, while veneers correct imperfections, both enhancing your smile with a natural, radiant appearance.",
+      "Crowns cover and protect damaged or weakened teeth, restoring strength and a natural, radiant appearance.",
+    image: crown_veneers_services_image,
+    image_inverted: crown_veneers_services_image_dark,
+  },
+  {
+    title: "Veneers",
+    price: "from £850",
+    href: "/services/generalTreatment/crowns-veneers",
+    description:
+      "Veneers correct imperfections in shape, colour and alignment, giving you a refined and natural-looking smile.",
     image: crown_veneers_services_image,
     image_inverted: crown_veneers_services_image_dark,
   },
@@ -1207,12 +1234,32 @@ export const our_pricing_services: HomeOurServicesType[] = [
 
   {
     title: "Sedation",
-    price: "from £250 (per session)",
+    price: "from £350",
     href: "/services/generalTreatment/sedation",
     description:
       "Dental sedation ensures a comfortable, anxiety-free experience during procedures by calming patients with medication.",
     image: hygienist_services_image,
     image_inverted: hygienist_services_image_dark,
+  },
+
+  {
+    title: "Emergency Appointment",
+    price: "£70",
+    href: "/contact",
+    description:
+      "Same-day emergency appointments for dental pain, swelling, lost fillings or damaged teeth, with prompt assessment and treatment.",
+    image: hygienist_services_image,
+    image_inverted: hygienist_services_image_dark,
+  },
+
+  {
+    title: "Bite Guard",
+    price: "from £100",
+    href: "/contact",
+    description:
+      "A custom-fitted bite guard protects your teeth from grinding and clenching, easing jaw tension and preventing wear.",
+    image: white_fillings_services_image,
+    image_inverted: white_fillings_services_image_dark,
   },
 
   {
@@ -1248,7 +1295,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
   },
   {
     title: "Fixed Retainers",
-    price: "£150",
+    price: "£150 per arch",
     href: "/services/cosmeticTreatment/fixed-retainers",
     description:
       "Gentle Farewell, Expert Extraction: Your Comfort is Our Priority in Every Tooth's Journey.",
@@ -1265,11 +1312,20 @@ export const our_pricing_services2: HomeOurServicesType[] = [
     image_inverted: invisalign_service_icon_light,
   },
   {
-    title: "Crowns/Veneers",
+    title: "Crowns",
     price: "from £650",
     href: "/services/cosmeticTreatment/crowns-veneers",
     description:
-      "Crowning Glory, Veneer Elegance: Elevate Your Smile with Precision Crafted Perfection.",
+      "Crowning Glory: Protect and Restore Damaged Teeth with Precision Crafted Perfection.",
+    image: crown_veneers_service_icon,
+    image_inverted: crown_veneers_service_icon_light,
+  },
+  {
+    title: "Veneers",
+    price: "from £850",
+    href: "/services/cosmeticTreatment/crowns-veneers",
+    description:
+      "Veneer Elegance: Refine the Shape, Shade and Symmetry of Your Smile.",
     image: crown_veneers_service_icon,
     image_inverted: crown_veneers_service_icon_light,
   },
@@ -1305,7 +1361,7 @@ export const our_pricing_services2: HomeOurServicesType[] = [
 
   {
     title: "Vivera Retainers",
-    price: "Single £250 - Dual £450",
+    price: "Single £350 - Dual £450",
     href: "/services/cosmeticTreatment/vivera-retainers",
     description:
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
@@ -1340,6 +1396,26 @@ export const our_pricing_services2: HomeOurServicesType[] = [
       "Elevate Your Smile, Embrace Hygiene: Where Precision Meets Care with Our Expert Hygienists.",
     image: composite_bonding_service_icon,
     image_inverted: composite_bonding_service_icon_light,
+  },
+
+  {
+    title: "Gum Contouring",
+    price: "from £150",
+    href: "/contact",
+    description:
+      "Gum contouring gently reshapes the gum line to balance your smile and reveal more of each tooth.",
+    image: teeth_whitening_service_icon,
+    image_inverted: teeth_whitening_service_icon_light,
+  },
+
+  {
+    title: "Enamel Shaping",
+    price: "from £100",
+    href: "/contact",
+    description:
+      "Enamel shaping smooths and refines uneven or chipped edges, creating a more even and natural smile line.",
+    image: composite_edge_bonding_service_icon,
+    image_inverted: composite_edge_bonding_service_icon_light,
   },
 
   // {
