@@ -80,6 +80,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { loc: `${DOMAIN}/health-and-safety`, lastmod: currentDate, changefreq: 'yearly', priority: 0.3 },
     { loc: `${DOMAIN}/appointment-terms`, lastmod: currentDate, changefreq: 'yearly', priority: 0.3 },
     { loc: `${DOMAIN}/competitions-and-offer-terms`, lastmod: currentDate, changefreq: 'yearly', priority: 0.3 },
+    { loc: `${DOMAIN}/black-friday-terms`, lastmod: currentDate, changefreq: 'monthly', priority: 0.3 },
   ];
 
   // Add blog post URLs dynamically

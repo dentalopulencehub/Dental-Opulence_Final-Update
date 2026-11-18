@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import arrow_right_dark from "../../../assets/images/arrow-right-dark.svg";
 import arrow_right_light from "../../../assets/images/arrow-right.svg";
-import { GlobalContext } from "../../../context/GlobalContext";
-import { handleSetPathToNavigate } from "../../../context/action";
 
 interface SecondaryLinkProps {
   title: string;
@@ -21,11 +19,9 @@ const SecondaryLink = ({
   hovered,
   setHovered,
 }: SecondaryLinkProps) => {
-  const { dispatch } = useContext(GlobalContext);
-
   return (
-    <div
-      onClick={() => handleSetPathToNavigate(dispatch, href)}
+    <Link
+      href={href}
       onMouseOver={() => setHovered!(true)}
       onMouseOut={() => setHovered!(false)}
     >
@@ -35,7 +31,7 @@ const SecondaryLink = ({
           <Image src={hovered ? arrow_right_light : arrow_right_dark} alt="" />
         </div>
       </button>
-    </div>
+    </Link>
   );
 };
 

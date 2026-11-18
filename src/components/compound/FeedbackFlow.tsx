@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
@@ -7,8 +7,6 @@ import { useRouter } from "next/router";
 import arrow_hex_1 from "../../../assets/images/arrow-left-light-large.svg";
 import cancel from "../../../assets/images/cancel.svg";
 import do_logo from "../../../assets/images/dental Opulence logo.svg";
-import { GlobalContext } from "../../../context/GlobalContext";
-import { handleSetPathToNavigate } from "../../../context/action";
 
 type RatingStep = {
   kind: "rating";
@@ -85,7 +83,6 @@ const steps: Step[] = [
 ];
 
 const FeedbackFlow = () => {
-  const { dispatch: reactContextDispatch } = useContext(GlobalContext);
   const router = useRouter();
 
   // -1 is the welcome banner, steps.length is the thank-you screen.
@@ -223,10 +220,7 @@ const FeedbackFlow = () => {
       <div className="flex w-full items-center gap-3 md:mt-12 relative justify-between shrink-0">
         {isWelcome || isDone ? (
           <nav className="mix-blend-difference h-[44px] md:h-[70px] bg-transparent cursor-pointer flex items-center justify-between shrink-0">
-            <div
-              className="nav-logo-wrapper"
-              onClick={() => handleSetPathToNavigate(reactContextDispatch, "/")}
-            >
+            <Link href="/" className="nav-logo-wrapper" aria-label="Dental Opulence home">
               <Image
                 src={do_logo}
                 alt="Dental Opulence"
@@ -234,7 +228,7 @@ const FeedbackFlow = () => {
                 height={40}
                 className="w-[60px] md:w-[77px] h-auto"
               />
-            </div>
+            </Link>
           </nav>
         ) : (
           <button

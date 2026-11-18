@@ -163,10 +163,8 @@ const Page = () => {
           {visitedSteps.length == 0 ? (
             <nav className=" mix-blend-difference h-[40px] md:h-[70px] bg-transparent cursor-pointer  flex items-center justify-between  ">
               <div
-                className=""
-                onClick={() =>
-                  handleSetPathToNavigate(reactContextDispatch, "/")
-                }
+                className="cursor-pointer"
+                onClick={() => router.push("/")}
               >
                 <div className="nav-logo-wrapper">
                   <svg

@@ -220,6 +220,11 @@ export default function Sitemap() {
                     Competitions & Offer Terms
                   </Link>
                 </li>
+                <li>
+                  <Link href="/black-friday-terms" className="text-[#161616] hover:text-[#666] transition-colors">
+                    Black Friday Invisalign Offer Terms
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
