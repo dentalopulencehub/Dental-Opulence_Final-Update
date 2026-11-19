@@ -16,10 +16,19 @@ import CookiePolicyHero from "@/components/compound/cookiePolicy/cookiePolicyHer
 import CookiePolicyBody from "@/components/compound/cookiePolicy/cookiePolicyBody";
 import CompetitionsOfferTermsHero from "@/components/compound/CompetitionsOfferTerms/CompetitionsOfferTermsHero";
 import CompetitionsOfferTermsBody from "@/components/compound/CompetitionsOfferTerms/CompetitionsOfferTermsBody";
+import Head from "next/head";
 
 export default function CoocompetitionsAndOffer() {
   return (
     <Layout>
+      <Head>
+        <title>Competitions and Offer Terms | Dental Opulence</title>
+        <meta
+          name="description"
+          content="Terms and conditions for Dental Opulence competitions, promotions and referral offers, including eligibility and reward conditions."
+        />
+        <link rel="canonical" href="https://www.do.co.uk/competitions-and-offer-terms" />
+      </Head>
       <Navbar />
        <CompetitionsOfferTermsHero/>
 

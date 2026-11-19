@@ -118,7 +118,9 @@ const Footer = () => {
 
               <div className="md:flex items-center gap-2 md:mt-10 h-full w-full">
                 <Link
-                  href="https://test.cqc.org.uk/location/1-17708997775/contact"
+                  href="https://www.cqc.org.uk/location/1-17708997775"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex gap-2"
                   aria-label="Contact us at CQC" // Added aria-label for clarity
                 >

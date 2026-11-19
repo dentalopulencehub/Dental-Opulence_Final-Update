@@ -14,6 +14,10 @@ export default function BlackFridayTerms() {
           name="description"
           content="Terms and conditions for the Dental Opulence Black Friday Invisalign offer, including eligibility, what is included, payment deadlines and referral voucher conditions."
         />
+        <link
+          rel="canonical"
+          href="https://www.do.co.uk/black-friday-terms"
+        />
       </Head>
       <Navbar />
       <BlackFridayTermsHero />
